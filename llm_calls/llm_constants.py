@@ -1,0 +1,6 @@
+
+CARD_MODEL = "claude-sonnet-5"
+
+EMBEDDING_MODEL = None
+
+MAX_TOKENS = 8192

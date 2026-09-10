@@ -1,0 +1,41 @@
+{
+  "student_id": "austin",
+  "vocabulary": {
+    "λύω": {
+      "gloss": "I loose, I release",
+      "part_of_speech": "verb",
+      "status": "learned",
+      "last_reviewed": "2026-09-02"
+    },
+    "γράφω": {
+      "gloss": "I write",
+      "part_of_speech": "verb",
+      "status": "learned",
+      "last_reviewed": "2026-09-04"
+    },
+    "λέγω": {
+      "gloss": "I say, I speak",
+      "part_of_speech": "verb",
+      "status": "learning",
+      "last_reviewed": "2026-09-07"
+    },
+    "λόγος": {
+      "gloss": "word, reason",
+      "part_of_speech": "noun",
+      "status": "learned",
+      "last_reviewed": "2026-08-28"
+    },
+    "θεός": {
+      "gloss": "god",
+      "part_of_speech": "noun",
+      "status": "learning",
+      "last_reviewed": "2026-09-06"
+    },
+    "ἄνθρωπος": {
+      "gloss": "human, person",
+      "part_of_speech": "noun",
+      "status": "unseen",
+      "last_reviewed": null
+    }
+  }
+}

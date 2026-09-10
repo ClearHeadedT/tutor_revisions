@@ -1,0 +1,24 @@
+{
+  "principal_parts": {
+    "1st_principal_part": {
+      "present_active_indicative": {
+        "paradigm_1": ["λύω", "λύεις", "λύει"],
+        "paradigm_2": ["γράφω", "γράφεις", "γράφει"]
+      },
+      "imperfect_active_indicative": {
+        "paradigm_1": ["ἔλυον", "ἔλυες", "ἔλυεν"],
+        "paradigm_2": ["ἔγραφον", "ἔγραφες", "ἔγραφεν"]
+      }
+    },
+    "2nd_principal_part": {
+      "future_active_indicative": {
+        "paradigm_1": ["λύσω", "λύσεις", "λύσει"],
+        "paradigm_2": ["γράψω", "γράψεις", "γράψει"]
+      },
+      "future_middle_indicative": {
+        "paradigm_1": ["λύσομαι", "λύσῃ", "λύσεται"],
+        "paradigm_2": ["γράψομαι", "γράψῃ", "γράψεται"]
+      }
+    }
+  }
+}

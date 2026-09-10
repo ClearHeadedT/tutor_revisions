@@ -1,0 +1,67 @@
+{
+  "student_id": "austin",
+  "grammar": {
+    "principal_parts": {
+      "1st_principal_part": {
+        "present_active_indicative": {
+          "paradigm_1": {
+            "key": "1st_principal_part-present_active_indicative-paradigm_1",
+            "status": "learned",
+            "accuracy": 0.92,
+            "last_reviewed": "2026-09-01"
+          },
+          "paradigm_2": {
+            "key": "1st_principal_part-present_active_indicative-paradigm_2",
+            "status": "learning",
+            "accuracy": 0.64,
+            "last_reviewed": "2026-09-05"
+          }
+        },
+        "imperfect_active_indicative": {
+          "paradigm_1": {
+            "key": "1st_principal_part-imperfect_active_indicative-paradigm_1",
+            "status": "learning",
+            "accuracy": 0.55,
+            "last_reviewed": "2026-09-06"
+          },
+          "paradigm_2": {
+            "key": "1st_principal_part-imperfect_active_indicative-paradigm_2",
+            "status": "unseen",
+            "accuracy": 0.0,
+            "last_reviewed": null
+          }
+        }
+      },
+      "2nd_principal_part": {
+        "future_active_indicative": {
+          "paradigm_1": {
+            "key": "2nd_principal_part-future_active_indicative-paradigm_1",
+            "status": "learning",
+            "accuracy": 0.48,
+            "last_reviewed": "2026-09-07"
+          },
+          "paradigm_2": {
+            "key": "2nd_principal_part-future_active_indicative-paradigm_2",
+            "status": "unseen",
+            "accuracy": 0.0,
+            "last_reviewed": null
+          }
+        },
+        "future_middle_indicative": {
+          "paradigm_1": {
+            "key": "2nd_principal_part-future_middle_indicative-paradigm_1",
+            "status": "unseen",
+            "accuracy": 0.0,
+            "last_reviewed": null
+          },
+          "paradigm_2": {
+            "key": "2nd_principal_part-future_middle_indicative-paradigm_2",
+            "status": "unseen",
+            "accuracy": 0.0,
+            "last_reviewed": null
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,159 @@
+FSRS
+FSRS aims to learn your memory patterns and schedule reviews more efficiently than SM-2.
+
+FSRS is based on the "Three Component Model of Memory". The model asserts that three variables are sufficient to describe the status of a unitary memory in a human brain. These three variables include:
+
+Retrievability (R): The probability that the person can successfully recall a particular information at a given moment. It depends on the time elapsed since the last review and the memory stability (S).
+
+Stability (S): The time, in days, required for R to decrease from 100% to 90%. For example, S = 365 means that an entire year will pass before the probability of recalling a particular card drops to 90%.
+
+Difficulty (D): The inherent complexity of a particular information. It represents how difficult it is to increase memory stability after a review.
+
+In FSRS, these three values are collectively called the "memory state". The value of R changes daily, while D and S change only after a card has been reviewed. Each card has its own DSR values, in other words, each card has its own memory state. To accurately estimate the DSR values, FSRS analyzes the user's review history and uses machine learning to find parameters that provide the best fit to the review history.
+
+Note that the users should not tweak the parameters manually. If you want to adjust the scheduling, all you need to do is choose an appropriate value of desired retention. With FSRS, users can target a specific value of retention, allowing them to balance how much they remember and how many reviews they have to do. Higher retention leads to more reviews per day.
+
+Aside from allowing users to easily control their retention, FSRS has some other advantages when compared to Anki's default algorithm. With FSRS, users have to do fewer reviews than with Anki's default algorithm to achieve the same retention level. FSRS is also much better at scheduling cards that have been reviewed with a delay, for example, if the user took a break from Anki for a few weeks or months.
+
+The scheduling code can be found in rslib/src/scheduler/states. Here is a summary (see the deck options section of the manual for the options that are mentioned in italics):
+
+Learning/Relearning Cards
+If you press…​
+
+Again
+Moves the card back to the first step setted in Learning/Relearning Steps.
+
+Hard
+Repeats the current step after the first step, and is the average of Again and Good.
+
+Good
+Moves the card to the next step. If the card was on the final step, the card is converted into a review card (it 'graduates').
+
+Easy Immediately converts the card into a review card.
+
+New cards have no ease, so no matter how many times you press 'Again' or 'Hard', the future ease factor of the card won't be affected. The same can be said about relearning cards: pressing 'Again' or 'Hard' won't have any effect over the card's ease.
+
+Review Cards
+In SM-2, once a card is graduated, it gets an ease factor. By default is 2.5, but you can set another value using the Deck Options.
+
+If you press…​
+
+Again
+The card is placed into relearning mode, the ease is decreased by 20 percentage points (that is, 20 is subtracted from the ease value, which is in units of percentage points), and the current interval is multiplied by the value of new interval (this interval will be used when the card exits relearning mode).
+
+Hard
+The card’s ease is decreased by 15 percentage points and the current interval is multiplied by the value of hard interval (1.2 by default)
+
+Good
+The current interval is multiplied by the current ease. The ease is unchanged.
+
+Easy
+The current interval is multiplied by the current ease times the easy bonus and the ease is increased by 15 percentage points.
+
+For Hard, Good, and Easy, the next interval is additionally multiplied by the interval modifier. If the card is being reviewed late, additional days will be added to the current interval, as described in a previous FAQ.
+
+In FSRS, once a card is reviewed at least once, it gets assigned DSR values.
+
+If you press…​
+
+Again
+The card is placed into relearning mode, stability significantly decreases, and difficulty significantly increases.
+
+Hard
+The card’s stability either increases or stays the same, and difficulty moderately increases.
+
+Good
+The card’s stability increases, and difficulty may increase or decrease very slightly.
+
+Easy
+The card’s stability significantly increases, and difficulty moderately decreases.
+
+
+
+
+
+
+
+
+
+
+
+
+In case you are using Anki yet have never heard about FSRS, here's the short version: it's a new scheduling algorithm that is more flexible and accurate than Anki's default algorithm. Recently, a new and more accurate version of FSRS has been released, so I decided to make two posts about FSRS.
+
+Note: I am not the developer of FSRS. I'm just some random guy who submits a lot of bug reports and feature requests on github. I'm quite familiar with FSRS, especially since a lot of the changes in version 4 were suggested by me.
+
+
+Level 1: Baby Version
+
+FSRS uses a model of memory called DSR - Difficulty, Stability and Probability of Recall, or Retention, or Retrievability if you are Piotr Wozniak, although in his terminology "recall" and "retrievability" are different things...look, trying to come up with a good naming convention can be hard.
+
+R is the probability that a user will recall a particular card on a particular day, given that card's repetition history. It depends on how many days have passed since the last review and on S. What's important is that every "honest" spaced repetition algorithm must be able to predict R, one way or another (even if it doesn't use memory stability). Otherwise it cannot possibly determine which intervals are optimal.
+
+S is memory stability, it is defined as the amount of time, in days, during which R decreases from 100% to 90%. Higher is better. For example, S=365 means that an entire year will pass before the probability of recalling a particular card will drop to 90%. Estimating S is the hardest part, this is what FSRS is all about.
+
+D is difficulty. Unlike the other two variables, difficulty has no precise definition and is calculated using a bunch of heuristics that are not based on a good understanding of human memory. Difficulty is just stuff that goes down if you press "Easy", and goes up if you press "Hard" or "Again".
+
+This model was originally proposed by Piotr Wozniak, the creator of SuperMemo, and a few years ago u/LMSherlock published a paper where he used this model.
+
+
+Level 2: Full Description But No Math
+
+For any given card, FSRS does the following:
+
+If this is the first review:
+
+Set the initial S to one of the 4 precomputed values, one value for each grade - "Again", "Hard", "Good" and "Easy". Initial S is estimated during optimization using a method specifically designed for this purpose, and then 4 values are passed to the scheduler as parameters.
+
+Calculate initial D. Initial D depends only on the grade.
+
+Schedule the next review based on the estimate of S and desired R; the latter is chosen by the user.
+
+If this is not the first review:
+
+Calculate the theoretical (predicted) R at the time of the review. It depends on 2 things: Δt and S. Δt is the number of days passed since the last review, and S is memory stability at the time of the review.
+
+Calculate D (the formula is different compared to the formula for the first review). D depends on 2 things: its own previous value and the most recent grade.
+
+Use D, S, and R to obtain a new estimate of stability after the review. Stability increases or stays the same after each successful review (the user pressed "Hard", "Good"," or "Easy") and decreases after a lapse (the user pressed "Again"). The new estimate of stability depends on 4 things: D, S, R, and grade. The formula is different if the user presses "Again".
+
+Schedule the next review based on the new estimate of S and desired R; the latter is chosen by the user.
+
+
+Level 3: Full Description With All The Math
+
+Just read the wiki ¯\_(ツ)_/¯
+
+
+Stengths of FSRS v4:
+
+Thanks to a combination of universal memory formulas and machine learning approaches, FSRS can adapt to any user's memory and reviewing habits (for example, only using "Again" and "Good") so you don't have to change your habits.
+
+FSRS allows you to choose your desired level of R, which in turn allows you to balance your workload and how much you remember.
+
+FSRS allows you to advance or postpone reviews with minimal damage to long-term learning. Postponing can be used when you have a large backlog of reviews, and advancing can be used before an exam. Although postponing/advancing can still be harmful if used too often. FSRS also allows you to have "Free Days" if you do not wish to study on, say, Sundays. All of this is possible because FSRS can still accurately estimate S and R even if the review was too late (overdue) or too early.
+
+FSRS allows you to accurately estimate how much knowledge you are holding in your head right now, something that you would not be able to do using any other add-on because it relies on accurately predicting R for all cards.
+
+Transitioning from the standard Anki scheduler to FSRS won't take months or weeks - cards can be rescheduled at the touch of a button, although the initial workload immediately after the rescheduling is usually high. By the way, the helper add-on supports both FSRS v3 (older, less accurate version) and FSRS v4.
+
+If you have been agonizing over the best values for "Learning steps", "Graduating interval", "Easy bonus", etc., you won't have to do that anymore. The optimizer will find the best parameters for you, forget about manual tweaking.
+
+
+Weaknesses of FSRS v4:
+
+Theoretically predicted R significantly deviates from measured R for maximally easy cards (D=1) and maximally hard cards (D=10). It suggests that our formulas for D can and should be improved. There are also some other signs that our formulas for D aren't very good, but all of our attempts to improve them have failed.
+
+FSRS requires a lot of reviews (at the very least one thousand, preferably more) to accurately optimize its parameters. If you are a new user who hasn't done thousands of reviews yet, the optimizer will just give you the default parameters, which may or may not be good for you.
+
+FSRS is not very user-friendly. Currently it has 3 modules: the optimizer (the stuff in Google Colab that finds the best parameters for you), the scheduler (the code that you paste in Anki) and the helper add-on, and it is impossible to combine them into a single module. This is unlikely to change unless Anki devs decide to integrate FSRS directly into Anki, and I bet 100 bucks the Sun will become a red giant and engulf the Earth before that.
+
+While I said that you don't have to tweak anything manually anymore, the only change that you should make is setting your learning (and re-learning) steps to 1 day max if you currently have learning steps longer than 1 day. Otherwise, you might run into a situation where the interval for "Hard" is longer than for "Good" or "Easy", and the helper add-on and the scheduler will produce strange behavior. Unfortunately, Anki's database is kinda weird, so cards in the "learning" (and "relearning") stage are treated differently compared to cards in the "review" stage, and the FSRS scheduler can only affect cards in the "review" stage. It also means that the "Free Days" feature doesn't actually do what it says on the tin, it only makes your selected day(s) free from "review" cards, you will still have to deal with "learning" and "re-learning" cards.
+
+
+
+
+
+
+
+
