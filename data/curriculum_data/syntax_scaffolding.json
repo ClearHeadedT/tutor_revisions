@@ -1,0 +1,166 @@
+{
+  "structure": {
+    "genitive": {
+      "display_name": "Genitive Case",
+      "sequence": 1,
+      "basic_syntactic_functionality": "The genitive qualifies, restricts, or describes the word it modifies, most often answering what kind.",
+      "broad_usages": {
+        "genitive/adverbial": {
+          "display_name": "Adverbial Genitive",
+          "sequence": 1,
+          "basic_syntactic_functionality": "The genitive modifies the verbal idea rather than a substantive.",
+          "items": ["genitive/adverbial/time"]
+        },
+        "genitive/verbal": {
+          "display_name": "Verbal Genitive",
+          "sequence": 2,
+          "basic_syntactic_functionality": "The genitive relates to a head noun that carries a verbal idea, standing as its subject or its object.",
+          "items": ["genitive/verbal/subjective"]
+        }
+      }
+    },
+    "dative": {
+      "display_name": "Dative Case",
+      "sequence": 2,
+      "basic_syntactic_functionality": "The dative marks personal interest, location, or the means by which something occurs.",
+      "broad_usages": {
+        "dative/adverbial": {
+          "display_name": "Adverbial Dative",
+          "sequence": 1,
+          "basic_syntactic_functionality": "The dative modifies the verbal idea, supplying means, manner, or circumstance.",
+          "items": ["dative/adverbial/means"]
+        }
+      }
+    },
+    "participle": {
+      "display_name": "Participle",
+      "sequence": 3,
+      "basic_syntactic_functionality": "A verbal adjective, carrying both the tense and voice of a verb and the case, gender, and number of an adjective.",
+      "broad_usages": {
+        "participle/adjectival": {
+          "display_name": "Adjectival Participle",
+          "sequence": 1,
+          "basic_syntactic_functionality": "The participle ascribes an action or quality directly to a substantive.",
+          "items": ["participle/adjectival/attributive"]
+        },
+        "participle/adverbial": {
+          "display_name": "Adverbial Participle",
+          "sequence": 2,
+          "basic_syntactic_functionality": "The participle modifies the main verb, supplying the circumstance under which its action occurs.",
+          "items": ["participle/adverbial/genitive_absolute"]
+        }
+      }
+    }
+  },
+  "items": {
+    "genitive/adverbial/time": {
+      "key": "genitive/adverbial/time",
+      "display_name": "Genitive of Time",
+      "broad_usage": "genitive/adverbial",
+      "category": "genitive",
+      "sequence": 1,
+      "description": "The genitive substantive indicates the kind of time within which the verbal action occurs, answering 'during what sort of time'.",
+      "hard_constraints": [
+        "The substantive must be genitive.",
+        "The substantive must denote time."
+      ],
+      "soft_constraints": [
+        "Contrast the accusative, which stresses extent of time, and the dative, which stresses a point in time."
+      ],
+      "lexical_options": ["νύξ", "ἡμέρα", "ὥρα"],
+      "reference_card": {
+        "card_type": "function_recall_syntax_g2e",
+        "sentence": "νυκτὸς ὁ ἄνθρωπος γράφει τὸν λόγον.",
+        "translation": "During the night the man writes the word.",
+        "target_form": "νυκτὸς"
+      }
+    },
+    "genitive/verbal/subjective": {
+      "key": "genitive/verbal/subjective",
+      "display_name": "Subjective Genitive",
+      "broad_usage": "genitive/verbal",
+      "category": "genitive",
+      "sequence": 1,
+      "description": "The genitive substantive functions as the subject of the verbal idea implicit in the head noun.",
+      "hard_constraints": [
+        "The head noun must carry a verbal idea, one with a cognate verb."
+      ],
+      "soft_constraints": [
+        "Where the head noun's verb is transitive, the objective genitive is the nearest competing reading."
+      ],
+      "lexical_options": ["θεός", "Χριστός", "ἀγάπη"],
+      "reference_card": {
+        "card_type": "function_recall_syntax_g2e",
+        "sentence": "ἡ ἀγάπη τοῦ θεοῦ μένει.",
+        "translation": "The love of God remains.",
+        "target_form": "τοῦ θεοῦ"
+      }
+    },
+    "dative/adverbial/means": {
+      "key": "dative/adverbial/means",
+      "display_name": "Dative of Means",
+      "broad_usage": "dative/adverbial",
+      "category": "dative",
+      "sequence": 1,
+      "description": "The dative substantive names the impersonal means or instrument by which the verbal action is accomplished.",
+      "hard_constraints": [
+        "The dative substantive must be impersonal.",
+        "A personal agent requires ὑπό with the genitive, not a bare dative."
+      ],
+      "soft_constraints": [
+        "The dative of manner is the nearest competing reading where the substantive is abstract."
+      ],
+      "lexical_options": ["λόγος", "πίστις", "ὕδωρ"],
+      "reference_card": {
+        "card_type": "function_recall_syntax_g2e",
+        "sentence": "ὁ θεὸς λύει τὸν ἄνθρωπον τῷ λόγῳ.",
+        "translation": "God releases the man by the word.",
+        "target_form": "τῷ λόγῳ"
+      }
+    },
+    "participle/adjectival/attributive": {
+      "key": "participle/adjectival/attributive",
+      "display_name": "Attributive Participle",
+      "broad_usage": "participle/adjectival",
+      "category": "participle",
+      "sequence": 1,
+      "description": "The participle functions as an adjective, ascribing a quality or action directly to the substantive it modifies.",
+      "hard_constraints": [
+        "The participle must agree with its substantive in gender, number, and case.",
+        "When articular, the participle must stand in an attributive position."
+      ],
+      "soft_constraints": [
+        "The substantival participle is the nearest competing reading where no head noun is expressed."
+      ],
+      "lexical_options": ["λέγω", "γράφω", "πιστεύω"],
+      "reference_card": {
+        "card_type": "function_recall_syntax_g2e",
+        "sentence": "ὁ ἄνθρωπος ὁ λέγων τὸν λόγον πιστεύει.",
+        "translation": "The man who speaks the word believes.",
+        "target_form": "ὁ λέγων"
+      }
+    },
+    "participle/adverbial/genitive_absolute": {
+      "key": "participle/adverbial/genitive_absolute",
+      "display_name": "Genitive Absolute",
+      "broad_usage": "participle/adverbial",
+      "category": "participle",
+      "sequence": 1,
+      "description": "A participial clause, grammatically detached from the main clause, in which a genitive noun or pronoun serves as the subject of a genitive participle.",
+      "hard_constraints": [
+        "Both the participle and its subject must be genitive.",
+        "The subject of the participle must not be the subject of the main verb."
+      ],
+      "soft_constraints": [
+        "It most often stands at the head of the sentence and carries temporal force."
+      ],
+      "lexical_options": ["ἄνθρωπος", "μαθητής", "ὄχλος"],
+      "reference_card": {
+        "card_type": "function_recall_syntax_g2e",
+        "sentence": "λέγοντος τοῦ ἀνθρώπου, ὁ θεὸς γράφει.",
+        "translation": "While the man is speaking, God writes.",
+        "target_form": "λέγοντος τοῦ ἀνθρώπου"
+      }
+    }
+  }
+}

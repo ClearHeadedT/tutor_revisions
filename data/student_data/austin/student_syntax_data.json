@@ -1,0 +1,17 @@
+{
+  "student_id": "austin",
+  "syntax": {
+    "genitive/adverbial/time": {
+      "status": "learned",
+      "last_reviewed": "2026-09-03"
+    },
+    "genitive/verbal/subjective": {
+      "status": "learning",
+      "last_reviewed": "2026-09-05"
+    },
+    "dative/adverbial/means": {
+      "status": "learning",
+      "last_reviewed": "2026-09-08"
+    }
+  }
+}

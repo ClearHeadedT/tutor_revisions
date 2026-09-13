@@ -44,31 +44,21 @@ The student reads the sentence and recalls what the target word means. The sente
 """ + instructions_cap
 
 instructions_TextRecallGrammarG2E = """CARD TYPE: Text Recall, Grammar, Greek-to-English (difficulty 1/4).
-The student reads the sentence and parses the target form. The sentence must make the form's function clear in context, and must not contain a second instance of the same rule that would muddy which form is being asked about.
-No further keys.
+The student reads the sentence and parses the target form. The sentence must make the form's function clear in context; it is an isolated and atomic review unit in a communicationally relevant phrase/short sentence.
 """ + instructions_cap
 
-instructions_RuleRecallGrammarG2E = """CARD TYPE: Rule Recall, Grammar, Greek-to-English (difficulty 1/4).
-The student sees the form in context and must state its underlying rule of formation. Your job is only the sentence — the rule itself is supplied from the curriculum and must NOT be generated, restated, or hinted at in your output. Choose a sentence where the form is unambiguous and its morphological markers are plainly visible.
-No further keys.
+instructions_RuleRecallGrammarG2E = """CARD TYPE: Rule Recall, Grammar, Greek-to-English (difficulty 2/4).
+The student sees the form in context and must state its underlying rule of formation. Your job is to simply create the sentence. The rule itself will be supplied from the curriculum and must NOT be generated, restated, or hinted at in your output. Choose a sentence where the form is unambiguous and its morphological markers are plainly visible.
 """ + instructions_cap
 
-instructions_SelfFormulationGrammarG2E = """CARD TYPE: Self-Formulation, Grammar, Greek-to-English (difficulty 2/4).
-The student is shown the sentence and a second lexeme, and must swap the target for it while preserving the same parsing.
-You are supplied with the candidate lexemes for this rule — do not invent your own. Choose the one that fits the sentence most naturally in sense; the point is applying the rule cleanly, not forcing a semantically odd substitution. If none of the candidates fits the scene well, write the sentence around a scene that one of them does fit.
-Further keys:
-  "substitute_lexeme" — the lexical form you chose from the supplied candidates.
-  "expected_result"   — the full sentence with the swap correctly made.
-""" + instructions_cap
+# instructions_SelfFormulationGrammarG2E = I found this to be impractical
 
 instructions_ClozeVocabularyE2G = """CARD TYPE: Cloze, Vocabulary, English-to-Greek (difficulty 3/4).
 The student is supplied the gloss for the Greek word separately and must predict the target word in the context of a sentence. You must create a sentence that for the item that is contextually appropriate, returning the sentence in Anki cloze format (e.g. {{c1::word}} - always c1; there is only ever one cloze per card).
 """ + instructions_cap
 
 instructions_ClozeGrammarE2G = """CARD TYPE: Cloze, Grammar, English-to-Greek (difficulty 3/4).
-The student is supplied the parsing and lexical form separately and must produce the correctly inflected form in context. The rest of the sentence must constrain the answer enough that only the intended form fits — agreement, sense, and word order should all point at it. Keep the target form present in the sentence, wrapped in Anki cloze syntax.
-Further key:
-  "cloze_sentence" — "sentence" with the target form wrapped as {{c1::form}}, everything else identical. Always c1; there is only ever one cloze per card.
+The student is supplied the parsing and lexical form separately and must produce the correctly inflected form in context. The rest of the sentence must constrain the answer enough that only the intended form fits. Agreement, sense, and word order should all point at it where applicable. Keep the target form present in the sentence, wrapped in Anki cloze syntax (e.g. {{c1::word}} - always c1; there is only ever one cloze per card).
 """ + instructions_cap
 
 instructions_FunctionRecallSyntaxG2E = """CARD TYPE: Function Recall, Syntax, Greek-to-English (difficulty 1/4).

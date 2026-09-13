@@ -1,0 +1,269 @@
+{
+  "student_id": "austin",
+  "cards": {
+    "λύω": {
+      "card_history": [
+        {
+          "date": "2026-08-10",
+          "card_type": "text_recall_vocabulary_g2e",
+          "status_at_review": "learning",
+          "difficulty": 1,
+          "grade": 3,
+          "correct": true,
+          "sentence": "ὁ ἄνθρωπος λύει τὸν λόγον.",
+          "translation": "The man loosens the word.",
+          "target_form": "λύει"
+        },
+        {
+          "date": "2026-08-14",
+          "card_type": "text_recall_vocabulary_g2e",
+          "status_at_review": "learning",
+          "difficulty": 1,
+          "grade": 3,
+          "correct": true,
+          "sentence": "ὁ θεὸς λύει τὸν λόγον.",
+          "translation": "God loosens the word.",
+          "target_form": "λύει"
+        },
+        {
+          "date": "2026-08-21",
+          "card_type": "cloze_vocabulary_e2g",
+          "status_at_review": "learned",
+          "difficulty": 3,
+          "grade": 3,
+          "correct": true,
+          "sentence": "ὁ θεὸς {{c1::λύει}} τὸν ἄνθρωπον.",
+          "translation": "God releases the man.",
+          "target_form": "λύει"
+        },
+        {
+          "date": "2026-09-02",
+          "card_type": "cloze_vocabulary_e2g",
+          "status_at_review": "learned",
+          "difficulty": 3,
+          "grade": 4,
+          "correct": true,
+          "sentence": "ὁ ἄνθρωπος {{c1::λύει}} τὸν λόγον τοῦ θεοῦ.",
+          "translation": "The man loosens the word of God.",
+          "target_form": "λύει"
+        }
+      ]
+    },
+    "γράφω": {
+      "card_history": [
+        {
+          "date": "2026-08-29",
+          "card_type": "text_recall_vocabulary_g2e",
+          "status_at_review": "learning",
+          "difficulty": 1,
+          "grade": 3,
+          "correct": true,
+          "sentence": "ὁ θεὸς γράφει τὸν λόγον.",
+          "translation": "God writes the word.",
+          "target_form": "γράφει"
+        },
+        {
+          "date": "2026-09-04",
+          "card_type": "text_recall_vocabulary_g2e",
+          "status_at_review": "learning",
+          "difficulty": 1,
+          "grade": 4,
+          "correct": true,
+          "sentence": "ὁ ἄνθρωπος γράφει τῷ θεῷ.",
+          "translation": "The man writes to God.",
+          "target_form": "γράφει"
+        }
+      ]
+    },
+    "λέγω": {
+      "card_history": [
+        {
+          "date": "2026-09-07",
+          "card_type": "text_recall_vocabulary_g2e",
+          "status_at_review": "learning",
+          "difficulty": 1,
+          "grade": 1,
+          "correct": false,
+          "sentence": "ὁ θεὸς λέγει τῷ ἀνθρώπῳ.",
+          "translation": "God speaks to the man.",
+          "target_form": "λέγει"
+        }
+      ]
+    },
+    "λόγος": {
+      "card_history": [
+        {
+          "date": "2026-08-08",
+          "card_type": "text_recall_vocabulary_g2e",
+          "status_at_review": "learning",
+          "difficulty": 1,
+          "grade": 3,
+          "correct": true,
+          "sentence": "ὁ ἄνθρωπος γράφει τὸν λόγον.",
+          "translation": "The man writes the word.",
+          "target_form": "λόγον"
+        },
+        {
+          "date": "2026-08-15",
+          "card_type": "text_recall_vocabulary_g2e",
+          "status_at_review": "learning",
+          "difficulty": 1,
+          "grade": 3,
+          "correct": true,
+          "sentence": "ὁ λόγος τοῦ θεοῦ μένει.",
+          "translation": "The word of God remains.",
+          "target_form": "λόγος"
+        },
+        {
+          "date": "2026-08-28",
+          "card_type": "cloze_vocabulary_e2g",
+          "status_at_review": "learned",
+          "difficulty": 3,
+          "grade": 3,
+          "correct": true,
+          "sentence": "ὁ ἄνθρωπος γράφει τὸν {{c1::λόγον}}.",
+          "translation": "The man writes the word.",
+          "target_form": "λόγον"
+        }
+      ]
+    },
+    "θεός": {
+      "card_history": [
+        {
+          "date": "2026-08-20",
+          "card_type": "text_recall_vocabulary_g2e",
+          "status_at_review": "learning",
+          "difficulty": 1,
+          "grade": 2,
+          "correct": true,
+          "sentence": "ὁ λόγος τοῦ θεοῦ.",
+          "translation": "The word of God.",
+          "target_form": "θεοῦ"
+        },
+        {
+          "date": "2026-08-27",
+          "card_type": "text_recall_vocabulary_g2e",
+          "status_at_review": "learning",
+          "difficulty": 1,
+          "grade": 1,
+          "correct": false,
+          "sentence": "ὁ θεὸς λύει τὸν ἄνθρωπον.",
+          "translation": "God releases the man.",
+          "target_form": "θεὸς"
+        },
+        {
+          "date": "2026-09-06",
+          "card_type": "cloze_vocabulary_e2g",
+          "status_at_review": "learning",
+          "difficulty": 3,
+          "grade": 2,
+          "correct": true,
+          "sentence": "ὁ {{c1::θεὸς}} λέγει τὸν λόγον.",
+          "translation": "God speaks the word.",
+          "target_form": "θεὸς"
+        }
+      ]
+    },
+    "genitive/adverbial/time": {
+      "card_history": [
+        {
+          "date": "2026-08-24",
+          "card_type": "function_recall_syntax_g2e",
+          "status_at_review": "learning",
+          "difficulty": 1,
+          "grade": 3,
+          "correct": true,
+          "sentence": "ἡμέρας ὁ θεὸς λέγει τῷ ἀνθρώπῳ.",
+          "translation": "During the day God speaks to the man.",
+          "target_form": "ἡμέρας"
+        },
+        {
+          "date": "2026-09-03",
+          "card_type": "validity_judgment_syntax_g2e",
+          "status_at_review": "learned",
+          "difficulty": 2,
+          "grade": 3,
+          "correct": true,
+          "sentence": "ὥρας ὁ ἄνθρωπος λέγει τὸν λόγον.",
+          "translation": "During the hour the man speaks the word.",
+          "target_form": "ὥρας"
+        }
+      ]
+    },
+    "genitive/verbal/subjective": {
+      "card_history": [
+        {
+          "date": "2026-09-05",
+          "card_type": "function_recall_syntax_g2e",
+          "status_at_review": "learning",
+          "difficulty": 1,
+          "grade": 3,
+          "correct": true,
+          "sentence": "ἡ ἀγάπη τοῦ θεοῦ μένει.",
+          "translation": "The love of God remains.",
+          "target_form": "τοῦ θεοῦ"
+        }
+      ]
+    },
+    "dative/adverbial/means": {
+      "card_history": [
+        {
+          "date": "2026-09-08",
+          "card_type": "validity_judgment_syntax_g2e",
+          "status_at_review": "learning",
+          "difficulty": 2,
+          "grade": 2,
+          "correct": true,
+          "sentence": "ὁ ἄνθρωπος λύεται τῷ θεῷ.",
+          "translation": "The man is released by God.",
+          "target_form": "τῷ θεῷ"
+        }
+      ]
+    },
+    "article::ὁ::genitive.masculine.singular": {
+      "card_history": [
+        {
+          "date": "2026-09-05",
+          "card_type": "text_recall_grammar_g2e",
+          "status_at_review": "learning",
+          "difficulty": 1,
+          "grade": 2,
+          "correct": true,
+          "sentence": "ὁ λόγος τοῦ ἀνθρώπου μένει.",
+          "translation": "The word of the man remains.",
+          "target_form": "τοῦ"
+        }
+      ]
+    },
+    "pres-act-ind::λύω::second_person.singular": {
+      "card_history": [
+        {
+          "date": "2026-09-07",
+          "card_type": "text_recall_grammar_g2e",
+          "status_at_review": "learning",
+          "difficulty": 1,
+          "grade": 3,
+          "correct": true,
+          "sentence": "λύεις τὸν ἄνθρωπον.",
+          "translation": "You release the man.",
+          "target_form": "λύεις"
+        }
+      ]
+    },
+    "pres-act-ind::λύω::third_person.singular": {
+      "card_history": [
+        {
+          "date": "2026-09-09",
+          "card_type": "rule_recall_grammar_g2e",
+          "status_at_review": "learning",
+          "difficulty": 2,
+          "grade": 3,
+          "correct": true,
+          "sentence": "ὁ θεὸς λύει τὸν λόγον.",
+          "translation": "God loosens the word.",
+          "target_form": "λύει"
+        }
+      ]
+    }
+  }
+}

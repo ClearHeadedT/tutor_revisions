@@ -1,6 +1,7 @@
 from data.curriculum_data.curriculum import Curriculum
 from data.student_data.student_data_helper_functions import student_data_status
 from .review_helper_functions import find_grammar_items_status, find_vocabulary_items_status, sort_vocabulary_by_due_date, sort_grammar_by_due_date
+from .review_init import austin_review
 
 # SIMILICITY RE-CAPTURED
 
@@ -25,12 +26,8 @@ curriculum = Curriculum()
 
 
 
-var = sort_grammar_by_due_date("austin", status="learning")
-
-
-
 
 def run_review():
-    print(var)
+    austin_review()
 
 

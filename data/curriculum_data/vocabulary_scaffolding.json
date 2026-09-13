@@ -1,0 +1,96 @@
+{
+  "structure": {
+    "verb": {
+      "name": "Verbs",
+      "sequence": 1,
+      "items": [
+        "λύω",
+        "γράφω",
+        "λέγω"
+      ]
+    },
+    "noun": {
+      "name": "Nouns",
+      "sequence": 2,
+      "items": [
+        "λόγος",
+        "θεός",
+        "ἄνθρωπος"
+      ]
+    }
+  },
+  "items": {
+    "λύω": {
+      "key": "λύω",
+      "part_of_speech": "verb",
+      "lexical_form": "λύω",
+      "gloss": "I loose, I release",
+      "reference_card": {
+        "card_type": "text_recall_vocabulary_g2e",
+        "sentence": "ὁ θεὸς λύει τὸν ἄνθρωπον.",
+        "translation": "God releases the man.",
+        "target_form": "λύει"
+      }
+    },
+    "γράφω": {
+      "key": "γράφω",
+      "part_of_speech": "verb",
+      "lexical_form": "γράφω",
+      "gloss": "I write",
+      "reference_card": {
+        "card_type": "text_recall_vocabulary_g2e",
+        "sentence": "ὁ ἄνθρωπος γράφει τὸν λόγον.",
+        "translation": "The man writes the word.",
+        "target_form": "γράφει"
+      }
+    },
+    "λέγω": {
+      "key": "λέγω",
+      "part_of_speech": "verb",
+      "lexical_form": "λέγω",
+      "gloss": "I say, I speak",
+      "reference_card": {
+        "card_type": "text_recall_vocabulary_g2e",
+        "sentence": "ὁ ἄνθρωπος λέγει τὸν λόγον τοῦ θεοῦ.",
+        "translation": "The man speaks the word of God.",
+        "target_form": "λέγει"
+      }
+    },
+    "λόγος": {
+      "key": "λόγος",
+      "part_of_speech": "noun",
+      "lexical_form": "λόγος, -ου, ὁ",
+      "gloss": "word, reason",
+      "reference_card": {
+        "card_type": "text_recall_vocabulary_g2e",
+        "sentence": "ὁ θεὸς λέγει τὸν λόγον.",
+        "translation": "God speaks the word.",
+        "target_form": "λόγον"
+      }
+    },
+    "θεός": {
+      "key": "θεός",
+      "part_of_speech": "noun",
+      "lexical_form": "θεός, -οῦ, ὁ",
+      "gloss": "god",
+      "reference_card": {
+        "card_type": "text_recall_vocabulary_g2e",
+        "sentence": "ὁ θεὸς γράφει τῷ ἀνθρώπῳ.",
+        "translation": "God writes to the man.",
+        "target_form": "θεὸς"
+      }
+    },
+    "ἄνθρωπος": {
+      "key": "ἄνθρωπος",
+      "part_of_speech": "noun",
+      "lexical_form": "ἄνθρωπος, -ου, ὁ",
+      "gloss": "human, person",
+      "reference_card": {
+        "card_type": "text_recall_vocabulary_g2e",
+        "sentence": "ὁ ἄνθρωπος γράφει τὸν λόγον.",
+        "translation": "The man writes the word.",
+        "target_form": "ἄνθρωπος"
+      }
+    }
+  }
+}

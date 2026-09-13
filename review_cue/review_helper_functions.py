@@ -1,39 +1,29 @@
 from datetime import date
-from data.student_data.student_data_helper_functions import student_data_status, load_student_card_data
+from data.student_data.student_data_helper_functions import (
+    student_data_status,
+    load_student_card_data,
+    load_grammar_scaffolding,
+    load_vocabulary_scaffolding,
+)
 
 
 def find_grammar_items_status(student_id):
-    student_data = student_data_status(student_id=student_id)
-    learned_items = find_learning_recursion("learned", student_data["grammar"])
-    learning_items = find_learning_recursion("learning", student_data["grammar"])
-    unseen_items = find_learning_recursion("unseen", student_data["grammar"])
+    progress = student_data_status(student_id=student_id)["grammar"]
+    scaffolding = load_grammar_scaffolding()
     return {
-        "learned": learned_items,
-        "learning": learning_items,
-        "unseen": unseen_items
+        "learned": {k: r for k, r in progress.items() if r["status"] == "learned"},
+        "learning": {k: r for k, r in progress.items() if r["status"] == "learning"},
+        "unseen": {k: {} for k in scaffolding["items"] if k not in progress}
     }
 
 def find_vocabulary_items_status(student_id):
-    student_data = student_data_status(student_id=student_id)
-    words = student_data["vocabulary"]["vocabulary"]
-    learned_items = {w: internals for w, internals in words.items() if internals["status"] == "learned"}
-    learning_items = {w: internals for w, internals in words.items() if internals["status"] == "learning"}
-    unseen_items = {w: internals for w, internals in words.items() if internals["status"] == "unseen"}
+    progress = student_data_status(student_id=student_id)["vocabulary"]
+    scaffolding = load_vocabulary_scaffolding()
     return {
-        "learned": learned_items,
-        "learning": learning_items,
-        "unseen": unseen_items
+        "learned": {k: r for k, r in progress.items() if r["status"] == "learned"},
+        "learning": {k: r for k, r in progress.items() if r["status"] == "learning"},
+        "unseen": {k: {} for k in scaffolding["items"] if k not in progress}
     }
-
-def find_learning_recursion(status, node):
-    results = []
-    if isinstance(node, dict):
-        if node.get("status") == status:
-            results.append(node)
-        for value in node.values():
-            results.extend(find_learning_recursion(status, value))
-    return results
-
 
 
 
@@ -61,27 +51,30 @@ def sort_grammar_by_due_date(student_id, status="learned"):
         return
     today = date.today()
     day_data_g_reviews = {}
-    for internals in items_by_status:
+    for key, internals in items_by_status.items():
         word_days_since_review = (today - date.fromisoformat(internals["last_reviewed"])).days
-        new_internals = dict(internals) 
+        new_internals = dict(internals)
         new_internals["prior_day_count"] = word_days_since_review
-        day_data_g_reviews[internals["key"]] = new_internals
+        day_data_g_reviews[key] = new_internals
     return dict(sorted(day_data_g_reviews.items(), key=lambda x: x[1]["prior_day_count"]))
 
 
 
-def card_history_for_items(student_id, due_reviews_list):
-    """Returns a dict showing card history for each item of input 'due_reviews_list' keyed by mutual ID"""
-    student_card_json = load_student_card_data(student_id=student_id)
-    cards_by_id = {}
-    for review in due_reviews_list:
-        cards_by_id[review["id"]] = student_card_json["id"]["card_history"]
-    return cards_by_id
+def card_history_for_items(student_id, due_reviews):
+    """Returns a dict showing card history for each item of input 'due_reviews' keyed by mutual key"""
+    cards = load_student_card_data(student_id=student_id)["cards"]
+    cards_by_key = {}
+    for key in due_reviews:
+        cards_by_key[key] = cards.get(key, {}).get("card_history", [])
+    return cards_by_key
 
 
 
 def sort_item_into_difficulty(item):
-    
+    card_type = None
+    if item["status"] == "learning":
+        card_type = "text_recall_vocabulary_g2e"
+    return card_type
 
 
 
@@ -127,4 +120,4 @@ def sort_item_into_difficulty(item):
 
 # Think about a combining function that takes multiple vocab/grammar elements into 1 LLM call coherent translation block?
 
-# Student needs progress in grammar tracked 
+# Student needs progress in grammar tracked

@@ -1,5 +1,5 @@
-from ..llm_calls.llm_constants import MAX_TOKENS, CARD_MODEL
-from ..llm_calls.client import make_client
+from llm_calls.llm_constants import MAX_TOKENS, CARD_MODEL
+from llm_calls.client import make_client
 
 def card_llm_combination(llm_instructions, formatted_item):
     client = make_client()
@@ -9,6 +9,9 @@ def card_llm_combination(llm_instructions, formatted_item):
         system=llm_instructions,
         messages=[{"role": "user", "content": formatted_item}],
     )
+    return response.content[0].text
 
+
+# need cards paired to their respective difficulties based on JSON student vocabulary data 
 
     

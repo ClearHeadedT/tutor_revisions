@@ -1,0 +1,479 @@
+{
+  "structure": {
+    "article": {
+      "name": "Definite Article",
+      "sequence": 1,
+      "difficulty_tier": 1,
+      "pos_lex_category": "article",
+      "morph_rule_description": "Twenty-four forms carrying first and second declension case endings across all three genders. It is the smallest complete display of the case-ending system, and the most frequent word in the corpus.",
+      "teaching_note": "No other word inflects like the article, so drill_lexemes is empty by nature rather than by omission. GrammarSummaries' Eight Noun Rules 2, 3 and 6 are all visible in this one chart: neuter nominative and accusative match, neuter plural ends in alpha, and masculine and neuter are identical in the genitive and dative.",
+      "drill_lexemes": [],
+      "source": [
+        { "resource": "GrammarSummaries", "chapter": "Definite Article", "header": "Overview", "page": null },
+        { "resource": "KAIROS", "chapter": "§1 Definite Article Endings", "header": "Overview", "page": 261 },
+        { "resource": "GrammarSummaries", "chapter": "Case Endings and Rules", "header": "Overview", "page": null }
+      ],
+      "paradigms": {
+        "article::ὁ": {
+          "type": "adjective",
+          "lexical_form": "ὁ",
+          "declension": "first_and_second",
+          "gnt_lemma_frequency": 19783,
+          "source": [
+            { "resource": "GrammarSummaries", "chapter": "Definite Article", "header": "Overview", "page": null },
+            { "resource": "KAIROS", "chapter": "§1 Definite Article Endings", "header": "Overview", "page": 261 }
+          ],
+          "slots": [
+            "article::ὁ::nominative.masculine.singular",
+            "article::ὁ::nominative.feminine.singular",
+            "article::ὁ::nominative.neuter.singular",
+            "article::ὁ::genitive.masculine.singular",
+            "article::ὁ::genitive.feminine.singular",
+            "article::ὁ::genitive.neuter.singular",
+            "article::ὁ::dative.masculine.singular",
+            "article::ὁ::dative.feminine.singular",
+            "article::ὁ::dative.neuter.singular",
+            "article::ὁ::accusative.masculine.singular",
+            "article::ὁ::accusative.feminine.singular",
+            "article::ὁ::accusative.neuter.singular",
+            "article::ὁ::nominative.masculine.plural",
+            "article::ὁ::nominative.feminine.plural",
+            "article::ὁ::nominative.neuter.plural",
+            "article::ὁ::genitive.masculine.plural",
+            "article::ὁ::genitive.feminine.plural",
+            "article::ὁ::genitive.neuter.plural",
+            "article::ὁ::dative.masculine.plural",
+            "article::ὁ::dative.feminine.plural",
+            "article::ὁ::dative.neuter.plural",
+            "article::ὁ::accusative.masculine.plural",
+            "article::ὁ::accusative.feminine.plural",
+            "article::ὁ::accusative.neuter.plural"
+          ]
+        }
+      }
+    },
+    "decl2": {
+      "name": "Second Declension",
+      "sequence": 2,
+      "difficulty_tier": 1,
+      "pos_lex_category": "noun",
+      "morph_rule_description": "Stems ending in omicron. Masculine nouns take -ος in the nominative singular, neuter nouns -ον, and the two differ only in the nominative and accusative.",
+      "teaching_note": "Taught before the first declension because its endings are the ones the article and the 2-1-2 adjective reuse. Both drill lexemes were confirmed against the corpus to inflect exactly like λόγος.",
+      "drill_lexemes": ["θεός", "ἄνθρωπος"],
+      "source": [
+        { "resource": "GrammarSummaries", "chapter": "First and Second Declension Nouns", "header": "Overview", "page": null },
+        { "resource": "KAIROS", "chapter": "§3 Second Declension or “o” Class Declension", "header": "Overview", "page": 261 },
+        { "resource": "GrammarSummaries", "chapter": "Case Endings and Rules", "header": "Overview", "page": null }
+      ],
+      "paradigms": {
+        "decl2::λόγος": {
+          "type": "substantive",
+          "lexical_form": "λόγος",
+          "declension": "second",
+          "gender": "masculine",
+          "gnt_lemma_frequency": 331,
+          "source": [
+            { "resource": "GrammarSummaries", "chapter": "First and Second Declension Nouns", "header": "Overview", "page": null },
+            { "resource": "KAIROS", "chapter": "§3 Second Declension or “o” Class Declension", "header": "Overview", "page": 261 }
+          ],
+          "slots": [
+            "decl2::λόγος::nominative.singular",
+            "decl2::λόγος::genitive.singular",
+            "decl2::λόγος::dative.singular",
+            "decl2::λόγος::accusative.singular",
+            "decl2::λόγος::nominative.plural",
+            "decl2::λόγος::genitive.plural",
+            "decl2::λόγος::dative.plural",
+            "decl2::λόγος::accusative.plural"
+          ]
+        }
+      }
+    },
+    "pres-act-ind": {
+      "name": "Present Active Indicative",
+      "sequence": 10,
+      "difficulty_tier": 1,
+      "pos_lex_category": "verb",
+      "morph_rule_description": "Unaugmented present stem, connecting vowel omicron or epsilon, primary active endings. This is the precedent every other verbal form is measured against.",
+      "teaching_note": "GrammarSummaries' Master Verb Chart supplies the recipe columns directly: no augment, present stem, no tense formative, ο/ε connecting vowel, primary active endings.",
+      "morph_recipe": {
+        "tense_stem": "present",
+        "connecting_vowel": "ο/ε",
+        "personal_endings": "primary_active"
+      },
+      "drill_lexemes": ["πιστεύω", "γράφω"],
+      "source": [
+        { "resource": "GrammarSummaries", "chapter": "Indicative", "header": "Overview", "page": null },
+        { "resource": "BBGG", "chapter": "Indicative", "header": "Overview", "page": 435 },
+        { "resource": "GrammarSummaries", "chapter": "Master Verb Chart", "header": "Overview", "page": null }
+      ],
+      "paradigms": {
+        "pres-act-ind::λύω": {
+          "type": "verb",
+          "lexical_form": "λύω",
+          "tense": "present",
+          "aspect": "continuous",
+          "voice": "active",
+          "mood": "indicative",
+          "gnt_lemma_frequency": 42,
+          "source": [
+            { "resource": "GrammarSummaries", "chapter": "Indicative", "header": "Overview", "page": null },
+            { "resource": "BBGG", "chapter": "Indicative", "header": "Overview", "page": 435 }
+          ],
+          "slots": [
+            "pres-act-ind::λύω::first_person.singular",
+            "pres-act-ind::λύω::second_person.singular",
+            "pres-act-ind::λύω::third_person.singular",
+            "pres-act-ind::λύω::first_person.plural",
+            "pres-act-ind::λύω::second_person.plural",
+            "pres-act-ind::λύω::third_person.plural"
+          ]
+        }
+      }
+    }
+  },
+  "items": {
+    "article::ὁ::nominative.masculine.singular": {
+      "key": "article::ὁ::nominative.masculine.singular",
+      "parent": "article::ὁ",
+      "rule": "article",
+      "form": "ὁ",
+      "parsing": "nominative masculine singular",
+      "features": { "case": "nominative", "gender": "masculine", "number": "singular" },
+      "lexical_form": "ὁ"
+    },
+    "article::ὁ::nominative.feminine.singular": {
+      "key": "article::ὁ::nominative.feminine.singular",
+      "parent": "article::ὁ",
+      "rule": "article",
+      "form": "ἡ",
+      "parsing": "nominative feminine singular",
+      "features": { "case": "nominative", "gender": "feminine", "number": "singular" },
+      "lexical_form": "ὁ"
+    },
+    "article::ὁ::nominative.neuter.singular": {
+      "key": "article::ὁ::nominative.neuter.singular",
+      "parent": "article::ὁ",
+      "rule": "article",
+      "form": "τό",
+      "parsing": "nominative neuter singular",
+      "features": { "case": "nominative", "gender": "neuter", "number": "singular" },
+      "lexical_form": "ὁ"
+    },
+    "article::ὁ::genitive.masculine.singular": {
+      "key": "article::ὁ::genitive.masculine.singular",
+      "parent": "article::ὁ",
+      "rule": "article",
+      "form": "τοῦ",
+      "parsing": "genitive masculine singular",
+      "features": { "case": "genitive", "gender": "masculine", "number": "singular" },
+      "lexical_form": "ὁ"
+    },
+    "article::ὁ::genitive.feminine.singular": {
+      "key": "article::ὁ::genitive.feminine.singular",
+      "parent": "article::ὁ",
+      "rule": "article",
+      "form": "τῆς",
+      "parsing": "genitive feminine singular",
+      "features": { "case": "genitive", "gender": "feminine", "number": "singular" },
+      "lexical_form": "ὁ"
+    },
+    "article::ὁ::genitive.neuter.singular": {
+      "key": "article::ὁ::genitive.neuter.singular",
+      "parent": "article::ὁ",
+      "rule": "article",
+      "form": "τοῦ",
+      "parsing": "genitive neuter singular",
+      "features": { "case": "genitive", "gender": "neuter", "number": "singular" },
+      "lexical_form": "ὁ"
+    },
+    "article::ὁ::dative.masculine.singular": {
+      "key": "article::ὁ::dative.masculine.singular",
+      "parent": "article::ὁ",
+      "rule": "article",
+      "form": "τῷ",
+      "parsing": "dative masculine singular",
+      "features": { "case": "dative", "gender": "masculine", "number": "singular" },
+      "lexical_form": "ὁ"
+    },
+    "article::ὁ::dative.feminine.singular": {
+      "key": "article::ὁ::dative.feminine.singular",
+      "parent": "article::ὁ",
+      "rule": "article",
+      "form": "τῇ",
+      "parsing": "dative feminine singular",
+      "features": { "case": "dative", "gender": "feminine", "number": "singular" },
+      "lexical_form": "ὁ"
+    },
+    "article::ὁ::dative.neuter.singular": {
+      "key": "article::ὁ::dative.neuter.singular",
+      "parent": "article::ὁ",
+      "rule": "article",
+      "form": "τῷ",
+      "parsing": "dative neuter singular",
+      "features": { "case": "dative", "gender": "neuter", "number": "singular" },
+      "lexical_form": "ὁ"
+    },
+    "article::ὁ::accusative.masculine.singular": {
+      "key": "article::ὁ::accusative.masculine.singular",
+      "parent": "article::ὁ",
+      "rule": "article",
+      "form": "τόν",
+      "parsing": "accusative masculine singular",
+      "features": { "case": "accusative", "gender": "masculine", "number": "singular" },
+      "lexical_form": "ὁ"
+    },
+    "article::ὁ::accusative.feminine.singular": {
+      "key": "article::ὁ::accusative.feminine.singular",
+      "parent": "article::ὁ",
+      "rule": "article",
+      "form": "τήν",
+      "parsing": "accusative feminine singular",
+      "features": { "case": "accusative", "gender": "feminine", "number": "singular" },
+      "lexical_form": "ὁ"
+    },
+    "article::ὁ::accusative.neuter.singular": {
+      "key": "article::ὁ::accusative.neuter.singular",
+      "parent": "article::ὁ",
+      "rule": "article",
+      "form": "τό",
+      "parsing": "accusative neuter singular",
+      "features": { "case": "accusative", "gender": "neuter", "number": "singular" },
+      "lexical_form": "ὁ"
+    },
+    "article::ὁ::nominative.masculine.plural": {
+      "key": "article::ὁ::nominative.masculine.plural",
+      "parent": "article::ὁ",
+      "rule": "article",
+      "form": "οἱ",
+      "parsing": "nominative masculine plural",
+      "features": { "case": "nominative", "gender": "masculine", "number": "plural" },
+      "lexical_form": "ὁ"
+    },
+    "article::ὁ::nominative.feminine.plural": {
+      "key": "article::ὁ::nominative.feminine.plural",
+      "parent": "article::ὁ",
+      "rule": "article",
+      "form": "αἱ",
+      "parsing": "nominative feminine plural",
+      "features": { "case": "nominative", "gender": "feminine", "number": "plural" },
+      "lexical_form": "ὁ"
+    },
+    "article::ὁ::nominative.neuter.plural": {
+      "key": "article::ὁ::nominative.neuter.plural",
+      "parent": "article::ὁ",
+      "rule": "article",
+      "form": "τά",
+      "parsing": "nominative neuter plural",
+      "features": { "case": "nominative", "gender": "neuter", "number": "plural" },
+      "lexical_form": "ὁ"
+    },
+    "article::ὁ::genitive.masculine.plural": {
+      "key": "article::ὁ::genitive.masculine.plural",
+      "parent": "article::ὁ",
+      "rule": "article",
+      "form": "τῶν",
+      "parsing": "genitive masculine plural",
+      "features": { "case": "genitive", "gender": "masculine", "number": "plural" },
+      "lexical_form": "ὁ"
+    },
+    "article::ὁ::genitive.feminine.plural": {
+      "key": "article::ὁ::genitive.feminine.plural",
+      "parent": "article::ὁ",
+      "rule": "article",
+      "form": "τῶν",
+      "parsing": "genitive feminine plural",
+      "features": { "case": "genitive", "gender": "feminine", "number": "plural" },
+      "lexical_form": "ὁ"
+    },
+    "article::ὁ::genitive.neuter.plural": {
+      "key": "article::ὁ::genitive.neuter.plural",
+      "parent": "article::ὁ",
+      "rule": "article",
+      "form": "τῶν",
+      "parsing": "genitive neuter plural",
+      "features": { "case": "genitive", "gender": "neuter", "number": "plural" },
+      "lexical_form": "ὁ"
+    },
+    "article::ὁ::dative.masculine.plural": {
+      "key": "article::ὁ::dative.masculine.plural",
+      "parent": "article::ὁ",
+      "rule": "article",
+      "form": "τοῖς",
+      "parsing": "dative masculine plural",
+      "features": { "case": "dative", "gender": "masculine", "number": "plural" },
+      "lexical_form": "ὁ"
+    },
+    "article::ὁ::dative.feminine.plural": {
+      "key": "article::ὁ::dative.feminine.plural",
+      "parent": "article::ὁ",
+      "rule": "article",
+      "form": "ταῖς",
+      "parsing": "dative feminine plural",
+      "features": { "case": "dative", "gender": "feminine", "number": "plural" },
+      "lexical_form": "ὁ"
+    },
+    "article::ὁ::dative.neuter.plural": {
+      "key": "article::ὁ::dative.neuter.plural",
+      "parent": "article::ὁ",
+      "rule": "article",
+      "form": "τοῖς",
+      "parsing": "dative neuter plural",
+      "features": { "case": "dative", "gender": "neuter", "number": "plural" },
+      "lexical_form": "ὁ"
+    },
+    "article::ὁ::accusative.masculine.plural": {
+      "key": "article::ὁ::accusative.masculine.plural",
+      "parent": "article::ὁ",
+      "rule": "article",
+      "form": "τούς",
+      "parsing": "accusative masculine plural",
+      "features": { "case": "accusative", "gender": "masculine", "number": "plural" },
+      "lexical_form": "ὁ"
+    },
+    "article::ὁ::accusative.feminine.plural": {
+      "key": "article::ὁ::accusative.feminine.plural",
+      "parent": "article::ὁ",
+      "rule": "article",
+      "form": "τάς",
+      "parsing": "accusative feminine plural",
+      "features": { "case": "accusative", "gender": "feminine", "number": "plural" },
+      "lexical_form": "ὁ"
+    },
+    "article::ὁ::accusative.neuter.plural": {
+      "key": "article::ὁ::accusative.neuter.plural",
+      "parent": "article::ὁ",
+      "rule": "article",
+      "form": "τά",
+      "parsing": "accusative neuter plural",
+      "features": { "case": "accusative", "gender": "neuter", "number": "plural" },
+      "lexical_form": "ὁ"
+    },
+    "decl2::λόγος::nominative.singular": {
+      "key": "decl2::λόγος::nominative.singular",
+      "parent": "decl2::λόγος",
+      "rule": "decl2",
+      "form": "λόγος",
+      "parsing": "nominative singular",
+      "features": { "case": "nominative", "number": "singular" },
+      "lexical_form": "λόγος"
+    },
+    "decl2::λόγος::genitive.singular": {
+      "key": "decl2::λόγος::genitive.singular",
+      "parent": "decl2::λόγος",
+      "rule": "decl2",
+      "form": "λόγου",
+      "parsing": "genitive singular",
+      "features": { "case": "genitive", "number": "singular" },
+      "lexical_form": "λόγος"
+    },
+    "decl2::λόγος::dative.singular": {
+      "key": "decl2::λόγος::dative.singular",
+      "parent": "decl2::λόγος",
+      "rule": "decl2",
+      "form": "λόγῳ",
+      "parsing": "dative singular",
+      "features": { "case": "dative", "number": "singular" },
+      "lexical_form": "λόγος"
+    },
+    "decl2::λόγος::accusative.singular": {
+      "key": "decl2::λόγος::accusative.singular",
+      "parent": "decl2::λόγος",
+      "rule": "decl2",
+      "form": "λόγον",
+      "parsing": "accusative singular",
+      "features": { "case": "accusative", "number": "singular" },
+      "lexical_form": "λόγος"
+    },
+    "decl2::λόγος::nominative.plural": {
+      "key": "decl2::λόγος::nominative.plural",
+      "parent": "decl2::λόγος",
+      "rule": "decl2",
+      "form": "λόγοι",
+      "parsing": "nominative plural",
+      "features": { "case": "nominative", "number": "plural" },
+      "lexical_form": "λόγος"
+    },
+    "decl2::λόγος::genitive.plural": {
+      "key": "decl2::λόγος::genitive.plural",
+      "parent": "decl2::λόγος",
+      "rule": "decl2",
+      "form": "λόγων",
+      "parsing": "genitive plural",
+      "features": { "case": "genitive", "number": "plural" },
+      "lexical_form": "λόγος"
+    },
+    "decl2::λόγος::dative.plural": {
+      "key": "decl2::λόγος::dative.plural",
+      "parent": "decl2::λόγος",
+      "rule": "decl2",
+      "form": "λόγοις",
+      "parsing": "dative plural",
+      "features": { "case": "dative", "number": "plural" },
+      "lexical_form": "λόγος"
+    },
+    "decl2::λόγος::accusative.plural": {
+      "key": "decl2::λόγος::accusative.plural",
+      "parent": "decl2::λόγος",
+      "rule": "decl2",
+      "form": "λόγους",
+      "parsing": "accusative plural",
+      "features": { "case": "accusative", "number": "plural" },
+      "lexical_form": "λόγος"
+    },
+    "pres-act-ind::λύω::first_person.singular": {
+      "key": "pres-act-ind::λύω::first_person.singular",
+      "parent": "pres-act-ind::λύω",
+      "rule": "pres-act-ind",
+      "form": "λύω",
+      "parsing": "present active indicative 1st person singular",
+      "features": { "person": "first_person", "number": "singular", "tense": "present", "voice": "active", "mood": "indicative" },
+      "lexical_form": "λύω"
+    },
+    "pres-act-ind::λύω::second_person.singular": {
+      "key": "pres-act-ind::λύω::second_person.singular",
+      "parent": "pres-act-ind::λύω",
+      "rule": "pres-act-ind",
+      "form": "λύεις",
+      "parsing": "present active indicative 2nd person singular",
+      "features": { "person": "second_person", "number": "singular", "tense": "present", "voice": "active", "mood": "indicative" },
+      "lexical_form": "λύω"
+    },
+    "pres-act-ind::λύω::third_person.singular": {
+      "key": "pres-act-ind::λύω::third_person.singular",
+      "parent": "pres-act-ind::λύω",
+      "rule": "pres-act-ind",
+      "form": "λύει",
+      "parsing": "present active indicative 3rd person singular",
+      "features": { "person": "third_person", "number": "singular", "tense": "present", "voice": "active", "mood": "indicative" },
+      "lexical_form": "λύω"
+    },
+    "pres-act-ind::λύω::first_person.plural": {
+      "key": "pres-act-ind::λύω::first_person.plural",
+      "parent": "pres-act-ind::λύω",
+      "rule": "pres-act-ind",
+      "form": "λύομεν",
+      "parsing": "present active indicative 1st person plural",
+      "features": { "person": "first_person", "number": "plural", "tense": "present", "voice": "active", "mood": "indicative" },
+      "lexical_form": "λύω"
+    },
+    "pres-act-ind::λύω::second_person.plural": {
+      "key": "pres-act-ind::λύω::second_person.plural",
+      "parent": "pres-act-ind::λύω",
+      "rule": "pres-act-ind",
+      "form": "λύετε",
+      "parsing": "present active indicative 2nd person plural",
+      "features": { "person": "second_person", "number": "plural", "tense": "present", "voice": "active", "mood": "indicative" },
+      "lexical_form": "λύω"
+    },
+    "pres-act-ind::λύω::third_person.plural": {
+      "key": "pres-act-ind::λύω::third_person.plural",
+      "parent": "pres-act-ind::λύω",
+      "rule": "pres-act-ind",
+      "form": "λύουσι(ν)",
+      "parsing": "present active indicative 3rd person plural",
+      "features": { "person": "third_person", "number": "plural", "tense": "present", "voice": "active", "mood": "indicative" },
+      "lexical_form": "λύω"
+    }
+  }
+}

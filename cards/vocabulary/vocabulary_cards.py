@@ -1,20 +1,20 @@
-from ...llm_calls.instructions import (
+from llm_calls.instructions import (
     GENERAL_CARD_INSTRUCTIONS,
     instructions_TextRecallVocabularyG2E,
     instructions_ClozeVocabularyE2G,
 )
-from ..card_utils import card_llm_combination
+from cards.card_utils import card_llm_combination
 
 
 def text_recall_vocabulary_g2e(item):
     """Student must correctly identify item in the context of a Gk sentence"""
     llm_instructions = GENERAL_CARD_INSTRUCTIONS + instructions_TextRecallVocabularyG2E
     student_instructions = "Identify the English translation of the following vocabulary item:\n\n"
-    key = next(iter(item))
+    key = item["key"]
     formatted_review_item = f"'{key}'. Gloss: {item["gloss"]}"
     llm_call = card_llm_combination(llm_instructions=llm_instructions, formatted_item=formatted_review_item)
     front_of_card = student_instructions + llm_call + "\n\n" + key
-    back_of_card = f"{key}: {item["lexical_form"]}"
+    back_of_card = f"{item["lexical_form"]}: {item["gloss"]}"
     return (front_of_card, back_of_card)
 
 
