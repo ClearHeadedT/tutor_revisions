@@ -1,8 +1,14 @@
 from datetime import date
 import json
-from cards.vocabulary.vocabulary_cards import text_recall_vocabulary_g2e, cloze_vocabulary_e2g, cloze_vocabulary_e2g
 from cards.grammar.grammar_cards import text_recall_grammar_g2e
 from cards.syntax.syntax_cards import function_recall_syntax_g2e
+from cards.card_utils import (
+    review_card_sort_austin,
+    card_instructions_loader,
+    card_assembler_loader,
+    format_review_item,
+    card_llm_combination,
+)
 from data.student_data.student_data_helper_functions import (
     load_grammar_scaffolding,
     load_vocabulary_scaffolding,
@@ -64,6 +70,27 @@ class StudentData:
         return card_type
 
 
+    def austin_form_initial_cards(self, new_items):
+        pass
+
+
+
+        # necessary variables - 
+            # γράφω
+            #     "key": "γράφω",
+                # "part_of_speech": "verb",
+                # "lexical_form": "γράφω",
+                # "gloss": "I write",
+                # "reference_card": {
+                #     "card_type": "text_recall_vocabulary_g2e",
+                #     "sentence": "ὁ ἄνθρωπος γράφει τὸν λόγον.",
+                #     "translation": "The man writes the word.",
+                #     "target_form": "γράφει"
+
+
+    
+
+
 
 
 class StudentGrammar(StudentData):
@@ -88,34 +115,24 @@ class StudentVocabulary(StudentData):
     def sort_vocabulary_by_due_date(self):
         return sort_items_by_due_date(self.student_vocabulary_data)
 
-    def vocabulary_review(self):
-        for item, _ in self.sort_vocabulary_by_due_date().items():
-            scaffolding_v_item = self.vocabulary_scaffolding["items"][item]
-            card_history_v_item = self.student_vocabulary_data[item]
-            print(scaffolding_v_item, "\n")
 
-    def initial_vocabulary_formulation(self):
-        cards = []
-        for _, internals in self.vocabulary_scaffolding["items"].items():
-            cards.append(text_recall_vocabulary_g2e(internals))
-        return(cards)
+    
 
-    def _sort_vocabulary_review_austin(self, vocabulary_item_keys):
-        for key in vocabulary_item_keys:
-            history = self.student_cards_by_item[key]["card_history"]
-            current_item = history[-1]
-            if (current_item["status_at_review"] == "learning"
-                and current_item["correct"] == False
-                and current_item["card_type"] == "text_recall_vocabulary_g2e"):
-                return text_recall_vocabulary_g2e
-            elif (current_item["status_at_review"] == "learning"
-                and current_item["correct"] == False
-                and current_item["card_type"] == "cloze_vocabulary_e2g"
-                and len(history) >= 2
-                and history[-2]["correct"] == False):
-                return text_recall_vocabulary_g2e
-            else:
-                return cloze_vocabulary_e2g
+    def austin_card_form_from_reviews(self):
+        due_reviews = list(self.sort_vocabulary_by_due_date())
+        relevant_review_cards = review_card_sort_austin(self=self, item_keys=due_reviews, domain_type="vocabulary")
+        new_cards = []
+        for review_key, card_type in zip(due_reviews, relevant_review_cards):
+            item = self.vocabulary_scaffolding["items"][review_key]
+            card_history = self.student_cards_by_item[review_key]["card_history"]
+            instructions = card_instructions_loader(desired_card_type=card_type)
+            formatted_item = format_review_item(item=item, card_history=card_history)
+            llm_reply = card_llm_combination(llm_instructions=instructions, item=formatted_item)
+            assembler = card_assembler_loader(desired_card_type=card_type)
+            new_cards.append(assembler(item, llm_reply))
+        return new_cards
+                
+
         
 
 
@@ -148,4 +165,15 @@ def sort_items_by_due_date(items):
         new_internals["prior_day_count"] = days_since_review
         day_data_reviews[key] = new_internals
     return dict(sorted(day_data_reviews.items(), key=lambda x: x[1]["prior_day_count"], reverse=True))
+
+
+
+
+
+
+
+
+
+
+
 

@@ -16,7 +16,7 @@ def austin_review():
     sorted_s_reviews = austin_syntax_class.sort_syntax_by_due_date()
 
 
-    austin_vocabulary_class.vocabulary_review()
+    austin_vocabulary_class.austin_card_form_from_reviews()
 
 
     # for item, internals in sorted_v_reviews.items():

@@ -11,11 +11,34 @@ GENERAL_CARD_INSTRUCTIONS = """ You are an expert Koine Greek linguist and a spe
   5. NATURAL CONTEXT — the sentence must be semantically coherent, idiomatic Koine, and illustrate the target's meaning naturally.
   6. VARIABILITY, SUBORDINATED — vary lexical choice, sentence shape, and grammatical texture across cards, but always secondary to fidelity and atomic scope.
   7. DIFFICULTY MATCHES LEVEL — you are supplied with the current level of the student - beginner: predictable, simple sentence form; intermediate+: vary cases, tenses, moods, participles, prepositional phrases, relative clauses, conjunctions, word order — only within what constraint 4 permits.
-  8. REASON BEFORE YOU WRITE — always give 1-2 short sentences of reasoning first (semantic context chosen and why; above beginner, which grammatical variation) for audit purposes, never shown to the student, never skipped.
+  8. REASON BEFORE YOU WRITE — work the REFLECTION below before you compose, and show that work in "reasoning": 1-2 short sentences of compressed analysis ending in a decision. Not a list of observations, not a restatement of these constraints. Audit only, never shown to the student, never skipped.
   9. THE GLOSS IS CONTEXTUAL AND SHORT — where a gloss is requested, 1-5 words, rendering the target as used in this sentence, not simply the glossary default.
   10. NO NEW OR CONTROVERSIAL DOCTRINE — keep sentences theologically unobjectionable and small in scope; nothing sexual, gratuitously violent, politically inflammatory, or otherwise unsuitable for a study card.
   11. BUILD ON THE REFERENCE, DO NOT REPEAT IT — you are given one hand-vetted reference card for this item, and possibly the last few generations. The reference sets the standard for quality, register, and constraint compliance; match it. Do not reuse its scene, its vocabulary choices, or its sentence shape, and do not paraphrase or template-swap any recent generation. Write something genuinely different within the same constraints.
   12. FIDELITY ABOVE FLUENCY — where given data conflicts with your own recollection of Greek, follow the data; the rule's stated formation, the paradigm's forms, and the student's vocabulary list are authoritative.
+  13. NO RECOGNISABLE TEXT — do not reproduce or lightly reword a passage of the Greek New Testament or the Septuagint. Its people, places, objects and ideas are all yours to use; its wording is not. This is not a matter of taste. A student who recognises the line recalls the line instead of retrieving the item, and the card goes on looking correct while testing nothing.
+
+  REFLECTION — work through this before composing. It is where a card stops being merely correct and starts being worth meeting.
+
+  First, is the card sound?
+    Where does this item's sense actually live? A concrete noun is recovered from what is done with it, or from what its absence costs; an abstract noun from the contrast it stands against; a verb from its object and its outcome; an inflected form from the absence of any competing parse. Find that anchor before you look for a scene — it tells you what the scene has to contain.
+    What is the one competing reading a student could land on instead, and does your clause shut it out?
+    Of the words this student knows, which earn their place here? The question is not which are permitted. A scene assembled from the twenty commonest words is a scene nobody remembers.
+    Is there exactly one thing being retrieved?
+    Does your English translation hand the answer over?
+
+  Then, is the card worth meeting?
+    THE SWAP TEST — could another word of the same class stand where your target stands and leave the sentence intact? If so you have written a frame, not a card. Rebuild until the target is the hinge the whole thing turns on: take it away and the scene should collapse.
+    Whose situation is this, and what do they want? An agent with a motive is remembered. A subject, a verb and an object are not.
+    What can be seen, heard, or handled here? Concrete and imageable material is recalled far better than abstract statement, and Koine is a concrete language — use that.
+    What is at stake, in motion, or a little unexpected? A small surprise aids recall, so long as the scene stays coherent and stays inside constraint 10.
+    Would a student meeting this card for the fortieth time still find it worth reading? They will meet it that often.
+
+  PRECEDENCE — this REFLECTION is subordinate, and it will pull against the constraints above. Where it does, it yields.
+    Ahead of it stand the thirteen hard constraints. No amount of vividness buys an uncovered form, an unknown word, a second retrieval demand, or a doctrinally loaded scene.
+    Ahead of everything stands real, accurate Koine. Reaching for an imaginative scene is precisely what drives writing into Greek no Koine author would have produced — grammatical on paper but alien in idiom, or strained after the unusual until it is no longer the language. The student must be able to meet this construction in the corpus.
+    A flat sentence in real Koine is a poor card. A vivid sentence in Greek that was never written is not a card at all; it is a fault, and it teaches the student something false.
+    Correct Koine first, then the constraints, then make it worth reading. The room those leave is far larger than a timid writer uses — but it is bounded room.
 
   OUTPUT FORMAT — return ONLY a JSON object wrapped in triple backticks, with nothing before or after it:
 
@@ -36,11 +59,57 @@ GENERAL_CARD_INSTRUCTIONS = """ You are an expert Koine Greek linguist and a spe
   As for specific card generation instructions, here are the parameters to follow:
 """
 
-instructions_cap = "Here is the relevant item for review:"
+instructions_cap = """The user message is a JSON object carrying:
+  "item"                — the item under review and everything known about it, including its hand-vetted reference card
+  "recent_generations"  — cards already produced for this item; constraint 11 forbids repeating or paraphrasing them
+  "student"             — where this student currently stands:
+      "level"              — "beginner", "beyond_beginner", or "advanced"; this is the level constraint 7 refers to
+      "concepts_learned"   — the grammatical and syntactic categories already covered; constraint 4 binds you to these and to nothing outside them
+      "vocabulary_learned" — the words available to you, or "Not Applicable"
+
+BEGINNER — one short main clause. Present or imperfect indicative, explicit subject where it helps, no participles, no subordination. Nothing in the clause should need decoding except the target.
+BEYOND_BEGINNER — the full range permitted by "concepts_learned": vary case, tense, mood and word order, and use prepositional phrases and subordinate clauses. Reach for this range rather than staying safe; a card built from bare elementary vocabulary at this level teaches less than it could.
+ADVANCED — write Koine as the corpus actually runs. Participial chains, genitive absolutes, indirect discourse, correlative and relative structures, marked word order — whatever "concepts_learned" permits. The sentence should read as prose a student will actually meet, not as a drill.
+
+Whatever the level, the target itself stays unambiguous. Raising the level raises the surrounding texture, never the difficulty of identifying what is being asked.
+
+When "vocabulary_learned" is "Not Applicable" no explicit word list is available. Judge what the student can read from "level" and "concepts_learned", and stay well inside it rather than at its edge.
+
+Here is the relevant item for review:"""
 
 
 instructions_TextRecallVocabularyG2E = """CARD TYPE: Text Recall, Vocabulary, Greek-to-English (difficulty 1/4).
 The student reads the sentence and recalls what the target word means. The sentence is the only cue, so the surrounding context must make the target's sense recoverable without giving it away outright. Your sentence does not necessarily have to use the item in lexical form; it can vary according to best usage contextually as long as the form is reasonably recognizable since the student has access to the lexical form.
+
+EXAMPLES — one card of this type at each level, all for an unrelated item, ἄρτος. You write ONE card; the three stand here only to show what changes with level and what does not.
+beginner:
+```json
+{
+  "reasoning": "Bread is recovered from need rather than description — what a hungry man asks for names it faster than any scene of eating. A beggar puts an agent with a motive inside the one-clause limit, and no other noun fills that request.",
+  "sentence": "ὁ πτωχὸς αἰτεῖ ἄρτον.",
+  "translation": "The beggar asks for bread.",
+  "target_form": "ἄρτον"
+}
+```
+beyond_beginner:
+```json
+{
+  "reasoning": "Same anchor pressed harder: the lack and its cost sit in adjacent clauses, so the word is defined by what its absence does. Children on a road put something at stake, and the imperfect pair is within this student's reach.",
+  "sentence": "οὐκ εἴχομεν ἄρτον ἐν τῇ ὁδῷ, καὶ ἐπείνων οἱ παῖδες.",
+  "translation": "We had no bread on the road, and the children were hungry.",
+  "target_form": "ἄρτον"
+}
+```
+advanced:
+```json
+{
+  "reasoning": "Concealment implies something portable, edible and worth taking; the soldiers supply the motive without a word of explanation. Genitive absolute and purpose clause are the texture this student reads, and the scene collapses if the bread is replaced.",
+  "sentence": "τοῦ ἡλίου δύνοντος, ἡ γυνὴ ἔκρυψεν τὸν ἄρτον ὑπὸ τὸ ἱμάτιον, ἵνα μὴ ἴδωσιν οἱ στρατιῶται.",
+  "translation": "As the sun was setting, the woman hid the bread under her cloak, so that the soldiers would not see it.",
+  "target_form": "ἄρτον"
+}
+```
+What holds across all three: the target is the hinge, and removing it collapses the scene. What changes is only the surrounding texture. Do not carry these scenes, their vocabulary, or their shapes into your own card — your item, its supplied data, and the student block decide what you write.
 """ + instructions_cap
 
 instructions_TextRecallGrammarG2E = """CARD TYPE: Text Recall, Grammar, Greek-to-English (difficulty 1/4).
