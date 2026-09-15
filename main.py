@@ -1,4 +1,5 @@
-from review_cue.review import run_review
 
+from text_fabric.fabric_functions import word_enrichment
 
-run_review()
+word = "ῥῆμα"
+word_enrichment(word=word)

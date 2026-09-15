@@ -59,6 +59,30 @@ GENERAL_CARD_INSTRUCTIONS = """ You are an expert Koine Greek linguist and a spe
   As for specific card generation instructions, here are the parameters to follow:
 """
 
+
+
+
+
+    # Provides concise instructions on word interpretation for lexical-semantic analysis and sentence formation
+        # Sense domains 
+        # Relevant word fallacies 
+            # (there's more but these are most relevant to the immediate task)
+            # The Root Fallacy
+            # Semantic Obsolescence
+            # False Assumptions About Technical Meaning
+            # Illegitimate Totality Transfer
+            # The One-Meaning Fallacy
+            # Unwarranted Equating of a Word and its Translation
+            # Neglected Context
+        # Instructing it to keep note of these upon review and card/word formulation
+
+
+
+
+
+
+
+
 instructions_cap = """The user message is a JSON object carrying:
   "item"                — the item under review and everything known about it, including its hand-vetted reference card
   "recent_generations"  — cards already produced for this item; constraint 11 forbids repeating or paraphrasing them

@@ -71,7 +71,20 @@ class StudentData:
 
 
     def austin_form_initial_cards(self, new_items):
-        pass
+        for item in new_items:
+
+            card_data = {
+                "key": item["key"],
+                "part_of_speech": item["part_of_speech"],
+                "lexical_form": item["lexical_form"],
+                "gloss": item["gloss"],
+                "reference_card": {
+                    "card_type": item["card_type"],
+                    "sentence": item["sentence"],
+                    "translation": item["translation"],
+                    "target_form": item["target_form"]
+                }
+            }
 
 
 
