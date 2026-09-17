@@ -1,0 +1,257 @@
+{
+  "λόγος": {
+    "lexical_entry": "ὁ λόγος",
+    "tf_lexical_info": {
+      "lemma": "λόγος",
+      "part_of_speech": "noun",
+      "gloss": "word, speech",
+      "frequency": 331
+    },
+    "ln_sense_info": {
+      "summary": "λόγος: primary sense 33.98 (201 of 351 tagged occurrences, 33 Communication / F Speak, Talk). Secondary senses: 33.260 (89x), 33.99 (29x), 57.228 (9x), 89.18 (6x), 33.100 (6x), 33.51 (4x), 13.115 (3x), 56.7 (1x), 31.2 (1x), 30.13 (1x), 28.25 (1x).",
+      "primary_sense": {
+        "ln": "33.98",
+        "occurrences": 201,
+        "share": 0.57,
+        "full_entry": "ῥῆμαb, τος n; λόγοςa, ου m (derivative of λέγωa ‘to say,’ 33.69): that which has been stated or said, with primary focus upon the content of the communication—‘word, saying, message, statement, question.’\nῥῆμαb: ἀλλ’ ἐπὶ παντὶ ῥήματι ἐκπορευομένῳ διὰ στόματος θεοῦ ‘but by every word that comes from the mouth of God’ Mt 4:4.\nλόγοςa: πολλῷ πλείους ἐπίστευσαν διὰ τὸν λόγον αὐτοῦ ‘many more believed because of what he said’ Jn 4:41. In Mt 21:24 λόγος may be rendered as ‘question’ in view of the preceding ἐρωτάω, but the meaning of ‘question’ is, of course, derived essentially from the verb ἐρωτάωa ‘to ask’ (33.180).\nAny difference of meaning between λόγοςa and ῥῆμαb would be only a matter of stylistic usage.",
+        "surrounding_context": {
+          "domain": "33 Communication",
+          "subdomain": "F Speak, Talk",
+          "previous_subdomain": "E Written Language",
+          "next_subdomain": "G Sing, Lament",
+          "previous_2_senses": [
+            {
+              "ln": "33.96",
+              "definition": "ἀλάλητος, ον; ἀνεκλάλητος, ον: pertaining to what cannot be uttered or expressed—‘what cannot be expressed in words.’"
+            },
+            {
+              "ln": "33.97",
+              "definition": "λόγια, ων n (only in the plural): the content of various utterances—‘sayings, oracles, message.’"
+            }
+          ],
+          "next_2_senses": [
+            {
+              "ln": "33.99",
+              "definition": "λόγοςb, ου m: the act of speaking—speaking, speech.’"
+            },
+            {
+              "ln": "33.100",
+              "definition": "λόγοςe, οῦ m: a title for Jesus in the Gospel of John as a reference to the content of God’s revelation and as a verbal echo of the use of the verbs meaning ‘to speak’ in Genesis 1 and in many utterances of the prophets—‘Word, Message.’"
+            }
+          ]
+        }
+      },
+      "secondary_senses": [
+        {
+          "ln": "33.260",
+          "occurrences": 89,
+          "share": 0.25,
+          "definition": "λόγοςc, ου m: the content of what is preached about Christ or about the good news—‘what is preached, gospel.’",
+          "subdomain": "S Preach, Proclaim"
+        },
+        {
+          "ln": "33.99",
+          "occurrences": 29,
+          "share": 0.08,
+          "definition": "λόγοςb, ου m: the act of speaking—speaking, speech.’",
+          "subdomain": "F Speak, Talk"
+        },
+        {
+          "ln": "57.228",
+          "occurrences": 9,
+          "share": 0.03,
+          "definition": "λόγοςf, ου m: a record of assets and liabilities—‘account, credit, debit.’",
+          "subdomain": "T Keep Records"
+        },
+        {
+          "ln": "89.18",
+          "occurrences": 6,
+          "share": 0.02,
+          "definition": "λόγοςg, ου m: a reason, with the implication of some verbal formulation—‘reason.’",
+          "subdomain": "G Cause and/or Reason"
+        },
+        {
+          "ln": "33.100",
+          "occurrences": 6,
+          "share": 0.02,
+          "definition": "λόγοςe, οῦ m: a title for Jesus in the Gospel of John as a reference to the content of God’s revelation and as a verbal echo of the use of the verbs meaning ‘to speak’ in Genesis 1 and in many utterances of the prophets—‘Word, Message.’",
+          "subdomain": "F Speak, Talk"
+        },
+        {
+          "ln": "33.51",
+          "occurrences": 4,
+          "share": 0.01,
+          "definition": "λόγοςd, ου m: a relatively formal and systematic treatment of a subject—‘treatise, book, account.’",
+          "subdomain": "E Written Language"
+        },
+        {
+          "ln": "13.115",
+          "occurrences": 3,
+          "share": 0.01,
+          "definition": "λόγοςh, ου m; ῥῆμαc, τος n: a happening to which one may refer—‘matter, thing, event.’",
+          "subdomain": "D Happen"
+        },
+        {
+          "ln": "56.7",
+          "occurrences": 1,
+          "share": 0.0,
+          "definition": "λόγοςj, ου m: a formal declaration of charges against someone in court—‘charges, accusation, declaration of wrongdoing.’",
+          "subdomain": "C Accusation"
+        },
+        {
+          "ln": "31.2",
+          "occurrences": 1,
+          "share": 0.0,
+          "definition": "λόγου ποιέομαι: (an idiom, literally ‘to make of reason’) to have an opinion based on some reason—‘to consider, to regard, to hold a view, to be of the opinion.’",
+          "subdomain": "A Have an Opinion, Hold a View"
+        },
+        {
+          "ln": "30.13",
+          "occurrences": 1,
+          "share": 0.0,
+          "definition": "λόγοςi, ου m: that which is thought to be true but is not necessarily so—‘appearance, to seem to be.’",
+          "subdomain": "A To Think, Thought"
+        },
+        {
+          "ln": "28.25",
+          "occurrences": 1,
+          "share": 0.0,
+          "definition": "λόγος τρέχει: (an idiom, literally ‘word runs’) a message which becomes widely and rapidly known—‘for a message to spread rapidly, to be known quickly.’",
+          "subdomain": "B Known (the content of knowledge)"
+        }
+      ]
+    }
+  },
+  "θεός": {
+    "lexical_entry": "ὁ θεός",
+    "tf_lexical_info": {
+      "lemma": "θεός",
+      "part_of_speech": "noun",
+      "gloss": "god",
+      "frequency": 1311
+    },
+    "ln_sense_info": {
+      "summary": "θεός: primary sense 12.1 (1247 of 1308 tagged occurrences, 12 Supernatural Beings and Powers / A Supernatural Beings). Secondary senses: 12.15 (45x), 12.22 (15x), 12.25 (1x).",
+      "primary_sense": {
+        "ln": "12.1",
+        "occurrences": 1247,
+        "share": 0.95,
+        "full_entry": "θεόςa, οῦ m: the one supreme supernatural being as creator and sustainer of the universe—‘God.’ ὁ θεὸς ὁ ποιήσας τὸν κόσμον καὶ πάντα τὰ ἐν αὐτῷ ‘God who made the world and everything in it’ Ac 17:24.\nThe componential features of θεός involve a basic, underlying ambivalence. On the one hand, θεός is regarded as unique to the exclusion of all other gods: οὐδεὶς θεὸς εἰ μὴ εἷς ‘there is no God but one’ 1 Cor 8:4. This is strictly a monotheistic view of θεός. On the other hand, there occur such expressions as εἴπερ εἰσὶν λεγόμενοι θεοί ‘even if there are so-called gods’ (1 Cor 8:5), and in the OT the Lord is described as being ‘far above all gods’ (Psalm 97:9), ‘the God of gods’ (Psalm 136:2), and the ‘great King above all gods’ (Psalm 95:3), which is essentially a henotheistic view of θεός. Fundamentally, however, the NT view may be most succinctly reflected in Ga 4:8, τοῖς φύσει μὴ οὖσιν θεοῖς ‘those who by nature are not really gods.’ In other words, the gods of the pagans (see 12.22) are not to be viewed in the same category as θεόςa.\nA further semantic problem is involved in the use of θεόςa in reference to Christ. In Jn 1:1, ‘the Word was God,’ the meaning of θεός may be described on the basis that all the componential features of θεόςa are applied to the referent λόγος, which is in turn identified with ‘Christ.’ This is not to be interpreted as indicating that the two referents are identical (which was, of course, the position of those who maintained the so-called patropassian heresy), but that the distinctive features of θεόςa are also fully applicable to another referent, namely, the λόγος or Christ; that is to say, it is legitimate to interpret Jn 1:1 as ‘the Word was God’ but not as ‘God was the Word.’\nTranslational equivalents of ‘God’ are of three major types: (1) proper names, (2) descriptive titles, and (3) borrowed terms. There are a number of problems involved in each of these types of translational equivalents.\nIf translators wish to employ in the biblical text a proper name in the receptor language, it is essential that the characteristics of the referent of such a name be sufficiently close to those which characterize the biblical God, so that the message may not be unduly distorted. In fact, the equivalent should be sufficiently close that ready identification can be made. The essential features of such a receptor language term should include (1) benevolent disposition and behavior, (2) creative and sustaining activity in the world, and (3) supreme power. In most instances it has not been found necessary for such a term to refer to a strictly monotheistic view (that is to say, having an existence which precludes the existence of any other gods), but it is essential that the name apply to a referent who is regarded as supreme over all others.\nThere may, however, be a number of difficulties involved in the use of an indigenous expression for θεόςa, since the views concerning such a god may involve such factors as (1) psychological distance (the idea that such a god, though all powerful, is still very remote from mankind) and (2) the necessity for constant propitiation (as though such a god needs to be constantly entreated or sustained by means of gifts in order to make him favorably disposed toward mankind).\nIn some instances problems have arisen in the use of an indigenous term for God because such a name may be perfectly appropriate in one area in which a language is spoken, but have quite a different meaning or value in another part of the language area. For example, in one area of East Africa the name for ‘God’ in one tribe is the name for the devil in a nearby, closely related tribe.\nDescriptive titles for God (which often become essentially names) may focus upon a number of different features or characteristics. In some instances such descriptive titles are traditional for certain receptor languages. In other instances they have been constructed by translators on the basis of indigenous models. The following are illustrative examples of various types of descriptive titles: ‘he who made us,’ ‘the supreme powerful one,’ ‘the one who performs miracles,’ ‘the owner of all,’ ‘he who is sufficient,’ ‘our great father,’ ‘the highest one,’ ‘the great spirit,’ ‘the unending spirit,’ ‘the commanding spirit,’ ‘the great chief,’ ‘the self-existing one,’ and ‘the truly sacred one.’\nSome Bible translators have attempted to avoid semantic complications by borrowing a term from a dominant language. In Latin America, for example, many early missionaries borrowed the Spanish term Dios, but in explaining the meaning of Dios as the great and all-powerful creator, they simply provided another name for what people already understood to be the sun. The difficulty with borrowed proper names is that they are essentially zero in meaning, that is to say, they are words with a significant absence of meaning which must be filled in one way or another, and this is usually done merely by equating the meaning of such a zero term with already existing concepts. Hence, rather than avoiding wrong views of God, borrowed terms often perpetuate wrong views indirectly.\nThere may also be additional complications in the use of a borrowed term, since it may not provide a basis for certain syntactic or morphological modifications. For example, some missionaries have borrowed the term Allah for ‘God,’ but in speaking of ‘gods’ they have attempted to add a plural to the underlying form Allah. In most instances this procedure has resulted in something which is not only conceptually and grammatically impossible, but also highly offensive to receptors.\nOne special problem involving θεόςa results from the occurrence of ‘God’ in expressions of possession, for example, ‘my God’ or ‘our God.’ In a number of languages one simply cannot say ‘my God,’ for one cannot ‘possess God.’ Rather, one must say ‘the God whom I worship’ or ‘the God in whom I trust.’ Similarly, it may be impossible to speak of ‘the God of Abraham’ without implying that such a God would only be an idol, that is to say, ‘the God that Abraham personally possessed.’ Under such circumstances it may be necessary to translate ‘the God of Abraham’ as ‘the God in whom Abraham trusted.’\nIdeally, one should employ a well known receptor-language term for ‘God’ which would be applicable not only to the one supreme being, but could also refer to the ‘gods of the heathen,’ that is to say, a rendering of θεόςa should be a generic expression which could be made particular and even exclusive by some such qualifier as ‘the’ or ‘the one’ or ‘the unique.’ Sometimes this can only be done by a qualifier such as ‘the great’ or even ‘the supreme.’",
+        "surrounding_context": {
+          "domain": "12 Supernatural Beings and Powers",
+          "subdomain": "A Supernatural Beings",
+          "previous_subdomain": null,
+          "next_subdomain": "B Supernatural Powers",
+          "previous_2_senses": [],
+          "next_2_senses": [
+            {
+              "ln": "12.2",
+              "definition": "ἄθεος, ον: pertaining to being without any relationship to God—‘being without God.’"
+            },
+            {
+              "ln": "12.3",
+              "definition": "ηλι (a Hebrew term meaning ‘my God’); ελωι (an Aramaic term meaning ‘my God’)—‘my God.’"
+            }
+          ]
+        }
+      },
+      "secondary_senses": [
+        {
+          "ln": "12.15",
+          "occurrences": 45,
+          "share": 0.03,
+          "definition": "υἱὸς τοῦ θεοῦ: (a title applied to Jesus, literally ‘son of God’; parallel in semantic structure to phrases consisting of υἱός followed by the genitive of class or kind; compare 9.4) one who has the essential characteristics and nature of God—‘Son of God.’",
+          "subdomain": "A Supernatural Beings"
+        },
+        {
+          "ln": "12.22",
+          "occurrences": 15,
+          "share": 0.01,
+          "definition": "θεόςb, οῦ m: any one of many different supernatural beings regarded as having authority or control over some aspect of the universe or human activity—‘god.’",
+          "subdomain": "A Supernatural Beings"
+        },
+        {
+          "ln": "12.25",
+          "occurrences": 1,
+          "share": 0.0,
+          "definition": "θεά, ᾶς f; θεόςc, οῦ f: a female deity—‘goddess.’",
+          "subdomain": "A Supernatural Beings"
+        }
+      ]
+    }
+  },
+  "ἄρτος": {
+    "lexical_entry": "ὁ ἄρτος",
+    "tf_lexical_info": {
+      "lemma": "ἄρτος",
+      "part_of_speech": "noun",
+      "gloss": "bread",
+      "frequency": 97
+    },
+    "ln_sense_info": {
+      "summary": "ἄρτος: primary sense 5.8 (61 of 98 tagged occurrences, 5 Foods and Condiments / A Food). Secondary senses: 5.1 (29x), 53.26 (4x), 23.20 (3x), 57.190 (1x).",
+      "primary_sense": {
+        "ln": "5.8",
+        "occurrences": 61,
+        "share": 0.62,
+        "full_entry": "ἄρτοςa, ου m: a relatively small and generally round loaf of bread (considerably smaller than present-day typical loaves of bread and thus more like ‘rolls’ or ‘buns’)—‘loaf of bread.’ οὐκ ἔχομεν ὧδε εἰ μὴ πέντε ἄρτους ‘we have here only five loaves of bread’ Mt 14:17.",
+        "surrounding_context": {
+          "domain": "5 Foods and Condiments",
+          "subdomain": "A Food",
+          "previous_subdomain": null,
+          "next_subdomain": "B Condiments",
+          "previous_2_senses": [
+            {
+              "ln": "5.6",
+              "definition": "πόσιςa, εως f; πόμα, τος n: liquids used for nourishment or to satisfy thirst—‘a drink.’"
+            },
+            {
+              "ln": "5.7",
+              "definition": "βρῶμαb, τος n; βρῶσιςd, εως f: any type of solid food, particularly meat—‘solid food, meat, flesh.’"
+            }
+          ],
+          "next_2_senses": [
+            {
+              "ln": "5.9",
+              "definition": "ἄλευρον, ου n—‘wheat flour.’"
+            },
+            {
+              "ln": "5.10",
+              "definition": "σεμίδαλις, εως f: a fine grade of wheat flour—‘fine flour.’"
+            }
+          ]
+        }
+      },
+      "secondary_senses": [
+        {
+          "ln": "5.1",
+          "occurrences": 29,
+          "share": 0.3,
+          "definition": "χόρτασμα, τος n; ἐπισιτισμός, οῦ m; ἄρτοςb, ου m; τροφή, ῆς f; διατροφή, ῆς f; βρῶμαa, τος n; βρῶσιςc, εως f: any kind of food or nourishment—‘food.’",
+          "subdomain": "A Food"
+        },
+        {
+          "ln": "53.26",
+          "occurrences": 4,
+          "share": 0.04,
+          "definition": "ἄρτοι τῆς προθέσεως: (an idiom, literally ‘bread of the placing forth’) bread which was set out as an offering in the presence of God in the Tabernacle and later in the Temple—‘bread offered to God, consecrated bread.’",
+          "subdomain": "B Offering, Sacrifice"
+        },
+        {
+          "ln": "23.20",
+          "occurrences": 3,
+          "share": 0.03,
+          "definition": "ἀριστάωa; δειπνέω; ἄρτον κλάω (an idiom, literally ‘to break bread’): to eat a meal, without reference to any particular time of the day or to the type of food involved—‘to eat a meal, to have a meal.’",
+          "subdomain": "A Eat, Drink"
+        },
+        {
+          "ln": "57.190",
+          "occurrences": 1,
+          "share": 0.01,
+          "definition": "τὸν ἑαυτοῦ ἄρτον ἐσθίω: (an idiom, literally ‘to eat one’s own bread’) to earn a living by one’s own efforts—‘to earn a living, to earn a livelihood.’",
+          "subdomain": "P Earn, Gain, Do Business"
+        }
+      ]
+    }
+  }
+}

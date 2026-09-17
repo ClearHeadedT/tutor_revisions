@@ -24,11 +24,41 @@ def load_syntax_scaffolding():
     return normalize_keys(data)
 
 
+def load_vocabulary_senses():
+    """The shared Text-Fabric/Louw-Nida enrichment cache, keyed by lemma. These are
+    facts about Greek rather than about any student, so one copy serves everyone.
+    The cache builder writes this file."""
+    with open('data/curriculum_data/vocabulary_senses.json', 'r') as file:
+        data = json.load(file)
+    return {normalize_greek(lemma): entry for lemma, entry in data.items()}
+
+
+def save_vocabulary_senses(senses):
+    with open('data/curriculum_data/vocabulary_senses.json', 'w') as file:
+        json.dump(senses, file, ensure_ascii=False, indent=2)
+
+
+def load_student_overview(student_id):
+    """The facts about a student that nothing else can derive -- their level above all"""
+    with open(f'data/student_data/{student_id}/student_overview.json', 'r') as file:
+        return json.load(file)
+
+
+def save_student_vocabulary_data(student_id, data):
+    with open(f'data/student_data/{student_id}/student_vocabulary_data.json', 'w') as file:
+        json.dump(data, file, ensure_ascii=False, indent=2)
+
+
+def save_student_card_data(student_id, data):
+    with open(f'data/student_data/{student_id}/student_card_data.json', 'w') as file:
+        json.dump(data, file, ensure_ascii=False, indent=2)
+
+
 def normalize_keys(data):
     """Greek appears in item keys, so every key is normalized on load to keep
-    the scaffolding and the student's progress joinable"""
-    data["items"] = {normalize_greek(key): item for key, item in data["items"].items()}
-    return data
+    the scaffolding and the student's progress joinable. Returns a new dict,
+    leaving the one handed in as it was."""
+    return {**data, "items": {normalize_greek(key): item for key, item in data["items"].items()}}
 
 
 def load_student_grammar_data(student_id):
@@ -56,19 +86,6 @@ def load_student_card_data(student_id):
         data = json.load(file)
     return data
 
-def student_data_status(student_id):
-    student_grammar_data = load_student_grammar_data(student_id)
-    student_vocabulary_data = load_student_vocabulary_data(student_id)
-    student_syntax_data = load_student_syntax_data(student_id)
-    student_card_data = load_student_card_data(student_id)
-
-    return {
-        "grammar": normalize_progress(student_grammar_data["grammar"]),
-        "vocabulary": normalize_progress(student_vocabulary_data["vocabulary"]),
-        "syntax": normalize_progress(student_syntax_data["syntax"]),
-        "cards": normalize_progress(student_card_data["cards"])
-        }
-
-
 def normalize_progress(progress):
+    """Greek lemmas are progress keys too, so they get the same treatment on load."""
     return {normalize_greek(key): record for key, record in progress.items()}

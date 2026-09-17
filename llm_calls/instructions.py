@@ -10,7 +10,7 @@ GENERAL_CARD_INSTRUCTIONS = """ You are an expert Koine Greek linguist and a spe
   4. RESPECT THE CURRICULUM BOUNDARY — you are given both the morphological category rules the student HAS covered and those they have NOT. Use only what has been covered, even if an uncovered form would improve the sentence. The uncovered list is there so you know what to avoid, not as a menu.
   5. NATURAL CONTEXT — the sentence must be semantically coherent, idiomatic Koine, and illustrate the target's meaning naturally.
   6. VARIABILITY, SUBORDINATED — vary lexical choice, sentence shape, and grammatical texture across cards, but always secondary to fidelity and atomic scope.
-  7. DIFFICULTY MATCHES LEVEL — you are supplied with the current level of the student - beginner: predictable, simple sentence form; intermediate+: vary cases, tenses, moods, participles, prepositional phrases, relative clauses, conjunctions, word order — only within what constraint 4 permits.
+  7. DIFFICULTY MATCHES LEVEL — you are supplied with the current level of the student - beginner: predictable, simple sentence form; beyond_beginner: vary cases, tenses, moods, participles, prepositional phrases, relative clauses, conjunctions, word order — only within what constraint 4 permits; advanced: You have free reign of creative formulation under the restrictions of the restraints.
   8. REASON BEFORE YOU WRITE — work the REFLECTION below before you compose, and show that work in "reasoning": 1-2 short sentences of compressed analysis ending in a decision. Not a list of observations, not a restatement of these constraints. Audit only, never shown to the student, never skipped.
   9. THE GLOSS IS CONTEXTUAL AND SHORT — where a gloss is requested, 1-5 words, rendering the target as used in this sentence, not simply the glossary default.
   10. NO NEW OR CONTROVERSIAL DOCTRINE — keep sentences theologically unobjectionable and small in scope; nothing sexual, gratuitously violent, politically inflammatory, or otherwise unsuitable for a study card.
@@ -29,16 +29,16 @@ GENERAL_CARD_INSTRUCTIONS = """ You are an expert Koine Greek linguist and a spe
 
   Then, is the card worth meeting?
     THE SWAP TEST — could another word of the same class stand where your target stands and leave the sentence intact? If so you have written a frame, not a card. Rebuild until the target is the hinge the whole thing turns on: take it away and the scene should collapse.
-    Whose situation is this, and what do they want? An agent with a motive is remembered. A subject, a verb and an object are not.
-    What can be seen, heard, or handled here? Concrete and imageable material is recalled far better than abstract statement, and Koine is a concrete language — use that.
+    Whose situation is this, and what do they want? How does this scene illustrate the unique target meaning of the lexical item?
+    What can be seen, heard, or handled here? Concrete and imageable material is recalled far better than abstract statement, and Koine is a concrete language. Even for abstract nouns, place them in a concrete and visual context.
     What is at stake, in motion, or a little unexpected? A small surprise aids recall, so long as the scene stays coherent and stays inside constraint 10.
     Would a student meeting this card for the fortieth time still find it worth reading? They will meet it that often.
 
-  PRECEDENCE — this REFLECTION is subordinate, and it will pull against the constraints above. Where it does, it yields.
+    PRIORITY — this creative formulation portion will likely pull against the constraints above. Where it does, it yields to fidelity to Koine Greek Grammar, theological fidelity, etc.
     Ahead of it stand the thirteen hard constraints. No amount of vividness buys an uncovered form, an unknown word, a second retrieval demand, or a doctrinally loaded scene.
-    Ahead of everything stands real, accurate Koine. Reaching for an imaginative scene is precisely what drives writing into Greek no Koine author would have produced — grammatical on paper but alien in idiom, or strained after the unusual until it is no longer the language. The student must be able to meet this construction in the corpus.
-    A flat sentence in real Koine is a poor card. A vivid sentence in Greek that was never written is not a card at all; it is a fault, and it teaches the student something false.
-    Correct Koine first, then the constraints, then make it worth reading. The room those leave is far larger than a timid writer uses — but it is bounded room.
+    Ahead of everything stands real, accurate Koine. Reaching for an imaginative scene is precisely what drives writing into Greek no Koine author would have produced — grammatical on paper but alien in idiom, or strained after the unusual until it is no longer the language. The student must be able to meet this construction in the corpus, despite the sentence not actually being derived from the corpus.
+    A flat sentence in real Koine is a poor card. A vivid sentence in Greek that does not cover the lexeme properly, or one that utilizes grammar foreign to Koine, is a failure. Moreover it teaches the student something false.
+    Correct Koine first, then the constraints, then make it worth reading.
 
   OUTPUT FORMAT — return ONLY a JSON object wrapped in triple backticks, with nothing before or after it:
 
@@ -52,9 +52,7 @@ GENERAL_CARD_INSTRUCTIONS = """ You are an expert Koine Greek linguist and a spe
     "translation"  — English translation of the full sentence
     "target_form"  — the exact inflected form of the target as it appears in "sentence", copied verbatim
 
-  Do not output the parsing of the target form. It is already known and supplied to you; restating it risks contradicting the authoritative data.
-
-  The per-card instructions below may name further keys. Those go in the SAME JSON object, alongside the four above — not nested, not in a second object. Include every key named for that card type and no others.
+  The per-card instructions below may name further keys or have further clarifications and instructions. Those go in the SAME JSON object, alongside the four above — not nested, not in a second object. Include every key named for that card type and no others.
 
   As for specific card generation instructions, here are the parameters to follow:
 """
@@ -83,9 +81,9 @@ GENERAL_CARD_INSTRUCTIONS = """ You are an expert Koine Greek linguist and a spe
 
 
 
-instructions_cap = """The user message is a JSON object carrying:
-  "item"                — the item under review and everything known about it, including its hand-vetted reference card
-  "recent_generations"  — cards already produced for this item; constraint 11 forbids repeating or paraphrasing them
+instructions_cap = """The following single item up for review from the previous card instructions is in an JSON object carrying:
+  "item"                — the item under review and everything known about it, including its hand-vetted reference card. Extra information included is to benefit to creation of the individual task item, not for creating cards for every piece fed in.
+  "recent_generations"  — cards already produced for this item; constraint 11 forbids repeating or paraphrasing them (in the case there is no history of review this will be empty)
   "student"             — where this student currently stands:
       "level"              — "beginner", "beyond_beginner", or "advanced"; this is the level constraint 7 refers to
       "concepts_learned"   — the grammatical and syntactic categories already covered; constraint 4 binds you to these and to nothing outside them
@@ -99,17 +97,17 @@ Whatever the level, the target itself stays unambiguous. Raising the level raise
 
 When "vocabulary_learned" is "Not Applicable" no explicit word list is available. Judge what the student can read from "level" and "concepts_learned", and stay well inside it rather than at its edge.
 
-Here is the relevant item for review:"""
+Here is the relevant item to form the card for:"""
 
 
-instructions_TextRecallVocabularyG2E = """CARD TYPE: Text Recall, Vocabulary, Greek-to-English (difficulty 1/4).
+instructions_TextRecallVocabularyG2E = """CARD TYPE: Text Recall, Vocabulary, Greek-to-English (card difficulty 1/4).
 The student reads the sentence and recalls what the target word means. The sentence is the only cue, so the surrounding context must make the target's sense recoverable without giving it away outright. Your sentence does not necessarily have to use the item in lexical form; it can vary according to best usage contextually as long as the form is reasonably recognizable since the student has access to the lexical form.
 
-EXAMPLES — one card of this type at each level, all for an unrelated item, ἄρτος. You write ONE card; the three stand here only to show what changes with level and what does not.
+EXAMPLES — one card of this type at each level, all for an unrelated card item, each delevoped independently for ἄρτος. You write ONE card; the three stand here only to show what changes with level and what does not.
 beginner:
 ```json
 {
-  "reasoning": "Bread is recovered from need rather than description — what a hungry man asks for names it faster than any scene of eating. A beggar puts an agent with a motive inside the one-clause limit, and no other noun fills that request.",
+  "reasoning": "The main ln entry specifies that ἄρτος is a small loaf of bread. Contextually it sits in the domain of food and condiments, specifically food. 5.6 and 5.7 signify satisfying drinks and solid food or meat. 5.9 and 5.10 signify two forms of wheat flour. ἄρτος seems to be in-between satisfying and filling food and unprepared culinary materials, sigifying it is a basic and cheap staple. A helpful and creative context for this could be a beggar with bread. This fulfills the condition of the swap test as opposed to some other substantial food item or satisfying drink. The information provided specifies the student is at a beginner level, so a simple sentence with reasonable vocabulary and morphologically expected tense forms must be preserved.",
   "sentence": "ὁ πτωχὸς αἰτεῖ ἄρτον.",
   "translation": "The beggar asks for bread.",
   "target_form": "ἄρτον"
@@ -118,7 +116,7 @@ beginner:
 beyond_beginner:
 ```json
 {
-  "reasoning": "Same anchor pressed harder: the lack and its cost sit in adjacent clauses, so the word is defined by what its absence does. Children on a road put something at stake, and the imperfect pair is within this student's reach.",
+  "reasoning": "The main ln entry specifies that ἄρτος is a small loaf of bread. Contextually it sits in the domain of food and condiments, specifically food. 5.6 and 5.7 signify satisfying drinks and solid food or meat, while 5.9 and 5.10 signify two forms of wheat flour. Sitting between what satisfies hunger and what is merely raw material, ἄρτος is the ordinary staple one expects to have on hand, which means its absence is felt as plain hunger rather than as the loss of a luxury. A helpful and creative context for this could be travellers running short of it on a journey, with hungry children making the lack concrete rather than abstract. This fulfills the condition of the swap test, since a drink or a measure of flour would not produce hunger in the same immediate way. The information provided specifies the student is beyond beginner, so the scene can be carried across two coordinated clauses with a prepositional phrase, and the imperfects are morphological forms within this student's reach.",
   "sentence": "οὐκ εἴχομεν ἄρτον ἐν τῇ ὁδῷ, καὶ ἐπείνων οἱ παῖδες.",
   "translation": "We had no bread on the road, and the children were hungry.",
   "target_form": "ἄρτον"
@@ -127,7 +125,7 @@ beyond_beginner:
 advanced:
 ```json
 {
-  "reasoning": "Concealment implies something portable, edible and worth taking; the soldiers supply the motive without a word of explanation. Genitive absolute and purpose clause are the texture this student reads, and the scene collapses if the bread is replaced.",
+  "reasoning": "The main ln entry specifies that ἄρτος is a small loaf of bread, and notes it is considerably smaller than a present-day loaf. Contextually it sits in the domain of food and condiments, specifically food. 5.6 and 5.7 signify satisfying drinks and solid food or meat, while 5.9 and 5.10 signify two forms of wheat flour. A staple that is already portioned and small enough to carry is something a person can hold, move, and keep from someone else, which raw flour and a drink are not. A helpful and creative context for this could be a woman hiding one under her cloak as soldiers approach, where the concealment itself argues for something both worth taking and small enough to conceal. This fulfills the condition of the swap test, since flour could not be hidden in a garment and a drink would not survive the gesture. The information provided specifies the student is advanced, so the scene is built as running prose with a genitive absolute setting the hour and a purpose clause supplying the motive, both forms this student reads in the corpus.",
   "sentence": "τοῦ ἡλίου δύνοντος, ἡ γυνὴ ἔκρυψεν τὸν ἄρτον ὑπὸ τὸ ἱμάτιον, ἵνα μὴ ἴδωσιν οἱ στρατιῶται.",
   "translation": "As the sun was setting, the woman hid the bread under her cloak, so that the soldiers would not see it.",
   "target_form": "ἄρτον"
@@ -177,27 +175,3 @@ Here "translation" IS the cue the student sees, so write it first and make it ca
 "target_form" holds the phrase in "sentence" that carries the usage.
 No further keys.
 """ + instructions_cap
-
-
-
-
-
-instructions_FunctionRecallSyntaxG2E = """CARD TYPE: Function Recall, Syntax, Greek-to-English (difficulty 1/4).
-Write a clause or short sentence in which the target syntactic usage is present and unambiguous. The student reads it and must state how the target is functioning syntactically.
-The clause must admit only the target usage. If an adjacent syntactic usage of the same category would read just as naturally, the card is unusable — constrain the context until one answer is right. Do not include a second instance of the same category, which would muddy which one is being asked about.
-Do NOT name the usage, hint at it, or translate it in a way that gives it away. Naming it is the student's job. Return ONLY the clause/short sentence with the syntactic item present within.
-""" + instructions_cap
-
-instructions_ValidityJudgmentSyntaxG2E = """CARD TYPE: Validity Judgment, Syntax, Greek-to-English (difficulty 2/4).
-You are supplied the HARD CONSTRAINTS on this usage — the conditions without which it is not available at all. Write a clause in which the target usage either satisfies every one of them or violates exactly one, and the student judges which.
-Choose freely which you are writing; across many cards roughly half should be valid. A violation must break a stated HARD constraint. Never build the example off of subjective preference or on mere stylistic awkwardness. An occurrence that is rare is still technically valid Greek.
-When you write a violation, everything else in the clause must be correct Koine. The single constraint breach is the entire question; incidental errors elsewhere teach nothing and make the answer ambiguous.
-Although considering several variables, you will return ONLY two things. First line in your return is the sentence/phrase derived from the constraint (either correct or incorrect usage will be specified below). The second line in your return, separated by a line break (equivalent to \n\n), is simply the lexical item(s) that is illustrating the hard constraint. 
-""" + instructions_cap
-
-instructions_SelfFormulationSyntaxE2G = """CARD TYPE: Self-Formulation, Syntax, English-to-Greek (difficulty 3/4).
-Student must create a new sentence or phrase that utilizes a given syntactic category, a Greek lexical item, and a scenario cue. You must analyze the syntactic usage and lexeme options, then create a scenario description in English in very concise format.
-Based on your output, the student will utilize the given syntactic category, lexical item, and concisely-described scenario. Keep the scene simple. The difficulty belongs in the syntax, not in the vocabulary. The scenario cue should consider the unique flavor of syntactic unit so their eventual sentence feels organic.
-Although you are internally considering several variables, your immediate task is to return ONLY two things. First line in your return is the concise scenario cue in English. The second line in your return, separated by a line break (equivalent to \n\n), is two phrases/short sentences you have created that would satisfy the requirements as an example for the student.
-""" + instructions_cap
-

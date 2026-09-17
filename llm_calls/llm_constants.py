@@ -1,4 +1,3 @@
-
 CARD_MODEL = "claude-sonnet-5"
 
 EMBEDDING_MODEL = None

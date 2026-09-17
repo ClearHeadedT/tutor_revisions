@@ -1,11 +1,94 @@
-from text_fabric.fabric_utils import load_n1904, find_ln_entry
+from functools import cache
+
+from text_fabric.fabric_utils import load_n1904, find_ln_entry, find_ln_surrounding_context, ln_definition
 from greek_text import normalize_greek
 
 
+@cache
+def lemma_index():
+    """Every word node in the corpus grouped by normalized lemma. Built in one pass
+    and held, so enriching a hundred words costs the same scan as enriching one."""
+    A = load_n1904()
+    F = A.api.F
+    index = {}
+    for node in F.otype.s('word'):
+        index.setdefault(normalize_greek(F.lemma.v(node) or ""), []).append(node)
+    return index
+
+
+def word_enrichment(word):
+    """Parses out the internal word information from both TF and Louw-Nida functionality"""
+    word = normalize_greek(word)
+    return enrichment_from_nodes(word, lemma_index().get(word, []))
+
+
+def word_enrichment_batch(words):
+    """Enriches a list of words against a single corpus scan. This is what the
+    senses cache is built from -- reaching for Text-Fabric is the expensive part,
+    so a run pays for it once and enriches everything it needs."""
+    return {normalize_greek(word): word_enrichment(word) for word in words}
+
+
+def enrichment_from_nodes(word, word_nodes):
+    """The enrichment itself, once the word's occurrence nodes are in hand."""
+    A = load_n1904()
+    sense_usages = {}
+    for node in word_nodes:
+        sense = A.api.F.ln.v(node)
+        if not sense:
+            continue
+        for ln in sense.split():
+            if ln in sense_usages:
+                sense_usages[ln] += 1
+            else:
+                sense_usages[ln] = 1
+    if not word_nodes:
+        return None
+    if not sense_usages:
+        return {"tf_lexical_info": word_internals_breakdown(word_nodes), "ln_sense_info": None}
+    highest_sense = max(sense_usages, key=sense_usages.get)
+    total = sum(sense_usages.values())
+    # the primary sense keeps its whole entry; the rest are trimmed to their definitions
+    primary_entry = find_ln_entry(ln_num=highest_sense)
+    primary = {
+        "ln": highest_sense,
+        "occurrences": sense_usages[highest_sense],
+        "share": round(sense_usages[highest_sense] / total, 2),
+        "full_entry": primary_entry["text"],
+        "surrounding_context": find_ln_surrounding_context(highest_sense),
+    }
+    secondary = []
+    for sense in sorted(sense_usages, key=sense_usages.get, reverse=True):
+        if sense == highest_sense:
+            continue
+        entry = find_ln_entry(ln_num=sense)
+        secondary.append({
+            "ln": sense,
+            "occurrences": sense_usages[sense],
+            "share": round(sense_usages[sense] / total, 2),
+            "definition": ln_definition(entry) if entry else None,
+            "subdomain": (find_ln_surrounding_context(sense) or {}).get("subdomain"),
+        })
+    summary = (
+        f"{word}: primary sense {highest_sense} "
+        f"({primary['occurrences']} of {total} tagged occurrences, "
+        f"{primary['surrounding_context']['domain']} / {primary['surrounding_context']['subdomain']}). "
+        + (f"Secondary senses: {', '.join(s['ln'] + ' (' + str(s['occurrences']) + 'x)' for s in secondary)}."
+           if secondary else "No secondary senses attested.")
+    )
+    enriched_word = {
+        "tf_lexical_info": word_internals_breakdown(word_nodes),
+        "ln_sense_info": {
+            "summary": summary,
+            "primary_sense": primary,
+            "secondary_senses": secondary,
+        },
+    }
+    return enriched_word
 
 
 def word_search(words):
-    """Returns the relevant nodes of a particular word in the corpus"""
+    """Returns the relevant nodes for a group of words from the corpus"""
     A = load_n1904()
     results = {}
     for word in words:
@@ -16,113 +99,16 @@ def word_search(words):
 
 
 def word_internals_breakdown(nodes):
-    """Parses out the internal word information from their nodes"""
+    """Returns the lexical facts for a lemma from its occurrence nodes:
+    lemma, part of speech, longest attested gloss, and GNT frequency."""
     A = load_n1904()
-    
-    
-
-
-def word_enrichment(word):
-    """Parses out the internal word information from both TF and Louw-Nida functionality"""
-    A = load_n1904()
-    word_nodes = [n for n in A.api.F.otype.s('word') if normalize_greek(A.api.F.lemma.v(n) or "") == word]
-    sense_usages = {}
-    for node in word_nodes:
-        sense = A.api.F.ln.v(node)
-        for ln in sense.split():
-            if ln in sense_usages:
-                sense_usages[ln] += 1
-            else:
-                sense_usages[ln] = 1
-    if not sense_usages:
-        return None
-    enriched_word = {}
-    highest_sense = max(sense_usages, key=sense_usages.get)
-    for sense in sense_usages.items():
-        ln_entry = find_ln_entry(sense)
-        
-    print("\n\n")
-    print(highest_sense)
-
-
-
-
-
-
-
-# ======== FIRST - BUILDING THE WORD'S INTERNALS WITH TF BITS AND SENSE CONTEXT/SYNONYMS ========
-
-# Word search return functionality definition-builder:
-    # Need to begin with volume 2 Greek all senses 
-        # Decide the primary sense domain
-            # Find the most relevant of them??
-            # Probably do an internal search utilizing TF to find how many occurrences there are per sense usage
-            # Highest sense occurrence will be the primary sense learned on initial card 
-        # Search functionality to grab the sense definitions from each of these sense entries in volume 1 
-            # Traversing volume 1 through recursion to grab contextual information markers and the definition itself 
-            # Once id found, grabbing the id of the previous 3 and next 3 for comparison analysis
-                # Get definitions, id, w/e else
-                # Some potential problem resolutions:
-                    # Not searching by ID since it could be the first entry
-                    # Have to traverse by dict entry somehow not exactly sure yet
-            # For secondary sense usages:
-                # Put all this information in a nice formatted str and pass it back as "secondary"
-                    # Figure out if all pieces are necessary or if it can be reduced - maybe contingent on how many extra sense entries 
-            # For primary:
-                # Put it all there 
-    # For primary sense domain/word 
-        # Resolve the word fully with other internal bits/information
-        # Format its baseline information nicely
-        # Separate into two sections the internals of the word and the Nida sense information
-    # Pin the secondary senses on the end and their relevant internals 
-
-    # Return this - not ALL of this information will go in the JSON for vocabulary_scaffolding, but all of this is the information that will be passed to LLM for card creation
-        # first part with tf bits can be accessed individually for the scaffolding 
-
-
-# ======== SECOND - SAVING TO SCAFFOLDING JSON AND LLM CALL ========
-
-    # variable initialization empty dict which will be put into JSON eventually 
-    # For each lexeme 
-        # feed lexeme into sense/bits function
-        # make entry in dict for it with empty 'reference_sentence' card
-            # use only the first portion of the returned value from function which contains the bits info 
-        # do llm call for initial card formation - simple first card type. Feeding in BOTH parts of the prior function 
-        # Add that LLM result to the reference_sentence portion in the dict 
-    # Make the dict into JSON format
-    # Save/write the information into the scaffolding file
-
-
-
-
-
-# important stuff from nida 
-    # two volumes:
-        # First volume by sense domain with individual words in their domains (in multiple places if applicable)
-        # Second volume two parts:
-            # Greek-English Index - 
-                # basic gloss
-                # List of all sense possibilities if more than the one exist 
-                # link to volume 1 entry for each of those sense possibilites
-            # English-Greek Index - 
-                # English word 
-                # simple number entry for the senses in volume 1 that contain this English word sense idea 
-
-
-
-
-    # Analyzes ln: 
-        # particular domain
-        # most common usage/definition
-        # other adjascent common sense usages for same word 
-        # Near synonyms 
-            # Linguistic theory - contrast with these. Different for a reason, could have used X instead of Y
-    # "resolves" a word fully as seen below
-        # ALL bits of internal information
-
-
-
-
+    F = A.api.F
+    return {
+        "lemma": normalize_greek(F.lemma.v(nodes[0])),
+        "part_of_speech": F.cls.v(nodes[0]),
+        "gloss": max((F.gloss.v(node) for node in nodes), key=len),
+        "frequency": len(nodes),
+    }
 
 
 
