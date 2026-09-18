@@ -1,3 +1,5 @@
+from datetime import date
+
 from data.student_data.student_data_helper_functions import (
     load_student_overview,
     load_student_grammar_data,
@@ -6,6 +8,8 @@ from data.student_data.student_data_helper_functions import (
     load_student_card_data,
     load_vocabulary_senses,
     save_student_vocabulary_data,
+    save_student_grammar_data,
+    save_student_syntax_data,
     save_student_card_data,
     normalize_progress,
 )
@@ -44,14 +48,26 @@ class Student:
             "vocabulary_learned": self.vocabulary_learned(),
         }
 
-    def record_card(self, lemma, card, today):
-        """Appends a generated card to this word's history. A word met for the first
-        time starts as learning; one already being studied keeps the progress it has."""
-        self.vocabulary.setdefault(lemma, {"status": "learning", "last_reviewed": today})
-        save_student_vocabulary_data(
-            self.student_id, {"student_id": self.student_id, "vocabulary": self.vocabulary}
-        )
-        self.cards.setdefault(lemma, {"card_history": []})["card_history"].append({"date": today, **card})
+    def recent_generations(self, key, limit=3):
+        """The cards already made for this item, which constraint 11 forbids the model
+        from repeating. Trimmed to what it needs to avoid repeating, since the stored
+        reasoning would otherwise fill most of the prompt."""
+        history = self.cards.get(key, {}).get("card_history", [])[-limit:]
+        return [{field: card[field] for field in ("card_type", "sentence", "translation")
+                 if field in card} for card in history]
+
+    def record_card(self, key, card, domain="vocabulary"):
+        """Appends a generated card to this item's history, dated today. An item met for
+        the first time starts as learning; one already being studied keeps the progress
+        it has. domain is "vocabulary", "grammar" or "syntax"."""
+        today = date.today().isoformat()
+        progress = {"vocabulary": self.vocabulary, "grammar": self.grammar, "syntax": self.syntax}[domain]
+        savers = {"vocabulary": save_student_vocabulary_data,
+                  "grammar": save_student_grammar_data,
+                  "syntax": save_student_syntax_data}
+        progress.setdefault(key, {"status": "learning", "last_reviewed": today})
+        savers[domain](self.student_id, {"student_id": self.student_id, domain: progress})
+        self.cards.setdefault(key, {"card_history": []})["card_history"].append({"date": today, **card})
         save_student_card_data(
             self.student_id, {"student_id": self.student_id, "cards": self.cards}
         )

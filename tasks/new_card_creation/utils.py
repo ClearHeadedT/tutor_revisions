@@ -4,6 +4,7 @@ from greek_text import normalize_greek
 from data.student_data.student_data_helper_functions import (
     load_vocabulary_senses,
     save_vocabulary_senses,
+    load_grammar_scaffolding,
 )
 from llm_calls.instructions import (
     GENERAL_CARD_INSTRUCTIONS,
@@ -38,8 +39,9 @@ def card_instructions_loader(desired_card_type):
     return instructions
 
 
-def cache_vocabulary_senses(lexemes):
-    """Enriches any of these words the cache does not already hold and writes them back.
+def enrich_vocabulary_senses(lexemes):
+    """Enriches words from Text-Fabric and Louw-Nida and stores the result under its
+    lemma. Words already stored are passed over, since their enrichment cannot change.
     This is the only path that touches Text-Fabric -- it costs ~4 seconds and 2.2 GB to
     open the dataset, so it is run deliberately for a batch rather than per card.
 
@@ -57,6 +59,18 @@ def cache_vocabulary_senses(lexemes):
         senses[lemma] = {"lexical_entry": missing[lemma], **enrichment}
     save_vocabulary_senses(senses)
     return senses
+
+
+
+def unpack_grammatical_item(grammar_item_key):
+    """Parses out a grammatical object from the JSON in a coherent format 
+    for card-creation LLM digestion"""
+    grammar_scaffolding = load_grammar_scaffolding()
+    item = grammar_scaffolding["items"][grammar_item_key]
+    rule = grammar_scaffolding["structure"][item["rule"]]
+    return {"item": item, "rule": rule, "paradigm": rule["paradigms"][item["parent"]]}
+
+
 
 
 def parse_card_reply(llm_reply):

@@ -24,7 +24,7 @@ def word_enrichment(word):
 
 def word_enrichment_batch(words):
     """Enriches a list of words against a single corpus scan. This is what the
-    senses cache is built from -- reaching for Text-Fabric is the expensive part,
+    vocabulary senses are enriched from -- reaching for Text-Fabric is the expensive part,
     so a run pays for it once and enriches everything it needs."""
     return {normalize_greek(word): word_enrichment(word) for word in words}
 

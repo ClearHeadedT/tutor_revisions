@@ -1,7 +1,11 @@
 from llm_calls.main import llm_call_card_formation
+from greek_text import normalize_greek
+from data.student_data.student_data_helper_functions import load_vocabulary_senses
 from tasks.new_card_creation.utils import(
     card_instructions_loader,
     parse_card_reply,
+    enrich_vocabulary_senses,
+    unpack_grammatical_item
 )
 
 
@@ -11,22 +15,28 @@ class NewVocabularyCard:
     Louw-Nida, ready to be written into austin's vocabulary scaffolding.
     Review cards are not handled here -- this only builds the scaffolding."""
 
-    def __init__(self, lemma, senses):
-        """Reads one lemma out of the shared enrichment cache, which the cache builder
-        fills from Text-Fabric in advance. Each entry carries the conventional lexicon
-        form, the Text-Fabric lexical facts, and the Louw-Nida sense breakdown."""
-        entry = senses[lemma]
+    def __init__(self, lexeme, student):
+        """lexeme is a (form, lexical_entry) pair. Takes the word's entry from the shared
+        senses file, enriching it from Text-Fabric and Louw-Nida if it is not there yet.
+        The entry holds the conventional lexicon form, the Text-Fabric lexical facts,
+        and the Louw-Nida sense breakdown. The student is who the card gets written for."""
+        self.student = student
+        self.lemma = normalize_greek(lexeme[0])
+        senses = load_vocabulary_senses()
+        if self.lemma not in senses:
+            senses = enrich_vocabulary_senses([lexeme])
+        entry = senses[self.lemma]
         self.lexical_entry = entry["lexical_entry"]
         self.tf_lexical_info = entry["tf_lexical_info"]
         self.ln_sense_info = entry["ln_sense_info"] or {}
 
-    def generate_vocabulary_card(self, desired_card_type: str, student_overview):
+    def generate_vocabulary_card(self, desired_card_type: str):
         """Produces vocabulary card through LLM call, contingent on desired type"""
         instructions = card_instructions_loader(desired_card_type)
         card_content = {
             "item": self.vocabulary_entry(),
-            "recent_generations": [],
-            "student": student_overview,
+            "recent_generations": self.student.recent_generations(self.lemma),
+            "student": self.student.student_overview(),
         }
         llm_call = llm_call_card_formation(
             llm_instructions=instructions,
@@ -46,6 +56,41 @@ class NewVocabularyCard:
             "primary_sense": self.ln_sense_info.get("primary_sense"),
             "secondary_senses": self.ln_sense_info.get("secondary_senses", []),
         }
+
+
+class NewGrammarCard:
+    """Everything known about a grammatical concept, derived from 
+    the grammar scaffolding JSON for first card formulation.
+    Currently wired for text_recall_grammar_g2e and cloze_grammar_e2g cards"""
+    def __init__(self, grammar_item_key, student):
+        """grammar_item_key is a slot key such as decl2::λόγος::genitive.singular. The
+        slot is unpacked into the three levels the card reasons from: the slot itself,
+        the rule it belongs to, and the paradigm whose chart it fills."""
+        self.student = student
+        self.key = grammar_item_key
+        unpacked = unpack_grammatical_item(grammar_item_key)
+        self.item = unpacked["item"]
+        self.rule = unpacked["rule"]
+        self.paradigm = unpacked["paradigm"]
+
+
+    def generate_grammar_card(self, desired_card_type):
+        """Produces grammar card through LLM call, contingent on desired type"""
+        instructions = card_instructions_loader(desired_card_type=desired_card_type)
+        card_content = {
+            "item": self.grammar_entry(),
+            "recent_generations": self.student.recent_generations(self.key),
+            "student": self.student.student_overview(),
+        }
+        llm_call = llm_call_card_formation(
+            llm_instructions=instructions,
+            card_content=card_content,
+        )
+        return {"card_type": desired_card_type, **parse_card_reply(llm_call)}
+
+
+    def grammar_entry(self):
+        return {"item": self.item, "rule": self.rule, "paradigm": self.paradigm}
 
     
 

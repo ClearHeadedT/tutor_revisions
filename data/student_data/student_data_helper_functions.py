@@ -1,8 +1,10 @@
 import json
+from functools import cache
 
 from greek_text import normalize_greek
 
 
+@cache
 def load_grammar_scaffolding():
     """Returns the grammar scaffolding: rule/paradigm structure plus the flat slot items"""
     with open('data/curriculum_data/grammar_scaffolding.json', 'r') as file:
@@ -24,10 +26,11 @@ def load_syntax_scaffolding():
     return normalize_keys(data)
 
 
+@cache
 def load_vocabulary_senses():
-    """The shared Text-Fabric/Louw-Nida enrichment cache, keyed by lemma. These are
+    """The shared Text-Fabric/Louw-Nida enrichment for each word, keyed by lemma. These are
     facts about Greek rather than about any student, so one copy serves everyone.
-    The cache builder writes this file."""
+    enrich_vocabulary_senses writes this file."""
     with open('data/curriculum_data/vocabulary_senses.json', 'r') as file:
         data = json.load(file)
     return {normalize_greek(lemma): entry for lemma, entry in data.items()}
@@ -36,6 +39,7 @@ def load_vocabulary_senses():
 def save_vocabulary_senses(senses):
     with open('data/curriculum_data/vocabulary_senses.json', 'w') as file:
         json.dump(senses, file, ensure_ascii=False, indent=2)
+    load_vocabulary_senses.cache_clear()
 
 
 def load_student_overview(student_id):
@@ -46,6 +50,16 @@ def load_student_overview(student_id):
 
 def save_student_vocabulary_data(student_id, data):
     with open(f'data/student_data/{student_id}/student_vocabulary_data.json', 'w') as file:
+        json.dump(data, file, ensure_ascii=False, indent=2)
+
+
+def save_student_grammar_data(student_id, data):
+    with open(f'data/student_data/{student_id}/student_grammar_data.json', 'w') as file:
+        json.dump(data, file, ensure_ascii=False, indent=2)
+
+
+def save_student_syntax_data(student_id, data):
+    with open(f'data/student_data/{student_id}/student_syntax_data.json', 'w') as file:
         json.dump(data, file, ensure_ascii=False, indent=2)
 
 
