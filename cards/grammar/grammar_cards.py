@@ -18,7 +18,6 @@ def rule_recall_grammar_g2e(item, llm_reply):
 def cloze_grammar_e2g(item, llm_reply):
     """Student is given the parsing and lexical form and must produce the correctly inflected form"""
     student_instructions = "Supply the correctly inflected Greek form missing in the following sentence:\n\n"
-    clozed_sentence = llm_reply["sentence"].replace(llm_reply["target_form"], "_____")
-    front_of_card = student_instructions + clozed_sentence + "\n\n" + f"{item["lexical_form"]}: {item["parsing"]}"
+    front_of_card = student_instructions + llm_reply["sentence"] + "\n\n" + f"{item["lexical_form"]}: {item["parsing"]}"
     back_of_card = f"{item["form"]}: {item["parsing"]}"
     return (front_of_card, back_of_card)

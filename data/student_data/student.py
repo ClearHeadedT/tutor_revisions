@@ -44,14 +44,14 @@ class Student:
             "vocabulary_learned": self.vocabulary_learned(),
         }
 
-    def record_new_vocabulary(self, lemma, reference_card, first_seen):
-        """Adds a word the student has just met, with the reference card generated
-        for it. Progress and cards are separate files, so both are written."""
-        self.vocabulary[lemma] = {"status": "learning", "last_reviewed": first_seen}
+    def record_card(self, lemma, card, today):
+        """Appends a generated card to this word's history. A word met for the first
+        time starts as learning; one already being studied keeps the progress it has."""
+        self.vocabulary.setdefault(lemma, {"status": "learning", "last_reviewed": today})
         save_student_vocabulary_data(
             self.student_id, {"student_id": self.student_id, "vocabulary": self.vocabulary}
         )
-        self.cards.setdefault(lemma, {"card_history": []})["reference_card"] = reference_card
+        self.cards.setdefault(lemma, {"card_history": []})["card_history"].append({"date": today, **card})
         save_student_card_data(
             self.student_id, {"student_id": self.student_id, "cards": self.cards}
         )

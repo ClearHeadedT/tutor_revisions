@@ -11,8 +11,7 @@ def assemble_text_recall_vocabulary_g2e(item, llm_reply):
 def assemble_cloze_vocabulary_e2g(item, llm_reply):
     """Student is given a clozed out item in the context of a sentence and must identify item from English gloss"""
     instructions_for_student = "Identify the Greek lexical item missing in the following sentence:\n\n"
-    clozed_sentence = llm_reply["sentence"].replace(llm_reply["target_form"], "_____")
-    front_of_card = instructions_for_student + clozed_sentence + "\n\n" + llm_reply["translation"]
+    front_of_card = instructions_for_student + llm_reply["sentence"] + "\n\n" + item["gloss"]
     back_of_card = f"{llm_reply["target_form"]} ({item["lexical_entry"]}: {item["gloss"]})"
     return (front_of_card, back_of_card)
 

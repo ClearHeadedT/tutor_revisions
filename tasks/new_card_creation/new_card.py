@@ -1,5 +1,5 @@
 from llm_calls.main import llm_call_card_formation
-from tasks.initial_card_creation.utils import(
+from tasks.new_card_creation.utils import(
     card_instructions_loader,
     parse_card_reply,
 )
