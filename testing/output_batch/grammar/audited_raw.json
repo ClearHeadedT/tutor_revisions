@@ -1,0 +1,77 @@
+{
+  "article::ὁ::nominative.masculine.singular": {
+    "reply": "```json\n{\n  \"blind_reading\": {\n    \"recalls_passage\": false,\n    \"passage\": null,\n    \"what_triggered_it\": \"Shepherd and bread and field register as generic pastoral/agrarian vocabulary but do not combine into any identifiable Gospel scene or verse.\"\n  },\n  \"constraints\": [\n    {\"n\": 1, \"verdict\": \"holds\"},\n    {\"n\": 2, \"verdict\": \"holds\"},\n    {\"n\": 3, \"verdict\": \"holds\"},\n    {\"n\": 4, \"verdict\": \"holds\"},\n    {\"n\": 5, \"verdict\": \"holds\"},\n    {\"n\": 6, \"verdict\": \"holds\"},\n    {\"n\": 7, \"verdict\": \"holds\"},\n    {\"n\": 8, \"verdict\": \"holds\"},\n    {\"n\": 9, \"verdict\": \"holds\"},\n    {\"n\": 10, \"verdict\": \"holds\"},\n    {\"n\": 11, \"verdict\": \"holds\"},\n    {\"n\": 12, \"verdict\": \"holds\"},\n    {\"n\": 13, \"verdict\": \"holds\"}\n  ],\n  \"echo\": [\n    {\"criterion\": \"wording\", \"verdict\": \"clean\", \"passage\": null, \"finding\": null},\n    {\"criterion\": \"structure\", \"verdict\": \"clean\", \"passage\": null, \"finding\": null},\n    {\"criterion\": \"scene\", \"verdict\": \"clean\", \"passage\": null, \"finding\": null},\n    {\"criterion\": \"collocation\", \"verdict\": \"clean\", \"passage\": null, \"finding\": null},\n    {\"criterion\": \"register\", \"verdict\": \"clean\", \"passage\": null, \"finding\": null},\n    {\"criterion\": \"theological rendering\", \"verdict\": \"clean\", \"passage\": null, \"finding\": null}\n  ],\n  \"reasoning_audit\": {\n    \"sound\": true,\n    \"finding\": null\n  },\n  \"verdict\": \"keep\",\n  \"summary\": \"The sentence isolates ὁ unambiguously as nominative masculine singular against contrasting accusative forms, uses ordinary non-corpus vocabulary in a plausible scene, and the generator's reasoning accurately describes the card as written; no fault found.\"\n}\n```",
+    "usage": {
+      "model": "claude-sonnet-5",
+      "input": 2325,
+      "cache_write": 1370,
+      "cache_read": 0,
+      "output": 2251,
+      "stop_reason": "end_turn",
+      "blocks": [
+        "thinking",
+        "text"
+      ]
+    }
+  },
+  "article::ὁ::genitive.feminine.singular": {
+    "reply": "```json\n{\n  \"blind_reading\": {\n    \"recalls_passage\": false,\n    \"passage\": null,\n    \"what_triggered_it\": \"A door left open all night is a generic domestic image; nothing in the wording (θύρα, οἰκία, νύξ) forms a recognizable NT/LXX phrase or episode, though it loosely evokes scenes like Acts 12:13 or Acts 5:19 without matching their vocabulary or syntax closely enough to count as an allusion.\"\n  },\n  \"constraints\": [\n    {\"n\": 1, \"verdict\": \"holds\"},\n    {\"n\": 2, \"verdict\": \"holds\"},\n    {\"n\": 3, \"verdict\": \"holds\"},\n    {\"n\": 4, \"verdict\": \"holds\"},\n    {\"n\": 5, \"verdict\": \"holds\"},\n    {\"n\": 6, \"verdict\": \"holds\"},\n    {\"n\": 7, \"verdict\": \"holds\"},\n    {\"n\": 8, \"verdict\": \"holds\"},\n    {\"n\": 9, \"verdict\": \"holds\"},\n    {\"n\": 10, \"verdict\": \"holds\"},\n    {\"n\": 11, \"verdict\": \"holds\"},\n    {\"n\": 12, \"verdict\": \"holds\"},\n    {\"n\": 13, \"verdict\": \"holds\"}\n  ],\n  \"echo\": [\n    {\"criterion\": \"wording\", \"verdict\": \"clean\", \"passage\": null, \"finding\": null},\n    {\"criterion\": \"structure\", \"verdict\": \"clean\", \"passage\": null, \"finding\": null},\n    {\"criterion\": \"scene\", \"verdict\": \"clean\", \"passage\": null, \"finding\": null},\n    {\"criterion\": \"collocation\", \"verdict\": \"clean\", \"passage\": null, \"finding\": null},\n    {\"criterion\": \"register\", \"verdict\": \"clean\", \"passage\": null, \"finding\": null},\n    {\"criterion\": \"theological rendering\", \"verdict\": \"clean\", \"passage\": null, \"finding\": null}\n  ],\n  \"reasoning_audit\": {\n    \"sound\": true,\n    \"finding\": null\n  },\n  \"verdict\": \"keep\",\n  \"summary\": \"The sentence is grammatically sound, the genitive τῆς οἰκίας is uncontested and correctly parsed, the translation is faithful, and no scriptural echo or constraint violation was found — the card is usable as is.\"\n}\n```",
+    "usage": {
+      "model": "claude-sonnet-5",
+      "input": 2290,
+      "cache_write": 0,
+      "cache_read": 1370,
+      "output": 2119,
+      "stop_reason": "end_turn",
+      "blocks": [
+        "thinking",
+        "text"
+      ]
+    }
+  },
+  "article::ὁ::dative.neuter.plural": {
+    "reply": "```json\n{\n  \"blind_reading\": {\n    \"recalls_passage\": false,\n    \"passage\": null,\n    \"what_triggered_it\": \"Fishermen and a village setting faintly suggest Gospel fishing scenes, but there is no specific wording or event match — it reads as a generic vignette.\"\n  },\n  \"constraints\": [\n    {\"n\": 1, \"verdict\": \"holds\"},\n    {\"n\": 2, \"verdict\": \"holds\"},\n    {\"n\": 3, \"verdict\": \"holds\"},\n    {\"n\": 4, \"verdict\": \"holds\"},\n    {\"n\": 5, \"verdict\": \"holds\"},\n    {\"n\": 6, \"verdict\": \"holds\"},\n    {\"n\": 7, \"verdict\": \"holds\"},\n    {\"n\": 8, \"verdict\": \"holds\"},\n    {\"n\": 9, \"verdict\": \"holds\"},\n    {\"n\": 10, \"verdict\": \"holds\"},\n    {\"n\": 11, \"verdict\": \"holds\"},\n    {\"n\": 12, \"verdict\": \"holds\"},\n    {\"n\": 13, \"verdict\": \"holds\"}\n  ],\n  \"echo\": [\n    {\"criterion\": \"wording\", \"verdict\": \"clean\", \"passage\": null, \"finding\": null},\n    {\"criterion\": \"structure\", \"verdict\": \"clean\", \"passage\": null, \"finding\": null},\n    {\"criterion\": \"scene\", \"verdict\": \"clean\", \"passage\": null, \"finding\": \"Fishermen/village imagery evokes Gospel settings loosely, but no specific episode or phrasing is reproduced.\"},\n    {\"criterion\": \"collocation\", \"verdict\": \"clean\", \"passage\": null, \"finding\": null},\n    {\"criterion\": \"register\", \"verdict\": \"clean\", \"passage\": null, \"finding\": null},\n    {\"criterion\": \"theological rendering\", \"verdict\": \"clean\", \"passage\": null, \"finding\": null}\n  ],\n  \"reasoning_audit\": {\n    \"sound\": true,\n    \"finding\": \"The reasoning correctly identifies that τοῖς is syncretic across masculine/neuter in the dative plural, and that τέκνοις (unambiguously neuter) is what fixes the gender reading — this matches the paradigm note about masculine/neuter identity in genitive and dative. No swap test is needed since there is only one dative plural article slot; the argument is consistent with the card as written.\"\n  },\n  \"verdict\": \"keep\",\n  \"summary\": \"The sentence is grammatical, natural, unambiguous for the target slot, and free of any real GNT echo; the reasoning correctly explains how τέκνοις disambiguates the syncretic dative plural article — keep as is.\"\n}\n```",
+    "usage": {
+      "model": "claude-sonnet-5",
+      "input": 2306,
+      "cache_write": 0,
+      "cache_read": 1370,
+      "output": 1889,
+      "stop_reason": "end_turn",
+      "blocks": [
+        "thinking",
+        "text"
+      ]
+    }
+  },
+  "article::ὁ::accusative.feminine.plural": {
+    "reply": "```json\n{\n  \"blind_reading\": {\n    \"recalls_passage\": true,\n    \"passage\": \"Mark 4:1 / Luke 5:3 (Jesus teaching from a boat)\",\n    \"what_triggered_it\": \"The odd detail of hearing something 'in the boat' evokes the Gospel scenes of Jesus teaching crowds from a boat, though there the content taught is parables, not written commandments, and no scribe appears.\"\n  },\n  \"constraints\": [\n    {\"n\": 1, \"verdict\": \"holds\"},\n    {\"n\": 2, \"verdict\": \"holds\"},\n    {\"n\": 3, \"verdict\": \"holds\"},\n    {\"n\": 4, \"verdict\": \"holds\"},\n    {\"n\": 5, \"verdict\": \"holds\"},\n    {\"n\": 6, \"verdict\": \"holds\"},\n    {\"n\": 7, \"verdict\": \"holds\"},\n    {\"n\": 8, \"verdict\": \"holds\"},\n    {\"n\": 9, \"verdict\": \"fails\", \"finding\": \"The scene is implausible: a scribe 'writing down commandments' that he 'heard in a boat' strains coherence — commandments are not something one overhears in transit, and pairing legal/Torah vocabulary (ἐντολάς, γραμματεύς) with a boat setting reads as an arbitrary collision of vocabulary items rather than a natural scenario.\"},\n    {\"n\": 10, \"verdict\": \"holds\"},\n    {\"n\": 11, \"verdict\": \"holds\"},\n    {\"n\": 12, \"verdict\": \"holds\"},\n    {\"n\": 13, \"verdict\": \"holds\"}\n  ],\n  \"echo\": [\n    {\"criterion\": \"wording\", \"verdict\": \"clean\", \"passage\": null},\n    {\"criterion\": \"structure\", \"verdict\": \"clean\", \"passage\": null},\n    {\"criterion\": \"scene\", \"verdict\": \"concern\", \"passage\": \"Mark 4:1 / Luke 5:3\", \"finding\": \"The 'heard in the boat' detail faintly recalls Jesus teaching from a boat, but the mismatch (commandments vs. parables, scribe vs. Jesus) makes this a weak, likely coincidental echo rather than a real allusion — still, the incongruity is what makes the sentence feel unnatural rather than deliberately allusive.\"},\n    {\"criterion\": \"collocation\", \"verdict\": \"clean\", \"passage\": null},\n    {\"criterion\": \"register\", \"verdict\": \"clean\", \"passage\": null},\n    {\"criterion\": \"theological rendering\", \"verdict\": \"clean\", \"passage\": null}\n  ],\n  \"reasoning_audit\": {\n    \"sound\": true,\n    \"finding\": \"The morphological argument for τὰς/ἐντολάς is correct and the target form is unambiguous. However, the reasoning calls the scene 'concrete and doctrinally unremarkable' without noticing that the combination of commandments, a scribe, and a boat is an odd, unmotivated pairing — the reasoning defends grammar but doesn't scrutinize plausibility.\"\n  },\n  \"verdict\": \"revise\",\n  \"summary\": \"Grammar and target-form use are correct, but the sentence stitches together unrelated vocabulary (scribe, commandments, boat) into an implausible scene; the generator should replace the setting (e.g. writing commandments in a scroll or on a tablet) to keep the scene coherent while preserving the τὰς ἐντολάς target.\"\n}\n```",
+    "usage": {
+      "model": "claude-sonnet-5",
+      "input": 2323,
+      "cache_write": 0,
+      "cache_read": 1370,
+      "output": 2902,
+      "stop_reason": "end_turn",
+      "blocks": [
+        "thinking",
+        "text"
+      ]
+    }
+  },
+  "decl2::λόγος::nominative.singular": {
+    "reply": "```json\n{\n  \"blind_reading\": {\n    \"recalls_passage\": true,\n    \"passage\": \"Luke 7:17\",\n    \"what_triggered_it\": \"The clause shape 'ὁ λόγος ... περὶ ... [verb of going] εἰς ὅλην τὴν ...' is a near-paraphrase of Luke 7:17 ('καὶ ἐξῆλθεν ὁ λόγος οὗτος ... περὶ αὐτοῦ καὶ πάσῃ τῇ περιχώρῳ'), the verse reporting how news of Jesus after a miracle spread through the whole region.\"\n  },\n  \"constraints\": [\n    {\"n\": 1, \"verdict\": \"holds\"},\n    {\"n\": 2, \"verdict\": \"holds\"},\n    {\"n\": 3, \"verdict\": \"holds\"},\n    {\"n\": 4, \"verdict\": \"holds\"},\n    {\"n\": 5, \"verdict\": \"holds\"},\n    {\"n\": 6, \"verdict\": \"fails\", \"finding\": \"The sentence 'ὁ λόγος περὶ τοῦ διδασκάλου διῆλθεν εἰς ὅλην τὴν χώραν' reproduces the distinctive collocation and clause structure of Luke 7:17 ('ἐξῆλθεν ὁ λόγος ... περὶ αὐτοῦ ... πάσῃ τῇ περιχώρῳ') closely enough to read as a paraphrase rather than an independent drill sentence.\"},\n    {\"n\": 7, \"verdict\": \"holds\"},\n    {\"n\": 8, \"verdict\": \"holds\"},\n    {\"n\": 9, \"verdict\": \"holds\"},\n    {\"n\": 10, \"verdict\": \"holds\"},\n    {\"n\": 11, \"verdict\": \"holds\"},\n    {\"n\": 12, \"verdict\": \"holds\"},\n    {\"n\": 13, \"verdict\": \"holds\"}\n  ],\n  \"echo\": [\n    {\"criterion\": \"wording\", \"verdict\": \"concern\", \"passage\": \"Luke 7:17\", \"finding\": \"'ὁ λόγος περὶ' + 'ὅλην τὴν' both appear in the target verse; the swap of διῆλθεν for ἐξῆλθεν and 'τοῦ διδασκάλου' for 'αὐτοῦ' does not disguise the shared phrasing.\"},\n    {\"criterion\": \"structure\", \"verdict\": \"concern\", \"passage\": \"Luke 7:17\", \"finding\": \"Same clause skeleton: subject 'ὁ λόγος', prepositional phrase with περί, verb of spreading, εἰς/ἐν + ὅλην/πάσῃ + region noun.\"},\n    {\"criterion\": \"scene\", \"verdict\": \"concern\", \"passage\": \"Luke 7:17 (also cf. Mt 9:26, Lk 4:37)\", \"finding\": \"The scene of a report about a healer/teacher figure spreading through 'the whole region' is a recognizable Gospel topos, not a neutral generic scenario.\"},\n    {\"criterion\": \"collocation\", \"verdict\": \"concern\", \"passage\": \"Luke 7:17\", \"finding\": \"λόγος + περί + verb of going + ὅλην τὴν χώραν/γῆν is the exact collocation family found in the Synoptic 'report spread' formula.\"},\n    {\"criterion\": \"register\", \"verdict\": \"clean\"},\n    {\"criterion\": \"theological rendering\", \"verdict\": \"clean\"}\n  ],\n  \"reasoning_audit\": {\n    \"sound\": false,\n    \"finding\": \"The reasoning only defends the morphological choice (why λόγος must be nominative/subject and semantically fits 'spreading') but never addresses that the resulting sentence closely echoes a specific, identifiable Gospel verse (Luke 7:17). It treats the sentence as freshly composed when it is effectively a light paraphrase of scripture, which the reasoning does not acknowledge or defend.\"\n  },\n  \"verdict\": \"revise\",\n  \"summary\": \"The morphology and grammar of the λόγος item are fine, but the sentence is a near-paraphrase of Luke 7:17 (ὁ λόγος περὶ ... ἐξῆλθεν εἰς ὅλην τὴν ...); the generator should rewrite the sentence with a different scene/collocation so it no longer tracks that verse's wording and structure.\"\n}\n```",
+    "usage": {
+      "model": "claude-sonnet-5",
+      "input": 1612,
+      "cache_write": 0,
+      "cache_read": 1370,
+      "output": 3908,
+      "stop_reason": "end_turn",
+      "blocks": [
+        "thinking",
+        "text"
+      ]
+    }
+  }
+}

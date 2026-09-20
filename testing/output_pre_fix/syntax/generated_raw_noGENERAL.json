@@ -1,0 +1,16 @@
+{
+  "genitive/adjectival/descriptive-genitive": {
+    "reply": "**Greek sentence:**\n\n**λόγος θεοῦ λέγει.**\n\n*(A word of God/a divine word speaks.)*\n\n**Task for the student:** How is **θεοῦ** functioning syntactically in this clause?",
+    "usage": {
+      "input": 2261,
+      "cache_write": 1137,
+      "cache_read": 0,
+      "output": 8321,
+      "stop_reason": "end_turn",
+      "blocks": [
+        "thinking",
+        "text"
+      ]
+    }
+  }
+}

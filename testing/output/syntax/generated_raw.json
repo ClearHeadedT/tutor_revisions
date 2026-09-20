@@ -1,0 +1,16 @@
+{
+  "genitive/adjectival/descriptive-genitive": {
+    "reply": "```json\n{\n  \"reasoning\": \"Descriptive genitive is the broad 'characterized by' catch-all, best shown with an abstract genitive noun that resists smooth one-word adjective conversion (ruling out attributive) and lacks any fullness, material, possession, or partitive sense. Using οἰκία θανάτου ('house of death') gives a vivid scene where the genitive plainly characterizes the house without being 'belonging to,' 'made of,' 'full of,' or a same-referent apposition. The surrounding clause stays simple past-tense narration so nothing but the genitive phrase demands parsing.\",\n  \"sentence\": \"Εἰσῆλθον εἰς οἰκίαν θανάτου καὶ εἶδον ἐκεῖ πολλοὺς νεκρούς.\",\n  \"translation\": \"I entered a house of death and saw many dead people there.\",\n  \"target_form\": \"θανάτου\"\n}\n```",
+    "usage": {
+      "input": 1301,
+      "cache_write": 4708,
+      "cache_read": 0,
+      "output": 4304,
+      "stop_reason": "end_turn",
+      "blocks": [
+        "thinking",
+        "text"
+      ]
+    }
+  }
+}

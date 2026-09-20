@@ -1,0 +1,32 @@
+{
+  "βαπτίζω": {
+    "reasoning": "βαπτίζω here in its primary religious sense (53.41). Sense lives in the visible act plus its confessional setting: water, a crowd, acknowledgment of sins. I place the recipient in the water of a river with a confessing crowd, so 'wash dishes' (53.31) and mere dipping are excluded; the passive with ἐν τῷ ποταμῷ and ὁμολογοῦντες anchors it. Beyond_beginner: one main clause with a participial phrase and prepositional phrase.",
+    "sentence": "πολλοὶ ἐβαπτίζοντο ἐν τῷ ποταμῷ, ὁμολογοῦντες τὰς ἁμαρτίας αὐτῶν.",
+    "translation": "Many were being baptized in the river, confessing their sins.",
+    "target_form": "ἐβαπτίζοντο"
+  },
+  "κράζω": {
+    "reasoning": "κράζω is loud shouting (33.83), distinguished from ordinary λέγω by volume and distance. The anchor: a blind man beside the road whose voice must carry over a crowd, and the crowd's rebuke shows he was heard and loud. A quiet verb of speaking could not motivate ἐπετίμων, so the swap test holds. Imperfect for iterative shouting, with a purpose-ish ἵνα clause within reach.",
+    "sentence": "ὁ τυφλὸς παρὰ τὴν ὁδὸν ἔκραζεν, καὶ ὁ ὄχλος ἐπετίμα αὐτῷ ἵνα σιγήσῃ.",
+    "translation": "The blind man beside the road kept crying out, and the crowd rebuked him so that he would be silent.",
+    "target_form": "ἔκραζεν"
+  },
+  "διώκω": {
+    "reasoning": "διώκω in its primary hostile sense (39.45), persecution rather than mere running after. The anchor is the object (believers) plus the instrument of harm (prison), which rules out the neutral 'pursue/strive after' reading. A city setting and αἱ φυλακαί make it concrete. Two clauses, aorist plus imperfect, fine for beyond_beginner.",
+    "sentence": "ἐδίωξαν τοὺς μαθητὰς ἐκ τῆς πόλεως, καὶ αἱ φυλακαὶ ἐπληροῦντο.",
+    "translation": "They persecuted the disciples out of the city, and the prisons were being filled.",
+    "target_form": "ἐδίωξαν"
+  },
+  "θεραπεύω": {
+    "reasoning": "θεραπεύω at 23.139, restoring to health. Sense is recovered from before/after: a fevered woman who then rises and serves. Contrast with mere 'attend to/serve' (35.19) is shut out because the caring is done by the sick one afterward, so the verb must mean cure. Beyond_beginner: aorist main clause plus consecutive καί and an infinitive complement.",
+    "sentence": "ἐθεράπευσεν τὴν γυναῖκα ἀπὸ τοῦ πυρετοῦ, καὶ εὐθὺς ἠγέρθη διακονεῖν αὐτοῖς.",
+    "translation": "He healed the woman of her fever, and at once she got up to serve them.",
+    "target_form": "ἐθεράπευσεν"
+  },
+  "θύρα": {
+    "reasoning": "θύρα at 7.49, the door of a building as a physical, closable entrance. Anchor: it is shut, knocked upon, and someone stands outside it — an aperture, not a gate of a city or a metaphorical opportunity. A window or wall would not admit knocking and opening, so the swap test holds. Perfect passive participle plus a temporal ὅτε clause suits beyond_beginner.",
+    "sentence": "κεκλεισμένης τῆς θύρας, ἔκρουσεν ὁ ξένος, καὶ οὐδεὶς ἤνοιξεν αὐτῷ.",
+    "translation": "The door having been shut, the stranger knocked, and no one opened for him.",
+    "target_form": "θύρας"
+  }
+}

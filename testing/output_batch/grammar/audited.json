@@ -1,0 +1,520 @@
+{
+  "article::ὁ::nominative.masculine.singular": {
+    "blind_reading": {
+      "recalls_passage": false,
+      "passage": null,
+      "what_triggered_it": "Shepherd and bread and field register as generic pastoral/agrarian vocabulary but do not combine into any identifiable Gospel scene or verse."
+    },
+    "constraints": [
+      {
+        "n": 1,
+        "verdict": "holds"
+      },
+      {
+        "n": 2,
+        "verdict": "holds"
+      },
+      {
+        "n": 3,
+        "verdict": "holds"
+      },
+      {
+        "n": 4,
+        "verdict": "holds"
+      },
+      {
+        "n": 5,
+        "verdict": "holds"
+      },
+      {
+        "n": 6,
+        "verdict": "holds"
+      },
+      {
+        "n": 7,
+        "verdict": "holds"
+      },
+      {
+        "n": 8,
+        "verdict": "holds"
+      },
+      {
+        "n": 9,
+        "verdict": "holds"
+      },
+      {
+        "n": 10,
+        "verdict": "holds"
+      },
+      {
+        "n": 11,
+        "verdict": "holds"
+      },
+      {
+        "n": 12,
+        "verdict": "holds"
+      },
+      {
+        "n": 13,
+        "verdict": "holds"
+      }
+    ],
+    "echo": [
+      {
+        "criterion": "wording",
+        "verdict": "clean",
+        "passage": null,
+        "finding": null
+      },
+      {
+        "criterion": "structure",
+        "verdict": "clean",
+        "passage": null,
+        "finding": null
+      },
+      {
+        "criterion": "scene",
+        "verdict": "clean",
+        "passage": null,
+        "finding": null
+      },
+      {
+        "criterion": "collocation",
+        "verdict": "clean",
+        "passage": null,
+        "finding": null
+      },
+      {
+        "criterion": "register",
+        "verdict": "clean",
+        "passage": null,
+        "finding": null
+      },
+      {
+        "criterion": "theological rendering",
+        "verdict": "clean",
+        "passage": null,
+        "finding": null
+      }
+    ],
+    "reasoning_audit": {
+      "sound": true,
+      "finding": null
+    },
+    "verdict": "keep",
+    "summary": "The sentence isolates ὁ unambiguously as nominative masculine singular against contrasting accusative forms, uses ordinary non-corpus vocabulary in a plausible scene, and the generator's reasoning accurately describes the card as written; no fault found."
+  },
+  "article::ὁ::genitive.feminine.singular": {
+    "blind_reading": {
+      "recalls_passage": false,
+      "passage": null,
+      "what_triggered_it": "A door left open all night is a generic domestic image; nothing in the wording (θύρα, οἰκία, νύξ) forms a recognizable NT/LXX phrase or episode, though it loosely evokes scenes like Acts 12:13 or Acts 5:19 without matching their vocabulary or syntax closely enough to count as an allusion."
+    },
+    "constraints": [
+      {
+        "n": 1,
+        "verdict": "holds"
+      },
+      {
+        "n": 2,
+        "verdict": "holds"
+      },
+      {
+        "n": 3,
+        "verdict": "holds"
+      },
+      {
+        "n": 4,
+        "verdict": "holds"
+      },
+      {
+        "n": 5,
+        "verdict": "holds"
+      },
+      {
+        "n": 6,
+        "verdict": "holds"
+      },
+      {
+        "n": 7,
+        "verdict": "holds"
+      },
+      {
+        "n": 8,
+        "verdict": "holds"
+      },
+      {
+        "n": 9,
+        "verdict": "holds"
+      },
+      {
+        "n": 10,
+        "verdict": "holds"
+      },
+      {
+        "n": 11,
+        "verdict": "holds"
+      },
+      {
+        "n": 12,
+        "verdict": "holds"
+      },
+      {
+        "n": 13,
+        "verdict": "holds"
+      }
+    ],
+    "echo": [
+      {
+        "criterion": "wording",
+        "verdict": "clean",
+        "passage": null,
+        "finding": null
+      },
+      {
+        "criterion": "structure",
+        "verdict": "clean",
+        "passage": null,
+        "finding": null
+      },
+      {
+        "criterion": "scene",
+        "verdict": "clean",
+        "passage": null,
+        "finding": null
+      },
+      {
+        "criterion": "collocation",
+        "verdict": "clean",
+        "passage": null,
+        "finding": null
+      },
+      {
+        "criterion": "register",
+        "verdict": "clean",
+        "passage": null,
+        "finding": null
+      },
+      {
+        "criterion": "theological rendering",
+        "verdict": "clean",
+        "passage": null,
+        "finding": null
+      }
+    ],
+    "reasoning_audit": {
+      "sound": true,
+      "finding": null
+    },
+    "verdict": "keep",
+    "summary": "The sentence is grammatically sound, the genitive τῆς οἰκίας is uncontested and correctly parsed, the translation is faithful, and no scriptural echo or constraint violation was found — the card is usable as is."
+  },
+  "article::ὁ::dative.neuter.plural": {
+    "blind_reading": {
+      "recalls_passage": false,
+      "passage": null,
+      "what_triggered_it": "Fishermen and a village setting faintly suggest Gospel fishing scenes, but there is no specific wording or event match — it reads as a generic vignette."
+    },
+    "constraints": [
+      {
+        "n": 1,
+        "verdict": "holds"
+      },
+      {
+        "n": 2,
+        "verdict": "holds"
+      },
+      {
+        "n": 3,
+        "verdict": "holds"
+      },
+      {
+        "n": 4,
+        "verdict": "holds"
+      },
+      {
+        "n": 5,
+        "verdict": "holds"
+      },
+      {
+        "n": 6,
+        "verdict": "holds"
+      },
+      {
+        "n": 7,
+        "verdict": "holds"
+      },
+      {
+        "n": 8,
+        "verdict": "holds"
+      },
+      {
+        "n": 9,
+        "verdict": "holds"
+      },
+      {
+        "n": 10,
+        "verdict": "holds"
+      },
+      {
+        "n": 11,
+        "verdict": "holds"
+      },
+      {
+        "n": 12,
+        "verdict": "holds"
+      },
+      {
+        "n": 13,
+        "verdict": "holds"
+      }
+    ],
+    "echo": [
+      {
+        "criterion": "wording",
+        "verdict": "clean",
+        "passage": null,
+        "finding": null
+      },
+      {
+        "criterion": "structure",
+        "verdict": "clean",
+        "passage": null,
+        "finding": null
+      },
+      {
+        "criterion": "scene",
+        "verdict": "clean",
+        "passage": null,
+        "finding": "Fishermen/village imagery evokes Gospel settings loosely, but no specific episode or phrasing is reproduced."
+      },
+      {
+        "criterion": "collocation",
+        "verdict": "clean",
+        "passage": null,
+        "finding": null
+      },
+      {
+        "criterion": "register",
+        "verdict": "clean",
+        "passage": null,
+        "finding": null
+      },
+      {
+        "criterion": "theological rendering",
+        "verdict": "clean",
+        "passage": null,
+        "finding": null
+      }
+    ],
+    "reasoning_audit": {
+      "sound": true,
+      "finding": "The reasoning correctly identifies that τοῖς is syncretic across masculine/neuter in the dative plural, and that τέκνοις (unambiguously neuter) is what fixes the gender reading — this matches the paradigm note about masculine/neuter identity in genitive and dative. No swap test is needed since there is only one dative plural article slot; the argument is consistent with the card as written."
+    },
+    "verdict": "keep",
+    "summary": "The sentence is grammatical, natural, unambiguous for the target slot, and free of any real GNT echo; the reasoning correctly explains how τέκνοις disambiguates the syncretic dative plural article — keep as is."
+  },
+  "article::ὁ::accusative.feminine.plural": {
+    "blind_reading": {
+      "recalls_passage": true,
+      "passage": "Mark 4:1 / Luke 5:3 (Jesus teaching from a boat)",
+      "what_triggered_it": "The odd detail of hearing something 'in the boat' evokes the Gospel scenes of Jesus teaching crowds from a boat, though there the content taught is parables, not written commandments, and no scribe appears."
+    },
+    "constraints": [
+      {
+        "n": 1,
+        "verdict": "holds"
+      },
+      {
+        "n": 2,
+        "verdict": "holds"
+      },
+      {
+        "n": 3,
+        "verdict": "holds"
+      },
+      {
+        "n": 4,
+        "verdict": "holds"
+      },
+      {
+        "n": 5,
+        "verdict": "holds"
+      },
+      {
+        "n": 6,
+        "verdict": "holds"
+      },
+      {
+        "n": 7,
+        "verdict": "holds"
+      },
+      {
+        "n": 8,
+        "verdict": "holds"
+      },
+      {
+        "n": 9,
+        "verdict": "fails",
+        "finding": "The scene is implausible: a scribe 'writing down commandments' that he 'heard in a boat' strains coherence — commandments are not something one overhears in transit, and pairing legal/Torah vocabulary (ἐντολάς, γραμματεύς) with a boat setting reads as an arbitrary collision of vocabulary items rather than a natural scenario."
+      },
+      {
+        "n": 10,
+        "verdict": "holds"
+      },
+      {
+        "n": 11,
+        "verdict": "holds"
+      },
+      {
+        "n": 12,
+        "verdict": "holds"
+      },
+      {
+        "n": 13,
+        "verdict": "holds"
+      }
+    ],
+    "echo": [
+      {
+        "criterion": "wording",
+        "verdict": "clean",
+        "passage": null
+      },
+      {
+        "criterion": "structure",
+        "verdict": "clean",
+        "passage": null
+      },
+      {
+        "criterion": "scene",
+        "verdict": "concern",
+        "passage": "Mark 4:1 / Luke 5:3",
+        "finding": "The 'heard in the boat' detail faintly recalls Jesus teaching from a boat, but the mismatch (commandments vs. parables, scribe vs. Jesus) makes this a weak, likely coincidental echo rather than a real allusion — still, the incongruity is what makes the sentence feel unnatural rather than deliberately allusive."
+      },
+      {
+        "criterion": "collocation",
+        "verdict": "clean",
+        "passage": null
+      },
+      {
+        "criterion": "register",
+        "verdict": "clean",
+        "passage": null
+      },
+      {
+        "criterion": "theological rendering",
+        "verdict": "clean",
+        "passage": null
+      }
+    ],
+    "reasoning_audit": {
+      "sound": true,
+      "finding": "The morphological argument for τὰς/ἐντολάς is correct and the target form is unambiguous. However, the reasoning calls the scene 'concrete and doctrinally unremarkable' without noticing that the combination of commandments, a scribe, and a boat is an odd, unmotivated pairing — the reasoning defends grammar but doesn't scrutinize plausibility."
+    },
+    "verdict": "revise",
+    "summary": "Grammar and target-form use are correct, but the sentence stitches together unrelated vocabulary (scribe, commandments, boat) into an implausible scene; the generator should replace the setting (e.g. writing commandments in a scroll or on a tablet) to keep the scene coherent while preserving the τὰς ἐντολάς target."
+  },
+  "decl2::λόγος::nominative.singular": {
+    "blind_reading": {
+      "recalls_passage": true,
+      "passage": "Luke 7:17",
+      "what_triggered_it": "The clause shape 'ὁ λόγος ... περὶ ... [verb of going] εἰς ὅλην τὴν ...' is a near-paraphrase of Luke 7:17 ('καὶ ἐξῆλθεν ὁ λόγος οὗτος ... περὶ αὐτοῦ καὶ πάσῃ τῇ περιχώρῳ'), the verse reporting how news of Jesus after a miracle spread through the whole region."
+    },
+    "constraints": [
+      {
+        "n": 1,
+        "verdict": "holds"
+      },
+      {
+        "n": 2,
+        "verdict": "holds"
+      },
+      {
+        "n": 3,
+        "verdict": "holds"
+      },
+      {
+        "n": 4,
+        "verdict": "holds"
+      },
+      {
+        "n": 5,
+        "verdict": "holds"
+      },
+      {
+        "n": 6,
+        "verdict": "fails",
+        "finding": "The sentence 'ὁ λόγος περὶ τοῦ διδασκάλου διῆλθεν εἰς ὅλην τὴν χώραν' reproduces the distinctive collocation and clause structure of Luke 7:17 ('ἐξῆλθεν ὁ λόγος ... περὶ αὐτοῦ ... πάσῃ τῇ περιχώρῳ') closely enough to read as a paraphrase rather than an independent drill sentence."
+      },
+      {
+        "n": 7,
+        "verdict": "holds"
+      },
+      {
+        "n": 8,
+        "verdict": "holds"
+      },
+      {
+        "n": 9,
+        "verdict": "holds"
+      },
+      {
+        "n": 10,
+        "verdict": "holds"
+      },
+      {
+        "n": 11,
+        "verdict": "holds"
+      },
+      {
+        "n": 12,
+        "verdict": "holds"
+      },
+      {
+        "n": 13,
+        "verdict": "holds"
+      }
+    ],
+    "echo": [
+      {
+        "criterion": "wording",
+        "verdict": "concern",
+        "passage": "Luke 7:17",
+        "finding": "'ὁ λόγος περὶ' + 'ὅλην τὴν' both appear in the target verse; the swap of διῆλθεν for ἐξῆλθεν and 'τοῦ διδασκάλου' for 'αὐτοῦ' does not disguise the shared phrasing."
+      },
+      {
+        "criterion": "structure",
+        "verdict": "concern",
+        "passage": "Luke 7:17",
+        "finding": "Same clause skeleton: subject 'ὁ λόγος', prepositional phrase with περί, verb of spreading, εἰς/ἐν + ὅλην/πάσῃ + region noun."
+      },
+      {
+        "criterion": "scene",
+        "verdict": "concern",
+        "passage": "Luke 7:17 (also cf. Mt 9:26, Lk 4:37)",
+        "finding": "The scene of a report about a healer/teacher figure spreading through 'the whole region' is a recognizable Gospel topos, not a neutral generic scenario."
+      },
+      {
+        "criterion": "collocation",
+        "verdict": "concern",
+        "passage": "Luke 7:17",
+        "finding": "λόγος + περί + verb of going + ὅλην τὴν χώραν/γῆν is the exact collocation family found in the Synoptic 'report spread' formula."
+      },
+      {
+        "criterion": "register",
+        "verdict": "clean"
+      },
+      {
+        "criterion": "theological rendering",
+        "verdict": "clean"
+      }
+    ],
+    "reasoning_audit": {
+      "sound": false,
+      "finding": "The reasoning only defends the morphological choice (why λόγος must be nominative/subject and semantically fits 'spreading') but never addresses that the resulting sentence closely echoes a specific, identifiable Gospel verse (Luke 7:17). It treats the sentence as freshly composed when it is effectively a light paraphrase of scripture, which the reasoning does not acknowledge or defend."
+    },
+    "verdict": "revise",
+    "summary": "The morphology and grammar of the λόγος item are fine, but the sentence is a near-paraphrase of Luke 7:17 (ὁ λόγος περὶ ... ἐξῆλθεν εἰς ὅλην τὴν ...); the generator should rewrite the sentence with a different scene/collocation so it no longer tracks that verse's wording and structure."
+  }
+}

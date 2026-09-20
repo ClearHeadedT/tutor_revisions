@@ -1,0 +1,16 @@
+{
+  "article::ὁ::nominative.masculine.singular": {
+    "reply": "```json\n{\n  \"reasoning\": \"Target is ὁ (nominative masculine singular), so it needs to agree unambiguously with a masculine singular subject in a finite clause. The vocabulary pool is narrow (λύω, γράφω, λέγω, λόγος, θεός), so I keep θεός as the subject and avoid pairing λόγος with θεός in the genitive, since that combination is a recognizable formula; using the pronoun αὐτοῦ instead keeps the scene ordinary. Beyond-beginner range is met with a coordinated clause shifting from third-person to first-person present indicative, which the student has covered, while the article's case/gender/number agreement with θεός remains the sole retrieval demand.\",\n  \"sentence\": \"ὁ θεὸς λέγει, καὶ γράφω τὸν λόγον αὐτοῦ.\",\n  \"translation\": \"God speaks, and I write his word.\",\n  \"target_form\": \"ὁ\"\n}\n```",
+    "usage": {
+      "input": 2383,
+      "cache_write": 0,
+      "cache_read": 5989,
+      "output": 3404,
+      "stop_reason": "end_turn",
+      "blocks": [
+        "thinking",
+        "text"
+      ]
+    }
+  }
+}

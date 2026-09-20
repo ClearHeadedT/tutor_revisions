@@ -1,0 +1,519 @@
+{
+  "genitive/adjectival/descriptive-genitive": {
+    "blind_reading": {
+      "recalls_passage": true,
+      "passage": "Luke 10:5-6 (the seventy sent out: entering a house, 'son of peace', peace resting on the household)",
+      "what_triggered_it": "An elder entering a house and finding it characterized by peace (no shouting, no fighting) directly recalls the mission-discourse scene of entering a house and testing whether a 'son of peace' is there so that peace may rest on it."
+    },
+    "constraints": [
+      {
+        "n": 1,
+        "verdict": "holds"
+      },
+      {
+        "n": 2,
+        "verdict": "holds"
+      },
+      {
+        "n": 3,
+        "verdict": "holds"
+      },
+      {
+        "n": 4,
+        "verdict": "holds"
+      },
+      {
+        "n": 5,
+        "verdict": "holds"
+      },
+      {
+        "n": 6,
+        "verdict": "holds"
+      },
+      {
+        "n": 7,
+        "verdict": "holds"
+      },
+      {
+        "n": 8,
+        "verdict": "holds"
+      },
+      {
+        "n": 9,
+        "verdict": "fails",
+        "finding": "The sentence does not clearly exclude the sibling category 'Attributive Genitive' (attribute/innate quality → adjective). 'οἰκίαν εἰρήνης' reads just as naturally as 'a peaceful house' (attributive) as it does 'a house characterized by peace' (descriptive). The reasoning defends only against ὕδωρ/material-content confusion and never performs the swap test against the closest sibling, attributive-genitive, nor against λίθος at all."
+      },
+      {
+        "n": 10,
+        "verdict": "holds"
+      },
+      {
+        "n": 11,
+        "verdict": "holds"
+      },
+      {
+        "n": 12,
+        "verdict": "holds"
+      },
+      {
+        "n": 13,
+        "verdict": "holds"
+      }
+    ],
+    "echo": [
+      {
+        "criterion": "wording",
+        "verdict": "clean",
+        "passage": null,
+        "finding": null
+      },
+      {
+        "criterion": "structure",
+        "verdict": "concern",
+        "passage": "Luke 10:5-6",
+        "finding": "εἰσῆλθεν ... εἰς οἰκίαν mirrors the εἰσέλθητε ... οἰκίαν structure of the mission-discourse instructions almost exactly in word order and case usage."
+      },
+      {
+        "criterion": "scene",
+        "verdict": "concern",
+        "passage": "Luke 10:5-6",
+        "finding": "An emissary-figure ('the elder') entering a house and finding it defined by peace vs. strife is the same narrative beat as testing a house for a 'son of peace.'"
+      },
+      {
+        "criterion": "collocation",
+        "verdict": "concern",
+        "passage": "Luke 10:6",
+        "finding": "'house' + genitive of εἰρήνη recreates the idiomatic Semitic 'X of peace' collocation ('υἱὸς εἰρήνης') that the NT uses for exactly this kind of descriptive/attributive genitive, making the example feel borrowed rather than invented."
+      },
+      {
+        "criterion": "register",
+        "verdict": "clean",
+        "passage": null,
+        "finding": null
+      },
+      {
+        "criterion": "theological rendering",
+        "verdict": "concern",
+        "passage": "Luke 10:5-6",
+        "finding": "'House of peace' carries the theological loading of a household receiving/being worthy of Christ's peace, which the card's plain descriptive gloss doesn't flag or defuse."
+      }
+    ],
+    "reasoning_audit": {
+      "sound": false,
+      "finding": "The reasoning only rules out the genitive-of-material/content reading (ὕδωρ) and never addresses the far more plausible confusion with Attributive Genitive, nor does it test λίθος even though it's listed as a lexical option. The swap test is asserted, not performed, for the sibling that actually threatens the card's clarity."
+    },
+    "verdict": "revise",
+    "summary": "The sentence unintentionally echoes the Luke 10:5-6 'house/son of peace' idiom in structure, scene, and collocation, and the reasoning fails to rule out Attributive Genitive as an equally valid reading of 'οἰκίαν εἰρήνης'; the generator should pick a less idiomatically loaded head noun/scene and perform the swap test against attributive genitive (and λίθος) before resubmitting."
+  },
+  "dative/pure-dative-uses/dative-indirect-object": {
+    "blind_reading": {
+      "recalls_passage": true,
+      "passage": "Mark 10:46 / Luke 18:35 (blind beggar sitting beside the road); also Matt 13:4 / Mark 4:4 / Luke 8:5 (seed falling παρὰ τὴν ὁδόν)",
+      "what_triggered_it": "The phrase τοῖς καθημένοις παρὰ τὴν ὁδόν closely echoes the stock NT description of someone (the blind beggar) sitting beside the road, and παρὰ τὴν ὁδόν is also the fixed phrase from the sower parable."
+    },
+    "constraints": [
+      {
+        "n": 1,
+        "verdict": "holds"
+      },
+      {
+        "n": 2,
+        "verdict": "holds"
+      },
+      {
+        "n": 3,
+        "verdict": "holds"
+      },
+      {
+        "n": 4,
+        "verdict": "holds"
+      },
+      {
+        "n": 5,
+        "verdict": "holds"
+      },
+      {
+        "n": 6,
+        "verdict": "holds"
+      },
+      {
+        "n": 7,
+        "verdict": "holds"
+      },
+      {
+        "n": 8,
+        "verdict": "holds"
+      },
+      {
+        "n": 9,
+        "verdict": "holds"
+      },
+      {
+        "n": 10,
+        "verdict": "holds"
+      },
+      {
+        "n": 11,
+        "verdict": "holds"
+      },
+      {
+        "n": 12,
+        "verdict": "holds"
+      },
+      {
+        "n": 13,
+        "verdict": "holds"
+      }
+    ],
+    "echo": [
+      {
+        "criterion": "wording",
+        "verdict": "concern",
+        "passage": "Mark 10:46 / Luke 18:35; Matt 13:4",
+        "finding": "τοῖς καθημένοις παρὰ τὴν ὁδόν reproduces the exact fixed phrase παρὰ τὴν ὁδόν used in both the blind-beggar healing scenes and the sower parable, rather than a neutral locative construction."
+      },
+      {
+        "criterion": "structure",
+        "verdict": "clean"
+      },
+      {
+        "criterion": "scene",
+        "verdict": "concern",
+        "passage": "Mark 10:46",
+        "finding": "Children 'sitting beside the road' recreates the visual tableau of the roadside beggar, an unusually specific and recognizable scene rather than a generic setting."
+      },
+      {
+        "criterion": "collocation",
+        "verdict": "concern",
+        "passage": "Matt 13:4 / Mark 4:4 / Luke 8:5",
+        "finding": "παρὰ τὴν ὁδόν is a fixed NT collocation (seed falling beside the road); its reuse here is not incidental phrasing but a recognizable stock phrase."
+      },
+      {
+        "criterion": "register",
+        "verdict": "clean"
+      },
+      {
+        "criterion": "theological rendering",
+        "verdict": "clean"
+      }
+    ],
+    "reasoning_audit": {
+      "sound": true,
+      "finding": "The grammatical argument for why the dative must be indirect-object (transitive verb + expressed accusative object) is correct and matches the sentence as written; it does not address the borrowed scriptural phrase, but that omission does not make the grammatical claim false."
+    },
+    "verdict": "revise",
+    "summary": "The grammar and target-form use are sound, but τοῖς καθημένοις παρὰ τὴν ὁδόν reuses a recognizable fixed NT phrase/scene (the roadside beggar of Mark 10:46/Luke 18:35, and the sower's seed 'beside the road'); replace the participial phrase with a neutral, non-scriptural location to avoid the unintended allusion."
+  },
+  "accusative/substantival-uses-accusative/accusative-direct-object": {
+    "blind_reading": {
+      "recalls_passage": true,
+      "passage": "Revelation 3:20 (also echoes Acts 12:13-16, Rhoda at the door)",
+      "what_triggered_it": "The pairing of 'hearing a voice' with 'opening the door' is the exact collocation and scene of Christ knocking in Rev 3:20 ('ἐάν τις ἀκούσῃ τῆς φωνῆς μου καὶ ἀνοίξῃ τὴν θύραν'), and also recalls the servant-girl-opens-door scene in Acts 12."
+    },
+    "constraints": [
+      {
+        "n": 1,
+        "verdict": "holds"
+      },
+      {
+        "n": 2,
+        "verdict": "holds"
+      },
+      {
+        "n": 3,
+        "verdict": "holds"
+      },
+      {
+        "n": 4,
+        "verdict": "holds"
+      },
+      {
+        "n": 5,
+        "verdict": "holds"
+      },
+      {
+        "n": 6,
+        "verdict": "holds"
+      },
+      {
+        "n": 7,
+        "verdict": "holds"
+      },
+      {
+        "n": 8,
+        "verdict": "holds"
+      },
+      {
+        "n": 9,
+        "verdict": "holds"
+      },
+      {
+        "n": 10,
+        "verdict": "holds"
+      },
+      {
+        "n": 11,
+        "verdict": "holds"
+      },
+      {
+        "n": 12,
+        "verdict": "holds"
+      },
+      {
+        "n": 13,
+        "verdict": "holds"
+      }
+    ],
+    "echo": [
+      {
+        "criterion": "wording",
+        "verdict": "concern",
+        "passage": "Revelation 3:20",
+        "finding": "ἀκούσας τὴν φωνήν ... ἤνοιξεν τὴν θύραν closely mirrors ἐάν τις ἀκούσῃ τῆς φωνῆς μου καὶ ἀνοίξῃ τὴν θύραν."
+      },
+      {
+        "criterion": "structure",
+        "verdict": "concern",
+        "passage": "Revelation 3:20",
+        "finding": "Same two-step syntactic pattern: hearing clause followed by door-opening main clause."
+      },
+      {
+        "criterion": "scene",
+        "verdict": "concern",
+        "passage": "Acts 12:13-16 / Revelation 3:20",
+        "finding": "The night-time servant-opens-door-after-hearing-a-voice scene reproduces two distinct, recognizable NT episodes at once."
+      },
+      {
+        "criterion": "collocation",
+        "verdict": "fails",
+        "passage": "Revelation 3:20",
+        "finding": "ἀκούω τὴν φωνήν + ἀνοίγω τὴν θύραν is not a generic pairing but a specific, theologically loaded collocation from this verse."
+      },
+      {
+        "criterion": "register",
+        "verdict": "clean",
+        "passage": null,
+        "finding": null
+      },
+      {
+        "criterion": "theological rendering",
+        "verdict": "concern",
+        "passage": "Revelation 3:20",
+        "finding": "Even without doctrinal vocabulary, the imagery imports the theological scene of Christ awaiting entry, which is likely unintended."
+      }
+    ],
+    "reasoning_audit": {
+      "sound": false,
+      "finding": "The reasoning only verifies the syntactic requirements (single accusative, no cognate relation, no infinitive) and never considers whether the resulting sentence reproduces recognizable scriptural wording or scene. It defends a grammatically correct sentence while missing that the chosen action-pair (hear voice / open door) is itself a marked NT collocation, not a neutral choice among many equally plausible predicates."
+    },
+    "verdict": "revise",
+    "summary": "Grammar and item-fit are fine, but the sentence's 'hearing a voice then opening the door' collocation echoes Revelation 3:20 (and Acts 12) too closely; keep the accusative-direct-object item and θύρα, but replace the hearing-voice setup with a neutral trigger for opening the door."
+  },
+  "article/regular-uses-article/as-pronoun-partially-independent-use/personal-pronoun": {
+    "blind_reading": {
+      "recalls_passage": true,
+      "passage": "Mark 14:61 / Matt 27:12-14 / John 19:9 (Jesus' silence before his accusers)",
+      "what_triggered_it": "An interrogation followed immediately by 'he did not answer them' is the exact shape of the Passion silence-before-accusers scene, even though the wording differs."
+    },
+    "constraints": [
+      {
+        "n": 1,
+        "verdict": "holds"
+      },
+      {
+        "n": 2,
+        "verdict": "holds"
+      },
+      {
+        "n": 3,
+        "verdict": "holds"
+      },
+      {
+        "n": 4,
+        "verdict": "holds"
+      },
+      {
+        "n": 5,
+        "verdict": "holds"
+      },
+      {
+        "n": 6,
+        "verdict": "holds"
+      },
+      {
+        "n": 7,
+        "verdict": "holds"
+      },
+      {
+        "n": 8,
+        "verdict": "holds"
+      },
+      {
+        "n": 9,
+        "verdict": "holds"
+      },
+      {
+        "n": 10,
+        "verdict": "holds"
+      },
+      {
+        "n": 11,
+        "verdict": "holds"
+      },
+      {
+        "n": 12,
+        "verdict": "holds"
+      },
+      {
+        "n": 13,
+        "verdict": "holds"
+      }
+    ],
+    "echo": [
+      {
+        "criterion": "wording",
+        "verdict": "clean",
+        "passage": null,
+        "finding": null
+      },
+      {
+        "criterion": "structure",
+        "verdict": "concern",
+        "passage": "Mark 14:61 / Matt 27:12-14",
+        "finding": "The ὁ δέ ... οὐκ ἀπεκρίθη construction directly mirrors the Synoptic pattern of the accused's silence (ὁ δὲ ἐσιώπα/οὐδὲν ἀπεκρίνατο), which is a recognizable narrative formula, not a neutral grammatical template."
+      },
+      {
+        "criterion": "scene",
+        "verdict": "concern",
+        "passage": "Passion narrative interrogation scenes (Mark 14:61, Matt 27:12-14, John 19:9)",
+        "finding": "Question-then-refusal-to-answer is the defining beat of Jesus' trial silence; transplanting it onto a soldier being asked 'about the hour' inadvertently borrows a theologically loaded scene for a mundane drill sentence."
+      },
+      {
+        "criterion": "collocation",
+        "verdict": "clean",
+        "passage": null,
+        "finding": null
+      },
+      {
+        "criterion": "register",
+        "verdict": "clean",
+        "passage": null,
+        "finding": null
+      },
+      {
+        "criterion": "theological rendering",
+        "verdict": "clean",
+        "passage": null,
+        "finding": null
+      }
+    ],
+    "reasoning_audit": {
+      "sound": true,
+      "finding": "The reasoning correctly describes the grammatical shape of the sentence it produced and correctly rules out the relative/possessive readings; it does not address the scene it has recreated, but as a grammatical argument it is accurate."
+    },
+    "verdict": "revise",
+    "summary": "Grammar and item-construction are sound, but 'ὁ δὲ οὐκ ἀπεκρίθη' after an interrogation unmistakably echoes the Passion silence-before-accusers scene (Mark 14:61 etc.); the generator should replace the question/refusal-to-answer scenario with a neutral action so the ὁ δέ pronoun use isn't riding on a loaded Gospel scene."
+  },
+  "voice/active/simple-active": {
+    "blind_reading": {
+      "recalls_passage": true,
+      "passage": "Pauline prison epistles (e.g. Ephesians, Philippians, Colossians, Philemon)",
+      "what_triggered_it": "An unnamed 'apostle' sitting in prison and writing a letter to churches is the classic scene of Paul's captivity epistles, even though no wording is shared."
+    },
+    "constraints": [
+      {
+        "n": 1,
+        "verdict": "holds"
+      },
+      {
+        "n": 2,
+        "verdict": "holds"
+      },
+      {
+        "n": 3,
+        "verdict": "holds"
+      },
+      {
+        "n": 4,
+        "verdict": "holds"
+      },
+      {
+        "n": 5,
+        "verdict": "holds"
+      },
+      {
+        "n": 6,
+        "verdict": "holds"
+      },
+      {
+        "n": 7,
+        "verdict": "holds"
+      },
+      {
+        "n": 8,
+        "verdict": "holds"
+      },
+      {
+        "n": 9,
+        "verdict": "holds"
+      },
+      {
+        "n": 10,
+        "verdict": "holds"
+      },
+      {
+        "n": 11,
+        "verdict": "holds"
+      },
+      {
+        "n": 12,
+        "verdict": "holds"
+      },
+      {
+        "n": 13,
+        "verdict": "fails",
+        "finding": "The reasoning claims 'ink and hand visible' as evidence the subject performs the action directly, but neither ink nor a hand is mentioned anywhere in the sentence ('ἐν τῷ δεσμωτηρίῳ καθήμενος ὁ ἀπόστολος γράφει ἐπιστολὴν ταῖς ἐκκλησίαις ταῖς μικραῖς'). The reasoning describes details that are not in the card."
+      }
+    ],
+    "echo": [
+      {
+        "criterion": "wording",
+        "verdict": "clean",
+        "passage": null
+      },
+      {
+        "criterion": "structure",
+        "verdict": "clean",
+        "passage": null
+      },
+      {
+        "criterion": "scene",
+        "verdict": "concern",
+        "passage": "Pauline captivity epistles (Eph, Phil, Col, Phlm)",
+        "finding": "An 'apostle' imprisoned and writing a letter to churches is a recognizable, specific biblical scenario, not a generic action; it risks being read as an allusion rather than a neutral grammar example."
+      },
+      {
+        "criterion": "collocation",
+        "verdict": "concern",
+        "passage": "Acts 16:26 / Matt 11:2 (δεσμωτήριον)",
+        "finding": "δεσμωτήριον plus an apostle-figure writing to churches evokes the imprisonment-and-epistle motif, an unusual pairing for a supposedly neutral drill sentence."
+      },
+      {
+        "criterion": "register",
+        "verdict": "clean",
+        "passage": null
+      },
+      {
+        "criterion": "theological rendering",
+        "verdict": "clean",
+        "passage": null
+      }
+    ],
+    "reasoning_audit": {
+      "sound": false,
+      "finding": "The reasoning asserts sensory details ('ink and hand visible') that do not appear in the sentence, meaning the argument is partly describing a scene other than the one actually written."
+    },
+    "verdict": "revise",
+    "summary": "Grammar and target-form use are fine, but the reasoning fabricates details (ink, hand) absent from the sentence, and the scene of an imprisoned apostle writing to churches leans too close to the Pauline captivity-epistle motif — the generator should tone down the scene-specificity and correct the reasoning to match what is actually written."
+  }
+}

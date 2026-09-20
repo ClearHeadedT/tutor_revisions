@@ -5,6 +5,7 @@ from data.student_data.student_data_helper_functions import (
     load_vocabulary_senses,
     save_vocabulary_senses,
     load_grammar_scaffolding,
+    load_syntax_scaffolding,
 )
 from llm_calls.instructions import (
     GENERAL_CARD_INSTRUCTIONS,
@@ -33,9 +34,9 @@ def card_instructions_loader(desired_card_type):
         case "cloze_vocabulary_e2g":
             instructions = GENERAL_CARD_INSTRUCTIONS + instructions_ClozeVocabularyE2G
         case "function_recall_syntax_g2e":
-            instructions = instructions_FunctionRecallSyntaxG2E
+            instructions = GENERAL_CARD_INSTRUCTIONS + instructions_FunctionRecallSyntaxG2E
         case "self_formulation_syntax_e2g":
-            instructions = instructions_SelfFormulationSyntaxE2G
+            instructions = GENERAL_CARD_INSTRUCTIONS + instructions_SelfFormulationSyntaxE2G
     return instructions
 
 
@@ -71,6 +72,34 @@ def unpack_grammatical_item(grammar_item_key):
     return {"item": item, "rule": rule, "paradigm": rule["paradigms"][item["parent"]]}
 
 
+
+
+def unpack_syntactic_item(syntax_item_key):
+    """The usage itself, the categories it sits under, and the neighbouring usages a
+    clause has to exclude -- the syntax counterpart of a grammar item's rule and paradigm.
+
+    Keys are paths and the scaffolding nests under whole keys, so the prefixes of the key
+    are the child keys at each level and the walk down is a lookup per segment."""
+    structure = load_syntax_scaffolding()["structure"]
+    segments = syntax_item_key.split("/")
+    chain, level = [], structure
+    for depth in range(len(segments)):
+        node = level["/".join(segments[:depth + 1])]
+        chain.append(node)
+        level = node.get("children", {})
+    siblings = chain[-2].get("children", {}) if len(chain) > 1 else structure
+    return {
+        "item": {"key": syntax_item_key, **without_children(chain[-1])},
+        "ancestors": [without_children(node) for node in chain[:-1]],
+        "sibling_usages": {key: without_children(node) for key, node in siblings.items()
+                           if key != syntax_item_key},
+    }
+
+
+def without_children(node):
+    """A scaffolding node's own fields. The children carry whole subtrees, which would
+    swamp the prompt with material the card is not about."""
+    return {field: value for field, value in node.items() if field != "children"}
 
 
 def parse_card_reply(llm_reply):

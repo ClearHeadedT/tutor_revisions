@@ -5,38 +5,37 @@ def function_recall_syntax_g2e(item, llm_reply):
     """Student sees the usage in a clause and states how it is functioning."""
     student_instructions = "Name the following syntactic usage and identify its basic force:\n"
     front_of_card = student_instructions + llm_reply["sentence"]
-    back_of_card = f"{item["key"]}: {item["description"]}"
+    back_of_card = f"{item["display_name"]}: {item["description"]}"
     return (front_of_card, back_of_card)
 
 
-def validity_judgment_prompt(item):
+def validity_judgment_prompt():
     """Decides which way this card is asked before the LLM call, since the model needs
-    telling whether to write a valid usage or to breach one constraint. Roughly half
-    come out each way, which is what keeps the student judging rather than guessing."""
-    positive_prompt = "Immediate task: write a VALID clause/short sentence according to the following hard constraints.:\n"
-    negative_prompt = "Immediate task: write an INVALID and rule-violating clause or short sentence which violate the following hard constraints:\n"
-    hard_constraints = "\n".join(item["hard_constraints"])
-    coin_flip = random.choice([1, 2])
-    return positive_prompt + hard_constraints if coin_flip == 1 else negative_prompt + hard_constraints
+    telling whether to write a sound usage or to breach one of the conditions the usage
+    requires. Roughly half come out each way, which is what keeps the student judging
+    rather than guessing."""
+    valid = "Immediate task: write a VALID clause or short sentence, one meeting every condition this usage requires.\n"
+    invalid = "Immediate task: write an INVALID clause or short sentence, one breaching exactly one condition this usage requires.\n"
+    return random.choice([valid, invalid])
 
 
 def validity_judgment_syntax_g2e(item, llm_reply):
-    """Student is given a syntactic category with hard contextual constraints for interpretation,
-    (whether lexical, morphological contingency, or otherwise) and must state if the usage is valid or not."""
+    """Student is given a syntactic usage whose definition carries conditions, whether
+    lexical, morphological or otherwise, and must state if the usage is valid or not."""
     student_instructions = (
-        "The following syntactic category has a hard constraint, whether lexical, form requirements, or otherwise."
-        "Identify what the constraint is, and if the following sentence is a VALID or INVALID syntactic usage accordingly:\n")
-    hard_constraints = "\n".join(item["hard_constraints"])
+        "The following syntactic usage carries conditions, whether lexical, morphological, or otherwise. "
+        "Identify what they are, and say whether the sentence below is a VALID or INVALID use accordingly:\n")
     front_of_card = student_instructions + llm_reply["sentence"]
-    back_of_card = f"{item["key"]}: {item["description"]}\n Hard constraints: {hard_constraints}"
+    back_of_card = f"{item["display_name"]}: {item["description"]}"
     return (front_of_card, back_of_card)
 
 
 def self_formulation_syntax_e2g(item, llm_reply):
-    """Student must create a new sentence or phrase that utilizes the given syntactic category, Greek lexical item, and sentence cue."""
+    """Student must create a new sentence or phrase exhibiting the given syntactic usage,
+    working from an English cue."""
     student_instructions = (
-        "Create a Koine Greek phrase or sentence for the following syntactic category.\n"
-        "Utilize the syntactic category to modify the provided lemma under the given scenario:\n")
+        "Create a Koine Greek phrase or sentence exhibiting the following syntactic usage,\n"
+        "rendering the scenario below:\n")
     front_of_card = student_instructions + llm_reply["translation"]
-    back_of_card = f"{item["key"]}: {item["description"]}\n Example solution: {llm_reply["sentence"]}"
+    back_of_card = f"{item["display_name"]}: {item["description"]}\n Example solution: {llm_reply["sentence"]}"
     return (front_of_card, back_of_card)

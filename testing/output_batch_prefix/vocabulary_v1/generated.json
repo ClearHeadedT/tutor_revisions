@@ -1,0 +1,32 @@
+{
+  "βαπτίζω": {
+    "reasoning": "βαπτίζω's dominant sense is the religious rite, whose defining features are water, an agent, and a recipient who comes to be immersed. Placing crowds coming down to the river to an identified baptizer anchors the rite without borrowing a Gospel line; the swap test holds since no other verb of the frame fits 'in the river' plus 'many people' plus a named agent. Imperfect gives ongoing activity, suitable to beyond_beginner.",
+    "sentence": "πολλοὶ κατέβαινον πρὸς τὸν ποταμόν, καὶ ὁ δοῦλος τοῦ θεοῦ ἐβάπτιζεν αὐτοὺς ἐν τῷ ὕδατι.",
+    "translation": "Many were coming down to the river, and the servant of God was baptizing them in the water.",
+    "target_form": "ἐβάπτιζεν"
+  },
+  "κράζω": {
+    "reasoning": "κράζω is loud vocal outcry, distinguished from ordinary λέγω by volume and distance. A blind man at the roadside whose shout carries over a noisy crowd makes the loudness recoverable: the clause states the crowd's noise, so only a shout would be heard. The concessive ὅτι-free structure with ἀλλά shuts out the reading 'spoke'.",
+    "sentence": "ὁ τυφλὸς ἔκραξεν μεγάλῃ φωνῇ, καὶ ἤκουσαν αὐτοῦ οἱ μαθηταὶ διὰ τὸν θόρυβον τοῦ ὄχλου.",
+    "translation": "The blind man cried out with a loud voice, and the disciples heard him despite the uproar of the crowd.",
+    "target_form": "ἔκραξεν"
+  },
+  "διώκω": {
+    "reasoning": "διώκω's primary sense is hostile persecution, not mere chasing; the sense lives in who does it, to whom, and what it costs. Believers fleeing a city while rulers drive them out gives hostility plus motion, and the mention of the brothers' faith makes persecution rather than a neutral pursuit the only coherent reading. Imperfect plus aorist within the student's range.",
+    "sentence": "οἱ ἄρχοντες ἐδίωκον τοὺς ἀδελφοὺς διὰ τὴν πίστιν αὐτῶν, καὶ ἔφυγον ἐκ τῆς πόλεως.",
+    "translation": "The rulers were persecuting the brothers because of their faith, and they fled out of the city.",
+    "target_form": "ἐδίωκον"
+  },
+  "θεραπεύω": {
+    "reasoning": "θεραπεύω is restoration to health; its sense is recovered from a named ailment plus the resulting change of state. A woman with a fever who afterwards rises and serves makes the healing visible rather than asserted, and rules out the weaker 'care for/serve' reading since the fever leaves. Vocabulary is common NT stock.",
+    "sentence": "ἡ γυνὴ εἶχεν πυρετὸν μέγαν, ἀλλὰ ἐθεραπεύθη καὶ ἠγέρθη ἀπὸ τῆς κλίνης.",
+    "translation": "The woman had a high fever, but she was healed and got up from the bed.",
+    "target_form": "ἐθεραπεύθη"
+  },
+  "θύρα": {
+    "reasoning": "θύρα is the door of a building, known by being opened, shut, or stood at. A shut door at night with knocking outside makes it a physical barrier, and the mention of the house and the key excludes the metaphorical 'opportunity' sense. Temporal genitive phrase and a ὅτι clause keep texture at beyond_beginner.",
+    "sentence": "ὀψίας γενομένης ἡ θύρα τῆς οἰκίας ἐκέκλειστο, καὶ ὁ ξένος ἔκρουεν ἔξω ἕως ἤνοιξεν αὐτὴν ὁ οἰκοδεσπότης.",
+    "translation": "When evening had come the door of the house had been shut, and the stranger was knocking outside until the master of the house opened it.",
+    "target_form": "θύρα"
+  }
+}

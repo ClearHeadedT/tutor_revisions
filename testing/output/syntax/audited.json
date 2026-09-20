@@ -1,0 +1,108 @@
+{
+  "genitive/adjectival/descriptive-genitive": {
+    "blind_reading": {
+      "recalls_passage": true,
+      "passage": "Ezekiel 37:1-2 (LXX vision of the valley of dry bones)",
+      "what_triggered_it": "The clause 'εἶδον ἐκεῖ πολλοὺς νεκρούς' (I saw many dead there) evokes the prophetic vision of a place filled with the dead, even though no wording is shared."
+    },
+    "constraints": [
+      {
+        "n": 1,
+        "verdict": "holds"
+      },
+      {
+        "n": 2,
+        "verdict": "holds"
+      },
+      {
+        "n": 3,
+        "verdict": "holds"
+      },
+      {
+        "n": 4,
+        "verdict": "holds"
+      },
+      {
+        "n": 5,
+        "verdict": "holds"
+      },
+      {
+        "n": 6,
+        "verdict": "holds"
+      },
+      {
+        "n": 7,
+        "verdict": "fails",
+        "finding": "The reasoning claims οἰκία θανάτου 'resists smooth one-word adjective conversion,' but 'house of death' converts naturally to 'deathly house' or 'house of the dead,' which is exactly the attributive-genitive test the sibling category uses. This leaves the descriptive/attributive distinction ambiguous rather than clearly demonstrated."
+      },
+      {
+        "n": 8,
+        "verdict": "holds"
+      },
+      {
+        "n": 9,
+        "verdict": "holds"
+      },
+      {
+        "n": 10,
+        "verdict": "holds"
+      },
+      {
+        "n": 11,
+        "verdict": "holds"
+      },
+      {
+        "n": 12,
+        "verdict": "holds"
+      },
+      {
+        "n": 13,
+        "verdict": "holds"
+      }
+    ],
+    "echo": [
+      {
+        "criterion": "wording",
+        "verdict": "clean",
+        "passage": null,
+        "finding": null
+      },
+      {
+        "criterion": "structure",
+        "verdict": "clean",
+        "passage": null,
+        "finding": null
+      },
+      {
+        "criterion": "scene",
+        "verdict": "concern",
+        "passage": "Ezekiel 37:1-2",
+        "finding": "Entering a place and seeing 'many dead' faintly recalls the valley-of-bones vision; not disqualifying but worth noting since it colors the reader's first impression."
+      },
+      {
+        "criterion": "collocation",
+        "verdict": "concern",
+        "passage": null,
+        "finding": "οἰκία θανάτου is not an attested biblical collocation (unlike πύλαι θανάτου, 'gates of death,' Job 38:17), so the phrase reads as invented rather than idiomatic — acceptable for a drill sentence, but it weakens the pedagogical force of treating it as a natural descriptive genitive."
+      },
+      {
+        "criterion": "register",
+        "verdict": "clean",
+        "passage": null,
+        "finding": null
+      },
+      {
+        "criterion": "theological rendering",
+        "verdict": "clean",
+        "passage": null,
+        "finding": null
+      }
+    ],
+    "reasoning_audit": {
+      "sound": false,
+      "finding": "The reasoning asserts that οἰκία θανάτου 'resists smooth one-word adjective conversion (ruling out attributive)' but does not actually perform this swap test — 'house of death' converts easily to 'deathly house,' which is precisely the kind of conversion that would mark it attributive rather than descriptive. The claim is asserted, not demonstrated, and is arguably false as stated."
+    },
+    "verdict": "revise",
+    "summary": "The card is grammatically fine and level-appropriate, but the reasoning's central claim — that οἰκία θανάτου resists attributive-adjective conversion — is not actually true ('deathly house' works fine), so the example doesn't cleanly isolate descriptive from attributive genitive; the generator should pick a genitive noun/phrase where the adjective conversion genuinely fails (e.g. an abstract noun with no natural adjective) or justify why 'deathly' doesn't count as a valid conversion."
+  }
+}

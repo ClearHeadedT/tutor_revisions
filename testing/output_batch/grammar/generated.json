@@ -1,0 +1,32 @@
+{
+  "article::ὁ::nominative.masculine.singular": {
+    "reasoning": "Target ὁ must be unmistakably nominative masculine singular, so it heads the subject of a finite verb with an accusative object present to block any reading as object. τὸν ἄρτον is accusative masculine singular, contrasting endings without duplicating the target form. A hungry shepherd carrying bread to a field is concrete, ordinary, and not a corpus scene; the article agrees visibly with ποιμήν only by case, since the noun's own ending is opaque, which is the reading skill in view.",
+    "sentence": "ὁ ποιμὴν φέρει τὸν ἄρτον εἰς τὸν ἀγρόν.",
+    "translation": "The shepherd carries the bread into the field.",
+    "target_form": "ὁ"
+  },
+  "article::ὁ::genitive.feminine.singular": {
+    "reasoning": "τῆς needs a feminine singular head noun whose own ending does not give the case away too cheaply and a relation that requires the genitive. θύρα is first declension, and τῆς οἰκίας is possessive-locative; no other article form appears in the feminine singular, so the parse is uncontested. A door left open at night gives a small concrete image and a reason to read it again.",
+    "sentence": "ἡ θύρα τῆς οἰκίας ἔμενεν ἀνεῳγμένη ὅλην τὴν νύκτα.",
+    "translation": "The door of the house remained open the whole night.",
+    "target_form": "τῆς"
+  },
+  "article::ὁ::dative.neuter.plural": {
+    "reasoning": "τοῖς is ambiguous between masculine and neuter, so gender must be settled by the head noun: τέκνοις is unambiguously neuter plural, and the dative is an indirect object of δίδωμι, making the case function visible too. No other dative plural article appears. Fish given to children after a night's work is concrete and outside any particular passage.",
+    "sentence": "μετὰ τὴν νύκτα οἱ ἁλιεῖς ἐδίδουν ἰχθύας τοῖς τέκνοις ἐν τῇ κώμῃ.",
+    "translation": "After the night the fishermen were giving fish to the children in the village.",
+    "target_form": "τοῖς"
+  },
+  "article::ὁ::accusative.feminine.plural": {
+    "reasoning": "τάς must read as accusative feminine plural, so it governs a plural feminine noun as direct object of a transitive verb; ἐντολάς is first declension with a clear plural accusative ending corroborating both gender and case. The relative clause adds texture appropriate beyond beginner without adding a second article of the same form. A scribe writing commandments on a tablet keeps the scene concrete and doctrinally unremarkable.",
+    "sentence": "ὁ γραμματεὺς ἔγραψεν τὰς ἐντολὰς ἃς ἤκουσεν ἐν τῷ πλοίῳ.",
+    "translation": "The scribe wrote down the commandments which he heard in the boat.",
+    "target_form": "τάς"
+  },
+  "decl2::λόγος::nominative.singular": {
+    "reasoning": "λόγος here must be subject, so it takes a finite verb and sits beside an accusative object-free intransitive-style predicate; the nominative article ὁ corroborates. To keep it a hinge rather than a frame, the word means a spoken report whose spreading is the whole event — a stone or a road cannot spread through a region. No second λόγος form appears.",
+    "sentence": "οὕτως ὁ λόγος περὶ τοῦ διδασκάλου διῆλθεν εἰς ὅλην τὴν χώραν.",
+    "translation": "In this way the report about the teacher went out into the whole region.",
+    "target_form": "λόγος"
+  }
+}

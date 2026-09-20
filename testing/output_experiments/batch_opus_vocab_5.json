@@ -1,0 +1,49 @@
+{
+  "usage": {
+    "model": "claude-opus-5",
+    "effort": "low",
+    "seconds": 19.1,
+    "input": 892,
+    "cache_write": 6140,
+    "cache_read": 0,
+    "output": 1423,
+    "stop_reason": "end_turn",
+    "blocks": [
+      "text"
+    ]
+  },
+  "cost": 0.07841,
+  "parsed": [
+    {
+      "reasoning": "βαπτίζω here needs its primary religious sense (53.41), recoverable from a crowd coming to a prophet at a river and confessing; the water plus the agent of the rite fixes it, while an ordinary 'dip a cup' reading is shut out by the human objects and the setting. Avoided Jordan/John wording and the wilderness-preaching frame; the scene is a nameless riverbank with people waiting their turn. Imperfect gives the repeated action appropriate to a beyond-beginner card.",
+      "sentence": "πολλοὶ ἤρχοντο πρὸς τὸν προφήτην, καὶ ἐβάπτιζεν αὐτοὺς ἐν τῷ ὕδατι τοῦ ποταμοῦ.",
+      "translation": "Many were coming to the prophet, and he was baptizing them in the water of the river.",
+      "target_form": "ἐβάπτιζεν"
+    },
+    {
+      "reasoning": "κράζω (33.83) is loud vocal shouting, not ordinary speech; the sense is anchored by distance and noise — a man on a roof shouting over a crowd so as to be heard. A quiet λέγω could not do the work, satisfying the swap test. Kept away from blind-beggar and 'crucify him' scenes; a fire alarm on a housetop is fresh and concrete.",
+      "sentence": "ἀπὸ τοῦ δώματος ἔκραζεν ὁ δοῦλος, ὅτι οὐκ ἤκουον αὐτοῦ οἱ ἐν τῇ ἀγορᾷ.",
+      "translation": "From the housetop the servant was crying out, because those in the marketplace did not hear him.",
+      "target_form": "ἔκραζεν"
+    },
+    {
+      "reasoning": "Primary sense 39.45 is persecution, but the verb's physical core is pursuit; I anchor the hostile-pursuit sense with soldiers chasing a fleeing man through a city, where the flight and the hiding make the chase visible. A gloss of 'heal' or 'call' obviously cannot stand here, and no colorless verb would explain the hiding. Deliberately not a Saul/Damascus scene.",
+      "sentence": "ἔφυγεν εἰς τὴν πόλιν ὁ ἀδελφός, ὅτι οἱ στρατιῶται ἐδίωκον αὐτὸν ἀπὸ τοῦ ὄρους.",
+      "translation": "The brother fled into the city, because the soldiers were pursuing him from the mountain.",
+      "target_form": "ἐδίωκον"
+    },
+    {
+      "reasoning": "θεραπεύω (23.139) is restoration to health; the result clause — the hand becoming strong again and the man returning to work — makes healing the only available reading and rules out mere 'tend/serve'. Chose a village craftsman with a burned hand rather than any synagogue or crowd-healing episode to avoid scene echo.",
+      "sentence": "τὴν χεῖρα τοῦ τέκτονος ἐθεράπευσεν, καὶ πάλιν ἰσχυρὰ ἦν ἡ χεὶρ αὐτοῦ.",
+      "translation": "He healed the carpenter's hand, and his hand was strong again.",
+      "target_form": "ἐθεράπευσεν"
+    },
+    {
+      "reasoning": "θύρα as a literal building part (7.49) is recovered from what it does: it is shut at night, knocked on, and opened. The knocking and the hour make a gate/entrance-opportunity reading unnecessary and shut out 'window' or 'wall'. Avoided the shut-door parable and 'I am the door'; this is simply a late traveler at a house.",
+      "sentence": "ὀψὲ ἐλθὼν ἔκρουσεν τὴν θύραν, καὶ ἡ παιδίσκη ἤνοιξεν αὐτῷ.",
+      "translation": "Having come late, he knocked on the door, and the servant girl opened it for him.",
+      "target_form": "θύραν"
+    }
+  ],
+  "reply": "```json\n[\n  {\n    \"reasoning\": \"βαπτίζω here needs its primary religious sense (53.41), recoverable from a crowd coming to a prophet at a river and confessing; the water plus the agent of the rite fixes it, while an ordinary 'dip a cup' reading is shut out by the human objects and the setting. Avoided Jordan/John wording and the wilderness-preaching frame; the scene is a nameless riverbank with people waiting their turn. Imperfect gives the repeated action appropriate to a beyond-beginner card.\",\n    \"sentence\": \"πολλοὶ ἤρχοντο πρὸς τὸν προφήτην, καὶ ἐβάπτιζεν αὐτοὺς ἐν τῷ ὕδατι τοῦ ποταμοῦ.\",\n    \"translation\": \"Many were coming to the prophet, and he was baptizing them in the water of the river.\",\n    \"target_form\": \"ἐβάπτιζεν\"\n  },\n  {\n    \"reasoning\": \"κράζω (33.83) is loud vocal shouting, not ordinary speech; the sense is anchored by distance and noise — a man on a roof shouting over a crowd so as to be heard. A quiet λέγω could not do the work, satisfying the swap test. Kept away from blind-beggar and 'crucify him' scenes; a fire alarm on a housetop is fresh and concrete.\",\n    \"sentence\": \"ἀπὸ τοῦ δώματος ἔκραζεν ὁ δοῦλος, ὅτι οὐκ ἤκουον αὐτοῦ οἱ ἐν τῇ ἀγορᾷ.\",\n    \"translation\": \"From the housetop the servant was crying out, because those in the marketplace did not hear him.\",\n    \"target_form\": \"ἔκραζεν\"\n  },\n  {\n    \"reasoning\": \"Primary sense 39.45 is persecution, but the verb's physical core is pursuit; I anchor the hostile-pursuit sense with soldiers chasing a fleeing man through a city, where the flight and the hiding make the chase visible. A gloss of 'heal' or 'call' obviously cannot stand here, and no colorless verb would explain the hiding. Deliberately not a Saul/Damascus scene.\",\n    \"sentence\": \"ἔφυγεν εἰς τὴν πόλιν ὁ ἀδελφός, ὅτι οἱ στρατιῶται ἐδίωκον αὐτὸν ἀπὸ τοῦ ὄρους.\",\n    \"translation\": \"The brother fled into the city, because the soldiers were pursuing him from the mountain.\",\n    \"target_form\": \"ἐδίωκον\"\n  },\n  {\n    \"reasoning\": \"θεραπεύω (23.139) is restoration to health; the result clause — the hand becoming strong again and the man returning to work — makes healing the only available reading and rules out mere 'tend/serve'. Chose a village craftsman with a burned hand rather than any synagogue or crowd-healing episode to avoid scene echo.\",\n    \"sentence\": \"τὴν χεῖρα τοῦ τέκτονος ἐθεράπευσεν, καὶ πάλιν ἰσχυρὰ ἦν ἡ χεὶρ αὐτοῦ.\",\n    \"translation\": \"He healed the carpenter's hand, and his hand was strong again.\",\n    \"target_form\": \"ἐθεράπευσεν\"\n  },\n  {\n    \"reasoning\": \"θύρα as a literal building part (7.49) is recovered from what it does: it is shut at night, knocked on, and opened. The knocking and the hour make a gate/entrance-opportunity reading unnecessary and shut out 'window' or 'wall'. Avoided the shut-door parable and 'I am the door'; this is simply a late traveler at a house.\",\n    \"sentence\": \"ὀψὲ ἐλθὼν ἔκρουσεν τὴν θύραν, καὶ ἡ παιδίσκη ἤνοιξεν αὐτῷ.\",\n    \"translation\": \"Having come late, he knocked on the door, and the servant girl opened it for him.\",\n    \"target_form\": \"θύραν\"\n  }\n]\n```"
+}

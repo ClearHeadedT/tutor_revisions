@@ -1,0 +1,50 @@
+{
+  "usage": {
+    "model": "claude-sonnet-5",
+    "effort": "medium",
+    "seconds": 30.2,
+    "input": 891,
+    "cache_write": 6093,
+    "cache_read": 0,
+    "output": 2553,
+    "stop_reason": "end_turn",
+    "blocks": [
+      "thinking",
+      "text"
+    ]
+  },
+  "cost": 0.0425445,
+  "parsed": [
+    {
+      "reasoning": "βαπτίζω's primary NT sense is the religious act of baptizing/dipping in water; the swap test requires a scene where washing or sprinkling could not substitute, so full immersion in a river fits best. A teacher baptizing disciples outside a village gives concrete water and action without echoing a specific Gospel baptism scene. Beyond_beginner allows a prepositional phrase and imperfect for repeated action, which frames an ongoing ritual rather than a single reported event.",
+      "sentence": "ὁ διδάσκαλος ἐβάπτιζεν τοὺς μαθητὰς ἐν τῷ ποταμῷ τῷ ἐγγὺς τῆς κώμης.",
+      "translation": "The teacher was baptizing the disciples in the river near the village.",
+      "target_form": "ἐβάπτιζεν"
+    },
+    {
+      "reasoning": "κράζω denotes a loud vocal outcry, so the scene must make silence or ordinary speech impossible as an alternative; a sudden crisis at sea forces a shout. A sailor crying out as the wind tears the sail is vivid, concrete, and distinct from any Gospel storm-calming scene since no rescuer appears. The aorist fits beyond_beginner range and keeps the clause simple around the target.",
+      "sentence": "ὁ ναύτης ἔκραξεν μεγάλῃ φωνῇ, ὅτε ὁ ἄνεμος ἔσχισεν τὸ ἱστίον.",
+      "translation": "The sailor cried out with a loud voice when the wind tore the sail.",
+      "target_form": "ἔκραξεν"
+    },
+    {
+      "reasoning": "διώκω's primary sense here is hostile persecution rather than mere physical pursuit, so the scene needs a motive of hostility tied to belief or teaching, which a fleeing verb elsewhere in the sentence would confirm. Rulers persecuting disciples because of their message, forcing flight to another city, makes the hostile sense unambiguous and distinct from ordinary chasing. The imperfect plus a coordinated aorist clause suits beyond_beginner texture.",
+      "sentence": "οἱ ἄρχοντες ἐδίωκον τοὺς μαθητὰς διὰ τὸν λόγον αὐτῶν, καὶ ἔφευγον εἰς ἄλλην πόλιν.",
+      "translation": "The rulers were persecuting the disciples because of their message, and they fled to another city.",
+      "target_form": "ἐδίωκον"
+    },
+    {
+      "reasoning": "θεραπεύω centers on restoring health, so the sentence needs an illness clearly present beforehand and resolved by the verb, ruling out a reading like 'serve' or 'attend to' without healing. Pairing it with a sick servant and ἀσθενοῦντα (being sick) anchors the outcome as physical healing rather than general care. A relative/attributive participle fits beyond_beginner range while keeping the target as the clear main verb.",
+      "sentence": "ὁ ἰατρὸς ἐθεράπευσεν τὸν δοῦλον τὸν ἀσθενοῦντα.",
+      "translation": "The doctor healed the servant who was sick.",
+      "target_form": "ἐθεράπευσεν"
+    },
+    {
+      "reasoning": "θύρα's core sense is a physical door as part of a building, so the scene must involve something done to or through it that a window or gate could not replace as naturally—shutting it against intruders fits. A householder closing the door upon seeing thieves is concrete and visual, distinct from any recognizable parable phrasing. The temporal ὅτε-clause suits beyond_beginner variety while leaving the noun itself the sole retrieval point.",
+      "sentence": "ὁ οἰκοδεσπότης ἔκλεισεν τὴν θύραν ὅτε εἶδεν τοὺς κλέπτας.",
+      "translation": "The master of the house shut the door when he saw the thieves.",
+      "target_form": "θύραν"
+    }
+  ],
+  "reply": "```json\n[\n  {\n    \"reasoning\": \"βαπτίζω's primary NT sense is the religious act of baptizing/dipping in water; the swap test requires a scene where washing or sprinkling could not substitute, so full immersion in a river fits best. A teacher baptizing disciples outside a village gives concrete water and action without echoing a specific Gospel baptism scene. Beyond_beginner allows a prepositional phrase and imperfect for repeated action, which frames an ongoing ritual rather than a single reported event.\",\n    \"sentence\": \"ὁ διδάσκαλος ἐβάπτιζεν τοὺς μαθητὰς ἐν τῷ ποταμῷ τῷ ἐγγὺς τῆς κώμης.\",\n    \"translation\": \"The teacher was baptizing the disciples in the river near the village.\",\n    \"target_form\": \"ἐβάπτιζεν\"\n  },\n  {\n    \"reasoning\": \"κράζω denotes a loud vocal outcry, so the scene must make silence or ordinary speech impossible as an alternative; a sudden crisis at sea forces a shout. A sailor crying out as the wind tears the sail is vivid, concrete, and distinct from any Gospel storm-calming scene since no rescuer appears. The aorist fits beyond_beginner range and keeps the clause simple around the target.\",\n    \"sentence\": \"ὁ ναύτης ἔκραξεν μεγάλῃ φωνῇ, ὅτε ὁ ἄνεμος ἔσχισεν τὸ ἱστίον.\",\n    \"translation\": \"The sailor cried out with a loud voice when the wind tore the sail.\",\n    \"target_form\": \"ἔκραξεν\"\n  },\n  {\n    \"reasoning\": \"διώκω's primary sense here is hostile persecution rather than mere physical pursuit, so the scene needs a motive of hostility tied to belief or teaching, which a fleeing verb elsewhere in the sentence would confirm. Rulers persecuting disciples because of their message, forcing flight to another city, makes the hostile sense unambiguous and distinct from ordinary chasing. The imperfect plus a coordinated aorist clause suits beyond_beginner texture.\",\n    \"sentence\": \"οἱ ἄρχοντες ἐδίωκον τοὺς μαθητὰς διὰ τὸν λόγον αὐτῶν, καὶ ἔφευγον εἰς ἄλλην πόλιν.\",\n    \"translation\": \"The rulers were persecuting the disciples because of their message, and they fled to another city.\",\n    \"target_form\": \"ἐδίωκον\"\n  },\n  {\n    \"reasoning\": \"θεραπεύω centers on restoring health, so the sentence needs an illness clearly present beforehand and resolved by the verb, ruling out a reading like 'serve' or 'attend to' without healing. Pairing it with a sick servant and ἀσθενοῦντα (being sick) anchors the outcome as physical healing rather than general care. A relative/attributive participle fits beyond_beginner range while keeping the target as the clear main verb.\",\n    \"sentence\": \"ὁ ἰατρὸς ἐθεράπευσεν τὸν δοῦλον τὸν ἀσθενοῦντα.\",\n    \"translation\": \"The doctor healed the servant who was sick.\",\n    \"target_form\": \"ἐθεράπευσεν\"\n  },\n  {\n    \"reasoning\": \"θύρα's core sense is a physical door as part of a building, so the scene must involve something done to or through it that a window or gate could not replace as naturally—shutting it against intruders fits. A householder closing the door upon seeing thieves is concrete and visual, distinct from any recognizable parable phrasing. The temporal ὅτε-clause suits beyond_beginner variety while leaving the noun itself the sole retrieval point.\",\n    \"sentence\": \"ὁ οἰκοδεσπότης ἔκλεισεν τὴν θύραν ὅτε εἶδεν τοὺς κλέπτας.\",\n    \"translation\": \"The master of the house shut the door when he saw the thieves.\",\n    \"target_form\": \"θύραν\"\n  }\n]\n```"
+}

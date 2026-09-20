@@ -1,15 +1,15 @@
 {
   "student_id": "austin",
   "syntax": {
-    "genitive/adverbial/time": {
+    "genitive/adverbial-genitive/genitive-time-kind-time": {
       "status": "learned",
       "last_reviewed": "2026-09-03"
     },
-    "genitive/verbal/subjective": {
+    "genitive/verbal-genitive-i-e-genitive-related-verbal-noun/subjective-genitive": {
       "status": "learning",
       "last_reviewed": "2026-09-05"
     },
-    "dative/adverbial/means": {
+    "dative/instrumental-dative-uses/dative-means-instrument": {
       "status": "learning",
       "last_reviewed": "2026-09-08"
     }

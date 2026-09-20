@@ -1,0 +1,16 @@
+{
+  "genitive/adjectival/descriptive-genitive": {
+    "reply": "```json\n{\n  \"reasoning\": \"With only λόγος and θεός available as nouns, I paired them so context (writing, not speaking) steers away from a subjective-genitive reading (God as speaker) and toward the genitive marking the general topical/qualitative sphere of the λόγος rather than a clean adjectival substitute (θεῖος), which is the mark of descriptive rather than attributive genitive. Present tense γράφω and known article-noun forms keep everything else transparent so the genitive phrase alone carries the retrieval demand.\",\n  \"sentence\": \"Γράφω λόγον θεοῦ.\",\n  \"translation\": \"I am writing an account of God.\",\n  \"target_form\": \"θεοῦ\"\n}\n```",
+    "usage": {
+      "input": 2261,
+      "cache_write": 4708,
+      "cache_read": 0,
+      "output": 10543,
+      "stop_reason": "end_turn",
+      "blocks": [
+        "thinking",
+        "text"
+      ]
+    }
+  }
+}

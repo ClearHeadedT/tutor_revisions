@@ -1,0 +1,485 @@
+{
+  "βαπτίζω": {
+    "blind_reading": {
+      "recalls_passage": true,
+      "passage": "Mark 1:5 (parallel Matthew 3:6)",
+      "what_triggered_it": "The clause 'ἐβαπτίζοντο ἐν τῷ ποταμῷ ... τὰς ἁμαρτίας αὐτῶν' reproduces almost the entire structure and much of the vocabulary of the Jordan baptism scene, down to the confession-of-sins participial clause."
+    },
+    "constraints": [
+      {
+        "n": 1,
+        "verdict": "holds"
+      },
+      {
+        "n": 2,
+        "verdict": "holds"
+      },
+      {
+        "n": 3,
+        "verdict": "holds"
+      },
+      {
+        "n": 4,
+        "verdict": "holds"
+      },
+      {
+        "n": 5,
+        "verdict": "holds"
+      },
+      {
+        "n": 6,
+        "verdict": "holds"
+      },
+      {
+        "n": 7,
+        "verdict": "holds"
+      },
+      {
+        "n": 8,
+        "verdict": "holds"
+      },
+      {
+        "n": 9,
+        "verdict": "holds"
+      },
+      {
+        "n": 10,
+        "verdict": "holds"
+      },
+      {
+        "n": 11,
+        "verdict": "holds"
+      },
+      {
+        "n": 12,
+        "verdict": "holds"
+      },
+      {
+        "n": 13,
+        "verdict": "holds"
+      }
+    ],
+    "echo": [
+      {
+        "criterion": "wording",
+        "verdict": "fails",
+        "passage": "Mark 1:5 / Matthew 3:6",
+        "finding": "The phrase 'ἐβαπτίζοντο ἐν τῷ ... ποταμῷ ... τὰς ἁμαρτίας αὐτῶν' is lifted nearly verbatim from Mark 1:5 (ἐβαπτίζοντο ... ἐν τῷ Ἰορδάνῃ ποταμῷ ... τὰς ἁμαρτίας αὐτῶν), with only the river's name dropped and the compound participle ἐξομολογούμενοι swapped for the simplex ὁμολογοῦντες."
+      },
+      {
+        "criterion": "structure",
+        "verdict": "fails",
+        "passage": "Mark 1:5",
+        "finding": "The clause order — passive baptism verb, prepositional phrase locating it 'in the river,' followed by a participial clause of confessing sins — reproduces Mark's sentence architecture beat for beat, not an independently built scene."
+      },
+      {
+        "criterion": "scene",
+        "verdict": "concern",
+        "passage": "Mark 1:5",
+        "finding": "The scene (crowd baptized in a river while confessing sins) is the same episode being retold rather than a distinct, freshly imagined setting for the word."
+      },
+      {
+        "criterion": "register",
+        "verdict": "clean"
+      },
+      {
+        "criterion": "theological rendering",
+        "verdict": "clean"
+      }
+    ],
+    "reasoning_audit": {
+      "sound": false,
+      "finding": "The reasoning defends the choice of sense and the exclusion of secondary meanings, which is correct, but never addresses that the illustrative sentence it produced is a near-paraphrase of Mark 1:5 rather than original phrasing; it treats 'anchoring the sense in the Jordan baptism scene' as sufficient justification without checking that the wording itself is the writer's own."
+    },
+    "verdict": "revise",
+    "summary": "The sentence is not an independent composition but a close paraphrase of Mark 1:5 (river baptism + confessing sins clause with near-identical wording and structure); send back for a scene and phrasing that depict the sense without retracing that verse."
+  },
+  "κράζω": {
+    "blind_reading": {
+      "recalls_passage": true,
+      "passage": "Mark 10:46-48 (Bartimaeus, the blind beggar by the road in Jericho)",
+      "what_triggered_it": "A blind man by the road crying out while the crowd tries to silence him is the Bartimaeus scene almost beat for beat."
+    },
+    "constraints": [
+      {
+        "n": 1,
+        "verdict": "holds"
+      },
+      {
+        "n": 2,
+        "verdict": "holds"
+      },
+      {
+        "n": 3,
+        "verdict": "holds"
+      },
+      {
+        "n": 4,
+        "verdict": "holds"
+      },
+      {
+        "n": 5,
+        "verdict": "holds"
+      },
+      {
+        "n": 6,
+        "verdict": "holds"
+      },
+      {
+        "n": 7,
+        "verdict": "holds"
+      },
+      {
+        "n": 8,
+        "verdict": "holds"
+      },
+      {
+        "n": 9,
+        "verdict": "holds"
+      },
+      {
+        "n": 10,
+        "verdict": "holds"
+      },
+      {
+        "n": 11,
+        "verdict": "holds"
+      },
+      {
+        "n": 12,
+        "verdict": "holds"
+      },
+      {
+        "n": 13,
+        "verdict": "holds"
+      }
+    ],
+    "echo": [
+      {
+        "criterion": "wording",
+        "verdict": "fails",
+        "passage": "Mark 10:48",
+        "finding": "The clause 'ἐπετίμα αὐτῷ ἵνα σιγήσῃ' reproduces Mark 10:48's 'ἐπετίμων αὐτῷ ... ἵνα σιγήσῃ' almost verbatim, only changing the number of the verb and subject (πολλοί → ὄχλος). This is a lifted clause, not fresh phrasing."
+      },
+      {
+        "criterion": "structure",
+        "verdict": "concern",
+        "passage": "Mark 10:46-48",
+        "finding": "The sentence follows the same two-beat structure as the Bartimaeus episode: blind man by the road cries out, crowd rebukes him to be silent — even the ordering and causal link mirror the verse."
+      },
+      {
+        "criterion": "scene",
+        "verdict": "concern",
+        "passage": "Mark 10:46-48 / Luke 18:35-39",
+        "finding": "The scene (blind man beside the road, crowd's rebuke) is the same specific episode rather than a generic setting freshly imagined."
+      },
+      {
+        "criterion": "register",
+        "verdict": "clean"
+      },
+      {
+        "criterion": "theological rendering",
+        "verdict": "clean"
+      }
+    ],
+    "reasoning_audit": {
+      "sound": false,
+      "finding": "The reasoning defends the swap test for κράζω's semantic class but never notices that the second clause is not original composition — it is Mark 10:48's wording lightly re-inflected. The reasoning treats the sentence as freshly built when it is substantially borrowed."
+    },
+    "verdict": "revise",
+    "summary": "The card's second clause ('ἐπετίμα αὐτῷ ἵνα σιγήσῃ') is a near-verbatim lift from Mark 10:48 describing the same Bartimaeus scene; the generator should rebuild the sentence with its own phrasing for the rebuke rather than reusing the verse's clause."
+  },
+  "διώκω": {
+    "blind_reading": {
+      "recalls_passage": true,
+      "passage": "Acts 8:1-3 / Acts 22:4 / Acts 26:10-11 (Saul's persecution of believers, driving them from cities and imprisoning them)",
+      "what_triggered_it": "The pairing of persecution with prisons filling up evokes the narrative pattern of Saul/Paul's persecution activity, though no wording is shared."
+    },
+    "constraints": [
+      {
+        "n": 1,
+        "verdict": "holds"
+      },
+      {
+        "n": 2,
+        "verdict": "holds"
+      },
+      {
+        "n": 3,
+        "verdict": "holds"
+      },
+      {
+        "n": 4,
+        "verdict": "holds"
+      },
+      {
+        "n": 5,
+        "verdict": "holds"
+      },
+      {
+        "n": 6,
+        "verdict": "holds"
+      },
+      {
+        "n": 7,
+        "verdict": "holds"
+      },
+      {
+        "n": 8,
+        "verdict": "holds"
+      },
+      {
+        "n": 9,
+        "verdict": "holds"
+      },
+      {
+        "n": 10,
+        "verdict": "holds"
+      },
+      {
+        "n": 11,
+        "verdict": "holds"
+      },
+      {
+        "n": 12,
+        "verdict": "holds"
+      },
+      {
+        "n": 13,
+        "verdict": "holds"
+      }
+    ],
+    "echo": [
+      {
+        "criterion": "wording",
+        "verdict": "clean",
+        "passage": null,
+        "finding": null
+      },
+      {
+        "criterion": "structure",
+        "verdict": "clean",
+        "passage": null,
+        "finding": null
+      },
+      {
+        "criterion": "scene",
+        "verdict": "concern",
+        "passage": "Acts 8:1-3 / 22:4 / 26:10-11",
+        "finding": "The persecution-plus-prison scene mirrors the standard Acts pattern of Saul jailing believers; this is the expected, unmarked setting for διώκω in its hostile sense and is composed with fresh clauses, so it is a legitimate but worth-noting resonance rather than a fault."
+      },
+      {
+        "criterion": "register",
+        "verdict": "clean",
+        "passage": null,
+        "finding": null
+      },
+      {
+        "criterion": "theological rendering",
+        "verdict": "clean",
+        "passage": null,
+        "finding": null
+      }
+    ],
+    "reasoning_audit": {
+      "sound": true,
+      "finding": "The generator's claim that the personal plural object (τοὺς μαθητάς) plus the correlated imprisonment clause anchors the hostile-persecution sense over the neutral pursue/hasten/strive senses is reasonable: a physical 'chase to catch' (15.158) typically targets an individual, not a class of people driven from a city, and the directional 'out of the city' phrase matches the attested biblical pattern of persecution causing flight/dispersal rather than literal pursuit. The disambiguation holds even though it leans on the second clause more than the reasoning states explicitly."
+    },
+    "verdict": "keep",
+    "summary": "The card is a clean, freshly composed sentence for διώκω's primary hostile sense; the persecution-and-prison scene recalls Acts' Saul narrative thematically but shares no wording or structure with it, so no revision is needed."
+  },
+  "θεραπεύω": {
+    "blind_reading": {
+      "recalls_passage": true,
+      "passage": "Mark 1:29-31 / Matthew 8:14-15 (healing of Peter's mother-in-law)",
+      "what_triggered_it": "A woman with a fever who is healed and immediately rises to serve is the exact shape of the Petrine mother-in-law miracle, right down to the fever, the immediacy, and the serving."
+    },
+    "constraints": [
+      {
+        "n": 1,
+        "verdict": "holds"
+      },
+      {
+        "n": 2,
+        "verdict": "holds"
+      },
+      {
+        "n": 3,
+        "verdict": "holds"
+      },
+      {
+        "n": 4,
+        "verdict": "holds"
+      },
+      {
+        "n": 5,
+        "verdict": "holds"
+      },
+      {
+        "n": 6,
+        "verdict": "holds"
+      },
+      {
+        "n": 7,
+        "verdict": "holds"
+      },
+      {
+        "n": 8,
+        "verdict": "holds"
+      },
+      {
+        "n": 9,
+        "verdict": "holds"
+      },
+      {
+        "n": 10,
+        "verdict": "holds"
+      },
+      {
+        "n": 11,
+        "verdict": "holds"
+      },
+      {
+        "n": 12,
+        "verdict": "holds"
+      },
+      {
+        "n": 13,
+        "verdict": "holds"
+      }
+    ],
+    "echo": [
+      {
+        "criterion": "wording",
+        "verdict": "concern",
+        "passage": "Matthew 8:15 / Mark 1:31",
+        "finding": "No long contiguous run is shared, but 'ἠγέρθη' and 'αὐτοῖς' land in the same syntactic slots as Matthew's 'ἠγέρθη καὶ διηκόνει αὐτῷ/αὐτοῖς'."
+      },
+      {
+        "criterion": "structure",
+        "verdict": "fails",
+        "passage": "Mark 1:29-31 / Matthew 8:14-15",
+        "finding": "The clause order — healing verb, fever named, immediate rising, infinitive/verb of serving, dative plural referent — reproduces the pericope's own sequence beat for beat, with only θεραπεύω substituted for the synoptic 'the fever left her' construction."
+      },
+      {
+        "criterion": "scene",
+        "verdict": "fails",
+        "passage": "Mark 1:29-31 / Matthew 8:14-15",
+        "finding": "This is not a generic fever-healing scene; it is specifically the mother-in-law episode (fever, cure, immediate rising, service to 'them') retold with new verbs but the same participants and same narrative logic."
+      },
+      {
+        "criterion": "register",
+        "verdict": "clean"
+      },
+      {
+        "criterion": "theological rendering",
+        "verdict": "clean"
+      }
+    ],
+    "reasoning_audit": {
+      "sound": false,
+      "finding": "The reasoning correctly justifies the lexical choice of θεραπεύω over the 35.19 sense, but never notices that the constructed scene is not a fresh setting for the verb — it is the Petrine mother-in-law miracle retold with its exact beats (fever named, immediate rising, serving 'them'), which is precisely the kind of episode-retelling the card-building instructions guard against."
+    },
+    "verdict": "revise",
+    "summary": "The lexical disambiguation of θεραπεύω is sound, but the sentence recreates the healing of Peter's mother-in-law (Mark 1:29-31 / Matthew 8:14-15) beat for beat — fever, cure, immediate rising, service to 'them' — rather than inventing an independent scene for the verb; the generator should keep the health-restoration sense but build a context that does not retrace this specific pericope's sequence and dative referent."
+  },
+  "θύρα": {
+    "blind_reading": {
+      "recalls_passage": true,
+      "passage": "Luke 13:25 (also echoed in Matthew 25:10-12, parable of the ten virgins / friend at midnight)",
+      "what_triggered_it": "A shut door, someone standing outside knocking, and no one opening for him is the exact shape of the 'exclusion from the house' scene used in Jesus' parables of judgment."
+    },
+    "constraints": [
+      {
+        "n": 1,
+        "verdict": "holds"
+      },
+      {
+        "n": 2,
+        "verdict": "holds"
+      },
+      {
+        "n": 3,
+        "verdict": "holds"
+      },
+      {
+        "n": 4,
+        "verdict": "holds"
+      },
+      {
+        "n": 5,
+        "verdict": "holds"
+      },
+      {
+        "n": 6,
+        "verdict": "holds"
+      },
+      {
+        "n": 7,
+        "verdict": "holds"
+      },
+      {
+        "n": 8,
+        "verdict": "holds"
+      },
+      {
+        "n": 9,
+        "verdict": "holds"
+      },
+      {
+        "n": 10,
+        "verdict": "holds"
+      },
+      {
+        "n": 11,
+        "verdict": "holds"
+      },
+      {
+        "n": 12,
+        "verdict": "holds"
+      },
+      {
+        "n": 13,
+        "verdict": "holds"
+      }
+    ],
+    "echo": [
+      {
+        "criterion": "wording",
+        "verdict": "clean",
+        "passage": null,
+        "finding": null
+      },
+      {
+        "criterion": "structure",
+        "verdict": "concern",
+        "passage": "Luke 13:25",
+        "finding": "The three-beat sequence — door shut, knocking from outside, no one opens — is the exact skeleton of the parable's exclusion scene, even though the vocabulary (κεκλεισμένης, ἔκρουσεν, ξένος, ἤνοιξεν) is the writer's own and not lifted wording."
+      },
+      {
+        "criterion": "scene",
+        "verdict": "concern",
+        "passage": "Luke 13:25 / Matthew 25:10-12",
+        "finding": "A stranger shut out at a closed door is plausible as an everyday scene, but combined with the knock-and-refusal beats it reads as a quiet retelling of the judgment-door motif rather than an independent domestic scenario."
+      },
+      {
+        "criterion": "register",
+        "verdict": "clean",
+        "passage": null,
+        "finding": null
+      },
+      {
+        "criterion": "theological rendering",
+        "verdict": "concern",
+        "passage": "Luke 13:25",
+        "finding": "The sentence carries the same charge of exclusion/refusal found in the parable, without adding anything beyond it — a bare compression of that beat rather than a fresh use of the item."
+      }
+    ],
+    "reasoning_audit": {
+      "sound": true,
+      "finding": null
+    },
+    "verdict": "keep",
+    "summary": "The Greek is original and the sense/constraints are correctly handled, but the three-beat sequence of a shut door, a knock, and refusal closely tracks the exclusion scene in Luke 13:25/Matthew 25:10-12; this is worth flagging as a concern but does not by itself require revision."
+  }
+}

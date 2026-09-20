@@ -14,4 +14,4 @@ def llm_call_card_formation(llm_instructions, card_content):
         system=llm_instructions,
         messages=[{"role": "user", "content": json.dumps(card_content, indent=2, ensure_ascii=False)}],
     )
-    return response.content[0].text
+    return next(block.text for block in response.content if block.type == "text")

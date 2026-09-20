@@ -1,0 +1,107 @@
+{
+  "article::ὁ::nominative.masculine.singular": {
+    "blind_reading": {
+      "recalls_passage": false,
+      "passage": null,
+      "what_triggered_it": "The phrase 'his word' after 'God speaks' brushes against generic 'word of God' language (e.g. Luke 5:1, John 1:1) but does not reproduce any specific wording or scene closely enough to name a passage."
+    },
+    "constraints": [
+      {
+        "n": 1,
+        "verdict": "holds"
+      },
+      {
+        "n": 2,
+        "verdict": "holds"
+      },
+      {
+        "n": 3,
+        "verdict": "holds"
+      },
+      {
+        "n": 4,
+        "verdict": "holds"
+      },
+      {
+        "n": 5,
+        "verdict": "holds"
+      },
+      {
+        "n": 6,
+        "verdict": "holds"
+      },
+      {
+        "n": 7,
+        "verdict": "holds"
+      },
+      {
+        "n": 8,
+        "verdict": "holds"
+      },
+      {
+        "n": 9,
+        "verdict": "holds"
+      },
+      {
+        "n": 10,
+        "verdict": "holds"
+      },
+      {
+        "n": 11,
+        "verdict": "holds"
+      },
+      {
+        "n": 12,
+        "verdict": "holds"
+      },
+      {
+        "n": 13,
+        "verdict": "holds"
+      }
+    ],
+    "echo": [
+      {
+        "criterion": "wording",
+        "verdict": "clean",
+        "passage": null,
+        "finding": null
+      },
+      {
+        "criterion": "structure",
+        "verdict": "clean",
+        "passage": null,
+        "finding": null
+      },
+      {
+        "criterion": "scene",
+        "verdict": "concern",
+        "passage": "John 1:1 / general 'word of God' motif",
+        "finding": "The pairing of θεός speaking with a 'word' being written faintly echoes the broader biblical scene of divine speech and scripture, but the generator's choice of αὐτοῦ instead of the genitive θεοῦ construction successfully avoids the recognizable formula. Residual resemblance is at the level of theme, not quotation."
+      },
+      {
+        "criterion": "collocation",
+        "verdict": "clean",
+        "passage": null,
+        "finding": null
+      },
+      {
+        "criterion": "register",
+        "verdict": "clean",
+        "passage": null,
+        "finding": null
+      },
+      {
+        "criterion": "theological rendering",
+        "verdict": "clean",
+        "passage": null,
+        "finding": null
+      }
+    ],
+    "reasoning_audit": {
+      "sound": true,
+      "finding": null
+    },
+    "verdict": "keep",
+    "summary": "The card is grammatically sound, the target ὁ is unambiguous, and the generator's deliberate avoidance of the λόγος+θεός genitive formula successfully sidesteps the one plausible echo risk; no changes needed."
+  }
+}

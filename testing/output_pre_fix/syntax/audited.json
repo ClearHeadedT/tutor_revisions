@@ -1,0 +1,106 @@
+{
+  "genitive/adjectival/descriptive-genitive": {
+    "blind_reading": {
+      "recalls_passage": true,
+      "passage": "e.g. Luke 5:1, John 10:35, Acts 13:44, Hebrews 4:12, 1 Peter 1:23 — the recurring NT formula ὁ λόγος τοῦ θεοῦ",
+      "what_triggered_it": "λόγος θεοῦ is one of the most frequent and theologically loaded collocations in the NT, immediately read as 'the word of God' rather than 'an account about God'"
+    },
+    "constraints": [
+      {
+        "n": 1,
+        "verdict": "holds"
+      },
+      {
+        "n": 2,
+        "verdict": "holds"
+      },
+      {
+        "n": 3,
+        "verdict": "holds"
+      },
+      {
+        "n": 4,
+        "verdict": "holds"
+      },
+      {
+        "n": 5,
+        "verdict": "holds"
+      },
+      {
+        "n": 6,
+        "verdict": "fails",
+        "finding": "The sentence does not force a descriptive-genitive reading; 'λόγον θεοῦ' remains equally readable as genitive of source ('a word from God') or possessive/attributed genitive ('God's word/message'), the standard NT senses, especially since scripture and prophetic speech are routinely described as 'written' (γεγραμμένον, γέγραπται) λόγος θεοῦ."
+      },
+      {
+        "n": 7,
+        "verdict": "holds"
+      },
+      {
+        "n": 8,
+        "verdict": "holds"
+      },
+      {
+        "n": 9,
+        "verdict": "holds"
+      },
+      {
+        "n": 10,
+        "verdict": "holds"
+      },
+      {
+        "n": 11,
+        "verdict": "fails",
+        "finding": "The genitive is not clearly distinguished from sibling categories (attributive, source, possessive) since 'λόγος θεοῦ' is a fixed idiom in the corpus with those other senses, not a demonstrably descriptive one."
+      },
+      {
+        "n": 12,
+        "verdict": "fails",
+        "finding": "'λόγος θεοῦ' directly echoes the ubiquitous NT formula ὁ λόγος τοῦ θεοῦ / λόγος θεοῦ, an unintentional and unavoidable allusion given the vocabulary pool."
+      },
+      {
+        "n": 13,
+        "verdict": "holds"
+      }
+    ],
+    "echo": [
+      {
+        "criterion": "wording",
+        "verdict": "fails",
+        "passage": "λόγος θεοῦ formula (Luke 5:1; Heb 4:12; 1 Pet 1:23, etc.)",
+        "finding": "Identical two-word collocation to the standard NT phrase; nothing in the sentence signals a different, descriptive sense."
+      },
+      {
+        "criterion": "structure",
+        "verdict": "concern",
+        "passage": "λόγος θεοῦ formula",
+        "finding": "Anarthrous λόγον θεοῦ still mirrors many NT instances of the phrase without the article, so structure does not disambiguate."
+      },
+      {
+        "criterion": "scene",
+        "verdict": "concern",
+        "finding": "'Writing an account of God' evokes scriptural/theological writing (e.g. Gospel prologues, epistles) rather than a neutral descriptive-genitive scenario."
+      },
+      {
+        "criterion": "collocation",
+        "verdict": "fails",
+        "passage": "λόγος θεοῦ",
+        "finding": "This is precisely the fixed NT collocation the descriptive-genitive card should avoid, since it carries strong independent theological freight (revelation, gospel, scripture) that overrides the intended 'topic' sense."
+      },
+      {
+        "criterion": "register",
+        "verdict": "clean"
+      },
+      {
+        "criterion": "theological rendering",
+        "verdict": "fails",
+        "finding": "'An account of God' as a rendering of λόγον θεοῦ misrepresents how this exact phrase functions in the NT (divine message/word, not a human 'account about' God), risking teaching a false grammatical category for a phrase students will actually encounter with a different sense."
+      }
+    ],
+    "reasoning_audit": {
+      "sound": false,
+      "finding": "The generator asserts that using γράφω instead of a verb of speaking steers the genitive away from a subjective/source reading toward descriptive, but this claim is false in practice: scripture and prophetic words are routinely referred to as written (e.g. 'it is written,' epistles, Revelation) while still being 'word of/from God,' so the swap to a source- or possessive-genitive reading is not actually blocked. The reasoning does not perform a real swap test against the sibling categories (attributive, source, possessive) and overlooks that the chosen phrase is a fixed, heavily loaded idiom rather than a neutral construction."
+    },
+    "verdict": "discard",
+    "summary": "λόγος θεοῦ is the NT's stock phrase for 'word of God' and cannot be redirected into a clean descriptive-genitive reading merely by using γράφω; the noun pairing itself is the problem, so the item should be rebuilt with a different head noun or genitive that isn't already a fixed biblical idiom."
+  }
+}

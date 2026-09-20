@@ -1,0 +1,32 @@
+{
+  "genitive/adjectival/descriptive-genitive": {
+    "reasoning": "Descriptive genitive must not read as material, content, or possession. ὕδατος with κρίσις-like abstractions would blur; instead I use ἡ οἰκία τῆς εἰρήνης — a house characterized by peace, not made of it, not owned by it, not full of it in a container sense. Peace is not a possessor and not a substance, so the neighbours are shut out and only 'characterized by' remains.",
+    "sentence": "εἰσῆλθεν ὁ πρεσβύτερος εἰς οἰκίαν εἰρήνης, ὅπου οὐδεὶς ἔκραζεν οὐδὲ ἐμάχετο.",
+    "translation": "The elder entered a house of peace, where no one was shouting or fighting.",
+    "target_form": "εἰρήνης"
+  },
+  "dative/pure-dative-uses/dative-indirect-object": {
+    "reasoning": "The verb must be clearly transitive with its own accusative object so the dative cannot be read as destination (nontransitive) or recipient (verbless). δίδωμι + ἄρτον + τοῖς παιδίοις gives a transitive verb, an expressed direct object, and persons receiving it; advantage/interest is excluded because the dative is the actual receiver of the thing handed over.",
+    "sentence": "ὁ γεωργὸς ἔδωκεν τὸν ἄρτον τοῖς παιδίοις τοῖς καθημένοις παρὰ τὴν ὁδόν.",
+    "translation": "The farmer gave the bread to the children sitting beside the road.",
+    "target_form": "τοῖς παιδίοις"
+  },
+  "accusative/substantival-uses-accusative/accusative-direct-object": {
+    "reasoning": "Needs a plain transitive verb with one accusative, no infinitive, no second accusative, and no cognate relation to the verb. ἀνοίγω + θύραν is concrete and visual; θύρα shares nothing lexically with ἀνοίγω, so cognate accusative is excluded, and the genitive-absolute-free clause keeps only one retrieval demand.",
+    "sentence": "ἀκούσας τὴν φωνήν, ὁ οἰκέτης ἤνοιξεν τὴν θύραν ἐν μέσῃ τῇ νυκτί.",
+    "translation": "Having heard the voice, the house servant opened the door in the middle of the night.",
+    "target_form": "τὴν θύραν"
+  },
+  "article/regular-uses-article/as-pronoun-partially-independent-use/personal-pronoun": {
+    "reasoning": "The article-as-pronoun requires ὁ δέ in the nominative with no following noun, referring back to a previously named person. The soldier is named first, then ὁ δέ carries the subject forward; since no noun follows the article and no attributive phrase stands with it, the relative and possessive uses are impossible.",
+    "sentence": "ἠρώτησαν τὸν στρατιώτην περὶ τῆς ὥρας· ὁ δὲ οὐκ ἀπεκρίθη αὐτοῖς.",
+    "translation": "They asked the soldier about the hour; but he did not answer them.",
+    "target_form": "ὁ"
+  },
+  "voice/active/simple-active": {
+    "reasoning": "Simple active needs the subject genuinely doing the action himself, not causing it through another (causative), not in a state (stative), not acting on himself (reflexive). γράφει with a named writer, ink and hand visible, makes the subject the direct performer; no reflexive pronoun and no intermediary agent is present.",
+    "sentence": "ἐν τῷ δεσμωτηρίῳ καθήμενος ὁ ἀπόστολος γράφει ἐπιστολὴν ταῖς ἐκκλησίαις ταῖς μικραῖς.",
+    "translation": "Sitting in the prison the apostle writes a letter to the small churches.",
+    "target_form": "γράφει"
+  }
+}

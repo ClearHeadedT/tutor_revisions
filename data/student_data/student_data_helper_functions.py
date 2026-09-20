@@ -19,8 +19,10 @@ def load_vocabulary_scaffolding():
     return normalize_keys(data)
 
 
+@cache
 def load_syntax_scaffolding():
-    """Returns the syntax scaffolding: category/broad usage structure plus the flat items"""
+    """Returns the syntax scaffolding: the nested category tree holding every usage's
+    name, definition and citation, plus a flat index of the reviewable items"""
     with open('data/curriculum_data/syntax_scaffolding.json', 'r') as file:
         data = json.load(file)
     return normalize_keys(data)

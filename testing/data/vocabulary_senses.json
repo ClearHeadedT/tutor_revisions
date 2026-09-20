@@ -1,0 +1,583 @@
+{
+  "βαπτίζω": {
+    "lexical_entry": "βαπτίζω",
+    "tf_lexical_info": {
+      "lemma": "βαπτίζω",
+      "part_of_speech": "verb",
+      "gloss": "dip, baptize",
+      "frequency": 76
+    },
+    "ln_sense_info": {
+      "summary": "βαπτίζω: primary sense 53.41 (65 of 75 tagged occurrences, 53 Religious Activities / E Baptize). Secondary senses: 24.82 (5x), 53.49 (4x), 53.31 (1x).",
+      "primary_sense": {
+        "ln": "53.41",
+        "occurrences": 65,
+        "share": 0.87,
+        "full_entry": "βαπτίζωb; βάπτισμα, τος n; βαπτισμόςb, οῦ m: to employ water in a religious ceremony designed to symbolize purification and initiation on the basis of repentance—‘to baptize, baptism.’\nβαπτίζωb: ἐγὼ ἐβάπτισα ὑμᾶς ὕδατι ‘I baptized you with water’ Mk 1:8; βαπτισθήτω ἕκαστος ὑμῶν ἐπὶ τῷ ὀνόματι Ἰησοῦ Χριστοῦ ‘each one of you should be baptized into the name of Jesus Christ’ Ac 2:38.\nβάπτισμα: κηρύσσων βάπτισμα μετανοίας ‘(John) preached the baptism of repentance’ or ‘… turn away from your sins and be baptized’ Mk 1:4.\nβαπτισμόςb: μετανοίας ἀπὸ νεκρῶν ἔργων, καὶ πίστεως ἐπὶ θεόν, βαπτισμῶν διδαχῆς ‘the turning away from useless works, believing in God, teaching about baptisms’ He 6:1–2.\nAccording to the Didache (early second century) different forms of baptism were practiced in the early church, but with evident preference given to immersion.\nThe baptism practiced by John the Baptist would seem to reflect far more the Jewish pattern of ritual washing than the type of baptism employed by Christians, which constituted a symbol of initiation into the Christian community on the basis of belief in and loyalty to Jesus Christ as Lord and Savior. There seems, however, to be no reason to employ a different expression for baptism in the case of John than in the case of the early Christians. Most translators actually employ a transliterated form of the Greek term βαπτίζω, but in some languages this is both awkward as well as inappropriate, especially if another term or expression has already been employed and is widely accepted by groups practicing various types or forms of baptism. In some languages, for example, one may employ an expression such as ‘to enter the water’ or ‘to undergo the ritual involving water.’ Such expressions do not necessarily imply the quantity of water nor the particular means by which water is applied.",
+        "surrounding_context": {
+          "domain": "53 Religious Activities",
+          "subdomain": "E Baptize",
+          "previous_subdomain": "D Defile, Unclean, Common",
+          "next_subdomain": "F Dedicate, Consecrate",
+          "previous_2_senses": [],
+          "next_2_senses": [
+            {
+              "ln": "53.42",
+              "definition": "βαπτιστής, οῦ m: (derivative of βαπτίζωb ‘to baptize,’ 53.41) one who baptizes—‘baptizer.’"
+            },
+            {
+              "ln": "53.43",
+              "definition": "λουτρόν, οῦ n: ceremonial washing referring to baptism—‘washing, baptism.’"
+            }
+          ]
+        }
+      },
+      "secondary_senses": [
+        {
+          "ln": "24.82",
+          "occurrences": 5,
+          "share": 0.07,
+          "definition": "βάπτισμα βαπτίζομαι: (an idiom, literally ‘to be baptized with a baptism’) to be overwhelmed by some difficult experience or ordeal—‘to suffer, to undergo.’",
+          "subdomain": "F Pain, Suffering"
+        },
+        {
+          "ln": "53.49",
+          "occurrences": 4,
+          "share": 0.05,
+          "definition": "βαπτίζωc: (a figurative extension of meaning of βαπτίζωb ‘to baptize,’ 53.41) to cause someone to have a highly significant religious experience involving special manifestations of God’s power and presence—‘to baptize.’",
+          "subdomain": "F Dedicate, Consecrate"
+        },
+        {
+          "ln": "53.31",
+          "occurrences": 1,
+          "share": 0.01,
+          "definition": "βαπτίζωa; καταβαπτίζω; βαπτισμόςa, οῦ m: to wash (in some contexts, possibly by dipping into water), with a view to making objects ritually acceptable—‘to wash, to purify, washing, purification.’",
+          "subdomain": "C Purify, Cleanse"
+        }
+      ]
+    }
+  },
+  "κράζω": {
+    "lexical_entry": "κράζω",
+    "tf_lexical_info": {
+      "lemma": "κράζω",
+      "part_of_speech": "verb",
+      "gloss": "cry out, cry, call out",
+      "frequency": 55
+    },
+    "ln_sense_info": {
+      "summary": "κράζω: primary sense 33.83 (54 of 54 tagged occurrences, 33 Communication / F Speak, Talk). No secondary senses attested.",
+      "primary_sense": {
+        "ln": "33.83",
+        "occurrences": 54,
+        "share": 1.0,
+        "full_entry": "κράζω; ἀνακράζω; κραυγάζω: to shout or cry out, with the possible implication of the unpleasant nature of the sound—‘to shout, to scream.’\nκράζω: ἠκολούθησαν αὐτῷ δύο τυφλοὶ κράζοντες καὶ λέγοντες, Ἐλέησον ἡμᾶς ‘two blind men followed him and shouted, Have mercy on us’ Mt 9:27.\nἀνακράζω: ἔδοξαν ὅτι φάντασμά ἐστιν, καὶ ἀνέκραξαν ‘they thought that it was a ghost and screamed’ Mk 6:49.\nκραυγάζω: οἱ δὲ Ἰουδαῖοι ἐκραύγασαν λέγοντες ‘the Jews shouted and said’ Jn 19:12.",
+        "surrounding_context": {
+          "domain": "33 Communication",
+          "subdomain": "F Speak, Talk",
+          "previous_subdomain": "E Written Language",
+          "next_subdomain": "G Sing, Lament",
+          "previous_2_senses": [
+            {
+              "ln": "33.81",
+              "definition": "βοάω; ἀναβοάω: to cry or shout with unusually loud volume—‘to cry out, to scream, to shout.’"
+            },
+            {
+              "ln": "33.82",
+              "definition": "βοή, ῆς f: the sound of shouting or crying out—‘cry, shout.’"
+            }
+          ],
+          "next_2_senses": [
+            {
+              "ln": "33.84",
+              "definition": "κραυγήa, ῆς f: the sound of a loud scream or shout—‘cry, shout, scream.’"
+            },
+            {
+              "ln": "33.85",
+              "definition": "ῥήγνυμιb: to suddenly break out into shouting—‘to begin to shout, to shout.’"
+            }
+          ]
+        }
+      },
+      "secondary_senses": []
+    }
+  },
+  "διώκω": {
+    "lexical_entry": "διώκω",
+    "tf_lexical_info": {
+      "lemma": "διώκω",
+      "part_of_speech": "verb",
+      "gloss": "hasten; pursue, persecute",
+      "frequency": 45
+    },
+    "ln_sense_info": {
+      "summary": "διώκω: primary sense 39.45 (30 of 47 tagged occurrences, 39 Hostility, Strife / I Persecution). Secondary senses: 68.66 (9x), 15.158 (5x), 15.223 (2x), 89.56 (1x).",
+      "primary_sense": {
+        "ln": "39.45",
+        "occurrences": 30,
+        "share": 0.64,
+        "full_entry": "διώκωc; ἐκδιώκωb; διωγμός, οῦ m: to systematically organize a program to oppress and harass people—‘to persecute, to harass, persecution.’\nδιώκωc: μακάριοι οἱ δεδιωγμένοι ἕνεκεν δικαιοσύνης ‘happy are those who suffer persecution because they do what God requires’ Mt 5:10.\nἐκδιώκωb: τῶν καὶ τὸν κύριον ἀποκτεινάντων Ἰησοῦν καὶ τοὺς προφήτας, καὶ ἡμᾶς ἐκδιωξάντων ‘they killed the Lord Jesus and the prophets, and persecuted us’ 1 Th 2:15. For another interpretation of ἐκδιώκω in 1 Th 2:15, see 15.159.\nδιωγμός: ἐγένετο δὲ ἐν ἐκείνῃ τῇ ἡμέρᾳ διωγμὸς μέγας ἐπὶ τὴν ἐκκλησίαν ‘that very day the church began to suffer a cruel persecution’ Ac 8:1.\nIn a number of languages the equivalent of ‘to persecute’ is simply ‘to cause to suffer,’ but persecution is also expressed in terms of ‘to be mean to’ or ‘to threaten’ or ‘to chase from place to place.’",
+        "surrounding_context": {
+          "domain": "39 Hostility, Strife",
+          "subdomain": "I Persecution",
+          "previous_subdomain": "H Riot",
+          "next_subdomain": "J Attack",
+          "previous_2_senses": [],
+          "next_2_senses": [
+            {
+              "ln": "39.46",
+              "definition": "διώκτης, ου m: (derivative of διώκωc ‘to persecute,’ 39.45) a person who engages in persecuting others—‘persecutor.’"
+            }
+          ]
+        }
+      },
+      "secondary_senses": [
+        {
+          "ln": "68.66",
+          "occurrences": 9,
+          "share": 0.19,
+          "definition": "διώκωd: (a figurative extension of meaning of διώκωa ‘to pursue,’ 15.158) to do something with intense effort and with definite purpose or goal—‘to do with effort, to strive toward.’",
+          "subdomain": "F Do Intensely or Extensively"
+        },
+        {
+          "ln": "15.158",
+          "occurrences": 5,
+          "share": 0.11,
+          "definition": "διώκωa: to follow with haste, and presumably with intensity of effort, in order to catch up with, for friendly or hostile purpose—‘to run after, to chase after, to pursue.’",
+          "subdomain": "U Pursue, Follow"
+        },
+        {
+          "ln": "15.223",
+          "occurrences": 2,
+          "share": 0.04,
+          "definition": "διώκωb: to move quickly and energetically toward some objective—‘to hasten, to run, to press forward, to press on.’",
+          "subdomain": "Z Throw, Hurl"
+        },
+        {
+          "ln": "89.56",
+          "occurrences": 1,
+          "share": 0.02,
+          "definition": "κατὰ σκοπὸν διώκω: (an idiom, literally ‘to pursue to a goal, to press toward a goal’) to strive energetically for some purpose—‘to strive toward a goal, to press on with the purpose of.’",
+          "subdomain": "I Purpose"
+        }
+      ]
+    }
+  },
+  "θεραπεύω": {
+    "lexical_entry": "θεραπεύω",
+    "tf_lexical_info": {
+      "lemma": "θεραπεύω",
+      "part_of_speech": "verb",
+      "gloss": "care for, heal",
+      "frequency": 43
+    },
+    "ln_sense_info": {
+      "summary": "θεραπεύω: primary sense 23.139 (42 of 43 tagged occurrences, 23 Physiological Processes and States / H Health, Vigor, Strength). Secondary senses: 35.19 (1x).",
+      "primary_sense": {
+        "ln": "23.139",
+        "occurrences": 42,
+        "share": 0.98,
+        "full_entry": "θεραπεύωa; θεραπείαa, ας f: to cause someone to recover health, often with the implication of having taken care of such a person—‘to heal, to cure, to take care of, healing.’\nθεραπεύωa: ἔδωκεν αὐτοῖς ἐξουσίαν … θεραπεύειν πᾶσαν νόσον ‘he gave them authority … to heal every disease’ Mt 10:1.\nθεραπείαa: τοὺς χρείαν ἔχοντας θεραπείας ἰᾶτο ‘he cured those who needed healing’ Lk 9:11.",
+        "surrounding_context": {
+          "domain": "23 Physiological Processes and States",
+          "subdomain": "H Health, Vigor, Strength",
+          "previous_subdomain": "G Live, Die",
+          "next_subdomain": "I Sickness, Disease, Weakness",
+          "previous_2_senses": [
+            {
+              "ln": "23.137",
+              "definition": "καθαρίζωc: to heal a person of a disease which has caused ceremonial uncleanness—‘to heal and make ritually pure, to heal and to make ritually acceptable.’"
+            },
+            {
+              "ln": "23.138",
+              "definition": "ἴαμα, τος n: (derivative of ἰάομαιa ‘to cause to be well again, to heal,’ 23.136) the capacity to cause someone to become healed or cured—‘the power to heal, the capacity to heal.’"
+            }
+          ],
+          "next_2_senses": [
+            {
+              "ln": "23.140",
+              "definition": "ἐγείρωg: (a figurative extension of meaning of ἐγείρωa ‘to cause to stand up,’ 17.10) to restore a person to health and vigor (somewhat equivalent to the English idiom ‘to get him on his feet again’)—‘to restore to health, to heal.’"
+            },
+            {
+              "ln": "23.141",
+              "definition": "ἰατρός, οῦ m: one who causes someone to be healed—‘physician, doctor, healer.’"
+            }
+          ]
+        }
+      },
+      "secondary_senses": [
+        {
+          "ln": "35.19",
+          "occurrences": 1,
+          "share": 0.02,
+          "definition": "θεραπεύωb; ὑπηρετέωa; διακονέωa; διακονίαa, ας f: to render assistance or help by performing certain duties, often of a humble or menial nature—‘to serve, to render service, to help, service, help.’",
+          "subdomain": "B Serve"
+        }
+      ]
+    }
+  },
+  "θύρα": {
+    "lexical_entry": "ἡ θύρα",
+    "tf_lexical_info": {
+      "lemma": "θύρα",
+      "part_of_speech": "noun",
+      "gloss": "door",
+      "frequency": 39
+    },
+    "ln_sense_info": {
+      "summary": "θύρα: primary sense 7.49 (29 of 44 tagged occurrences, 7 Constructions / C Parts and Areas of Buildings). Secondary senses: 7.39 (12x), 67.58 (3x).",
+      "primary_sense": {
+        "ln": "7.49",
+        "occurrences": 29,
+        "share": 0.66,
+        "full_entry": "θύραa, ας f: the door to a house or building (often occurring in plural form and designating double doors or gates)—‘door, gate.’ κρούσαντος δὲ αὐτοῦ τὴν θύραν τοῦ πυλῶνος ‘when he was knocking at the door of the vestibule’ Ac 12:13.",
+        "surrounding_context": {
+          "domain": "7 Constructions",
+          "subdomain": "C Parts and Areas of Buildings",
+          "previous_subdomain": "B Buildings",
+          "next_subdomain": "D Open Constructions",
+          "previous_2_senses": [
+            {
+              "ln": "7.47",
+              "definition": "θυρίς, ίδος f: an opening in a wall for the entrance of light and air and for the purpose of seeing in or out—‘window.’"
+            },
+            {
+              "ln": "7.48",
+              "definition": "πύλη, ης f; πυλώνa, ῶνος m: doors or gates used to close off entranceways—‘door, gate.’"
+            }
+          ],
+          "next_2_senses": [
+            {
+              "ln": "7.50",
+              "definition": "στέγη, ης f: the roof or top of a house—‘roof.’"
+            },
+            {
+              "ln": "7.51",
+              "definition": "δῶμα, τος n: the area on the top of a flat-roof house—‘housetop.’"
+            }
+          ]
+        }
+      },
+      "secondary_senses": [
+        {
+          "ln": "7.39",
+          "occurrences": 12,
+          "share": 0.27,
+          "definition": "θύραb, ας f: the entranceway into a building or structure—‘entrance, entranceway, portal.’",
+          "subdomain": "C Parts and Areas of Buildings"
+        },
+        {
+          "ln": "67.58",
+          "occurrences": 3,
+          "share": 0.07,
+          "definition": "αὔριονb; ἐπὶ θύραις (an idiom, literally ‘at the doors’); πρὸ θυρῶν (an idiom, literally ‘before the doors’): a point of time subsequent to another point of time and indicating imminence, that is to say, the subsequent event is regarded as almost begun—‘soon, very soon.’",
+          "subdomain": "B A Point of Time with Reference to Other Points of Time: Before, Long Ago, Now, At the Same Time, When, About, After"
+        }
+      ]
+    }
+  },
+  "ποιμήν": {
+    "lexical_entry": "ὁ ποιμήν",
+    "tf_lexical_info": {
+      "lemma": "ποιμήν",
+      "part_of_speech": "noun",
+      "gloss": "shepherd",
+      "frequency": 18
+    },
+    "ln_sense_info": {
+      "summary": "ποιμήν: primary sense 44.4 (12 of 18 tagged occurrences, 44 Animal Husbandry, Fishing / Overview). Secondary senses: 53.72 (6x).",
+      "primary_sense": {
+        "ln": "44.4",
+        "occurrences": 12,
+        "share": 0.67,
+        "full_entry": "ποιμήνa, ένος m: (derivative of ποιμαίνωa ‘to take care of sheep or goats,’ 44.3) one who takes care of sheep or goats—‘shepherd.’ ἐρριμμένοι ὡσεὶ πρόβατα μὴ ἔχοντα ποιμένα ‘dejected like sheep without a shepherd’ Mt 9:36.",
+        "surrounding_context": {
+          "domain": "44 Animal Husbandry, Fishing",
+          "subdomain": "Overview",
+          "previous_subdomain": null,
+          "next_subdomain": null,
+          "previous_2_senses": [
+            {
+              "ln": "44.2",
+              "definition": "σιτευτόςa, ή, όν; σιτιστός, ή, όν: pertaining to being well fed on grain and hence fattened—‘fat, fattened, grain-fattened.’"
+            },
+            {
+              "ln": "44.3",
+              "definition": "ποιμαίνωa: to herd and tend flocks of sheep or goats—‘to shepherd, to take care of, to tend, to pasture.’"
+            }
+          ],
+          "next_2_senses": [
+            {
+              "ln": "44.5",
+              "definition": "ἀρχιποίμην, ενος m: the head shepherd who directs the activities of other shepherds—‘chief shepherd, head shepherd’"
+            },
+            {
+              "ln": "44.6",
+              "definition": "κημόω; φιμόωa: to put something over or around the mouths of animals so as to prevent them from eating—‘to muzzle, to keep from eating.’"
+            }
+          ]
+        }
+      },
+      "secondary_senses": [
+        {
+          "ln": "53.72",
+          "occurrences": 6,
+          "share": 0.33,
+          "definition": "ποιμήνb, ένος m: (a figurative extension of meaning of ποιμήνa ‘shepherd,’ 44.4) one who is responsible for the care and guidance of a Christian congregation—‘pastor, minister.’",
+          "subdomain": "I Roles and Functions"
+        }
+      ]
+    }
+  },
+  "σκότος": {
+    "lexical_entry": "τὸ σκότος",
+    "tf_lexical_info": {
+      "lemma": "σκότος",
+      "part_of_speech": "noun",
+      "gloss": "darkness",
+      "frequency": 30
+    },
+    "ln_sense_info": {
+      "summary": "σκότος: primary sense 88.125 (16 of 33 tagged occurrences, 88 Moral and Ethical Qualities and Related Behavior2 / O Bad, Evil, Harmful, Damaging). Secondary senses: 14.53 (13x), 1.23 (3x), 1.24 (1x).",
+      "primary_sense": {
+        "ln": "88.125",
+        "occurrences": 16,
+        "share": 0.48,
+        "full_entry": "σκότοςb, ους n; σκοτίαb, ας f: (figurative extensions of meaning of σκότοςa and σκοτίαa ‘darkness,’ 14.53) the realm of sin and evil—‘evil world, realm of evil, darkness.’\nσκότοςb: ὃς ἐρρύσατο ἡμᾶς ἐκ τῆς ἐξουσίας τοῦ σκότους ‘he rescued us from the power of darkness’ or ‘… the power of sin’ Col 1:13. It is possible that in Col 1:13 σκότοςb is a figurative reference to the Devil or Satan, since ἐκ τῆς ἐξουσίας τοῦ σκότους is in a parallel relationship with τὴν βασιλείαν τοῦ υἱοῦ τῆς ἀγάπης αὐτοῦ.\nσκοτίαb: ὁ δὲ μισῶν τὸν ἀδελφὸν αὐτοῦ ἐν τῇ σκοτίᾳ ἐστίν ‘he who hates his brother is in darkness’ or ‘… in the realm of evil’ 1 Jn 2:11.",
+        "surrounding_context": {
+          "domain": "88 Moral and Ethical Qualities and Related Behavior2",
+          "subdomain": "O Bad, Evil, Harmful, Damaging",
+          "previous_subdomain": "N Peaceful Behavior",
+          "next_subdomain": "P Treat Badly",
+          "previous_2_senses": [
+            {
+              "ln": "88.123",
+              "definition": "ἔχιδναb, ης f (a figurative extension of meaning of ἔχιδναa ‘viper,’ 4.53); ὄφιςb, εως m (a figurative extension of meaning of ὄφιςa ‘snake,’ 4.52): a dangerous and despised person—‘evil person, viper, snake.’"
+            },
+            {
+              "ln": "88.124",
+              "definition": "διάβολοςd, ου m: (a figurative extension of meaning of διάβολοςa ‘Devil,’ 12.34) a wicked person who has a number of characteristics typical of the Devil—‘a devil.’"
+            }
+          ],
+          "next_2_senses": []
+        }
+      },
+      "secondary_senses": [
+        {
+          "ln": "14.53",
+          "occurrences": 13,
+          "share": 0.39,
+          "definition": "σκότοςa, ους n; σκοτίαa, ας f; γνόφος, ου m: a condition resulting from the partial or complete absence of light (see 14.36)—‘darkness.’",
+          "subdomain": "G Darkness"
+        },
+        {
+          "ln": "1.23",
+          "occurrences": 3,
+          "share": 0.09,
+          "definition": "τὸ σκότος τὸ ἐξώτερον: (an idiom, literally ‘the outer darkness’) a place or region which is both dark and removed (presumably from the abode of the righteous) and serving as the abode of evil spirits and devils—‘outer darkness, darkness outside.’",
+          "subdomain": "C Regions Below the Surface of the Earth"
+        },
+        {
+          "ln": "1.24",
+          "occurrences": 1,
+          "share": 0.03,
+          "definition": "ὁ ζόφος τοῦ σκότους: (an idiom, literally ‘the gloom of darkness’) the dark, gloomy nature of hell as a place of punishment—‘gloomy hell, black darkness.’",
+          "subdomain": "C Regions Below the Surface of the Earth"
+        }
+      ]
+    }
+  },
+  "μάχαιρα": {
+    "lexical_entry": "ἡ μάχαιρα",
+    "tf_lexical_info": {
+      "lemma": "μάχαιρα",
+      "part_of_speech": "noun",
+      "gloss": "sword",
+      "frequency": 29
+    },
+    "ln_sense_info": {
+      "summary": "μάχαιρα: primary sense 6.33 (26 of 30 tagged occurrences, 6 Artifacts,2 / G Weapons and Armor). Secondary senses: 39.25 (1x), 55.6 (1x), 20.68 (1x), 38.3 (1x).",
+      "primary_sense": {
+        "ln": "6.33",
+        "occurrences": 26,
+        "share": 0.87,
+        "full_entry": "μάχαιραa, ης f: a relatively short sword (or even dagger) used for cutting and stabbing—‘sword, dagger.’ ὡς ἐπὶ λῃστὴν ἐξήλθατε μετὰ μαχαιρῶν καὶ ξύλων συλλαβεῖν με ‘you did (not have to) come with swords and clubs to capture me as though I were an outlaw’ Mt 26:55.\nThe phrase στόμα μαχαίρης (literally ‘mouth of the sword’) refers to the event of killing or slaughter: ἔφυγον στόματα μαχαίρης ‘they escaped being killed by the sword’ He 11:34. See 79.109.",
+        "surrounding_context": {
+          "domain": "6 Artifacts,2",
+          "subdomain": "G Weapons and Armor",
+          "previous_subdomain": "F Instruments Used in Punishment and Execution",
+          "next_subdomain": "H Boats and Parts of Boats",
+          "previous_2_senses": [
+            {
+              "ln": "6.31",
+              "definition": "ξύλονd, ου n: a heavy stick used in fighting—‘club.’"
+            },
+            {
+              "ln": "6.32",
+              "definition": "ῥομφαίαa, ας f: a large, broad sword used for both cutting and piercing—‘sword.’"
+            }
+          ],
+          "next_2_senses": [
+            {
+              "ln": "6.34",
+              "definition": "λόγχη, ης f: a long weapon with sharpened end used for piercing by thrusting or as a projectile by hurling—‘spear’"
+            },
+            {
+              "ln": "6.35",
+              "definition": "ὑσσός, οῦ m: a type of short spear—‘javelin.’"
+            }
+          ]
+        }
+      },
+      "secondary_senses": [
+        {
+          "ln": "39.25",
+          "occurrences": 1,
+          "share": 0.03,
+          "definition": "μάχαιραd, ης f: (a figurative extension of meaning of μάχαιραa ‘sword,’ 6.33) a state of discord and strife—‘violence, strife, discord.’",
+          "subdomain": "E Strife, Struggle"
+        },
+        {
+          "ln": "55.6",
+          "occurrences": 1,
+          "share": 0.03,
+          "definition": "μάχαιραb, ης f; ῥομφαίαb, ας f (figurative extensions of meaning of μάχαιραa ‘sword,’ 6.33, and ῥομφαίαa ‘broad sword,’ 6.32)—‘war, fighting, conflict.’",
+          "subdomain": "B To Fight"
+        },
+        {
+          "ln": "20.68",
+          "occurrences": 1,
+          "share": 0.03,
+          "definition": "μάχαιραc, ης f: (a figurative extension of meaning of μάχαιραa ‘sword,’ 6.33) death by violence or execution—‘death, being killed.’",
+          "subdomain": "D Kill"
+        },
+        {
+          "ln": "38.3",
+          "occurrences": 1,
+          "share": 0.03,
+          "definition": "φορέω τὴν μάχαιραν: (an idiom, literally ‘to bear the sword’) to have the capacity or authority to punish—‘to have the power to punish.’",
+          "subdomain": "A Punish"
+        }
+      ]
+    }
+  },
+  "πιστός": {
+    "lexical_entry": "πιστός, -ή, -όν",
+    "tf_lexical_info": {
+      "lemma": "πιστός",
+      "part_of_speech": "adj",
+      "gloss": "trustworthy, faithful, believing",
+      "frequency": 67
+    },
+    "ln_sense_info": {
+      "summary": "πιστός: primary sense 31.87 (51 of 72 tagged occurrences, 31 Hold a View, Believe, Trust / I Trust, Rely). Secondary senses: 31.86 (12x), 71.17 (5x), 11.17 (2x), 31.103 (2x).",
+      "primary_sense": {
+        "ln": "31.87",
+        "occurrences": 51,
+        "share": 0.71,
+        "full_entry": "πιστόςb, ή, όν: (derivative of πιστεύωb ‘to trust,’ 31.85) pertaining to being trusted—‘faithful, trustworthy, dependable, reliable.’ δοῦλε ἀγαθὲ καὶ πιστέ ‘good and faithful servant’ Mt 25:21; ταῦτα παράθου πιστοῖς ἀνθρώποις ‘pass these on to reliable men’ 2 Tm 2:2; πιστὸς ὁ λόγος ‘this word can be trusted’ 2 Tm 2:11. Since πιστόςb is a type of passive derivative of πιστεύωb, it may be necessary in a number of languages to render this passive relationship in an active form. For example, the phrase δοῦλε ἀγαθὲ καὶ πιστέ in Mt 25:21 may be rendered as ‘good servant and one whom I can trust.’ In 2 Tm 2:11 the phrase πιστὸς ὁ λόγος may be rendered as ‘this is a saying we can have confidence in’ or ‘… that we can trust.’",
+        "surrounding_context": {
+          "domain": "31 Hold a View, Believe, Trust",
+          "subdomain": "I Trust, Rely",
+          "previous_subdomain": "H Change an Opinion Concerning Truth",
+          "next_subdomain": "J Be a Believer, Christian Faith",
+          "previous_2_senses": [
+            {
+              "ln": "31.85",
+              "definition": "πιστεύωb; πίστιςb, εως f: to believe to the extent of complete trust and reliance—‘to believe in, to have confidence in, to have faith in, to trust, faith, trust.’"
+            },
+            {
+              "ln": "31.86",
+              "definition": "πιστόςa, ή, όν: (derivative of πιστεύωb ‘to trust,’ 31.85) pertaining to trusting—‘one who trusts in, trusting.’"
+            }
+          ],
+          "next_2_senses": [
+            {
+              "ln": "31.88",
+              "definition": "πίστιςc, εως f: the state of being someone in whom complete confidence can be placed—‘trustworthiness, dependability, faithfulness.’"
+            },
+            {
+              "ln": "31.89",
+              "definition": "ἀπιστίαa, ας f: the state of being someone in whom confidence cannot be placed—‘lacking in trustworthiness, unfaithfulness.’"
+            }
+          ]
+        }
+      },
+      "secondary_senses": [
+        {
+          "ln": "31.86",
+          "occurrences": 12,
+          "share": 0.17,
+          "definition": "πιστόςa, ή, όν: (derivative of πιστεύωb ‘to trust,’ 31.85) pertaining to trusting—‘one who trusts in, trusting.’",
+          "subdomain": "I Trust, Rely"
+        },
+        {
+          "ln": "71.17",
+          "occurrences": 5,
+          "share": 0.07,
+          "definition": "πιστόςc, ή, όν: pertaining to being sure, with the implication of being fully trustworthy—‘sure.’",
+          "subdomain": "C Certain, Uncertain"
+        },
+        {
+          "ln": "11.17",
+          "occurrences": 2,
+          "share": 0.03,
+          "definition": "πιστήb, ῆς f: one who is included among the faithful followers of Christ—‘believer, Christian, follower.’",
+          "subdomain": "B Socio-Religious"
+        },
+        {
+          "ln": "31.103",
+          "occurrences": 2,
+          "share": 0.03,
+          "definition": "πιστήa, ῆς f: (derivative of πιστεύωc ‘to be a believer,’ 31.102) one who believes in Jesus Christ—‘believer, Christian, one who has Christian faith.’",
+          "subdomain": "J Be a Believer, Christian Faith"
+        }
+      ]
+    }
+  },
+  "εὐθέως": {
+    "lexical_entry": "εὐθέως",
+    "tf_lexical_info": {
+      "lemma": "εὐθέως",
+      "part_of_speech": "adv",
+      "gloss": "immediately, soon",
+      "frequency": 33
+    },
+    "ln_sense_info": {
+      "summary": "εὐθέως: primary sense 67.53 (33 of 33 tagged occurrences, 67 Time / B A Point of Time with Reference to Other Points of Time: Before, Long Ago, Now, At the Same Time, When, About, After). No secondary senses attested.",
+      "primary_sense": {
+        "ln": "67.53",
+        "occurrences": 33,
+        "share": 1.0,
+        "full_entry": "εὐθύς; εὐθέως: a point of time immediately subsequent to a previous point of time (the actual interval of time differs appreciably, depending upon the nature of the events and the manner in which the sequence is interpreted by the writer)—‘immediately, right away, then.’\nεὐθύς: καὶ εὐθὺς ἐκ τῆς συναγωγῆς ἐξελθόντες ‘and immediately they left the synagogue’ or ‘then they left …’ Mk 1:29; καὶ εὐθὺς τοῖς σάββασιν εἰσελθὼν εἰς τὴν συναγωγὴν ἐδίδασκεν ‘and immediately on the Sabbath he went into the synagogue and taught’ Mk 1:21. εὐθύς probably implies what was done on the immediately following Sabbath. Accordingly, one may translate this expression in Mk 1:21 as ‘and on the next Sabbath he went into the synagogue and taught.’\nεὐθέως: εὐθέως δὲ μετὰ τὴν θλῖψιν τῶν ἡμερῶν ἐκείνων, ὁ ἥλιος σκοτισθήσεται ‘immediately after the trouble of those days, the sun will grow dark’ Mt 24:29; ἐλπίζω δὲ εὐθέως σε ἰδεῖν ‘I hope to see you right away’ 3 Jn 14. It is impossible to determine from the context whether εὐθέως in 3 Jn 14 should be understood as referring to a very short lapse of time and therefore be rendered as ‘very soon,’ or whether it refers to the very next event which is relevant to the total context.",
+        "surrounding_context": {
+          "domain": "67 Time",
+          "subdomain": "B A Point of Time with Reference to Other Points of Time: Before, Long Ago, Now, At the Same Time, When, About, After",
+          "previous_subdomain": "A A Point of Time without Reference to Other Points of Time: Time, Occasion, Ever, Often",
+          "next_subdomain": "C A Point of Time with Reference to Duration of Time: Beginning, End",
+          "previous_2_senses": [
+            {
+              "ln": "67.51",
+              "definition": "ὀψέc: a point of time subsequent to another point of time, with the implication of relative lateness—‘after.’"
+            },
+            {
+              "ln": "67.52",
+              "definition": "ἐν τῷ (καθἓξῆς: (an idiom, literally ‘in the next’) a point of time subsequent to another point of time, but with the implication of an ordered sequence—‘later, next.’"
+            }
+          ],
+          "next_2_senses": [
+            {
+              "ln": "67.54",
+              "definition": "μεταξύc: a point of time which is subsequent in order to a previous point of time—‘next.’"
+            },
+            {
+              "ln": "67.55",
+              "definition": "ἄνωθενb; πάλινa; εἰς τὸ πάλιν: a subsequent point of time involving repetition—‘again.’"
+            }
+          ]
+        }
+      },
+      "secondary_senses": []
+    }
+  }
+}
