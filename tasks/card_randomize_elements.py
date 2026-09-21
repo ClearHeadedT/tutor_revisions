@@ -2,24 +2,34 @@
 from data.student_data.student import Student
 
 
-def sentence_randomizer(student_id="austin"):
-    broad_sentence_form = {"simple_beginner", "main_with_dependent", "two_completes_coordinating"}
+def sentence_randomizer(student_id, item_grammatical_type, ):
 
-    dependent_clause_possibilities_broad = {"substantival", "adverbial"}
-    substantival_clause_possibilities_broad = {"subject", "direct_object"}
-    adverbial_clause_possibilities_broad = {"causal", "concessive", "conditional", "manner_means", "purpose", "resultative", "time"}
-    causal_clause_possibilites_items = {"infinitive", "adverbial_participle", "oti_indicative"}
-    concessive_clause_possibilites_items = {"adverbial_participle", "ei_kai_indicative"}
-    conditional_clause_possibilites_items = {"first_class", "second_class", "third_class"}
-    manner_means_clause_possibilites_items = {"articular_infinitive", "adverbial_participle", "relative_pn_hon"}
-    purpose_clause_possibilites_items = {"infinitive", "adverbial_participle", "hina_subjunctive", "relative_pn_hoitines"}
-    resultative_clause_possibilities_items = {"infinitive", "adverbial_participle", "hina_subjunctive", "relative_adverb_hothen"}
-    time_clause_possibilites_items = {"articular_infinitive", "adverbial_participle", "hote_indicative", "relative_pn"}
 
-    infinitive_morphological_possibilites = {""}
+
 
     austin_data = Student(student_id=student_id)
     
+
+
+
+
+
+# okay, makes sense, a nested dict/JSON that contains the full path to chosen pieces. 
+# Four pieces to this broadly, and all will be built from GGBB and syntax summaries in the koine builder directory. That's where a lot of the information I have here has come from.
+
+# The first broad piece is overall syntax/sentence formulation. We have to initially determine what kind of sentence we are utilizing/what structure. As you can trace the logic with what I have here, in the case there's a dependent clause added, there's several options for what that dependent clause could be (broadly), but even more decisions within that broad possibility. I have what I have here, but it's obviously incomplete. You'll need to search the resources and include the primary, common usages of sentence formation, beginning with broad choices and possibilitites and nesting the particulars under those categories. 
+
+# Second piece is specifics of individual items slotted into the sentence structure. These are largely contingent on lexical items the student has learned. 
+
+# Third piece is the actual explanation of each of these syntactic uses, descriptions of what each item/option is, basic rule formulation, etc - ideally derived from the short description sentence or two found in syntax summaries, which explains how the (again - ideally without the biblical references present in the material, but not sure how realistic this will be to parse out without biblical reference, and if there's no overt examples it might not know how to formulate it - so maybe it's best to include them not sure). 
+
+# Fourth piece is being able to access the student history syntax and derive the actual syntactic categories they have studied so that they aren't handed material they are unfamiliar with. How I see this is more of an opening up of new parts of the JSON to include more options dependent on what the student knows/is familiar with. This could get fuzzy potentially, which is why a full curriculum would be helpful here. Once they have a familiarity with the idea syntactically of a causal dependent clause, it could theoretically be displayed, but only once the grammatical, specific uses of an adverbial participle or infinitive are familiarized, too.
+# Further, as I'm thinking about this and considering it, I don't think the student will ever learn about "causal clauses" in isolation. It's always going to be attached to the study of an item. They will learn about causal clauses when they are introduced to participles, and then subsequently introduced to a causal adverbial participle in syntax. So there's really only 2 contingencies for unlocking that portion of the JSON. First is the initial study grammatically (grammar item of present act participle masc sng) and second is the syntactic category.
+# Thinking even MORE broadly, the individual pieces of the participle itself (from a grammar item morphological standpoint) could then progressively be unlocked as well (present act ind masc singlular, but not yet passive learned, so only 
+# I'm guessing this will all happen in the conditionals by key. Keys that are verified as learned by a student in their student object/JSON history will enable the randomized possibility of utilizing these pieces.
+
+# We're only looking for primary uses. That's one reason you will likely see that I don't have EVERY usage/category present for some of the clause options here, just the primary ones that won't be convoluted by an LLM call. 
+
 
 
 
