@@ -224,7 +224,4 @@ Phil. 1.15: τινὲς … τὸν Χριστὸν κηρύσσουσιν (some
 Rom. 11.17, 23: σὺ δὲ ἀγριέλαιος ὢν ἐνεκεντρίσθης … κἀκεῖνοι δέ, ἐὰν μὴ … ἐγκεντρισθήσονται (but you, being a wild olive, were grafted … but they, unless … will be grafted), subject-predicate structure, with intervening elements such as the participle structure and the conditional clause.
 Mt. 3.2: ἢγγικεν … ἡ βασιλεία τῶν οὐρανῶν (the kingdom of heaven is near), with predicate-subject structure.
 Mt. 10.5: τούτους τοὺς δώδεκα ἀπέστειλεν ὁ Ἰησοῦς (these twelve Jesus sent), with complement-predicate-subject structure.
-
-
-Stanley E. Porter, Idioms of the Greek New Testament (Sheffield: JSOT, 1999), 288–297.
 """

@@ -62,84 +62,90 @@ traversal = {
     "sentence_construction_possibilitites": {
         "simple_beginner_sentence": {},
         "main_and_dependent_sentence": {
-            "substantival": {
-                "default_position": "rear",
-                "marked_position": "fronted"
-            },
             "adverbial": {
                 "causal": {
-                    "default_position": "after",
-                    "marked_position": "before",
-                    "infinitive": {},
-                    "adverbial_participle": {},
-                    "oti_indicative": {}
+                    "position": {"default": "after", "marked": "before"},
+                    "usages": {
+                        "infinitive": {},
+                        "adverbial_participle": {},
+                        "oti_indicative": {}
+                    }
                 },
                 "concessive": {
-                    "default_position": "after",
-                    "marked_position": "before",
-                    "adverbial_participle": {},
-                    "ei_kai_indicative": {}
+                    "position": {"default": "after", "marked": "before"},
+                    "usages": {
+                        "adverbial_participle": {},
+                        "ei_kai_indicative": {}
+                    }
                 },
                 "conditional": {
-                    "default_position": "before",
-                    "marked_position": "after",
-                    "first_class": {},
-                    "second_class": {},
-                    "third_class": {}
+                    "position": {"default": "before", "marked": "after"},
+                    "usages": {
+                        "first_class": {},
+                        "second_class": {},
+                        "third_class": {}
+                    }
                 },
                 "manner_means": {
-                    "default_position": "after",
-                    "marked_position": "before",
-                    "articular_infinitive": {},
-                    "adverbial_participle": {},
-                    "relative_pn_hon": {}
+                    "position": {"default": "after", "marked": "before"},
+                    "usages": {
+                        "articular_infinitive": {},
+                        "adverbial_participle": {},
+                        "relative_pn_hon": {}
+                    }
                 },
                 "purpose": {
-                    "default_position": "after",
-                    "marked_position": "before",
-                    "infinitive": {},
-                    "adverbial_participle": {},
-                    "hina_subjunctive": {},
-                    "relative_pn_hoitines": {}
+                    "position": {"default": "after", "marked": "before"},
+                    "usages": {
+                        "infinitive": {},
+                        "adverbial_participle": {},
+                        "hina_subjunctive": {},
+                        "relative_pn_hoitines": {}
+                    }
                 },
                 "resultative": {
-                    "default_position": "after",
-                    "marked_position": "before",
-                    "infinitive": {},
-                    "adverbial_participle": {},
-                    "hina_subjunctive": {},
-                    "relative_adverb_hothen": {}
+                    "position": {"default": "after", "marked": "before"},
+                    "usages": {
+                        "infinitive": {},
+                        "adverbial_participle": {},
+                        "hina_subjunctive": {},
+                        "relative_adverb_hothen": {}
+                    }
                 },
                 "time": {
-                    "default_position": "split",
-                    "marked_position": "split",
-                    "articular_infinitive": {},
-                    "adverbial_participle": {},
-                    "hote_indicative": {},
-                    "relative_pn": {}
+                    "position": {"default": "split", "marked": "split"},
+                    "usages": {
+                        "articular_infinitive": {},
+                        "adverbial_participle": {},
+                        "hote_indicative": {},
+                        "relative_pn": {}
+                    }
                 },
                 "comparative": {
-                    "default_position": "after",
-                    "marked_position": "before",
-                    "adverbial_participle": {},
-                    "kathos_hos_indicative": {}
+                    "position": {"default": "after", "marked": "before"},
+                    "usages": {
+                        "adverbial_participle": {},
+                        "kathos_hos_indicative": {}
+                    }
                 },
                 "local": {
-                    "default_position": "after",
-                    "marked_position": "before",
-                    "hopou_indicative": {},
-                    "relative_adverb_hou": {}
+                    "position": {"default": "after", "marked": "before"},
+                    "usages": {
+                        "hopou_indicative": {},
+                        "relative_adverb_hou": {}
+                    }
                 }
             }
         },
         "main_and_relative_sentence": {
-            "default_position": "after",
-            "marked_position": "before",
+            "position": {"default": "after", "marked": "before"},
             "substantival": {
                 "indicative": {
-                    "subject": {},
-                    "object": {},
-                    "independent": {}
+                    "usages": {
+                        "subject": {},
+                        "object": {},
+                        "independent": {}
+                    }
                 },
                 "subjunctive": {}
             },
@@ -151,34 +157,43 @@ traversal = {
     },
     "sentence_vitals": {
         "verb": {
-            "finite_verb": {},
-            "finite_with_infinitive_complement": {},
-
+            "usages": {
+                "finite_verb": {},
+                "finite_with_infinitive_complement": {}
+            }
         },
         "subject": {
-            "nominative": {},
-            "substantival_participle": {},
-            "hoti_indicative": {},
-            "hina_subjunctive": {},
-            "relative_pn_ho": {}
+            "usages": {
+                "nominative": {},
+                "substantival_participle": {},
+                "hoti_indicative": {},
+                "hina_subjunctive": {},
+                "relative_pn_ho": {}
+            }
         },
         "object": {
-            "accusative": {},
-            "substantival_participle": {},
-            "relative_clause": {},
-            "substantival_infinitive": {},
-            "hoti_indicative": {},
-            "hina_subjunctive": {}
+            "usages": {
+                "accusative": {},
+                "substantival_participle": {},
+                "relative_clause": {},
+                "substantival_infinitive": {},
+                "hoti_indicative": {},
+                "hina_subjunctive": {}
+            }
         }
     },
     "other_supplementary_pieces": {
         "extra_case_usage": {
-            "genitive": {},
-            "dative": {}
+            "usages": {
+                "genitive": {},
+                "dative": {}
+            }
         },
         "adverbial": {
-            "verbal_modification_proper": {},
-            "substantival_modification": {}
+            "usages": {
+                "verbal_modification_proper": {},
+                "substantival_modification": {}
+            }
         },
        "prepositions": {},
        "particles": {}
