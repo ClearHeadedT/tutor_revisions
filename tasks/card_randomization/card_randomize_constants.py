@@ -18,3 +18,8 @@ ADVERBIAL_DEPENDENT_CATEGORIES = {
     "comparative": 0.15,
     "local": 0.15
 }
+
+VERB_USAGE_WEIGHTS = {
+    "finite_verb": 0.95,
+    "finite_with_infinitive_complement": 0.5
+}

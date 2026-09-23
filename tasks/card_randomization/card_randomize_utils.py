@@ -1,8 +1,12 @@
 from data.curriculum_data.curriculum_helper_functions import load_card_randomizer_elements
 from data.student_data.student import Student
-from tasks.card_randomize_traversal import traversal
-from tasks.card_randomize_constants import SENTENCE_TYPE_WEIGHTS, ADVERBIAL_DEPENDENT_WEIGHTS
-from tasks.formation_instructions import formation_instructions
+from tasks.card_randomization.card_randomize_traversal import traversal
+from tasks.card_randomization.card_randomize_constants import (
+    SENTENCE_TYPE_WEIGHTS,
+    ADVERBIAL_DEPENDENT_CATEGORIES,
+    VERB_USAGE_WEIGHTS,
+)
+from tasks.card_randomization.formation_instructions import formation_instructions
 import random
 
 
@@ -33,18 +37,6 @@ def beginner_traversal(student_class):
     return format_traversal_elements(verb=verb, subjects=subject_options, objects=object_options)
 
 
-# The assumption is that the scaffolding for the actual items inside the dict
-# values (currently empty) in the scaffolding will have some information -
-# one k-v pair of grammatical_items (the grammar item parallel key, traceable to student progress through the object,
-# verifying if it's usable as an option upon initial checks). One k-v pair of syntactic_item (signifying the syntax item
-# by key so it can be checked if the student has learned it yet or not similarly). So for a usage to be valid, the
-# student has to already have studied the syntactic category broadly and already seen the specific form in grammatical_items.
-# Lastly and importantly, one work in progress in having a fairly thorough list of lexical possiblities, likely another
-# JSON, which is empty for now but I've loaded load_card_randomizer_elements. It's highly-catered vocabulary for each
-# category. I'm still developing the functionality, but it will be utilizing text-fabric to find where particular lexical
-# items occur under specific categories. The lexical items in each of these usages will likely be derived from a large pool
-# of subjects, verbs, and objects. The subjects and objects are matched and compared against the semantic ln domain of the
-# verb for semantic coherence. This portion is undeveloped, but that's the idea.
 
 def beyond_beginner_traversal(student_class):
     instructions_key = "sentence_construction_possibilitites."
@@ -61,7 +53,7 @@ def beyond_beginner_traversal(student_class):
         adverbial = sentence_types[sentence_type]["adverbial"]
         valid_categories = [name for name, node in adverbial.items()
                             if any_check_traversal_uses_validity(node, student=student_class)]
-        category = weighted_choice(valid_categories, ADVERBIAL_DEPENDENT_WEIGHTS)
+        category = weighted_choice(valid_categories, ADVERBIAL_DEPENDENT_CATEGORIES)
         instructions_key += f"{category}."
         usages = adverbial[category]["usages"]
         valid_usages = [name for name, usage in usages.items()
@@ -76,19 +68,68 @@ def beyond_beginner_traversal(student_class):
         valid_grammar_items = [g_item for g_item in usage['grammatical_items'] if g_item in student_class.grammar]
         grammar_item = ranked_choice(valid_grammar_items)
         instructions = formation_instructions[instructions_key]
-        synthesis = {
+        main_clause_vitals = select_sentence_vitals(student_class=student_class)
+        dependent_clause_information = {
             "Trajectory of key traced to individual occurrence": instructions_key,
             "Helper instructions for formation": instructions,
-            "The specific grammatical  item with its morphological specification": grammar_item,
+            "The specific grammatical item with its morphological specification": grammar_item,
             "Verbal options for sentence formation and their substantive counterparts": lexical_items
+        }
+        synthesis = {
+            "Main clause information": main_clause_vitals,
+            "Dependent clause information": dependent_clause_information
         }
         return synthesis
 
     elif sentence_type == "main_and_relative_sentence":
-        raise NotImplementedError
+        instructions_key += "adjectival"
+        adjectival = sentence_types[sentence_type]["adjectival"]
+        valid_verbal_lexemes = lexeme_possibilities_by_key(student=student_class, usage_key=instructions_key)
+        if not valid_verbal_lexemes or len(valid_verbal_lexemes) < 5:
+            raise ValueError("Error: Likely not enough lexical options available")
+        lexical_items = select_lexemes_for_key(student=student_class, lexical_possibilities=valid_verbal_lexemes)
+        valid_grammar_items = [g_item for g_item in adjectival.get('grammatical_items', []) if g_item in student_class.grammar]
+        grammar_item = ranked_choice(valid_grammar_items)
+        instructions = formation_instructions[instructions_key]
+        relative_paradigm = adjectival.get('relative_paradigm')
+        main_clause_vitals = select_sentence_vitals(student_class=student_class)
+        relative_clause_information = {
+            "Trajectory of key traced to individual occurrence": instructions_key,
+            "Helper instructions for formation": instructions,
+            "The specific grammatical item with its morphological specification": grammar_item,
+            "The relative pronoun paradigm to draw from": relative_paradigm,
+            "Verbal options for sentence formation and their substantive counterparts": lexical_items
+        }
+        synthesis = {
+            "Main clause information": main_clause_vitals,
+            "Relative clause information": relative_clause_information
+        }
+        return synthesis
 
     elif sentence_type == "two_complete_coordinating_sentence":
         raise NotImplementedError
+
+
+
+
+
+
+
+
+
+
+# The assumption is that the scaffolding for the actual items inside the dict
+# values (currently empty) in the scaffolding will have some information -
+# one k-v pair of grammatical_items (the grammar item parallel key, traceable to student progress through the object,
+# verifying if it's usable as an option upon initial checks). One k-v pair of syntactic_item (signifying the syntax item
+# by key so it can be checked if the student has learned it yet or not similarly). So for a usage to be valid, the
+# student has to already have studied the syntactic category broadly and already seen the specific form in grammatical_items.
+# Lastly and importantly, one work in progress in having a fairly thorough list of lexical possiblities, likely another
+# JSON, which is empty for now but I've loaded load_card_randomizer_elements. It's highly-catered vocabulary for each
+# category. I'm still developing the functionality, but it will be utilizing text-fabric to find where particular lexical
+# items occur under specific categories. The lexical items in each of these usages will likely be derived from a large pool
+# of subjects, verbs, and objects. The subjects and objects are matched and compared against the semantic ln domain of the
+# verb for semantic coherence. This portion is undeveloped, but that's the idea.
 
 
 def format_traversal_elements(verb, subjects, objects, additional_elements="None"):
@@ -177,3 +218,34 @@ def select_lexemes_for_key(student, lexical_possibilities):
             "object_lexeme_possibilities": object_lexemes
         }
     return lexical_options_by_verb
+
+
+def select_sentence_vitals(student_class):
+    verbal_usages = traversal['sentence_vitals']['verb']['usages']
+    valid_verbal_categories = [name for name, node in verbal_usages.items()
+                        if check_traversal_specific_uses(usage=node, student=student_class)]
+    verbal_category = weighted_choice(valid_verbal_categories, VERB_USAGE_WEIGHTS)
+    verbal_grammar_item_possibilities = [g_item for g_item in verbal_usages[verbal_category]['grammatical_items'] if g_item in student_class.grammar]
+    verbal_grammar_item = ranked_choice(verbal_grammar_item_possibilities)
+    lexical_options = lexeme_possibilities_by_key(student=student_class, usage_key=f"sentence_vitals.verb.{verbal_category}")
+    if not lexical_options:
+        raise ValueError("Error: Likely not enough lexical options available for the main clause verb")
+    lexical_items = select_lexemes_for_key(student=student_class, lexical_possibilities=lexical_options)
+    valid_subject_categories = [name for name, node in traversal['sentence_vitals']['subject']['usages'].items()
+                                if check_traversal_specific_uses(usage=node, student=student_class)]
+    subject_category = ranked_choice(names=valid_subject_categories)
+    subject_formation_instructions = formation_instructions.get(f"sentence_vitals.subject.{subject_category}")
+    valid_object_categories = [name for name, node in traversal['sentence_vitals']['object']['usages'].items()
+                                if check_traversal_specific_uses(usage=node, student=student_class)]
+    object_category = ranked_choice(names=valid_object_categories)
+    object_formation_instructions = formation_instructions.get(f"sentence_vitals.object.{object_category}")
+    synthesis = {
+        "Verb lexical options for sentence formation and their substantive counterparts": lexical_items,
+        "Verb morphological and grammatical parsing information": verbal_grammar_item,
+        "The specific syntactic usage of the verb": verbal_category,
+        "The specific syntactic usage of the subject": subject_category,
+        "Instructions for subject grammatical formation (if applicable)": subject_formation_instructions,
+        "The specific syntactic usage of the object": object_category,
+        "Instructions for object grammatical formation (if applicable)": object_formation_instructions
+    }
+    return synthesis
