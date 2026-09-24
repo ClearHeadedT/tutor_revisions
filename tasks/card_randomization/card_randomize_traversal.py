@@ -1,8 +1,14 @@
-
+import json
+from pathlib import Path
 
 # default_position / marked_position sit on the semantic clause type, not on its realization:
 # a conditional participle precedes and a result participle follows, exactly as the matching
 # conjunction would. Rationale and sources in grammatical_instructions.py.
+#
+# Usages are written empty here and filled by _wire() at the bottom of the file. The two keys
+# that gate a usage - the syntactic category and the grammatical forms it is built from - live
+# in traversal_wiring.json, built by derivation/wire_traversal.py. Keeping them out of this file
+# keeps the shape readable: the wiring runs to a median of seventeen grammar keys per usage.
 
 
 traversal = {
@@ -201,11 +207,46 @@ traversal = {
 }
 
 
+# Usages are keyed here exactly as formation_instructions keys them, so one path reaches the
+# instructions, the wiring and the traversal node alike. The only difference is that the
+# traversal nests its options under "usages", which _walk steps over.
+WIRING_PATH = Path("data/curriculum_data/traversal_wiring.json")
 
 
-# Keep the "item" portions empty -
-# ready to fill in as possibilites in sep function based on student data and choice selection
-    # grammar items individual forms AND syntax?
+def _walk(path):
+    """The traversal node at a dotted formation-instructions path, or None.
 
-# As for categories like "particles", whatever is present in the other categories as makeup should be excluded
-# so there isn't incoherent logic within the sentence
+    Every step tries the plain key first and then the same key under "usages", which is where
+    the traversal keeps a node's options."""
+    node = traversal
+    for step in path.split("."):
+        if not isinstance(node, dict):
+            return None
+        if step in node:
+            node = node[step]
+        elif "usages" in node and step in node["usages"]:
+            node = node["usages"][step]
+        else:
+            return None
+    return node
+
+
+def _wire():
+    """Fill each usage with its syntactic_item and grammatical_items.
+
+    A usage with neither is unavailable to every student, which is how the empty placeholders
+    read before this ran - and why the randomizer raised on its first call."""
+    if not WIRING_PATH.exists():
+        return 0
+    wiring = json.loads(WIRING_PATH.read_text(encoding="utf-8"))
+    filled = 0
+    for path, keys in wiring.items():
+        node = _walk(path)
+        if node is None:
+            continue
+        node.update(keys)
+        filled += 1
+    return filled
+
+
+WIRED_USAGES = _wire()

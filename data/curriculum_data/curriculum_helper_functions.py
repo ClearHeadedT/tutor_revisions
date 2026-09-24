@@ -11,3 +11,9 @@ def load_card_randomizer_elements():
     with open('data/curriculum_data/card_randomizer_elements.json', 'r') as file:
         data = json.load(file)
     return data
+
+
+def load_vocabulary_items():
+    """The vocabulary scaffolding's items, keyed by lemma."""
+    with open('data/curriculum_data/vocabulary_scaffolding.json', 'r') as file:
+        return json.load(file)["items"]
