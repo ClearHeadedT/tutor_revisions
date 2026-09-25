@@ -3,12 +3,17 @@ from pathlib import Path
 
 # default_position / marked_position sit on the semantic clause type, not on its realization:
 # a conditional participle precedes and a result participle follows, exactly as the matching
-# conjunction would. Rationale and sources in grammatical_instructions.py.
+# conjunction would. Rationale and sources in grammatical_instructions.py. The one exception is the
+# causal participle, which GGBB finds usually precedes its verb; a realization's own position
+# overrides its clause type's.
 #
 # Usages are written empty here and filled by _wire() at the bottom of the file. The two keys
-# that gate a usage - the syntactic category and the grammatical forms it is built from - live
-# in traversal_wiring.json, built by derivation/wire_traversal.py. Keeping them out of this file
-# keeps the shape readable: the wiring runs to a median of seventeen grammar keys per usage.
+# that gate a usage - the syntactic category and the grammar groups it is built from - live in
+# traversal_wiring.json, built by derivation/wire_traversal.py. A usage left empty is never offered.
+#
+# Only the sentence's shape is drawn from here. What fills the clauses - the verb, its subject and
+# object, extra constructions - is left to the model or drawn from the student's own syntax items;
+# see card_randomize_utils.build_sentence_plan.
 
 
 traversal = {
@@ -73,7 +78,7 @@ traversal = {
                     "position": {"default": "after", "marked": "before"},
                     "usages": {
                         "infinitive": {},
-                        "adverbial_participle": {},
+                        "adverbial_participle": {"position": {"default": "before", "marked": "after"}},
                         "oti_indicative": {}
                     }
                 },
@@ -160,49 +165,6 @@ traversal = {
         "two_complete_coordinating_sentence": {
             "connector_piece": {}
         }
-    },
-    "sentence_vitals": {
-        "verb": {
-            "usages": {
-                "finite_verb": {},
-                "finite_with_infinitive_complement": {}
-            }
-        },
-        "subject": {
-            "usages": {
-                "nominative": {},
-                "substantival_participle": {},
-                "hoti_indicative": {},
-                "hina_subjunctive": {},
-                "relative_pn_ho": {}
-            }
-        },
-        "object": {
-            "usages": {
-                "accusative": {},
-                "substantival_participle": {},
-                "relative_clause": {},
-                "substantival_infinitive": {},
-                "hoti_indicative": {},
-                "hina_subjunctive": {}
-            }
-        }
-    },
-    "other_supplementary_pieces": {
-        "extra_case_usage": {
-            "usages": {
-                "genitive": {},
-                "dative": {}
-            }
-        },
-        "adverbial": {
-            "usages": {
-                "verbal_modification_proper": {},
-                "substantival_modification": {}
-            }
-        },
-       "prepositions": {},
-       "particles": {}
     }
 }
 
@@ -232,7 +194,7 @@ def _walk(path):
 
 
 def _wire():
-    """Fill each usage with its syntactic_item and grammatical_items.
+    """Fill each usage with its syntactic_item and grammar_requires.
 
     A usage with neither is unavailable to every student, which is how the empty placeholders
     read before this ran - and why the randomizer raised on its first call."""

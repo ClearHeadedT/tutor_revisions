@@ -13,13 +13,14 @@ import pathlib
 import re
 
 from llm_calls.client import make_client
-from llm_calls.instructions import instructions_card_audit
+from llm_calls.instructions import card_rejection, instructions_card_audit
 from greek_text import normalize_greek
 from tasks.new_card_creation.utils import (
     card_instructions_loader,
     unpack_grammatical_item,
     unpack_syntactic_item,
 )
+from tasks.new_card_creation.verify import check_card
 from testing.items import (
     GRAMMAR_ITEMS, SYNTAX_ITEMS, VOCABULARY_ITEMS, CARD_TYPES,
     SYNTAX_LEXEMES, TEST_STUDENT,
@@ -45,18 +46,26 @@ OUTPUT = TESTING / "output"
 SENSES = TESTING / "data" / "vocabulary_senses.json"
 
 
-def call(system, content, model, effort=None):
+def call(system, content, model, effort=None, rejected=()):
     """One request, with the system prompt marked cacheable and thinking bounded.
     Returns the raw reply text and the usage, and says what went wrong in terms of the
-    response rather than crashing on an assumption about its shape."""
+    response rather than crashing on an assumption about its shape.
+
+    rejected replays earlier attempts at the same card, as (reply, findings) pairs, the
+    way llm_calls.main does in production."""
+    messages = [{"role": "user", "content": json.dumps(content, indent=2, ensure_ascii=False)
+                 if not isinstance(content, str) else content}]
+    for reply, findings in rejected:
+        messages.append({"role": "assistant", "content": reply})
+        messages.append({"role": "user", "content": card_rejection.format(
+            findings="\n".join(f"- {finding}" for finding in findings))})
     response = make_client().messages.create(
         model=model,
         max_tokens=MAX_TOKENS,
         thinking={"type": "adaptive"},
         output_config={"effort": effort or EFFORT},
         system=[{"type": "text", "text": system, "cache_control": {"type": "ephemeral"}}],
-        messages=[{"role": "user", "content": json.dumps(content, indent=2, ensure_ascii=False)
-                   if not isinstance(content, str) else content}],
+        messages=messages,
     )
     usage = response.usage
     spend = {
@@ -164,7 +173,9 @@ def audit(category, limit=None, model=None, effort=None, out=None):
             continue
         if limit is not None and len(usages) >= limit:
             break
-        content = {"card": card, "item": item_for(category, key), "student": TEST_STUDENT}
+        target = key if category == "vocabulary" else None
+        content = {"card": card, "item": item_for(category, key), "student": TEST_STUDENT,
+                   "measured_overlap": check_card(card, target=target)["overlap"]}
         reply, usage = call(instructions_card_audit, content, model, effort)
         usages.append(usage)
         keep_raw(category, "audited", key, reply, usage, out)

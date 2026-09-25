@@ -1,0 +1,2153 @@
+{
+ "source": {
+  "note": "Everyday first-century situations for a card's sentence to take place in. None is an episode or parable of the New Testament and none uses a New Testament name. ln_domains are the Louw-Nida domains a scene naturally involves, used to offer a vocabulary item settings its word belongs in. Drafted for review: prune or add freely."
+ },
+ "scenes": [
+  {
+   "id": "s001",
+   "scene": "A potter's apprentice cracks a large jar just before the buyer arrives to collect it.",
+   "ln_domains": [
+    "6",
+    "42",
+    "57",
+    "25"
+   ]
+  },
+  {
+   "id": "s002",
+   "scene": "Two brothers argue over how to divide their late father's olive grove.",
+   "ln_domains": [
+    "3",
+    "10",
+    "63",
+    "57",
+    "33"
+   ]
+  },
+  {
+   "id": "s003",
+   "scene": "A widow bargains with a grain merchant in a year of poor harvest.",
+   "ln_domains": [
+    "10",
+    "57",
+    "43",
+    "22",
+    "5"
+   ]
+  },
+  {
+   "id": "s004",
+   "scene": "A fisherman's wife salts and packs the catch in jars to sell inland before it spoils.",
+   "ln_domains": [
+    "4",
+    "5",
+    "6",
+    "57",
+    "44"
+   ]
+  },
+  {
+   "id": "s005",
+   "scene": "A shepherd boy counts the flock at dusk and finds one lamb lame.",
+   "ln_domains": [
+    "4",
+    "44",
+    "60",
+    "67",
+    "23"
+   ]
+  },
+  {
+   "id": "s006",
+   "scene": "A travelling merchant's donkey refuses to cross a swollen stream.",
+   "ln_domains": [
+    "4",
+    "1",
+    "2",
+    "15",
+    "57"
+   ]
+  },
+  {
+   "id": "s007",
+   "scene": "A hired letter-writer in the market draws up a contract for two farmers who distrust each other.",
+   "ln_domains": [
+    "33",
+    "6",
+    "57",
+    "31",
+    "43"
+   ]
+  },
+  {
+   "id": "s008",
+   "scene": "A slave girl carrying water jars up steep steps drops one and fears her mistress's anger.",
+   "ln_domains": [
+    "2",
+    "6",
+    "87",
+    "25",
+    "17"
+   ]
+  },
+  {
+   "id": "s009",
+   "scene": "A carpenter and his neighbour dispute where a boundary wall should stand.",
+   "ln_domains": [
+    "7",
+    "45",
+    "80",
+    "33",
+    "39"
+   ]
+  },
+  {
+   "id": "s010",
+   "scene": "A mother nurses a feverish child through the night while the lamp burns low.",
+   "ln_domains": [
+    "10",
+    "23",
+    "67",
+    "6",
+    "14"
+   ]
+  },
+  {
+   "id": "s011",
+   "scene": "A young soldier on night watch at a city gate hears noises outside the walls.",
+   "ln_domains": [
+    "55",
+    "7",
+    "24",
+    "67",
+    "25"
+   ]
+  },
+  {
+   "id": "s012",
+   "scene": "A tax farmer's agent seizes a debtor's cart in the market.",
+   "ln_domains": [
+    "57",
+    "37",
+    "6",
+    "22"
+   ]
+  },
+  {
+   "id": "s013",
+   "scene": "An old teacher tests his pupils on the letters they copied onto wax tablets.",
+   "ln_domains": [
+    "27",
+    "33",
+    "6",
+    "32"
+   ]
+  },
+  {
+   "id": "s014",
+   "scene": "A household prepares a wedding feast and the cook runs short of salt.",
+   "ln_domains": [
+    "34",
+    "5",
+    "51",
+    "46",
+    "77"
+   ]
+  },
+  {
+   "id": "s015",
+   "scene": "A caravan waits outside a desert town while its leader bargains for water.",
+   "ln_domains": [
+    "1",
+    "2",
+    "15",
+    "57",
+    "33"
+   ]
+  },
+  {
+   "id": "s016",
+   "scene": "Two farmers watch the sky, hoping the rain holds off until the barley is in.",
+   "ln_domains": [
+    "43",
+    "14",
+    "1",
+    "25",
+    "67"
+   ]
+  },
+  {
+   "id": "s017",
+   "scene": "A baker's oven cracks on the morning of a festival.",
+   "ln_domains": [
+    "5",
+    "6",
+    "51",
+    "67",
+    "42"
+   ]
+  },
+  {
+   "id": "s018",
+   "scene": "A freedman returns to the house where he was once a slave to repay a debt.",
+   "ln_domains": [
+    "87",
+    "57",
+    "7",
+    "15"
+   ]
+  },
+  {
+   "id": "s019",
+   "scene": "A girl hides her brother's broken toy from their father.",
+   "ln_domains": [
+    "9",
+    "10",
+    "21",
+    "25"
+   ]
+  },
+  {
+   "id": "s020",
+   "scene": "An innkeeper and a traveller quarrel over the bill for feeding the traveller's mules.",
+   "ln_domains": [
+    "57",
+    "4",
+    "33",
+    "39"
+   ]
+  },
+  {
+   "id": "s021",
+   "scene": "A physician sets the broken arm of a stonemason who fell from scaffolding.",
+   "ln_domains": [
+    "8",
+    "23",
+    "45",
+    "19",
+    "17"
+   ]
+  },
+  {
+   "id": "s022",
+   "scene": "A council of village elders hears a complaint about a stolen goat.",
+   "ln_domains": [
+    "11",
+    "56",
+    "4",
+    "88",
+    "33"
+   ]
+  },
+  {
+   "id": "s023",
+   "scene": "A wine seller waters down his wine and a customer notices.",
+   "ln_domains": [
+    "6",
+    "5",
+    "88",
+    "24",
+    "57"
+   ]
+  },
+  {
+   "id": "s024",
+   "scene": "A boy sent to the next village with a message loses his way at night.",
+   "ln_domains": [
+    "33",
+    "15",
+    "1",
+    "67",
+    "27"
+   ]
+  },
+  {
+   "id": "s025",
+   "scene": "A household slave is freed in her master's will and must decide where to go.",
+   "ln_domains": [
+    "87",
+    "57",
+    "30",
+    "15",
+    "37"
+   ]
+  },
+  {
+   "id": "s026",
+   "scene": "A farmer's sons plant young olive trees that will not bear fruit for years.",
+   "ln_domains": [
+    "3",
+    "43",
+    "10",
+    "67"
+   ]
+  },
+  {
+   "id": "s027",
+   "scene": "Neighbours put out a kitchen fire before it spreads to the roof.",
+   "ln_domains": [
+    "14",
+    "2",
+    "7",
+    "21",
+    "42"
+   ]
+  },
+  {
+   "id": "s028",
+   "scene": "A merchant's ship waits in harbour for a favourable wind.",
+   "ln_domains": [
+    "6",
+    "54",
+    "14",
+    "67",
+    "57"
+   ]
+  },
+  {
+   "id": "s029",
+   "scene": "A grandmother teaches her granddaughter to weave a cloak.",
+   "ln_domains": [
+    "6",
+    "49",
+    "27",
+    "10"
+   ]
+  },
+  {
+   "id": "s030",
+   "scene": "A thief is caught climbing into a storeroom.",
+   "ln_domains": [
+    "88",
+    "7",
+    "67",
+    "37",
+    "18"
+   ]
+  },
+  {
+   "id": "s031",
+   "scene": "A young man writes a letter home asking his father for money.",
+   "ln_domains": [
+    "33",
+    "6",
+    "10",
+    "57"
+   ]
+  },
+  {
+   "id": "s032",
+   "scene": "A mother and daughter grind grain before dawn.",
+   "ln_domains": [
+    "5",
+    "43",
+    "67",
+    "10",
+    "42"
+   ]
+  },
+  {
+   "id": "s033",
+   "scene": "A goldsmith weighs a ring that a woman wants to pawn.",
+   "ln_domains": [
+    "2",
+    "6",
+    "57",
+    "81"
+   ]
+  },
+  {
+   "id": "s034",
+   "scene": "Workers repair a collapsed stretch of aqueduct under a foreman's eye.",
+   "ln_domains": [
+    "45",
+    "2",
+    "7",
+    "42",
+    "37"
+   ]
+  },
+  {
+   "id": "s035",
+   "scene": "A farmer's youngest son leaves home to enlist, and his mother packs his bag.",
+   "ln_domains": [
+    "55",
+    "10",
+    "15",
+    "25"
+   ]
+  },
+  {
+   "id": "s036",
+   "scene": "Two merchants swear an oath over a disputed shipment of wool.",
+   "ln_domains": [
+    "33",
+    "57",
+    "6",
+    "31"
+   ]
+  },
+  {
+   "id": "s037",
+   "scene": "A beekeeper is stung while moving his hives before winter.",
+   "ln_domains": [
+    "4",
+    "43",
+    "67",
+    "8"
+   ]
+  },
+  {
+   "id": "s038",
+   "scene": "A household mourns an old servant and prepares his burial.",
+   "ln_domains": [
+    "52",
+    "23",
+    "87",
+    "25"
+   ]
+  },
+  {
+   "id": "s039",
+   "scene": "A funeral procession passes a crowded market and the traders fall silent.",
+   "ln_domains": [
+    "52",
+    "11",
+    "23",
+    "24"
+   ]
+  },
+  {
+   "id": "s040",
+   "scene": "A boy steals pomegranates from a neighbour's garden and is chased off by the dog.",
+   "ln_domains": [
+    "3",
+    "4",
+    "88",
+    "15"
+   ]
+  },
+  {
+   "id": "s041",
+   "scene": "A leatherworker cuts sandals for a customer who keeps changing his mind.",
+   "ln_domains": [
+    "6",
+    "42",
+    "49",
+    "57"
+   ]
+  },
+  {
+   "id": "s042",
+   "scene": "An old man with swollen feet soaks them in warm water while his daughter scolds him.",
+   "ln_domains": [
+    "8",
+    "23",
+    "2",
+    "10"
+   ]
+  },
+  {
+   "id": "s043",
+   "scene": "Soldiers requisition a farmer's ox to haul their supplies.",
+   "ln_domains": [
+    "55",
+    "4",
+    "37",
+    "57",
+    "22"
+   ]
+  },
+  {
+   "id": "s044",
+   "scene": "A village celebrates the end of the grape harvest with music and dancing.",
+   "ln_domains": [
+    "43",
+    "51",
+    "25",
+    "3",
+    "6"
+   ]
+  },
+  {
+   "id": "s045",
+   "scene": "A young wife burns the bread on her first day in her husband's household.",
+   "ln_domains": [
+    "5",
+    "34",
+    "46",
+    "25"
+   ]
+  },
+  {
+   "id": "s046",
+   "scene": "An apprentice mason carves a name onto a gravestone and misspells it.",
+   "ln_domains": [
+    "33",
+    "2",
+    "52",
+    "42"
+   ]
+  },
+  {
+   "id": "s047",
+   "scene": "Two old friends meet after years apart at the city baths.",
+   "ln_domains": [
+    "34",
+    "25",
+    "2",
+    "67"
+   ]
+  },
+  {
+   "id": "s048",
+   "scene": "A steward counts the household stores before winter and finds the oil jars half empty.",
+   "ln_domains": [
+    "46",
+    "5",
+    "6",
+    "59",
+    "27"
+   ]
+  },
+  {
+   "id": "s049",
+   "scene": "A boat is caught in fog and the crew argue over which way the shore lies.",
+   "ln_domains": [
+    "54",
+    "6",
+    "1",
+    "30",
+    "24"
+   ]
+  },
+  {
+   "id": "s050",
+   "scene": "A girl learns to draw water with a rope and bucket without spilling it.",
+   "ln_domains": [
+    "2",
+    "6",
+    "27"
+   ]
+  },
+  {
+   "id": "s051",
+   "scene": "A blacksmith sharpens swords for the local garrison.",
+   "ln_domains": [
+    "6",
+    "55",
+    "42",
+    "2"
+   ]
+  },
+  {
+   "id": "s052",
+   "scene": "An old woman keeps the keys to the family storeroom and trusts no one with them.",
+   "ln_domains": [
+    "6",
+    "7",
+    "31",
+    "46"
+   ]
+  },
+  {
+   "id": "s053",
+   "scene": "A dog guards a vineyard at night against foxes.",
+   "ln_domains": [
+    "4",
+    "3",
+    "43",
+    "67"
+   ]
+  },
+  {
+   "id": "s054",
+   "scene": "Labourers clear stones from a field before the ploughing.",
+   "ln_domains": [
+    "43",
+    "2",
+    "42",
+    "57"
+   ]
+  },
+  {
+   "id": "s055",
+   "scene": "A family packs up to move to another city after a flood ruins their house.",
+   "ln_domains": [
+    "2",
+    "7",
+    "15",
+    "20",
+    "22"
+   ]
+  },
+  {
+   "id": "s056",
+   "scene": "The market inspector checks a merchant's scales.",
+   "ln_domains": [
+    "57",
+    "81",
+    "88",
+    "37"
+   ]
+  },
+  {
+   "id": "s057",
+   "scene": "A young man rehearses a speech he must give before the town council.",
+   "ln_domains": [
+    "33",
+    "11",
+    "25",
+    "27"
+   ]
+  },
+  {
+   "id": "s058",
+   "scene": "A judge hears two neighbours argue over a fallen wall.",
+   "ln_domains": [
+    "56",
+    "7",
+    "33",
+    "39"
+   ]
+  },
+  {
+   "id": "s059",
+   "scene": "A father teaches his son to read from a worn scroll of the family accounts.",
+   "ln_domains": [
+    "33",
+    "6",
+    "27",
+    "10"
+   ]
+  },
+  {
+   "id": "s060",
+   "scene": "A servant is sent to fetch a doctor in the middle of a storm.",
+   "ln_domains": [
+    "35",
+    "23",
+    "14",
+    "15"
+   ]
+  },
+  {
+   "id": "s061",
+   "scene": "A camel driver loses a load of pottery on a rocky path.",
+   "ln_domains": [
+    "4",
+    "6",
+    "1",
+    "20"
+   ]
+  },
+  {
+   "id": "s062",
+   "scene": "A mother bathes her infant and wraps him in warm cloth.",
+   "ln_domains": [
+    "9",
+    "47",
+    "49",
+    "10"
+   ]
+  },
+  {
+   "id": "s063",
+   "scene": "Children play at soldiers in the street with wooden swords.",
+   "ln_domains": [
+    "9",
+    "55",
+    "6",
+    "42"
+   ]
+  },
+  {
+   "id": "s064",
+   "scene": "A landlord raises the rent and his tenant farmer protests.",
+   "ln_domains": [
+    "57",
+    "43",
+    "33",
+    "37"
+   ]
+  },
+  {
+   "id": "s065",
+   "scene": "A lamp maker shows a customer new lamps with patterned handles.",
+   "ln_domains": [
+    "6",
+    "14",
+    "57",
+    "79"
+   ]
+  },
+  {
+   "id": "s066",
+   "scene": "A woman keeps watch at the bedside of her dying husband.",
+   "ln_domains": [
+    "23",
+    "34",
+    "25",
+    "67"
+   ]
+  },
+  {
+   "id": "s067",
+   "scene": "A traveller's sandal strap breaks on a mountain road far from the next town.",
+   "ln_domains": [
+    "6",
+    "1",
+    "15",
+    "22"
+   ]
+  },
+  {
+   "id": "s068",
+   "scene": "Two apprentices race to finish a table before their master returns.",
+   "ln_domains": [
+    "42",
+    "6",
+    "45",
+    "68"
+   ]
+  },
+  {
+   "id": "s069",
+   "scene": "A household slave overhears a plan to cheat his master.",
+   "ln_domains": [
+    "87",
+    "24",
+    "88",
+    "33"
+   ]
+  },
+  {
+   "id": "s070",
+   "scene": "Villagers gather to watch a surveyor mark the new boundaries of their fields.",
+   "ln_domains": [
+    "81",
+    "43",
+    "1",
+    "24"
+   ]
+  },
+  {
+   "id": "s071",
+   "scene": "A woman selling vegetables at the city gate argues over prices.",
+   "ln_domains": [
+    "3",
+    "57",
+    "7",
+    "33"
+   ]
+  },
+  {
+   "id": "s072",
+   "scene": "A household makes ready for the Sabbath at sunset and the lamp oil runs out.",
+   "ln_domains": [
+    "67",
+    "51",
+    "6",
+    "14",
+    "53"
+   ]
+  },
+  {
+   "id": "s073",
+   "scene": "A priest's servant carries baskets of offerings up the temple steps and drops one.",
+   "ln_domains": [
+    "53",
+    "7",
+    "15",
+    "6"
+   ]
+  },
+  {
+   "id": "s074",
+   "scene": "Pilgrims camp outside the city walls during a festival and quarrel over space.",
+   "ln_domains": [
+    "51",
+    "53",
+    "1",
+    "39"
+   ]
+  },
+  {
+   "id": "s075",
+   "scene": "A family fasts and prays for a grandmother who has fallen ill.",
+   "ln_domains": [
+    "53",
+    "23",
+    "10",
+    "25"
+   ]
+  },
+  {
+   "id": "s076",
+   "scene": "A convert is immersed in a ritual bath while his mother watches from the steps.",
+   "ln_domains": [
+    "53",
+    "47",
+    "10",
+    "2"
+   ]
+  },
+  {
+   "id": "s077",
+   "scene": "An old man teaches his grandson the blessing said before meals.",
+   "ln_domains": [
+    "53",
+    "33",
+    "5",
+    "10"
+   ]
+  },
+  {
+   "id": "s078",
+   "scene": "A sailor vows an offering to God if his ship reaches harbour safely.",
+   "ln_domains": [
+    "12",
+    "53",
+    "54",
+    "21"
+   ]
+  },
+  {
+   "id": "s079",
+   "scene": "Villagers say a demon haunts the abandoned tower on the hill.",
+   "ln_domains": [
+    "12",
+    "7",
+    "25",
+    "1"
+   ]
+  },
+  {
+   "id": "s080",
+   "scene": "A farmer and his sons pray for rain after a dry winter.",
+   "ln_domains": [
+    "12",
+    "53",
+    "14",
+    "43"
+   ]
+  },
+  {
+   "id": "s081",
+   "scene": "A merchant swears by God that his cloth is the finest in the city.",
+   "ln_domains": [
+    "12",
+    "33",
+    "57",
+    "6"
+   ]
+  },
+  {
+   "id": "s082",
+   "scene": "Two elders disagree over how the law applies to a borrowed ox that died.",
+   "ln_domains": [
+    "33",
+    "56",
+    "4",
+    "57"
+   ]
+  },
+  {
+   "id": "s083",
+   "scene": "A household gathers for the Passover meal and the youngest child asks the questions.",
+   "ln_domains": [
+    "51",
+    "5",
+    "10",
+    "33"
+   ]
+  },
+  {
+   "id": "s084",
+   "scene": "A synagogue attendant sweeps the floor early, before the town gathers.",
+   "ln_domains": [
+    "53",
+    "7",
+    "67",
+    "35"
+   ]
+  },
+  {
+   "id": "s085",
+   "scene": "Old men sitting in the gate argue over what an ancient prophecy meant.",
+   "ln_domains": [
+    "53",
+    "33",
+    "30",
+    "11"
+   ]
+  },
+  {
+   "id": "s086",
+   "scene": "A daughter reads her dead father's will aloud to the family.",
+   "ln_domains": [
+    "33",
+    "52",
+    "57",
+    "10"
+   ]
+  },
+  {
+   "id": "s087",
+   "scene": "A young man is ashamed to tell his parents he gambled away his wages.",
+   "ln_domains": [
+    "25",
+    "57",
+    "88",
+    "10"
+   ]
+  },
+  {
+   "id": "s088",
+   "scene": "A woman forgives the neighbour who borrowed her cooking pot and broke it.",
+   "ln_domains": [
+    "40",
+    "6",
+    "34",
+    "57"
+   ]
+  },
+  {
+   "id": "s089",
+   "scene": "A master forgives a slave who spilled a jar of costly oil.",
+   "ln_domains": [
+    "40",
+    "87",
+    "6",
+    "25"
+   ]
+  },
+  {
+   "id": "s090",
+   "scene": "Two brothers make peace at their mother's sickbed after years of silence.",
+   "ln_domains": [
+    "40",
+    "10",
+    "23",
+    "34"
+   ]
+  },
+  {
+   "id": "s091",
+   "scene": "A runaway slave hides in a hayloft and fears the dogs.",
+   "ln_domains": [
+    "87",
+    "21",
+    "25",
+    "4"
+   ]
+  },
+  {
+   "id": "s092",
+   "scene": "A household guard is bribed to leave a gate unbarred.",
+   "ln_domains": [
+    "37",
+    "57",
+    "88",
+    "7",
+    "79"
+   ]
+  },
+  {
+   "id": "s093",
+   "scene": "Debtors in a crowded cell share a single blanket through a cold night.",
+   "ln_domains": [
+    "37",
+    "7",
+    "22",
+    "49",
+    "67"
+   ]
+  },
+  {
+   "id": "s094",
+   "scene": "A shipowner hires sailors for one last voyage before the winter storms.",
+   "ln_domains": [
+    "54",
+    "57",
+    "67",
+    "6"
+   ]
+  },
+  {
+   "id": "s095",
+   "scene": "A girl chases the geese into their pen before a storm.",
+   "ln_domains": [
+    "4",
+    "14",
+    "9",
+    "15"
+   ]
+  },
+  {
+   "id": "s096",
+   "scene": "A farmer finds his neighbour's goats in his wheat and loses his temper.",
+   "ln_domains": [
+    "4",
+    "43",
+    "25",
+    "3"
+   ]
+  },
+  {
+   "id": "s097",
+   "scene": "A mother bargains for a warm cloak for her son before winter.",
+   "ln_domains": [
+    "49",
+    "57",
+    "67",
+    "10"
+   ]
+  },
+  {
+   "id": "s098",
+   "scene": "A king's messenger arrives in a village with news of new taxes.",
+   "ln_domains": [
+    "33",
+    "37",
+    "57",
+    "15"
+   ]
+  },
+  {
+   "id": "s099",
+   "scene": "A retired soldier teaches the village boys to march.",
+   "ln_domains": [
+    "55",
+    "27",
+    "15",
+    "9"
+   ]
+  },
+  {
+   "id": "s100",
+   "scene": "A doctor examines a slave for sale in the market and declares him sick.",
+   "ln_domains": [
+    "23",
+    "57",
+    "87",
+    "24"
+   ]
+  },
+  {
+   "id": "s101",
+   "scene": "A seamstress sewing a bride's garment runs out of thread.",
+   "ln_domains": [
+    "49",
+    "6",
+    "34"
+   ]
+  },
+  {
+   "id": "s102",
+   "scene": "A fisherman's hut floods when the lake rises.",
+   "ln_domains": [
+    "2",
+    "7",
+    "44",
+    "20"
+   ]
+  },
+  {
+   "id": "s103",
+   "scene": "Workers carry stones up to build the upper storey of a house.",
+   "ln_domains": [
+    "45",
+    "2",
+    "7",
+    "15"
+   ]
+  },
+  {
+   "id": "s104",
+   "scene": "A child falls asleep during a long evening meal and is carried to bed.",
+   "ln_domains": [
+    "9",
+    "23",
+    "67",
+    "17"
+   ]
+  },
+  {
+   "id": "s105",
+   "scene": "A dyer's hands are stained blue and his customers stare at them.",
+   "ln_domains": [
+    "6",
+    "8",
+    "24",
+    "57"
+   ]
+  },
+  {
+   "id": "s106",
+   "scene": "A tutor walks a wealthy boy to school and scolds him for dawdling.",
+   "ln_domains": [
+    "36",
+    "27",
+    "15",
+    "87"
+   ]
+  },
+  {
+   "id": "s107",
+   "scene": "A gravedigger and his son dig in rocky ground and break a spade.",
+   "ln_domains": [
+    "52",
+    "2",
+    "6",
+    "42"
+   ]
+  },
+  {
+   "id": "s108",
+   "scene": "An archer practises at a target while his friends mock him.",
+   "ln_domains": [
+    "55",
+    "6",
+    "27",
+    "39"
+   ]
+  },
+  {
+   "id": "s109",
+   "scene": "A potter shows his son how to centre the clay on the wheel.",
+   "ln_domains": [
+    "2",
+    "6",
+    "27",
+    "10"
+   ]
+  },
+  {
+   "id": "s110",
+   "scene": "Rain collapses a mud-brick wall and the family's sheep wander into the street.",
+   "ln_domains": [
+    "14",
+    "7",
+    "4",
+    "20"
+   ]
+  },
+  {
+   "id": "s111",
+   "scene": "A girl brings her grandfather his midday meal in the olive grove.",
+   "ln_domains": [
+    "5",
+    "3",
+    "10",
+    "67"
+   ]
+  },
+  {
+   "id": "s112",
+   "scene": "A servant carries a lamp ahead of his master along a dark street.",
+   "ln_domains": [
+    "6",
+    "14",
+    "35",
+    "15",
+    "67"
+   ]
+  },
+  {
+   "id": "s113",
+   "scene": "A cook is punished for burning a feast meant for important guests.",
+   "ln_domains": [
+    "38",
+    "5",
+    "46",
+    "51"
+   ]
+  },
+  {
+   "id": "s114",
+   "scene": "A tanner is shunned by his neighbours for the smell of his trade.",
+   "ln_domains": [
+    "42",
+    "24",
+    "87",
+    "34"
+   ]
+  },
+  {
+   "id": "s115",
+   "scene": "A father arranges his daughter's marriage and she objects.",
+   "ln_domains": [
+    "34",
+    "10",
+    "30",
+    "33"
+   ]
+  },
+  {
+   "id": "s116",
+   "scene": "A lender comes to collect and finds the family eating their last bread.",
+   "ln_domains": [
+    "57",
+    "5",
+    "22",
+    "10"
+   ]
+  },
+  {
+   "id": "s117",
+   "scene": "A cart wheel breaks on the road to market and the eggs are lost.",
+   "ln_domains": [
+    "6",
+    "15",
+    "20",
+    "57"
+   ]
+  },
+  {
+   "id": "s118",
+   "scene": "A hunter tracks a wild boar into the hills.",
+   "ln_domains": [
+    "4",
+    "1",
+    "27",
+    "20"
+   ]
+  },
+  {
+   "id": "s119",
+   "scene": "Three families share an olive press and argue over whose turn it is.",
+   "ln_domains": [
+    "3",
+    "6",
+    "43",
+    "39",
+    "60"
+   ]
+  },
+  {
+   "id": "s120",
+   "scene": "A night watchman sees a fire on the far hill and wakes the village.",
+   "ln_domains": [
+    "14",
+    "24",
+    "67",
+    "21"
+   ]
+  },
+  {
+   "id": "s121",
+   "scene": "A slave boy is punished for breaking his mistress's mirror.",
+   "ln_domains": [
+    "38",
+    "6",
+    "87",
+    "19"
+   ]
+  },
+  {
+   "id": "s122",
+   "scene": "An old sailor tells the children about a sea monster he claims to have seen.",
+   "ln_domains": [
+    "4",
+    "33",
+    "54",
+    "1"
+   ]
+  },
+  {
+   "id": "s123",
+   "scene": "A mother lays out clean clothes for her children on a festival morning.",
+   "ln_domains": [
+    "49",
+    "51",
+    "10",
+    "67"
+   ]
+  },
+  {
+   "id": "s124",
+   "scene": "A young man is made treasurer of a trade guild and the older members doubt him.",
+   "ln_domains": [
+    "11",
+    "57",
+    "31",
+    "37"
+   ]
+  },
+  {
+   "id": "s125",
+   "scene": "Two women carrying laundry to the river slip on the rocks.",
+   "ln_domains": [
+    "47",
+    "1",
+    "17",
+    "49"
+   ]
+  },
+  {
+   "id": "s126",
+   "scene": "An orphan girl is taken in by her uncle's family.",
+   "ln_domains": [
+    "10",
+    "34",
+    "9",
+    "35"
+   ]
+  },
+  {
+   "id": "s127",
+   "scene": "A schoolboy is beaten for failing to learn his lesson.",
+   "ln_domains": [
+    "19",
+    "27",
+    "38",
+    "9"
+   ]
+  },
+  {
+   "id": "s128",
+   "scene": "Snow blocks a mountain pass and a messenger has to turn back.",
+   "ln_domains": [
+    "14",
+    "1",
+    "15",
+    "33"
+   ]
+  },
+  {
+   "id": "s129",
+   "scene": "A craftsman carves a chair of state for a magistrate.",
+   "ln_domains": [
+    "6",
+    "45",
+    "37",
+    "42"
+   ]
+  },
+  {
+   "id": "s130",
+   "scene": "A guard dog barks all night and no one sleeps.",
+   "ln_domains": [
+    "4",
+    "23",
+    "67",
+    "24"
+   ]
+  },
+  {
+   "id": "s131",
+   "scene": "A family measures out the grain that must last them the coming months.",
+   "ln_domains": [
+    "5",
+    "81",
+    "59",
+    "67"
+   ]
+  },
+  {
+   "id": "s132",
+   "scene": "A court clerk reads out a sentence of exile.",
+   "ln_domains": [
+    "56",
+    "33",
+    "37",
+    "15"
+   ]
+  },
+  {
+   "id": "s133",
+   "scene": "A woman smells smoke and finds her neighbour's barn on fire.",
+   "ln_domains": [
+    "14",
+    "24",
+    "43",
+    "21"
+   ]
+  },
+  {
+   "id": "s134",
+   "scene": "A boy runs a race at the village festival and falls within sight of the finish.",
+   "ln_domains": [
+    "15",
+    "51",
+    "17",
+    "25",
+    "61"
+   ]
+  },
+  {
+   "id": "s135",
+   "scene": "Travellers shelter from the rain under a rock overhang and share what food they have.",
+   "ln_domains": [
+    "2",
+    "5",
+    "14",
+    "34"
+   ]
+  },
+  {
+   "id": "s136",
+   "scene": "A rich man's servants unload his furniture at a new house.",
+   "ln_domains": [
+    "57",
+    "6",
+    "7",
+    "35"
+   ]
+  },
+  {
+   "id": "s137",
+   "scene": "A moneylender counts his coins by lamplight.",
+   "ln_domains": [
+    "57",
+    "6",
+    "14",
+    "60"
+   ]
+  },
+  {
+   "id": "s138",
+   "scene": "A girl is afraid of the dark and sleeps beside her older sister.",
+   "ln_domains": [
+    "25",
+    "10",
+    "67",
+    "14"
+   ]
+  },
+  {
+   "id": "s139",
+   "scene": "A mule breaks loose in the market and scatters the fruit stalls.",
+   "ln_domains": [
+    "4",
+    "3",
+    "15",
+    "20"
+   ]
+  },
+  {
+   "id": "s140",
+   "scene": "A widow hires a man to mend her leaking roof before the rains.",
+   "ln_domains": [
+    "7",
+    "45",
+    "57",
+    "14"
+   ]
+  },
+  {
+   "id": "s141",
+   "scene": "A father and son walk to the city to sell a young calf.",
+   "ln_domains": [
+    "4",
+    "57",
+    "15",
+    "10"
+   ]
+  },
+  {
+   "id": "s142",
+   "scene": "The village well runs dry and the elders meet to decide what to do.",
+   "ln_domains": [
+    "2",
+    "30",
+    "11",
+    "22"
+   ]
+  },
+  {
+   "id": "s143",
+   "scene": "A guard is posted at the granary after grain goes missing.",
+   "ln_domains": [
+    "37",
+    "5",
+    "55",
+    "88"
+   ]
+  },
+  {
+   "id": "s144",
+   "scene": "An old woman tells her grandchildren about her own wedding day.",
+   "ln_domains": [
+    "33",
+    "34",
+    "29",
+    "10"
+   ]
+  },
+  {
+   "id": "s145",
+   "scene": "A man remembers too late that he promised to meet a friend.",
+   "ln_domains": [
+    "29",
+    "34",
+    "67"
+   ]
+  },
+  {
+   "id": "s146",
+   "scene": "A pupil contradicts his teacher and is sent out of the room.",
+   "ln_domains": [
+    "27",
+    "33",
+    "39",
+    "15"
+   ]
+  },
+  {
+   "id": "s147",
+   "scene": "A heavy rain washes away the newly sown seed.",
+   "ln_domains": [
+    "14",
+    "43",
+    "2",
+    "20",
+    "78"
+   ]
+  },
+  {
+   "id": "s148",
+   "scene": "A mother tells her son he must choose between the family trade and the army.",
+   "ln_domains": [
+    "30",
+    "10",
+    "55",
+    "42"
+   ]
+  },
+  {
+   "id": "s149",
+   "scene": "A boy learns that his friend lied to him about a borrowed knife.",
+   "ln_domains": [
+    "72",
+    "88",
+    "6",
+    "34"
+   ]
+  },
+  {
+   "id": "s150",
+   "scene": "A dispute over whether a debt was already repaid ends before the magistrate.",
+   "ln_domains": [
+    "56",
+    "57",
+    "72",
+    "29"
+   ]
+  },
+  {
+   "id": "s151",
+   "scene": "A family discovers that an heirloom cup is a clever fake.",
+   "ln_domains": [
+    "70",
+    "6",
+    "65",
+    "24"
+   ]
+  },
+  {
+   "id": "s152",
+   "scene": "A wealthy woman hides her jewellery in a wall niche as soldiers enter the city.",
+   "ln_domains": [
+    "21",
+    "6",
+    "55",
+    "65"
+   ]
+  },
+  {
+   "id": "s153",
+   "scene": "A child is too weak to climb the hill and his father carries him.",
+   "ln_domains": [
+    "74",
+    "17",
+    "10",
+    "1"
+   ]
+  },
+  {
+   "id": "s154",
+   "scene": "A pair of oxen cannot pull the cart out of the mud.",
+   "ln_domains": [
+    "74",
+    "4",
+    "6",
+    "76",
+    "78"
+   ]
+  },
+  {
+   "id": "s155",
+   "scene": "A wrestler trains for a match against a stronger man.",
+   "ln_domains": [
+    "74",
+    "76",
+    "27",
+    "39",
+    "78"
+   ]
+  },
+  {
+   "id": "s156",
+   "scene": "A household hurries to be ready before the guests arrive for a betrothal feast.",
+   "ln_domains": [
+    "77",
+    "34",
+    "51",
+    "68"
+   ]
+  },
+  {
+   "id": "s157",
+   "scene": "A carpenter measures the height of a doorway twice before cutting.",
+   "ln_domains": [
+    "81",
+    "7",
+    "45",
+    "6"
+   ]
+  },
+  {
+   "id": "s158",
+   "scene": "A caravan sets out east at dawn with the sun in their eyes.",
+   "ln_domains": [
+    "82",
+    "15",
+    "67",
+    "1"
+   ]
+  },
+  {
+   "id": "s159",
+   "scene": "A child seated in the middle of the table spills the soup.",
+   "ln_domains": [
+    "83",
+    "5",
+    "9"
+   ]
+  },
+  {
+   "id": "s160",
+   "scene": "A traveller leaves his pack with an innkeeper and goes on ahead.",
+   "ln_domains": [
+    "85",
+    "15",
+    "57",
+    "31"
+   ]
+  },
+  {
+   "id": "s161",
+   "scene": "A servant sets out the cushions in their places before the guests recline.",
+   "ln_domains": [
+    "85",
+    "6",
+    "17",
+    "35",
+    "80"
+   ]
+  },
+  {
+   "id": "s162",
+   "scene": "Two neighbours argue over whether one may draw water from the other's cistern.",
+   "ln_domains": [
+    "71",
+    "2",
+    "57",
+    "39"
+   ]
+  },
+  {
+   "id": "s163",
+   "scene": "A son finds he is bound to pay his late father's debts.",
+   "ln_domains": [
+    "71",
+    "57",
+    "10",
+    "52"
+   ]
+  },
+  {
+   "id": "s164",
+   "scene": "A host must seat his guests at a banquet without offending the older relatives.",
+   "ln_domains": [
+    "87",
+    "51",
+    "80",
+    "25"
+   ]
+  },
+  {
+   "id": "s165",
+   "scene": "A craftsman's work is praised in public and his rival is jealous.",
+   "ln_domains": [
+    "87",
+    "25",
+    "42",
+    "33"
+   ]
+  },
+  {
+   "id": "s166",
+   "scene": "A potter learns that a jar he sold cheaply was worth far more.",
+   "ln_domains": [
+    "65",
+    "57",
+    "6",
+    "78"
+   ]
+  },
+  {
+   "id": "s167",
+   "scene": "A merchant compares two bolts of cloth and cannot tell which is better.",
+   "ln_domains": [
+    "64",
+    "65",
+    "6",
+    "57"
+   ]
+  },
+  {
+   "id": "s168",
+   "scene": "A son takes up his father's trade and finishes his first piece of work.",
+   "ln_domains": [
+    "68",
+    "42",
+    "10",
+    "45"
+   ]
+  },
+  {
+   "id": "s169",
+   "scene": "A traveller must wait in a town until the bridge is repaired.",
+   "ln_domains": [
+    "68",
+    "15",
+    "45",
+    "67"
+   ]
+  },
+  {
+   "id": "s170",
+   "scene": "The rest of the family arrives a day after the first wagon.",
+   "ln_domains": [
+    "63",
+    "15",
+    "10",
+    "67",
+    "61"
+   ]
+  },
+  {
+   "id": "s171",
+   "scene": "A farmer divides his field into plots for his three sons.",
+   "ln_domains": [
+    "63",
+    "43",
+    "60",
+    "10"
+   ]
+  },
+  {
+   "id": "s172",
+   "scene": "A wine jar in the cellar is found empty and no one admits to it.",
+   "ln_domains": [
+    "89",
+    "6",
+    "27",
+    "24"
+   ]
+  },
+  {
+   "id": "s173",
+   "scene": "A household celebrates a daughter's recovery from a long illness.",
+   "ln_domains": [
+    "23",
+    "25",
+    "51",
+    "10"
+   ]
+  },
+  {
+   "id": "s174",
+   "scene": "A man bursts in with news that the river is flooding the lower fields.",
+   "ln_domains": [
+    "33",
+    "2",
+    "43",
+    "15"
+   ]
+  },
+  {
+   "id": "s175",
+   "scene": "A trader loses his purse and retraces his steps through the market.",
+   "ln_domains": [
+    "57",
+    "27",
+    "15",
+    "6"
+   ]
+  },
+  {
+   "id": "s176",
+   "scene": "A stonecutter splits a block and it cracks the wrong way.",
+   "ln_domains": [
+    "19",
+    "2",
+    "45"
+   ]
+  },
+  {
+   "id": "s177",
+   "scene": "A merchant's conscience troubles him after he cheats a child in the market.",
+   "ln_domains": [
+    "26",
+    "88",
+    "57"
+   ]
+  },
+  {
+   "id": "s178",
+   "scene": "A young woman's heart is torn between two suitors.",
+   "ln_domains": [
+    "26",
+    "34",
+    "30",
+    "25"
+   ]
+  },
+  {
+   "id": "s179",
+   "scene": "Two travellers argue over which road it would be wiser to take.",
+   "ln_domains": [
+    "32",
+    "1",
+    "30"
+   ]
+  },
+  {
+   "id": "s180",
+   "scene": "An old woman's shrewd advice saves a family's harvest.",
+   "ln_domains": [
+    "32",
+    "43",
+    "33"
+   ]
+  },
+  {
+   "id": "s181",
+   "scene": "A buyer refuses to believe the seller's word about a horse's age.",
+   "ln_domains": [
+    "31",
+    "4",
+    "57",
+    "33"
+   ]
+  },
+  {
+   "id": "s182",
+   "scene": "A boy shows his mother a hidden path he found through the reeds.",
+   "ln_domains": [
+    "28",
+    "1",
+    "3",
+    "10"
+   ]
+  },
+  {
+   "id": "s183",
+   "scene": "A merchant reveals his price only after the buyer has seen the goods.",
+   "ln_domains": [
+    "28",
+    "57",
+    "33"
+   ]
+  },
+  {
+   "id": "s184",
+   "scene": "A new apprentice follows the master builder everywhere and copies him.",
+   "ln_domains": [
+    "36",
+    "45",
+    "27"
+   ]
+  },
+  {
+   "id": "s185",
+   "scene": "Two rival fishing crews fight over the best stretch of shore.",
+   "ln_domains": [
+    "39",
+    "44",
+    "1",
+    "4"
+   ]
+  },
+  {
+   "id": "s186",
+   "scene": "A young man mends his ways after his father is shamed in the market.",
+   "ln_domains": [
+    "41",
+    "87",
+    "10"
+   ]
+  },
+  {
+   "id": "s187",
+   "scene": "Villagers keep an old custom of leaving bread at the crossroads.",
+   "ln_domains": [
+    "41",
+    "5",
+    "1"
+   ]
+  },
+  {
+   "id": "s188",
+   "scene": "A goatherd milks his goats at dawn.",
+   "ln_domains": [
+    "44",
+    "4",
+    "5",
+    "67"
+   ]
+  },
+  {
+   "id": "s189",
+   "scene": "A housekeeper hands out the day's tasks to the household slaves.",
+   "ln_domains": [
+    "46",
+    "87",
+    "42"
+   ]
+  },
+  {
+   "id": "s190",
+   "scene": "A servant pours water over the guests' hands before the meal.",
+   "ln_domains": [
+    "47",
+    "2",
+    "35",
+    "5"
+   ]
+  },
+  {
+   "id": "s191",
+   "scene": "The last traveller to arrive finds no food left.",
+   "ln_domains": [
+    "61",
+    "15",
+    "5"
+   ]
+  },
+  {
+   "id": "s192",
+   "scene": "A father learns that the gold ring he bought is genuine after all.",
+   "ln_domains": [
+    "70",
+    "2",
+    "6"
+   ]
+  },
+  {
+   "id": "s193",
+   "scene": "A shipwright repairs a damaged hull until it is fit to sail again.",
+   "ln_domains": [
+    "75",
+    "54",
+    "6",
+    "45"
+   ]
+  },
+  {
+   "id": "s194",
+   "scene": "A master trains a clumsy apprentice until he is fit to work alone.",
+   "ln_domains": [
+    "75",
+    "27",
+    "42"
+   ]
+  },
+  {
+   "id": "s195",
+   "scene": "A cook fires the ovens before dawn for a large order of bread.",
+   "ln_domains": [
+    "77",
+    "5",
+    "67"
+   ]
+  },
+  {
+   "id": "s196",
+   "scene": "The storeroom door sticks and will not open.",
+   "ln_domains": [
+    "79",
+    "7",
+    "74"
+   ]
+  },
+  {
+   "id": "s197",
+   "scene": "The spring grass withers in a hot wind.",
+   "ln_domains": [
+    "79",
+    "3",
+    "14"
+   ]
+  },
+  {
+   "id": "s198",
+   "scene": "A farmer ploughs the east field first because the sun dries it sooner.",
+   "ln_domains": [
+    "82",
+    "43",
+    "14"
+   ]
+  },
+  {
+   "id": "s199",
+   "scene": "A small boat is stuck in the middle of the river.",
+   "ln_domains": [
+    "83",
+    "6",
+    "2",
+    "54"
+   ]
+  },
+  {
+   "id": "s200",
+   "scene": "A mother calls her children in from the street for supper.",
+   "ln_domains": [
+    "84",
+    "15",
+    "10",
+    "5"
+   ]
+  },
+  {
+   "id": "s201",
+   "scene": "A foreman calls the workers to gather at the gate.",
+   "ln_domains": [
+    "84",
+    "42",
+    "7"
+   ]
+  },
+  {
+   "id": "s202",
+   "scene": "A workman's excuse for his absence proves to be empty.",
+   "ln_domains": [
+    "89",
+    "72",
+    "42"
+   ]
+  },
+  {
+   "id": "s203",
+   "scene": "A boy tastes the stew before the guests arrive.",
+   "ln_domains": [
+    "90",
+    "5"
+   ]
+  },
+  {
+   "id": "s204",
+   "scene": "A merchant obtains a permit to trade in the city.",
+   "ln_domains": [
+    "90",
+    "37",
+    "57"
+   ]
+  },
+  {
+   "id": "s205",
+   "scene": "A girl's handwriting looks just like her mother's.",
+   "ln_domains": [
+    "64",
+    "33",
+    "10"
+   ]
+  },
+  {
+   "id": "s206",
+   "scene": "A village grows into a town once the new road is built.",
+   "ln_domains": [
+    "13",
+    "1",
+    "45"
+   ]
+  },
+  {
+   "id": "s207",
+   "scene": "A well the village was promised for years is finally dug.",
+   "ln_domains": [
+    "13",
+    "2",
+    "42"
+   ]
+  },
+  {
+   "id": "s208",
+   "scene": "An earth tremor shakes the pots from the shelves.",
+   "ln_domains": [
+    "16",
+    "14",
+    "6"
+   ]
+  },
+  {
+   "id": "s209",
+   "scene": "A rower stretches out his hand to pull a swimmer aboard.",
+   "ln_domains": [
+    "16",
+    "54",
+    "21",
+    "8"
+   ]
+  },
+  {
+   "id": "s210",
+   "scene": "A kite snatches a fish from the drying racks.",
+   "ln_domains": [
+    "18",
+    "4"
+   ]
+  },
+  {
+   "id": "s211",
+   "scene": "A dockhand casts off the mooring ropes too early.",
+   "ln_domains": [
+    "18",
+    "54",
+    "6"
+   ]
+  },
+  {
+   "id": "s212",
+   "scene": "A family replaces their old cart with a new one.",
+   "ln_domains": [
+    "58",
+    "6",
+    "57"
+   ]
+  },
+  {
+   "id": "s213",
+   "scene": "Two potters' workshops turn out very different jars.",
+   "ln_domains": [
+    "58",
+    "6",
+    "42"
+   ]
+  },
+  {
+   "id": "s214",
+   "scene": "A fisherman's catch is so small he gives it away.",
+   "ln_domains": [
+    "59",
+    "4",
+    "57",
+    "78"
+   ]
+  }
+ ]
+}

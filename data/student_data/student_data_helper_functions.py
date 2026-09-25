@@ -12,6 +12,7 @@ def load_grammar_scaffolding():
     return normalize_keys(data)
 
 
+@cache
 def load_vocabulary_scaffolding():
     """Returns the vocabulary scaffolding: part-of-speech structure plus the flat word items"""
     with open('data/curriculum_data/vocabulary_scaffolding.json', 'r') as file:

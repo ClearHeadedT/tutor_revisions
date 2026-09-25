@@ -9,9 +9,9 @@ set of near-identical items.
 # three persons -- the widest spread the 38 available slots permit.
 GRAMMAR_ITEMS = [
     "article::ὁ::nominative.masculine.singular",
-    "article::ὁ::genitive.feminine.singular",
-    "article::ὁ::dative.neuter.plural",
-    "article::ὁ::accusative.feminine.plural",
+    "article::ἡ::genitive.feminine.singular",
+    "article::τό::dative.neuter.plural",
+    "article::ἡ::accusative.feminine.plural",
     "decl2::λόγος::nominative.singular",
     "decl2::λόγος::dative.singular",
     "decl2::λόγος::accusative.plural",

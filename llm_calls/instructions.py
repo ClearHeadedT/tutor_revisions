@@ -1,4 +1,4 @@
-
+from tasks.card_randomization.grammatical_instructions import WORD_ORDER_INSTRUCTIONS
 
 
 GENERAL_CARD_INSTRUCTIONS = """ You are an expert Koine Greek linguist and a specialized language-learning content developer. You build single spaced-repetition cards for a student working through a structured Koine Greek curriculum. You are building ONE card. You are not teaching, not explaining at length, and not producing an exercise set. Everything you write will be seen by a student in a few seconds of review.
@@ -6,9 +6,9 @@ GENERAL_CARD_INSTRUCTIONS = """ You are an expert Koine Greek linguist and a spe
   HARD CONSTRAINTS (apply to every card; per-type rules add to these, never override them):
   1. TOTAL KOINE FIDELITY — every Greek word, form, and construction must be correct for the Koine/Biblical period; no Classical/Attic or Modern Greek mixing; preserve all diacritics and inflections precisely; accent and breathing are part of the answer.
   2. ATOMIC SCOPE — exactly one retrieval demand per card; keep surrounding vocabulary/syntax intuitive so cognitive load stays primarily on the target item; one concept per card.
-  3. VOCABULARY WITHIN REASONABLE STUDENT SCOPE — every non-target word must be vocabulary the student has likely already learned. You maybe be given a list of student vocabulary, or you may not. You will, however, be given a student's general level and must utilize your knowledge of NT vocabulary frequency to guage if your sentence is likely known based on student level. Your sentence is checked against it after you write it, and one that reaches for an unknown word is thrown out and regenerated. Within that bound, use the full range available to you. As the student's vocabulary grows the sentences should grow with it — do not default to the plainest possible words at higher levels. A card built from bare elementary vocabulary is a boring card and teaches less than it could, so be reasonable but do not play too safe.
+  3. VOCABULARY WITHIN REASONABLE STUDENT SCOPE — every non-target word must be vocabulary the student has likely already learned. You maybe be given a list of student vocabulary, or you may not. You will, however, be given a student's general level and must utilize your knowledge of NT vocabulary frequency to guage if your sentence is likely known based on student level. Your sentence is checked against the list after you write it: one or two words outside it are allowed and are glossed for the student on the card, but a sentence that needs more than that is thrown out and regenerated. Within that bound, use the full range available to you. As the student's vocabulary grows the sentences should grow with it — do not default to the plainest possible words at higher levels. A card built from bare elementary vocabulary is a boring card and teaches less than it could, so be reasonable but do not play too safe.
   4. RESPECT THE CURRICULUM BOUNDARY — you are given both the morphological category rules the student HAS covered and those they have NOT. Use only what has been covered, even if an uncovered form would improve the sentence. The uncovered list is there so you know what to avoid, not as a menu.
-  5. NATURAL CONTEXT — the sentence must be semantically coherent, idiomatic Koine, and illustrate the target's meaning naturally. This will be unpacked further later.
+  5. NATURAL CONTEXT — the sentence must be semantically coherent, idiomatic Koine, and illustrate the target's meaning naturally. Idiom includes word order: build the unmarked order set out under WORD ORDER below, and depart from it only for an emphasis you intend.
   6. VARIABILITY, SUBORDINATED — vary lexical choice, sentence shape, and grammatical texture across cards, but always secondary to fidelity and atomic scope.
   7. DIFFICULTY MATCHES LEVEL — you are supplied with the current level of the student - beginner: predictable, simple sentence form, first-semester vocabulary; beyond_beginner: vary cases, tenses, moods, participles, prepositional phrases, relative clauses, conjunctions, word order — only within what constraint 4 permits; advanced: You have free reign of creative formulation under the restrictions of the restraints.
   8. RECORD THE DECISIONS — work through the REFLECTION below before composing, then set out the choices behind the finished card in "reasoning": 1-4 short sentences of compressed analysis ending in a decision. This is an editorial note about the card, of the kind a writer leaves for the editor who will check it — what the item's sense rests on, which competing reading the clause shuts out, and why this scene and not another. It is read by the auditor, never shown to the student, and never skipped.
@@ -20,15 +20,16 @@ GENERAL_CARD_INSTRUCTIONS = """ You are an expert Koine Greek linguist and a spe
 
   ECHO CRITERIA — constraint 13 is checked by a separate auditor after you write. Read what is actually being tested before the four axes, because the usual mistake is to check the wrong thing.
 
-  WHAT IS TESTED IS THE WORDING, NOT THE SUBJECT MATTER. The world of the New Testament is the world these cards live in. Its people, places, objects, practices, events and themes are all yours, and you should reach for them whenever the item calls for it. A card for βαπτίζω should show a baptism; a river, a crowd, and John himself are all fair. A card for ποιμήν should show a shepherd and his sheep. Themes recur in this literature because it is one literature — light and darkness, word and flesh, bread and heaven are subjects, not trespasses. Refusing them would make the card false to the word it teaches, and a sentence contorted to avoid an obvious setting is a worse card than a plain one that uses it.
-  What is forbidden is saying it in the corpus's own words. Write fresh Koine about that world: your clauses, your arrangement, your choice of what stands beside what. A short run held in common with a verse is unavoidable and fine — one such piece at most. What fails is a sentence assembled out of a particular passage's actual wording, however the scene around it has been redressed. The question is never "is this biblical" but always "are these its words".
+  THE SETTING IS GIVEN; THE WORDING IS YOURS. The world these cards live in is the world the New Testament was written in — its trades, households, roads, markets, festivals and law — and you are handed two everyday situations from it in "sentence_plan". Build the scene inside one of them. They are chosen for you because a word's first pull is toward the passage it is famous for — βαπτίζω toward the Jordan, κράζω toward the blind man by the road — and once the scene is that passage, its wording follows. So do not steer a setting back toward a known episode or parable, and use no New Testament figure by name. The item must still be at home in the scene you write: a card for βαπτίζω needs an immersion, a card for ποιμήν a flock. Put the word to its ordinary work inside the setting you chose.
+  Within that, write fresh Koine: your clauses, your arrangement, your choice of what stands beside what. A short run held in common with a verse is unavoidable and fine — one such piece at most. What fails is a sentence assembled out of a particular passage's actual wording, however the scene around it has been redressed. The question is never "is this biblical" but always "are these its words".
   1. WORDING — does any run of words, any clause, any phrase reproduce a passage verbatim or nearly so? Changing a preposition, a case, or the word order does not make a borrowed line your own. This is the criterion. The three below exist only because wording can be lifted in ways a plain string comparison misses.
   2. STRUCTURE — have you rebuilt one verse's clause architecture and swapped its vocabulary out, so the sentence is that verse in other clothes? Writing about something the corpus also describes is fine; reproducing the sequence of constructions a specific passage used is not.
-  3. SCENE — depicting an episode the corpus depicts is permitted and is often exactly what the item needs. What fails is retelling one passage beat by beat, your clauses tracking its clauses in order, adding nothing of your own. Write your own moment inside that world: another participant, a different point in the action, a detail the passage never gives.
+  3. SCENE — has the setting you were given drifted into an episode the corpus depicts, your clauses tracking its beats? The setting exists to keep the card out of that. Stay in it, and write a moment that belongs to it: its own participants, its own point in the action, details no passage gives.
   4. REGISTER — have you reached for a formula that is itself a piece of the text? ἀμὴν λέγω ὑμῖν, ἐγένετο δὲ ἐν τῷ, μακάριοι οἱ, οὐαὶ ὑμῖν, χάρις ὑμῖν καὶ εἰρήνη. Those are quotations wherever they appear, and they are the first frames to hand, which is exactly why they are the wrong ones.
 
   THEOLOGICAL RENDERING — separate from the four above and judged on its own. Where the item requires a theological term, use it and render it in a way that is contextually appropriate and doctrinally uncontentious. The vocabulary is never the problem. What is checked is the claim built out of it: an ordinary, unremarkable use is what you want; a novel, disputable or misleading one fails however good the Greek. This is constraint 10 applied to the lexicon.
 
+""" + WORD_ORDER_INSTRUCTIONS + """
   REFLECTION — work through this before composing. It is where a card stops being merely correct and starts being worth studying.
 
   First, is the card sound?
@@ -57,13 +58,15 @@ GENERAL_CARD_INSTRUCTIONS = """ You are an expert Koine Greek linguist and a spe
   { ... }
   ```
 
-  Every card includes these four keys:
+  Every card includes these six keys:
     "reasoning"    — the editorial note on this card per constraint 8; audit only, never shown to the student
     "sentence"     — the Koine Greek sentence
     "translation"  — English translation of the full sentence
     "target_form"  — the exact inflected form of the target as it appears in "sentence", copied verbatim
+    "lemmas"       — every word of "sentence" in its lexical form, the target included, each once; this is what constraint 3 and the echo check are run against, so leave none out
+    "setting"      — the id of the setting you built the scene in, from "setting_options", or "adapted:<id>" if you had to adapt it
 
-  The per-card instructions below may name further keys or have further clarifications and instructions. Those go in the SAME JSON object, alongside the four above — not nested, not in a second object. Include every key named for that card type and no others.
+  The per-card instructions below may name further keys or have further clarifications and instructions. Those go in the SAME JSON object, alongside the six above — not nested, not in a second object. Include every key named for that card type and no others. The examples in the card instructions show only the first four keys; include "lemmas" and "setting" all the same.
 
   As for specific card generation instructions, here are the parameters to follow:
 """
@@ -92,13 +95,22 @@ GENERAL_CARD_INSTRUCTIONS = """ You are an expert Koine Greek linguist and a spe
 
 
 
+instructions_sentence_plan = """SENTENCE PLAN — "sentence_plan" was drawn before you were called, from what this student has learned. Follow it. Where it and the level guidance above differ, the plan wins.
+  "sentence_shape"  — the structure of the sentence: a single main clause, a main clause with the dependent or relative clause it names, or two coordinated clauses. "formation" and "function" say how the construction is built and what it does, "syntactic_category" names the usage and gives the grammars' syntactic explanation of it, and "position" says where it normally stands. Where a "paradigm" is given, form the construction from that chart: it holds the forms this student has learned, on the paradigm verb and on the contract, liquid and athematic verbs the grammars print beside it, and constraint 12 makes it authoritative. The shape carries the sentence; the target sits in whichever clause suits it and stays the one thing the card asks about.
+  "also_include"    — further syntactic usages this student has learned, each named with its place in the grammars' taxonomy and its syntactic explanation. Work each in once and naturally. They are texture, never a second retrieval demand: the card does not ask about them, and none may compete with the target for the student's attention.
+  "setting_options" — two everyday situations. Choose the one the item lives in most naturally and write the scene inside it. If neither can hold the item without strain, adapt the closer one: keep its kind of people and place, change what happens. Report which in "setting".
+Everything the plan leaves open is yours: the verb, its subject and object, every other word. Choose them because they belong together in the setting and the student can read them — not because a verse puts them together.
+"""
+
+
 instructions_cap = """The following single item up for review from the previous card instructions is in an JSON object carrying:
   "item"                — the item under review and everything known about it, including its hand-vetted reference card. Extra information included is to benefit to creation of the individual task item, not for creating cards for every piece fed in.
   "recent_generations"  — cards already produced for this item; constraint 11 forbids repeating or paraphrasing them (in the case there is no history of review this will be empty)
   "student"             — where this student currently stands:
       "level"              — "beginner", "beyond_beginner", or "advanced"; this is the level constraint 7 refers to
-      "concepts_learned"   — the grammatical and syntactic categories already covered; constraint 4 binds you to these and to nothing outside them
+      "concepts_learned"   — what has been covered: "grammar" names the morphology the student can form, by paradigm (e.g. "First Aorist Passive Indicative", "Relative Pronoun"), and "syntax" the syntactic categories met; constraint 4 binds you to these and to nothing outside them
       "vocabulary_learned" — the words available to you, or "Not Applicable"
+  "sentence_plan"       — the shape the sentence takes, what else it carries, and where it takes place; see SENTENCE PLAN below
 
 BEGINNER — one short main clause. For reference, not as a hard constraint, it could utilize present or imperfect indicative, explicit subject where it helps, no participles, no subordination. Nothing in the clause should need decoding except the target.
 BEYOND_BEGINNER — the full range permitted by "concepts_learned": vary case, tense, mood and word order, and use prepositional phrases and subordinate clauses. Reach for this range rather than staying safe; a card built from bare elementary vocabulary at this level teaches less than it could.
@@ -108,6 +120,7 @@ Whatever the level, the target itself stays unambiguous. Raising the level raise
 
 When "vocabulary_learned" is "Not Applicable" no explicit word list is available. Judge what the student can read from "level" and "concepts_learned", and stay well inside it rather than at its edge.
 
+""" + instructions_sentence_plan + """
 Here is the relevant item to form the card for:"""
 
 
@@ -332,3 +345,8 @@ Return ONLY a JSON object wrapped in triple backticks:
 }
 ```
 """
+
+
+card_rejection = """That card was checked against the Greek New Testament and the student's vocabulary, and sent back:
+{findings}
+Write a new card for the same item, to the same sentence plan. Where the finding is an echo, change the scene within your setting, not only its words. Return it in the same format."""

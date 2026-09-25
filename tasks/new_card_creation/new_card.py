@@ -1,12 +1,37 @@
 from llm_calls.main import llm_call_card_formation
 from greek_text import normalize_greek
 from data.student_data.student_data_helper_functions import load_vocabulary_senses
+from tasks.card_randomization.card_randomize_utils import build_sentence_plan
 from tasks.new_card_creation.utils import(
     card_instructions_loader,
     parse_card_reply,
     enrich_vocabulary_senses,
     unpack_grammatical_item
 )
+from tasks.new_card_creation.verify import check_card
+
+# How many times a card that fails its checks is sent back before it is kept as it stands.
+CHECK_RETRIES = 2
+
+
+def form_checked_card(instructions, card_content, student, target=None):
+    """One card from the model, run through the deterministic checks in verify.py and sent back
+    with their findings up to CHECK_RETRIES times.
+
+    A card that still fails is kept, with its findings recorded under "check", rather than
+    dropped: a card silently lost is harder to learn from than one marked for a look. "helps"
+    carries the glosses for the one or two unknown words a passing card is allowed."""
+    rejected = []
+    while True:
+        reply = llm_call_card_formation(instructions, card_content, rejected)
+        card = parse_card_reply(reply)
+        check = check_card(card, student, target)
+        if not check["findings"] or len(rejected) == CHECK_RETRIES:
+            break
+        rejected.append((reply, check["findings"]))
+    return {**card, "helps": check["helps"],
+            "check": {"findings": check["findings"], "overlap": check["overlap"],
+                      "attempts": len(rejected) + 1}}
 
 
 
@@ -37,12 +62,10 @@ class NewVocabularyCard:
             "item": self.vocabulary_entry(),
             "recent_generations": self.student.recent_generations(self.lemma),
             "student": self.student.student_overview(),
+            "sentence_plan": build_sentence_plan(self.student, desired_card_type, "vocabulary", self.lemma),
         }
-        llm_call = llm_call_card_formation(
-            llm_instructions=instructions,
-            card_content=card_content,
-        )
-        return {"card_type": desired_card_type, **parse_card_reply(llm_call)}
+        card = form_checked_card(instructions, card_content, self.student, target=self.lemma)
+        return {"card_type": desired_card_type, **card}
 
     def vocabulary_entry(self):
         return {
@@ -81,12 +104,10 @@ class NewGrammarCard:
             "item": self.grammar_entry(),
             "recent_generations": self.student.recent_generations(self.key),
             "student": self.student.student_overview(),
+            "sentence_plan": build_sentence_plan(self.student, desired_card_type, "grammar", self.key),
         }
-        llm_call = llm_call_card_formation(
-            llm_instructions=instructions,
-            card_content=card_content,
-        )
-        return {"card_type": desired_card_type, **parse_card_reply(llm_call)}
+        card = form_checked_card(instructions, card_content, self.student)
+        return {"card_type": desired_card_type, **card}
 
 
     def grammar_entry(self):

@@ -1,8 +1,11 @@
 """Where the pieces of a Greek sentence go.
 
 `WORD_ORDER_INSTRUCTIONS` is the operational version - what gets handed to an LLM building a
-sentence. `PORTER_SOURCE` below it is the verbatim material it was condensed from, kept because
-it is the citable source.
+sentence, as part of GENERAL_CARD_INSTRUCTIONS. `PORTER_SOURCE` below it is the verbatim material
+it was condensed from, kept because it is the citable source. The operational version's examples
+are fresh phrases rather than verses, since the card model is told not to reproduce the New
+Testament and a verse in its own instructions would pull the other way; every form in them is
+attested in N1904.
 
 Two decisions are baked into the condensed version and should be known before editing it:
 
@@ -36,14 +39,14 @@ unmarked pattern unless you intend the emphasis - and if you do, know which emph
 
 1. HARD CONSTRAINTS - never a choice. Violating these produces non-Greek.
 
-- The article immediately precedes its substantive: ὁ θεός, never θεὸς ὁ.
+- The article immediately precedes its substantive: ὁ δοῦλος, never δοῦλος ὁ.
 - A preposition precedes its object (χάριν, χωρίς, ἕνεκα are the rare exceptions).
 - Relative and interrogative words open their clause, whatever their grammatical function
   inside it - subject, object and indirect object alike.
 - Postpositive words never open a clause: ἄν, γάρ, δέ, γέ, μέν, οὖν, the enclitics ποτέ, πώς,
   τέ, and the pronouns με, μου, μοι. Put them second - but "second" is a range, not a point:
-  anywhere from directly after the first word (κατὰ δὲ ἑορτήν) to just past the first complete
-  phrase (ὁ λόγος γὰρ ὁ τοῦ σταυροῦ).
+  anywhere from directly after the first word (ἐν δὲ τῷ ἀγρῷ) to just past the first complete
+  phrase (ὁ ἀγρὸς γὰρ ὁ τοῦ πατρός).
 - These never close a clause: ἀλλά, ἤ, καί, οὐδέ/μηδέ, οὔτε/μήτε, εἴτε, μή ("lest"), relative
   pronouns, εἰ, ἐπεί, ἵνα, ὁ, and most prepositions.
 - These tend to sit near the front: interrogatives, clause negatives, words of succession
@@ -72,6 +75,8 @@ One documented exception: in clauses with an imperative, the predicate is fronte
 A dependent clause goes before or after the main clause; it rarely interrupts it. Which side is
 fixed by the clause's MEANING, not by how it is built - a conditional participle precedes and a
 result participle follows, exactly as the matching conjunction would.
+The one exception is the causal participle, which usually precedes its verb; causal clauses with
+a conjunction still follow.
 
 BEFORE the main clause:
     conditional          εἰ, ἐάν
@@ -88,8 +93,8 @@ AFTER the main clause:
     concessive           εἰ καί, καίπερ
     relative             follows its referent (93% in Paul, 96% in Luke)
 
-Moving a clause to the opposite side is the marking device: it signals prominence. Paul does
-this in Rom 7:15-16 and 19-20, placing relative clauses that serve as objects before their verbs.
+Moving a clause to the opposite side is the marking device: it signals prominence. A relative
+clause serving as an object, for instance, can be placed before its verb for that reason.
 
 A subject or object that is itself a clause moves to the rear of the main clause, behind the
 single words and phrases. That is normal and carries no emphasis.
@@ -117,11 +122,14 @@ Negative placement changes meaning: a negative immediately before the verb negat
 clause, while a negative before some other element negates only that element and pulls it
 forward.
 
-Orders that are possibly emphatic once produced: direct object before verb (αὐτὸν ἐσταύρωσαν);
-subject before verb (θεὸν οὐδεὶς ἑώρακεν); predicate nominative before subject or verb (ὁ θεὸς
-φῶς ἐστιν); genitive modifier before its noun (θεοῦ δύναμιν); subject or object before an
-imperative (τὸν ἄρτον ἡμῶν τὸν ἐπιούσιον δὸς ἡμῖν σήμερον); prepositional phrase before verb
-(ἐπὶ ταύτῃ τῇ πέτρᾳ οἰκοδομήσω); indirect object before verb (κἀγὼ ὑμῖν παραδώσω αὐτόν).
+Orders that are possibly emphatic once produced:
+    direct object before verb                   τὸν ἀγρὸν ἐπώλησεν
+    subject before verb                         ὁ γεωργὸς ἐπώλησεν τὸν ἀγρόν
+    predicate nominative before subject or verb τέκτων ἦν ὁ ἀνήρ
+    genitive modifier before its noun           τοῦ πατρὸς τὸν ἀγρὸν ἠγόρασεν
+    subject or object before an imperative      τὸ ἱμάτιον δὸς τῷ δούλῳ
+    prepositional phrase before verb            ἐν τῇ ἀγορᾷ ἠγόρασεν ἰχθύας
+    indirect object before verb                 τῷ δούλῳ ἔδωκεν τὸ ἱμάτιον
 
 
 5. ORDER INSIDE A PHRASE - tendencies, and author-dependent
@@ -129,10 +137,10 @@ imperative (τὸν ἄρτον ἡμῶν τὸν ἐπιούσιον δὸς �
 Do not treat these as rules. The adjective in particular splits by author, in opposite
 directions:
 
-    genitive modifier    follows its noun     96% Paul, 99% Luke    ἡ ἀγάπη τοῦ θεοῦ
-    demonstrative        follows its noun     85% Paul, 78% Luke    ἐν ταῖς ἡμέραις ἐκείναις
-    adjective            FOLLOWS its noun     ~75% Luke and Mark    φόβον μέγαν
-                         PRECEDES its noun    ~65% Paul             ἐν τοῖς λοιποῖς ἔθνεσιν
+    genitive modifier    follows its noun     96% Paul, 99% Luke    ὁ ἀγρὸς τοῦ πατρός
+    demonstrative        follows its noun     85% Paul, 78% Luke    τὸ πλοῖον ἐκεῖνο
+    adjective            FOLLOWS its noun     ~75% Luke and Mark    οἰκίαν μεγάλην
+                         PRECEDES its noun    ~65% Paul             τοῖς πιστοῖς δούλοις
 
 Where several modifiers stack, the sequence runs:
     head noun - demonstrative - indefinite - numeral - descriptive - participle

@@ -169,8 +169,8 @@ formation_instructions = {
         "function": "Fixes when the main clause's action took place.",
         "example_ref": "Matt 19:1",
         "note": "This is the 'when' branch, which sits ahead of the main clause. Clauses headed "
-                "by ἕως or ἄχρι ('until') do the opposite and follow it - see the `time` split "
-                "flagged in JSON_skeleton.",
+                "by ἕως or ἄχρι ('until') do the opposite and follow it - see DEPENDENT CLAUSE "
+                "POSITION under WORD ORDER.",
     },
     "sentence_construction_possibilitites.main_and_dependent_sentence.adverbial.time.relative_pn": {
         "formation": "A relative pronoun clause, usually with a preposition attached - ἀφʼ ἧς, "
@@ -270,7 +270,7 @@ formation_instructions = {
                     "logical relation between them. Both clauses stay independent.",
         "example_ref": None,
         "note": "γάρ, δέ, οὖν and μέν are postpositive and cannot stand first in their clause. "
-                "See word_order.hard_constraints in JSON_skeleton.",
+                "See the hard constraints under WORD ORDER.",
     },
 
     "sentence_construction_possibilitites.simple_beginner_sentence": {

@@ -1,17 +1,27 @@
 from llm_calls.client import make_client
+from llm_calls.instructions import card_rejection
 from llm_calls.llm_constants import CARD_MODEL, MAX_TOKENS
 import json
 
 
-def llm_call_card_formation(llm_instructions, card_content):
+def llm_call_card_formation(llm_instructions, card_content, rejected=()):
     """card_content is the dict instructions_cap describes to the model: "item",
-    "recent_generations", and "student". It is serialized here rather than retyped
-    into a sentence, and ensure_ascii keeps the Greek readable in the prompt."""
+    "recent_generations", "student" and "sentence_plan". It is serialized here rather than
+    retyped into a sentence, and ensure_ascii keeps the Greek readable in the prompt.
+
+    rejected holds earlier attempts at this same card as (reply, findings) pairs. They are
+    replayed as the conversation so far, so the model sees what it wrote and why it was sent
+    back, rather than starting cold and making the same card again."""
     client = make_client()
+    messages = [{"role": "user", "content": json.dumps(card_content, indent=2, ensure_ascii=False)}]
+    for reply, findings in rejected:
+        messages.append({"role": "assistant", "content": reply})
+        messages.append({"role": "user", "content": card_rejection.format(
+            findings="\n".join(f"- {finding}" for finding in findings))})
     response = client.messages.create(
         model=CARD_MODEL,
         max_tokens=MAX_TOKENS,
         system=llm_instructions,
-        messages=[{"role": "user", "content": json.dumps(card_content, indent=2, ensure_ascii=False)}],
+        messages=messages,
     )
     return next(block.text for block in response.content if block.type == "text")

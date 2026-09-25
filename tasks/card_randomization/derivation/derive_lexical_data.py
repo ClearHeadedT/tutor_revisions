@@ -1,10 +1,12 @@
-"""Builds the two lexical JSONs from Text-Fabric.
+"""Builds vocabulary_scaffolding.json from Text-Fabric: every GNT lemma at MIN_VOCAB occurrences
+or more.
 
-    vocabulary_scaffolding.json   every GNT lemma at MIN_VOCAB occurrences or more
-    card_randomizer_elements.json the verb and substantive pools the randomizer draws from
+One corpus pass, which is the expensive part - loading N1904 costs about nine seconds, so
+everything that needs the corpus happens inside `build()`.
 
-Both come from one corpus pass, which is the expensive part - loading N1904 costs about nine
-seconds, so everything that needs the corpus happens inside `build()`.
+This used to build card_randomizer_elements.json as well, pools of verbs and the subjects and
+objects drawn against them. Those are gone: the pairs came out 2-10% attested with their verb, and
+the sentence plan now leaves the choice of words to the model (see card_randomize_utils).
 
 Two things worth knowing before editing:
 
@@ -30,13 +32,9 @@ from text_fabric.fabric_utils import load_n1904
 
 DATA = Path("data/curriculum_data")
 VOCABULARY_PATH = DATA / "vocabulary_scaffolding.json"
-ELEMENTS_PATH = DATA / "card_randomizer_elements.json"
 
-# Occurrence floors. The verb pool is tighter because a verb anchors a whole sentence and needs
-# enough attested forms to be usable in several constructions; a substantive only has to fill
-# one slot.
+# Occurrence floor for the vocabulary.
 MIN_VOCAB = 10
-MIN_VERB = 20
 
 # TF's part-of-speech tags, mapped onto the names the curriculum already uses.
 POS_NAMES = {
@@ -46,8 +44,6 @@ POS_NAMES = {
 }
 # How many (role, case) pairs to keep as a lemma's natural frame.
 FRAME_DEPTH = 3
-# A verb's object case is called settled when this much of its attested objects agree.
-GOVERNMENT_CONFIDENT = 0.7
 
 
 def _domain(api, node):
@@ -93,62 +89,9 @@ def _index_corpus(api):
     return index
 
 
-def _arguments_by_verb(api):
-    """Which lemmas and which domains each verb actually takes as subject and object.
-
-    Only clauses holding exactly one verb are counted. A clause with two verbs cannot say which
-    of them an object belongs to without walking the dependency edges, and a wrong pairing is
-    worse here than a missing one."""
-    lemma_pairs = {"s": collections.defaultdict(collections.Counter),
-                   "o": collections.defaultdict(collections.Counter)}
-    domain_pairs = {"s": collections.defaultdict(collections.Counter),
-                    "o": collections.defaultdict(collections.Counter)}
-    object_cases = collections.defaultdict(collections.Counter)
-    prepositions = collections.defaultdict(collections.Counter)
-
-    for node in api.F.otype.s("word"):
-        clause = api.L.u(node, otype="clause")
-        if not clause:
-            continue
-        verbs = [w for w in api.L.d(clause[0], otype="word") if api.F.sp.v(w) == "verb"]
-        if len(verbs) != 1:
-            continue
-        verb = normalize_greek(api.F.lemma.v(verbs[0]) or "")
-
-        if api.F.sp.v(node) == "prep":
-            prepositions[verb][normalize_greek(api.F.lemma.v(node) or "")] += 1
-            continue
-
-        role = api.F.role.v(node)
-        if role in ("o", "o2") and api.F.case.v(node):
-            object_cases[verb][api.F.case.v(node)] += 1
-        if role not in ("s", "o") or api.F.sp.v(node) != "subs":
-            continue
-        lemma_pairs[role][verb][normalize_greek(api.F.lemma.v(node) or "")] += 1
-        verb_domain, argument_domain = _domain(api, verbs[0]), _domain(api, node)
-        if verb_domain and argument_domain:
-            domain_pairs[role][verb_domain][argument_domain] += 1
-
-    return lemma_pairs, domain_pairs, object_cases, prepositions
-
-
-def _government(cases):
-    """A verb's object case, with how strongly the corpus agrees.
-
-    akouo takes 63 accusatives and 45 genitives, which is not a rule but a real split the
-    grammars also report; calling it 'accusative' outright would be false. `confidence` is what
-    lets a caller prefer the verbs that behave consistently."""
-    if not cases:
-        return {"case": None, "confidence": 0.0, "attested": {}}
-    total = sum(cases.values())
-    case, count = cases.most_common(1)[0]
-    return {"case": case, "confidence": round(count / total, 2), "attested": dict(cases)}
-
-
 def build():
     api = load_n1904().api
     corpus = _index_corpus(api)
-    lemma_pairs, domain_pairs, object_cases, prepositions = _arguments_by_verb(api)
 
     part_of_speech, domains, glosses = {}, {}, {}
     for lemma, nodes in corpus.items():
@@ -177,60 +120,11 @@ def build():
             entry["proper"] = _majority(api.F.typems.v(n) for n in nodes) == "proper"
         vocabulary[lemma] = entry
 
-    nouns_by_domain = collections.defaultdict(list)
-    for lemma, entry in vocabulary.items():
-        if entry["part_of_speech"] == "noun" and entry["domain"]:
-            nouns_by_domain[entry["domain"]].append(lemma)
-
-    def candidates(verb, role):
-        """Attested partners first, then everything sharing a compatible domain.
-
-        Direct collocation is better evidence but thin - only 108 of 222 verbs have a
-        content-word object anywhere in the corpus - so domain compatibility carries the rest."""
-        attested = [w for w in lemma_pairs[role][verb] if w in vocabulary]
-        verb_domain = domains.get(verb)
-        compatible = []
-        if verb_domain:
-            for argument_domain in domain_pairs[role].get(verb_domain, ()):
-                compatible.extend(nouns_by_domain.get(argument_domain, ()))
-        ordered = attested + [w for w in compatible if w not in attested]
-        return ordered
-
-    verbs = {}
-    for lemma, nodes in corpus.items():
-        if part_of_speech[lemma] != "verb" or len(nodes) < MIN_VERB:
-            continue
-        voices = {api.F.voice.v(n) for n in nodes} - {None}
-        verbs[lemma] = {
-            "key": lemma,
-            "gloss": glosses[lemma],
-            "frequency": len(nodes),
-            "domain": domains[lemma],
-            "government": _government(object_cases[lemma]),
-            "moods": sorted({api.F.mood.v(n) for n in nodes} - {None}),
-            "tenses": sorted({api.F.tense.v(n) for n in nodes} - {None}),
-            "voices": sorted(voices),
-            "deponent": bool(voices) and "active" not in voices,
-            "prepositions": [p for p, _ in prepositions[lemma].most_common(6)],
-            "subject_lexemes": candidates(lemma, "s"),
-            "object_lexemes": candidates(lemma, "o"),
-        }
-
-    substantives = {lemma: {
-        "key": lemma,
-        "gloss": entry["gloss"],
-        "frequency": entry["frequency"],
-        "domain": entry["domain"],
-        "gender": entry.get("gender"),
-        "proper": entry.get("proper", False),
-        "natural_frame": entry.get("natural_frame", []),
-    } for lemma, entry in vocabulary.items() if entry["part_of_speech"] == "noun"}
-
-    return vocabulary, {"verbs": verbs, "substantives": substantives}
+    return vocabulary
 
 
 def write():
-    vocabulary, elements = build()
+    vocabulary = build()
 
     existing = json.loads(VOCABULARY_PATH.read_text(encoding="utf-8"))
     # Hand-written fields on the seed entries - reference_card and the like - are kept. The
@@ -254,9 +148,8 @@ def write():
         "items": vocabulary,
     }
     VOCABULARY_PATH.write_text(json.dumps(payload, ensure_ascii=False, indent=1), encoding="utf-8")
-    ELEMENTS_PATH.write_text(json.dumps(elements, ensure_ascii=False, indent=1), encoding="utf-8")
-    return len(vocabulary), len(elements["verbs"]), len(elements["substantives"])
+    return len(vocabulary)
 
 
 if __name__ == "__main__":
-    print("vocabulary %d | verbs %d | substantives %d" % write())
+    print("vocabulary %d" % write())
