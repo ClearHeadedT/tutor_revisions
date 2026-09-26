@@ -1,4 +1,5 @@
 import json
+import re
 
 from greek_text import normalize_greek
 from data.student_data.student_data_helper_functions import (
@@ -69,7 +70,12 @@ def unpack_grammatical_item(grammar_item_key):
     grammar_scaffolding = load_grammar_scaffolding()
     item = grammar_scaffolding["items"][grammar_item_key]
     rule = grammar_scaffolding["structure"][item["rule"]]
-    return {"item": item, "rule": rule, "paradigm": rule["paradigms"][item["parent"]]}
+    return {"item": item, "rule": without_patterns(rule), "pattern": rule["patterns"][item["parent"]]}
+
+
+def without_patterns(rule):
+    """A rule's own fields. Its patterns list every item under it, most of which the card is not about."""
+    return {field: value for field, value in rule.items() if field != "patterns"}
 
 
 
@@ -90,8 +96,8 @@ def unpack_syntactic_item(syntax_item_key):
     siblings = chain[-2].get("children", {}) if len(chain) > 1 else structure
     return {
         "item": {"key": syntax_item_key, **without_children(chain[-1])},
-        "ancestors": [without_children(node) for node in chain[:-1]],
-        "sibling_usages": {key: without_children(node) for key, node in siblings.items()
+        "ancestors": [without_pairings(node) for node in chain[:-1]],
+        "sibling_usages": {key: without_pairings(node) for key, node in siblings.items()
                            if key != syntax_item_key},
     }
 
@@ -102,9 +108,20 @@ def without_children(node):
     return {field: value for field, value in node.items() if field != "children"}
 
 
-def parse_card_reply(llm_reply):
-    """OUTPUT FORMAT tells the model to wrap its JSON object in a ```json fence,
-    so the fence comes off before the card can be stored as an object."""
-    fenced = llm_reply.strip().removeprefix("```json").removeprefix("```").removesuffix("```")
-    return json.loads(fenced)
+def without_pairings(node):
+    """A usage the card is not about. Its GNT pairings are for its own cards; this card is
+    held to the item's."""
+    return {field: value for field, value in node.items() if field not in ("children", "gnt_lexemes")}
 
+
+def parse_card_reply(llm_reply):
+    """OUTPUT FORMAT tells the model to wrap its JSON object in a ```json fence. The object is taken
+    from inside the fence, or failing that from the first brace to the last, so a reply that wraps
+    the fence in a sentence of prose is still read."""
+    fenced = re.search(r"```(?:json)?\s*(\{.*\})\s*```", llm_reply, re.DOTALL)
+    if fenced:
+        return json.loads(fenced.group(1))
+    start, end = llm_reply.find("{"), llm_reply.rfind("}")
+    if start == -1 or end == -1:
+        raise ValueError("no JSON object in the reply")
+    return json.loads(llm_reply[start:end + 1])

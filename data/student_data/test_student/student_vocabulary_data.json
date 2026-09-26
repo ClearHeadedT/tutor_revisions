@@ -1,0 +1,2005 @@
+{
+  "student_id": "test_student",
+  "vocabulary": {
+    "ὁ": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "καί": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "αὐτός": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "σύ": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "δέ": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἐν": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἐγώ": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "εἰμί": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "λέγω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "εἰς": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "οὐ": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ὅς": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "οὗτος": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "θεός": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ὅτι": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "πᾶς": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "μή": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "γάρ": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "Ἰησοῦς": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἐκ": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἐπί": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "κύριος": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἔχω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "πρός": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ὁράω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἵνα": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "γίνομαι": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "διά": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἀπό": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἀλλά": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἔρχομαι": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ποιέω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "τίς": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἄνθρωπος": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "Χριστός": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "τὶς": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ὡς": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "εἰ": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "οὖν": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "κατά": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "μετά": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἀκούω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "δίδωμι": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "πολύς": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "πατήρ": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἡμέρα": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "πνεῦμα": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "υἱός": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἀδελφός": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἤ": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἐάν": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "εἷς": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "περί": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "λόγος": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἑαυτοῦ": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "οἶδα": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "λαλέω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "οὐρανός": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "μαθητής": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "λαμβάνω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "γῆ": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἐκεῖνος": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "μέγας": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "πίστις": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "πιστεύω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "οὐδείς": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἅγιος": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἀποκρίνομαι": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ὄνομα": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "γινώσκω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ὑπό": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἐξέρχομαι": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἀνήρ": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "γυνή": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "οὕτω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "δύναμαι": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "τέ": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "θέλω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "Ἰουδαῖος": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "νόμος": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "παρά": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "γράφω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "εἰσέρχομαι": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "κόσμος": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "μέν": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "καθώς": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "εὑρίσκω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἄγγελος": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "χείρ": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ὄχλος": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἁμαρτία": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἔργον": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "δόξα": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἄν": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "πόλις": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "βασιλεία": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἔθνος": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "τότε": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἐσθίω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "Παῦλος": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "Πέτρος": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "καρδία": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "πρῶτος": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "χάρις": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἄλλος": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "πορεύομαι": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἵστημι": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ὑπέρ": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "καλέω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "νῦν": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἕως": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "σάρξ": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ὅστις": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "προφήτης": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἐγείρω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἀφίημι": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἀγαπάω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "λαός": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "σῶμα": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "πάλιν": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ζάω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "οὐδέ": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "Ἱεροσόλυμα": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "φωνή": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ζωή": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "Ἰωάννης": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "δύο": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "βλέπω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἀποστέλλω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "νεκρός": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "σύν": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἀμήν": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "δοῦλος": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "αἰών": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ὅταν": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἀρχιερεύς": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "βάλλω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "θάνατος": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "παραδίδωμι": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "δύναμις": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "πῶς": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "μένω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ζητέω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἀπέρχομαι": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἀγάπη": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "βασιλεύς": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "μόνος": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "κρίνω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "οἶκος": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἐκκλησία": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἴδιος": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἀποθνῄσκω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "μέλλω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ὅσος": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "παρακαλέω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἀλήθεια": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ὅλος": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἀνίστημι": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "σῴζω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ὥρα": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ψυχή": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "καλός": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἀγαθός": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἐξουσία": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "δεῖ": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ὁδός": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "αἴρω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ὅτε": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ὀφθαλμός": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἀλλήλων": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "τέκνον": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "τίθημι": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "Φαρισαῖος": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "γεννάω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἄρτος": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "διδάσκω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἕτερος": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "αἷμα": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "εἶπον": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "φοβέω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἐκεῖ": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "περιπατέω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "τόπος": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "οἰκία": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἐνώπιον": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "πούς": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἔτι": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "εἰρήνη": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "δικαιοσύνη": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "θάλασσα": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "κάθημαι": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "οὔτε": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "πίπτω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἀπόλλυμι": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἀκολουθέω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "μηδείς": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἑπτά": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "προσέρχομαι": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "πληρόω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἄρχω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "προσεύχομαι": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "καιρός": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "μήτηρ": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "κἀγώ": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ὥστε": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "καταβαίνω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ὅπου": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἕκαστος": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἀναβαίνω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "μᾶλλον": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἐκβάλλω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "Μωϋσῆς": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "δίκαιος": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "πέμπω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ὕδωρ": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ὑπάγω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἀπόστολος": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἀνοίγω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "στόμα": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "πονηρός": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "σημεῖον": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἐμός": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "βαπτίζω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "εὐαγγέλιον": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "πρόσωπον": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "μαρτυρέω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "Σίμων": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "κεφαλή": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "δώδεκα": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "χαίρω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἱερός": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἀποκτείνω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "Ἀβραάμ": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "πίνω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "φῶς": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "πῦρ": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "αἰώνιος": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "τηρέω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "αἰτέω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἄγω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "Ἰσραήλ": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "φέρω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "σάββατον": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ῥῆμα": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "πλοῖον": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἐντολή": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "τρεῖς": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "πιστός": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἀπολύω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "καρπός": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "φημί": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "πρεσβύτερος": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "εἴτε": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "γραμματεύς": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ὄρος": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "δαιμόνιον": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἐρωτάω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "εὐθύς": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "δοκέω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἔξω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "θρόνος": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "θέλημα": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "νύξ": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "Γαλιλαία": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "κηρύσσω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἀγαπητός": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "δοξάζω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "προσκυνέω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἤδη": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἱμάτιον": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ὧδε": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ὑπάρχω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "Δαυίδ": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "συνάγω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "χαρά": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "λίθος": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἀσπάζομαι": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "διδάσκαλος": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "μέσος": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "μηδέ": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "τοιοῦτος": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "θεωρέω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "συναγωγή": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "δέχομαι": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἐπερωτάω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "τρίτος": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἀρχή": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "κράζω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "λοιπός": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "Πιλᾶτος": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "Μαρία": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "χρόνος": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ποτέ": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "δεξιός": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "εὐαγγελίζω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ὅπως": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἔσχατος": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "οὐχί": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "διό": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἐλπίς": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "παιδίον": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "σπείρω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "πείθω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἐπαγγελία": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "σοφία": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "μακάριος": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "τυφλός": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "παραβολή": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "κακός": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "γραφή": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "γλῶσσα": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "παραλαμβάνω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "χρεία": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἔτος": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἄχρι": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "φανερόω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἔμπροσθεν": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἀποδίδωμι": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "οὐκέτι": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἔρημος": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "πρό": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "κρίσις": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἁμαρτωλός": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "κρατέω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "φόβος": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἀπαγγέλλω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "προσφέρω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "καθίζω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "φυλακή": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "μικρός": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "οὐαί": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "σταυρόω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "σωτηρία": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ποῦ": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "διώκω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ὅμοιος": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "θλῖψις": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ναός": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "θηρίον": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "Ἰούδας": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "Ἰουδαία": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "κατοικέω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἐπιγινώσκω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "σπέρμα": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "δεύτερος": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "γενεά": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "Ἡρῴδης": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "θεραπεύω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "θαυμάζω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "δέω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἁμαρτάνω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "μέρος": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἐγγίζω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "σεαυτοῦ": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "Ἰάκωβος": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "λύω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "καινός": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "φωνέω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἀνάστασις": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἑτοιμάζω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἄξιος": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "σήμερον": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ὀλίγος": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἐργάζομαι": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "τέλος": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "διέρχομαι": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "χωρίς": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "εὐλογέω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "τέσσαρες": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "πάντοτε": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "παρίστημι": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "τιμή": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "κλαίω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἱκανός": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "μισέω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "οἰκοδομέω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἐπιτίθημι": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "πάσχω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "λογίζομαι": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "πειράζω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "περισσεύω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "θύρα": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἅπτω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "δικαιόω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "πλανάω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "πράσσω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "μνημεῖον": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "πέντε": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "εὐχαριστέω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἐπιθυμία": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ὑποτάσσω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "βούλομαι": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "παραγίνομαι": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "διάβολος": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "διακονέω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "πρόβατον": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἐμαυτοῦ": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἄρχων": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "μαρτυρία": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ὀργή": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "Σατανᾶς": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ὥσπερ": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἀγρός": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "Φίλιππος": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἐπιστρέφω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "οὖς": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "καλῶς": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "προσευχή": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "περιτομή": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "καυχάομαι": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "Ἰωσήφ": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ὀπίσω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἄρτι": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "μάρτυς": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ὀφείλω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ὑποστρέφω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "μετανοέω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "πτωχός": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "μέλος": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "μήτε": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ναί": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἄρα": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "βλασφημέω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "οἶνος": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "βιβλίον": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "διακονία": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἐκπορεύομαι": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "δείκνυμι": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "εὐθέως": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἀσθενέω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἀρνέομαι": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ποῖος": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "διαθήκη": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἐχθρός": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἥλιος": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἅπας": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἀναγινώσκω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "δυνατός": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ὑπομονή": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "φαίνω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἄνεμος": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "καθαρίζω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἱερεύς": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἀκάθαρτος": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "παραγγέλλω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ποτήριον": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "πλήν": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἔξεστι(ν)": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἐλπίζω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "φυλάσσω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "φυλή": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ὁμοίως": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἐγγύς": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "πλῆθος": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "παρρησία": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "συνείδησις": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "συνέρχομαι": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "σκότος": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "διδαχή": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἐπιτιμάω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἐπικαλέω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἀγοράζω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "διάκονος": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἀρνίον": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "φεύγω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἐλεέω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "μισθός": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "παρέρχομαι": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "σκανδαλίζω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "προσκαλέω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "μάχαιρα": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "Ἠλίας": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "φίλος": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "πόθεν": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "Καῖσαρ": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "πάσχα": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "γνῶσις": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "παράκλησις": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἡγέομαι": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "χώρα": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἰσχυρός": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἰσχύω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "γαμέω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἁγιάζω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἐνδύω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "προφητεύω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "τελέω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "θυσία": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "θυγάτηρ": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "πλούσιος": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἀδικέω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "νικάω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἀληθινός": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "Βαρναβᾶς": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "Ἰακώβ": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "βαστάζω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "ἐκεῖθεν": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "πόσος": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "κρίμα": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "σός": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    }
+  }
+}

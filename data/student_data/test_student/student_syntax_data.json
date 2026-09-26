@@ -1,0 +1,909 @@
+{
+  "student_id": "test_student",
+  "syntax": {
+    "accusative/adverbial-uses-accusative/accusative-measure-extent-space-time": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "accusative/substantival-uses-accusative/accusative-direct-object": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "accusative/substantival-uses-accusative/accusative-simple-apposition": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "accusative/substantival-uses-accusative/accusative-subject-infinitive": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "accusative/substantival-uses-accusative/double-accusatives": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "accusative/substantival-uses-accusative/double-accusatives/object-complement": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "accusative/substantival-uses-accusative/double-accusatives/person-thing": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjectives/independent-substantival-use-adjective/use-positive-adjective": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjectives/independent-substantival-use-adjective/use-positive-adjective/positive-for-comparative": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjectives/independent-substantival-use-adjective/use-positive-adjective/positive-for-superlative": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjectives/relation-adjective-noun/when-article-is-absent": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjectives/relation-adjective-noun/when-article-is-present": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjectives/relation-adjective-noun/when-article-is-present/attributive-positions": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjectives/relation-adjective-noun/when-article-is-present/predicate-positions": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "article/absence-article/definite/abstract-nouns": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "article/absence-article/definite/generic-nouns": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "article/absence-article/definite/genitive-construction-apollonius-corollary": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "article/absence-article/definite/monadic-nouns": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "article/absence-article/definite/object-preposition": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "article/absence-article/definite/ordinal-numbers": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "article/absence-article/definite/predicate-nominative": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "article/absence-article/definite/pronominal-adjective": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "article/absence-article/definite/proper-names": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "article/regular-uses-article/as-function-marker-often-has-semantic-force-as-well-see-cate/demonstratives": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "article/regular-uses-article/as-function-marker-often-has-semantic-force-as-well-see-cate/denote-adjectival-positions": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "article/regular-uses-article/as-function-marker-often-has-semantic-force-as-well-see-cate/indeclinable-nouns": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "article/regular-uses-article/as-pronoun-partially-independent-use/personal-pronoun": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "article/regular-uses-article/as-pronoun-partially-independent-use/possessive-pronoun": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "article/regular-uses-article/as-pronoun-partially-independent-use/relative-pronoun": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "article/regular-uses-article/as-substantiver-certain-parts-speech/genitive-word-phrase": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "article/regular-uses-article/as-substantiver-certain-parts-speech/infinitives": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "article/regular-uses-article/as-substantiver-certain-parts-speech/participles": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "article/regular-uses-article/substantives-dependent-modifying-use": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "article/regular-uses-article/substantives-dependent-modifying-use/individualizing-article/abstract-i-e-article-abstract-nouns": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "article/regular-uses-article/substantives-dependent-modifying-use/individualizing-article/anaphoric-previous-reference": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "article/regular-uses-article/substantives-dependent-modifying-use/individualizing-article/deictic-pointing-article": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "article/regular-uses-article/substantives-dependent-modifying-use/individualizing-article/monadic-one-kind-unique-article": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "article/regular-uses-article/substantives-dependent-modifying-use/individualizing-article/par-excellence": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "article/regular-uses-article/substantives-dependent-modifying-use/individualizing-article/simple-identification": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "article/regular-uses-article/substantives-dependent-modifying-use/individualizing-article/well-known-celebrity-familiar-article": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "article/special-uses-non-uses-article/anarthrous-pre-verbal-predicate-nominatives-involving-colwel/statement-rule": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "article/special-uses-non-uses-article/article-multiple-substantives-connected-by-καί-granville-sha/tsks-constructions-involving-impersonal-plural-proper-nouns": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "article/special-uses-non-uses-article/article-multiple-substantives-connected-by-καί-granville-sha/tsks-constructions-involving-impersonal-plural-proper-nouns/plural-personal-constructions": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "article/special-uses-non-uses-article/article-multiple-substantives-connected-by-καί-granville-sha/tsks-constructions-involving-impersonal-plural-proper-nouns/proper-names": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "conditional-sentences/ii-conditional-sentences-greek-especially-nt/first-class-condition": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "conditional-sentences/ii-conditional-sentences-greek-especially-nt/fourth-class-condition-less-probable-future": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "conditional-sentences/ii-conditional-sentences-greek-especially-nt/second-class-condition": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "conditional-sentences/ii-conditional-sentences-greek-especially-nt/third-class-condition": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "conjunctions/adverbial-functions/causal": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "conjunctions/adverbial-functions/comparative-manner": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "conjunctions/adverbial-functions/conditional": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "conjunctions/adverbial-functions/local-sphere": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "conjunctions/adverbial-functions/purpose": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "conjunctions/adverbial-functions/result": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "conjunctions/adverbial-functions/substantival-functions/content": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "conjunctions/adverbial-functions/substantival-functions/epexegetical": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "conjunctions/adverbial-functions/temporal": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "conjunctions/ascensive": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "conjunctions/connective-continuative-coordinate": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "conjunctions/contrastive-adversative": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "conjunctions/correlative": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "conjunctions/disjunctive-alternative": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "conjunctions/emphatic": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "conjunctions/explanatory": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "conjunctions/inferential": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "conjunctions/transitional": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "dative/dative-after-certain-words/dative-after-certain-prepositions": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "dative/dative-after-certain-words/dative-direct-object": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "dative/instrumental-dative-uses/dative-association-accompaniment": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "dative/instrumental-dative-uses/dative-cause": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "dative/instrumental-dative-uses/dative-means-instrument": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "dative/local-dative-uses/dative-sphere": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "dative/local-dative-uses/dative-time-when": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "dative/pure-dative-uses/dative-indirect-object": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "dative/pure-dative-uses/dative-interest-including-advantage-commodi-disadvantage-inc": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "dative/pure-dative-uses/dative-interest-including-advantage-commodi-disadvantage-inc/advantage": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "dative/pure-dative-uses/dative-interest-including-advantage-commodi-disadvantage-inc/disadvantage": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "dative/pure-dative-uses/dative-reference-respect": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "dative/pure-dative-uses/dative-simple-apposition": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "genitive/ablatival-genitive/genitive-separation": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "genitive/ablatival-genitive/genitive-source-origin": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "genitive/adjectival/attributed-genitive": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "genitive/adjectival/attributive-genitive": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "genitive/adjectival/descriptive-genitive": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "genitive/adjectival/genitive-content": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "genitive/adjectival/genitive-relationship": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "genitive/adjectival/genitive-simple-apposition": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "genitive/adjectival/partitive-genitive-wholative": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "genitive/adjectival/possessive-genitive": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "genitive/adverbial-genitive/genitive-association": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "genitive/adverbial-genitive/genitive-time-kind-time": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "genitive/after-certain-words/genitive-after-certain-prepositions": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "genitive/verbal-genitive-i-e-genitive-related-verbal-noun/objective-genitive": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "genitive/verbal-genitive-i-e-genitive-related-verbal-noun/subjective-genitive": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "infinitive/adverbial/cause": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "infinitive/adverbial/complementary-supplementary": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "infinitive/adverbial/means": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "infinitive/adverbial/purpose": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "infinitive/adverbial/result": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "infinitive/adverbial/time": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "infinitive/substantival/appositional": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "infinitive/substantival/direct-object": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "infinitive/substantival/epexegetical": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "infinitive/substantival/indirect-discourse": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "infinitive/substantival/subject": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "moods/imperative/command": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "moods/imperative/conditional-imperative": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "moods/imperative/prohibition": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "moods/imperative/request-k-entreaty-polite-command": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "moods/indicative/conditional-indicative": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "moods/indicative/declarative-indicative": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "moods/indicative/indicative-ὃτι/causal-adverbial": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "moods/indicative/indicative-ὃτι/epexegetical": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "moods/indicative/interrogative-indicative": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "moods/indicative/potential-indicative": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "moods/optative/conditional-optative": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "moods/optative/oblique-optative": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "moods/optative/potential-optative": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "moods/optative/voluntative-optative-k-optative-obtainable-wish-volitive-opt": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "moods/subjunctive/dependent-subordinate-clauses/subjunctive-conditional-sentences": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "moods/subjunctive/dependent-subordinate-clauses/subjunctive-indefinite-relative-clause": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "moods/subjunctive/dependent-subordinate-clauses/subjunctive-indefinite-temporal-clause": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "moods/subjunctive/dependent-subordinate-clauses/subjunctive-indirect-questions": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "moods/subjunctive/dependent-subordinate-clauses/subjunctive-verbs-fearing": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "moods/subjunctive/dependent-subordinate-clauses/ἳνα-subjunctive/purpose-ἳνα-clause-k-final-telic-ἳνα": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "moods/subjunctive/dependent-subordinate-clauses/ἳνα-subjunctive/result-ἳνα-clause-k-consecutive-ecbatic-ἳνα": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "moods/subjunctive/independent-clauses/deliberative-subjunctive-k-dubitative": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "moods/subjunctive/independent-clauses/emphatic-negation-subjunctive": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "moods/subjunctive/independent-clauses/hortatory-subjunctive-k-volitive-but-this-also-means-imperat": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "moods/subjunctive/independent-clauses/prohibitive-subjunctive": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "nominative/grammatically-independent-uses-nominative/nominative-absolute": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "nominative/grammatically-independent-uses-nominative/nominative-for-vocative-nominative-address": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "nominative/grammatically-independent-uses-nominative/nominativus-pendens-pendent-nominative": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "nominative/grammatically-independent-uses-nominative/parenthetic-nominative": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "nominative/primary-uses/nominative-simple-apposition": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "nominative/primary-uses/predicate-nominative": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "nominative/primary-uses/subject": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "participle/adjectival-proper-dependent": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "participle/pluperfect/redundant-pleonastic": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "participle/substantival-independent": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "participle/verbal-participles/dependent-verbal-participles/adverbial-circumstantial": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "participle/verbal-participles/dependent-verbal-participles/adverbial-circumstantial/cause": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "participle/verbal-participles/dependent-verbal-participles/adverbial-circumstantial/concession": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "participle/verbal-participles/dependent-verbal-participles/adverbial-circumstantial/condition": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "participle/verbal-participles/dependent-verbal-participles/adverbial-circumstantial/manner": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "participle/verbal-participles/dependent-verbal-participles/adverbial-circumstantial/means": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "participle/verbal-participles/dependent-verbal-participles/adverbial-circumstantial/purpose-telic": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "participle/verbal-participles/dependent-verbal-participles/adverbial-circumstantial/result": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "participle/verbal-participles/dependent-verbal-participles/adverbial-circumstantial/temporal": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "participle/verbal-participles/dependent-verbal-participles/attendant-circumstance": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "participle/verbal-participles/dependent-verbal-participles/indirect-discourse": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "participle/verbal-participles/dependent-verbal-participles/periphrastic": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "prepositions/διά-genitive-accusative": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "prepositions/εἰς-accusative": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "prepositions/εἰς-accusative/place-ἐν-its-various-nuances": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "prepositions/κατά-genitive-accusative": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "prepositions/μετά-genitive-accusative": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "prepositions/παρά-genitive-dative-accusative": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "prepositions/περί-genitive-accusative": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "prepositions/πρό-genitive": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "prepositions/πρός-accusative-almost-exclusively": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "prepositions/σύν-dative": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "prepositions/ἀνά-accusative": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "prepositions/ἀντί-genitive": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "prepositions/ἀπό-genitive": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "prepositions/ἐκ-genitive": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "prepositions/ἐπί-genitive-dative-accusative": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "prepositions/ὑπέρ-genitive-accusative": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "prepositions/ὑπό-genitive-accusative": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronouns/semantic-categories/demonstrative-pronouns": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronouns/semantic-categories/personal-pronouns": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronouns/semantic-categories/personal-pronouns/oblique-cases/possessive": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronouns/semantic-categories/personal-pronouns/oblique-cases/reflexive": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronouns/semantic-categories/relative-pronouns": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronouns/semantic-categories/relative-pronouns/ὅς/unusual-uses/antecedent-complexities/omission-antecedent": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronouns/semantic-categories/relative-pronouns/ὅς/unusual-uses/case": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronouns/semantic-categories/relative-pronouns/ὅστις-called-indefinite-better": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "tense/aorist/constative-complexive-punctiliar-comprehensive-global-aorist": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "tense/aorist/consummative-culminative-ecbatic-effective-aorist": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "tense/aorist/epistolary-aorist": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "tense/aorist/immediate-past-aorist-dramatic-aorist": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "tense/aorist/ingressive-inceptive-inchoative-aorist": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "tense/aorist/proleptic-futuristic-aorist": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "tense/future/deliberative-future": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "tense/future/imperatival-future": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "tense/future/predictive-future": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "tense/imperfect/broad-band-imperfects/customary-habitual-general-imperfect": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "tense/imperfect/broad-band-imperfects/iterative-imperfect": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "tense/imperfect/broad-band-imperfects/special-uses-imperfect/conative-voluntative-tendential-imperfect": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "tense/imperfect/broad-band-imperfects/special-uses-imperfect/imperfect-retained-indirect-discourse": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "tense/imperfect/ingressive-inchoative-inceptive-imperfect": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "tense/imperfect/progressive-descriptive-imperfect": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "tense/perfect/aoristic-perfect-k-dramatic-historical-perfect": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "tense/perfect/extensive-perfect-k-consummative-perfect": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "tense/perfect/intensive-perfect-k-resultative-perfect": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "tense/perfect/perfect-present-force": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "tense/pluperfect/extensive-pluperfect-consummative-pluperfect": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "tense/pluperfect/intensive-pluperfect-resultative-pluperfect": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "tense/pluperfect/pluperfect-simple-past-force": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "tense/present/broad-band-presents/customary-habitual-general-present": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "tense/present/broad-band-presents/extending-from-past-present": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "tense/present/broad-band-presents/gnomic-present": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "tense/present/broad-band-presents/iterative-present": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "tense/present/broad-band-presents/special-uses-present/conative-tendential-voluntative-present": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "tense/present/broad-band-presents/special-uses-present/futuristic-present": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "tense/present/broad-band-presents/special-uses-present/historical-present-dramatic-present": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "tense/present/broad-band-presents/special-uses-present/perfective-present": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "tense/present/broad-band-presents/special-uses-present/present-retained-indirect-discourse": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "tense/present/instantaneous-present-k-aoristic-punctiliar-present": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "tense/present/progressive-present-k-descriptive-present": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "vocative/direct-address/emphatic-emotional-address": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "vocative/direct-address/simple-address": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "voice/active/causative-active-k-ergative": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "voice/active/reflexive-active": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "voice/active/simple-active": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "voice/active/stative-active": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "voice/middle/deponent-middle": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "voice/middle/direct-middle-k-reflexive-direct-reflexive": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "voice/middle/indirect-middle-k-indirect-reflexive-benefactive-intensive-d": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "voice/middle/permissive-middle": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "voice/passive/passive-uses/deponent-passive": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "voice/passive/passive-uses/simple-passive": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "volitional-clauses/aorist-imperative": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "volitional-clauses/aorist-subjunctive-μή": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "volitional-clauses/future-indicative-k-cohortative-indicative-imperatival-futur": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "volitional-clauses/present-imperative": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    }
+  }
+}

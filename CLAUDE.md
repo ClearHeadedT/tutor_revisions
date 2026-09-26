@@ -20,15 +20,17 @@ There is no build, lint, or unit-test setup. Use the project venv and run everyt
 .venv/bin/python -m testing.main report          # rebuild testing/output/report.md (free)
 .venv/bin/python -m testing.main cost            # spend so far
 .venv/bin/python -m testing.batch_run [category] [generate|audit|report]   # batched-generation variant -> testing/output_batch/
-.venv/bin/python -m testing.plan_run preview     # free: the exact prompts the sentence-plan arm would send
-.venv/bin/python -m testing.plan_run [category] [generate|audit|report]    # sentence-plan arm -> testing/output_plan/, compared against output_batch
+.venv/bin/python -m testing.make_test_student    # (re)writes data/student_data/test_student/ (500 words, all grammar, core syntax)
+.venv/bin/python -m testing.plan_run preview     # free: the exact prompts, for test_student
+.venv/bin/python -m testing.plan_run vocabulary 1   # N cards through production's loop (form_checked_card); calls the API
+.venv/bin/python -m testing.plan_run report      # free: rebuild testing/output_plan/report.md
 .venv/bin/python -m testing.experiments [model|batch]
 
 # Regenerate derived data (slow: loads Text-Fabric)
 .venv/bin/python -m tasks.card_randomization.derivation.derive_lexical_data   # vocabulary_scaffolding.json
 .venv/bin/python -m tasks.card_randomization.derivation.derive_grammar_data   # grammar_scaffolding.json
 .venv/bin/python -m tasks.card_randomization.derivation.wire_traversal        # traversal_wiring.json
-.venv/bin/python -m text_fabric.corpus_index                                  # corpus_index.json (echo check + morphology counts)
+.venv/bin/python -m text_fabric.corpus_index                                  # corpus_index.json (verses, form analyses, verb frames, morphology counts)
 ```
 
 `ANTHROPIC_API_KEY` is read from the environment or `.env` (`llm_calls/client.py`).
@@ -37,16 +39,16 @@ There is no build, lint, or unit-test setup. Use the project venv and run everyt
 
 **Card generation flow** (`main.py` → `tasks/new_card_creation/`):
 1. `Student(student_id)` (`data/student_data/student.py`) loads the level, per-domain progress, and card history from `data/student_data/<id>/*.json`.
-2. `NewVocabularyCard` / `NewGrammarCard` (`tasks/new_card_creation/new_card.py`) assemble the item. Vocabulary comes from the shared `data/curriculum_data/vocabulary_senses.json`. A missing lemma is enriched from Text-Fabric and Louw-Nida and written back to that file (`enrich_vocabulary_senses`). Grammar keys are unpacked from `grammar_scaffolding.json` into item, rule, and paradigm.
+2. `NewVocabularyCard` / `NewGrammarCard` / `NewSyntaxCard` (`tasks/new_card_creation/new_card.py`) assemble the item. Vocabulary comes from the shared `data/curriculum_data/vocabulary_senses.json`. A missing lemma is enriched from Text-Fabric and Louw-Nida and written back to that file (`enrich_vocabulary_senses`). Grammar keys are unpacked from `grammar_scaffolding.json` into item, rule, and pattern; syntax keys from `syntax_scaffolding.json` into the usage, its ancestors, and its sibling usages.
 3. `build_sentence_plan` (`tasks/card_randomization/card_randomize_utils.py`) draws the sentence plan (see below).
 4. `card_instructions_loader(card_type)` builds the system prompt as `GENERAL_CARD_INSTRUCTIONS` + a per-type block, and each block ends with `instructions_cap`, which includes `instructions_sentence_plan` (`llm_calls/instructions.py`). The user message is a JSON dict `{item, recent_generations, student, sentence_plan}`. `instructions_cap` describes this shape to the model, so keep the two in sync.
-5. The reply is a ```json-fenced object (`parse_card_reply`) that always has `reasoning`, `sentence`, `translation`, `target_form`, `lemmas` and `setting`, plus any per-type keys.
+5. The reply is a ```json-fenced object (`parse_card_reply`) that always has `reasoning`, `sentence`, `translation`, `target_form`, `words` (each `{form, lemma, parse}`) and `setting`, plus any per-type keys. A vocabulary item that is a verb carries `attested_usage` (`tasks/new_card_creation/prefetch.py`): its principal parts, object case and prepositions as the GNT attests them.
 6. `form_checked_card` runs `verify.check_card` on it (see below). A card that fails is sent back with the findings (`card_rejection`, replayed as a multi-turn conversation) up to `CHECK_RETRIES` times, then kept with its findings under `check`. `Student.record_card` appends it to history and marks the item `learning`.
 
 `cards/main.py` maps each card type to an assembler that turns `(item, llm_reply)` into a `(front, back)` pair. The card-type string names (`text_recall_grammar_g2e`, `cloze_vocabulary_e2g`, …) are the shared vocabulary across instructions, assemblers, and the harness.
 
 **Item keys** join everything together:
-- grammar: `rule::paradigm_lemma::slot`, e.g. `decl2::λόγος::genitive.singular`
+- grammar: `rule::pattern::slot`, e.g. `decl2::n-2a::genitive.singular`, `pres-act-ind::contract-έω::third_person.plural` (an infinitive has no slot)
 - syntax: a slash path into the nested syntax tree, e.g. `genitive/adjectival/descriptive-genitive` (see `unpack_syntactic_item`)
 - vocabulary: the NFC-normalized lemma
 
@@ -57,26 +59,31 @@ These keys index student progress, card history, and the scaffolding files.
 **Text-Fabric** (`text_fabric/`): `load_n1904()` is `@cache`d and takes several seconds and GBs of memory to load. Load it once per process, and only on paths that really need it (enrichment, derivation scripts). The module docstring in `text_fabric/main.py` is a measured reference for N1904 features, node types, and value sets.
 
 **Sentence plan** (`tasks/card_randomization/`): code decides the structure and the setting, and the model chooses every word. This replaced drawing verbs and subject/object partners in code, which produced incoherent input.
-- **Shape.** Drawn from `traversal["sentence_construction_possibilitites"]` (`card_randomize_traversal.py`). The usages are written empty and filled at import from `traversal_wiring.json`. A usage opens only when the student has its `syntactic_item` and at least one grammar group from each list in `grammar_requires`.
-- **Grammar groups** (`data/curriculum_data/grammar_groups.py`). Slot keys collapse to a group, which is the rule for most items and a tense/voice group for participles. `Student.grammar_groups_learned()` and `concepts_learned()` report grammar at that level.
+- **Shape.** Drawn from `traversal["sentence_construction_possibilitites"]` (`card_randomize_traversal.py`). The usages are written empty and filled at import from `traversal_wiring.json`. A usage opens only when the student has its `syntactic_item` and at least one grammar group from each list in `grammar_requires`. Usages are drawn by tier (`USAGE_TIERS`, `TIER_WEIGHTS` in `card_randomize_constants.py`); a non-regular one carries a `frequency` note.
+- **The item's own construction** (`shape_source`). A syntax item that a usage builds (by `describe`, else `syntactic_item`, matched up or down the key path) is the shape itself. A grammar item in a `HOSTED_GROUPS` group (subjunctive, participle, infinitive, relative pronoun) gets a usage that takes its group, offered as its only grammar option; a participle or infinitive may also get a single main clause. Anything else draws the shape outside the item's own category and group.
+- **Grammar groups** (`data/curriculum_data/grammar_groups.py`). A slot key's group is its rule (`aor1-pas-ptc`, `pres-midpas-ind`, `decl2`). `Student.grammar_groups_learned()` and `concepts_learned()` report grammar at that level.
 - **What the model receives with the shape:**
   - the `formation_instructions` entry, with `example_ref` removed because verse pointers prime echo
-  - one paradigm chart, weighted by corpus frequency (`group_frequency`)
-- **Extras.** Drawn from the student's learned syntax items, never two of one category (`syntax_category`), and never the target's own category.
+  - `grammar_options`: the groups the construction can take that the student knows, unranked, each with GNT example forms drawn from the group's items (`group_examples`)
+- **Extra.** In 75% of plans, three of the student's learned syntax items for the model to pick one from, weighted by each item's `tier` in `syntax_scaffolding.json` (how widely the builder's other grammars teach it), never two of one category and never the target's own.
 - **Settings.** Two options from `data/curriculum_data/scene_bank.json`, matched on the Louw-Nida domain for vocabulary items, and avoiding recently used settings.
 - **Tuning.** Level and card-type rules are in `card_randomize_constants.py`.
 
-**Echo and vocabulary check** (`tasks/new_card_creation/verify.py`) runs against `data/curriculum_data/corpus_index.json` and never loads Text-Fabric.
-- **Wording:** `longest_shared_run` is the longest shared run of accent-folded words (`greek_text.fold_greek`).
-- **Scene:** `closest_passage` is a rarity-weighted content-lemma overlap over 3-verse windows, excluding the target lemma.
+**Form and vocabulary check** (`tasks/new_card_creation/verify.py`) runs against `data/curriculum_data/corpus_index.json` and never loads Text-Fabric.
+- **Form:** `check_words` checks each word in isolation against every analysis N1904 gives that written form (lemma, parse, accent). A verb form or target the GNT never uses is sent back with the forms it does use; any other unattested word is only noted. `check_target` holds a grammar card's target to one of the item's `gnt_forms` and its parse, and a vocabulary card's to its lemma. `check_lexemes` holds a syntax card to one of its item's `gnt_lexemes` pairings.
+- **Withheld words:** `verify.WITHHELD` lists the divine and demonic, and the NT's religious and ethnic groups and offices (θεός, Χριστός, ἄγγελος, δαιμόνιον, Ἰουδαῖος, Φαρισαῖος, ἔθνος, ἀρχιερεύς, προφήτης, ἐκκλησία…; κύριος and πνεῦμα stay allowed). `check_withheld` sends back any card using one, except a vocabulary card's own word outside the nominative and vocative. No grammar form or syntax pairing supplied to the model uses them, and constraint 10 tells the model so.
 - **Vocabulary:** `unknown_lemmas` applies a soft rule. Up to 2 unknown lemmas pass and are glossed under `helps`.
-- **Thresholds:** calibrated on only 25 audited cards, so revisit them as cards accumulate.
+- There is no echo check: whether a sentence recalls a passage is left to the prompt and to review.
 
-**Derived data:** the scaffolding JSONs are generated, not hand-edited. Lexical data comes from Text-Fabric. Paradigms come from grammar charts recovered in the sibling repo, because the GNT doesn't attest complete paradigms (the `derive_grammar_data.py` docstring explains why).
+**Derived data:** the scaffolding JSONs are generated, not hand-edited. Lexical data comes from Text-Fabric. Grammar (`derive_grammar_data.py`):
+- **Charts** come from BBGG's appendix, recovered in the sibling repo, because the GNT doesn't attest complete paradigms. Print errors are fixed in `CORRECTIONS`.
+- **Rule → pattern → slot.** Each chart is filed under the pattern BBGG prints over it: MBG's code for a noun or adjective (`n-3c(4)`, `a-1a(η)`), the verb chart's heading for a verb (`thematic`, `contract-έω`, `liquid`, `athematic`, `second-aorist`, `κ-aorist`, `root-aorist`, `second-perfect`), the word itself for a pronoun, the article and μέγας/πολύς. Charts sharing a pattern merge, and gender goes into the slot. The present, imperfect and perfect middle and passive are one rule (`midpas`).
+- **Items** are the slots the GNT uses at least `MIN_OCCURRENCES` times across the rule and `MIN_PATTERN_OCCURRENCES` in the pattern, on a word of `KNOWN_FREQUENCY`+ occurrences. Each keeps the chart's `form` and carries `gnt_forms`: up to three GNT forms of known words, regular forms first. GNT forms are filed to patterns by N1904's second-tense morph flags, the athematic verb families, the liquid verbs' behaviour, and ending fit against the charts.
+- **Syntax** (`syntax_scaffolding.json`, from the builder's syntax tree): each core usage node also carries `formation`, a short synthesis of how the construction is built (from GGBB and the builder's other grammars, no biblical text), and `gnt_lexemes`, three pairings of GNT words that build it, taken from the grammars' undebated examples and checked in N1904. The flat item records where each came from (`gnt_sources`); those verse references are never sent to the model.
 
 **Testing harness** (`testing/`): runs generation and then an independent audit pass (`instructions_card_audit`) over the fixed sample in `testing/items.py`. It never writes to student data or the shared senses file, and uses its own `testing/data/vocabulary_senses.json`. The system prompts are cache-marked. Model, effort, and pricing constants are at the top of `testing/harness.py`.
 
-**Not yet implemented:** review sessions (`tasks/review_card_creation/`; `main.py` there is design notes only), `search_functionality/`, and a syntax card class in production (syntax cards are only generated by the harness). The participle charts lack present active and future participles, so plans cannot offer them.
+**Not yet implemented:** review sessions (`tasks/review_card_creation/`; `main.py` there is design notes only), `search_functionality/`, and the validity-judgment and rule-recall card types. The charts print no future participle and no contract participles, so no item or plan offers them.
 
 ## External dependencies
 

@@ -25,3 +25,8 @@ def greek_tokens(text):
     """The Greek words in a string, folded, in order. Punctuation, cloze braces and anything
     that is not Greek fall away."""
     return [fold_greek(word) for word in GREEK_WORD.findall(text)]
+
+
+def greek_words(text):
+    """The Greek words in a string as written - accents kept - in order."""
+    return [normalize_greek(word) for word in GREEK_WORD.findall(normalize_greek(text))]

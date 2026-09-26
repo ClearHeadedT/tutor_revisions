@@ -8,14 +8,10 @@
     "aor1-pas-inf",
     "aor2-act-inf",
     "aor2-mid-inf",
-    "aor2-pas-inf",
     "eimi-pres-inf",
     "perf-act-inf",
-    "perf-mid-inf",
-    "perf-pas-inf",
     "pres-act-inf",
-    "pres-mid-inf",
-    "pres-pas-inf"
+    "pres-midpas-inf"
    ],
    [
     "article"
@@ -31,14 +27,11 @@
     "aor1-pas-ptc",
     "aor2-act-ptc",
     "aor2-mid-ptc",
-    "aor2-pas-ptc",
     "eimi-pres-ptc",
     "perf-act-ptc",
-    "perf-mid-ptc",
-    "perf-pas-ptc",
+    "perf-midpas-ptc",
     "pres-act-ptc",
-    "pres-mid-ptc",
-    "pres-pas-ptc"
+    "pres-midpas-ptc"
    ]
   ]
  },
@@ -59,14 +52,11 @@
     "fut-mid-ind",
     "fut-pas-ind",
     "impf-act-ind",
-    "impf-mid-ind",
-    "impf-pas-ind",
+    "impf-midpas-ind",
     "perf-act-ind",
-    "perf-mid-ind",
-    "perf-pas-ind",
+    "perf-midpas-ind",
     "pres-act-ind",
-    "pres-mid-ind",
-    "pres-pas-ind"
+    "pres-midpas-ind"
    ]
   ]
  },
@@ -79,14 +69,11 @@
     "aor1-pas-ptc",
     "aor2-act-ptc",
     "aor2-mid-ptc",
-    "aor2-pas-ptc",
     "eimi-pres-ptc",
     "perf-act-ptc",
-    "perf-mid-ptc",
-    "perf-pas-ptc",
+    "perf-midpas-ptc",
     "pres-act-ptc",
-    "pres-mid-ptc",
-    "pres-pas-ptc"
+    "pres-midpas-ptc"
    ]
   ]
  },
@@ -107,14 +94,11 @@
     "fut-mid-ind",
     "fut-pas-ind",
     "impf-act-ind",
-    "impf-mid-ind",
-    "impf-pas-ind",
+    "impf-midpas-ind",
     "perf-act-ind",
-    "perf-mid-ind",
-    "perf-pas-ind",
+    "perf-midpas-ind",
     "pres-act-ind",
-    "pres-mid-ind",
-    "pres-pas-ind"
+    "pres-midpas-ind"
    ]
   ],
   "describe": null
@@ -136,14 +120,11 @@
     "fut-mid-ind",
     "fut-pas-ind",
     "impf-act-ind",
-    "impf-mid-ind",
-    "impf-pas-ind",
+    "impf-midpas-ind",
     "perf-act-ind",
-    "perf-mid-ind",
-    "perf-pas-ind",
+    "perf-midpas-ind",
     "pres-act-ind",
-    "pres-mid-ind",
-    "pres-pas-ind"
+    "pres-midpas-ind"
    ]
   ]
  },
@@ -159,8 +140,7 @@
     "aor2-pas-ind",
     "eimi-impf-ind",
     "impf-act-ind",
-    "impf-mid-ind",
-    "impf-pas-ind"
+    "impf-midpas-ind"
    ]
   ]
  },
@@ -173,11 +153,9 @@
     "aor1-pas-subj",
     "aor2-act-subj",
     "aor2-mid-subj",
-    "aor2-pas-subj",
     "eimi-pres-subj",
     "pres-act-subj",
-    "pres-mid-subj",
-    "pres-pas-subj"
+    "pres-midpas-subj"
    ]
   ]
  },
@@ -190,14 +168,10 @@
     "aor1-pas-inf",
     "aor2-act-inf",
     "aor2-mid-inf",
-    "aor2-pas-inf",
     "eimi-pres-inf",
     "perf-act-inf",
-    "perf-mid-inf",
-    "perf-pas-inf",
     "pres-act-inf",
-    "pres-mid-inf",
-    "pres-pas-inf"
+    "pres-midpas-inf"
    ],
    [
     "article"
@@ -213,14 +187,11 @@
     "aor1-pas-ptc",
     "aor2-act-ptc",
     "aor2-mid-ptc",
-    "aor2-pas-ptc",
     "eimi-pres-ptc",
     "perf-act-ptc",
-    "perf-mid-ptc",
-    "perf-pas-ptc",
+    "perf-midpas-ptc",
     "pres-act-ptc",
-    "pres-mid-ptc",
-    "pres-pas-ptc"
+    "pres-midpas-ptc"
    ]
   ]
  },
@@ -244,14 +215,11 @@
     "fut-mid-ind",
     "fut-pas-ind",
     "impf-act-ind",
-    "impf-mid-ind",
-    "impf-pas-ind",
+    "impf-midpas-ind",
     "perf-act-ind",
-    "perf-mid-ind",
-    "perf-pas-ind",
+    "perf-midpas-ind",
     "pres-act-ind",
-    "pres-mid-ind",
-    "pres-pas-ind"
+    "pres-midpas-ind"
    ]
   ]
  },
@@ -264,14 +232,10 @@
     "aor1-pas-inf",
     "aor2-act-inf",
     "aor2-mid-inf",
-    "aor2-pas-inf",
     "eimi-pres-inf",
     "perf-act-inf",
-    "perf-mid-inf",
-    "perf-pas-inf",
     "pres-act-inf",
-    "pres-mid-inf",
-    "pres-pas-inf"
+    "pres-midpas-inf"
    ]
   ]
  },
@@ -284,14 +248,11 @@
     "aor1-pas-ptc",
     "aor2-act-ptc",
     "aor2-mid-ptc",
-    "aor2-pas-ptc",
     "eimi-pres-ptc",
     "perf-act-ptc",
-    "perf-mid-ptc",
-    "perf-pas-ptc",
+    "perf-midpas-ptc",
     "pres-act-ptc",
-    "pres-mid-ptc",
-    "pres-pas-ptc"
+    "pres-midpas-ptc"
    ]
   ]
  },
@@ -304,11 +265,9 @@
     "aor1-pas-subj",
     "aor2-act-subj",
     "aor2-mid-subj",
-    "aor2-pas-subj",
     "eimi-pres-subj",
     "pres-act-subj",
-    "pres-mid-subj",
-    "pres-pas-subj"
+    "pres-midpas-subj"
    ]
   ]
  },
@@ -332,14 +291,11 @@
     "fut-mid-ind",
     "fut-pas-ind",
     "impf-act-ind",
-    "impf-mid-ind",
-    "impf-pas-ind",
+    "impf-midpas-ind",
     "perf-act-ind",
-    "perf-mid-ind",
-    "perf-pas-ind",
+    "perf-midpas-ind",
     "pres-act-ind",
-    "pres-mid-ind",
-    "pres-pas-ind"
+    "pres-midpas-ind"
    ]
   ]
  },
@@ -352,14 +308,10 @@
     "aor1-pas-inf",
     "aor2-act-inf",
     "aor2-mid-inf",
-    "aor2-pas-inf",
     "eimi-pres-inf",
     "perf-act-inf",
-    "perf-mid-inf",
-    "perf-pas-inf",
     "pres-act-inf",
-    "pres-mid-inf",
-    "pres-pas-inf"
+    "pres-midpas-inf"
    ]
   ]
  },
@@ -372,14 +324,11 @@
     "aor1-pas-ptc",
     "aor2-act-ptc",
     "aor2-mid-ptc",
-    "aor2-pas-ptc",
     "eimi-pres-ptc",
     "perf-act-ptc",
-    "perf-mid-ptc",
-    "perf-pas-ptc",
+    "perf-midpas-ptc",
     "pres-act-ptc",
-    "pres-mid-ptc",
-    "pres-pas-ptc"
+    "pres-midpas-ptc"
    ]
   ]
  },
@@ -392,11 +341,9 @@
     "aor1-pas-subj",
     "aor2-act-subj",
     "aor2-mid-subj",
-    "aor2-pas-subj",
     "eimi-pres-subj",
     "pres-act-subj",
-    "pres-mid-subj",
-    "pres-pas-subj"
+    "pres-midpas-subj"
    ]
   ]
  },
@@ -417,14 +364,11 @@
     "fut-mid-ind",
     "fut-pas-ind",
     "impf-act-ind",
-    "impf-mid-ind",
-    "impf-pas-ind",
+    "impf-midpas-ind",
     "perf-act-ind",
-    "perf-mid-ind",
-    "perf-pas-ind",
+    "perf-midpas-ind",
     "pres-act-ind",
-    "pres-mid-ind",
-    "pres-pas-ind"
+    "pres-midpas-ind"
    ]
   ]
  },
@@ -437,14 +381,10 @@
     "aor1-pas-inf",
     "aor2-act-inf",
     "aor2-mid-inf",
-    "aor2-pas-inf",
     "eimi-pres-inf",
     "perf-act-inf",
-    "perf-mid-inf",
-    "perf-pas-inf",
     "pres-act-inf",
-    "pres-mid-inf",
-    "pres-pas-inf"
+    "pres-midpas-inf"
    ],
    [
     "article"
@@ -460,14 +400,11 @@
     "aor1-pas-ptc",
     "aor2-act-ptc",
     "aor2-mid-ptc",
-    "aor2-pas-ptc",
     "eimi-pres-ptc",
     "perf-act-ptc",
-    "perf-mid-ptc",
-    "perf-pas-ptc",
+    "perf-midpas-ptc",
     "pres-act-ptc",
-    "pres-mid-ptc",
-    "pres-pas-ptc"
+    "pres-midpas-ptc"
    ]
   ]
  },
@@ -488,14 +425,11 @@
     "fut-mid-ind",
     "fut-pas-ind",
     "impf-act-ind",
-    "impf-mid-ind",
-    "impf-pas-ind",
+    "impf-midpas-ind",
     "perf-act-ind",
-    "perf-mid-ind",
-    "perf-pas-ind",
+    "perf-midpas-ind",
     "pres-act-ind",
-    "pres-mid-ind",
-    "pres-pas-ind"
+    "pres-midpas-ind"
    ]
   ]
  },
@@ -519,14 +453,11 @@
     "fut-mid-ind",
     "fut-pas-ind",
     "impf-act-ind",
-    "impf-mid-ind",
-    "impf-pas-ind",
+    "impf-midpas-ind",
     "perf-act-ind",
-    "perf-mid-ind",
-    "perf-pas-ind",
+    "perf-midpas-ind",
     "pres-act-ind",
-    "pres-mid-ind",
-    "pres-pas-ind"
+    "pres-midpas-ind"
    ]
   ]
  },
@@ -547,14 +478,11 @@
     "fut-mid-ind",
     "fut-pas-ind",
     "impf-act-ind",
-    "impf-mid-ind",
-    "impf-pas-ind",
+    "impf-midpas-ind",
     "perf-act-ind",
-    "perf-mid-ind",
-    "perf-pas-ind",
+    "perf-midpas-ind",
     "pres-act-ind",
-    "pres-mid-ind",
-    "pres-pas-ind"
+    "pres-midpas-ind"
    ]
   ]
  },
@@ -575,14 +503,11 @@
     "fut-mid-ind",
     "fut-pas-ind",
     "impf-act-ind",
-    "impf-mid-ind",
-    "impf-pas-ind",
+    "impf-midpas-ind",
     "perf-act-ind",
-    "perf-mid-ind",
-    "perf-pas-ind",
+    "perf-midpas-ind",
     "pres-act-ind",
-    "pres-mid-ind",
-    "pres-pas-ind"
+    "pres-midpas-ind"
    ]
   ]
  },
@@ -603,14 +528,11 @@
     "fut-mid-ind",
     "fut-pas-ind",
     "impf-act-ind",
-    "impf-mid-ind",
-    "impf-pas-ind",
+    "impf-midpas-ind",
     "perf-act-ind",
-    "perf-mid-ind",
-    "perf-pas-ind",
+    "perf-midpas-ind",
     "pres-act-ind",
-    "pres-mid-ind",
-    "pres-pas-ind"
+    "pres-midpas-ind"
    ]
   ]
  },
@@ -634,14 +556,11 @@
     "fut-mid-ind",
     "fut-pas-ind",
     "impf-act-ind",
-    "impf-mid-ind",
-    "impf-pas-ind",
+    "impf-midpas-ind",
     "perf-act-ind",
-    "perf-mid-ind",
-    "perf-pas-ind",
+    "perf-midpas-ind",
     "pres-act-ind",
-    "pres-mid-ind",
-    "pres-pas-ind"
+    "pres-midpas-ind"
    ]
   ]
  },
@@ -665,14 +584,11 @@
     "fut-mid-ind",
     "fut-pas-ind",
     "impf-act-ind",
-    "impf-mid-ind",
-    "impf-pas-ind",
+    "impf-midpas-ind",
     "perf-act-ind",
-    "perf-mid-ind",
-    "perf-pas-ind",
+    "perf-midpas-ind",
     "pres-act-ind",
-    "pres-mid-ind",
-    "pres-pas-ind"
+    "pres-midpas-ind"
    ]
   ]
  },
@@ -688,11 +604,9 @@
     "aor1-pas-subj",
     "aor2-act-subj",
     "aor2-mid-subj",
-    "aor2-pas-subj",
     "eimi-pres-subj",
     "pres-act-subj",
-    "pres-mid-subj",
-    "pres-pas-subj"
+    "pres-midpas-subj"
    ]
   ]
  },
@@ -716,14 +630,11 @@
     "fut-mid-ind",
     "fut-pas-ind",
     "impf-act-ind",
-    "impf-mid-ind",
-    "impf-pas-ind",
+    "impf-midpas-ind",
     "perf-act-ind",
-    "perf-mid-ind",
-    "perf-pas-ind",
+    "perf-midpas-ind",
     "pres-act-ind",
-    "pres-mid-ind",
-    "pres-pas-ind"
+    "pres-midpas-ind"
    ]
   ]
  },
@@ -744,14 +655,11 @@
     "fut-mid-ind",
     "fut-pas-ind",
     "impf-act-ind",
-    "impf-mid-ind",
-    "impf-pas-ind",
+    "impf-midpas-ind",
     "perf-act-ind",
-    "perf-mid-ind",
-    "perf-pas-ind",
+    "perf-midpas-ind",
     "pres-act-ind",
-    "pres-mid-ind",
-    "pres-pas-ind"
+    "pres-midpas-ind"
    ]
   ]
  }

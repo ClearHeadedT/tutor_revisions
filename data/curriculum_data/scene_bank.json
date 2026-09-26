@@ -804,19 +804,19 @@
   },
   {
    "id": "s078",
-   "scene": "A sailor vows an offering to God if his ship reaches harbour safely.",
+   "scene": "A sailor promises his crew a feast if the ship reaches harbour safely.",
    "ln_domains": [
-    "12",
-    "53",
+    "33",
+    "23",
     "54",
     "21"
    ]
   },
   {
    "id": "s079",
-   "scene": "Villagers say a demon haunts the abandoned tower on the hill.",
+   "scene": "Villagers tell frightening stories about the abandoned tower on the hill.",
    "ln_domains": [
-    "12",
+    "33",
     "7",
     "25",
     "1"
@@ -834,9 +834,8 @@
   },
   {
    "id": "s081",
-   "scene": "A merchant swears by God that his cloth is the finest in the city.",
+   "scene": "A merchant swears on his father's grave that his cloth is the finest in the city.",
    "ln_domains": [
-    "12",
     "33",
     "57",
     "6"

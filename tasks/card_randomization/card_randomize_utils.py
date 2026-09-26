@@ -1,41 +1,31 @@
-"""Builds the sentence plan a card is written to.
-
-The plan fixes what code can decide well and leaves the rest to the model. Code decides:
-
-  the shape of the sentence   drawn from the traversal, gated by what the student has learned -
-                              the construction's syntactic category, and the grammar group it is
-                              built from - and handed over with its formation notes and the
-                              paradigm chart it needs, so the model builds from the grammars'
-                              forms rather than its own recollection
-  anything extra to include   drawn from the syntax items the student has learned
-  the settings on offer       two everyday situations from the scene bank, matched to a
-                              vocabulary item's Louw-Nida domain where the bank allows
-
-The model decides everything that needs knowledge of Greek to decide: the verb, what goes with
-it, and how the scene plays out inside the setting it picks. Choosing those in code produced
-sentences that were grammatical on paper and nonsensical in fact; see the audit that led here.
-
-Nothing here raises on a student who has learned little. Every draw falls back to something
-simpler - a single main clause, no extras - which is an ordinary outcome early in the curriculum.
-"""
+"""Builds the sentence plan a card is written to: its shape, drawn by how regular each
+construction is and gated by what the student has learned, or the item's own construction where
+it is one; an optional extra usage to pick from three; and two settings. The model chooses every
+word."""
 
 import random
 import re
 
 from data.curriculum_data.curriculum_helper_functions import load_scene_bank
-from data.curriculum_data.grammar_groups import group_chart, group_frequency, group_name, group_of
+from data.curriculum_data.grammar_groups import group_examples, group_name, group_of
 from data.student_data.student_data_helper_functions import (
     load_grammar_scaffolding,
     load_syntax_scaffolding,
     load_vocabulary_scaffolding,
 )
 from tasks.card_randomization.card_randomize_constants import (
-    CATEGORY_WEIGHTS,
     EXTRA_CHANCE,
+    EXTRA_OPTIONS,
+    FREQUENCY_NOTES,
+    GRAMMAR_EXAMPLES,
+    HOSTED_GROUPS,
     LEVEL_PLANS,
+    MAIN_CLAUSE_GROUPS,
     PLAIN_CARD_TYPES,
     SENTENCE_TYPE_WEIGHTS,
     SETTING_OPTIONS,
+    TIER_WEIGHTS,
+    USAGE_TIERS,
 )
 from tasks.card_randomization.card_randomize_traversal import traversal
 from tasks.card_randomization.formation_instructions import formation_instructions
@@ -66,14 +56,6 @@ def weighted_choice(names, weights):
     if not names:
         return None
     return random.choices(names, weights=[weights.get(name, 0.1) for name in names], k=1)[0]
-
-
-def ranked_choice(names):
-    """One name, the earlier entries likelier. The order written into the traversal
-    is the order of preference. Returns None when there is nothing to choose from."""
-    if not names:
-        return None
-    return random.choices(names, weights=range(len(names), 0, -1), k=1)[0]
 
 
 def sample_up_to(items, wanted):
@@ -107,30 +89,53 @@ def any_available(node, available):
     return isinstance(node, dict) and any(any_available(child, available) for child in options(node).values())
 
 
+def grammar_known(usage, groups):
+    """True when the student has at least one group from each of the usage's grammar requirements."""
+    return all(any(group in groups for group in requirement) for requirement in usage["grammar_requires"])
+
+
 def usage_available(usage, student, groups, blocked):
-    """A usage is open when the student has met its syntactic category and at least one group
-    from each grammar requirement, and its category is not one the sentence must keep out."""
+    """A usage is open when the student has met its syntactic category and the grammar it needs,
+    and its category is not one the sentence must keep out."""
     return (usage["syntactic_item"] in student.syntax
             and syntax_category(usage["syntactic_item"]) not in blocked
-            and all(any(group in groups for group in requirement)
-                    for requirement in usage["grammar_requires"]))
+            and grammar_known(usage, groups))
 
 
-def choose_shape(student, groups, blocked):
-    """A path through the traversal to one usage, or SIMPLE."""
+def builds(usage, syntax_key):
+    """True when a usage builds the syntax item, a usage under it, or the usage it falls under."""
+    built = usage.get("describe", usage["syntactic_item"])
+    return bool(built) and (built == syntax_key or built.startswith(syntax_key + "/")
+                            or syntax_key.startswith(built + "/"))
+
+
+def usage_tier(path):
+    return USAGE_TIERS.get(".".join(path), "regular")
+
+
+def best_weight(node, path, available):
+    """A category weighs as much as its most regular open usage."""
+    if is_usage(node):
+        return TIER_WEIGHTS[usage_tier(path)] if available(node) else 0
+    return max((best_weight(child, path + [name], available) for name, child in options(node).items()), default=0)
+
+
+def choose_shape(available, simple):
+    """A path through the traversal to one usage that passes available, or SIMPLE. simple says
+    whether a single main clause is one of the choices; it is the fallback either way."""
     sentences = traversal[SENTENCES_KEY]
-    available = lambda usage: usage_available(usage, student, groups, blocked)
-    types = [name for name, node in sentences.items() if name == SIMPLE or any_available(node, available)]
+    types = [name for name, node in sentences.items()
+             if (name == SIMPLE and simple) or any_available(node, available)]
     sentence_type = weighted_choice(types, SENTENCE_TYPE_WEIGHTS) or SIMPLE
     if sentence_type == SIMPLE:
         return [SIMPLE], None, None
     path, node, position = [sentence_type], sentences[sentence_type], None
     while not is_usage(node):
         position = node.get("position", position)
-        choices = {name: child for name, child in options(node).items() if any_available(child, available)}
-        name = ranked_choice(list(choices)) if "usages" in node else weighted_choice(list(choices), CATEGORY_WEIGHTS)
+        weights = {name: best_weight(child, path + [name], available) for name, child in options(node).items()}
+        name = weighted_choice([name for name, weight in weights.items() if weight], weights)
         path.append(name)
-        node = choices[name]
+        node = options(node)[name]
     return path, node, node.get("position", position)
 
 
@@ -166,8 +171,9 @@ def describe_position(position):
             f"{position['marked']} it when you mean to give it emphasis")
 
 
-def shape_block(path, usage, position, groups):
-    """The sentence shape, rendered for the model."""
+def shape_block(path, usage, position, groups, target_group=None):
+    """The sentence shape, rendered for the model. target_group is the grammar item's own group
+    when the shape was chosen to carry it."""
     path_key = ".".join([SENTENCES_KEY] + path)
     shape = SHAPE_NAMES[path[0]]
     if len(path) > 1:
@@ -183,35 +189,46 @@ def shape_block(path, usage, position, groups):
     where = describe_position(position)
     if where:
         block["position"] = where
-    # One chart, for the form the construction turns on: the participle, the infinitive, the
-    # relative pronoun, the subjunctive, drawn in proportion to how often the corpus uses it. A construction that takes any indicative at all turns on
-    # its conjunction, not a form, so a chart of one tense picked at random would only mislead.
+    tier = usage_tier(path)
+    if tier in FREQUENCY_NOTES:
+        block["frequency"] = FREQUENCY_NOTES[tier]
+    # A construction taking any indicative turns on its conjunction, not on a form.
     requirement = usage["grammar_requires"][0]
-    any_indicative = all(g.endswith("-ind") for g in requirement) and any(g.startswith("pres-") for g in requirement)
-    if not any_indicative:
-        candidates = [g for g in requirement if g in groups]
-        group = random.choices(candidates, weights=[group_frequency(g) for g in candidates], k=1)[0]
-        block["paradigm"] = {"name": group_name(group), "forms": group_chart(group)}
+    if target_group in requirement:
+        block["grammar_options"] = [{"option": f"{group_name(target_group)}, the item under review: "
+                                               "build the construction on its target form"}]
+    elif not (all(g.endswith("-ind") for g in requirement) and any(g.startswith("pres-") for g in requirement)):
+        block["grammar_options"] = grammar_options([g for g in requirement if g in groups])
     return block
+
+
+def grammar_options(groups):
+    """The forms the construction can take that the student has learned, each with its commonest
+    GNT forms. First and second aorist are one option."""
+    found = {}
+    for group in groups:
+        name = group_name(group).replace("First ", "").replace("Second ", "")
+        if name not in found:
+            found[name] = group_examples(group, GRAMMAR_EXAMPLES)
+    return [{"option": name, "gnt_examples": examples} if examples else {"option": name}
+            for name, examples in found.items()]
 
 
 # ---- extras -----------------------------------------------------------------------------------
 
-def choose_extras(student, count, blocked):
-    """Up to count syntax items the student has learned, no two of one category, none of a
-    category the sentence already carries."""
+def extra_options(student, blocked):
+    """EXTRA_OPTIONS syntax items the student has learned for the model to pick one from, drawn by
+    how widely the grammars teach them, no two of one category and none the sentence already has."""
     items = load_syntax_scaffolding()["items"]
-    extras, taken = [], set(blocked)
-    candidates = [key for key in student.syntax if key in items]
-    random.shuffle(candidates)
-    for key in candidates:
-        if len(extras) == count:
-            break
-        if syntax_category(key) in taken:
-            continue
-        taken.add(syntax_category(key))
-        extras.append(describe_syntax(key))
-    return extras
+    candidates = [key for key in student.syntax if key in items and syntax_category(key) not in blocked]
+    chosen = []
+    while candidates and len(chosen) < EXTRA_OPTIONS:
+        key = random.choices(candidates, weights=[TIER_WEIGHTS[items[k].get("tier", "regular")] for k in candidates])[0]
+        candidates = [k for k in candidates if syntax_category(k) != syntax_category(key)]
+        text = describe_syntax(key)
+        note = FREQUENCY_NOTES.get(items[key].get("tier"))
+        chosen.append(f"{text} {note}" if note else text)
+    return chosen
 
 
 # ---- settings ---------------------------------------------------------------------------------
@@ -250,6 +267,29 @@ def target_constraints(target_domain, target_key):
     return blocked_groups, blocked_categories, ln_domain
 
 
+def shape_source(student, target_domain, target_key, groups, blocked):
+    """What the shape is drawn from: a test each usage must pass, whether a single main clause is
+    one of the choices, and the grammar item's own group when the shape is built on it.
+
+    Where the item is itself a construction, the shape is that construction. A syntax item the
+    traversal builds - a conditional, a purpose infinitive, a relative clause - is the shape. A form
+    a main clause cannot carry by itself - a subjunctive, a relative pronoun, a participle or
+    infinitive that does not stand in the main clause - is built on a construction that takes it.
+    Anything else fits in any clause, and the shape is drawn from outside the item's own category."""
+    if target_domain == "syntax":
+        def own(usage):
+            return builds(usage, target_key)
+        if any_available(traversal[SENTENCES_KEY], own):
+            return (lambda usage: own(usage) and grammar_known(usage, groups)), False, None
+    if target_domain == "grammar" and group_of(target_key).endswith(HOSTED_GROUPS):
+        group = group_of(target_key)
+        def takes_target(usage):
+            return (any(group in requirement for requirement in usage["grammar_requires"])
+                    and usage_available(usage, student, groups | {group}, blocked))
+        return takes_target, group.endswith(MAIN_CLAUSE_GROUPS), group
+    return (lambda usage: usage_available(usage, student, groups, blocked)), True, None
+
+
 def build_sentence_plan(student, card_type, target_domain, target_key):
     """The plan for one card. target_domain is "vocabulary", "grammar" or "syntax", and
     target_key the item's key in that domain's scaffolding."""
@@ -257,21 +297,17 @@ def build_sentence_plan(student, card_type, target_domain, target_key):
     level = LEVEL_PLANS.get(student.level, LEVEL_PLANS["beyond_beginner"])
     plain = card_type in PLAIN_CARD_TYPES
     groups = set(student.grammar_groups_learned()) - blocked_groups
+    available, simple, target_group = shape_source(student, target_domain, target_key, groups, blocked)
 
     if level["shape"] and not plain:
-        path, usage, position = choose_shape(student, groups, blocked)
+        path, usage, position = choose_shape(available, simple)
     else:
         path, usage, position = [SIMPLE], None, None
     if usage is not None:
         blocked = blocked | {syntax_category(usage["syntactic_item"])}
 
-    extras = []
-    if not plain:
-        count = sum(random.random() < EXTRA_CHANCE for _ in range(level["extras"]))
-        extras = choose_extras(student, count, blocked)
-
-    return {
-        "sentence_shape": shape_block(path, usage, position, groups),
-        "also_include": extras,
-        "setting_options": choose_settings(ln_domain, avoid=student.recent_settings(target_key)),
-    }
+    plan = {"sentence_shape": shape_block(path, usage, position, groups, target_group)}
+    if level["extra"] and not plain and random.random() < EXTRA_CHANCE:
+        plan["also_include_one_of"] = extra_options(student, blocked)
+    plan["setting_options"] = choose_settings(ln_domain, avoid=student.recent_settings(target_key))
+    return plan

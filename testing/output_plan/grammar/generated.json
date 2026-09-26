@@ -1,0 +1,47 @@
+{
+  "article::ὁ::nominative.masculine.singular": {
+    "reasoning": "The sentence carries no other article form, so ὁ has nothing to compete with. Without it, ἔσχατος could be read as a predicate ('he came last'). With ὁ it becomes the substantive subject, 'the last one', which frames the whole scene. The fronted οὐδὲ ἕνα ἄρτον gives the late arrival his rhetorical sting inside a single main clause with one temporal participle.",
+    "sentence": "ὁ ἔσχατος ἐλθὼν οὐδὲ ἕνα ἄρτον εὗρεν.",
+    "translation": "The last one, when he arrived, found not even one loaf of bread.",
+    "target_form": "ὁ",
+    "words": [
+      {
+        "form": "ὁ",
+        "lemma": "ὁ",
+        "parse": "nominative masculine singular"
+      },
+      {
+        "form": "ἔσχατος",
+        "lemma": "ἔσχατος",
+        "parse": "nominative masculine singular"
+      },
+      {
+        "form": "ἐλθὼν",
+        "lemma": "ἔρχομαι",
+        "parse": "aorist active participle nominative masculine singular"
+      },
+      {
+        "form": "οὐδὲ",
+        "lemma": "οὐδέ",
+        "parse": "adverb"
+      },
+      {
+        "form": "ἕνα",
+        "lemma": "εἷς",
+        "parse": "accusative masculine singular"
+      },
+      {
+        "form": "ἄρτον",
+        "lemma": "ἄρτος",
+        "parse": "accusative masculine singular"
+      },
+      {
+        "form": "εὗρεν",
+        "lemma": "εὑρίσκω",
+        "parse": "aorist active indicative 3rd person singular"
+      }
+    ],
+    "setting": "s191",
+    "helps": {}
+  }
+}

@@ -9,15 +9,15 @@ set of near-identical items.
 # three persons -- the widest spread the 38 available slots permit.
 GRAMMAR_ITEMS = [
     "article::ὁ::nominative.masculine.singular",
-    "article::ἡ::genitive.feminine.singular",
-    "article::τό::dative.neuter.plural",
-    "article::ἡ::accusative.feminine.plural",
-    "decl2::λόγος::nominative.singular",
-    "decl2::λόγος::dative.singular",
-    "decl2::λόγος::accusative.plural",
-    "pres-act-ind::λύω::first_person.singular",
-    "pres-act-ind::λύω::second_person.plural",
-    "pres-act-ind::λύω::third_person.plural",
+    "article::ὁ::genitive.feminine.singular",
+    "article::ὁ::dative.neuter.plural",
+    "article::ὁ::accusative.feminine.plural",
+    "decl2::n-2a::nominative.singular",
+    "decl2::n-2a::dative.singular",
+    "decl2::n-2a::accusative.plural",
+    "pres-act-ind::thematic::first_person.singular",
+    "pres-act-ind::thematic::second_person.plural",
+    "pres-act-ind::thematic::third_person.plural",
 ]
 
 # One core usage from each of ten different categories, so no two share a parent and
@@ -49,23 +49,6 @@ VOCABULARY_ITEMS = [
     ("πιστός", "πιστός, -ή, -όν"),
     ("εὐθέως", "εὐθέως"),
 ]
-
-# A syntactic category on its own does not tell the model what to build the clause out
-# of, and the corpus supplies no example vocabulary, so each item carries a few lemmas
-# that suit it. Ordinary words, deliberately not the ones scripture has welded to the
-# construction.
-SYNTAX_LEXEMES = {
-    "genitive/adjectival/descriptive-genitive": ["λίθος", "ὕδωρ", "οἰκία"],
-    "dative/pure-dative-uses/dative-indirect-object": ["παιδίον", "δοῦλος", "γυνή"],
-    "accusative/substantival-uses-accusative/accusative-direct-object": ["ἄρτος", "θύρα", "ἐπιστολή"],
-    "article/regular-uses-article/as-pronoun-partially-independent-use/personal-pronoun": ["μαθητής", "ὄχλος", "στρατιώτης"],
-    "voice/active/simple-active": ["γράφω", "διώκω", "θεραπεύω"],
-    "moods/indicative/declarative-indicative": ["βλέπω", "ἀκούω", "μένω"],
-    "tense/present/instantaneous-present-k-aoristic-punctiliar-present": ["λέγω", "παρακαλέω", "ἀσπάζομαι"],
-    "participle/substantival-independent": ["πιστεύω", "ἀκολουθέω", "ἐργάζομαι"],
-    "conjunctions/ascensive": ["τελώνης", "παιδίον", "πτωχός"],
-    "conditional-sentences/ii-conditional-sentences-greek-especially-nt/first-class-condition": ["υἱός", "ἔργον", "ἀληθής"],
-}
 
 # The sample is run against a hypothetical student described by level alone. A literal
 # list of the five words austin has actually met reads to the model as the whole of the

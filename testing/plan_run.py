@@ -1,53 +1,34 @@
-"""The fixed sample again, each card written to a sentence plan and checked for echo before it is kept.
+"""Cards for the fixed sample, written the way production writes them, for reading and timing.
 
-    python -m testing.plan_run preview              # free: the exact prompts, written to preview.md
-    python -m testing.plan_run                      # generate + audit all three categories
-    python -m testing.plan_run vocabulary generate  # one category, one pass
-    python -m testing.plan_run report               # free: rebuild report.md, with the comparison
+    python -m testing.plan_run preview           # free: the exact prompts, written to preview.md
+    python -m testing.plan_run vocabulary 1      # one card; any category, any count
+    python -m testing.plan_run                   # every item of every category
+    python -m testing.plan_run report            # free: rebuild report.md from what exists
 
-Generation matches batch_run's model and effort, one card per call, since each card carries its
-own plan. A card the echo check flags is sent back with the finding, up to CHECK_RETRIES times;
-every attempt's reply is kept. The audit is the main harness's, unchanged except that it is now
-handed the measured overlap. testing/output_batch/ is the comparison: the same items, the same
-auditor, written before plans existed. It was generated five to a call, which this is not.
+Each card goes through production's own loop - tasks.new_card_creation.new_card.form_checked_card
+- with the model and effort in llm_calls/llm_constants.py: generated, checked against the GNT word
+by word and for vocabulary, and sent back with the findings up to CHECK_RETRIES times.
+Every attempt is kept with its reply, time and tokens. There is no auditor; the report sets out the
+card, its plan and every check for reading.
 
-The student behind the plans has met every grammar group and every construction the traversal
-can offer, plus the core syntax items, so the sample shows the full range of shapes. The student
-block the model sees is still TEST_STUDENT, with no vocabulary list, so the vocabulary check is
-not run here.
+The student is test_student (see testing/make_test_student.py). Nothing is written to its
+progress or card history, and the shared senses file is not touched: vocabulary items come from
+testing/data/vocabulary_senses.json.
 """
 import json
 import random
 import sys
 
 from data.student_data.student import Student
-from data.student_data.student_data_helper_functions import load_grammar_scaffolding, load_syntax_scaffolding
 from tasks.card_randomization.card_randomize_utils import build_sentence_plan
-from tasks.new_card_creation.new_card import CHECK_RETRIES
+from tasks.new_card_creation.new_card import form_checked_card
 from tasks.new_card_creation.utils import card_instructions_loader
-from tasks.new_card_creation.verify import check_card
-from testing.harness import (
-    OUTPUT, audit, call, cost_of, extract_json, item_content, keep_raw, keys_for, read, write,
-)
+from testing.harness import OUTPUT, cost_of, item_for, keys_for, read, write
 from testing.items import CARD_TYPES
 
 OUT = OUTPUT.parent / "output_plan"
-CONTROL = OUTPUT.parent / "output_batch"
-GENERATION = {"model": "claude-opus-5", "effort": "low"}
-AUDITOR = {"model": "claude-sonnet-5", "effort": "medium"}
 CATEGORIES = ["grammar", "vocabulary", "syntax"]
-
-
-def plan_student():
-    wiring = json.loads(open("data/curriculum_data/traversal_wiring.json", encoding="utf-8").read())
-    syntax = {usage["syntactic_item"] for usage in wiring.values()}
-    syntax |= {key for key, item in load_syntax_scaffolding()["items"].items() if item.get("core")}
-    student = object.__new__(Student)
-    student.student_id, student.level = "plan_run", "beyond_beginner"
-    student.grammar = {key: {} for key in load_grammar_scaffolding()["items"]}
-    student.syntax = {key: {} for key in sorted(syntax)}
-    student.vocabulary, student.cards, student.senses = {}, {}, {}
-    return student
+STUDENT_ID = "test_student"
 
 
 def plan_for(student, category, key):
@@ -57,139 +38,127 @@ def plan_for(student, category, key):
 
 
 def content_for(student, category, key):
-    return {**item_content(category, key), "sentence_plan": plan_for(student, category, key)}
+    return {"item": item_for(category, key), "recent_generations": [],
+            "student": student.student_overview(), "sentence_plan": plan_for(student, category, key)}
+
+
+def targets_for(category, key):
+    """What the card is held to: a vocabulary card's lemma, a grammar card's parse and GNT forms, a
+    syntax card's GNT pairings."""
+    if category == "vocabulary":
+        return key, None, None, None
+    item = item_for(category, key)["item"]
+    if category == "grammar":
+        return None, item.get("features"), [form["form"] for form in item["gnt_forms"]], None
+    return None, None, None, item.get("gnt_lexemes")
 
 
 def generate(category, limit=None):
-    student = plan_student()
+    student = Student(STUDENT_ID)
     system = card_instructions_loader(CARD_TYPES[category])
-    done = read(category, "generated", OUT)
-    checks = read(category, "checks", OUT)
-    usages = []
+    done, checks = read(category, "generated", OUT), read(category, "checks", OUT)
+    made = 0
     for key in keys_for(category):
-        if key in done or (limit is not None and len(usages) >= limit):
+        if key in done:
             continue
+        if limit is not None and made >= limit:
+            break
         content = content_for(student, category, key)
-        target = key if category == "vocabulary" else None
-        rejected = []
-        while True:
-            reply, usage = call(system, content, GENERATION["model"], GENERATION["effort"], rejected)
-            usages.append(usage)
-            keep_raw(category, "generated", f"{key}#{len(rejected) + 1}", reply, usage, OUT)
-            card = extract_json(reply)
-            check = check_card(card, target=target)
-            if not check["findings"] or len(rejected) == CHECK_RETRIES:
-                break
-            rejected.append((reply, check["findings"]))
+        target, target_features, target_forms, target_lexemes = targets_for(category, key)
+        card = form_checked_card(system, content, student, target, target_features, target_forms,
+                                 target_lexemes, keep_replies=True)
+        check = card.pop("check")
         done[key] = card
-        checks[key] = {"attempts": len(rejected) + 1, "rejections": [f for _, f in rejected],
-                       "final_findings": check["findings"], "overlap": check["overlap"],
-                       "sentence_plan": content["sentence_plan"]}
+        checks[key] = {**check, "sentence_plan": content["sentence_plan"]}
         write(category, "generated", done, OUT)
         write(category, "checks", checks, OUT)
-        print(f"  {key[:44]:44} attempts={len(rejected) + 1} "
-              f"{'FLAGGED' if check['findings'] else 'clean  '} setting={card.get('setting')}")
-    return usages
+        made += 1
+        attempts = check["attempts"]
+        print(f"  {key[:40]:40} attempts={len(attempts)} seconds={check['seconds']:6} "
+              f"{'KEPT WITH FINDINGS' if check['findings'] else 'passed'} "
+              f"${sum(cost_of(a) for a in attempts):.4f}")
+        for number, attempt in enumerate(attempts, start=1):
+            print(f"      attempt {number}: {attempt['seconds']}s out={attempt['output']} "
+                  f"cache_read={attempt['cache_read']} findings={len(attempt['findings'])}")
 
 
 def preview():
     """Every prompt generation would send, without sending it."""
-    student = plan_student()
+    student = Student(STUDENT_ID)
     lines = ["# Plan run preview", "", "No API calls. Each item's user message as generation would send it; "
              "the system prompt is the card type's instructions and is the same for every item of a category.", ""]
     for category in CATEGORIES:
-        lines += [f"## {category} — `{CARD_TYPES[category]}`", ""]
+        lines += [f"## {category} - `{CARD_TYPES[category]}`", ""]
         for key in keys_for(category):
-            lines += [f"### `{key}`", "", "```json",
-                      json.dumps(content_for(student, category, key), indent=2, ensure_ascii=False), "```", ""]
-    system = card_instructions_loader(CARD_TYPES["vocabulary"])
-    lines += ["## System prompt (vocabulary)", "", "```", system, "```", ""]
+            content = content_for(student, category, key)
+            content["student"] = "(the test student's block: level, grammar learned, syntax learned, 500 words)"
+            lines += [f"### `{key}`", "", "```json", json.dumps(content, indent=2, ensure_ascii=False), "```", ""]
+    lines += ["## System prompt (vocabulary)", "", "```", card_instructions_loader(CARD_TYPES["vocabulary"]), "```", ""]
     path = OUT / "preview.md"
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text("\n".join(lines), encoding="utf-8")
     print(f"preview written to {path}")
 
 
-def echo_outcome(audit_record):
-    echo = {e.get("criterion"): e.get("verdict") for e in (audit_record or {}).get("echo", [])}
-    if any(v == "fails" for v in echo.values()):
-        return "fails"
-    if any(v == "concern" for k, v in echo.items() if k in ("wording", "structure", "scene")):
-        return "concern"
-    return "clean" if audit_record else "not audited"
-
-
-def comparison():
-    """Plan run against the batch run, per category: auditor verdicts, echo outcomes, and how
-    often the blind reading recalled a passage."""
-    lines = ["| category | run | cards | keep / revise / discard | echo clean / concern / fails | blind recall |",
-             "|---|---|---|---|---|---|"]
-    for category in CATEGORIES:
-        for label, out in (("batch (no plan)", CONTROL), ("plan", OUT)):
-            cards, audits = read(category, "generated", out), read(category, "audited", out)
-            if not cards:
-                continue
-            verdicts = [audits.get(k, {}).get("verdict") for k in cards]
-            echoes = [echo_outcome(audits.get(k)) for k in cards]
-            recalls = sum(bool((audits.get(k, {}).get("blind_reading") or {}).get("recalls_passage")) for k in cards)
-            lines.append(f"| {category} | {label} | {len(cards)} | "
-                         f"{verdicts.count('keep')} / {verdicts.count('revise')} / {verdicts.count('discard')} | "
-                         f"{echoes.count('clean')} / {echoes.count('concern')} / {echoes.count('fails')} | "
-                         f"{recalls}/{len(cards)} |")
+def card_section(key, card, check):
+    plan = check.get("sentence_plan", {})
+    setting_id = str(card.get("setting", "")).removeprefix("adapted:")
+    attempts = check.get("attempts", [])
+    lines = [f"### `{key}`", "",
+             f"**{card.get('sentence', '(no card)')}**", "",
+             f"*{card.get('translation', '')}* - target `{card.get('target_form', '')}`", "",
+             f"- shape: {plan.get('sentence_shape', {}).get('shape')}",
+             f"- extra, one of: {' | '.join(o.split(' - ')[0] for o in plan.get('also_include_one_of', [])) or '-'}",
+             f"- setting: {card.get('setting')} - {plan.get('setting_options', {}).get(setting_id, '')}",
+             f"- attempts: {len(attempts)}, {check.get('seconds')}s, "
+             f"${sum(cost_of(a) for a in attempts):.4f}",
+             f"- unknown words glossed: {card.get('helps') or '-'}", ""]
+    for number, attempt in enumerate(attempts, start=1):
+        lines.append(f"  - attempt {number}: {attempt['seconds']}s, {attempt['output']} output tokens"
+                     + (": sent back for " + " / ".join(attempt["findings"]) if attempt["findings"] and
+                        number < len(attempts) else ""))
+    if check.get("findings"):
+        lines += ["", "**kept with findings:**", ""] + [f"- {f}" for f in check["findings"]]
+    if check.get("notes"):
+        lines += ["", "notes:", ""] + [f"- {n}" for n in check["notes"]]
+    lines += ["", "| word | given as | GNT check |", "|---|---|---|"]
+    lines += [f"| {w['form']} | {w.get('given', '-')} | {w['status']}{' - ' + w['gnt'] if w.get('gnt') else ''} |"
+              for w in check.get("words", [])]
+    lines.append("")
+    if card.get("reasoning"):
+        lines += ["<details><summary>reasoning</summary>", "", card["reasoning"], "", "</details>", ""]
     return lines
 
 
 def report():
-    total, lines = 0.0, ["# Plan run", "", "## Against the batch run", ""] + comparison() + [""]
+    lines, total_cost, total_seconds, cards = ["# Plan run", ""], 0.0, 0.0, 0
     for category in CATEGORIES:
-        cards, audits, checks = (read(category, stage, OUT) for stage in ("generated", "audited", "checks"))
-        if not cards:
+        generated, checks = read(category, "generated", OUT), read(category, "checks", OUT)
+        if not generated:
             continue
         lines += [f"## {category}", ""]
-        for key, card in cards.items():
-            verdict, check = audits.get(key) or {}, checks.get(key) or {}
-            plan = check.get("sentence_plan", {})
-            setting = plan.get("setting_options", {}).get(str(card.get("setting", "")).removeprefix("adapted:"))
-            lines += [f"### `{key}`", "",
-                      f"*shape:* {plan.get('sentence_shape', {}).get('shape')}  ",
-                      f"*also include:* {', '.join(e['name'] for e in plan.get('also_include', [])) or '—'}  ",
-                      f"*setting:* {card.get('setting')} — {setting}  ",
-                      f"*attempts:* {check.get('attempts')}"
-                      + (f" — sent back for: {check['rejections']}" if check.get("rejections") else ""), "",
-                      f"> {card.get('sentence', '')}", "",
-                      f"*{card.get('translation', '')}* — target `{card.get('target_form', '')}`", "",
-                      f"**verdict:** {verdict.get('verdict', 'not audited')}"
-                      + (f" — {verdict['summary']}" if verdict.get("summary") else ""), ""]
-            blind = verdict.get("blind_reading") or {}
-            if blind.get("recalls_passage"):
-                lines += [f"**blind reading:** {blind.get('passage')} — {blind.get('what_triggered_it', '')}", ""]
-    for category in CATEGORIES:
-        for stage in ("generated", "audited"):
-            path = OUT / category / f"{stage}_raw.json"
-            if path.exists():
-                total += sum(cost_of(r["usage"]) for r in json.loads(path.read_text(encoding="utf-8")).values())
-    lines.insert(1, f"\n**${total:.3f} spent on this run.**\n")
+        for key, card in generated.items():
+            check = checks.get(key, {})
+            total_cost += sum(cost_of(a) for a in check.get("attempts", []))
+            total_seconds += check.get("seconds") or 0
+            cards += 1
+            lines += card_section(key, card, check)
+    lines.insert(1, f"\n**{cards} cards, ${total_cost:.3f}, {total_seconds:.0f}s of generation.**\n")
     path = OUT / "report.md"
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text("\n".join(lines), encoding="utf-8")
-    print(f"report written to {path} | ${total:.3f} spent")
+    print(f"report written to {path} | {cards} cards | ${total_cost:.3f} | {total_seconds:.0f}s")
 
 
 if __name__ == "__main__":
     args = sys.argv[1:]
-    chosen = [a for a in args if a in CATEGORIES] or CATEGORIES
     if "preview" in args:
         preview()
     elif "report" in args:
         report()
     else:
-        passes = [a for a in args if a in ("generate", "audit")] or ["generate", "audit"]
-        if "generate" in passes:
-            print(f"GENERATION -- {GENERATION['model']} effort={GENERATION['effort']}, one card per call")
-            for category in chosen:
-                generate(category)
-        if "audit" in passes:
-            print(f"\nAUDIT -- {AUDITOR['model']} effort={AUDITOR['effort']}")
-            for category in chosen:
-                audit(category, None, AUDITOR["model"], AUDITOR["effort"], OUT)
+        limit = next((int(a) for a in args if a.isdigit()), None)
+        for category in [a for a in args if a in CATEGORIES] or CATEGORIES:
+            print(f"{category} - {CARD_TYPES[category]}")
+            generate(category, limit)
         report()

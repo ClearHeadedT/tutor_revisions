@@ -1,0 +1,77 @@
+{
+  "βαπτίζω": {
+    "reasoning": "The card uses the attested washing sense of βαπτίζω (53.31) rather than the rite. A servant who comes in from the field, with water named as the means and the Sabbath at hand, points the student to cleansing and shuts out 'baptize'. The Sabbath-eve household fits this sense naturally and keeps the card clear of baptismal episodes. Mark 7:4's market-and-eating frame is avoided by giving no meal and ending on a γάρ clause about the approaching Sabbath. Protasis ἐάν + aorist subjunctive, apodosis attested βαπτισθήτω, ἐκ + genitive as the texture.",
+    "sentence": "ἐὰν ὁ δοῦλος ἔλθῃ ἐκ τοῦ ἀγροῦ, βαπτισθήτω ὕδατι· ἐγγίζει γὰρ τὸ σάββατον.",
+    "translation": "If the servant comes in from the field, let him wash himself with water, for the Sabbath is drawing near.",
+    "target_form": "βαπτισθήτω",
+    "words": [
+      {
+        "form": "ἐὰν",
+        "lemma": "ἐάν",
+        "parse": "conjunction"
+      },
+      {
+        "form": "ὁ",
+        "lemma": "ὁ",
+        "parse": "nominative masculine singular"
+      },
+      {
+        "form": "δοῦλος",
+        "lemma": "δοῦλος",
+        "parse": "nominative masculine singular"
+      },
+      {
+        "form": "ἔλθῃ",
+        "lemma": "ἔρχομαι",
+        "parse": "aorist active subjunctive 3rd person singular"
+      },
+      {
+        "form": "ἐκ",
+        "lemma": "ἐκ",
+        "parse": "preposition"
+      },
+      {
+        "form": "τοῦ",
+        "lemma": "ὁ",
+        "parse": "genitive masculine singular"
+      },
+      {
+        "form": "ἀγροῦ",
+        "lemma": "ἀγρός",
+        "parse": "genitive masculine singular"
+      },
+      {
+        "form": "βαπτισθήτω",
+        "lemma": "βαπτίζω",
+        "parse": "aorist passive imperative 3rd person singular"
+      },
+      {
+        "form": "ὕδατι",
+        "lemma": "ὕδωρ",
+        "parse": "dative neuter singular"
+      },
+      {
+        "form": "ἐγγίζει",
+        "lemma": "ἐγγίζω",
+        "parse": "present active indicative 3rd person singular"
+      },
+      {
+        "form": "γὰρ",
+        "lemma": "γάρ",
+        "parse": "conjunction"
+      },
+      {
+        "form": "τὸ",
+        "lemma": "ὁ",
+        "parse": "nominative neuter singular"
+      },
+      {
+        "form": "σάββατον",
+        "lemma": "σάββατον",
+        "parse": "nominative neuter singular"
+      }
+    ],
+    "setting": "adapted:s072",
+    "helps": {}
+  }
+}

@@ -17,23 +17,23 @@
       "status": "learning",
       "last_reviewed": "2026-09-08"
     },
-    "decl2::λόγος::nominative.singular": {
+    "decl2::n-2a::nominative.singular": {
       "status": "learned",
       "last_reviewed": "2026-09-02"
     },
-    "decl2::λόγος::genitive.singular": {
+    "decl2::n-2a::genitive.singular": {
       "status": "learning",
       "last_reviewed": "2026-09-06"
     },
-    "pres-act-ind::λύω::first_person.singular": {
+    "pres-act-ind::thematic::first_person.singular": {
       "status": "learned",
       "last_reviewed": "2026-09-03"
     },
-    "pres-act-ind::λύω::second_person.singular": {
+    "pres-act-ind::thematic::second_person.singular": {
       "status": "learning",
       "last_reviewed": "2026-09-07"
     },
-    "pres-act-ind::λύω::third_person.singular": {
+    "pres-act-ind::thematic::third_person.singular": {
       "status": "learning",
       "last_reviewed": "2026-09-09"
     }

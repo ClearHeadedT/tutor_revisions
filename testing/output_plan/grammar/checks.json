@@ -1,0 +1,69 @@
+{
+  "article::ὁ::nominative.masculine.singular": {
+    "findings": [],
+    "notes": [],
+    "words": [
+      {
+        "form": "ὁ",
+        "given": "nominative masculine singular of ὁ",
+        "status": "confirmed"
+      },
+      {
+        "form": "ἔσχατος",
+        "given": "nominative masculine singular of ἔσχατος",
+        "status": "confirmed"
+      },
+      {
+        "form": "ἐλθὼν",
+        "given": "aorist active participle nominative masculine singular of ἔρχομαι",
+        "status": "confirmed"
+      },
+      {
+        "form": "οὐδὲ",
+        "given": "adverb of οὐδέ",
+        "status": "confirmed"
+      },
+      {
+        "form": "ἕνα",
+        "given": "accusative masculine singular of εἷς",
+        "status": "confirmed"
+      },
+      {
+        "form": "ἄρτον",
+        "given": "accusative masculine singular of ἄρτος",
+        "status": "confirmed"
+      },
+      {
+        "form": "εὗρεν",
+        "given": "aorist active indicative 3rd person singular of εὑρίσκω",
+        "status": "confirmed"
+      }
+    ],
+    "attempts": [
+      {
+        "model": "claude-opus-5-5",
+        "effort": "medium",
+        "seconds": 16.0,
+        "input": 1314,
+        "cache_write": 22907,
+        "cache_read": 0,
+        "output": 1541,
+        "stop_reason": "end_turn",
+        "findings": [],
+        "reply": "```json\n{\n  \"reasoning\": \"The sentence carries no other article form, so ὁ has nothing to compete with. Without it, ἔσχατος could be read as a predicate ('he came last'). With ὁ it becomes the substantive subject, 'the last one', which frames the whole scene. The fronted οὐδὲ ἕνα ἄρτον gives the late arrival his rhetorical sting inside a single main clause with one temporal participle.\",\n  \"sentence\": \"ὁ ἔσχατος ἐλθὼν οὐδὲ ἕνα ἄρτον εὗρεν.\",\n  \"translation\": \"The last one, when he arrived, found not even one loaf of bread.\",\n  \"target_form\": \"ὁ\",\n  \"words\": [\n    {\"form\": \"ὁ\", \"lemma\": \"ὁ\", \"parse\": \"nominative masculine singular\"},\n    {\"form\": \"ἔσχατος\", \"lemma\": \"ἔσχατος\", \"parse\": \"nominative masculine singular\"},\n    {\"form\": \"ἐλθὼν\", \"lemma\": \"ἔρχομαι\", \"parse\": \"aorist active participle nominative masculine singular\"},\n    {\"form\": \"οὐδὲ\", \"lemma\": \"οὐδέ\", \"parse\": \"adverb\"},\n    {\"form\": \"ἕνα\", \"lemma\": \"εἷς\", \"parse\": \"accusative masculine singular\"},\n    {\"form\": \"ἄρτον\", \"lemma\": \"ἄρτος\", \"parse\": \"accusative masculine singular\"},\n    {\"form\": \"εὗρεν\", \"lemma\": \"εὑρίσκω\", \"parse\": \"aorist active indicative 3rd person singular\"}\n  ],\n  \"setting\": \"s191\"\n}\n```"
+      }
+    ],
+    "seconds": 16.0,
+    "sentence_plan": {
+      "sentence_shape": {
+        "shape": "a single main clause",
+        "formation": "A single independent clause: nominative subject, finite verb, and an accusative direct object if the verb is transitive.",
+        "function": "One unsubordinated assertion. Unmarked order is subject, then predicate, then complement."
+      },
+      "setting_options": {
+        "s191": "The last traveller to arrive finds no food left.",
+        "s206": "A village grows into a town once the new road is built."
+      }
+    }
+  }
+}

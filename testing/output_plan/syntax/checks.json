@@ -1,0 +1,191 @@
+{
+  "genitive/adjectival/descriptive-genitive": {
+    "findings": [],
+    "notes": [],
+    "words": [
+      {
+        "form": "ὁ",
+        "given": "nominative masculine singular of ὁ",
+        "status": "confirmed"
+      },
+      {
+        "form": "ἰατρὸς",
+        "given": "nominative masculine singular of ἰατρός",
+        "status": "confirmed"
+      },
+      {
+        "form": "εἶπεν",
+        "given": "aorist active indicative 3rd person singular of λέγω",
+        "status": "confirmed"
+      },
+      {
+        "form": "τῷ",
+        "given": "dative masculine singular of ὁ",
+        "status": "confirmed"
+      },
+      {
+        "form": "ἀνδρί",
+        "given": "dative masculine singular of ἀνήρ",
+        "status": "confirmed"
+      },
+      {
+        "form": "Πεσὼν",
+        "given": "aorist active participle nominative masculine singular of πίπτω",
+        "status": "confirmed"
+      },
+      {
+        "form": "ἀπὸ",
+        "given": "preposition of ἀπό",
+        "status": "confirmed"
+      },
+      {
+        "form": "τῆς",
+        "given": "genitive feminine singular of ὁ",
+        "status": "confirmed"
+      },
+      {
+        "form": "θύρας",
+        "given": "genitive feminine singular of θύρα",
+        "status": "confirmed"
+      },
+      {
+        "form": "τῶν",
+        "given": "genitive neuter plural of ὁ",
+        "status": "confirmed"
+      },
+      {
+        "form": "προβάτων",
+        "given": "genitive neuter plural of πρόβατον",
+        "status": "confirmed"
+      },
+      {
+        "form": "μεῖνον",
+        "given": "aorist active imperative 2nd person singular of μένω",
+        "status": "confirmed"
+      },
+      {
+        "form": "ἐν",
+        "given": "preposition of ἐν",
+        "status": "confirmed"
+      },
+      {
+        "form": "τῷ",
+        "given": "dative masculine singular of ὁ",
+        "status": "confirmed"
+      },
+      {
+        "form": "οἴκῳ",
+        "given": "dative masculine singular of οἶκος",
+        "status": "confirmed"
+      },
+      {
+        "form": "ἑπτὰ",
+        "given": "adjective (indeclinable numeral) of ἑπτά",
+        "status": "confirmed"
+      },
+      {
+        "form": "ἡμέρας",
+        "given": "accusative feminine plural of ἡμέρα",
+        "status": "confirmed"
+      }
+    ],
+    "attempts": [
+      {
+        "model": "claude-opus-5-5",
+        "effort": "medium",
+        "seconds": 38.9,
+        "input": 4215,
+        "cache_write": 21988,
+        "cache_read": 0,
+        "output": 3878,
+        "stop_reason": "end_turn",
+        "findings": [],
+        "reply": "```json\n{\n  \"reasoning\": \"This is a generic usage, the default genitive, so I did not force out every neighbour. In τῆς θύρας τῶν προβάτων the head is not a verbal noun, the sheep do not own the gate, the gate is not part of them, and no adjective can replace the genitive. The natural sense is 'the gate having to do with sheep'. I used the θύρα/πρόβατον set in an adapted s021 scene: a mason's fall from a stone gateway gives the physician's aorist imperative (μεῖνον) its reason through the fronted causal participle. It shares only the two-word phrase with John 10, with no shepherd imagery.\",\n  \"sentence\": \"ὁ ἰατρὸς εἶπεν τῷ ἀνδρί· Πεσὼν ἀπὸ τῆς θύρας τῶν προβάτων, μεῖνον ἐν τῷ οἴκῳ ἑπτὰ ἡμέρας.\",\n  \"translation\": \"The physician said to the man: 'Because you fell from the sheep gate, stay in the house seven days.'\",\n  \"target_form\": \"τῶν προβάτων\",\n  \"words\": [\n    {\"form\": \"ὁ\", \"lemma\": \"ὁ\", \"parse\": \"nominative masculine singular\"},\n    {\"form\": \"ἰατρὸς\", \"lemma\": \"ἰατρός\", \"parse\": \"nominative masculine singular\"},\n    {\"form\": \"εἶπεν\", \"lemma\": \"λέγω\", \"parse\": \"aorist active indicative 3rd person singular\"},\n    {\"form\": \"τῷ\", \"lemma\": \"ὁ\", \"parse\": \"dative masculine singular\"},\n    {\"form\": \"ἀνδρί\", \"lemma\": \"ἀνήρ\", \"parse\": \"dative masculine singular\"},\n    {\"form\": \"Πεσὼν\", \"lemma\": \"πίπτω\", \"parse\": \"aorist active participle nominative masculine singular\"},\n    {\"form\": \"ἀπὸ\", \"lemma\": \"ἀπό\", \"parse\": \"preposition\"},\n    {\"form\": \"τῆς\", \"lemma\": \"ὁ\", \"parse\": \"genitive feminine singular\"},\n    {\"form\": \"θύρας\", \"lemma\": \"θύρα\", \"parse\": \"genitive feminine singular\"},\n    {\"form\": \"τῶν\", \"lemma\": \"ὁ\", \"parse\": \"genitive neuter plural\"},\n    {\"form\": \"προβάτων\", \"lemma\": \"πρόβατον\", \"parse\": \"genitive neuter plural\"},\n    {\"form\": \"μεῖνον\", \"lemma\": \"μένω\", \"parse\": \"aorist active imperative 2nd person singular\"},\n    {\"form\": \"ἐν\", \"lemma\": \"ἐν\", \"parse\": \"preposition\"},\n    {\"form\": \"τῷ\", \"lemma\": \"ὁ\", \"parse\": \"dative masculine singular\"},\n    {\"form\": \"οἴκῳ\", \"lemma\": \"οἶκος\", \"parse\": \"dative masculine singular\"},\n    {\"form\": \"ἑπτὰ\", \"lemma\": \"ἑπτά\", \"parse\": \"adjective (indeclinable numeral)\"},\n    {\"form\": \"ἡμέρας\", \"lemma\": \"ἡμέρα\", \"parse\": \"accusative feminine plural\"}\n  ],\n  \"setting\": \"adapted:s021\"\n}\n```"
+      }
+    ],
+    "seconds": 38.9,
+    "sentence_plan": {
+      "sentence_shape": {
+        "shape": "a main clause with an adverbial dependent clause: causal, adverbial participle",
+        "formation": "Anarthrous participle matching its subject in case, number and gender. It usually sits ahead of the verb it modifies.",
+        "function": "Supplies the ground or reason for the finite verb - it answers 'Why?'. Render with 'because'.",
+        "syntactic_category": "Cause - a syntactic usage, under Participle > Verbal Participles > Dependent Verbal Participles > Adverbial (or Circumstantial). Syntactic explanation: because (answers the question, Why?); indicates the cause or reason or ground of the action of the finite verb; usually precedes its verb.",
+        "position": "before the main clause by default; after it when you mean to give it emphasis",
+        "grammar_options": [
+          {
+            "option": "Aorist Active Participle",
+            "gnt_examples": [
+              "ἀκούσαντες (ἀκούω)",
+              "ἀκούσας (ἀκούω)",
+              "ποιήσας (ποιέω)"
+            ]
+          },
+          {
+            "option": "Aorist Middle Participle",
+            "gnt_examples": [
+              "προσκαλεσάμενος (προσκαλέω)",
+              "ἀρξάμενος (ἄρχω)",
+              "προσευξάμενοι (προσεύχομαι)"
+            ]
+          },
+          {
+            "option": "Aorist Passive Participle",
+            "gnt_examples": [
+              "ἀποκριθείς (ἀποκρίνομαι)",
+              "πορευθέντες (πορεύομαι)",
+              "ἐγερθείς (ἐγείρω)"
+            ]
+          },
+          {
+            "option": "Present Participle of εἰμί",
+            "gnt_examples": [
+              "ὤν (εἰμί)",
+              "ὄντες (εἰμί)"
+            ]
+          },
+          {
+            "option": "Perfect Active Participle",
+            "gnt_examples": [
+              "πεποιθώς (πείθω)",
+              "παρεστηκώς (παρίστημι)",
+              "πεποιηκώς (ποιέω)"
+            ]
+          },
+          {
+            "option": "Perfect Middle/Passive Participle",
+            "gnt_examples": [
+              "γεγραμμένον (γράφω)",
+              "εὐλογημένος (εὐλογέω)",
+              "δεδεμένος (δέω)"
+            ]
+          },
+          {
+            "option": "Present Active Participle",
+            "gnt_examples": [
+              "λέγων (λέγω)",
+              "λέγοντες (λέγω)",
+              "ἔχων (ἔχω)"
+            ]
+          },
+          {
+            "option": "Present Middle/Passive Participle",
+            "gnt_examples": [
+              "ἐρχόμενος (ἔρχομαι)",
+              "ἐρχόμενον (ἔρχομαι)",
+              "λεγόμενος (λέγω)"
+            ]
+          }
+        ]
+      },
+      "also_include_one_of": [
+        "Well-Known (“Celebrity” or “Familiar” Article) - a syntactic usage, under The Article > Regular Uses of the Article > With Substantives (Dependent or Modifying Use) > Individualizing Article. Syntactic explanation: well known, but for reasons other than the above categories; that which is familiar to the readers.",
+        "Aorist Imperative - a syntactic usage, under Volitional Clauses. Syntactic explanation: views action as a whole.",
+        "Instantaneous Present (a.k.a. Aoristic or Punctiliar Present) - a syntactic usage, under Tense > Present. Syntactic explanation: action occurs at the moment of speaking; usually a performative statement (e.g., “I tell you the truth, the Rams won the game”); indicative only."
+      ],
+      "setting_options": {
+        "s021": "A physician sets the broken arm of a stonemason who fell from scaffolding.",
+        "s147": "A heavy rain washes away the newly sown seed."
+      }
+    }
+  }
+}

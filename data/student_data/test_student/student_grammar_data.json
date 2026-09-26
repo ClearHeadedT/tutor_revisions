@@ -1,0 +1,2597 @@
+{
+  "student_id": "test_student",
+  "grammar": {
+    "decl1::n-1a::nominative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl1::n-1a::genitive.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl1::n-1a::dative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl1::n-1a::accusative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl1::n-1a::nominative.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl1::n-1a::genitive.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl1::n-1a::dative.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl1::n-1a::accusative.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl1::n-1b::nominative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl1::n-1b::genitive.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl1::n-1b::dative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl1::n-1b::accusative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl1::n-1b::nominative.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl1::n-1b::genitive.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl1::n-1b::dative.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl1::n-1b::accusative.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl1::n-1c::nominative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl1::n-1c::genitive.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl1::n-1c::dative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl1::n-1c::accusative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl1::n-1c::nominative.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl1::n-1c::genitive.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl1::n-1c::dative.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl1::n-1c::accusative.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl1::n-1f::nominative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl1::n-1f::genitive.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl1::n-1f::dative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl1::n-1f::accusative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl1::n-1f::nominative.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl1::n-1f::genitive.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl1::n-1f::dative.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl1::n-1f::accusative.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl2::n-2a::nominative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl2::n-2a::genitive.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl2::n-2a::dative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl2::n-2a::accusative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl2::n-2a::vocative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl2::n-2a::nominative.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl2::n-2a::genitive.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl2::n-2a::dative.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl2::n-2a::accusative.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl2::n-2b::nominative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl2::n-2b::genitive.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl2::n-2b::dative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl2::n-2b::accusative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl2::n-2b::nominative.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl2::n-2b::dative.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl2::n-2b::accusative.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl2::n-2c::nominative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl2::n-2c::genitive.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl2::n-2c::dative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl2::n-2c::accusative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl2::n-2c::vocative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl2::n-2c::nominative.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl2::n-2c::genitive.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl2::n-2c::dative.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl2::n-2c::accusative.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3b(1)::nominative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3b(1)::genitive.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3b(1)::dative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3b(1)::accusative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3b(1)::vocative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3b(1)::nominative.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3b(1)::genitive.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3b(1)::dative.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3b(1)::accusative.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3c(1)::nominative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3c(1)::genitive.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3c(1)::dative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3c(1)::accusative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3c(2)::nominative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3c(2)::genitive.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3c(2)::dative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3c(2)::accusative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3c(2)::nominative.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3c(2)::genitive.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3c(4)::nominative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3c(4)::genitive.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3c(4)::dative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3c(4)::accusative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3c(4)::nominative.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3c(4)::genitive.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3c(4)::dative.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3c(4)::accusative.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3c(5b)::nominative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3c(5b)::genitive.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3c(5b)::dative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3c(5b)::accusative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3c(5b)::nominative.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3c(5b)::genitive.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3c(6b)::nominative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3c(6b)::genitive.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3c(6b)::dative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3c(6b)::accusative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3c(6b)::genitive.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3c(6c)::nominative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3c(6c)::genitive.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3c(6c)::dative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3c(6c)::accusative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3d(2b)::nominative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3d(2b)::genitive.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3d(2b)::dative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3d(2b)::accusative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3d(2b)::nominative.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3d(2b)::genitive.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3d(2b)::dative.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3d(2b)::accusative.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3e(1)::genitive.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3e(1)::accusative.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3e(3)::nominative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3e(3)::genitive.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3e(3)::dative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3e(3)::accusative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3e(3)::vocative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3e(3)::nominative.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3e(3)::genitive.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3e(3)::dative.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3e(3)::accusative.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3e(4)::genitive.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3e(4)::dative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3e(4)::accusative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3e(5b)::nominative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3e(5b)::genitive.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3e(5b)::dative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3e(5b)::accusative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3e(5b)::nominative.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3e(5b)::genitive.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3e(5b)::dative.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3e(5b)::accusative.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3f(1a)::genitive.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3f(1a)::dative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3f(1a)::accusative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3f(1a)::genitive.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3f(1a)::accusative.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3f(1b)::nominative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3f(1b)::genitive.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3f(1b)::dative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3f(1b)::accusative.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3f(2a)::nominative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3f(2a)::genitive.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3f(2c)::nominative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3f(2c)::genitive.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3f(2c)::dative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3f(2c)::accusative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3f(2c)::vocative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3f(2c)::nominative.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3f(2c)::genitive.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3f(2c)::dative.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "decl3::n-3f(2c)::accusative.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-2-1-2::a-1a(α)::nominative.masculine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-2-1-2::a-1a(α)::genitive.masculine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-2-1-2::a-1a(α)::dative.masculine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-2-1-2::a-1a(α)::accusative.masculine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-2-1-2::a-1a(α)::vocative.masculine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-2-1-2::a-1a(α)::nominative.masculine.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-2-1-2::a-1a(α)::genitive.masculine.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-2-1-2::a-1a(α)::dative.masculine.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-2-1-2::a-1a(α)::accusative.masculine.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-2-1-2::a-1a(α)::nominative.feminine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-2-1-2::a-1a(α)::genitive.feminine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-2-1-2::a-1a(α)::dative.feminine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-2-1-2::a-1a(α)::accusative.feminine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-2-1-2::a-1a(α)::nominative.feminine.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-2-1-2::a-1a(α)::dative.feminine.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-2-1-2::a-1a(α)::accusative.feminine.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-2-1-2::a-1a(α)::nominative.neuter.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-2-1-2::a-1a(α)::genitive.neuter.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-2-1-2::a-1a(α)::dative.neuter.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-2-1-2::a-1a(α)::accusative.neuter.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-2-1-2::a-1a(α)::nominative.neuter.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-2-1-2::a-1a(α)::genitive.neuter.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-2-1-2::a-1a(α)::dative.neuter.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-2-1-2::a-1a(α)::accusative.neuter.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-2-1-2::a-1a(η)::nominative.masculine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-2-1-2::a-1a(η)::genitive.masculine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-2-1-2::a-1a(η)::dative.masculine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-2-1-2::a-1a(η)::accusative.masculine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-2-1-2::a-1a(η)::vocative.masculine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-2-1-2::a-1a(η)::nominative.masculine.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-2-1-2::a-1a(η)::genitive.masculine.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-2-1-2::a-1a(η)::dative.masculine.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-2-1-2::a-1a(η)::accusative.masculine.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-2-1-2::a-1a(η)::nominative.feminine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-2-1-2::a-1a(η)::genitive.feminine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-2-1-2::a-1a(η)::dative.feminine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-2-1-2::a-1a(η)::accusative.feminine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-2-1-2::a-1a(η)::nominative.feminine.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-2-1-2::a-1a(η)::dative.feminine.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-2-1-2::a-1a(η)::accusative.feminine.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-2-1-2::a-1a(η)::nominative.neuter.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-2-1-2::a-1a(η)::genitive.neuter.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-2-1-2::a-1a(η)::dative.neuter.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-2-1-2::a-1a(η)::accusative.neuter.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-2-1-2::a-1a(η)::nominative.neuter.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-2-1-2::a-1a(η)::genitive.neuter.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-2-1-2::a-1a(η)::dative.neuter.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-2-1-2::a-1a(η)::accusative.neuter.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-demonstrative::οὗτος::nominative.masculine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-demonstrative::οὗτος::genitive.masculine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-demonstrative::οὗτος::dative.masculine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-demonstrative::οὗτος::accusative.masculine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-demonstrative::οὗτος::nominative.masculine.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-demonstrative::οὗτος::genitive.masculine.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-demonstrative::οὗτος::accusative.masculine.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-demonstrative::οὗτος::nominative.feminine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-demonstrative::οὗτος::genitive.feminine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-demonstrative::οὗτος::dative.feminine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-demonstrative::οὗτος::accusative.feminine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-demonstrative::οὗτος::nominative.neuter.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-demonstrative::οὗτος::genitive.neuter.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-demonstrative::οὗτος::dative.neuter.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-demonstrative::οὗτος::accusative.neuter.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-demonstrative::οὗτος::nominative.neuter.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-demonstrative::οὗτος::genitive.neuter.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-demonstrative::οὗτος::accusative.neuter.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-irregular::μέγας::nominative.masculine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-irregular::μέγας::accusative.masculine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-irregular::μέγας::nominative.feminine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-irregular::μέγας::genitive.feminine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-irregular::μέγας::dative.feminine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-irregular::μέγας::accusative.feminine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-irregular::μέγας::accusative.neuter.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-irregular::μέγας::accusative.neuter.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-irregular::πολύς::nominative.masculine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-irregular::πολύς::accusative.masculine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-irregular::πολύς::nominative.masculine.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-irregular::πολύς::genitive.masculine.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-irregular::πολύς::accusative.masculine.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-irregular::πολύς::genitive.feminine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-irregular::πολύς::dative.feminine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-irregular::πολύς::accusative.feminine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-irregular::πολύς::accusative.neuter.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-irregular::πολύς::accusative.neuter.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-indefinite-relative::ὅστις::nominative.masculine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-indefinite-relative::ὅστις::nominative.masculine.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-indefinite-relative::ὅστις::nominative.feminine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-3-1-3::a-2a::nominative.masculine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-3-1-3::a-2a::dative.masculine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-3-1-3::a-2a::accusative.masculine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-3-1-3::a-2a::nominative.masculine.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-3-1-3::a-2a::genitive.masculine.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-3-1-3::a-2a::dative.masculine.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-3-1-3::a-2a::accusative.masculine.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-3-1-3::a-2a::nominative.feminine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-3-1-3::a-2a::genitive.feminine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-3-1-3::a-2a::dative.feminine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-3-1-3::a-2a::accusative.feminine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-3-1-3::a-2a::nominative.feminine.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-3-1-3::a-2a::nominative.neuter.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-3-1-3::a-2a::genitive.neuter.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-3-1-3::a-2a::dative.neuter.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-3-1-3::a-2a::accusative.neuter.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-3-1-3::a-2a::nominative.neuter.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-3-1-3::a-2a::genitive.neuter.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-3-1-3::a-2a::dative.neuter.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-3-1-3::a-2a::accusative.neuter.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-2-2::a-3a::nominative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-2-2::a-3a::genitive.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-2-2::a-3a::dative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-2-2::a-3a::accusative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-2-2::a-3a::nominative.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-2-2::a-3a::accusative.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-3-3::a-4a::nominative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-3-3::a-4a::accusative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-3-3::a-4a::nominative.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-3-3::a-4a::accusative.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-3-3::a-4b(1)::nominative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "adjective-3-3::a-4b(1)::accusative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-personal::αὐτός::nominative.masculine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-personal::αὐτός::genitive.masculine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-personal::αὐτός::dative.masculine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-personal::αὐτός::accusative.masculine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-personal::αὐτός::nominative.masculine.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-personal::αὐτός::genitive.masculine.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-personal::αὐτός::dative.masculine.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-personal::αὐτός::accusative.masculine.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-personal::αὐτός::genitive.feminine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-personal::αὐτός::dative.feminine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-personal::αὐτός::accusative.feminine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-personal::αὐτός::genitive.feminine.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-personal::αὐτός::genitive.neuter.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-personal::αὐτός::dative.neuter.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-personal::αὐτός::accusative.neuter.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-personal::αὐτός::genitive.neuter.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-personal::αὐτός::accusative.neuter.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-personal::ἐγώ::nominative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-personal::ἐγώ::genitive.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-personal::ἐγώ::dative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-personal::ἐγώ::accusative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-personal::ἐγώ::nominative.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-personal::ἐγώ::genitive.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-personal::ἐγώ::dative.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-personal::ἐγώ::accusative.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-personal::σύ::nominative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-personal::σύ::genitive.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-personal::σύ::dative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-personal::σύ::accusative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-personal::σύ::nominative.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-personal::σύ::genitive.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-personal::σύ::dative.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-personal::σύ::accusative.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-interrogative::τίς::nominative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-interrogative::τίς::accusative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-interrogative::τίς::nominative.neuter.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-interrogative::τίς::accusative.neuter.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-indefinite::τις::nominative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-indefinite::τις::accusative.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-indefinite::τις::nominative.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-indefinite::τις::accusative.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-indefinite::τις::accusative.neuter.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "numeral::εἷς::nominative.masculine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "numeral::εἷς::genitive.masculine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "numeral::εἷς::accusative.masculine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "numeral::εἷς::accusative.feminine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "numeral::εἷς::nominative.neuter.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "numeral::εἷς::accusative.neuter.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "article::ὁ::nominative.masculine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "article::ὁ::genitive.masculine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "article::ὁ::dative.masculine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "article::ὁ::accusative.masculine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "article::ὁ::nominative.masculine.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "article::ὁ::genitive.masculine.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "article::ὁ::dative.masculine.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "article::ὁ::accusative.masculine.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "article::ὁ::nominative.feminine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "article::ὁ::genitive.feminine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "article::ὁ::dative.feminine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "article::ὁ::accusative.feminine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "article::ὁ::nominative.feminine.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "article::ὁ::genitive.feminine.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "article::ὁ::dative.feminine.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "article::ὁ::accusative.feminine.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "article::ὁ::nominative.neuter.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "article::ὁ::genitive.neuter.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "article::ὁ::dative.neuter.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "article::ὁ::accusative.neuter.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "article::ὁ::nominative.neuter.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "article::ὁ::genitive.neuter.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "article::ὁ::dative.neuter.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "article::ὁ::accusative.neuter.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-relative::ὅς::nominative.masculine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-relative::ὅς::genitive.masculine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-relative::ὅς::dative.masculine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-relative::ὅς::accusative.masculine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-relative::ὅς::nominative.masculine.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-relative::ὅς::genitive.masculine.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-relative::ὅς::dative.masculine.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-relative::ὅς::accusative.masculine.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-relative::ὅς::genitive.feminine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-relative::ὅς::dative.feminine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-relative::ὅς::accusative.feminine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-relative::ὅς::nominative.neuter.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-relative::ὅς::genitive.neuter.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-relative::ὅς::dative.neuter.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-relative::ὅς::accusative.neuter.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-relative::ὅς::nominative.neuter.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-relative::ὅς::genitive.neuter.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pronoun-relative::ὅς::accusative.neuter.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor1-act-impv::thematic::second_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor1-act-impv::thematic::third_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor1-act-impv::thematic::second_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor1-act-ind::thematic::first_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor1-act-ind::thematic::second_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor1-act-ind::thematic::third_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor1-act-ind::thematic::first_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor1-act-ind::thematic::second_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor1-act-ind::thematic::third_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor1-act-ind::liquid::first_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor1-act-ind::liquid::second_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor1-act-ind::liquid::first_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor1-act-ind::liquid::second_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor1-act-ind::liquid::third_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor1-act-ind::athematic::third_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor1-act-ind::athematic::third_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor1-act-ind::κ-aorist::first_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor1-act-ind::κ-aorist::second_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor1-act-ind::κ-aorist::third_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor1-act-ind::κ-aorist::second_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor1-act-ind::κ-aorist::third_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor1-act-inf::thematic": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor1-act-inf::liquid": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor1-act-inf::athematic": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor1-act-ptc::thematic::nominative.masculine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor1-act-ptc::thematic::genitive.masculine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor1-act-ptc::thematic::accusative.masculine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor1-act-ptc::thematic::nominative.masculine.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor1-act-ptc::thematic::genitive.masculine.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor1-act-subj::thematic::first_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor1-act-subj::thematic::second_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor1-act-subj::thematic::third_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor1-act-subj::thematic::first_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor1-act-subj::thematic::second_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor1-act-subj::thematic::third_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor1-mid-impv::thematic::second_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor1-mid-ind::thematic::first_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor1-mid-ind::thematic::third_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor1-mid-ind::thematic::second_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor1-mid-ind::thematic::third_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor1-mid-ind::liquid::third_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor1-mid-inf::thematic": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor1-mid-ptc::thematic::nominative.masculine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor1-mid-ptc::thematic::nominative.masculine.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor1-mid-subj::thematic::third_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor1-pas-impv::thematic::second_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor1-pas-impv::thematic::third_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor1-pas-impv::thematic::second_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor1-pas-ind::thematic::first_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor1-pas-ind::thematic::third_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor1-pas-ind::thematic::first_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor1-pas-ind::thematic::second_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor1-pas-ind::thematic::third_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor1-pas-ind::athematic::third_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor1-pas-ind::athematic::third_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor1-pas-inf::thematic": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor1-pas-inf::athematic": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor1-pas-ptc::thematic::nominative.masculine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor1-pas-ptc::thematic::nominative.masculine.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor1-pas-ptc::athematic::nominative.masculine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor1-pas-subj::thematic::third_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor1-pas-subj::thematic::second_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor1-pas-subj::thematic::third_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor2-act-impv::second-aorist::second_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor2-act-impv::second-aorist::second_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor2-act-impv::root-aorist::second_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor2-act-impv::root-aorist::second_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor2-act-ind::second-aorist::first_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor2-act-ind::second-aorist::second_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor2-act-ind::second-aorist::third_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor2-act-ind::second-aorist::first_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor2-act-ind::second-aorist::second_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor2-act-ind::second-aorist::third_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor2-act-ind::root-aorist::third_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor2-act-ind::root-aorist::third_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor2-act-inf::second-aorist": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor2-act-inf::root-aorist": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor2-act-ptc::second-aorist::nominative.masculine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor2-act-ptc::second-aorist::genitive.masculine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor2-act-ptc::second-aorist::accusative.masculine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor2-act-ptc::second-aorist::nominative.masculine.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor2-act-ptc::second-aorist::nominative.feminine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor2-act-ptc::root-aorist::nominative.masculine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor2-act-ptc::root-aorist::genitive.masculine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor2-act-ptc::root-aorist::nominative.feminine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor2-act-subj::second-aorist::first_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor2-act-subj::second-aorist::second_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor2-act-subj::second-aorist::third_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor2-act-subj::second-aorist::first_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor2-act-subj::second-aorist::second_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor2-act-subj::second-aorist::third_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor2-act-subj::root-aorist::first_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor2-act-subj::root-aorist::third_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor2-act-subj::root-aorist::first_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor2-act-subj::root-aorist::second_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor2-mid-impv::second-aorist::second_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor2-mid-ind::second-aorist::first_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor2-mid-ind::second-aorist::third_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor2-mid-ind::second-aorist::third_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor2-mid-inf::second-aorist": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor2-mid-ptc::second-aorist::nominative.masculine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor2-mid-ptc::second-aorist::nominative.masculine.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor2-mid-ptc::second-aorist::genitive.feminine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor2-mid-subj::second-aorist::third_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor2-pas-ind::second-aorist::third_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "aor2-pas-ind::second-aorist::third_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "eimi-fut-ind::εἰμί::third_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "eimi-fut-ind::εἰμί::third_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "eimi-impf-ind::εἰμί::third_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "eimi-impf-ind::εἰμί::third_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "eimi-pres-ind::εἰμί::first_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "eimi-pres-ind::εἰμί::second_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "eimi-pres-ind::εἰμί::third_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "eimi-pres-ind::εἰμί::first_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "eimi-pres-ind::εἰμί::second_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "eimi-pres-ind::εἰμί::third_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "eimi-pres-inf::εἰμί": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "eimi-pres-ptc::εἰμί::nominative.masculine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "eimi-pres-ptc::εἰμί::nominative.masculine.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "eimi-pres-subj::εἰμί::third_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "fut-act-ind::thematic::first_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "fut-act-ind::thematic::second_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "fut-act-ind::thematic::third_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "fut-act-ind::thematic::first_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "fut-act-ind::thematic::second_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "fut-act-ind::thematic::third_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "fut-act-ind::liquid::first_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "fut-act-ind::liquid::third_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "fut-act-ind::liquid::second_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "fut-act-ind::liquid::third_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "fut-act-ind::athematic::first_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "fut-act-ind::athematic::third_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "fut-act-ind::athematic::third_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "fut-mid-ind::thematic::first_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "fut-mid-ind::thematic::second_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "fut-mid-ind::thematic::third_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "fut-mid-ind::thematic::second_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "fut-mid-ind::thematic::third_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "fut-mid-ind::athematic::third_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "fut-mid-ind::athematic::third_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "fut-pas-ind::thematic::third_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "fut-pas-ind::thematic::third_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "fut-pas-ind::second-aorist::third_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "fut-pas-ind::second-aorist::third_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "fut-pas-ind::athematic::third_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "impf-act-ind::thematic::first_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "impf-act-ind::thematic::third_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "impf-act-ind::thematic::third_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "impf-act-ind::contract-άω::third_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "impf-act-ind::contract-άω::third_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "impf-act-ind::contract-έω::first_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "impf-act-ind::contract-έω::third_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "impf-act-ind::contract-έω::third_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "impf-act-ind::athematic::third_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "impf-midpas-ind::thematic::third_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "impf-midpas-ind::thematic::third_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "impf-midpas-ind::contract-έω::third_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "impf-midpas-ind::contract-έω::third_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "impf-midpas-ind::athematic::third_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "perf-act-ind::thematic::first_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "perf-act-ind::thematic::second_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "perf-act-ind::thematic::third_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "perf-act-ind::thematic::first_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "perf-act-ind::thematic::second_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "perf-act-ind::second-perfect::first_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "perf-act-ind::second-perfect::second_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "perf-act-ind::second-perfect::third_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "perf-act-ind::second-perfect::first_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "perf-act-ind::second-perfect::second_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "perf-act-ind::second-perfect::third_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "perf-act-ind::athematic::third_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "perf-act-inf::thematic": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "perf-act-inf::second-perfect": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "perf-act-ptc::thematic::nominative.masculine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "perf-act-ptc::thematic::nominative.masculine.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "perf-act-ptc::athematic::nominative.masculine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "perf-act-ptc::second-perfect::nominative.masculine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "perf-midpas-ind::thematic::first_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "perf-midpas-ind::thematic::third_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "perf-midpas-ind::athematic::third_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "perf-midpas-ptc::thematic::nominative.masculine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "perf-midpas-ptc::thematic::nominative.feminine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "perf-midpas-ptc::thematic::nominative.neuter.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-act-impv::thematic::second_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-act-impv::thematic::third_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-act-impv::thematic::second_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-act-impv::contract-άω::second_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-act-impv::contract-άω::third_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-act-impv::contract-άω::second_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-act-impv::contract-έω::second_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-act-impv::contract-έω::third_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-act-impv::contract-έω::second_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-act-ind::thematic::first_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-act-ind::thematic::second_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-act-ind::thematic::third_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-act-ind::thematic::first_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-act-ind::thematic::second_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-act-ind::thematic::third_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-act-ind::contract-άω::first_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-act-ind::contract-άω::second_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-act-ind::contract-άω::third_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-act-ind::contract-άω::first_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-act-ind::contract-άω::second_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-act-ind::contract-άω::third_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-act-ind::contract-έω::first_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-act-ind::contract-έω::second_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-act-ind::contract-έω::third_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-act-ind::contract-έω::first_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-act-ind::contract-έω::second_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-act-ind::contract-έω::third_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-act-ind::contract-όω::third_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-act-ind::contract-όω::third_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-act-ind::athematic::first_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-act-ind::athematic::third_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-act-inf::thematic": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-act-inf::contract-άω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-act-inf::contract-έω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-act-inf::athematic": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-act-ptc::thematic::nominative.masculine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-act-ptc::thematic::genitive.masculine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-act-ptc::thematic::dative.masculine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-act-ptc::thematic::accusative.masculine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-act-ptc::thematic::nominative.masculine.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-act-ptc::thematic::genitive.masculine.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-act-ptc::thematic::dative.masculine.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-act-ptc::thematic::accusative.masculine.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-act-ptc::thematic::nominative.feminine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-act-ptc::thematic::genitive.feminine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-act-ptc::thematic::accusative.feminine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-act-ptc::thematic::nominative.feminine.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-act-ptc::thematic::nominative.neuter.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-act-ptc::thematic::accusative.neuter.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-act-ptc::thematic::nominative.neuter.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-act-ptc::athematic::nominative.masculine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-act-subj::thematic::first_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-act-subj::thematic::third_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-act-subj::thematic::first_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-act-subj::thematic::second_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-act-subj::thematic::third_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-act-subj::contract-άω::third_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-act-subj::contract-άω::first_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-act-subj::contract-άω::second_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-act-subj::contract-άω::third_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-act-subj::contract-έω::first_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-act-subj::contract-έω::third_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-act-subj::contract-έω::first_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-act-subj::contract-έω::second_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-act-subj::contract-έω::third_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-midpas-impv::thematic::second_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-midpas-impv::thematic::third_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-midpas-impv::thematic::second_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-midpas-impv::contract-άω::third_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-midpas-impv::contract-άω::second_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-midpas-impv::contract-έω::second_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-midpas-impv::contract-έω::second_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-midpas-impv::contract-όω::second_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-midpas-ind::thematic::first_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-midpas-ind::thematic::second_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-midpas-ind::thematic::third_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-midpas-ind::thematic::first_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-midpas-ind::thematic::second_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-midpas-ind::thematic::third_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-midpas-ind::contract-άω::third_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-midpas-ind::contract-άω::second_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-midpas-ind::contract-άω::third_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-midpas-ind::contract-έω::first_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-midpas-ind::contract-έω::third_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-midpas-ind::contract-έω::first_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-midpas-ind::contract-έω::second_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-midpas-ind::contract-έω::third_person.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-midpas-ind::contract-όω::third_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-midpas-ind::athematic::third_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-midpas-inf::thematic": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-midpas-inf::contract-άω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-midpas-inf::contract-έω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-midpas-inf::contract-όω": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-midpas-inf::athematic": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-midpas-ptc::thematic::nominative.masculine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-midpas-ptc::thematic::genitive.masculine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-midpas-ptc::thematic::dative.masculine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-midpas-ptc::thematic::accusative.masculine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-midpas-ptc::thematic::nominative.masculine.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-midpas-ptc::thematic::genitive.masculine.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-midpas-ptc::thematic::dative.masculine.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-midpas-ptc::thematic::accusative.masculine.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-midpas-ptc::thematic::nominative.feminine.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-midpas-ptc::thematic::nominative.neuter.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-midpas-ptc::thematic::accusative.neuter.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-midpas-ptc::thematic::accusative.neuter.plural": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    },
+    "pres-midpas-subj::thematic::third_person.singular": {
+      "status": "learned",
+      "last_reviewed": "2026-09-26"
+    }
+  }
+}

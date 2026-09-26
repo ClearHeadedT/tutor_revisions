@@ -6,7 +6,7 @@ from greek_text import normalize_greek
 
 @cache
 def load_grammar_scaffolding():
-    """Returns the grammar scaffolding: rule/paradigm structure plus the flat slot items"""
+    """Returns the grammar scaffolding: rule/pattern structure plus the flat slot items"""
     with open('data/curriculum_data/grammar_scaffolding.json', 'r') as file:
         data = json.load(file)
     return normalize_keys(data)

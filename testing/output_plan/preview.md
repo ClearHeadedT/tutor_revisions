@@ -2,7 +2,7 @@
 
 No API calls. Each item's user message as generation would send it; the system prompt is the card type's instructions and is the same for every item of a category.
 
-## grammar — `text_recall_grammar_g2e`
+## grammar - `text_recall_grammar_g2e`
 
 ### `article::ὁ::nominative.masculine.singular`
 
@@ -13,96 +13,40 @@ No API calls. Each item's user message as generation would send it; the system p
       "key": "article::ὁ::nominative.masculine.singular",
       "parent": "article::ὁ",
       "rule": "article",
+      "pattern": "ὁ",
       "form": "ὁ",
+      "lexical_form": "ὁ",
       "parsing": "nominative masculine singular",
       "features": {
         "case": "nominative",
         "gender": "masculine",
         "number": "singular"
       },
-      "lexical_form": "ὁ"
+      "gnt_occurrences": 2905,
+      "gnt_forms": [
+        {
+          "form": "ὁ",
+          "lemma": "ὁ",
+          "occurrences": 2905
+        }
+      ]
     },
     "rule": {
       "name": "Definite Article",
       "sequence": 81,
       "pos_lex_category": "noun",
       "morph_rule_description": "Twenty-four forms carrying first and second declension case endings across all three genders. It is the smallest complete display of the case-ending system, and the most frequent word in the corpus.",
-      "paradigms": {
-        "article::ὁ": {
-          "type": "noun",
-          "lexical_form": "ὁ",
-          "source": [
-            {
-              "resource": "GrammarSummaries",
-              "chapter": "Appendix",
-              "header": "Definite Article",
-              "page": null
-            }
-          ],
-          "slots": [
-            "article::ὁ::nominative.masculine.singular",
-            "article::ὁ::genitive.masculine.singular",
-            "article::ὁ::dative.masculine.singular",
-            "article::ὁ::accusative.masculine.singular",
-            "article::ὁ::nominative.masculine.plural",
-            "article::ὁ::genitive.masculine.plural",
-            "article::ὁ::dative.masculine.plural",
-            "article::ὁ::accusative.masculine.plural"
-          ],
-          "gnt_lemma_frequency": 19783
-        },
-        "article::ἡ": {
-          "type": "noun",
-          "lexical_form": "ἡ",
-          "source": [
-            {
-              "resource": "GrammarSummaries",
-              "chapter": "Appendix",
-              "header": "Definite Article",
-              "page": null
-            }
-          ],
-          "slots": [
-            "article::ἡ::nominative.feminine.singular",
-            "article::ἡ::genitive.feminine.singular",
-            "article::ἡ::dative.feminine.singular",
-            "article::ἡ::accusative.feminine.singular",
-            "article::ἡ::nominative.feminine.plural",
-            "article::ἡ::genitive.feminine.plural",
-            "article::ἡ::dative.feminine.plural",
-            "article::ἡ::accusative.feminine.plural"
-          ]
-        },
-        "article::τό": {
-          "type": "noun",
-          "lexical_form": "τό",
-          "source": [
-            {
-              "resource": "GrammarSummaries",
-              "chapter": "Appendix",
-              "header": "Definite Article",
-              "page": null
-            }
-          ],
-          "slots": [
-            "article::τό::nominative.neuter.singular",
-            "article::τό::genitive.neuter.singular",
-            "article::τό::dative.neuter.singular",
-            "article::τό::accusative.neuter.singular",
-            "article::τό::nominative.neuter.plural",
-            "article::τό::genitive.neuter.plural",
-            "article::τό::dative.neuter.plural",
-            "article::τό::accusative.neuter.plural"
-          ]
-        }
-      },
       "difficulty_tier": 1,
-      "teaching_note": "No other word inflects like the article, so drill_lexemes is empty by nature rather than by omission. GrammarSummaries' Eight Noun Rules 2, 3 and 6 are all visible in this one chart: neuter nominative and accusative match, neuter plural ends in alpha, and masculine and neuter are identical in the genitive and dative.",
-      "drill_lexemes": []
+      "teaching_note": "No other word inflects like the article, so drill_lexemes is empty by nature rather than by omission. GrammarSummaries' Eight Noun Rules 2, 3 and 6 are all visible in this one chart: neuter nominative and accusative match, neuter plural ends in alpha, and masculine and neuter are identical in the genitive and dative."
     },
-    "paradigm": {
+    "pattern": {
+      "name": "ὁ",
       "type": "noun",
-      "lexical_form": "ὁ",
+      "charts": [
+        "ὁ",
+        "ἡ",
+        "τό"
+      ],
       "source": [
         {
           "resource": "GrammarSummaries",
@@ -119,1207 +63,789 @@ No API calls. Each item's user message as generation would send it; the system p
         "article::ὁ::nominative.masculine.plural",
         "article::ὁ::genitive.masculine.plural",
         "article::ὁ::dative.masculine.plural",
-        "article::ὁ::accusative.masculine.plural"
-      ],
-      "gnt_lemma_frequency": 19783
+        "article::ὁ::accusative.masculine.plural",
+        "article::ὁ::nominative.feminine.singular",
+        "article::ὁ::genitive.feminine.singular",
+        "article::ὁ::dative.feminine.singular",
+        "article::ὁ::accusative.feminine.singular",
+        "article::ὁ::nominative.feminine.plural",
+        "article::ὁ::genitive.feminine.plural",
+        "article::ὁ::dative.feminine.plural",
+        "article::ὁ::accusative.feminine.plural",
+        "article::ὁ::nominative.neuter.singular",
+        "article::ὁ::genitive.neuter.singular",
+        "article::ὁ::dative.neuter.singular",
+        "article::ὁ::accusative.neuter.singular",
+        "article::ὁ::nominative.neuter.plural",
+        "article::ὁ::genitive.neuter.plural",
+        "article::ὁ::dative.neuter.plural",
+        "article::ὁ::accusative.neuter.plural"
+      ]
     }
   },
   "recent_generations": [],
-  "student": {
-    "level": "beyond_beginner",
-    "concepts_learned": "Not Applicable",
-    "vocabulary_learned": "Not Applicable"
-  },
+  "student": "(the test student's block: level, grammar learned, syntax learned, 500 words)",
   "sentence_plan": {
     "sentence_shape": {
       "shape": "a single main clause",
       "formation": "A single independent clause: nominative subject, finite verb, and an accusative direct object if the verb is transitive.",
       "function": "One unsubordinated assertion. Unmarked order is subject, then predicate, then complement."
     },
-    "also_include": [],
     "setting_options": {
-      "s124": "A young man is made treasurer of a trade guild and the older members doubt him.",
-      "s013": "An old teacher tests his pupils on the letters they copied onto wax tablets."
-    }
-  }
-}
-```
-
-### `article::ἡ::genitive.feminine.singular`
-
-```json
-{
-  "item": {
-    "item": {
-      "key": "article::ἡ::genitive.feminine.singular",
-      "parent": "article::ἡ",
-      "rule": "article",
-      "form": "τῆς",
-      "parsing": "genitive feminine singular",
-      "features": {
-        "case": "genitive",
-        "gender": "feminine",
-        "number": "singular"
-      },
-      "lexical_form": "ἡ"
-    },
-    "rule": {
-      "name": "Definite Article",
-      "sequence": 81,
-      "pos_lex_category": "noun",
-      "morph_rule_description": "Twenty-four forms carrying first and second declension case endings across all three genders. It is the smallest complete display of the case-ending system, and the most frequent word in the corpus.",
-      "paradigms": {
-        "article::ὁ": {
-          "type": "noun",
-          "lexical_form": "ὁ",
-          "source": [
-            {
-              "resource": "GrammarSummaries",
-              "chapter": "Appendix",
-              "header": "Definite Article",
-              "page": null
-            }
-          ],
-          "slots": [
-            "article::ὁ::nominative.masculine.singular",
-            "article::ὁ::genitive.masculine.singular",
-            "article::ὁ::dative.masculine.singular",
-            "article::ὁ::accusative.masculine.singular",
-            "article::ὁ::nominative.masculine.plural",
-            "article::ὁ::genitive.masculine.plural",
-            "article::ὁ::dative.masculine.plural",
-            "article::ὁ::accusative.masculine.plural"
-          ],
-          "gnt_lemma_frequency": 19783
-        },
-        "article::ἡ": {
-          "type": "noun",
-          "lexical_form": "ἡ",
-          "source": [
-            {
-              "resource": "GrammarSummaries",
-              "chapter": "Appendix",
-              "header": "Definite Article",
-              "page": null
-            }
-          ],
-          "slots": [
-            "article::ἡ::nominative.feminine.singular",
-            "article::ἡ::genitive.feminine.singular",
-            "article::ἡ::dative.feminine.singular",
-            "article::ἡ::accusative.feminine.singular",
-            "article::ἡ::nominative.feminine.plural",
-            "article::ἡ::genitive.feminine.plural",
-            "article::ἡ::dative.feminine.plural",
-            "article::ἡ::accusative.feminine.plural"
-          ]
-        },
-        "article::τό": {
-          "type": "noun",
-          "lexical_form": "τό",
-          "source": [
-            {
-              "resource": "GrammarSummaries",
-              "chapter": "Appendix",
-              "header": "Definite Article",
-              "page": null
-            }
-          ],
-          "slots": [
-            "article::τό::nominative.neuter.singular",
-            "article::τό::genitive.neuter.singular",
-            "article::τό::dative.neuter.singular",
-            "article::τό::accusative.neuter.singular",
-            "article::τό::nominative.neuter.plural",
-            "article::τό::genitive.neuter.plural",
-            "article::τό::dative.neuter.plural",
-            "article::τό::accusative.neuter.plural"
-          ]
-        }
-      },
-      "difficulty_tier": 1,
-      "teaching_note": "No other word inflects like the article, so drill_lexemes is empty by nature rather than by omission. GrammarSummaries' Eight Noun Rules 2, 3 and 6 are all visible in this one chart: neuter nominative and accusative match, neuter plural ends in alpha, and masculine and neuter are identical in the genitive and dative.",
-      "drill_lexemes": []
-    },
-    "paradigm": {
-      "type": "noun",
-      "lexical_form": "ἡ",
-      "source": [
-        {
-          "resource": "GrammarSummaries",
-          "chapter": "Appendix",
-          "header": "Definite Article",
-          "page": null
-        }
-      ],
-      "slots": [
-        "article::ἡ::nominative.feminine.singular",
-        "article::ἡ::genitive.feminine.singular",
-        "article::ἡ::dative.feminine.singular",
-        "article::ἡ::accusative.feminine.singular",
-        "article::ἡ::nominative.feminine.plural",
-        "article::ἡ::genitive.feminine.plural",
-        "article::ἡ::dative.feminine.plural",
-        "article::ἡ::accusative.feminine.plural"
-      ]
-    }
-  },
-  "recent_generations": [],
-  "student": {
-    "level": "beyond_beginner",
-    "concepts_learned": "Not Applicable",
-    "vocabulary_learned": "Not Applicable"
-  },
-  "sentence_plan": {
-    "sentence_shape": {
-      "shape": "two independent clauses joined by a coordinating conjunction",
-      "formation": "A coordinating conjunction between two independent clauses. Connective: καί, δέ. Contrastive: ἀλλά, δέ, πλήν. Correlative: μέν … δέ, καί … καί. Inferential: οὖν, ἄρα, διό. Explanatory: γάρ. Disjunctive: ἤ.",
-      "function": "Carries the movement of thought from one clause to the next by naming the logical relation between them. Both clauses stay independent.",
-      "note": "γάρ, δέ, οὖν and μέν are postpositive and cannot stand first in their clause. See the hard constraints under WORD ORDER.",
-      "syntactic_category": "Connective (continuative, coordinate) - a syntactic usage, under Conjunctions. Syntactic explanation: and, also (if emphatic [adjunctive]); (connects an additional element to a discussion); καί and δέ."
-    },
-    "also_include": [],
-    "setting_options": {
-      "s047": "Two old friends meet after years apart at the city baths.",
-      "s112": "A servant carries a lamp ahead of his master along a dark street."
-    }
-  }
-}
-```
-
-### `article::τό::dative.neuter.plural`
-
-```json
-{
-  "item": {
-    "item": {
-      "key": "article::τό::dative.neuter.plural",
-      "parent": "article::τό",
-      "rule": "article",
-      "form": "τοῖς",
-      "parsing": "dative neuter plural",
-      "features": {
-        "case": "dative",
-        "gender": "neuter",
-        "number": "plural"
-      },
-      "lexical_form": "τό"
-    },
-    "rule": {
-      "name": "Definite Article",
-      "sequence": 81,
-      "pos_lex_category": "noun",
-      "morph_rule_description": "Twenty-four forms carrying first and second declension case endings across all three genders. It is the smallest complete display of the case-ending system, and the most frequent word in the corpus.",
-      "paradigms": {
-        "article::ὁ": {
-          "type": "noun",
-          "lexical_form": "ὁ",
-          "source": [
-            {
-              "resource": "GrammarSummaries",
-              "chapter": "Appendix",
-              "header": "Definite Article",
-              "page": null
-            }
-          ],
-          "slots": [
-            "article::ὁ::nominative.masculine.singular",
-            "article::ὁ::genitive.masculine.singular",
-            "article::ὁ::dative.masculine.singular",
-            "article::ὁ::accusative.masculine.singular",
-            "article::ὁ::nominative.masculine.plural",
-            "article::ὁ::genitive.masculine.plural",
-            "article::ὁ::dative.masculine.plural",
-            "article::ὁ::accusative.masculine.plural"
-          ],
-          "gnt_lemma_frequency": 19783
-        },
-        "article::ἡ": {
-          "type": "noun",
-          "lexical_form": "ἡ",
-          "source": [
-            {
-              "resource": "GrammarSummaries",
-              "chapter": "Appendix",
-              "header": "Definite Article",
-              "page": null
-            }
-          ],
-          "slots": [
-            "article::ἡ::nominative.feminine.singular",
-            "article::ἡ::genitive.feminine.singular",
-            "article::ἡ::dative.feminine.singular",
-            "article::ἡ::accusative.feminine.singular",
-            "article::ἡ::nominative.feminine.plural",
-            "article::ἡ::genitive.feminine.plural",
-            "article::ἡ::dative.feminine.plural",
-            "article::ἡ::accusative.feminine.plural"
-          ]
-        },
-        "article::τό": {
-          "type": "noun",
-          "lexical_form": "τό",
-          "source": [
-            {
-              "resource": "GrammarSummaries",
-              "chapter": "Appendix",
-              "header": "Definite Article",
-              "page": null
-            }
-          ],
-          "slots": [
-            "article::τό::nominative.neuter.singular",
-            "article::τό::genitive.neuter.singular",
-            "article::τό::dative.neuter.singular",
-            "article::τό::accusative.neuter.singular",
-            "article::τό::nominative.neuter.plural",
-            "article::τό::genitive.neuter.plural",
-            "article::τό::dative.neuter.plural",
-            "article::τό::accusative.neuter.plural"
-          ]
-        }
-      },
-      "difficulty_tier": 1,
-      "teaching_note": "No other word inflects like the article, so drill_lexemes is empty by nature rather than by omission. GrammarSummaries' Eight Noun Rules 2, 3 and 6 are all visible in this one chart: neuter nominative and accusative match, neuter plural ends in alpha, and masculine and neuter are identical in the genitive and dative.",
-      "drill_lexemes": []
-    },
-    "paradigm": {
-      "type": "noun",
-      "lexical_form": "τό",
-      "source": [
-        {
-          "resource": "GrammarSummaries",
-          "chapter": "Appendix",
-          "header": "Definite Article",
-          "page": null
-        }
-      ],
-      "slots": [
-        "article::τό::nominative.neuter.singular",
-        "article::τό::genitive.neuter.singular",
-        "article::τό::dative.neuter.singular",
-        "article::τό::accusative.neuter.singular",
-        "article::τό::nominative.neuter.plural",
-        "article::τό::genitive.neuter.plural",
-        "article::τό::dative.neuter.plural",
-        "article::τό::accusative.neuter.plural"
-      ]
-    }
-  },
-  "recent_generations": [],
-  "student": {
-    "level": "beyond_beginner",
-    "concepts_learned": "Not Applicable",
-    "vocabulary_learned": "Not Applicable"
-  },
-  "sentence_plan": {
-    "sentence_shape": {
-      "shape": "two independent clauses joined by a coordinating conjunction",
-      "formation": "A coordinating conjunction between two independent clauses. Connective: καί, δέ. Contrastive: ἀλλά, δέ, πλήν. Correlative: μέν … δέ, καί … καί. Inferential: οὖν, ἄρα, διό. Explanatory: γάρ. Disjunctive: ἤ.",
-      "function": "Carries the movement of thought from one clause to the next by naming the logical relation between them. Both clauses stay independent.",
-      "note": "γάρ, δέ, οὖν and μέν are postpositive and cannot stand first in their clause. See the hard constraints under WORD ORDER.",
-      "syntactic_category": "Connective (continuative, coordinate) - a syntactic usage, under Conjunctions. Syntactic explanation: and, also (if emphatic [adjunctive]); (connects an additional element to a discussion); καί and δέ."
-    },
-    "also_include": [],
-    "setting_options": {
-      "s067": "A traveller's sandal strap breaks on a mountain road far from the next town.",
-      "s154": "A pair of oxen cannot pull the cart out of the mud."
-    }
-  }
-}
-```
-
-### `article::ἡ::accusative.feminine.plural`
-
-```json
-{
-  "item": {
-    "item": {
-      "key": "article::ἡ::accusative.feminine.plural",
-      "parent": "article::ἡ",
-      "rule": "article",
-      "form": "τάς",
-      "parsing": "accusative feminine plural",
-      "features": {
-        "case": "accusative",
-        "gender": "feminine",
-        "number": "plural"
-      },
-      "lexical_form": "ἡ"
-    },
-    "rule": {
-      "name": "Definite Article",
-      "sequence": 81,
-      "pos_lex_category": "noun",
-      "morph_rule_description": "Twenty-four forms carrying first and second declension case endings across all three genders. It is the smallest complete display of the case-ending system, and the most frequent word in the corpus.",
-      "paradigms": {
-        "article::ὁ": {
-          "type": "noun",
-          "lexical_form": "ὁ",
-          "source": [
-            {
-              "resource": "GrammarSummaries",
-              "chapter": "Appendix",
-              "header": "Definite Article",
-              "page": null
-            }
-          ],
-          "slots": [
-            "article::ὁ::nominative.masculine.singular",
-            "article::ὁ::genitive.masculine.singular",
-            "article::ὁ::dative.masculine.singular",
-            "article::ὁ::accusative.masculine.singular",
-            "article::ὁ::nominative.masculine.plural",
-            "article::ὁ::genitive.masculine.plural",
-            "article::ὁ::dative.masculine.plural",
-            "article::ὁ::accusative.masculine.plural"
-          ],
-          "gnt_lemma_frequency": 19783
-        },
-        "article::ἡ": {
-          "type": "noun",
-          "lexical_form": "ἡ",
-          "source": [
-            {
-              "resource": "GrammarSummaries",
-              "chapter": "Appendix",
-              "header": "Definite Article",
-              "page": null
-            }
-          ],
-          "slots": [
-            "article::ἡ::nominative.feminine.singular",
-            "article::ἡ::genitive.feminine.singular",
-            "article::ἡ::dative.feminine.singular",
-            "article::ἡ::accusative.feminine.singular",
-            "article::ἡ::nominative.feminine.plural",
-            "article::ἡ::genitive.feminine.plural",
-            "article::ἡ::dative.feminine.plural",
-            "article::ἡ::accusative.feminine.plural"
-          ]
-        },
-        "article::τό": {
-          "type": "noun",
-          "lexical_form": "τό",
-          "source": [
-            {
-              "resource": "GrammarSummaries",
-              "chapter": "Appendix",
-              "header": "Definite Article",
-              "page": null
-            }
-          ],
-          "slots": [
-            "article::τό::nominative.neuter.singular",
-            "article::τό::genitive.neuter.singular",
-            "article::τό::dative.neuter.singular",
-            "article::τό::accusative.neuter.singular",
-            "article::τό::nominative.neuter.plural",
-            "article::τό::genitive.neuter.plural",
-            "article::τό::dative.neuter.plural",
-            "article::τό::accusative.neuter.plural"
-          ]
-        }
-      },
-      "difficulty_tier": 1,
-      "teaching_note": "No other word inflects like the article, so drill_lexemes is empty by nature rather than by omission. GrammarSummaries' Eight Noun Rules 2, 3 and 6 are all visible in this one chart: neuter nominative and accusative match, neuter plural ends in alpha, and masculine and neuter are identical in the genitive and dative.",
-      "drill_lexemes": []
-    },
-    "paradigm": {
-      "type": "noun",
-      "lexical_form": "ἡ",
-      "source": [
-        {
-          "resource": "GrammarSummaries",
-          "chapter": "Appendix",
-          "header": "Definite Article",
-          "page": null
-        }
-      ],
-      "slots": [
-        "article::ἡ::nominative.feminine.singular",
-        "article::ἡ::genitive.feminine.singular",
-        "article::ἡ::dative.feminine.singular",
-        "article::ἡ::accusative.feminine.singular",
-        "article::ἡ::nominative.feminine.plural",
-        "article::ἡ::genitive.feminine.plural",
-        "article::ἡ::dative.feminine.plural",
-        "article::ἡ::accusative.feminine.plural"
-      ]
-    }
-  },
-  "recent_generations": [],
-  "student": {
-    "level": "beyond_beginner",
-    "concepts_learned": "Not Applicable",
-    "vocabulary_learned": "Not Applicable"
-  },
-  "sentence_plan": {
-    "sentence_shape": {
-      "shape": "a main clause with an adverbial dependent clause: causal, adverbial participle",
-      "formation": "Anarthrous participle matching its subject in case, number and gender. It usually sits ahead of the verb it modifies.",
-      "function": "Supplies the ground or reason for the finite verb - it answers 'Why?'. Render with 'because'.",
-      "syntactic_category": "Cause - a syntactic usage, under Participle > Verbal Participles > Dependent Verbal Participles > Adverbial (or Circumstantial). Syntactic explanation: because (answers the question, Why?); indicates the cause or reason or ground of the action of the finite verb; usually precedes its verb.",
-      "position": "after the main clause by default; before it when you mean to give it emphasis",
-      "paradigm": {
-        "name": "First Aorist Active Participle",
-        "forms": {
-          "λύσας (λύω, thematic)": {
-            "aorist active participle nominative masculine singular": "λύσας",
-            "aorist active participle genitive masculine singular": "λύσαντος",
-            "aorist active participle dative masculine singular": "λύσαντι",
-            "aorist active participle accusative masculine singular": "λύσαντα",
-            "aorist active participle nominative masculine plural": "λύσαντες",
-            "aorist active participle genitive masculine plural": "λυσάντων",
-            "aorist active participle dative masculine plural": "λύσασι(ν)",
-            "aorist active participle accusative masculine plural": "λύσαντας"
-          },
-          "λύσασα (λύω, thematic)": {
-            "aorist active participle nominative feminine singular": "λύσασα",
-            "aorist active participle genitive feminine singular": "λυσάσης",
-            "aorist active participle dative feminine singular": "λυσάσῃ",
-            "aorist active participle accusative feminine singular": "λύσασαν",
-            "aorist active participle nominative feminine plural": "λύσασαι",
-            "aorist active participle genitive feminine plural": "λυσασῶν",
-            "aorist active participle dative feminine plural": "λυσάσαις",
-            "aorist active participle accusative feminine plural": "λυσάσας"
-          },
-          "λῦσαν (λύω, thematic)": {
-            "aorist active participle nominative neuter singular": "λῦσαν",
-            "aorist active participle genitive neuter singular": "λύσαντος",
-            "aorist active participle dative neuter singular": "λύσαντι",
-            "aorist active participle accusative neuter singular": "λῦσαν",
-            "aorist active participle nominative neuter plural": "λύσαντα",
-            "aorist active participle genitive neuter plural": "λυσάντων",
-            "aorist active participle dative neuter plural": "λύσασι(ν)",
-            "aorist active participle accusative neuter plural": "λύσαντα"
-          },
-          "στήσας (ἵστημι, first aorist)": {
-            "aorist active participle nominative masculine singular": "στήσας",
-            "aorist active participle genitive masculine singular": "στήσαντος"
-          },
-          "στήσασα (ἵστημι, first aorist)": {
-            "aorist active participle nominative feminine singular": "στήσασα",
-            "aorist active participle genitive feminine singular": "στησάσης"
-          },
-          "στήσαν (ἵστημι, first aorist)": {
-            "aorist active participle nominative neuter singular": "στήσαν",
-            "aorist active participle genitive neuter singular": "στήσαντος"
-          },
-          "θήκας (τίθημι, κ-aorist)": {
-            "aorist active participle nominative masculine singular": "θήκας",
-            "aorist active participle genitive masculine singular": "θήκαντος"
-          },
-          "θήκασα (τίθημι, κ-aorist)": {
-            "aorist active participle nominative feminine singular": "θήκασα",
-            "aorist active participle genitive feminine singular": "θηκάσης"
-          },
-          "θήκαν (τίθημι, κ-aorist)": {
-            "aorist active participle nominative neuter singular": "θήκαν",
-            "aorist active participle genitive neuter singular": "θήκαντος"
-          }
-        }
-      }
-    },
-    "also_include": [],
-    "setting_options": {
-      "s114": "A tanner is shunned by his neighbours for the smell of his trade.",
-      "s019": "A girl hides her brother's broken toy from their father."
-    }
-  }
-}
-```
-
-### `decl2::λόγος::nominative.singular`
-
-```json
-{
-  "item": {
-    "item": {
-      "key": "decl2::λόγος::nominative.singular",
-      "parent": "decl2::λόγος",
-      "rule": "decl2",
-      "form": "λόγος",
-      "parsing": "nominative singular",
-      "features": {
-        "case": "nominative",
-        "number": "singular"
-      },
-      "lexical_form": "λόγος"
-    },
-    "rule": {
-      "name": "Second Declension Nouns",
-      "sequence": 9,
-      "pos_lex_category": "noun",
-      "morph_rule_description": "Stems ending in omicron. Masculine nouns take -ος in the nominative singular, neuter nouns -ον, and the two differ only in the nominative and accusative.",
-      "paradigms": {
-        "decl2::λόγος": {
-          "type": "noun",
-          "lexical_form": "λόγος",
-          "source": [
-            {
-              "resource": "BBGG",
-              "chapter": "Appendix",
-              "header": "Appendix",
-              "page": null
-            }
-          ],
-          "slots": [
-            "decl2::λόγος::nominative.singular",
-            "decl2::λόγος::genitive.singular",
-            "decl2::λόγος::dative.singular",
-            "decl2::λόγος::accusative.singular",
-            "decl2::λόγος::vocative.singular",
-            "decl2::λόγος::nominative.plural",
-            "decl2::λόγος::genitive.plural",
-            "decl2::λόγος::dative.plural",
-            "decl2::λόγος::accusative.plural"
-          ],
-          "gnt_lemma_frequency": 331
-        },
-        "decl2::ὁδός": {
-          "type": "noun",
-          "lexical_form": "ὁδός",
-          "source": [
-            {
-              "resource": "BBGG",
-              "chapter": "Appendix",
-              "header": "Appendix",
-              "page": null
-            }
-          ],
-          "slots": [
-            "decl2::ὁδός::nominative.singular",
-            "decl2::ὁδός::genitive.singular",
-            "decl2::ὁδός::dative.singular",
-            "decl2::ὁδός::accusative.singular",
-            "decl2::ὁδός::vocative.singular",
-            "decl2::ὁδός::nominative.plural",
-            "decl2::ὁδός::genitive.plural",
-            "decl2::ὁδός::dative.plural",
-            "decl2::ὁδός::accusative.plural"
-          ],
-          "gnt_lemma_frequency": 101
-        },
-        "decl2::ἔργον": {
-          "type": "noun",
-          "lexical_form": "ἔργον",
-          "source": [
-            {
-              "resource": "BBGG",
-              "chapter": "Appendix",
-              "header": "Appendix",
-              "page": null
-            }
-          ],
-          "slots": [
-            "decl2::ἔργον::nominative.singular",
-            "decl2::ἔργον::genitive.singular",
-            "decl2::ἔργον::dative.singular",
-            "decl2::ἔργον::accusative.singular",
-            "decl2::ἔργον::vocative.singular",
-            "decl2::ἔργον::nominative.plural",
-            "decl2::ἔργον::genitive.plural",
-            "decl2::ἔργον::dative.plural",
-            "decl2::ἔργον::accusative.plural"
-          ],
-          "gnt_lemma_frequency": 169
-        },
-        "decl2::χειμάρρους": {
-          "type": "noun",
-          "lexical_form": "χειμάρρους",
-          "source": [
-            {
-              "resource": "BBGG",
-              "chapter": "Appendix",
-              "header": "Appendix",
-              "page": null
-            }
-          ],
-          "slots": [
-            "decl2::χειμάρρους::nominative.singular",
-            "decl2::χειμάρρους::genitive.singular",
-            "decl2::χειμάρρους::dative.singular",
-            "decl2::χειμάρρους::accusative.singular",
-            "decl2::χειμάρρους::vocative.singular",
-            "decl2::χειμάρρους::nominative.plural",
-            "decl2::χειμάρρους::genitive.plural",
-            "decl2::χειμάρρους::dative.plural",
-            "decl2::χειμάρρους::accusative.plural"
-          ]
-        },
-        "decl2::ὀστοῦν": {
-          "type": "noun",
-          "lexical_form": "ὀστοῦν",
-          "source": [
-            {
-              "resource": "BBGG",
-              "chapter": "Appendix",
-              "header": "Appendix",
-              "page": null
-            }
-          ],
-          "slots": [
-            "decl2::ὀστοῦν::nominative.singular",
-            "decl2::ὀστοῦν::genitive.singular",
-            "decl2::ὀστοῦν::dative.singular",
-            "decl2::ὀστοῦν::accusative.singular",
-            "decl2::ὀστοῦν::vocative.singular",
-            "decl2::ὀστοῦν::nominative.plural",
-            "decl2::ὀστοῦν::genitive.plural",
-            "decl2::ὀστοῦν::dative.plural",
-            "decl2::ὀστοῦν::accusative.plural"
-          ]
-        },
-        "decl2::κῶς": {
-          "type": "noun",
-          "lexical_form": "κῶς",
-          "source": [
-            {
-              "resource": "BBGG",
-              "chapter": "Appendix",
-              "header": "Appendix",
-              "page": null
-            }
-          ],
-          "slots": [
-            "decl2::κῶς::nominative.singular",
-            "decl2::κῶς::genitive.singular",
-            "decl2::κῶς::dative.singular",
-            "decl2::κῶς::vocative.singular"
-          ]
-        }
-      },
-      "difficulty_tier": 1,
-      "teaching_note": "Taught before the first declension because its endings are the ones the article and the 2-1-2 adjective reuse. Both drill lexemes were confirmed against the corpus to inflect exactly like λόγος.",
-      "drill_lexemes": [
-        "θεός",
-        "ἄνθρωπος"
-      ]
-    },
-    "paradigm": {
-      "type": "noun",
-      "lexical_form": "λόγος",
-      "source": [
-        {
-          "resource": "BBGG",
-          "chapter": "Appendix",
-          "header": "Appendix",
-          "page": null
-        }
-      ],
-      "slots": [
-        "decl2::λόγος::nominative.singular",
-        "decl2::λόγος::genitive.singular",
-        "decl2::λόγος::dative.singular",
-        "decl2::λόγος::accusative.singular",
-        "decl2::λόγος::vocative.singular",
-        "decl2::λόγος::nominative.plural",
-        "decl2::λόγος::genitive.plural",
-        "decl2::λόγος::dative.plural",
-        "decl2::λόγος::accusative.plural"
-      ],
-      "gnt_lemma_frequency": 331
-    }
-  },
-  "recent_generations": [],
-  "student": {
-    "level": "beyond_beginner",
-    "concepts_learned": "Not Applicable",
-    "vocabulary_learned": "Not Applicable"
-  },
-  "sentence_plan": {
-    "sentence_shape": {
-      "shape": "a main clause with an adverbial dependent clause: comparative, kathos hos indicative",
-      "formation": "καθώς plus the indicative. καθάπερ, οὕτως, ὡς and ὡσαύτως head the same kind of clause, as does the relative adjective ὅσος.",
-      "function": "Sets one idea alongside another as an analogy, or says how something was done. Render with 'as', 'just as', 'in the same way' or 'thus'.",
-      "syntactic_category": "Comparative (manner) - a syntactic usage, under Conjunctions > Adverbial Functions. Syntactic explanation: as, just as, in the same way, thus, or in this manner (suggests an analogy or comparison between the connected ideas or tells how something is to be done); καθάπερ, καθώς, οὕτως, ὡς, ὡσαύτως, ὡσεί, and ὥσπερ.",
-      "position": "after the main clause by default; before it when you mean to give it emphasis"
-    },
-    "also_include": [],
-    "setting_options": {
-      "s156": "A household hurries to be ready before the guests arrive for a betrothal feast.",
-      "s172": "A wine jar in the cellar is found empty and no one admits to it."
-    }
-  }
-}
-```
-
-### `decl2::λόγος::dative.singular`
-
-```json
-{
-  "item": {
-    "item": {
-      "key": "decl2::λόγος::dative.singular",
-      "parent": "decl2::λόγος",
-      "rule": "decl2",
-      "form": "λόγῳ",
-      "parsing": "dative singular",
-      "features": {
-        "case": "dative",
-        "number": "singular"
-      },
-      "lexical_form": "λόγος"
-    },
-    "rule": {
-      "name": "Second Declension Nouns",
-      "sequence": 9,
-      "pos_lex_category": "noun",
-      "morph_rule_description": "Stems ending in omicron. Masculine nouns take -ος in the nominative singular, neuter nouns -ον, and the two differ only in the nominative and accusative.",
-      "paradigms": {
-        "decl2::λόγος": {
-          "type": "noun",
-          "lexical_form": "λόγος",
-          "source": [
-            {
-              "resource": "BBGG",
-              "chapter": "Appendix",
-              "header": "Appendix",
-              "page": null
-            }
-          ],
-          "slots": [
-            "decl2::λόγος::nominative.singular",
-            "decl2::λόγος::genitive.singular",
-            "decl2::λόγος::dative.singular",
-            "decl2::λόγος::accusative.singular",
-            "decl2::λόγος::vocative.singular",
-            "decl2::λόγος::nominative.plural",
-            "decl2::λόγος::genitive.plural",
-            "decl2::λόγος::dative.plural",
-            "decl2::λόγος::accusative.plural"
-          ],
-          "gnt_lemma_frequency": 331
-        },
-        "decl2::ὁδός": {
-          "type": "noun",
-          "lexical_form": "ὁδός",
-          "source": [
-            {
-              "resource": "BBGG",
-              "chapter": "Appendix",
-              "header": "Appendix",
-              "page": null
-            }
-          ],
-          "slots": [
-            "decl2::ὁδός::nominative.singular",
-            "decl2::ὁδός::genitive.singular",
-            "decl2::ὁδός::dative.singular",
-            "decl2::ὁδός::accusative.singular",
-            "decl2::ὁδός::vocative.singular",
-            "decl2::ὁδός::nominative.plural",
-            "decl2::ὁδός::genitive.plural",
-            "decl2::ὁδός::dative.plural",
-            "decl2::ὁδός::accusative.plural"
-          ],
-          "gnt_lemma_frequency": 101
-        },
-        "decl2::ἔργον": {
-          "type": "noun",
-          "lexical_form": "ἔργον",
-          "source": [
-            {
-              "resource": "BBGG",
-              "chapter": "Appendix",
-              "header": "Appendix",
-              "page": null
-            }
-          ],
-          "slots": [
-            "decl2::ἔργον::nominative.singular",
-            "decl2::ἔργον::genitive.singular",
-            "decl2::ἔργον::dative.singular",
-            "decl2::ἔργον::accusative.singular",
-            "decl2::ἔργον::vocative.singular",
-            "decl2::ἔργον::nominative.plural",
-            "decl2::ἔργον::genitive.plural",
-            "decl2::ἔργον::dative.plural",
-            "decl2::ἔργον::accusative.plural"
-          ],
-          "gnt_lemma_frequency": 169
-        },
-        "decl2::χειμάρρους": {
-          "type": "noun",
-          "lexical_form": "χειμάρρους",
-          "source": [
-            {
-              "resource": "BBGG",
-              "chapter": "Appendix",
-              "header": "Appendix",
-              "page": null
-            }
-          ],
-          "slots": [
-            "decl2::χειμάρρους::nominative.singular",
-            "decl2::χειμάρρους::genitive.singular",
-            "decl2::χειμάρρους::dative.singular",
-            "decl2::χειμάρρους::accusative.singular",
-            "decl2::χειμάρρους::vocative.singular",
-            "decl2::χειμάρρους::nominative.plural",
-            "decl2::χειμάρρους::genitive.plural",
-            "decl2::χειμάρρους::dative.plural",
-            "decl2::χειμάρρους::accusative.plural"
-          ]
-        },
-        "decl2::ὀστοῦν": {
-          "type": "noun",
-          "lexical_form": "ὀστοῦν",
-          "source": [
-            {
-              "resource": "BBGG",
-              "chapter": "Appendix",
-              "header": "Appendix",
-              "page": null
-            }
-          ],
-          "slots": [
-            "decl2::ὀστοῦν::nominative.singular",
-            "decl2::ὀστοῦν::genitive.singular",
-            "decl2::ὀστοῦν::dative.singular",
-            "decl2::ὀστοῦν::accusative.singular",
-            "decl2::ὀστοῦν::vocative.singular",
-            "decl2::ὀστοῦν::nominative.plural",
-            "decl2::ὀστοῦν::genitive.plural",
-            "decl2::ὀστοῦν::dative.plural",
-            "decl2::ὀστοῦν::accusative.plural"
-          ]
-        },
-        "decl2::κῶς": {
-          "type": "noun",
-          "lexical_form": "κῶς",
-          "source": [
-            {
-              "resource": "BBGG",
-              "chapter": "Appendix",
-              "header": "Appendix",
-              "page": null
-            }
-          ],
-          "slots": [
-            "decl2::κῶς::nominative.singular",
-            "decl2::κῶς::genitive.singular",
-            "decl2::κῶς::dative.singular",
-            "decl2::κῶς::vocative.singular"
-          ]
-        }
-      },
-      "difficulty_tier": 1,
-      "teaching_note": "Taught before the first declension because its endings are the ones the article and the 2-1-2 adjective reuse. Both drill lexemes were confirmed against the corpus to inflect exactly like λόγος.",
-      "drill_lexemes": [
-        "θεός",
-        "ἄνθρωπος"
-      ]
-    },
-    "paradigm": {
-      "type": "noun",
-      "lexical_form": "λόγος",
-      "source": [
-        {
-          "resource": "BBGG",
-          "chapter": "Appendix",
-          "header": "Appendix",
-          "page": null
-        }
-      ],
-      "slots": [
-        "decl2::λόγος::nominative.singular",
-        "decl2::λόγος::genitive.singular",
-        "decl2::λόγος::dative.singular",
-        "decl2::λόγος::accusative.singular",
-        "decl2::λόγος::vocative.singular",
-        "decl2::λόγος::nominative.plural",
-        "decl2::λόγος::genitive.plural",
-        "decl2::λόγος::dative.plural",
-        "decl2::λόγος::accusative.plural"
-      ],
-      "gnt_lemma_frequency": 331
-    }
-  },
-  "recent_generations": [],
-  "student": {
-    "level": "beyond_beginner",
-    "concepts_learned": "Not Applicable",
-    "vocabulary_learned": "Not Applicable"
-  },
-  "sentence_plan": {
-    "sentence_shape": {
-      "shape": "a main clause with a relative clause: substantival, subjunctive",
-      "formation": "An indefinite relative clause: ὅστις with ἄν or ἐάν, or ὅς (δʼ) ἄν, plus the subjunctive.",
-      "function": "Points to an unspecified person, group, event or action - 'whoever', 'whatever'. There is no antecedent. Translate as though it were indicative: the uncertainty is about who, not about whether.",
-      "syntactic_category": "Subjunctive in Indefinite Relative Clause - a syntactic usage, under Moods > Subjunctive > In Dependent (Subordinate) Clauses. Syntactic explanation: after ὅστις (ἄν/ἐάν) or ὅς (δʼ) ἄν; construction indicates a generic or indefinite subject; translate like an indicative (since the contingency is of the person, not the action).",
-      "position": "after the main clause by default; before it when you mean to give it emphasis",
-      "paradigm": {
-        "name": "Relative Pronoun",
-        "forms": {
-          "ὅς": {
-            "nominative masculine singular": "ὅς",
-            "genitive masculine singular": "οὗ",
-            "dative masculine singular": "ᾧ",
-            "accusative masculine singular": "ὅν",
-            "nominative masculine plural": "οἵ",
-            "genitive masculine plural": "ὧν",
-            "dative masculine plural": "οἷς",
-            "accusative masculine plural": "οὕς"
-          },
-          "ἥ": {
-            "nominative feminine singular": "ἥ",
-            "genitive feminine singular": "ἧς",
-            "dative feminine singular": "ῇ",
-            "accusative feminine singular": "ἥν",
-            "nominative feminine plural": "αἵ",
-            "genitive feminine plural": "ὧν",
-            "dative feminine plural": "αἷς",
-            "accusative feminine plural": "ἅς"
-          },
-          "ὅ": {
-            "nominative neuter singular": "ὅ",
-            "genitive neuter singular": "οὗ",
-            "dative neuter singular": "ᾧ",
-            "accusative neuter singular": "ὅ",
-            "nominative neuter plural": "ἅ",
-            "genitive neuter plural": "ὧν",
-            "dative neuter plural": "οἷς",
-            "accusative neuter plural": "ἅ"
-          }
-        }
-      }
-    },
-    "also_include": [],
-    "setting_options": {
-      "s113": "A cook is punished for burning a feast meant for important guests.",
-      "s112": "A servant carries a lamp ahead of his master along a dark street."
-    }
-  }
-}
-```
-
-### `decl2::λόγος::accusative.plural`
-
-```json
-{
-  "item": {
-    "item": {
-      "key": "decl2::λόγος::accusative.plural",
-      "parent": "decl2::λόγος",
-      "rule": "decl2",
-      "form": "λόγους",
-      "parsing": "accusative plural",
-      "features": {
-        "case": "accusative",
-        "number": "plural"
-      },
-      "lexical_form": "λόγος"
-    },
-    "rule": {
-      "name": "Second Declension Nouns",
-      "sequence": 9,
-      "pos_lex_category": "noun",
-      "morph_rule_description": "Stems ending in omicron. Masculine nouns take -ος in the nominative singular, neuter nouns -ον, and the two differ only in the nominative and accusative.",
-      "paradigms": {
-        "decl2::λόγος": {
-          "type": "noun",
-          "lexical_form": "λόγος",
-          "source": [
-            {
-              "resource": "BBGG",
-              "chapter": "Appendix",
-              "header": "Appendix",
-              "page": null
-            }
-          ],
-          "slots": [
-            "decl2::λόγος::nominative.singular",
-            "decl2::λόγος::genitive.singular",
-            "decl2::λόγος::dative.singular",
-            "decl2::λόγος::accusative.singular",
-            "decl2::λόγος::vocative.singular",
-            "decl2::λόγος::nominative.plural",
-            "decl2::λόγος::genitive.plural",
-            "decl2::λόγος::dative.plural",
-            "decl2::λόγος::accusative.plural"
-          ],
-          "gnt_lemma_frequency": 331
-        },
-        "decl2::ὁδός": {
-          "type": "noun",
-          "lexical_form": "ὁδός",
-          "source": [
-            {
-              "resource": "BBGG",
-              "chapter": "Appendix",
-              "header": "Appendix",
-              "page": null
-            }
-          ],
-          "slots": [
-            "decl2::ὁδός::nominative.singular",
-            "decl2::ὁδός::genitive.singular",
-            "decl2::ὁδός::dative.singular",
-            "decl2::ὁδός::accusative.singular",
-            "decl2::ὁδός::vocative.singular",
-            "decl2::ὁδός::nominative.plural",
-            "decl2::ὁδός::genitive.plural",
-            "decl2::ὁδός::dative.plural",
-            "decl2::ὁδός::accusative.plural"
-          ],
-          "gnt_lemma_frequency": 101
-        },
-        "decl2::ἔργον": {
-          "type": "noun",
-          "lexical_form": "ἔργον",
-          "source": [
-            {
-              "resource": "BBGG",
-              "chapter": "Appendix",
-              "header": "Appendix",
-              "page": null
-            }
-          ],
-          "slots": [
-            "decl2::ἔργον::nominative.singular",
-            "decl2::ἔργον::genitive.singular",
-            "decl2::ἔργον::dative.singular",
-            "decl2::ἔργον::accusative.singular",
-            "decl2::ἔργον::vocative.singular",
-            "decl2::ἔργον::nominative.plural",
-            "decl2::ἔργον::genitive.plural",
-            "decl2::ἔργον::dative.plural",
-            "decl2::ἔργον::accusative.plural"
-          ],
-          "gnt_lemma_frequency": 169
-        },
-        "decl2::χειμάρρους": {
-          "type": "noun",
-          "lexical_form": "χειμάρρους",
-          "source": [
-            {
-              "resource": "BBGG",
-              "chapter": "Appendix",
-              "header": "Appendix",
-              "page": null
-            }
-          ],
-          "slots": [
-            "decl2::χειμάρρους::nominative.singular",
-            "decl2::χειμάρρους::genitive.singular",
-            "decl2::χειμάρρους::dative.singular",
-            "decl2::χειμάρρους::accusative.singular",
-            "decl2::χειμάρρους::vocative.singular",
-            "decl2::χειμάρρους::nominative.plural",
-            "decl2::χειμάρρους::genitive.plural",
-            "decl2::χειμάρρους::dative.plural",
-            "decl2::χειμάρρους::accusative.plural"
-          ]
-        },
-        "decl2::ὀστοῦν": {
-          "type": "noun",
-          "lexical_form": "ὀστοῦν",
-          "source": [
-            {
-              "resource": "BBGG",
-              "chapter": "Appendix",
-              "header": "Appendix",
-              "page": null
-            }
-          ],
-          "slots": [
-            "decl2::ὀστοῦν::nominative.singular",
-            "decl2::ὀστοῦν::genitive.singular",
-            "decl2::ὀστοῦν::dative.singular",
-            "decl2::ὀστοῦν::accusative.singular",
-            "decl2::ὀστοῦν::vocative.singular",
-            "decl2::ὀστοῦν::nominative.plural",
-            "decl2::ὀστοῦν::genitive.plural",
-            "decl2::ὀστοῦν::dative.plural",
-            "decl2::ὀστοῦν::accusative.plural"
-          ]
-        },
-        "decl2::κῶς": {
-          "type": "noun",
-          "lexical_form": "κῶς",
-          "source": [
-            {
-              "resource": "BBGG",
-              "chapter": "Appendix",
-              "header": "Appendix",
-              "page": null
-            }
-          ],
-          "slots": [
-            "decl2::κῶς::nominative.singular",
-            "decl2::κῶς::genitive.singular",
-            "decl2::κῶς::dative.singular",
-            "decl2::κῶς::vocative.singular"
-          ]
-        }
-      },
-      "difficulty_tier": 1,
-      "teaching_note": "Taught before the first declension because its endings are the ones the article and the 2-1-2 adjective reuse. Both drill lexemes were confirmed against the corpus to inflect exactly like λόγος.",
-      "drill_lexemes": [
-        "θεός",
-        "ἄνθρωπος"
-      ]
-    },
-    "paradigm": {
-      "type": "noun",
-      "lexical_form": "λόγος",
-      "source": [
-        {
-          "resource": "BBGG",
-          "chapter": "Appendix",
-          "header": "Appendix",
-          "page": null
-        }
-      ],
-      "slots": [
-        "decl2::λόγος::nominative.singular",
-        "decl2::λόγος::genitive.singular",
-        "decl2::λόγος::dative.singular",
-        "decl2::λόγος::accusative.singular",
-        "decl2::λόγος::vocative.singular",
-        "decl2::λόγος::nominative.plural",
-        "decl2::λόγος::genitive.plural",
-        "decl2::λόγος::dative.plural",
-        "decl2::λόγος::accusative.plural"
-      ],
-      "gnt_lemma_frequency": 331
-    }
-  },
-  "recent_generations": [],
-  "student": {
-    "level": "beyond_beginner",
-    "concepts_learned": "Not Applicable",
-    "vocabulary_learned": "Not Applicable"
-  },
-  "sentence_plan": {
-    "sentence_shape": {
-      "shape": "two independent clauses joined by a coordinating conjunction",
-      "formation": "A coordinating conjunction between two independent clauses. Connective: καί, δέ. Contrastive: ἀλλά, δέ, πλήν. Correlative: μέν … δέ, καί … καί. Inferential: οὖν, ἄρα, διό. Explanatory: γάρ. Disjunctive: ἤ.",
-      "function": "Carries the movement of thought from one clause to the next by naming the logical relation between them. Both clauses stay independent.",
-      "note": "γάρ, δέ, οὖν and μέν are postpositive and cannot stand first in their clause. See the hard constraints under WORD ORDER.",
-      "syntactic_category": "Connective (continuative, coordinate) - a syntactic usage, under Conjunctions. Syntactic explanation: and, also (if emphatic [adjunctive]); (connects an additional element to a discussion); καί and δέ."
-    },
-    "also_include": [],
-    "setting_options": {
-      "s135": "Travellers shelter from the rain under a rock overhang and share what food they have.",
+      "s191": "The last traveller to arrive finds no food left.",
       "s206": "A village grows into a town once the new road is built."
     }
   }
 }
 ```
 
-### `pres-act-ind::λύω::first_person.singular`
+### `article::ὁ::genitive.feminine.singular`
 
 ```json
 {
   "item": {
     "item": {
-      "key": "pres-act-ind::λύω::first_person.singular",
-      "parent": "pres-act-ind::λύω",
+      "key": "article::ὁ::genitive.feminine.singular",
+      "parent": "article::ὁ",
+      "rule": "article",
+      "pattern": "ὁ",
+      "form": "τῆς",
+      "lexical_form": "ἡ",
+      "parsing": "genitive feminine singular",
+      "features": {
+        "case": "genitive",
+        "gender": "feminine",
+        "number": "singular"
+      },
+      "gnt_occurrences": 1301,
+      "gnt_forms": [
+        {
+          "form": "τῆς",
+          "lemma": "ὁ",
+          "occurrences": 1301
+        }
+      ]
+    },
+    "rule": {
+      "name": "Definite Article",
+      "sequence": 81,
+      "pos_lex_category": "noun",
+      "morph_rule_description": "Twenty-four forms carrying first and second declension case endings across all three genders. It is the smallest complete display of the case-ending system, and the most frequent word in the corpus.",
+      "difficulty_tier": 1,
+      "teaching_note": "No other word inflects like the article, so drill_lexemes is empty by nature rather than by omission. GrammarSummaries' Eight Noun Rules 2, 3 and 6 are all visible in this one chart: neuter nominative and accusative match, neuter plural ends in alpha, and masculine and neuter are identical in the genitive and dative."
+    },
+    "pattern": {
+      "name": "ὁ",
+      "type": "noun",
+      "charts": [
+        "ὁ",
+        "ἡ",
+        "τό"
+      ],
+      "source": [
+        {
+          "resource": "GrammarSummaries",
+          "chapter": "Appendix",
+          "header": "Definite Article",
+          "page": null
+        }
+      ],
+      "slots": [
+        "article::ὁ::nominative.masculine.singular",
+        "article::ὁ::genitive.masculine.singular",
+        "article::ὁ::dative.masculine.singular",
+        "article::ὁ::accusative.masculine.singular",
+        "article::ὁ::nominative.masculine.plural",
+        "article::ὁ::genitive.masculine.plural",
+        "article::ὁ::dative.masculine.plural",
+        "article::ὁ::accusative.masculine.plural",
+        "article::ὁ::nominative.feminine.singular",
+        "article::ὁ::genitive.feminine.singular",
+        "article::ὁ::dative.feminine.singular",
+        "article::ὁ::accusative.feminine.singular",
+        "article::ὁ::nominative.feminine.plural",
+        "article::ὁ::genitive.feminine.plural",
+        "article::ὁ::dative.feminine.plural",
+        "article::ὁ::accusative.feminine.plural",
+        "article::ὁ::nominative.neuter.singular",
+        "article::ὁ::genitive.neuter.singular",
+        "article::ὁ::dative.neuter.singular",
+        "article::ὁ::accusative.neuter.singular",
+        "article::ὁ::nominative.neuter.plural",
+        "article::ὁ::genitive.neuter.plural",
+        "article::ὁ::dative.neuter.plural",
+        "article::ὁ::accusative.neuter.plural"
+      ]
+    }
+  },
+  "recent_generations": [],
+  "student": "(the test student's block: level, grammar learned, syntax learned, 500 words)",
+  "sentence_plan": {
+    "sentence_shape": {
+      "shape": "a main clause with an adverbial dependent clause: time, adverbial participle",
+      "formation": "Anarthrous participle matching its subject in case, number and gender.",
+      "function": "Answers 'When?'. The participle's action may fall before the main verb ('after doing'), alongside it ('while doing'), or after it ('before doing').",
+      "syntactic_category": "Temporal - a syntactic usage, under Participle > Verbal Participles > Dependent Verbal Participles > Adverbial (or Circumstantial). Syntactic explanation: answers the question When? May be antecedent (after doing, after he did), contemporaneous (while doing), or subsequent (before doing, before he does).",
+      "grammar_options": [
+        {
+          "option": "Aorist Active Participle",
+          "gnt_examples": [
+            "ἀκούσαντες (ἀκούω)",
+            "ἀκούσας (ἀκούω)",
+            "ποιήσας (ποιέω)"
+          ]
+        },
+        {
+          "option": "Aorist Middle Participle",
+          "gnt_examples": [
+            "προσκαλεσάμενος (προσκαλέω)",
+            "ἀρξάμενος (ἄρχω)",
+            "προσευξάμενοι (προσεύχομαι)"
+          ]
+        },
+        {
+          "option": "Aorist Passive Participle",
+          "gnt_examples": [
+            "ἀποκριθείς (ἀποκρίνομαι)",
+            "πορευθέντες (πορεύομαι)",
+            "ἐγερθείς (ἐγείρω)"
+          ]
+        },
+        {
+          "option": "Present Participle of εἰμί",
+          "gnt_examples": [
+            "ὤν (εἰμί)",
+            "ὄντες (εἰμί)"
+          ]
+        },
+        {
+          "option": "Perfect Active Participle",
+          "gnt_examples": [
+            "πεποιθώς (πείθω)",
+            "παρεστηκώς (παρίστημι)",
+            "πεποιηκώς (ποιέω)"
+          ]
+        },
+        {
+          "option": "Perfect Middle/Passive Participle",
+          "gnt_examples": [
+            "γεγραμμένον (γράφω)",
+            "εὐλογημένος (εὐλογέω)",
+            "δεδεμένος (δέω)"
+          ]
+        },
+        {
+          "option": "Present Active Participle",
+          "gnt_examples": [
+            "λέγων (λέγω)",
+            "λέγοντες (λέγω)",
+            "ἔχων (ἔχω)"
+          ]
+        },
+        {
+          "option": "Present Middle/Passive Participle",
+          "gnt_examples": [
+            "ἐρχόμενος (ἔρχομαι)",
+            "ἐρχόμενον (ἔρχομαι)",
+            "λεγόμενος (λέγω)"
+          ]
+        }
+      ]
+    },
+    "also_include_one_of": [
+      "Conditional - a syntactic usage, under Conjunctions > Adverbial Functions. Syntactic explanation: if (introduces a protasis of a conditional clause); εἰ and ἐάν.",
+      "Interrogative Indicative - a syntactic usage, under Moods > Indicative. Syntactic explanation: question of fact; expects a declarative indicative in response.",
+      "Plural Personal Constructions - a syntactic usage, under The Article > Special Uses and Non-Uses of the Article > The Article with Multiple Substantives Connected by Καί (Granville Sharp Rule and Related Constructions) > TSKS Constructions Involving Impersonal, Plural, and Proper Nouns. Syntactic explanation: three different semantic groups possible: (1) distinct, (2) identical, (3) overlap (three subgroups). This breaks down:."
+    ],
+    "setting_options": {
+      "s111": "A girl brings her grandfather his midday meal in the olive grove.",
+      "s078": "A sailor promises his crew a feast if the ship reaches harbour safely."
+    }
+  }
+}
+```
+
+### `article::ὁ::dative.neuter.plural`
+
+```json
+{
+  "item": {
+    "item": {
+      "key": "article::ὁ::dative.neuter.plural",
+      "parent": "article::ὁ",
+      "rule": "article",
+      "pattern": "ὁ",
+      "form": "τοῖς",
+      "lexical_form": "τό",
+      "parsing": "dative neuter plural",
+      "features": {
+        "case": "dative",
+        "gender": "neuter",
+        "number": "plural"
+      },
+      "gnt_occurrences": 168,
+      "gnt_forms": [
+        {
+          "form": "τοῖς",
+          "lemma": "ὁ",
+          "occurrences": 168
+        }
+      ]
+    },
+    "rule": {
+      "name": "Definite Article",
+      "sequence": 81,
+      "pos_lex_category": "noun",
+      "morph_rule_description": "Twenty-four forms carrying first and second declension case endings across all three genders. It is the smallest complete display of the case-ending system, and the most frequent word in the corpus.",
+      "difficulty_tier": 1,
+      "teaching_note": "No other word inflects like the article, so drill_lexemes is empty by nature rather than by omission. GrammarSummaries' Eight Noun Rules 2, 3 and 6 are all visible in this one chart: neuter nominative and accusative match, neuter plural ends in alpha, and masculine and neuter are identical in the genitive and dative."
+    },
+    "pattern": {
+      "name": "ὁ",
+      "type": "noun",
+      "charts": [
+        "ὁ",
+        "ἡ",
+        "τό"
+      ],
+      "source": [
+        {
+          "resource": "GrammarSummaries",
+          "chapter": "Appendix",
+          "header": "Definite Article",
+          "page": null
+        }
+      ],
+      "slots": [
+        "article::ὁ::nominative.masculine.singular",
+        "article::ὁ::genitive.masculine.singular",
+        "article::ὁ::dative.masculine.singular",
+        "article::ὁ::accusative.masculine.singular",
+        "article::ὁ::nominative.masculine.plural",
+        "article::ὁ::genitive.masculine.plural",
+        "article::ὁ::dative.masculine.plural",
+        "article::ὁ::accusative.masculine.plural",
+        "article::ὁ::nominative.feminine.singular",
+        "article::ὁ::genitive.feminine.singular",
+        "article::ὁ::dative.feminine.singular",
+        "article::ὁ::accusative.feminine.singular",
+        "article::ὁ::nominative.feminine.plural",
+        "article::ὁ::genitive.feminine.plural",
+        "article::ὁ::dative.feminine.plural",
+        "article::ὁ::accusative.feminine.plural",
+        "article::ὁ::nominative.neuter.singular",
+        "article::ὁ::genitive.neuter.singular",
+        "article::ὁ::dative.neuter.singular",
+        "article::ὁ::accusative.neuter.singular",
+        "article::ὁ::nominative.neuter.plural",
+        "article::ὁ::genitive.neuter.plural",
+        "article::ὁ::dative.neuter.plural",
+        "article::ὁ::accusative.neuter.plural"
+      ]
+    }
+  },
+  "recent_generations": [],
+  "student": "(the test student's block: level, grammar learned, syntax learned, 500 words)",
+  "sentence_plan": {
+    "sentence_shape": {
+      "shape": "two independent clauses joined by a coordinating conjunction",
+      "formation": "A coordinating conjunction between two independent clauses. Connective: καί, δέ. Contrastive: ἀλλά, δέ, πλήν. Correlative: μέν … δέ, καί … καί. Inferential: οὖν, ἄρα, διό. Explanatory: γάρ. Disjunctive: ἤ.",
+      "function": "Carries the movement of thought from one clause to the next by naming the logical relation between them. Both clauses stay independent.",
+      "note": "γάρ, δέ, οὖν and μέν are postpositive and cannot stand first in their clause. See the hard constraints under WORD ORDER.",
+      "syntactic_category": "Connective (continuative, coordinate) - a syntactic usage, under Conjunctions. Syntactic explanation: and, also (if emphatic [adjunctive]); (connects an additional element to a discussion); καί and δέ."
+    },
+    "also_include_one_of": [
+      "Explanatory - a syntactic usage, under Conjunctions. Syntactic explanation: for, you see, or that is, namely (conjunction indicates additional information being given to what has been described); γάρ, δέ, εἰ (after verbs of emotion), and καί.",
+      "Purpose - a syntactic usage, under Conjunctions > Adverbial Functions. Syntactic explanation: in order that (indicates the goal or aim of an action); ἵνα, ὅπως, μήπως (the negative purpose), μήπου (negative purpose), and μήποτε (negative purpose).",
+      "Accusative Direct Object - a syntactic usage, under Accusative > Substantival Uses of the Accusative. Syntactic explanation: the immediate object of the action of a transitive verb."
+    ],
+    "setting_options": {
+      "s099": "A retired soldier teaches the village boys to march.",
+      "s024": "A boy sent to the next village with a message loses his way at night."
+    }
+  }
+}
+```
+
+### `article::ὁ::accusative.feminine.plural`
+
+```json
+{
+  "item": {
+    "item": {
+      "key": "article::ὁ::accusative.feminine.plural",
+      "parent": "article::ὁ",
+      "rule": "article",
+      "pattern": "ὁ",
+      "form": "τάς",
+      "lexical_form": "ἡ",
+      "parsing": "accusative feminine plural",
+      "features": {
+        "case": "accusative",
+        "gender": "feminine",
+        "number": "plural"
+      },
+      "gnt_occurrences": 338,
+      "gnt_forms": [
+        {
+          "form": "τάς",
+          "lemma": "ὁ",
+          "occurrences": 338
+        }
+      ]
+    },
+    "rule": {
+      "name": "Definite Article",
+      "sequence": 81,
+      "pos_lex_category": "noun",
+      "morph_rule_description": "Twenty-four forms carrying first and second declension case endings across all three genders. It is the smallest complete display of the case-ending system, and the most frequent word in the corpus.",
+      "difficulty_tier": 1,
+      "teaching_note": "No other word inflects like the article, so drill_lexemes is empty by nature rather than by omission. GrammarSummaries' Eight Noun Rules 2, 3 and 6 are all visible in this one chart: neuter nominative and accusative match, neuter plural ends in alpha, and masculine and neuter are identical in the genitive and dative."
+    },
+    "pattern": {
+      "name": "ὁ",
+      "type": "noun",
+      "charts": [
+        "ὁ",
+        "ἡ",
+        "τό"
+      ],
+      "source": [
+        {
+          "resource": "GrammarSummaries",
+          "chapter": "Appendix",
+          "header": "Definite Article",
+          "page": null
+        }
+      ],
+      "slots": [
+        "article::ὁ::nominative.masculine.singular",
+        "article::ὁ::genitive.masculine.singular",
+        "article::ὁ::dative.masculine.singular",
+        "article::ὁ::accusative.masculine.singular",
+        "article::ὁ::nominative.masculine.plural",
+        "article::ὁ::genitive.masculine.plural",
+        "article::ὁ::dative.masculine.plural",
+        "article::ὁ::accusative.masculine.plural",
+        "article::ὁ::nominative.feminine.singular",
+        "article::ὁ::genitive.feminine.singular",
+        "article::ὁ::dative.feminine.singular",
+        "article::ὁ::accusative.feminine.singular",
+        "article::ὁ::nominative.feminine.plural",
+        "article::ὁ::genitive.feminine.plural",
+        "article::ὁ::dative.feminine.plural",
+        "article::ὁ::accusative.feminine.plural",
+        "article::ὁ::nominative.neuter.singular",
+        "article::ὁ::genitive.neuter.singular",
+        "article::ὁ::dative.neuter.singular",
+        "article::ὁ::accusative.neuter.singular",
+        "article::ὁ::nominative.neuter.plural",
+        "article::ὁ::genitive.neuter.plural",
+        "article::ὁ::dative.neuter.plural",
+        "article::ὁ::accusative.neuter.plural"
+      ]
+    }
+  },
+  "recent_generations": [],
+  "student": "(the test student's block: level, grammar learned, syntax learned, 500 words)",
+  "sentence_plan": {
+    "sentence_shape": {
+      "shape": "a main clause with a relative clause: adjectival",
+      "formation": "Relative pronoun agreeing with its antecedent in number and gender, its case set by its role inside the relative clause. It follows its referent.",
+      "function": "Attributive only - it describes, explains or narrows the substantive it attaches to.",
+      "syntactic_category": "Relative Pronouns - a syntactic usage, under Pronouns > Semantic Categories. Syntactic explanation: ὅς and ὅστις labeled relative pronouns because they relate to more than one clause.",
+      "position": "after the main clause by default; before it when you mean to give it emphasis",
+      "grammar_options": [
+        {
+          "option": "Relative Pronoun",
+          "gnt_examples": [
+            "ὅ (ὅς)",
+            "ὅς (ὅς)",
+            "ὅν (ὅς)"
+          ]
+        }
+      ]
+    },
+    "also_include_one_of": [
+      "Fourth Class Condition (Less Probable Future) - a syntactic usage, under Conditional Sentences > II. Conditional Sentences in Greek (especially the NT). Syntactic explanation: possible condition in the future, usually remote possibility (such as if he could do something, if perhaps this should occur); protasis: εἰ + optative; apodosis: optative + ἄν (689, 699–701).",
+      "Constative (Complexive, Punctiliar, Comprehensive, Global) Aorist - a syntactic usage, under Tense > Aorist. Syntactic explanation: views the action as a whole, taking no interest in its internal workings; describes the action in summary fashion.",
+      "Comparative (manner) - a syntactic usage, under Conjunctions > Adverbial Functions. Syntactic explanation: as, just as, in the same way, thus, or in this manner (suggests an analogy or comparison between the connected ideas or tells how something is to be done); καθάπερ, καθώς, οὕτως, ὡς, ὡσαύτως, ὡσεί, and ὥσπερ."
+    ],
+    "setting_options": {
+      "s005": "A shepherd boy counts the flock at dusk and finds one lamb lame.",
+      "s080": "A farmer and his sons pray for rain after a dry winter."
+    }
+  }
+}
+```
+
+### `decl2::n-2a::nominative.singular`
+
+```json
+{
+  "item": {
+    "item": {
+      "key": "decl2::n-2a::nominative.singular",
+      "parent": "decl2::n-2a",
+      "rule": "decl2",
+      "pattern": "n-2a",
+      "form": "λόγος",
+      "lexical_form": "λόγος",
+      "parsing": "nominative singular",
+      "features": {
+        "case": "nominative",
+        "number": "singular"
+      },
+      "gnt_occurrences": 1783,
+      "gnt_forms": [
+        {
+          "form": "κύριος",
+          "lemma": "κύριος",
+          "occurrences": 174
+        },
+        {
+          "form": "υἱός",
+          "lemma": "υἱός",
+          "occurrences": 161
+        },
+        {
+          "form": "ἄνθρωπος",
+          "lemma": "ἄνθρωπος",
+          "occurrences": 124
+        }
+      ]
+    },
+    "rule": {
+      "name": "Second Declension Nouns",
+      "sequence": 9,
+      "pos_lex_category": "noun",
+      "morph_rule_description": "Stems ending in omicron. Masculine nouns take -ος in the nominative singular, neuter nouns -ον, and the two differ only in the nominative and accusative.",
+      "difficulty_tier": 1,
+      "teaching_note": "Taught before the first declension because its endings are the ones the article and the 2-1-2 adjective reuse. Both drill lexemes were confirmed against the corpus to inflect exactly like λόγος."
+    },
+    "pattern": {
+      "name": "n-2a",
+      "type": "noun",
+      "charts": [
+        "λόγος"
+      ],
+      "source": [
+        {
+          "resource": "BBGG",
+          "chapter": "Appendix",
+          "header": "Appendix",
+          "page": null
+        }
+      ],
+      "slots": [
+        "decl2::n-2a::nominative.singular",
+        "decl2::n-2a::genitive.singular",
+        "decl2::n-2a::dative.singular",
+        "decl2::n-2a::accusative.singular",
+        "decl2::n-2a::vocative.singular",
+        "decl2::n-2a::nominative.plural",
+        "decl2::n-2a::genitive.plural",
+        "decl2::n-2a::dative.plural",
+        "decl2::n-2a::accusative.plural"
+      ]
+    }
+  },
+  "recent_generations": [],
+  "student": "(the test student's block: level, grammar learned, syntax learned, 500 words)",
+  "sentence_plan": {
+    "sentence_shape": {
+      "shape": "a main clause with a relative clause: substantival, indicative, object",
+      "formation": "ὅ plus the indicative, standing in the object slot. The pronoun takes its case from its job inside its own clause, not from the slot it fills outside it.",
+      "function": "The relative clause serves as the direct object of the main verb.",
+      "syntactic_category": "Omission of Antecedent - a syntactic usage, under Pronouns > Semantic Categories > Relative Pronouns > ὅς > “Unusual” Uses > Antecedent Complexities. Syntactic explanation: due to embedded demonstrative or poetry.",
+      "position": "after the main clause by default; before it when you mean to give it emphasis",
+      "grammar_options": [
+        {
+          "option": "Relative Pronoun",
+          "gnt_examples": [
+            "ὅ (ὅς)",
+            "ὅς (ὅς)",
+            "ὅν (ὅς)"
+          ]
+        }
+      ]
+    },
+    "also_include_one_of": [
+      "Present Imperative - a syntactic usage, under Volitional Clauses. Syntactic explanation: views action as ongoing process.",
+      "The Use of the Positive Adjective - a syntactic usage, under Adjectives > The Independent or Substantival Use of the Adjective.",
+      "Epistolary Aorist - a syntactic usage, under Tense > Aorist. Syntactic explanation: aorist indicative in the epistles in which the author self-consciously describes his letter from the time frame of the audience."
+    ],
+    "setting_options": {
+      "s208": "An earth tremor shakes the pots from the shelves.",
+      "s206": "A village grows into a town once the new road is built."
+    }
+  }
+}
+```
+
+### `decl2::n-2a::dative.singular`
+
+```json
+{
+  "item": {
+    "item": {
+      "key": "decl2::n-2a::dative.singular",
+      "parent": "decl2::n-2a",
+      "rule": "decl2",
+      "pattern": "n-2a",
+      "form": "λόγῳ",
+      "lexical_form": "λόγος",
+      "parsing": "dative singular",
+      "features": {
+        "case": "dative",
+        "number": "singular"
+      },
+      "gnt_occurrences": 916,
+      "gnt_forms": [
+        {
+          "form": "κυρίῳ",
+          "lemma": "κύριος",
+          "occurrences": 101
+        },
+        {
+          "form": "λόγῳ",
+          "lemma": "λόγος",
+          "occurrences": 45
+        },
+        {
+          "form": "κόσμῳ",
+          "lemma": "κόσμος",
+          "occurrences": 36
+        }
+      ]
+    },
+    "rule": {
+      "name": "Second Declension Nouns",
+      "sequence": 9,
+      "pos_lex_category": "noun",
+      "morph_rule_description": "Stems ending in omicron. Masculine nouns take -ος in the nominative singular, neuter nouns -ον, and the two differ only in the nominative and accusative.",
+      "difficulty_tier": 1,
+      "teaching_note": "Taught before the first declension because its endings are the ones the article and the 2-1-2 adjective reuse. Both drill lexemes were confirmed against the corpus to inflect exactly like λόγος."
+    },
+    "pattern": {
+      "name": "n-2a",
+      "type": "noun",
+      "charts": [
+        "λόγος"
+      ],
+      "source": [
+        {
+          "resource": "BBGG",
+          "chapter": "Appendix",
+          "header": "Appendix",
+          "page": null
+        }
+      ],
+      "slots": [
+        "decl2::n-2a::nominative.singular",
+        "decl2::n-2a::genitive.singular",
+        "decl2::n-2a::dative.singular",
+        "decl2::n-2a::accusative.singular",
+        "decl2::n-2a::vocative.singular",
+        "decl2::n-2a::nominative.plural",
+        "decl2::n-2a::genitive.plural",
+        "decl2::n-2a::dative.plural",
+        "decl2::n-2a::accusative.plural"
+      ]
+    }
+  },
+  "recent_generations": [],
+  "student": "(the test student's block: level, grammar learned, syntax learned, 500 words)",
+  "sentence_plan": {
+    "sentence_shape": {
+      "shape": "a main clause with an adverbial dependent clause: causal, adverbial participle",
+      "formation": "Anarthrous participle matching its subject in case, number and gender. It usually sits ahead of the verb it modifies.",
+      "function": "Supplies the ground or reason for the finite verb - it answers 'Why?'. Render with 'because'.",
+      "syntactic_category": "Cause - a syntactic usage, under Participle > Verbal Participles > Dependent Verbal Participles > Adverbial (or Circumstantial). Syntactic explanation: because (answers the question, Why?); indicates the cause or reason or ground of the action of the finite verb; usually precedes its verb.",
+      "position": "before the main clause by default; after it when you mean to give it emphasis",
+      "grammar_options": [
+        {
+          "option": "Aorist Active Participle",
+          "gnt_examples": [
+            "ἀκούσαντες (ἀκούω)",
+            "ἀκούσας (ἀκούω)",
+            "ποιήσας (ποιέω)"
+          ]
+        },
+        {
+          "option": "Aorist Middle Participle",
+          "gnt_examples": [
+            "προσκαλεσάμενος (προσκαλέω)",
+            "ἀρξάμενος (ἄρχω)",
+            "προσευξάμενοι (προσεύχομαι)"
+          ]
+        },
+        {
+          "option": "Aorist Passive Participle",
+          "gnt_examples": [
+            "ἀποκριθείς (ἀποκρίνομαι)",
+            "πορευθέντες (πορεύομαι)",
+            "ἐγερθείς (ἐγείρω)"
+          ]
+        },
+        {
+          "option": "Present Participle of εἰμί",
+          "gnt_examples": [
+            "ὤν (εἰμί)",
+            "ὄντες (εἰμί)"
+          ]
+        },
+        {
+          "option": "Perfect Active Participle",
+          "gnt_examples": [
+            "πεποιθώς (πείθω)",
+            "παρεστηκώς (παρίστημι)",
+            "πεποιηκώς (ποιέω)"
+          ]
+        },
+        {
+          "option": "Perfect Middle/Passive Participle",
+          "gnt_examples": [
+            "γεγραμμένον (γράφω)",
+            "εὐλογημένος (εὐλογέω)",
+            "δεδεμένος (δέω)"
+          ]
+        },
+        {
+          "option": "Present Active Participle",
+          "gnt_examples": [
+            "λέγων (λέγω)",
+            "λέγοντες (λέγω)",
+            "ἔχων (ἔχω)"
+          ]
+        },
+        {
+          "option": "Present Middle/Passive Participle",
+          "gnt_examples": [
+            "ἐρχόμενος (ἔρχομαι)",
+            "ἐρχόμενον (ἔρχομαι)",
+            "λεγόμενος (λέγω)"
+          ]
+        }
+      ]
+    },
+    "also_include_one_of": [
+      "Conative (Tendential, Voluntative) Present - a syntactic usage, under Tense > Present > Broad-Band Presents > Special Uses of the Present. Syntactic explanation: portrays subject as desiring to do something (voluntative), attempting to do something (conative), or at the point of almost doing something (tendential).",
+      "Object of a Preposition - a syntactic usage, under The Article > Absence of the Article > Definite. Syntactic explanation: object can be definite, qualitative, or indefinite.",
+      "Emphatic (or, Emotional) Address - a syntactic usage, under Vocative > Direct Address. Syntactic explanation: with ὦ (except in Acts)."
+    ],
+    "setting_options": {
+      "s209": "A rower stretches out his hand to pull a swimmer aboard.",
+      "s188": "A goatherd milks his goats at dawn."
+    }
+  }
+}
+```
+
+### `decl2::n-2a::accusative.plural`
+
+```json
+{
+  "item": {
+    "item": {
+      "key": "decl2::n-2a::accusative.plural",
+      "parent": "decl2::n-2a",
+      "rule": "decl2",
+      "pattern": "n-2a",
+      "form": "λόγους",
+      "lexical_form": "λόγος",
+      "parsing": "accusative plural",
+      "features": {
+        "case": "accusative",
+        "number": "plural"
+      },
+      "gnt_occurrences": 704,
+      "gnt_forms": [
+        {
+          "form": "ἀδελφούς",
+          "lemma": "ἀδελφός",
+          "occurrences": 39
+        },
+        {
+          "form": "ὀφθαλμούς",
+          "lemma": "ὀφθαλμός",
+          "occurrences": 37
+        },
+        {
+          "form": "ἀνθρώπους",
+          "lemma": "ἄνθρωπος",
+          "occurrences": 31
+        }
+      ]
+    },
+    "rule": {
+      "name": "Second Declension Nouns",
+      "sequence": 9,
+      "pos_lex_category": "noun",
+      "morph_rule_description": "Stems ending in omicron. Masculine nouns take -ος in the nominative singular, neuter nouns -ον, and the two differ only in the nominative and accusative.",
+      "difficulty_tier": 1,
+      "teaching_note": "Taught before the first declension because its endings are the ones the article and the 2-1-2 adjective reuse. Both drill lexemes were confirmed against the corpus to inflect exactly like λόγος."
+    },
+    "pattern": {
+      "name": "n-2a",
+      "type": "noun",
+      "charts": [
+        "λόγος"
+      ],
+      "source": [
+        {
+          "resource": "BBGG",
+          "chapter": "Appendix",
+          "header": "Appendix",
+          "page": null
+        }
+      ],
+      "slots": [
+        "decl2::n-2a::nominative.singular",
+        "decl2::n-2a::genitive.singular",
+        "decl2::n-2a::dative.singular",
+        "decl2::n-2a::accusative.singular",
+        "decl2::n-2a::vocative.singular",
+        "decl2::n-2a::nominative.plural",
+        "decl2::n-2a::genitive.plural",
+        "decl2::n-2a::dative.plural",
+        "decl2::n-2a::accusative.plural"
+      ]
+    }
+  },
+  "recent_generations": [],
+  "student": "(the test student's block: level, grammar learned, syntax learned, 500 words)",
+  "sentence_plan": {
+    "sentence_shape": {
+      "shape": "a single main clause",
+      "formation": "A single independent clause: nominative subject, finite verb, and an accusative direct object if the verb is transitive.",
+      "function": "One unsubordinated assertion. Unmarked order is subject, then predicate, then complement."
+    },
+    "also_include_one_of": [
+      "Dative of Reference/Respect - a syntactic usage, under Dative > Pure Dative Uses. Syntactic explanation: with reference to.",
+      "Result - a syntactic usage, under Infinitive > Adverbial. Syntactic explanation: so that, so as to, with the result that (indicates the outcome produced by the controlling verb; emphasis on effect, whether intended or not).",
+      "Adjectival Proper (Dependent) - a syntactic usage, under Participle."
+    ],
+    "setting_options": {
+      "s040": "A boy steals pomegranates from a neighbour's garden and is chased off by the dog.",
+      "s173": "A household celebrates a daughter's recovery from a long illness."
+    }
+  }
+}
+```
+
+### `pres-act-ind::thematic::first_person.singular`
+
+```json
+{
+  "item": {
+    "item": {
+      "key": "pres-act-ind::thematic::first_person.singular",
+      "parent": "pres-act-ind::thematic",
       "rule": "pres-act-ind",
+      "pattern": "thematic",
       "form": "λύω",
+      "lexical_form": "λύω",
       "parsing": "present active indicative 1st person singular",
       "features": {
         "person": "first_person",
@@ -1328,304 +854,112 @@ No API calls. Each item's user message as generation would send it; the system p
         "voice": "active",
         "mood": "indicative"
       },
-      "lexical_form": "λύω"
+      "gnt_occurrences": 633,
+      "gnt_forms": [
+        {
+          "form": "λέγω",
+          "lemma": "λέγω",
+          "occurrences": 209
+        },
+        {
+          "form": "ἔχω",
+          "lemma": "ἔχω",
+          "occurrences": 43
+        },
+        {
+          "form": "θέλω",
+          "lemma": "θέλω",
+          "occurrences": 35
+        }
+      ]
     },
     "rule": {
       "name": "Present Active Indicative",
-      "sequence": 153,
+      "sequence": 149,
       "pos_lex_category": "verb",
       "morph_rule_description": "Unaugmented present stem, connecting vowel omicron or epsilon, primary active endings. This is the precedent every other verbal form is measured against.",
-      "paradigms": {
-        "pres-act-ind::λύω": {
-          "type": "verb",
-          "lexical_form": "λύω",
-          "source": [
-            {
-              "resource": "BBGG",
-              "chapter": "Appendix",
-              "header": "Overview of Indicative",
-              "page": null
-            }
-          ],
-          "slots": [
-            "pres-act-ind::λύω::first_person.singular",
-            "pres-act-ind::λύω::second_person.singular",
-            "pres-act-ind::λύω::third_person.singular",
-            "pres-act-ind::λύω::first_person.plural",
-            "pres-act-ind::λύω::second_person.plural",
-            "pres-act-ind::λύω::third_person.plural"
-          ],
-          "tense": "present",
-          "aspect": "continuous",
-          "voice": "active",
-          "mood": "indicative",
-          "lemma": "λύω",
-          "stem_class": "thematic",
-          "gnt_lemma_frequency": 42
-        },
-        "pres-act-ind::γεννῶ": {
-          "type": "verb",
-          "lexical_form": "γεννῶ",
-          "source": [
-            {
-              "resource": "BBGG",
-              "chapter": "Appendix",
-              "header": "Appendix (MBG)",
-              "page": null
-            }
-          ],
-          "slots": [
-            "pres-act-ind::γεννῶ::first_person.singular",
-            "pres-act-ind::γεννῶ::second_person.singular",
-            "pres-act-ind::γεννῶ::third_person.singular",
-            "pres-act-ind::γεννῶ::first_person.plural",
-            "pres-act-ind::γεννῶ::second_person.plural",
-            "pres-act-ind::γεννῶ::third_person.plural"
-          ],
-          "tense": "present",
-          "aspect": "continuous",
-          "voice": "active",
-          "mood": "indicative",
-          "lemma": "γεννάω",
-          "stem_class": "contract -άω",
-          "gnt_lemma_frequency": 97
-        },
-        "pres-act-ind::ποιῶ": {
-          "type": "verb",
-          "lexical_form": "ποιῶ",
-          "source": [
-            {
-              "resource": "BBGG",
-              "chapter": "Appendix",
-              "header": "Appendix (MBG)",
-              "page": null
-            }
-          ],
-          "slots": [
-            "pres-act-ind::ποιῶ::first_person.singular",
-            "pres-act-ind::ποιῶ::second_person.singular",
-            "pres-act-ind::ποιῶ::third_person.singular",
-            "pres-act-ind::ποιῶ::first_person.plural",
-            "pres-act-ind::ποιῶ::second_person.plural",
-            "pres-act-ind::ποιῶ::third_person.plural"
-          ],
-          "tense": "present",
-          "aspect": "continuous",
-          "voice": "active",
-          "mood": "indicative",
-          "lemma": "ποιέω",
-          "stem_class": "contract -έω",
-          "gnt_lemma_frequency": 566
-        },
-        "pres-act-ind::φανερῶ": {
-          "type": "verb",
-          "lexical_form": "φανερῶ",
-          "source": [
-            {
-              "resource": "BBGG",
-              "chapter": "Appendix",
-              "header": "Appendix (MBG)",
-              "page": null
-            }
-          ],
-          "slots": [
-            "pres-act-ind::φανερῶ::first_person.singular",
-            "pres-act-ind::φανερῶ::second_person.singular",
-            "pres-act-ind::φανερῶ::third_person.singular",
-            "pres-act-ind::φανερῶ::first_person.plural",
-            "pres-act-ind::φανερῶ::second_person.plural",
-            "pres-act-ind::φανερῶ::third_person.plural"
-          ],
-          "tense": "present",
-          "aspect": "continuous",
-          "voice": "active",
-          "mood": "indicative",
-          "lemma": "φανερόω",
-          "stem_class": "contract -όω",
-          "gnt_lemma_frequency": 49
-        },
-        "pres-act-ind::ἵστημι": {
-          "type": "verb",
-          "lexical_form": "ἵστημι",
-          "source": [
-            {
-              "resource": "BBGG",
-              "chapter": "Appendix",
-              "header": "Appendix (MBG)",
-              "page": null
-            }
-          ],
-          "slots": [
-            "pres-act-ind::ἵστημι::first_person.singular",
-            "pres-act-ind::ἵστημι::second_person.singular",
-            "pres-act-ind::ἵστημι::third_person.singular",
-            "pres-act-ind::ἵστημι::first_person.plural",
-            "pres-act-ind::ἵστημι::second_person.plural",
-            "pres-act-ind::ἵστημι::third_person.plural"
-          ],
-          "tense": "present",
-          "aspect": "continuous",
-          "voice": "active",
-          "mood": "indicative",
-          "lemma": "ἵστημι",
-          "stem_class": "athematic",
-          "gnt_lemma_frequency": 153
-        },
-        "pres-act-ind::τίθημι": {
-          "type": "verb",
-          "lexical_form": "τίθημι",
-          "source": [
-            {
-              "resource": "BBGG",
-              "chapter": "Appendix",
-              "header": "Appendix (MBG)",
-              "page": null
-            }
-          ],
-          "slots": [
-            "pres-act-ind::τίθημι::first_person.singular",
-            "pres-act-ind::τίθημι::second_person.singular",
-            "pres-act-ind::τίθημι::third_person.singular",
-            "pres-act-ind::τίθημι::first_person.plural",
-            "pres-act-ind::τίθημι::second_person.plural",
-            "pres-act-ind::τίθημι::third_person.plural"
-          ],
-          "tense": "present",
-          "aspect": "continuous",
-          "voice": "active",
-          "mood": "indicative",
-          "lemma": "τίθημι",
-          "stem_class": "athematic",
-          "gnt_lemma_frequency": 99
-        },
-        "pres-act-ind::δίδωμι": {
-          "type": "verb",
-          "lexical_form": "δίδωμι",
-          "source": [
-            {
-              "resource": "BBGG",
-              "chapter": "Appendix",
-              "header": "Appendix (MBG)",
-              "page": null
-            }
-          ],
-          "slots": [
-            "pres-act-ind::δίδωμι::first_person.singular",
-            "pres-act-ind::δίδωμι::second_person.singular",
-            "pres-act-ind::δίδωμι::third_person.singular",
-            "pres-act-ind::δίδωμι::first_person.plural",
-            "pres-act-ind::δίδωμι::second_person.plural",
-            "pres-act-ind::δίδωμι::third_person.plural"
-          ],
-          "tense": "present",
-          "aspect": "continuous",
-          "voice": "active",
-          "mood": "indicative",
-          "lemma": "δίδωμι",
-          "stem_class": "athematic",
-          "gnt_lemma_frequency": 414
-        },
-        "pres-act-ind::δείκνυμι": {
-          "type": "verb",
-          "lexical_form": "δείκνυμι",
-          "source": [
-            {
-              "resource": "BBGG",
-              "chapter": "Appendix",
-              "header": "Appendix (MBG)",
-              "page": null
-            }
-          ],
-          "slots": [
-            "pres-act-ind::δείκνυμι::first_person.singular",
-            "pres-act-ind::δείκνυμι::second_person.singular",
-            "pres-act-ind::δείκνυμι::third_person.singular",
-            "pres-act-ind::δείκνυμι::first_person.plural",
-            "pres-act-ind::δείκνυμι::second_person.plural",
-            "pres-act-ind::δείκνυμι::third_person.plural"
-          ],
-          "tense": "present",
-          "aspect": "continuous",
-          "voice": "active",
-          "mood": "indicative",
-          "lemma": "δείκνυμι",
-          "stem_class": "athematic",
-          "gnt_lemma_frequency": 33
-        }
-      },
       "difficulty_tier": 1,
       "teaching_note": "GrammarSummaries' Master Verb Chart supplies the recipe columns directly: no augment, present stem, no tense formative, ο/ε connecting vowel, primary active endings.",
       "morph_recipe": {
         "tense_stem": "present",
         "connecting_vowel": "ο/ε",
         "personal_endings": "primary_active"
-      },
-      "drill_lexemes": [
-        "πιστεύω",
-        "γράφω"
-      ]
+      }
     },
-    "paradigm": {
+    "pattern": {
+      "name": "Thematic",
       "type": "verb",
-      "lexical_form": "λύω",
+      "charts": [
+        "λύω"
+      ],
       "source": [
         {
           "resource": "BBGG",
           "chapter": "Appendix",
           "header": "Overview of Indicative",
           "page": null
+        },
+        {
+          "resource": "BBGG",
+          "chapter": "Appendix",
+          "header": "Appendix (MBG)",
+          "page": null
         }
       ],
       "slots": [
-        "pres-act-ind::λύω::first_person.singular",
-        "pres-act-ind::λύω::second_person.singular",
-        "pres-act-ind::λύω::third_person.singular",
-        "pres-act-ind::λύω::first_person.plural",
-        "pres-act-ind::λύω::second_person.plural",
-        "pres-act-ind::λύω::third_person.plural"
+        "pres-act-ind::thematic::first_person.singular",
+        "pres-act-ind::thematic::second_person.singular",
+        "pres-act-ind::thematic::third_person.singular",
+        "pres-act-ind::thematic::first_person.plural",
+        "pres-act-ind::thematic::second_person.plural",
+        "pres-act-ind::thematic::third_person.plural"
       ],
       "tense": "present",
       "aspect": "continuous",
       "voice": "active",
-      "mood": "indicative",
-      "lemma": "λύω",
-      "stem_class": "thematic",
-      "gnt_lemma_frequency": 42
+      "mood": "indicative"
     }
   },
   "recent_generations": [],
-  "student": {
-    "level": "beyond_beginner",
-    "concepts_learned": "Not Applicable",
-    "vocabulary_learned": "Not Applicable"
-  },
+  "student": "(the test student's block: level, grammar learned, syntax learned, 500 words)",
   "sentence_plan": {
     "sentence_shape": {
-      "shape": "two independent clauses joined by a coordinating conjunction",
-      "formation": "A coordinating conjunction between two independent clauses. Connective: καί, δέ. Contrastive: ἀλλά, δέ, πλήν. Correlative: μέν … δέ, καί … καί. Inferential: οὖν, ἄρα, διό. Explanatory: γάρ. Disjunctive: ἤ.",
-      "function": "Carries the movement of thought from one clause to the next by naming the logical relation between them. Both clauses stay independent.",
-      "note": "γάρ, δέ, οὖν and μέν are postpositive and cannot stand first in their clause. See the hard constraints under WORD ORDER.",
-      "syntactic_category": "Connective (continuative, coordinate) - a syntactic usage, under Conjunctions. Syntactic explanation: and, also (if emphatic [adjunctive]); (connects an additional element to a discussion); καί and δέ."
+      "shape": "a main clause with a relative clause: adjectival",
+      "formation": "Relative pronoun agreeing with its antecedent in number and gender, its case set by its role inside the relative clause. It follows its referent.",
+      "function": "Attributive only - it describes, explains or narrows the substantive it attaches to.",
+      "syntactic_category": "Relative Pronouns - a syntactic usage, under Pronouns > Semantic Categories. Syntactic explanation: ὅς and ὅστις labeled relative pronouns because they relate to more than one clause.",
+      "position": "after the main clause by default; before it when you mean to give it emphasis",
+      "grammar_options": [
+        {
+          "option": "Relative Pronoun",
+          "gnt_examples": [
+            "ὅ (ὅς)",
+            "ὅς (ὅς)",
+            "ὅν (ὅς)"
+          ]
+        }
+      ]
     },
-    "also_include": [],
     "setting_options": {
-      "s106": "A tutor walks a wealthy boy to school and scolds him for dawdling.",
-      "s080": "A farmer and his sons pray for rain after a dry winter."
+      "s175": "A trader loses his purse and retraces his steps through the market.",
+      "s196": "The storeroom door sticks and will not open."
     }
   }
 }
 ```
 
-### `pres-act-ind::λύω::second_person.plural`
+### `pres-act-ind::thematic::second_person.plural`
 
 ```json
 {
   "item": {
     "item": {
-      "key": "pres-act-ind::λύω::second_person.plural",
-      "parent": "pres-act-ind::λύω",
+      "key": "pres-act-ind::thematic::second_person.plural",
+      "parent": "pres-act-ind::thematic",
       "rule": "pres-act-ind",
+      "pattern": "thematic",
       "form": "λύετε",
+      "lexical_form": "λύω",
       "parsing": "present active indicative 2nd person plural",
       "features": {
         "person": "second_person",
@@ -1634,306 +968,107 @@ No API calls. Each item's user message as generation would send it; the system p
         "voice": "active",
         "mood": "indicative"
       },
-      "lexical_form": "λύω"
+      "gnt_occurrences": 335,
+      "gnt_forms": [
+        {
+          "form": "ἔχετε",
+          "lemma": "ἔχω",
+          "occurrences": 47
+        },
+        {
+          "form": "λέγετε",
+          "lemma": "λέγω",
+          "occurrences": 22
+        },
+        {
+          "form": "θέλετε",
+          "lemma": "θέλω",
+          "occurrences": 17
+        }
+      ]
     },
     "rule": {
       "name": "Present Active Indicative",
-      "sequence": 153,
+      "sequence": 149,
       "pos_lex_category": "verb",
       "morph_rule_description": "Unaugmented present stem, connecting vowel omicron or epsilon, primary active endings. This is the precedent every other verbal form is measured against.",
-      "paradigms": {
-        "pres-act-ind::λύω": {
-          "type": "verb",
-          "lexical_form": "λύω",
-          "source": [
-            {
-              "resource": "BBGG",
-              "chapter": "Appendix",
-              "header": "Overview of Indicative",
-              "page": null
-            }
-          ],
-          "slots": [
-            "pres-act-ind::λύω::first_person.singular",
-            "pres-act-ind::λύω::second_person.singular",
-            "pres-act-ind::λύω::third_person.singular",
-            "pres-act-ind::λύω::first_person.plural",
-            "pres-act-ind::λύω::second_person.plural",
-            "pres-act-ind::λύω::third_person.plural"
-          ],
-          "tense": "present",
-          "aspect": "continuous",
-          "voice": "active",
-          "mood": "indicative",
-          "lemma": "λύω",
-          "stem_class": "thematic",
-          "gnt_lemma_frequency": 42
-        },
-        "pres-act-ind::γεννῶ": {
-          "type": "verb",
-          "lexical_form": "γεννῶ",
-          "source": [
-            {
-              "resource": "BBGG",
-              "chapter": "Appendix",
-              "header": "Appendix (MBG)",
-              "page": null
-            }
-          ],
-          "slots": [
-            "pres-act-ind::γεννῶ::first_person.singular",
-            "pres-act-ind::γεννῶ::second_person.singular",
-            "pres-act-ind::γεννῶ::third_person.singular",
-            "pres-act-ind::γεννῶ::first_person.plural",
-            "pres-act-ind::γεννῶ::second_person.plural",
-            "pres-act-ind::γεννῶ::third_person.plural"
-          ],
-          "tense": "present",
-          "aspect": "continuous",
-          "voice": "active",
-          "mood": "indicative",
-          "lemma": "γεννάω",
-          "stem_class": "contract -άω",
-          "gnt_lemma_frequency": 97
-        },
-        "pres-act-ind::ποιῶ": {
-          "type": "verb",
-          "lexical_form": "ποιῶ",
-          "source": [
-            {
-              "resource": "BBGG",
-              "chapter": "Appendix",
-              "header": "Appendix (MBG)",
-              "page": null
-            }
-          ],
-          "slots": [
-            "pres-act-ind::ποιῶ::first_person.singular",
-            "pres-act-ind::ποιῶ::second_person.singular",
-            "pres-act-ind::ποιῶ::third_person.singular",
-            "pres-act-ind::ποιῶ::first_person.plural",
-            "pres-act-ind::ποιῶ::second_person.plural",
-            "pres-act-ind::ποιῶ::third_person.plural"
-          ],
-          "tense": "present",
-          "aspect": "continuous",
-          "voice": "active",
-          "mood": "indicative",
-          "lemma": "ποιέω",
-          "stem_class": "contract -έω",
-          "gnt_lemma_frequency": 566
-        },
-        "pres-act-ind::φανερῶ": {
-          "type": "verb",
-          "lexical_form": "φανερῶ",
-          "source": [
-            {
-              "resource": "BBGG",
-              "chapter": "Appendix",
-              "header": "Appendix (MBG)",
-              "page": null
-            }
-          ],
-          "slots": [
-            "pres-act-ind::φανερῶ::first_person.singular",
-            "pres-act-ind::φανερῶ::second_person.singular",
-            "pres-act-ind::φανερῶ::third_person.singular",
-            "pres-act-ind::φανερῶ::first_person.plural",
-            "pres-act-ind::φανερῶ::second_person.plural",
-            "pres-act-ind::φανερῶ::third_person.plural"
-          ],
-          "tense": "present",
-          "aspect": "continuous",
-          "voice": "active",
-          "mood": "indicative",
-          "lemma": "φανερόω",
-          "stem_class": "contract -όω",
-          "gnt_lemma_frequency": 49
-        },
-        "pres-act-ind::ἵστημι": {
-          "type": "verb",
-          "lexical_form": "ἵστημι",
-          "source": [
-            {
-              "resource": "BBGG",
-              "chapter": "Appendix",
-              "header": "Appendix (MBG)",
-              "page": null
-            }
-          ],
-          "slots": [
-            "pres-act-ind::ἵστημι::first_person.singular",
-            "pres-act-ind::ἵστημι::second_person.singular",
-            "pres-act-ind::ἵστημι::third_person.singular",
-            "pres-act-ind::ἵστημι::first_person.plural",
-            "pres-act-ind::ἵστημι::second_person.plural",
-            "pres-act-ind::ἵστημι::third_person.plural"
-          ],
-          "tense": "present",
-          "aspect": "continuous",
-          "voice": "active",
-          "mood": "indicative",
-          "lemma": "ἵστημι",
-          "stem_class": "athematic",
-          "gnt_lemma_frequency": 153
-        },
-        "pres-act-ind::τίθημι": {
-          "type": "verb",
-          "lexical_form": "τίθημι",
-          "source": [
-            {
-              "resource": "BBGG",
-              "chapter": "Appendix",
-              "header": "Appendix (MBG)",
-              "page": null
-            }
-          ],
-          "slots": [
-            "pres-act-ind::τίθημι::first_person.singular",
-            "pres-act-ind::τίθημι::second_person.singular",
-            "pres-act-ind::τίθημι::third_person.singular",
-            "pres-act-ind::τίθημι::first_person.plural",
-            "pres-act-ind::τίθημι::second_person.plural",
-            "pres-act-ind::τίθημι::third_person.plural"
-          ],
-          "tense": "present",
-          "aspect": "continuous",
-          "voice": "active",
-          "mood": "indicative",
-          "lemma": "τίθημι",
-          "stem_class": "athematic",
-          "gnt_lemma_frequency": 99
-        },
-        "pres-act-ind::δίδωμι": {
-          "type": "verb",
-          "lexical_form": "δίδωμι",
-          "source": [
-            {
-              "resource": "BBGG",
-              "chapter": "Appendix",
-              "header": "Appendix (MBG)",
-              "page": null
-            }
-          ],
-          "slots": [
-            "pres-act-ind::δίδωμι::first_person.singular",
-            "pres-act-ind::δίδωμι::second_person.singular",
-            "pres-act-ind::δίδωμι::third_person.singular",
-            "pres-act-ind::δίδωμι::first_person.plural",
-            "pres-act-ind::δίδωμι::second_person.plural",
-            "pres-act-ind::δίδωμι::third_person.plural"
-          ],
-          "tense": "present",
-          "aspect": "continuous",
-          "voice": "active",
-          "mood": "indicative",
-          "lemma": "δίδωμι",
-          "stem_class": "athematic",
-          "gnt_lemma_frequency": 414
-        },
-        "pres-act-ind::δείκνυμι": {
-          "type": "verb",
-          "lexical_form": "δείκνυμι",
-          "source": [
-            {
-              "resource": "BBGG",
-              "chapter": "Appendix",
-              "header": "Appendix (MBG)",
-              "page": null
-            }
-          ],
-          "slots": [
-            "pres-act-ind::δείκνυμι::first_person.singular",
-            "pres-act-ind::δείκνυμι::second_person.singular",
-            "pres-act-ind::δείκνυμι::third_person.singular",
-            "pres-act-ind::δείκνυμι::first_person.plural",
-            "pres-act-ind::δείκνυμι::second_person.plural",
-            "pres-act-ind::δείκνυμι::third_person.plural"
-          ],
-          "tense": "present",
-          "aspect": "continuous",
-          "voice": "active",
-          "mood": "indicative",
-          "lemma": "δείκνυμι",
-          "stem_class": "athematic",
-          "gnt_lemma_frequency": 33
-        }
-      },
       "difficulty_tier": 1,
       "teaching_note": "GrammarSummaries' Master Verb Chart supplies the recipe columns directly: no augment, present stem, no tense formative, ο/ε connecting vowel, primary active endings.",
       "morph_recipe": {
         "tense_stem": "present",
         "connecting_vowel": "ο/ε",
         "personal_endings": "primary_active"
-      },
-      "drill_lexemes": [
-        "πιστεύω",
-        "γράφω"
-      ]
+      }
     },
-    "paradigm": {
+    "pattern": {
+      "name": "Thematic",
       "type": "verb",
-      "lexical_form": "λύω",
+      "charts": [
+        "λύω"
+      ],
       "source": [
         {
           "resource": "BBGG",
           "chapter": "Appendix",
           "header": "Overview of Indicative",
           "page": null
+        },
+        {
+          "resource": "BBGG",
+          "chapter": "Appendix",
+          "header": "Appendix (MBG)",
+          "page": null
         }
       ],
       "slots": [
-        "pres-act-ind::λύω::first_person.singular",
-        "pres-act-ind::λύω::second_person.singular",
-        "pres-act-ind::λύω::third_person.singular",
-        "pres-act-ind::λύω::first_person.plural",
-        "pres-act-ind::λύω::second_person.plural",
-        "pres-act-ind::λύω::third_person.plural"
+        "pres-act-ind::thematic::first_person.singular",
+        "pres-act-ind::thematic::second_person.singular",
+        "pres-act-ind::thematic::third_person.singular",
+        "pres-act-ind::thematic::first_person.plural",
+        "pres-act-ind::thematic::second_person.plural",
+        "pres-act-ind::thematic::third_person.plural"
       ],
       "tense": "present",
       "aspect": "continuous",
       "voice": "active",
-      "mood": "indicative",
-      "lemma": "λύω",
-      "stem_class": "thematic",
-      "gnt_lemma_frequency": 42
+      "mood": "indicative"
     }
   },
   "recent_generations": [],
-  "student": {
-    "level": "beyond_beginner",
-    "concepts_learned": "Not Applicable",
-    "vocabulary_learned": "Not Applicable"
-  },
+  "student": "(the test student's block: level, grammar learned, syntax learned, 500 words)",
   "sentence_plan": {
     "sentence_shape": {
-      "shape": "a main clause with an adverbial dependent clause: causal, oti indicative",
-      "formation": "ὅτι plus a verb in the indicative. γάρ, διότι, ἐπεί, ἐπειδή, ἐπειδήπερ, καθώς and ὡς can head the same kind of clause.",
-      "function": "States the basis or ground on which the main clause rests. Render with 'because' or 'since'.",
-      "syntactic_category": "Causal (Adverbial) - a syntactic usage, under Moods > Indicative > The Indicative with Ὃτι. Syntactic explanation: because (introduces a dependent causal clause).",
+      "shape": "a main clause with an adverbial dependent clause: comparative, kathos hos indicative",
+      "formation": "καθώς plus the indicative. καθάπερ, οὕτως, ὡς and ὡσαύτως head the same kind of clause, as does the relative adjective ὅσος.",
+      "function": "Sets one idea alongside another as an analogy, or says how something was done. Render with 'as', 'just as', 'in the same way' or 'thus'.",
+      "syntactic_category": "Comparative (manner) - a syntactic usage, under Conjunctions > Adverbial Functions. Syntactic explanation: as, just as, in the same way, thus, or in this manner (suggests an analogy or comparison between the connected ideas or tells how something is to be done); καθάπερ, καθώς, οὕτως, ὡς, ὡσαύτως, ὡσεί, and ὥσπερ.",
       "position": "after the main clause by default; before it when you mean to give it emphasis"
     },
-    "also_include": [
-      "Dative of Interest (including Advantage [commodi] and Disadvantage [incommodi]) - a syntactic usage, under Dative > Pure Dative Uses."
+    "also_include_one_of": [
+      "Ἀνά (Accusative) - a syntactic usage, under Prepositions.",
+      "Perfect with a Present Force - a syntactic usage, under Tense > Perfect. Syntactic explanation: focus on present state in which the completed action is not in view; lexically conditioned (e.g., οἶδα, ἕστηκα).",
+      "Substantival (Independent) - a syntactic usage, under Participle. Syntactic explanation: the one who, the thing which; functions in the place of a substantive; can perform virtually any function a noun can; verbal aspect usually retained."
     ],
     "setting_options": {
-      "s139": "A mule breaks loose in the market and scatters the fruit stalls.",
-      "s100": "A doctor examines a slave for sale in the market and declares him sick."
+      "s212": "A family replaces their old cart with a new one.",
+      "s092": "A household guard is bribed to leave a gate unbarred."
     }
   }
 }
 ```
 
-### `pres-act-ind::λύω::third_person.plural`
+### `pres-act-ind::thematic::third_person.plural`
 
 ```json
 {
   "item": {
     "item": {
-      "key": "pres-act-ind::λύω::third_person.plural",
-      "parent": "pres-act-ind::λύω",
+      "key": "pres-act-ind::thematic::third_person.plural",
+      "parent": "pres-act-ind::thematic",
       "rule": "pres-act-ind",
+      "pattern": "thematic",
       "form": "λύουσι(ν)",
+      "lexical_form": "λύω",
       "parsing": "present active indicative 3rd person plural",
       "features": {
         "person": "third_person",
@@ -1942,295 +1077,107 @@ No API calls. Each item's user message as generation would send it; the system p
         "voice": "active",
         "mood": "indicative"
       },
-      "lexical_form": "λύω"
+      "gnt_occurrences": 362,
+      "gnt_forms": [
+        {
+          "form": "λέγουσιν",
+          "lemma": "λέγω",
+          "occurrences": 59
+        },
+        {
+          "form": "ἔχουσιν",
+          "lemma": "ἔχω",
+          "occurrences": 34
+        },
+        {
+          "form": "ἐσθίουσιν",
+          "lemma": "ἐσθίω",
+          "occurrences": 8
+        }
+      ]
     },
     "rule": {
       "name": "Present Active Indicative",
-      "sequence": 153,
+      "sequence": 149,
       "pos_lex_category": "verb",
       "morph_rule_description": "Unaugmented present stem, connecting vowel omicron or epsilon, primary active endings. This is the precedent every other verbal form is measured against.",
-      "paradigms": {
-        "pres-act-ind::λύω": {
-          "type": "verb",
-          "lexical_form": "λύω",
-          "source": [
-            {
-              "resource": "BBGG",
-              "chapter": "Appendix",
-              "header": "Overview of Indicative",
-              "page": null
-            }
-          ],
-          "slots": [
-            "pres-act-ind::λύω::first_person.singular",
-            "pres-act-ind::λύω::second_person.singular",
-            "pres-act-ind::λύω::third_person.singular",
-            "pres-act-ind::λύω::first_person.plural",
-            "pres-act-ind::λύω::second_person.plural",
-            "pres-act-ind::λύω::third_person.plural"
-          ],
-          "tense": "present",
-          "aspect": "continuous",
-          "voice": "active",
-          "mood": "indicative",
-          "lemma": "λύω",
-          "stem_class": "thematic",
-          "gnt_lemma_frequency": 42
-        },
-        "pres-act-ind::γεννῶ": {
-          "type": "verb",
-          "lexical_form": "γεννῶ",
-          "source": [
-            {
-              "resource": "BBGG",
-              "chapter": "Appendix",
-              "header": "Appendix (MBG)",
-              "page": null
-            }
-          ],
-          "slots": [
-            "pres-act-ind::γεννῶ::first_person.singular",
-            "pres-act-ind::γεννῶ::second_person.singular",
-            "pres-act-ind::γεννῶ::third_person.singular",
-            "pres-act-ind::γεννῶ::first_person.plural",
-            "pres-act-ind::γεννῶ::second_person.plural",
-            "pres-act-ind::γεννῶ::third_person.plural"
-          ],
-          "tense": "present",
-          "aspect": "continuous",
-          "voice": "active",
-          "mood": "indicative",
-          "lemma": "γεννάω",
-          "stem_class": "contract -άω",
-          "gnt_lemma_frequency": 97
-        },
-        "pres-act-ind::ποιῶ": {
-          "type": "verb",
-          "lexical_form": "ποιῶ",
-          "source": [
-            {
-              "resource": "BBGG",
-              "chapter": "Appendix",
-              "header": "Appendix (MBG)",
-              "page": null
-            }
-          ],
-          "slots": [
-            "pres-act-ind::ποιῶ::first_person.singular",
-            "pres-act-ind::ποιῶ::second_person.singular",
-            "pres-act-ind::ποιῶ::third_person.singular",
-            "pres-act-ind::ποιῶ::first_person.plural",
-            "pres-act-ind::ποιῶ::second_person.plural",
-            "pres-act-ind::ποιῶ::third_person.plural"
-          ],
-          "tense": "present",
-          "aspect": "continuous",
-          "voice": "active",
-          "mood": "indicative",
-          "lemma": "ποιέω",
-          "stem_class": "contract -έω",
-          "gnt_lemma_frequency": 566
-        },
-        "pres-act-ind::φανερῶ": {
-          "type": "verb",
-          "lexical_form": "φανερῶ",
-          "source": [
-            {
-              "resource": "BBGG",
-              "chapter": "Appendix",
-              "header": "Appendix (MBG)",
-              "page": null
-            }
-          ],
-          "slots": [
-            "pres-act-ind::φανερῶ::first_person.singular",
-            "pres-act-ind::φανερῶ::second_person.singular",
-            "pres-act-ind::φανερῶ::third_person.singular",
-            "pres-act-ind::φανερῶ::first_person.plural",
-            "pres-act-ind::φανερῶ::second_person.plural",
-            "pres-act-ind::φανερῶ::third_person.plural"
-          ],
-          "tense": "present",
-          "aspect": "continuous",
-          "voice": "active",
-          "mood": "indicative",
-          "lemma": "φανερόω",
-          "stem_class": "contract -όω",
-          "gnt_lemma_frequency": 49
-        },
-        "pres-act-ind::ἵστημι": {
-          "type": "verb",
-          "lexical_form": "ἵστημι",
-          "source": [
-            {
-              "resource": "BBGG",
-              "chapter": "Appendix",
-              "header": "Appendix (MBG)",
-              "page": null
-            }
-          ],
-          "slots": [
-            "pres-act-ind::ἵστημι::first_person.singular",
-            "pres-act-ind::ἵστημι::second_person.singular",
-            "pres-act-ind::ἵστημι::third_person.singular",
-            "pres-act-ind::ἵστημι::first_person.plural",
-            "pres-act-ind::ἵστημι::second_person.plural",
-            "pres-act-ind::ἵστημι::third_person.plural"
-          ],
-          "tense": "present",
-          "aspect": "continuous",
-          "voice": "active",
-          "mood": "indicative",
-          "lemma": "ἵστημι",
-          "stem_class": "athematic",
-          "gnt_lemma_frequency": 153
-        },
-        "pres-act-ind::τίθημι": {
-          "type": "verb",
-          "lexical_form": "τίθημι",
-          "source": [
-            {
-              "resource": "BBGG",
-              "chapter": "Appendix",
-              "header": "Appendix (MBG)",
-              "page": null
-            }
-          ],
-          "slots": [
-            "pres-act-ind::τίθημι::first_person.singular",
-            "pres-act-ind::τίθημι::second_person.singular",
-            "pres-act-ind::τίθημι::third_person.singular",
-            "pres-act-ind::τίθημι::first_person.plural",
-            "pres-act-ind::τίθημι::second_person.plural",
-            "pres-act-ind::τίθημι::third_person.plural"
-          ],
-          "tense": "present",
-          "aspect": "continuous",
-          "voice": "active",
-          "mood": "indicative",
-          "lemma": "τίθημι",
-          "stem_class": "athematic",
-          "gnt_lemma_frequency": 99
-        },
-        "pres-act-ind::δίδωμι": {
-          "type": "verb",
-          "lexical_form": "δίδωμι",
-          "source": [
-            {
-              "resource": "BBGG",
-              "chapter": "Appendix",
-              "header": "Appendix (MBG)",
-              "page": null
-            }
-          ],
-          "slots": [
-            "pres-act-ind::δίδωμι::first_person.singular",
-            "pres-act-ind::δίδωμι::second_person.singular",
-            "pres-act-ind::δίδωμι::third_person.singular",
-            "pres-act-ind::δίδωμι::first_person.plural",
-            "pres-act-ind::δίδωμι::second_person.plural",
-            "pres-act-ind::δίδωμι::third_person.plural"
-          ],
-          "tense": "present",
-          "aspect": "continuous",
-          "voice": "active",
-          "mood": "indicative",
-          "lemma": "δίδωμι",
-          "stem_class": "athematic",
-          "gnt_lemma_frequency": 414
-        },
-        "pres-act-ind::δείκνυμι": {
-          "type": "verb",
-          "lexical_form": "δείκνυμι",
-          "source": [
-            {
-              "resource": "BBGG",
-              "chapter": "Appendix",
-              "header": "Appendix (MBG)",
-              "page": null
-            }
-          ],
-          "slots": [
-            "pres-act-ind::δείκνυμι::first_person.singular",
-            "pres-act-ind::δείκνυμι::second_person.singular",
-            "pres-act-ind::δείκνυμι::third_person.singular",
-            "pres-act-ind::δείκνυμι::first_person.plural",
-            "pres-act-ind::δείκνυμι::second_person.plural",
-            "pres-act-ind::δείκνυμι::third_person.plural"
-          ],
-          "tense": "present",
-          "aspect": "continuous",
-          "voice": "active",
-          "mood": "indicative",
-          "lemma": "δείκνυμι",
-          "stem_class": "athematic",
-          "gnt_lemma_frequency": 33
-        }
-      },
       "difficulty_tier": 1,
       "teaching_note": "GrammarSummaries' Master Verb Chart supplies the recipe columns directly: no augment, present stem, no tense formative, ο/ε connecting vowel, primary active endings.",
       "morph_recipe": {
         "tense_stem": "present",
         "connecting_vowel": "ο/ε",
         "personal_endings": "primary_active"
-      },
-      "drill_lexemes": [
-        "πιστεύω",
-        "γράφω"
-      ]
+      }
     },
-    "paradigm": {
+    "pattern": {
+      "name": "Thematic",
       "type": "verb",
-      "lexical_form": "λύω",
+      "charts": [
+        "λύω"
+      ],
       "source": [
         {
           "resource": "BBGG",
           "chapter": "Appendix",
           "header": "Overview of Indicative",
           "page": null
+        },
+        {
+          "resource": "BBGG",
+          "chapter": "Appendix",
+          "header": "Appendix (MBG)",
+          "page": null
         }
       ],
       "slots": [
-        "pres-act-ind::λύω::first_person.singular",
-        "pres-act-ind::λύω::second_person.singular",
-        "pres-act-ind::λύω::third_person.singular",
-        "pres-act-ind::λύω::first_person.plural",
-        "pres-act-ind::λύω::second_person.plural",
-        "pres-act-ind::λύω::third_person.plural"
+        "pres-act-ind::thematic::first_person.singular",
+        "pres-act-ind::thematic::second_person.singular",
+        "pres-act-ind::thematic::third_person.singular",
+        "pres-act-ind::thematic::first_person.plural",
+        "pres-act-ind::thematic::second_person.plural",
+        "pres-act-ind::thematic::third_person.plural"
       ],
       "tense": "present",
       "aspect": "continuous",
       "voice": "active",
-      "mood": "indicative",
-      "lemma": "λύω",
-      "stem_class": "thematic",
-      "gnt_lemma_frequency": 42
+      "mood": "indicative"
     }
   },
   "recent_generations": [],
-  "student": {
-    "level": "beyond_beginner",
-    "concepts_learned": "Not Applicable",
-    "vocabulary_learned": "Not Applicable"
-  },
+  "student": "(the test student's block: level, grammar learned, syntax learned, 500 words)",
   "sentence_plan": {
     "sentence_shape": {
-      "shape": "a main clause with an adverbial dependent clause: causal, oti indicative",
-      "formation": "ὅτι plus a verb in the indicative. γάρ, διότι, ἐπεί, ἐπειδή, ἐπειδήπερ, καθώς and ὡς can head the same kind of clause.",
-      "function": "States the basis or ground on which the main clause rests. Render with 'because' or 'since'.",
-      "syntactic_category": "Causal (Adverbial) - a syntactic usage, under Moods > Indicative > The Indicative with Ὃτι. Syntactic explanation: because (introduces a dependent causal clause).",
-      "position": "after the main clause by default; before it when you mean to give it emphasis"
+      "shape": "a main clause with a relative clause: substantival, subjunctive",
+      "formation": "An indefinite relative clause: ὅστις with ἄν or ἐάν, or ὅς (δʼ) ἄν, plus the subjunctive.",
+      "function": "Points to an unspecified person, group, event or action - 'whoever', 'whatever'. There is no antecedent. Translate as though it were indicative: the uncertainty is about who, not about whether.",
+      "syntactic_category": "Subjunctive in Indefinite Relative Clause - a syntactic usage, under Moods > Subjunctive > In Dependent (Subordinate) Clauses. Syntactic explanation: after ὅστις (ἄν/ἐάν) or ὅς (δʼ) ἄν; construction indicates a generic or indefinite subject; translate like an indicative (since the contingency is of the person, not the action).",
+      "position": "after the main clause by default; before it when you mean to give it emphasis",
+      "frequency": "Not frequent in the New Testament. Be aware of that: stay true to its form while keeping the sentence reasonable.",
+      "grammar_options": [
+        {
+          "option": "Relative Pronoun",
+          "gnt_examples": [
+            "ὅ (ὅς)",
+            "ὅς (ὅς)",
+            "ὅν (ὅς)"
+          ]
+        }
+      ]
     },
-    "also_include": [],
+    "also_include_one_of": [
+      "Conditional Indicative - a syntactic usage, under Moods > Indicative. Syntactic explanation: indicative with εἰ in protasis—first class: assumed true for sake of argument; second class: assumed false (for sake of argument).",
+      "Omission of Antecedent - a syntactic usage, under Pronouns > Semantic Categories > Relative Pronouns > ὅς > “Unusual” Uses > Antecedent Complexities. Syntactic explanation: due to embedded demonstrative or poetry.",
+      "The Predicate Positions - a syntactic usage, under Adjectives > The Relation of Adjective to Noun > When the Article Is Present. Syntactic explanation: adjective makes assertion about the noun."
+    ],
     "setting_options": {
-      "s048": "A steward counts the household stores before winter and finds the oil jars half empty.",
-      "s066": "A woman keeps watch at the bedside of her dying husband."
+      "s056": "The market inspector checks a merchant's scales.",
+      "s030": "A thief is caught climbing into a storeroom."
     }
   }
 }
 ```
 
-## vocabulary — `text_recall_vocabulary_g2e`
+## vocabulary - `text_recall_vocabulary_g2e`
 
 ### `βαπτίζω`
 
@@ -2242,73 +1189,90 @@ No API calls. Each item's user message as generation would send it; the system p
     "gloss": "dip, baptize",
     "frequency": 76,
     "lexical_entry": "βαπτίζω",
-    "summary": "βαπτίζω: primary sense 53.41 (65 of 75 tagged occurrences, 53 Religious Activities / E Baptize). Secondary senses: 24.82 (5x), 53.49 (4x), 53.31 (1x)."
+    "summary": "βαπτίζω: primary sense 53.41 (65 of 75 tagged occurrences, 53 Religious Activities / E Baptize). Secondary senses: 24.82 (5x), 53.49 (4x), 53.31 (1x).",
+    "attested_usage": {
+      "principal_parts": {
+        "present": "βαπτίζω (present active indicative 1st person singular)",
+        "future": "βαπτίσει (future active indicative 3rd person singular)",
+        "aorist": "ἐβάπτισα (aorist active indicative 1st person singular)",
+        "perfect active": "not attested in the GNT",
+        "perfect middle/passive": "βεβαπτισμένοι (perfect passive participle nominative masculine plural)",
+        "aorist passive": "ἐβαπτίσθη (aorist passive indicative 3rd person singular)"
+      },
+      "object_case": "accusative (x18)",
+      "prepositions": [
+        "ἐν + dative (x13)",
+        "εἰς + accusative (x13)",
+        "ὑπό + genitive (x7)"
+      ]
+    }
   },
   "recent_generations": [],
-  "student": {
-    "level": "beyond_beginner",
-    "concepts_learned": "Not Applicable",
-    "vocabulary_learned": "Not Applicable"
-  },
+  "student": "(the test student's block: level, grammar learned, syntax learned, 500 words)",
   "sentence_plan": {
     "sentence_shape": {
-      "shape": "a main clause with an adverbial dependent clause: conditional, second class",
-      "formation": "Protasis: εἰ plus a secondary tense of the indicative, normally aorist or imperfect. Apodosis: usually ἄν with the indicative in the same secondary tense.",
-      "function": "The speaker takes the condition as untrue and then says what would have been the case had it been true. Contrary to fact.",
-      "syntactic_category": "Second Class Condition - a syntactic usage, under Conditional Sentences > II. Conditional Sentences in Greek (especially the NT). Syntactic explanation: the assumption of an untruth (for the sake of argument); protasis: εἰ + indicative of secondary tense (aorist or imperfect usually)/apodosis: ἄν (usually) + secondary tense in indicative (689, 694–96).",
+      "shape": "a main clause with an adverbial dependent clause: conditional, third class",
+      "formation": "Protasis: ἐάν plus the subjunctive. Apodosis: any mood or tense.",
+      "function": "Covers a wide band, from a purely hypothetical case to a probable one, and sometimes states a general present reality. Read the strength of the condition from context rather than from the form.",
+      "syntactic_category": "Third Class Condition - a syntactic usage, under Conditional Sentences > II. Conditional Sentences in Greek (especially the NT). Syntactic explanation: range of nuances: (a) a logical connection (if A, then B) in the present time (present general condition or fifth class condition), (b) hypothetical situation, and (c) more probable future occurrence; ἐάν + subjunctive, any tense; apodosis: any tense, any mood (present indicative for present general condition) (689, 696–99).",
       "position": "before the main clause by default; after it when you mean to give it emphasis",
-      "paradigm": {
-        "name": "Second Aorist Active Indicative",
-        "forms": {
-          "ἔλαβον (λαμβάνω, second aorist)": {
-            "aorist active indicative 1st person singular": "ἔλαβον",
-            "aorist active indicative 2nd person singular": "ἔλαβες",
-            "aorist active indicative 3rd person singular": "ἔλαβε(ν)",
-            "aorist active indicative 1st person plural": "ἐλάβομεν",
-            "aorist active indicative 2nd person plural": "ἐλάβετε",
-            "aorist active indicative 3rd person plural": "ἔλαβον"
-          },
-          "ἔβαλον (βάλλω, second aorist)": {
-            "aorist active indicative 1st person singular": "ἔβαλον",
-            "aorist active indicative 2nd person singular": "ἔβαλες",
-            "aorist active indicative 3rd person singular": "ἔβαλε(ν)",
-            "aorist active indicative 1st person plural": "ἐβάλομεν",
-            "aorist active indicative 2nd person plural": "ἐβάλετε",
-            "aorist active indicative 3rd person plural": "ἔβαλον"
-          },
-          "ἔστην (ἵστημι, root aorist)": {
-            "aorist active indicative 1st person singular": "ἔστην",
-            "aorist active indicative 2nd person singular": "ἔστης",
-            "aorist active indicative 3rd person singular": "ἔστη",
-            "aorist active indicative 1st person plural": "ἔστημεν",
-            "aorist active indicative 2nd person plural": "ἔστητε",
-            "aorist active indicative 3rd person plural": "ἔστησαν"
-          },
-          "ἔθην (τίθημι, root aorist)": {
-            "aorist active indicative 1st person singular": "ἔθην",
-            "aorist active indicative 2nd person singular": "ἔθης",
-            "aorist active indicative 3rd person singular": "ἔθη",
-            "aorist active indicative 1st person plural": "ἔθεμεν",
-            "aorist active indicative 2nd person plural": "ἔθετε",
-            "aorist active indicative 3rd person plural": "ἔθεσαν"
-          },
-          "ἔδων (δίδωμι, root aorist)": {
-            "aorist active indicative 1st person singular": "ἔδων",
-            "aorist active indicative 2nd person singular": "ἔδως",
-            "aorist active indicative 3rd person singular": "ἔδω",
-            "aorist active indicative 1st person plural": "ἔδομεν",
-            "aorist active indicative 2nd person plural": "ἔδοτε",
-            "aorist active indicative 3rd person plural": "ἔδοσαν"
-          }
+      "grammar_options": [
+        {
+          "option": "Aorist Active Subjunctive",
+          "gnt_examples": [
+            "ποιήσω (ποιέω)",
+            "ποιήσῃ (ποιέω)",
+            "ποιήσωμεν (ποιέω)"
+          ]
+        },
+        {
+          "option": "Aorist Middle Subjunctive",
+          "gnt_examples": [
+            "δέξηται (δέχομαι)",
+            "ἄρξηται (ἄρχω)",
+            "ἅψηται (ἅπτω)"
+          ]
+        },
+        {
+          "option": "Aorist Passive Subjunctive",
+          "gnt_examples": [
+            "πληρωθῇ (πληρόω)",
+            "φανερωθῇ (φανερόω)",
+            "πληρωθῶσιν (πληρόω)"
+          ]
+        },
+        {
+          "option": "Present Subjunctive of εἰμί",
+          "gnt_examples": [
+            "ᾖ (εἰμί)"
+          ]
+        },
+        {
+          "option": "Present Active Subjunctive",
+          "gnt_examples": [
+            "ἔχῃ (ἔχω)",
+            "ἔχητε (ἔχω)",
+            "θέλῃ (θέλω)"
+          ]
+        },
+        {
+          "option": "Present Middle/Passive Subjunctive",
+          "gnt_examples": [
+            "βούληται (βούλομαι)",
+            "ἔρχηται (ἔρχομαι)",
+            "δοξάζηται (δοξάζω)"
+          ]
         }
-      }
+      ]
     },
-    "also_include": [
-      "Intensive Perfect (a.k.a. Resultative Perfect) - a syntactic usage, under Tense > Perfect. Syntactic explanation: emphasizes the results or present state produced by a past action (often best translated like English present); frequent with stative verbs."
+    "also_include_one_of": [
+      "Abstract (i.e., the Article with Abstract Nouns) - a syntactic usage, under The Article > Regular Uses of the Article > With Substantives (Dependent or Modifying Use) > Individualizing Article. Syntactic explanation: identifies a quality or abstract concept (e.g., love, salvation, peace, faith); article is rarely used in translation.",
+      "Ἐκ (Genitive) - a syntactic usage, under Prepositions. Syntactic explanation: from, out of, away from, of.",
+      "Possessive Genitive - a syntactic usage, under Genitive > Adjectival. Syntactic explanation: belonging to, possessed by."
     ],
     "setting_options": {
-      "s077": "An old man teaches his grandson the blessing said before meals.",
-      "s080": "A farmer and his sons pray for rain after a dry winter."
+      "s084": "A synagogue attendant sweeps the floor early, before the town gathers.",
+      "s072": "A household makes ready for the Sabbath at sunset and the lamp oil runs out."
     }
   }
 }
@@ -2324,14 +1288,24 @@ No API calls. Each item's user message as generation would send it; the system p
     "gloss": "cry out, cry, call out",
     "frequency": 55,
     "lexical_entry": "κράζω",
-    "summary": "κράζω: primary sense 33.83 (54 of 54 tagged occurrences, 33 Communication / F Speak, Talk). No secondary senses attested."
+    "summary": "κράζω: primary sense 33.83 (54 of 54 tagged occurrences, 33 Communication / F Speak, Talk). No secondary senses attested.",
+    "attested_usage": {
+      "principal_parts": {
+        "present": "κράζει (present active indicative 3rd person singular)",
+        "future": "κράξουσιν (future active indicative 3rd person plural)",
+        "aorist": "ἔκραξεν (aorist active indicative 3rd person singular)",
+        "perfect active": "κέκραγεν (perfect active indicative 3rd person singular)",
+        "perfect middle/passive": "not attested in the GNT",
+        "aorist passive": "not attested in the GNT"
+      },
+      "object_case": "accusative (x5), genitive (x2)",
+      "prepositions": [
+        "ἐν + dative (x8)"
+      ]
+    }
   },
   "recent_generations": [],
-  "student": {
-    "level": "beyond_beginner",
-    "concepts_learned": "Not Applicable",
-    "vocabulary_learned": "Not Applicable"
-  },
+  "student": "(the test student's block: level, grammar learned, syntax learned, 500 words)",
   "sentence_plan": {
     "sentence_shape": {
       "shape": "two independent clauses joined by a coordinating conjunction",
@@ -2340,12 +1314,14 @@ No API calls. Each item's user message as generation would send it; the system p
       "note": "γάρ, δέ, οὖν and μέν are postpositive and cannot stand first in their clause. See the hard constraints under WORD ORDER.",
       "syntactic_category": "Connective (continuative, coordinate) - a syntactic usage, under Conjunctions. Syntactic explanation: and, also (if emphatic [adjunctive]); (connects an additional element to a discussion); καί and δέ."
     },
-    "also_include": [
-      "Explanatory - a syntactic usage, under Conjunctions. Syntactic explanation: for, you see, or that is, namely (conjunction indicates additional information being given to what has been described); γάρ, δέ, εἰ (after verbs of emotion), and καί."
+    "also_include_one_of": [
+      "Accusative Subject of Infinitive - a syntactic usage, under Accusative > Substantival Uses of the Accusative. Syntactic explanation: accusative of reference that functions like subject of infinitive (“I want you to know”).",
+      "Direct Object - a syntactic usage, under Infinitive > Substantival. Syntactic explanation: occurring after other than a verb of perception or communication.",
+      "Possessive Genitive - a syntactic usage, under Genitive > Adjectival. Syntactic explanation: belonging to, possessed by."
     ],
     "setting_options": {
-      "s020": "An innkeeper and a traveller quarrel over the bill for feeding the traveller's mules.",
-      "s144": "An old woman tells her grandchildren about her own wedding day."
+      "s078": "A sailor promises his crew a feast if the ship reaches harbour safely.",
+      "s002": "Two brothers argue over how to divide their late father's olive grove."
     }
   }
 }
@@ -2361,14 +1337,26 @@ No API calls. Each item's user message as generation would send it; the system p
     "gloss": "hasten; pursue, persecute",
     "frequency": 45,
     "lexical_entry": "διώκω",
-    "summary": "διώκω: primary sense 39.45 (30 of 47 tagged occurrences, 39 Hostility, Strife / I Persecution). Secondary senses: 68.66 (9x), 15.158 (5x), 15.223 (2x), 89.56 (1x)."
+    "summary": "διώκω: primary sense 39.45 (30 of 47 tagged occurrences, 39 Hostility, Strife / I Persecution). Secondary senses: 68.66 (9x), 15.158 (5x), 15.223 (2x), 89.56 (1x).",
+    "attested_usage": {
+      "principal_parts": {
+        "present": "διώκεις (present active indicative 2nd person singular)",
+        "future": "διώξουσιν (future active indicative 3rd person plural)",
+        "aorist": "ἐδίωξαν (aorist active indicative 3rd person plural)",
+        "perfect active": "not attested in the GNT",
+        "perfect middle/passive": "δεδιωγμένοι (perfect passive participle nominative masculine plural)",
+        "aorist passive": "not attested in the GNT"
+      },
+      "object_case": "accusative (x39)",
+      "prepositions": [
+        "ἕνεκα + genitive (x2)",
+        "κατά + accusative (x2)",
+        "εἰς + accusative (x2)"
+      ]
+    }
   },
   "recent_generations": [],
-  "student": {
-    "level": "beyond_beginner",
-    "concepts_learned": "Not Applicable",
-    "vocabulary_learned": "Not Applicable"
-  },
+  "student": "(the test student's block: level, grammar learned, syntax learned, 500 words)",
   "sentence_plan": {
     "sentence_shape": {
       "shape": "a main clause with a relative clause: adjectival",
@@ -2376,48 +1364,25 @@ No API calls. Each item's user message as generation would send it; the system p
       "function": "Attributive only - it describes, explains or narrows the substantive it attaches to.",
       "syntactic_category": "Relative Pronouns - a syntactic usage, under Pronouns > Semantic Categories. Syntactic explanation: ὅς and ὅστις labeled relative pronouns because they relate to more than one clause.",
       "position": "after the main clause by default; before it when you mean to give it emphasis",
-      "paradigm": {
-        "name": "Relative Pronoun",
-        "forms": {
-          "ὅς": {
-            "nominative masculine singular": "ὅς",
-            "genitive masculine singular": "οὗ",
-            "dative masculine singular": "ᾧ",
-            "accusative masculine singular": "ὅν",
-            "nominative masculine plural": "οἵ",
-            "genitive masculine plural": "ὧν",
-            "dative masculine plural": "οἷς",
-            "accusative masculine plural": "οὕς"
-          },
-          "ἥ": {
-            "nominative feminine singular": "ἥ",
-            "genitive feminine singular": "ἧς",
-            "dative feminine singular": "ῇ",
-            "accusative feminine singular": "ἥν",
-            "nominative feminine plural": "αἵ",
-            "genitive feminine plural": "ὧν",
-            "dative feminine plural": "αἷς",
-            "accusative feminine plural": "ἅς"
-          },
-          "ὅ": {
-            "nominative neuter singular": "ὅ",
-            "genitive neuter singular": "οὗ",
-            "dative neuter singular": "ᾧ",
-            "accusative neuter singular": "ὅ",
-            "nominative neuter plural": "ἅ",
-            "genitive neuter plural": "ὧν",
-            "dative neuter plural": "οἷς",
-            "accusative neuter plural": "ἅ"
-          }
+      "grammar_options": [
+        {
+          "option": "Relative Pronoun",
+          "gnt_examples": [
+            "ὅ (ὅς)",
+            "ὅς (ὅς)",
+            "ὅν (ὅς)"
+          ]
         }
-      }
+      ]
     },
-    "also_include": [
-      "Genitive of Relationship - a syntactic usage, under Genitive > Adjectival. Syntactic explanation: family relationship (subset of possessive)."
+    "also_include_one_of": [
+      "Concession - a syntactic usage, under Participle > Verbal Participles > Dependent Verbal Participles > Adverbial (or Circumstantial). Syntactic explanation: although (implies that the state or action of the main verb is true in spite of the state or action of the participle).",
+      "Dative of Association/Accompaniment - a syntactic usage, under Dative > Instrumental Dative Uses. Syntactic explanation: the person or thing one associates with or accompanies—in association with.",
+      "Subject - a syntactic usage, under Infinitive > Substantival. Syntactic explanation: functions as subject of verb, especially with impersonal verbs such as δεῖ, ἔξεστιν."
     ],
     "setting_options": {
-      "s108": "An archer practises at a target while his friends mock him.",
-      "s119": "Three families share an olive press and argue over whose turn it is."
+      "s119": "Three families share an olive press and argue over whose turn it is.",
+      "s162": "Two neighbours argue over whether one may draw water from the other's cistern."
     }
   }
 }
@@ -2433,26 +1398,39 @@ No API calls. Each item's user message as generation would send it; the system p
     "gloss": "care for, heal",
     "frequency": 43,
     "lexical_entry": "θεραπεύω",
-    "summary": "θεραπεύω: primary sense 23.139 (42 of 43 tagged occurrences, 23 Physiological Processes and States / H Health, Vigor, Strength). Secondary senses: 35.19 (1x)."
+    "summary": "θεραπεύω: primary sense 23.139 (42 of 43 tagged occurrences, 23 Physiological Processes and States / H Health, Vigor, Strength). Secondary senses: 35.19 (1x).",
+    "attested_usage": {
+      "principal_parts": {
+        "present": "θεραπεύει (present active indicative 3rd person singular)",
+        "future": "θεραπεύσω (future active indicative 1st person singular)",
+        "aorist": "ἐθεράπευσεν (aorist active indicative 3rd person singular)",
+        "perfect active": "not attested in the GNT",
+        "perfect middle/passive": "τεθεραπευμέναι (perfect passive participle nominative feminine plural)",
+        "aorist passive": "ἐθεραπεύθη (aorist passive indicative 3rd person singular)"
+      },
+      "object_case": "accusative (x35)",
+      "prepositions": [
+        "ἐν + dative (x4)",
+        "ἀπό + genitive (x4)"
+      ]
+    }
   },
   "recent_generations": [],
-  "student": {
-    "level": "beyond_beginner",
-    "concepts_learned": "Not Applicable",
-    "vocabulary_learned": "Not Applicable"
-  },
+  "student": "(the test student's block: level, grammar learned, syntax learned, 500 words)",
   "sentence_plan": {
     "sentence_shape": {
       "shape": "a single main clause",
       "formation": "A single independent clause: nominative subject, finite verb, and an accusative direct object if the verb is transitive.",
       "function": "One unsubordinated assertion. Unmarked order is subject, then predicate, then complement."
     },
-    "also_include": [
-      "Condition - a syntactic usage, under Participle > Verbal Participles > Dependent Verbal Participles > Adverbial (or Circumstantial). Syntactic explanation: if (implies a condition on which the fulfillment of the idea indicated by the main verb depends)."
+    "also_include_one_of": [
+      "Subjunctive with Verbs of Fearing - a syntactic usage, under Moods > Subjunctive > In Dependent (Subordinate) Clauses. Syntactic explanation: μή plus the subjunctive can be used after verbs of fearing, warning, watching out for to serve as a warning.",
+      "Dative in Simple Apposition - a syntactic usage, under Dative > Pure Dative Uses. Syntactic explanation: dative substantive adjacent to another dative substantive, referring to the same thing/person.",
+      "Result - a syntactic usage, under Participle > Verbal Participles > Dependent Verbal Participles > Adverbial (or Circumstantial). Syntactic explanation: with the result of (indicates the actual outcome or result of the action of the main verb); can be internal (logical) or external (temporal); follows main verb."
     ],
     "setting_options": {
-      "s060": "A servant is sent to fetch a doctor in the middle of a storm.",
-      "s130": "A guard dog barks all night and no one sleeps."
+      "s090": "Two brothers make peace at their mother's sickbed after years of silence.",
+      "s173": "A household celebrates a daughter's recovery from a long illness."
     }
   }
 }
@@ -2471,11 +1449,7 @@ No API calls. Each item's user message as generation would send it; the system p
     "summary": "θύρα: primary sense 7.49 (29 of 44 tagged occurrences, 7 Constructions / C Parts and Areas of Buildings). Secondary senses: 7.39 (12x), 67.58 (3x)."
   },
   "recent_generations": [],
-  "student": {
-    "level": "beyond_beginner",
-    "concepts_learned": "Not Applicable",
-    "vocabulary_learned": "Not Applicable"
-  },
+  "student": "(the test student's block: level, grammar learned, syntax learned, 500 words)",
   "sentence_plan": {
     "sentence_shape": {
       "shape": "a main clause with an adverbial dependent clause: causal, oti indicative",
@@ -2484,12 +1458,14 @@ No API calls. Each item's user message as generation would send it; the system p
       "syntactic_category": "Causal (Adverbial) - a syntactic usage, under Moods > Indicative > The Indicative with Ὃτι. Syntactic explanation: because (introduces a dependent causal clause).",
       "position": "after the main clause by default; before it when you mean to give it emphasis"
     },
-    "also_include": [
-      "Attributive Genitive - a syntactic usage, under Genitive > Adjectival. Syntactic explanation: specifies an attribute or innate quality of the head substantive; convert genitive into an attributive adjective."
+    "also_include_one_of": [
+      "Abstract Nouns - a syntactic usage, under The Article > Absence of the Article > Definite. Syntactic explanation: love, joy, peace, etc. are often anarthrous, but not indefinite.",
+      "Κατά (Genitive, Accusative) - a syntactic usage, under Prepositions.",
+      "Partitive Genitive (“Wholative”) - a syntactic usage, under Genitive > Adjectival. Syntactic explanation: denotes the whole of which the head noun is a part—which is a part of."
     ],
     "setting_options": {
-      "s102": "A fisherman's hut floods when the lake rises.",
-      "s140": "A widow hires a man to mend her leaking roof before the rains."
+      "s103": "Workers carry stones up to build the upper storey of a house.",
+      "s201": "A foreman calls the workers to gather at the gate."
     }
   }
 }
@@ -2508,11 +1484,7 @@ No API calls. Each item's user message as generation would send it; the system p
     "summary": "ποιμήν: primary sense 44.4 (12 of 18 tagged occurrences, 44 Animal Husbandry, Fishing / Overview). Secondary senses: 53.72 (6x)."
   },
   "recent_generations": [],
-  "student": {
-    "level": "beyond_beginner",
-    "concepts_learned": "Not Applicable",
-    "vocabulary_learned": "Not Applicable"
-  },
+  "student": "(the test student's block: level, grammar learned, syntax learned, 500 words)",
   "sentence_plan": {
     "sentence_shape": {
       "shape": "two independent clauses joined by a coordinating conjunction",
@@ -2521,10 +1493,14 @@ No API calls. Each item's user message as generation would send it; the system p
       "note": "γάρ, δέ, οὖν and μέν are postpositive and cannot stand first in their clause. See the hard constraints under WORD ORDER.",
       "syntactic_category": "Connective (continuative, coordinate) - a syntactic usage, under Conjunctions. Syntactic explanation: and, also (if emphatic [adjunctive]); (connects an additional element to a discussion); καί and δέ."
     },
-    "also_include": [],
+    "also_include_one_of": [
+      "ὅστις (called Indefinite; better - a syntactic usage, under Pronouns > Semantic Categories > Relative Pronouns. Syntactic explanation: Generic or Qualitative).",
+      "Purpose (Telic) - a syntactic usage, under Participle > Verbal Participles > Dependent Verbal Participles > Adverbial (or Circumstantial). Syntactic explanation: translate like an infinitive or with the purpose of (indicates the purpose/intent of the action of the finite verb); usually follows main verb.",
+      "The Use of the Positive Adjective - a syntactic usage, under Adjectives > The Independent or Substantival Use of the Adjective."
+    ],
     "setting_options": {
-      "s005": "A shepherd boy counts the flock at dusk and finds one lamb lame.",
-      "s004": "A fisherman's wife salts and packs the catch in jars to sell inland before it spoils."
+      "s188": "A goatherd milks his goats at dawn.",
+      "s185": "Two rival fishing crews fight over the best stretch of shore."
     }
   }
 }
@@ -2543,43 +1519,88 @@ No API calls. Each item's user message as generation would send it; the system p
     "summary": "σκότος: primary sense 88.125 (16 of 33 tagged occurrences, 88 Moral and Ethical Qualities and Related Behavior2 / O Bad, Evil, Harmful, Damaging). Secondary senses: 14.53 (13x), 1.23 (3x), 1.24 (1x)."
   },
   "recent_generations": [],
-  "student": {
-    "level": "beyond_beginner",
-    "concepts_learned": "Not Applicable",
-    "vocabulary_learned": "Not Applicable"
-  },
+  "student": "(the test student's block: level, grammar learned, syntax learned, 500 words)",
   "sentence_plan": {
     "sentence_shape": {
-      "shape": "a main clause with an adverbial dependent clause: causal, infinitive",
-      "formation": "διὰ τό followed by an infinitive.",
-      "function": "Gives the reason the controlling verb's action happened. Render it with 'because' plus a finite verb in English.",
-      "syntactic_category": "Cause - a syntactic usage, under Infinitive > Adverbial. Syntactic explanation: διὰ τό + infinitive; indicates the reason for the action of the controlling verb; translate because + appropriate finite verb.",
-      "position": "after the main clause by default; before it when you mean to give it emphasis",
-      "paradigm": {
-        "name": "Second Aorist Active Infinitive",
-        "forms": {
-          "λαβεῖν (λαμβάνω, second aorist)": {
-            "aorist active infinitive": "λαβεῖν"
-          },
-          "βαλεῖν (βάλλω, second aorist)": {
-            "aorist active infinitive": "βαλεῖν"
-          },
-          "στῆναι (ἵστημι, root aorist)": {
-            "aorist active infinitive": "στῆναι"
-          },
-          "θεῖναι (τίθημι, root aorist)": {
-            "aorist active infinitive": "θεῖναι"
-          },
-          "δοῦναι (δίδωμι, root aorist)": {
-            "aorist active infinitive": "δοῦναι"
-          }
+      "shape": "a main clause with an adverbial dependent clause: causal, adverbial participle",
+      "formation": "Anarthrous participle matching its subject in case, number and gender. It usually sits ahead of the verb it modifies.",
+      "function": "Supplies the ground or reason for the finite verb - it answers 'Why?'. Render with 'because'.",
+      "syntactic_category": "Cause - a syntactic usage, under Participle > Verbal Participles > Dependent Verbal Participles > Adverbial (or Circumstantial). Syntactic explanation: because (answers the question, Why?); indicates the cause or reason or ground of the action of the finite verb; usually precedes its verb.",
+      "position": "before the main clause by default; after it when you mean to give it emphasis",
+      "grammar_options": [
+        {
+          "option": "Aorist Active Participle",
+          "gnt_examples": [
+            "ἀκούσαντες (ἀκούω)",
+            "ἀκούσας (ἀκούω)",
+            "ποιήσας (ποιέω)"
+          ]
+        },
+        {
+          "option": "Aorist Middle Participle",
+          "gnt_examples": [
+            "προσκαλεσάμενος (προσκαλέω)",
+            "ἀρξάμενος (ἄρχω)",
+            "προσευξάμενοι (προσεύχομαι)"
+          ]
+        },
+        {
+          "option": "Aorist Passive Participle",
+          "gnt_examples": [
+            "ἀποκριθείς (ἀποκρίνομαι)",
+            "πορευθέντες (πορεύομαι)",
+            "ἐγερθείς (ἐγείρω)"
+          ]
+        },
+        {
+          "option": "Present Participle of εἰμί",
+          "gnt_examples": [
+            "ὤν (εἰμί)",
+            "ὄντες (εἰμί)"
+          ]
+        },
+        {
+          "option": "Perfect Active Participle",
+          "gnt_examples": [
+            "πεποιθώς (πείθω)",
+            "παρεστηκώς (παρίστημι)",
+            "πεποιηκώς (ποιέω)"
+          ]
+        },
+        {
+          "option": "Perfect Middle/Passive Participle",
+          "gnt_examples": [
+            "γεγραμμένον (γράφω)",
+            "εὐλογημένος (εὐλογέω)",
+            "δεδεμένος (δέω)"
+          ]
+        },
+        {
+          "option": "Present Active Participle",
+          "gnt_examples": [
+            "λέγων (λέγω)",
+            "λέγοντες (λέγω)",
+            "ἔχων (ἔχω)"
+          ]
+        },
+        {
+          "option": "Present Middle/Passive Participle",
+          "gnt_examples": [
+            "ἐρχόμενος (ἔρχομαι)",
+            "ἐρχόμενον (ἔρχομαι)",
+            "λεγόμενος (λέγω)"
+          ]
         }
-      }
+      ]
     },
-    "also_include": [],
+    "also_include_one_of": [
+      "Double Accusatives - a syntactic usage, under Accusative > Substantival Uses of the Accusative.",
+      "Demonstrative Pronouns - a syntactic usage, under Pronouns > Semantic Categories. Syntactic explanation: pointers—οὗτος, ἐκεῖνος, ὅδε.",
+      "Subjunctive in Indirect Questions - a syntactic usage, under Moods > Subjunctive > In Dependent (Subordinate) Clauses. Syntactic explanation: follows the main verb, but appears awkward in the sentence structure (reflects a deliberative subjunctive from the direct question)."
+    ],
     "setting_options": {
-      "s030": "A thief is caught climbing into a storeroom.",
-      "s040": "A boy steals pomegranates from a neighbour's garden and is chased off by the dog."
+      "s149": "A boy learns that his friend lied to him about a borrowed knife.",
+      "s092": "A household guard is bribed to leave a gate unbarred."
     }
   }
 }
@@ -2598,11 +1619,7 @@ No API calls. Each item's user message as generation would send it; the system p
     "summary": "μάχαιρα: primary sense 6.33 (26 of 30 tagged occurrences, 6 Artifacts,2 / G Weapons and Armor). Secondary senses: 39.25 (1x), 55.6 (1x), 20.68 (1x), 38.3 (1x)."
   },
   "recent_generations": [],
-  "student": {
-    "level": "beyond_beginner",
-    "concepts_learned": "Not Applicable",
-    "vocabulary_learned": "Not Applicable"
-  },
+  "student": "(the test student's block: level, grammar learned, syntax learned, 500 words)",
   "sentence_plan": {
     "sentence_shape": {
       "shape": "a main clause with a relative clause: substantival, indicative, subject",
@@ -2610,46 +1627,25 @@ No API calls. Each item's user message as generation would send it; the system p
       "function": "The relative clause serves as the subject of the main verb.",
       "syntactic_category": "Omission of Antecedent - a syntactic usage, under Pronouns > Semantic Categories > Relative Pronouns > ὅς > “Unusual” Uses > Antecedent Complexities. Syntactic explanation: due to embedded demonstrative or poetry.",
       "position": "after the main clause by default; before it when you mean to give it emphasis",
-      "paradigm": {
-        "name": "Relative Pronoun",
-        "forms": {
-          "ὅς": {
-            "nominative masculine singular": "ὅς",
-            "genitive masculine singular": "οὗ",
-            "dative masculine singular": "ᾧ",
-            "accusative masculine singular": "ὅν",
-            "nominative masculine plural": "οἵ",
-            "genitive masculine plural": "ὧν",
-            "dative masculine plural": "οἷς",
-            "accusative masculine plural": "οὕς"
-          },
-          "ἥ": {
-            "nominative feminine singular": "ἥ",
-            "genitive feminine singular": "ἧς",
-            "dative feminine singular": "ῇ",
-            "accusative feminine singular": "ἥν",
-            "nominative feminine plural": "αἵ",
-            "genitive feminine plural": "ὧν",
-            "dative feminine plural": "αἷς",
-            "accusative feminine plural": "ἅς"
-          },
-          "ὅ": {
-            "nominative neuter singular": "ὅ",
-            "genitive neuter singular": "οὗ",
-            "dative neuter singular": "ᾧ",
-            "accusative neuter singular": "ὅ",
-            "nominative neuter plural": "ἅ",
-            "genitive neuter plural": "ὧν",
-            "dative neuter plural": "οἷς",
-            "accusative neuter plural": "ἅ"
-          }
+      "grammar_options": [
+        {
+          "option": "Relative Pronoun",
+          "gnt_examples": [
+            "ὅ (ὅς)",
+            "ὅς (ὅς)",
+            "ὅν (ὅς)"
+          ]
         }
-      }
+      ]
     },
-    "also_include": [],
+    "also_include_one_of": [
+      "Plural Personal Constructions - a syntactic usage, under The Article > Special Uses and Non-Uses of the Article > The Article with Multiple Substantives Connected by Καί (Granville Sharp Rule and Related Constructions) > TSKS Constructions Involving Impersonal, Plural, and Proper Nouns. Syntactic explanation: three different semantic groups possible: (1) distinct, (2) identical, (3) overlap (three subgroups). This breaks down:.",
+      "Correlative - a syntactic usage, under Conjunctions. Syntactic explanation: paired conjunctions expressing various relationships; e.g., μέν … δέ (on the one hand … on the other hand); καί … καί (both … and).",
+      "Dative Direct Object - a syntactic usage, under Dative > Dative After Certain Words. Syntactic explanation: dative direct object, often involving personal relationship."
+    ],
     "setting_options": {
-      "s013": "An old teacher tests his pupils on the letters they copied onto wax tablets.",
-      "s028": "A merchant's ship waits in harbour for a favourable wind."
+      "s012": "A tax farmer's agent seizes a debtor's cart in the market.",
+      "s172": "A wine jar in the cellar is found empty and no one admits to it."
     }
   }
 }
@@ -2668,57 +1664,27 @@ No API calls. Each item's user message as generation would send it; the system p
     "summary": "πιστός: primary sense 31.87 (51 of 72 tagged occurrences, 31 Hold a View, Believe, Trust / I Trust, Rely). Secondary senses: 31.86 (12x), 71.17 (5x), 11.17 (2x), 31.103 (2x)."
   },
   "recent_generations": [],
-  "student": {
-    "level": "beyond_beginner",
-    "concepts_learned": "Not Applicable",
-    "vocabulary_learned": "Not Applicable"
-  },
+  "student": "(the test student's block: level, grammar learned, syntax learned, 500 words)",
   "sentence_plan": {
     "sentence_shape": {
-      "shape": "a main clause with a relative clause: substantival, subjunctive",
-      "formation": "An indefinite relative clause: ὅστις with ἄν or ἐάν, or ὅς (δʼ) ἄν, plus the subjunctive.",
-      "function": "Points to an unspecified person, group, event or action - 'whoever', 'whatever'. There is no antecedent. Translate as though it were indicative: the uncertainty is about who, not about whether.",
-      "syntactic_category": "Subjunctive in Indefinite Relative Clause - a syntactic usage, under Moods > Subjunctive > In Dependent (Subordinate) Clauses. Syntactic explanation: after ὅστις (ἄν/ἐάν) or ὅς (δʼ) ἄν; construction indicates a generic or indefinite subject; translate like an indicative (since the contingency is of the person, not the action).",
+      "shape": "a main clause with a relative clause: substantival, indicative, object",
+      "formation": "ὅ plus the indicative, standing in the object slot. The pronoun takes its case from its job inside its own clause, not from the slot it fills outside it.",
+      "function": "The relative clause serves as the direct object of the main verb.",
+      "syntactic_category": "Omission of Antecedent - a syntactic usage, under Pronouns > Semantic Categories > Relative Pronouns > ὅς > “Unusual” Uses > Antecedent Complexities. Syntactic explanation: due to embedded demonstrative or poetry.",
       "position": "after the main clause by default; before it when you mean to give it emphasis",
-      "paradigm": {
-        "name": "Relative Pronoun",
-        "forms": {
-          "ὅς": {
-            "nominative masculine singular": "ὅς",
-            "genitive masculine singular": "οὗ",
-            "dative masculine singular": "ᾧ",
-            "accusative masculine singular": "ὅν",
-            "nominative masculine plural": "οἵ",
-            "genitive masculine plural": "ὧν",
-            "dative masculine plural": "οἷς",
-            "accusative masculine plural": "οὕς"
-          },
-          "ἥ": {
-            "nominative feminine singular": "ἥ",
-            "genitive feminine singular": "ἧς",
-            "dative feminine singular": "ῇ",
-            "accusative feminine singular": "ἥν",
-            "nominative feminine plural": "αἵ",
-            "genitive feminine plural": "ὧν",
-            "dative feminine plural": "αἷς",
-            "accusative feminine plural": "ἅς"
-          },
-          "ὅ": {
-            "nominative neuter singular": "ὅ",
-            "genitive neuter singular": "οὗ",
-            "dative neuter singular": "ᾧ",
-            "accusative neuter singular": "ὅ",
-            "nominative neuter plural": "ἅ",
-            "genitive neuter plural": "ὧν",
-            "dative neuter plural": "οἷς",
-            "accusative neuter plural": "ἅ"
-          }
+      "grammar_options": [
+        {
+          "option": "Relative Pronoun",
+          "gnt_examples": [
+            "ὅ (ὅς)",
+            "ὅς (ὅς)",
+            "ὅν (ὅς)"
+          ]
         }
-      }
+      ]
     },
-    "also_include": [],
     "setting_options": {
-      "s036": "Two merchants swear an oath over a disputed shipment of wool.",
+      "s124": "A young man is made treasurer of a trade guild and the older members doubt him.",
       "s007": "A hired letter-writer in the market draws up a contract for two farmers who distrust each other."
     }
   }
@@ -2738,11 +1704,7 @@ No API calls. Each item's user message as generation would send it; the system p
     "summary": "εὐθέως: primary sense 67.53 (33 of 33 tagged occurrences, 67 Time / B A Point of Time with Reference to Other Points of Time: Before, Long Ago, Now, At the Same Time, When, About, After). No secondary senses attested."
   },
   "recent_generations": [],
-  "student": {
-    "level": "beyond_beginner",
-    "concepts_learned": "Not Applicable",
-    "vocabulary_learned": "Not Applicable"
-  },
+  "student": "(the test student's block: level, grammar learned, syntax learned, 500 words)",
   "sentence_plan": {
     "sentence_shape": {
       "shape": "two independent clauses joined by a coordinating conjunction",
@@ -2751,16 +1713,20 @@ No API calls. Each item's user message as generation would send it; the system p
       "note": "γάρ, δέ, οὖν and μέν are postpositive and cannot stand first in their clause. See the hard constraints under WORD ORDER.",
       "syntactic_category": "Connective (continuative, coordinate) - a syntactic usage, under Conjunctions. Syntactic explanation: and, also (if emphatic [adjunctive]); (connects an additional element to a discussion); καί and δέ."
     },
-    "also_include": [],
+    "also_include_one_of": [
+      "Subjunctive in Conditional Sentences - a syntactic usage, under Moods > Subjunctive > In Dependent (Subordinate) Clauses. Syntactic explanation: subjunctive with ἐάν in protasis—third class condition (may indicate more probable future, mere possibility, or hypothetical situation); fifth class condition (a.k.a. present general condition) (indicates a generic situation in the present time).",
+      "Πρό (Genitive) - a syntactic usage, under Prepositions.",
+      "Proleptic (Futuristic) Aorist - a syntactic usage, under Tense > Aorist. Syntactic explanation: describes an event that is not yet past as though it were already completed."
+    ],
     "setting_options": {
-      "s030": "A thief is caught climbing into a storeroom.",
-      "s017": "A baker's oven cracks on the morning of a festival."
+      "s072": "A household makes ready for the Sabbath at sunset and the lamp oil runs out.",
+      "s030": "A thief is caught climbing into a storeroom."
     }
   }
 }
 ```
 
-## syntax — `function_recall_syntax_g2e`
+## syntax - `function_recall_syntax_g2e`
 
 ### `genitive/adjectival/descriptive-genitive`
 
@@ -2770,7 +1736,30 @@ No API calls. Each item's user message as generation would send it; the system p
     "item": {
       "key": "genitive/adjectival/descriptive-genitive",
       "display_name": "Descriptive Genitive",
-      "description": "characterized by, described by"
+      "description": "characterized by, described by",
+      "core": true,
+      "source": {
+        "resource": "GGBB",
+        "pages": [
+          79,
+          81
+        ]
+      },
+      "formation": "A genitive noun, usually after its head noun, that characterizes the head: 'marked by', 'having to do with'. It is the default reading, left when nothing narrower fits: the head is not a verbal noun, does not belong to the genitive, is not a part of it, and the genitive cannot simply become an adjective on the head.",
+      "gnt_lexemes": [
+        {
+          "head": "ἡμέρα",
+          "genitive": "σωτηρία"
+        },
+        {
+          "head": "θύρα",
+          "genitive": "πρόβατον"
+        },
+        {
+          "head": "οἶκος",
+          "genitive": "ἐμπόριον"
+        }
+      ]
     },
     "ancestors": [
       {
@@ -2785,119 +1774,264 @@ No API calls. Each item's user message as generation would send it; the system p
     "sibling_usages": {
       "genitive/adjectival/possessive-genitive": {
         "display_name": "Possessive Genitive",
-        "description": "belonging to, possessed by"
+        "description": "belonging to, possessed by",
+        "core": true,
+        "source": {
+          "resource": "GGBB",
+          "pages": [
+            81,
+            83
+          ]
+        },
+        "formation": "A genitive naming the owner of the head noun: 'belonging to'. The genitive is personal, and the head is something that can be owned (a possession, a servant, a house), not an abstract idea. A genitive personal pronoun (μου, αὐτοῦ) is its commonest form."
       },
       "genitive/adjectival/genitive-relationship": {
         "display_name": "Genitive of Relationship",
-        "description": "family relationship (subset of possessive)"
+        "description": "family relationship (subset of possessive)",
+        "core": true,
+        "source": {
+          "resource": "GGBB",
+          "pages": [
+            83,
+            84
+          ]
+        },
+        "formation": "A genitive naming the relative of the person the head noun names, after a noun of kinship (son, mother, brother, father). The genitive is personal. The kinship noun is often left out and only its article kept, leaving 'the [son] of' to be understood from the article's gender."
       },
       "genitive/adjectival/partitive-genitive-wholative": {
         "display_name": "Partitive Genitive (“Wholative”)",
-        "description": "denotes the whole of which the head noun is a part—which is a part of"
+        "description": "denotes the whole of which the head noun is a part—which is a part of",
+        "core": true,
+        "source": {
+          "resource": "GGBB",
+          "pages": [
+            84,
+            86
+          ]
+        },
+        "formation": "A genitive naming the whole of which the head is a part: 'some of', 'one of', 'a third of'. The head is a word of portion or number (τις, εἷς, ἕκαστος, λοιπός, a fraction or ordinal), and the genitive is usually a plural group or a whole thing."
       },
       "genitive/adjectival/attributive-genitive": {
         "display_name": "Attributive Genitive",
-        "description": "specifies an attribute or innate quality of the head substantive; convert genitive into an attributive adjective"
+        "description": "specifies an attribute or innate quality of the head substantive; convert genitive into an attributive adjective",
+        "core": true,
+        "source": {
+          "resource": "GGBB",
+          "pages": [
+            86,
+            88
+          ]
+        },
+        "formation": "A genitive noun naming a quality of its head, so that it could be turned into an adjective on the head: 'a man of honour' is 'an honourable man'. The genitive is an abstract noun; the construction is more emphatic than the adjective would be, and the genitive takes no modifier of its own."
       },
       "genitive/adjectival/attributed-genitive": {
         "display_name": "Attributed Genitive",
-        "description": "semantically opposite of attributive genitive; convert head noun into adjective modifying the genitive noun"
+        "description": "semantically opposite of attributive genitive; convert head noun into adjective modifying the genitive noun",
+        "core": true,
+        "source": {
+          "resource": "GGBB",
+          "pages": [
+            89,
+            91
+          ]
+        },
+        "formation": "The reverse of the attributive genitive: the head noun names the quality and the genitive the thing that has it, so the head could be turned into an adjective on the genitive: 'the sweetness of the wine' is 'sweet wine'. The head is an abstract noun of quality or result."
       },
       "genitive/adjectival/genitive-material": {
         "display_name": "Genitive of Material",
-        "description": "made out of, consisting of"
+        "description": "made out of, consisting of",
+        "core": false,
+        "source": {
+          "resource": "GGBB",
+          "pages": [
+            91,
+            92
+          ]
+        }
       },
       "genitive/adjectival/genitive-content": {
         "display_name": "Genitive of Content",
-        "description": "full of, containing (related to noun or verb)"
+        "description": "full of, containing (related to noun or verb)",
+        "core": true,
+        "source": {
+          "resource": "GGBB",
+          "pages": [
+            92,
+            94
+          ]
+        },
+        "formation": "A genitive naming what fills or is held in the word it depends on: after a verb of filling (πίμπλημι, πληρόω, γεμίζω), an adjective of fullness (πλήρης, μεστός), or a noun for a container (a net, a jar). After a verb of filling the content stands in the genitive, not the dative."
       },
       "genitive/adjectival/genitive-simple-apposition": {
         "display_name": "Genitive in Simple Apposition",
-        "description": "genitive substantive adjacent to another genitive substantive, referring to the same thing/person—namely, which is"
+        "description": "genitive substantive adjacent to another genitive substantive, referring to the same thing/person—namely, which is",
+        "core": true,
+        "source": {
+          "resource": "GGBB",
+          "pages": [
+            94,
+            94
+          ]
+        },
+        "formation": "A genitive noun set beside another genitive noun and naming the same person or thing by a second designation: 'the merchant, his brother'. Both nouns share the case; the second often has the article. Unlike the genitive of apposition, 'of' cannot stand between them."
       },
       "genitive/adjectival/genitive-apposition-epexegetical": {
         "display_name": "Genitive of Apposition (Epexegetical)",
-        "description": "genitive states a specific example of which the head noun names a category—namely, which is"
+        "description": "genitive states a specific example of which the head noun names a category—namely, which is",
+        "core": false,
+        "source": {
+          "resource": "GGBB",
+          "pages": [
+            95,
+            100
+          ]
+        }
       },
       "genitive/adjectival/genitive-destination-k-direction-purpose": {
         "display_name": "Genitive of Destination (a.k.a. Direction or Purpose)",
-        "description": "for the purpose of, destined for, toward, or into"
+        "description": "for the purpose of, destined for, toward, or into",
+        "core": false,
+        "source": {
+          "resource": "GGBB",
+          "pages": [
+            100,
+            101
+          ]
+        }
       },
       "genitive/adjectival/predicate-genitive": {
         "display_name": "Predicate Genitive",
-        "description": "simple apposition in genitive case made emphatic by participial form of the equative verb"
+        "description": "simple apposition in genitive case made emphatic by participial form of the equative verb",
+        "core": false,
+        "source": {
+          "resource": "GGBB",
+          "pages": [
+            102,
+            102
+          ]
+        }
       },
       "genitive/adjectival/genitive-subordination": {
         "display_name": "Genitive of Subordination",
-        "description": "specifies that which is subordinated to or under the dominion of the head noun—over"
+        "description": "specifies that which is subordinated to or under the dominion of the head noun—over",
+        "core": false,
+        "source": {
+          "resource": "GGBB",
+          "pages": [
+            103,
+            104
+          ]
+        }
       },
       "genitive/adjectival/genitive-production-producer": {
         "display_name": "Genitive of Production/Producer",
-        "description": "genitive produces the noun to which it stands related—produced by"
+        "description": "genitive produces the noun to which it stands related—produced by",
+        "core": false,
+        "source": {
+          "resource": "GGBB",
+          "pages": [
+            104,
+            106
+          ]
+        }
       },
       "genitive/adjectival/genitive-product": {
         "display_name": "Genitive of Product",
-        "description": "genitive is the product of the noun to which it stands related—which produces"
-      }
-    },
-    "lexical_options": [
-      "λίθος",
-      "ὕδωρ",
-      "οἰκία"
-    ]
-  },
-  "recent_generations": [],
-  "student": {
-    "level": "beyond_beginner",
-    "concepts_learned": "Not Applicable",
-    "vocabulary_learned": "Not Applicable"
-  },
-  "sentence_plan": {
-    "sentence_shape": {
-      "shape": "a main clause with an adverbial dependent clause: causal, infinitive",
-      "formation": "διὰ τό followed by an infinitive.",
-      "function": "Gives the reason the controlling verb's action happened. Render it with 'because' plus a finite verb in English.",
-      "syntactic_category": "Cause - a syntactic usage, under Infinitive > Adverbial. Syntactic explanation: διὰ τό + infinitive; indicates the reason for the action of the controlling verb; translate because + appropriate finite verb.",
-      "position": "after the main clause by default; before it when you mean to give it emphasis",
-      "paradigm": {
-        "name": "Present Active Infinitive",
-        "forms": {
-          "λύειν (λύω, thematic)": {
-            "present active infinitive": "λύειν"
-          },
-          "μένειν (μένω, liquid)": {
-            "present active infinitive": "μένειν"
-          },
-          "γεννᾶν (γεννάω, contract -άω)": {
-            "present active infinitive": "γεννᾶν"
-          },
-          "ποιεῖν (ποιέω, contract -έω)": {
-            "present active infinitive": "ποιεῖν"
-          },
-          "φανεροῦν (φανερόω, contract -όω)": {
-            "present active infinitive": "φανεροῦν"
-          },
-          "ἱστάναι (ἵστημι, athematic)": {
-            "present active infinitive": "ἱστάναι"
-          },
-          "τιθέναι (τίθημι, athematic)": {
-            "present active infinitive": "τιθέναι"
-          },
-          "διδόναι (δίδωμι, athematic)": {
-            "present active infinitive": "διδόναι"
-          },
-          "δεικνύναι (δείκνυμι, athematic)": {
-            "present active infinitive": "δεικνύναι"
-          }
+        "description": "genitive is the product of the noun to which it stands related—which produces",
+        "core": false,
+        "source": {
+          "resource": "GGBB",
+          "pages": [
+            106,
+            107
+          ]
         }
       }
+    }
+  },
+  "recent_generations": [],
+  "student": "(the test student's block: level, grammar learned, syntax learned, 500 words)",
+  "sentence_plan": {
+    "sentence_shape": {
+      "shape": "a main clause with an adverbial dependent clause: causal, adverbial participle",
+      "formation": "Anarthrous participle matching its subject in case, number and gender. It usually sits ahead of the verb it modifies.",
+      "function": "Supplies the ground or reason for the finite verb - it answers 'Why?'. Render with 'because'.",
+      "syntactic_category": "Cause - a syntactic usage, under Participle > Verbal Participles > Dependent Verbal Participles > Adverbial (or Circumstantial). Syntactic explanation: because (answers the question, Why?); indicates the cause or reason or ground of the action of the finite verb; usually precedes its verb.",
+      "position": "before the main clause by default; after it when you mean to give it emphasis",
+      "grammar_options": [
+        {
+          "option": "Aorist Active Participle",
+          "gnt_examples": [
+            "ἀκούσαντες (ἀκούω)",
+            "ἀκούσας (ἀκούω)",
+            "ποιήσας (ποιέω)"
+          ]
+        },
+        {
+          "option": "Aorist Middle Participle",
+          "gnt_examples": [
+            "προσκαλεσάμενος (προσκαλέω)",
+            "ἀρξάμενος (ἄρχω)",
+            "προσευξάμενοι (προσεύχομαι)"
+          ]
+        },
+        {
+          "option": "Aorist Passive Participle",
+          "gnt_examples": [
+            "ἀποκριθείς (ἀποκρίνομαι)",
+            "πορευθέντες (πορεύομαι)",
+            "ἐγερθείς (ἐγείρω)"
+          ]
+        },
+        {
+          "option": "Present Participle of εἰμί",
+          "gnt_examples": [
+            "ὤν (εἰμί)",
+            "ὄντες (εἰμί)"
+          ]
+        },
+        {
+          "option": "Perfect Active Participle",
+          "gnt_examples": [
+            "πεποιθώς (πείθω)",
+            "παρεστηκώς (παρίστημι)",
+            "πεποιηκώς (ποιέω)"
+          ]
+        },
+        {
+          "option": "Perfect Middle/Passive Participle",
+          "gnt_examples": [
+            "γεγραμμένον (γράφω)",
+            "εὐλογημένος (εὐλογέω)",
+            "δεδεμένος (δέω)"
+          ]
+        },
+        {
+          "option": "Present Active Participle",
+          "gnt_examples": [
+            "λέγων (λέγω)",
+            "λέγοντες (λέγω)",
+            "ἔχων (ἔχω)"
+          ]
+        },
+        {
+          "option": "Present Middle/Passive Participle",
+          "gnt_examples": [
+            "ἐρχόμενος (ἔρχομαι)",
+            "ἐρχόμενον (ἔρχομαι)",
+            "λεγόμενος (λέγω)"
+          ]
+        }
+      ]
     },
-    "also_include": [
-      "Nominative Absolute - a syntactic usage, under Nominative > Grammatically Independent Uses of the Nominative. Syntactic explanation: in introductory material (not sentences)."
+    "also_include_one_of": [
+      "Well-Known (“Celebrity” or “Familiar” Article) - a syntactic usage, under The Article > Regular Uses of the Article > With Substantives (Dependent or Modifying Use) > Individualizing Article. Syntactic explanation: well known, but for reasons other than the above categories; that which is familiar to the readers.",
+      "Aorist Imperative - a syntactic usage, under Volitional Clauses. Syntactic explanation: views action as a whole.",
+      "Instantaneous Present (a.k.a. Aoristic or Punctiliar Present) - a syntactic usage, under Tense > Present. Syntactic explanation: action occurs at the moment of speaking; usually a performative statement (e.g., “I tell you the truth, the Rams won the game”); indicative only."
     ],
     "setting_options": {
-      "s074": "Pilgrims camp outside the city walls during a festival and quarrel over space.",
-      "s020": "An innkeeper and a traveller quarrel over the bill for feeding the traveller's mules."
+      "s021": "A physician sets the broken arm of a stonemason who fell from scaffolding.",
+      "s147": "A heavy rain washes away the newly sown seed."
     }
   }
 }
@@ -2911,7 +2045,30 @@ No API calls. Each item's user message as generation would send it; the system p
     "item": {
       "key": "dative/pure-dative-uses/dative-indirect-object",
       "display_name": "Dative Indirect Object",
-      "description": "dative noun is that to or for which the action of a transitive verb is performed—to, for"
+      "description": "dative noun is that to or for which the action of a transitive verb is performed—to, for",
+      "core": true,
+      "source": {
+        "resource": "GGBB",
+        "pages": [
+          140,
+          142
+        ]
+      },
+      "formation": "A dative, usually a person, that receives the direct object of a transitive verb, or the subject of a passive one: the one something is given, said, shown or sent to. Commonest with verbs of giving and speaking, with the thing given or said in the accusative beside it.",
+      "gnt_lexemes": [
+        {
+          "verb": "δίδωμι",
+          "dative": "κύων"
+        },
+        {
+          "verb": "λέγω",
+          "dative": "αὐτός"
+        },
+        {
+          "verb": "δίδωμι",
+          "dative": "σύ"
+        }
+      ]
     },
     "ancestors": [
       {
@@ -2926,96 +2083,200 @@ No API calls. Each item's user message as generation would send it; the system p
     "sibling_usages": {
       "dative/pure-dative-uses/dative-interest-including-advantage-commodi-disadvantage-inc": {
         "display_name": "Dative of Interest (including Advantage [commodi] and Disadvantage [incommodi])",
-        "description": null
+        "description": null,
+        "core": true,
+        "source": {
+          "resource": "GGBB",
+          "pages": [
+            142,
+            144
+          ]
+        },
+        "formation": "A dative, usually personal, naming the one whose interest the action touches: for someone's benefit (advantage) or against them (disadvantage). It often overlaps an indirect object, and is interest where the benefit or harm is what the sentence stresses; the verb's sense usually shows which."
       },
       "dative/pure-dative-uses/dative-reference-respect": {
         "display_name": "Dative of Reference/Respect",
-        "description": "with reference to"
+        "description": "with reference to",
+        "core": true,
+        "source": {
+          "resource": "GGBB",
+          "pages": [
+            144,
+            146
+          ]
+        },
+        "formation": "A dative, usually a thing, that limits a verb or adjective to one frame of reference: 'strong in body', 'poor in goods'. Without it the statement would not hold, or would say too much. It relates the subject to the dative from outside, where the dative of sphere places the subject within it."
       },
       "dative/pure-dative-uses/ethical-dative": {
         "display_name": "Ethical Dative",
-        "description": "the person whose feelings or viewpoint are intimately tied to the action—as far as I am concerned, in my opinion"
+        "description": "the person whose feelings or viewpoint are intimately tied to the action—as far as I am concerned, in my opinion",
+        "core": false,
+        "source": {
+          "resource": "GGBB",
+          "pages": [
+            146,
+            147
+          ]
+        }
       },
       "dative/pure-dative-uses/dative-destination": {
         "display_name": "Dative of Destination",
-        "description": "the “to” idea when a nontransitive verb is used"
+        "description": "the “to” idea when a nontransitive verb is used",
+        "core": false,
+        "source": {
+          "resource": "GGBB",
+          "pages": [
+            147,
+            148
+          ]
+        }
       },
       "dative/pure-dative-uses/dative-recipient": {
         "display_name": "Dative of Recipient",
-        "description": "would be an indirect object, but it appears in verbless constructions (such as in titles and salutations)"
+        "description": "would be an indirect object, but it appears in verbless constructions (such as in titles and salutations)",
+        "core": false,
+        "source": {
+          "resource": "GGBB",
+          "pages": [
+            148,
+            149
+          ]
+        }
       },
       "dative/pure-dative-uses/dative-possession": {
         "display_name": "Dative of Possession",
-        "description": "that to which the subject of an equative verb belongs—belonging to"
+        "description": "that to which the subject of an equative verb belongs—belonging to",
+        "core": false,
+        "source": {
+          "resource": "GGBB",
+          "pages": [
+            149,
+            151
+          ]
+        }
       },
       "dative/pure-dative-uses/dative-thing-possessed-disputed": {
         "display_name": "Dative of Thing Possessed (disputed)",
-        "description": "who possesses"
+        "description": "who possesses",
+        "core": false,
+        "source": {
+          "resource": "GGBB",
+          "pages": [
+            151,
+            151
+          ]
+        }
       },
       "dative/pure-dative-uses/predicate-dative": {
         "display_name": "Predicate Dative",
-        "description": "simple apposition in dative case made emphatic by participial form of the equative verb"
+        "description": "simple apposition in dative case made emphatic by participial form of the equative verb",
+        "core": false,
+        "source": {
+          "resource": "GGBB",
+          "pages": [
+            152,
+            152
+          ]
+        }
       },
       "dative/pure-dative-uses/dative-simple-apposition": {
         "display_name": "Dative in Simple Apposition",
-        "description": "dative substantive adjacent to another dative substantive, referring to the same thing/person"
+        "description": "dative substantive adjacent to another dative substantive, referring to the same thing/person",
+        "core": true,
+        "source": {
+          "resource": "GGBB",
+          "pages": [
+            152,
+            153
+          ]
+        },
+        "formation": "A dative noun set beside another dative noun and naming the same person or thing a second way: 'to the merchant, his neighbour'. The second shares the first's role in the clause and often has the article."
       }
-    },
-    "lexical_options": [
-      "παιδίον",
-      "δοῦλος",
-      "γυνή"
-    ]
+    }
   },
   "recent_generations": [],
-  "student": {
-    "level": "beyond_beginner",
-    "concepts_learned": "Not Applicable",
-    "vocabulary_learned": "Not Applicable"
-  },
+  "student": "(the test student's block: level, grammar learned, syntax learned, 500 words)",
   "sentence_plan": {
     "sentence_shape": {
-      "shape": "a main clause with an adverbial dependent clause: manner means, articular infinitive",
-      "formation": "ἐν τῷ followed by an infinitive.",
-      "function": "Says how the controlling verb's action was carried out. Render with 'by ... -ing'.",
-      "syntactic_category": "Means - a syntactic usage, under Infinitive > Adverbial. Syntactic explanation: ἐν τῷ + infinitive; describes the way in which the action of the controlling verb is accomplished; translate by … doing, etc..",
+      "shape": "a main clause with an adverbial dependent clause: manner means, adverbial participle",
+      "formation": "Anarthrous participle matching its subject in case, number and gender.",
+      "function": "Answers 'How?'. Manner describes the attitude or emotion the action was done with; means names the instrument or method that accomplished it. The two are close and often hard to separate.",
+      "syntactic_category": "Means - a syntactic usage, under Participle > Verbal Participles > Dependent Verbal Participles > Adverbial (or Circumstantial). Syntactic explanation: by means of (answering the question, How?); indicates the means by which the action of a finite verb is accomplished; defines or explains the controlling verb; usually follows the verb.",
       "position": "after the main clause by default; before it when you mean to give it emphasis",
-      "paradigm": {
-        "name": "Present Middle Infinitive",
-        "forms": {
-          "λύεσθαι (λύω, thematic)": {
-            "present middle infinitive": "λύεσθαι"
-          },
-          "μένεσθαι (μένω, liquid)": {
-            "present middle infinitive": "μένεσθαι"
-          },
-          "γεννᾶσθαι (γεννάω, contract -άω)": {
-            "present middle infinitive": "γεννᾶσθαι"
-          },
-          "ποιεῖσθαι (ποιέω, contract -έω)": {
-            "present middle infinitive": "ποιεῖσθαι"
-          },
-          "φανεροῦσθαι (φανερόω, contract -όω)": {
-            "present middle infinitive": "φανεροῦσθαι"
-          },
-          "ἵστασθαι (ἵστημι, athematic)": {
-            "present middle infinitive": "ἵστασθαι"
-          },
-          "τίθεσθαι (τίθημι, athematic)": {
-            "present middle infinitive": "τίθεσθαι"
-          },
-          "δίδοσθαι (δίδωμι, athematic)": {
-            "present middle infinitive": "δίδοσθαι"
-          }
+      "grammar_options": [
+        {
+          "option": "Aorist Active Participle",
+          "gnt_examples": [
+            "ἀκούσαντες (ἀκούω)",
+            "ἀκούσας (ἀκούω)",
+            "ποιήσας (ποιέω)"
+          ]
+        },
+        {
+          "option": "Aorist Middle Participle",
+          "gnt_examples": [
+            "προσκαλεσάμενος (προσκαλέω)",
+            "ἀρξάμενος (ἄρχω)",
+            "προσευξάμενοι (προσεύχομαι)"
+          ]
+        },
+        {
+          "option": "Aorist Passive Participle",
+          "gnt_examples": [
+            "ἀποκριθείς (ἀποκρίνομαι)",
+            "πορευθέντες (πορεύομαι)",
+            "ἐγερθείς (ἐγείρω)"
+          ]
+        },
+        {
+          "option": "Present Participle of εἰμί",
+          "gnt_examples": [
+            "ὤν (εἰμί)",
+            "ὄντες (εἰμί)"
+          ]
+        },
+        {
+          "option": "Perfect Active Participle",
+          "gnt_examples": [
+            "πεποιθώς (πείθω)",
+            "παρεστηκώς (παρίστημι)",
+            "πεποιηκώς (ποιέω)"
+          ]
+        },
+        {
+          "option": "Perfect Middle/Passive Participle",
+          "gnt_examples": [
+            "γεγραμμένον (γράφω)",
+            "εὐλογημένος (εὐλογέω)",
+            "δεδεμένος (δέω)"
+          ]
+        },
+        {
+          "option": "Present Active Participle",
+          "gnt_examples": [
+            "λέγων (λέγω)",
+            "λέγοντες (λέγω)",
+            "ἔχων (ἔχω)"
+          ]
+        },
+        {
+          "option": "Present Middle/Passive Participle",
+          "gnt_examples": [
+            "ἐρχόμενος (ἔρχομαι)",
+            "ἐρχόμενον (ἔρχομαι)",
+            "λεγόμενος (λέγω)"
+          ]
         }
-      }
+      ]
     },
-    "also_include": [
-      "Subjunctive in Indefinite Relative Clause - a syntactic usage, under Moods > Subjunctive > In Dependent (Subordinate) Clauses. Syntactic explanation: after ὅστις (ἄν/ἐάν) or ὅς (δʼ) ἄν; construction indicates a generic or indefinite subject; translate like an indicative (since the contingency is of the person, not the action)."
+    "also_include_one_of": [
+      "Genitive of Association - a syntactic usage, under Genitive > Adverbial Genitive. Syntactic explanation: in association with.",
+      "Transitional - a syntactic usage, under Conjunctions. Syntactic explanation: now, then (involves the change to a new topic of discussion, especially in narrative); οὖν and especially δέ.",
+      "Ingressive (Inchoative, Inceptive) Imperfect - a syntactic usage, under Tense > Imperfect. Syntactic explanation: began doing (stresses the beginning of an action, with the implications that it continued for some time; frequent in narrative to note a topic shift)."
     ],
     "setting_options": {
-      "s132": "A court clerk reads out a sentence of exile.",
-      "s026": "A farmer's sons plant young olive trees that will not bear fruit for years."
+      "s101": "A seamstress sewing a bride's garment runs out of thread.",
+      "s048": "A steward counts the household stores before winter and finds the oil jars half empty."
     }
   }
 }
@@ -3029,7 +2290,30 @@ No API calls. Each item's user message as generation would send it; the system p
     "item": {
       "key": "accusative/substantival-uses-accusative/accusative-direct-object",
       "display_name": "Accusative Direct Object",
-      "description": "the immediate object of the action of a transitive verb"
+      "description": "the immediate object of the action of a transitive verb",
+      "core": true,
+      "source": {
+        "resource": "GGBB",
+        "pages": [
+          179,
+          181
+        ]
+      },
+      "formation": "The accusative naming what directly receives the action of a transitive verb, participle or infinitive. It is the normal case of an object; a genitive or dative object is due to the verb's own sense.",
+      "gnt_lexemes": [
+        {
+          "verb": "καλέω",
+          "object": "ἁμαρτωλός"
+        },
+        {
+          "verb": "τηρέω",
+          "object": "πίστις"
+        },
+        {
+          "verb": "ἐγείρω",
+          "object": "αὐτός"
+        }
+      ]
     },
     "ancestors": [
       {
@@ -3044,45 +2328,95 @@ No API calls. Each item's user message as generation would send it; the system p
     "sibling_usages": {
       "accusative/substantival-uses-accusative/double-accusatives": {
         "display_name": "Double Accusatives",
-        "description": null
+        "description": null,
+        "core": true,
+        "source": {
+          "resource": "GGBB",
+          "pages": [
+            181,
+            189
+          ]
+        },
+        "formation": "A verb taking two accusatives: either a person and a thing (teach, ask, clothe, give to drink), or an object and a complement saying what the object is made, called or regarded as (make, call, appoint, consider)."
       },
       "accusative/substantival-uses-accusative/cognate-accusative-accusative-inner-object": {
         "display_name": "Cognate Accusative (Accusative of Inner Object)",
-        "description": "direct object that shares lexically or conceptually the idea of the verb (“do not treasure treasures”)"
+        "description": "direct object that shares lexically or conceptually the idea of the verb (“do not treasure treasures”)",
+        "core": false,
+        "source": {
+          "resource": "GGBB",
+          "pages": [
+            189,
+            190
+          ]
+        }
       },
       "accusative/substantival-uses-accusative/predicate-accusative": {
         "display_name": "Predicate Accusative",
-        "description": "simple apposition made emphatic by a copula in participial form or infinitival form (an accusative related to subject of infinitive)"
+        "description": "simple apposition made emphatic by a copula in participial form or infinitival form (an accusative related to subject of infinitive)",
+        "core": false,
+        "source": {
+          "resource": "GGBB",
+          "pages": [
+            190,
+            192
+          ]
+        }
       },
       "accusative/substantival-uses-accusative/accusative-subject-infinitive": {
         "display_name": "Accusative Subject of Infinitive",
-        "description": "accusative of reference that functions like subject of infinitive (“I want you to know”)"
+        "description": "accusative of reference that functions like subject of infinitive (“I want you to know”)",
+        "core": true,
+        "source": {
+          "resource": "GGBB",
+          "pages": [
+            192,
+            197
+          ]
+        },
+        "formation": "An accusative naming who does the action of an infinitive when that is not the main verb's subject: 'I want you to know', 'you must go'. It follows verbs of wishing, allowing and commanding, and δεῖ, and stands inside articular infinitive phrases; with a second accusative, the subject normally comes first."
       },
       "accusative/substantival-uses-accusative/accusative-retained-object": {
         "display_name": "Accusative of Retained Object",
-        "description": "the accusative of thing in a double accusative person-thing construction with an active verb retains its case when the verb is put in the passive (“I taught you the lesson” becomes “You were taught the lesson by me”)"
+        "description": "the accusative of thing in a double accusative person-thing construction with an active verb retains its case when the verb is put in the passive (“I taught you the lesson” becomes “You were taught the lesson by me”)",
+        "core": false,
+        "source": {
+          "resource": "GGBB",
+          "pages": [
+            197,
+            197
+          ]
+        }
       },
       "accusative/substantival-uses-accusative/pendent-accusative-accusativum-pendens": {
         "display_name": "Pendent Accusative (Accusativum Pendens)",
-        "description": "accusative thrown forward to the beginning of the clause, followed by a sentence in which it is replaced by a pronoun in the case required by the syntax—with reference to (subset of acc. of reference)"
+        "description": "accusative thrown forward to the beginning of the clause, followed by a sentence in which it is replaced by a pronoun in the case required by the syntax—with reference to (subset of acc. of reference)",
+        "core": false,
+        "source": {
+          "resource": "GGBB",
+          "pages": [
+            198,
+            198
+          ]
+        }
       },
       "accusative/substantival-uses-accusative/accusative-simple-apposition": {
         "display_name": "Accusative in Simple Apposition",
-        "description": "accusative substantive adjacent to another accusative substantive, referring to the same thing/person"
+        "description": "accusative substantive adjacent to another accusative substantive, referring to the same thing/person",
+        "core": true,
+        "source": {
+          "resource": "GGBB",
+          "pages": [
+            198,
+            199
+          ]
+        },
+        "formation": "An accusative noun set beside another accusative and naming the same person or thing a second way: 'a man, a stranger'. It shares the first noun's role, usually the object, and adds a clarifying designation."
       }
-    },
-    "lexical_options": [
-      "ἄρτος",
-      "θύρα",
-      "ἐπιστολή"
-    ]
+    }
   },
   "recent_generations": [],
-  "student": {
-    "level": "beyond_beginner",
-    "concepts_learned": "Not Applicable",
-    "vocabulary_learned": "Not Applicable"
-  },
+  "student": "(the test student's block: level, grammar learned, syntax learned, 500 words)",
   "sentence_plan": {
     "sentence_shape": {
       "shape": "a main clause with a relative clause: adjectival",
@@ -3090,46 +2424,25 @@ No API calls. Each item's user message as generation would send it; the system p
       "function": "Attributive only - it describes, explains or narrows the substantive it attaches to.",
       "syntactic_category": "Relative Pronouns - a syntactic usage, under Pronouns > Semantic Categories. Syntactic explanation: ὅς and ὅστις labeled relative pronouns because they relate to more than one clause.",
       "position": "after the main clause by default; before it when you mean to give it emphasis",
-      "paradigm": {
-        "name": "Relative Pronoun",
-        "forms": {
-          "ὅς": {
-            "nominative masculine singular": "ὅς",
-            "genitive masculine singular": "οὗ",
-            "dative masculine singular": "ᾧ",
-            "accusative masculine singular": "ὅν",
-            "nominative masculine plural": "οἵ",
-            "genitive masculine plural": "ὧν",
-            "dative masculine plural": "οἷς",
-            "accusative masculine plural": "οὕς"
-          },
-          "ἥ": {
-            "nominative feminine singular": "ἥ",
-            "genitive feminine singular": "ἧς",
-            "dative feminine singular": "ῇ",
-            "accusative feminine singular": "ἥν",
-            "nominative feminine plural": "αἵ",
-            "genitive feminine plural": "ὧν",
-            "dative feminine plural": "αἷς",
-            "accusative feminine plural": "ἅς"
-          },
-          "ὅ": {
-            "nominative neuter singular": "ὅ",
-            "genitive neuter singular": "οὗ",
-            "dative neuter singular": "ᾧ",
-            "accusative neuter singular": "ὅ",
-            "nominative neuter plural": "ἅ",
-            "genitive neuter plural": "ὧν",
-            "dative neuter plural": "οἷς",
-            "accusative neuter plural": "ἅ"
-          }
+      "grammar_options": [
+        {
+          "option": "Relative Pronoun",
+          "gnt_examples": [
+            "ὅ (ὅς)",
+            "ὅς (ὅς)",
+            "ὅν (ὅς)"
+          ]
         }
-      }
+      ]
     },
-    "also_include": [],
+    "also_include_one_of": [
+      "Personal Pronoun - a syntactic usage, under The Article > Regular Uses of the Article > As a Pronoun ([partially] Independent Use). Syntactic explanation: functions as third person pronoun in nominative in μὲν … δέ construction or with δέ alone.",
+      "Ἐκ (Genitive) - a syntactic usage, under Prepositions. Syntactic explanation: from, out of, away from, of.",
+      "Consummative (Culminative, Ecbatic, Effective) Aorist - a syntactic usage, under Tense > Aorist. Syntactic explanation: stresses the cessation of an act or state."
+    ],
     "setting_options": {
-      "s129": "A craftsman carves a chair of state for a magistrate.",
-      "s081": "A merchant swears by God that his cloth is the finest in the city."
+      "s064": "A landlord raises the rent and his tenant farmer protests.",
+      "s048": "A steward counts the household stores before winter and finds the oil jars half empty."
     }
   }
 }
@@ -3143,7 +2456,30 @@ No API calls. Each item's user message as generation would send it; the system p
     "item": {
       "key": "article/regular-uses-article/as-pronoun-partially-independent-use/personal-pronoun",
       "display_name": "Personal Pronoun",
-      "description": "functions as third person pronoun in nominative in μὲν … δέ construction or with δέ alone"
+      "description": "functions as third person pronoun in nominative in μὲν … δέ construction or with δέ alone",
+      "core": true,
+      "source": {
+        "resource": "GGBB",
+        "pages": [
+          211,
+          212
+        ]
+      },
+      "formation": "The nominative article standing alone, with no noun, followed by δέ (or μέν, μὲν οὖν) and then a finite verb or an adverbial participle: ὁ δέ, ἡ δέ, οἱ δέ. It stands for a third-person pronoun ('he', 'she', 'they') and refers to someone already present in the narrative, while δέ marks a change of subject, most often to the other party in an exchange of words. A participle after it is adverbial, since the article does not modify it.",
+      "gnt_lexemes": [
+        {
+          "particle": "δέ",
+          "verb": "λέγω"
+        },
+        {
+          "particle": "δέ",
+          "verb": "φημί"
+        },
+        {
+          "particle": "μέν",
+          "verb": "ἀπολύω"
+        }
+      ]
     },
     "ancestors": [
       {
@@ -3156,43 +2492,62 @@ No API calls. Each item's user message as generation would send it; the system p
       },
       {
         "display_name": "As a Pronoun ([partially] Independent Use)",
-        "description": null
+        "description": null,
+        "core": false,
+        "source": {
+          "resource": "GGBB",
+          "pages": [
+            211,
+            216
+          ]
+        }
       }
     ],
     "sibling_usages": {
       "article/regular-uses-article/as-pronoun-partially-independent-use/relative-pronoun": {
         "display_name": "Relative Pronoun",
-        "description": "who is, which is (the article with second and third attributive positions in which the modifier is not an adjective)"
+        "description": "who is, which is (the article with second and third attributive positions in which the modifier is not an adjective)",
+        "core": true,
+        "source": {
+          "resource": "GGBB",
+          "pages": [
+            213,
+            215
+          ]
+        },
+        "formation": "An article repeated after an articular noun, or set after an anarthrous one, to introduce a modifier that is not an adjective: a participle, a prepositional phrase or a genitive. The second article agrees with the noun in gender, number and case, and English renders it 'who is', 'which is'. It is still the article, bound to its noun and pointing back to it; it gives the modifier emphasis or clarity, and could be dropped without changing the basic sense."
       },
       "article/regular-uses-article/as-pronoun-partially-independent-use/possessive-pronoun": {
         "display_name": "Possessive Pronoun",
-        "description": "his, her (used in contexts in which possession is implied)"
+        "description": "his, her (used in contexts in which possession is implied)",
+        "core": true,
+        "source": {
+          "resource": "GGBB",
+          "pages": [
+            215,
+            216
+          ]
+        },
+        "formation": "The article alone, with no possessive pronoun or genitive, on a noun whose owner is plain from the context: a part of the body, a member of the family, one's own belongings. The owner is normally the subject of the clause, and English supplies 'his', 'her', 'their'. Without the article or a possessive pronoun, no possession is implied."
       }
-    },
-    "lexical_options": [
-      "μαθητής",
-      "ὄχλος",
-      "στρατιώτης"
-    ]
+    }
   },
   "recent_generations": [],
-  "student": {
-    "level": "beyond_beginner",
-    "concepts_learned": "Not Applicable",
-    "vocabulary_learned": "Not Applicable"
-  },
+  "student": "(the test student's block: level, grammar learned, syntax learned, 500 words)",
   "sentence_plan": {
     "sentence_shape": {
       "shape": "a single main clause",
       "formation": "A single independent clause: nominative subject, finite verb, and an accusative direct object if the verb is transitive.",
       "function": "One unsubordinated assertion. Unmarked order is subject, then predicate, then complement."
     },
-    "also_include": [
-      "Dative of Association/Accompaniment - a syntactic usage, under Dative > Instrumental Dative Uses. Syntactic explanation: the person or thing one associates with or accompanies—in association with."
+    "also_include_one_of": [
+      "Μετά (Genitive, Accusative) - a syntactic usage, under Prepositions.",
+      "Genitive After Certain Prepositions - a syntactic usage, under Genitive > After Certain Words. Syntactic explanation: certain prepositions take the genitive after them (see chapter on prepositions).",
+      "Ingressive (Inceptive, Inchoative) Aorist - a syntactic usage, under Tense > Aorist. Syntactic explanation: began to do, became (stresses the beginning of an action, or the entrance into a state)."
     ],
     "setting_options": {
-      "s013": "An old teacher tests his pupils on the letters they copied onto wax tablets.",
-      "s068": "Two apprentices race to finish a table before their master returns."
+      "s142": "The village well runs dry and the elders meet to decide what to do.",
+      "s002": "Two brothers argue over how to divide their late father's olive grove."
     }
   }
 }
@@ -3206,7 +2561,30 @@ No API calls. Each item's user message as generation would send it; the system p
     "item": {
       "key": "voice/active/simple-active",
       "display_name": "Simple Active",
-      "description": "subject performs or experiences the action"
+      "description": "subject performs or experiences the action",
+      "core": true,
+      "source": {
+        "resource": "GGBB",
+        "pages": [
+          411,
+          411
+        ]
+      },
+      "formation": "An active verb whose subject performs the action, or experiences it, with or without a direct object: the ordinary use of the voice. The subject is the doer, and the verb says nothing special about the subject's involvement.",
+      "gnt_lexemes": [
+        {
+          "verb": "ἀποκόπτω",
+          "object": "σχοινίον"
+        },
+        {
+          "verb": "οἰκοδομέω",
+          "object": "μνημεῖον"
+        },
+        {
+          "verb": "πίπτω",
+          "noun": "πρόσωπον"
+        }
+      ]
     },
     "ancestors": [
       {
@@ -3221,76 +2599,73 @@ No API calls. Each item's user message as generation would send it; the system p
     "sibling_usages": {
       "voice/active/causative-active-k-ergative": {
         "display_name": "Causative Active (a.k.a. Ergative)",
-        "description": "subject is not directly involved in the action, but is the ultimate source of it"
+        "description": "subject is not directly involved in the action, but is the ultimate source of it",
+        "core": true,
+        "source": {
+          "resource": "GGBB",
+          "pages": [
+            411,
+            412
+          ]
+        },
+        "formation": "An active verb whose subject does not carry out the action himself but is its source or cause: 'the governor flogged him' when he had him flogged, 'I watered' when I gave the plants to drink. Many verbs in -όω and -ίζω are causative in themselves; with others only the context shows that someone else did the deed."
       },
       "voice/active/stative-active": {
         "display_name": "Stative Active",
-        "description": "subject exists in the state indicated by the verb"
+        "description": "subject exists in the state indicated by the verb",
+        "core": true,
+        "source": {
+          "resource": "GGBB",
+          "pages": [
+            412,
+            413
+          ]
+        },
+        "formation": "An active verb whose subject simply exists in a state rather than doing anything: the linking verbs, and verbs that English renders 'to be' plus an adjective ('to be rich', 'to be patient', 'to be angry')."
       },
       "voice/active/reflexive-active": {
         "display_name": "Reflexive Active",
-        "description": "active verb + reflexive pronoun (subject acts upon himself or herself)"
+        "description": "active verb + reflexive pronoun (subject acts upon himself or herself)",
+        "core": true,
+        "source": {
+          "resource": "GGBB",
+          "pages": [
+            413,
+            414
+          ]
+        },
+        "formation": "An active verb with a reflexive pronoun (ἑαυτόν, σεαυτόν, ἐμαυτόν) as its object, so that the subject acts on itself: 'he tied it round himself', 'whoever humbles himself'. Koine increasingly uses this where earlier Greek used the direct middle."
       }
-    },
-    "lexical_options": [
-      "γράφω",
-      "διώκω",
-      "θεραπεύω"
-    ]
+    }
   },
   "recent_generations": [],
-  "student": {
-    "level": "beyond_beginner",
-    "concepts_learned": "Not Applicable",
-    "vocabulary_learned": "Not Applicable"
-  },
+  "student": "(the test student's block: level, grammar learned, syntax learned, 500 words)",
   "sentence_plan": {
     "sentence_shape": {
-      "shape": "a main clause with a relative clause: adjectival",
-      "formation": "Relative pronoun agreeing with its antecedent in number and gender, its case set by its role inside the relative clause. It follows its referent.",
-      "function": "Attributive only - it describes, explains or narrows the substantive it attaches to.",
-      "syntactic_category": "Relative Pronouns - a syntactic usage, under Pronouns > Semantic Categories. Syntactic explanation: ὅς and ὅστις labeled relative pronouns because they relate to more than one clause.",
+      "shape": "a main clause with a relative clause: substantival, indicative, subject",
+      "formation": "ὅ plus the indicative, with no antecedent, standing in the subject slot of the main verb.",
+      "function": "The relative clause serves as the subject of the main verb.",
+      "syntactic_category": "Omission of Antecedent - a syntactic usage, under Pronouns > Semantic Categories > Relative Pronouns > ὅς > “Unusual” Uses > Antecedent Complexities. Syntactic explanation: due to embedded demonstrative or poetry.",
       "position": "after the main clause by default; before it when you mean to give it emphasis",
-      "paradigm": {
-        "name": "Relative Pronoun",
-        "forms": {
-          "ὅς": {
-            "nominative masculine singular": "ὅς",
-            "genitive masculine singular": "οὗ",
-            "dative masculine singular": "ᾧ",
-            "accusative masculine singular": "ὅν",
-            "nominative masculine plural": "οἵ",
-            "genitive masculine plural": "ὧν",
-            "dative masculine plural": "οἷς",
-            "accusative masculine plural": "οὕς"
-          },
-          "ἥ": {
-            "nominative feminine singular": "ἥ",
-            "genitive feminine singular": "ἧς",
-            "dative feminine singular": "ῇ",
-            "accusative feminine singular": "ἥν",
-            "nominative feminine plural": "αἵ",
-            "genitive feminine plural": "ὧν",
-            "dative feminine plural": "αἷς",
-            "accusative feminine plural": "ἅς"
-          },
-          "ὅ": {
-            "nominative neuter singular": "ὅ",
-            "genitive neuter singular": "οὗ",
-            "dative neuter singular": "ᾧ",
-            "accusative neuter singular": "ὅ",
-            "nominative neuter plural": "ἅ",
-            "genitive neuter plural": "ὧν",
-            "dative neuter plural": "οἷς",
-            "accusative neuter plural": "ἅ"
-          }
+      "grammar_options": [
+        {
+          "option": "Relative Pronoun",
+          "gnt_examples": [
+            "ὅ (ὅς)",
+            "ὅς (ὅς)",
+            "ὅν (ὅς)"
+          ]
         }
-      }
+      ]
     },
-    "also_include": [],
+    "also_include_one_of": [
+      "With Demonstratives - a syntactic usage, under The Article > Regular Uses of the Article > As a Function Marker (often has semantic force as well; see categories above). Syntactic explanation: a demonstrative in predicate position to an articular noun has an attributive relation; demonstratives do not modify anarthrous nouns.",
+      "The Predicate Positions - a syntactic usage, under Adjectives > The Relation of Adjective to Noun > When the Article Is Present. Syntactic explanation: adjective makes assertion about the noun.",
+      "Ἀνά (Accusative) - a syntactic usage, under Prepositions."
+    ],
     "setting_options": {
-      "s036": "Two merchants swear an oath over a disputed shipment of wool.",
-      "s019": "A girl hides her brother's broken toy from their father."
+      "s014": "A household prepares a wedding feast and the cook runs short of salt.",
+      "s091": "A runaway slave hides in a hayloft and fears the dogs."
     }
   }
 }
@@ -3304,7 +2679,30 @@ No API calls. Each item's user message as generation would send it; the system p
     "item": {
       "key": "moods/indicative/declarative-indicative",
       "display_name": "Declarative Indicative",
-      "description": "presents assertion as a noncontingent (or unqualified) statement"
+      "description": "presents assertion as a noncontingent (or unqualified) statement",
+      "core": true,
+      "source": {
+        "resource": "GGBB",
+        "pages": [
+          449,
+          449
+        ]
+      },
+      "formation": "An indicative that simply asserts something as so: a plain, unqualified statement, whether or not it is true. It is the ordinary use of the mood, with no condition, question or command attached.",
+      "gnt_lexemes": [
+        {
+          "verb": "ὑποπλέω",
+          "with": "ἄνεμος"
+        },
+        {
+          "verb": "ἐξέρχομαι",
+          "with": "σπείρω"
+        },
+        {
+          "verb": "ἔχω",
+          "object": "ἔργον"
+        }
+      ]
     },
     "ancestors": [
       {
@@ -3319,51 +2717,144 @@ No API calls. Each item's user message as generation would send it; the system p
     "sibling_usages": {
       "moods/indicative/interrogative-indicative": {
         "display_name": "Interrogative Indicative",
-        "description": "question of fact; expects a declarative indicative in response"
+        "description": "question of fact; expects a declarative indicative in response",
+        "core": true,
+        "source": {
+          "resource": "GGBB",
+          "pages": [
+            449,
+            450
+          ]
+        },
+        "formation": "An indicative in a question of fact, asking what, who, where or whether, and expecting a statement in reply. An interrogative word (τίς, ποῦ, πόθεν) or particle often marks it; the deliberative subjunctive asks instead what ought to be done or whether something is possible."
       },
       "moods/indicative/conditional-indicative": {
         "display_name": "Conditional Indicative",
-        "description": "indicative with εἰ in protasis—first class: assumed true for sake of argument; second class: assumed false (for sake of argument)"
+        "description": "indicative with εἰ in protasis—first class: assumed true for sake of argument; second class: assumed false (for sake of argument)",
+        "core": true,
+        "source": {
+          "resource": "GGBB",
+          "pages": [
+            450,
+            451
+          ]
+        },
+        "formation": "An indicative with εἰ in the 'if' clause of a condition. With εἰ and any tense the condition is assumed true for the argument's sake (first class): 'if you do this, and suppose you do, then…'. With εἰ and a past tense, and ἄν in the 'then' clause, it is assumed untrue (second class): 'if you had…, you would have…'."
       },
       "moods/indicative/potential-indicative": {
         "display_name": "Potential Indicative",
-        "description": "semantically equivalent to a potential mood, due to verbal root; found in verbs of obligation, wish, or desire (such as ὀφείλω, δεῖ, θέλω), followed by infinitive"
+        "description": "semantically equivalent to a potential mood, due to verbal root; found in verbs of obligation, wish, or desire (such as ὀφείλω, δεῖ, θέλω), followed by infinitive",
+        "core": true,
+        "source": {
+          "resource": "GGBB",
+          "pages": [
+            451,
+            452
+          ]
+        },
+        "formation": "An indicative of a verb of obligation, wish or desire (δεῖ, ὀφείλω, βούλομαι, θέλω) followed by an infinitive: 'we ought to…', 'I want you to…'. The verb asserts the obligation or the wish; the action itself, in the infinitive, remains only potential."
       },
       "moods/indicative/cohortative-command-volitive-indicative": {
         "display_name": "Cohortative (Command, Volitive) Indicative",
-        "description": "future indicative is sometimes used for a command"
+        "description": "future indicative is sometimes used for a command",
+        "core": false,
+        "source": {
+          "resource": "GGBB",
+          "pages": [
+            452,
+            453
+          ]
+        }
       },
       "moods/indicative/indicative-ὃτι": {
         "display_name": "The Indicative with Ὃτι",
-        "description": null
+        "description": null,
+        "core": false,
+        "source": {
+          "resource": "GGBB",
+          "pages": [
+            453,
+            461
+          ]
+        }
       }
-    },
-    "lexical_options": [
-      "βλέπω",
-      "ἀκούω",
-      "μένω"
-    ]
+    }
   },
   "recent_generations": [],
-  "student": {
-    "level": "beyond_beginner",
-    "concepts_learned": "Not Applicable",
-    "vocabulary_learned": "Not Applicable"
-  },
+  "student": "(the test student's block: level, grammar learned, syntax learned, 500 words)",
   "sentence_plan": {
     "sentence_shape": {
-      "shape": "a main clause with an adverbial dependent clause: conditional, first class",
-      "formation": "Protasis: εἰ plus the indicative, in any tense. Apodosis: any mood or tense.",
-      "function": "The speaker takes the condition as true so the argument can proceed from it, and the apodosis then follows naturally. This is not the same as 'since', and it is not a bare logical connection - the protasis may in fact be false and still be granted for the sake of the argument.",
-      "syntactic_category": "First Class Condition - a syntactic usage, under Conditional Sentences > II. Conditional Sentences in Greek (especially the NT). Syntactic explanation: the assumption of truth for the sake of argument (does not mean since, nor is it a simple, logical condition); protasis: εἰ + indicative (in any tense)/apodosis: any mood, any tense (689, 690–94).",
-      "position": "before the main clause by default; after it when you mean to give it emphasis"
+      "shape": "a main clause with an adverbial dependent clause: manner means, articular infinitive",
+      "formation": "ἐν τῷ followed by an infinitive.",
+      "function": "Says how the controlling verb's action was carried out. Render with 'by ... -ing'.",
+      "syntactic_category": "Means - a syntactic usage, under Infinitive > Adverbial. Syntactic explanation: ἐν τῷ + infinitive; describes the way in which the action of the controlling verb is accomplished; translate by … doing, etc..",
+      "position": "after the main clause by default; before it when you mean to give it emphasis",
+      "frequency": "Rare in the New Testament. Build it exactly to its formation and keep the rest of the sentence plain.",
+      "grammar_options": [
+        {
+          "option": "Aorist Active Infinitive",
+          "gnt_examples": [
+            "ποιῆσαι (ποιέω)",
+            "λαλῆσαι (λαλέω)",
+            "ἀκοῦσαι (ἀκούω)"
+          ]
+        },
+        {
+          "option": "Aorist Middle Infinitive",
+          "gnt_examples": [
+            "εὐαγγελίσασθαι (εὐαγγελίζω)",
+            "προσεύξασθαι (προσεύχομαι)",
+            "θεάσασθαι (θεάομαι)"
+          ]
+        },
+        {
+          "option": "Aorist Passive Infinitive",
+          "gnt_examples": [
+            "βαπτισθῆναι (βαπτίζω)",
+            "σωθῆναι (σῴζω)",
+            "ἀποκτανθῆναι (ἀποκτείνω)"
+          ]
+        },
+        {
+          "option": "Present Infinitive of εἰμί",
+          "gnt_examples": [
+            "εἶναι (εἰμί)"
+          ]
+        },
+        {
+          "option": "Perfect Active Infinitive",
+          "gnt_examples": [
+            "γεγονέναι (γίνομαι)",
+            "πεποιηκέναι (ποιέω)",
+            "κεκρατηκέναι (κρατέω)"
+          ]
+        },
+        {
+          "option": "Present Active Infinitive",
+          "gnt_examples": [
+            "λέγειν (λέγω)",
+            "ἔχειν (ἔχω)",
+            "ποιεῖν (ποιέω)"
+          ]
+        },
+        {
+          "option": "Present Middle/Passive Infinitive",
+          "gnt_examples": [
+            "πορεύεσθαι (πορεύομαι)",
+            "γίνεσθαι (γίνομαι)",
+            "ἔρχεσθαι (ἔρχομαι)"
+          ]
+        }
+      ]
     },
-    "also_include": [
-      "Temporal - a syntactic usage, under Conjunctions > Adverbial Functions. Syntactic explanation: translations vary (indicates the time of the action); ἄχρι, ἕως, ὅταν, ὅτε, οὐδέποτε (negative temporal), οὐκέτι (negative temporal), οὔπω (negative temporal), ποτέ, and ὡς."
+    "also_include_one_of": [
+      "Result - a syntactic usage, under Participle > Verbal Participles > Dependent Verbal Participles > Adverbial (or Circumstantial). Syntactic explanation: with the result of (indicates the actual outcome or result of the action of the main verb); can be internal (logical) or external (temporal); follows main verb.",
+      "Simple Active - a syntactic usage, under Voice > Active. Syntactic explanation: subject performs or experiences the action.",
+      "Aorist Subjunctive (+ μή) - a syntactic usage, under Volitional Clauses."
     ],
     "setting_options": {
-      "s094": "A shipowner hires sailors for one last voyage before the winter storms.",
-      "s192": "A father learns that the gold ring he bought is genuine after all."
+      "s110": "Rain collapses a mud-brick wall and the family's sheep wander into the street.",
+      "s015": "A caravan waits outside a desert town while its leader bargains for water."
     }
   }
 }
@@ -3377,7 +2868,27 @@ No API calls. Each item's user message as generation would send it; the system p
     "item": {
       "key": "tense/present/instantaneous-present-k-aoristic-punctiliar-present",
       "display_name": "Instantaneous Present (a.k.a. Aoristic or Punctiliar Present)",
-      "description": "action occurs at the moment of speaking; usually a performative statement (e.g., “I tell you the truth, the Rams won the game”); indicative only"
+      "description": "action occurs at the moment of speaking; usually a performative statement (e.g., “I tell you the truth, the Rams won the game”); indicative only",
+      "core": true,
+      "source": {
+        "resource": "GGBB",
+        "pages": [
+          517,
+          518
+        ]
+      },
+      "formation": "A present indicative, usually first person, of a verb of declaring, requesting or granting, whose action is complete in the uttering of it: saying the words is doing the thing ('I promise', 'I name you my heir', 'you are released'). The progressive sense drops out. It occurs only in the indicative, most often in direct speech.",
+      "gnt_lexemes": [
+        {
+          "verb": "ἐπικαλέω"
+        },
+        {
+          "verb": "συνίστημι"
+        },
+        {
+          "verb": "ἐπιτρέπω"
+        }
+      ]
     },
     "ancestors": [
       {
@@ -3392,63 +2903,56 @@ No API calls. Each item's user message as generation would send it; the system p
     "sibling_usages": {
       "tense/present/narrow-band-presents": {
         "display_name": "Narrow-Band Presents",
-        "description": null
+        "description": null,
+        "core": false,
+        "source": {
+          "resource": "GGBB",
+          "pages": [
+            516,
+            519
+          ]
+        }
       },
       "tense/present/progressive-present-k-descriptive-present": {
         "display_name": "Progressive Present (a.k.a. Descriptive Present)",
-        "description": "at this present time, right now (describes a scene in progress, esp. in narrative literature)"
+        "description": "at this present time, right now (describes a scene in progress, esp. in narrative literature)",
+        "core": true,
+        "source": {
+          "resource": "GGBB",
+          "pages": [
+            518,
+            519
+          ]
+        },
+        "formation": "A present tense describing an action going on at the moment of speaking, 'right now': a scene in progress rather than a habit or a general truth. The action is continuous rather than repeated. It is common in direct speech within narrative, in the indicative and the other moods."
       },
       "tense/present/broad-band-presents": {
         "display_name": "Broad-Band Presents",
-        "description": null
-      }
-    },
-    "lexical_options": [
-      "λέγω",
-      "παρακαλέω",
-      "ἀσπάζομαι"
-    ]
-  },
-  "recent_generations": [],
-  "student": {
-    "level": "beyond_beginner",
-    "concepts_learned": "Not Applicable",
-    "vocabulary_learned": "Not Applicable"
-  },
-  "sentence_plan": {
-    "sentence_shape": {
-      "shape": "a main clause with an adverbial dependent clause: time, articular infinitive",
-      "formation": "μετὰ τό plus infinitive for action before the main verb; ἐν τῷ plus infinitive for action alongside it; πρὸ τοῦ, πρίν or πρὶν ἤ plus infinitive for action after it.",
-      "function": "Places the main verb's action in time. Render with 'after', 'while / as / when', or 'before' plus a finite verb, according to the preposition used.",
-      "syntactic_category": "Time - a syntactic usage, under Infinitive > Adverbial.",
-      "paradigm": {
-        "name": "First Aorist Active Infinitive",
-        "forms": {
-          "λῦσαι (λύω, thematic)": {
-            "aorist active infinitive": "λῦσαι"
-          },
-          "μεῖναι (μένω, liquid)": {
-            "aorist active infinitive": "μεῖναι"
-          },
-          "γεννῆσαι (γεννάω, contract -άω)": {
-            "aorist active infinitive": "γεννῆσαι"
-          },
-          "ποιῆσαι (ποιέω, contract -έω)": {
-            "aorist active infinitive": "ποιῆσαι"
-          },
-          "φανερῶσαι (φανερόω, contract -όω)": {
-            "aorist active infinitive": "φανερῶσαι"
-          },
-          "στῆσαι (ἵστημι, first aorist)": {
-            "aorist active infinitive": "στῆσαι"
-          }
+        "description": null,
+        "core": false,
+        "source": {
+          "resource": "GGBB",
+          "pages": [
+            519,
+            525
+          ]
         }
       }
+    }
+  },
+  "recent_generations": [],
+  "student": "(the test student's block: level, grammar learned, syntax learned, 500 words)",
+  "sentence_plan": {
+    "sentence_shape": {
+      "shape": "a main clause with an adverbial dependent clause: comparative, kathos hos indicative",
+      "formation": "καθώς plus the indicative. καθάπερ, οὕτως, ὡς and ὡσαύτως head the same kind of clause, as does the relative adjective ὅσος.",
+      "function": "Sets one idea alongside another as an analogy, or says how something was done. Render with 'as', 'just as', 'in the same way' or 'thus'.",
+      "syntactic_category": "Comparative (manner) - a syntactic usage, under Conjunctions > Adverbial Functions. Syntactic explanation: as, just as, in the same way, thus, or in this manner (suggests an analogy or comparison between the connected ideas or tells how something is to be done); καθάπερ, καθώς, οὕτως, ὡς, ὡσαύτως, ὡσεί, and ὥσπερ.",
+      "position": "after the main clause by default; before it when you mean to give it emphasis"
     },
-    "also_include": [],
     "setting_options": {
-      "s162": "Two neighbours argue over whether one may draw water from the other's cistern.",
-      "s202": "A workman's excuse for his absence proves to be empty."
+      "s055": "A family packs up to move to another city after a flood ruins their house.",
+      "s061": "A camel driver loses a load of pottery on a rocky path."
     }
   }
 }
@@ -3462,7 +2966,30 @@ No API calls. Each item's user message as generation would send it; the system p
     "item": {
       "key": "participle/substantival-independent",
       "display_name": "Substantival (Independent)",
-      "description": "the one who, the thing which; functions in the place of a substantive; can perform virtually any function a noun can; verbal aspect usually retained"
+      "description": "the one who, the thing which; functions in the place of a substantive; can perform virtually any function a noun can; verbal aspect usually retained",
+      "core": true,
+      "source": {
+        "resource": "GGBB",
+        "pages": [
+          619,
+          621
+        ]
+      },
+      "formation": "A participle standing in place of a noun, usually with the article: 'the one who —', 'those who —', 'the thing that —'. Its case follows its role in the sentence (subject, object, indirect object, object of a preposition), and it keeps its verbal side, taking its own object and modifiers.",
+      "gnt_lexemes": [
+        {
+          "participle": "ἐσθίω",
+          "object": "ἄρτος"
+        },
+        {
+          "participle": "ποιέω",
+          "object": "ἔλεος"
+        },
+        {
+          "participle": "πέμπω",
+          "with": "ἀπόκρισις"
+        }
+      ]
     },
     "ancestors": [
       {
@@ -3473,15 +3000,40 @@ No API calls. Each item's user message as generation would send it; the system p
     "sibling_usages": {
       "participle/adjectival-participles": {
         "display_name": "Adjectival Participles",
-        "description": "adjectival nature is emphasized over verbal; if the participle is articular, it must be adjectival; if anarthrous, it may be adjectival"
+        "description": "adjectival nature is emphasized over verbal; if the participle is articular, it must be adjectival; if anarthrous, it may be adjectival",
+        "core": false,
+        "source": {
+          "resource": "GGBB",
+          "pages": [
+            617,
+            621
+          ]
+        }
       },
       "participle/adjectival-proper-dependent": {
         "display_name": "Adjectival Proper (Dependent)",
-        "description": null
+        "description": null,
+        "core": true,
+        "source": {
+          "resource": "GGBB",
+          "pages": [
+            617,
+            619
+          ]
+        },
+        "formation": "A participle modifying a noun like an adjective, agreeing with it in gender, number and case. Attributive, it stands in an attributive position (usually article–noun–article–participle, or article–participle–noun) and is best rendered as a relative clause, 'the — who/which …'. Predicate, it has no article and asserts something of the noun, often a perfect passive ('found … opened')."
       },
       "participle/verbal-participles": {
         "display_name": "Verbal Participles",
-        "description": "verbal nature is emphasized over adjectival; only with anarthrous participles, usually nominative and dependent on main verb"
+        "description": "verbal nature is emphasized over adjectival; only with anarthrous participles, usually nominative and dependent on main verb",
+        "core": false,
+        "source": {
+          "resource": "GGBB",
+          "pages": [
+            621,
+            653
+          ]
+        }
       },
       "participle/finite-verb-εἰμί": {
         "display_name": "Finite Verb (of εἰμί)",
@@ -3535,31 +3087,24 @@ No API calls. Each item's user message as generation would send it; the system p
         "display_name": "Pluperfect",
         "description": null
       }
-    },
-    "lexical_options": [
-      "πιστεύω",
-      "ἀκολουθέω",
-      "ἐργάζομαι"
-    ]
+    }
   },
   "recent_generations": [],
-  "student": {
-    "level": "beyond_beginner",
-    "concepts_learned": "Not Applicable",
-    "vocabulary_learned": "Not Applicable"
-  },
+  "student": "(the test student's block: level, grammar learned, syntax learned, 500 words)",
   "sentence_plan": {
     "sentence_shape": {
       "shape": "a single main clause",
       "formation": "A single independent clause: nominative subject, finite verb, and an accusative direct object if the verb is transitive.",
       "function": "One unsubordinated assertion. Unmarked order is subject, then predicate, then complement."
     },
-    "also_include": [
-      "With a Pronominal Adjective - a syntactic usage, under The Article > Absence of the Article > Definite. Syntactic explanation: nouns with πᾶς, ὅλος, etc. do not need the article to be definite, for either the class as a whole (“all”) or distributively (“every”) is being specified."
+    "also_include_one_of": [
+      "Extensive Perfect (a.k.a. Consummative Perfect) - a syntactic usage, under Tense > Perfect. Syntactic explanation: emphasizes the completed action of a past action from which a present state emerges (best translated like English present perfect); frequent with transitive verbs.",
+      "Person-Thing - a syntactic usage, under Accusative > Substantival Uses of the Accusative > Double Accusatives. Syntactic explanation: certain verbs take two direct objects, one a person and the other a thing (e.g., teaching, anointing, asking [“I teach you Greek”]).",
+      "Nominative for Vocative (Nominative of Address) - a syntactic usage, under Nominative > Grammatically Independent Uses of the Nominative."
     ],
     "setting_options": {
-      "s188": "A goatherd milks his goats at dawn.",
-      "s048": "A steward counts the household stores before winter and finds the oil jars half empty."
+      "s061": "A camel driver loses a load of pottery on a rocky path.",
+      "s046": "An apprentice mason carves a name onto a gravestone and misspells it."
     }
   }
 }
@@ -3573,7 +3118,30 @@ No API calls. Each item's user message as generation would send it; the system p
     "item": {
       "key": "conjunctions/ascensive",
       "display_name": "Ascensive",
-      "description": "even (final addition or point of focus); καί, δέ, and μηδέ"
+      "description": "even (final addition or point of focus); καί, δέ, and μηδέ",
+      "core": true,
+      "source": {
+        "resource": "GGBB",
+        "pages": [
+          670,
+          671
+        ]
+      },
+      "formation": "καί (also δέ, or μηδέ in the negative) adding a final item that goes beyond what came before, often the most surprising or extreme: 'even'. The added item is the point of focus, the top of a rising series.",
+      "gnt_lexemes": [
+        {
+          "conjunction": "καί",
+          "noun": "βάθος"
+        },
+        {
+          "conjunction": "μηδέ",
+          "verb": "ὀνομάζω"
+        },
+        {
+          "conjunction": "καί",
+          "noun": "ἐξουσία"
+        }
+      ]
     },
     "ancestors": [
       {
@@ -3584,152 +3152,200 @@ No API calls. Each item's user message as generation would send it; the system p
     "sibling_usages": {
       "conjunctions/logical-functions": {
         "display_name": "Logical Functions",
-        "description": "relate the movement of thought from one passage to another by expressing logical relationships"
+        "description": "relate the movement of thought from one passage to another by expressing logical relationships",
+        "core": false,
+        "source": {
+          "resource": "GGBB",
+          "pages": [
+            670,
+            674
+          ]
+        }
       },
       "conjunctions/connective-continuative-coordinate": {
         "display_name": "Connective (continuative, coordinate)",
-        "description": "and, also (if emphatic [adjunctive]); (connects an additional element to a discussion); καί and δέ"
+        "description": "and, also (if emphatic [adjunctive]); (connects an additional element to a discussion); καί and δέ",
+        "core": true,
+        "source": {
+          "resource": "GGBB",
+          "pages": [
+            671,
+            671
+          ]
+        },
+        "formation": "καί or δέ simply joining a further element to what precedes, word to word, clause to clause or sentence to sentence: 'and', or with emphasis 'also'. δέ is often best left untranslated; καί carries the main line of a narrative forward."
       },
       "conjunctions/contrastive-adversative": {
         "display_name": "Contrastive (adversative)",
-        "description": "but, rather, however (contrast or opposing thought to the idea to which it is connected); ἀλλά, πλήν, sometimes καί and δέ"
+        "description": "but, rather, however (contrast or opposing thought to the idea to which it is connected); ἀλλά, πλήν, sometimes καί and δέ",
+        "core": true,
+        "source": {
+          "resource": "GGBB",
+          "pages": [
+            671,
+            672
+          ]
+        },
+        "formation": "A conjunction setting what follows against what precedes: 'but', 'rather', 'however'. ἀλλά is the strong contrast, typically after a negative ('not this, but that'); δέ is milder; πλήν means 'but', 'nevertheless'; καί can also carry contrast when the context demands it."
       },
       "conjunctions/correlative": {
         "display_name": "Correlative",
-        "description": "paired conjunctions expressing various relationships; e.g., μέν … δέ (on the one hand … on the other hand); καί … καί (both … and)"
+        "description": "paired conjunctions expressing various relationships; e.g., μέν … δέ (on the one hand … on the other hand); καί … καί (both … and)",
+        "core": true,
+        "source": {
+          "resource": "GGBB",
+          "pages": [
+            672,
+            672
+          ]
+        },
+        "formation": "Paired conjunctions that set two members in a fixed relation: μέν … δέ ('on the one hand … on the other'), καί … καί ('both … and'), οὔτε … οὔτε ('neither … nor'), εἴτε … εἴτε ('whether … or'), ἤ … ἤ ('either … or'). The first word announces the second, and the two members are balanced against each other."
       },
       "conjunctions/disjunctive-alternative": {
         "display_name": "Disjunctive (Alternative)",
-        "description": "or (suggests an alternative possibility to the idea to which it is connected); ἤ"
+        "description": "or (suggests an alternative possibility to the idea to which it is connected); ἤ",
+        "core": true,
+        "source": {
+          "resource": "GGBB",
+          "pages": [
+            672,
+            672
+          ]
+        },
+        "formation": "ἤ presenting an alternative to what precedes: 'or'. The alternatives may be opposites or related options, between words, phrases or clauses; repeated, it gives 'either … or'."
       },
       "conjunctions/emphatic": {
         "display_name": "Emphatic",
-        "description": "certainly, indeed (involves intensifying the normal sense of a conjunction); ἀλλά (certainly), οὐ μή (certainly not or by no means), οὖν (certainly); true emphatic conjunctions include γε, δή, μενοῦνγε, μέντοι, ναί, and νή"
+        "description": "certainly, indeed (involves intensifying the normal sense of a conjunction); ἀλλά (certainly), οὐ μή (certainly not or by no means), οὖν (certainly); true emphatic conjunctions include γε, δή, μενοῦνγε, μέντοι, ναί, and νή",
+        "core": true,
+        "source": {
+          "resource": "GGBB",
+          "pages": [
+            673,
+            673
+          ]
+        },
+        "formation": "A particle or conjunction that intensifies the word or clause it stands with: 'indeed', 'certainly'. The true emphatic particles are γε, δή, μενοῦνγε, μέντοι, ναί and νή; ἀλλά and οὖν can also be emphatic in context. γε and δή are postpositive and highlight the word just before them."
       },
       "conjunctions/explanatory": {
         "display_name": "Explanatory",
-        "description": "for, you see, or that is, namely (conjunction indicates additional information being given to what has been described); γάρ, δέ, εἰ (after verbs of emotion), and καί"
+        "description": "for, you see, or that is, namely (conjunction indicates additional information being given to what has been described); γάρ, δέ, εἰ (after verbs of emotion), and καί",
+        "core": true,
+        "source": {
+          "resource": "GGBB",
+          "pages": [
+            673,
+            673
+          ]
+        },
+        "formation": "A conjunction introducing additional information that explains or clarifies what has just been said: 'for', 'you see', 'that is'. γάρ is the usual word, and δέ can introduce a parenthetical aside; the explanation is background and less prominent than what it explains."
       },
       "conjunctions/inferential": {
         "display_name": "Inferential",
-        "description": "therefore (gives a deduction, conclusion, or summary to the preceding discussion); ἄρα, γάρ, διό, διότι, οὖν, πλήν, τοιγαροῦν, τοινῦν, and ὥστε."
+        "description": "therefore (gives a deduction, conclusion, or summary to the preceding discussion); ἄρα, γάρ, διό, διότι, οὖν, πλήν, τοιγαροῦν, τοινῦν, and ὥστε.",
+        "core": true,
+        "source": {
+          "resource": "GGBB",
+          "pages": [
+            673,
+            673
+          ]
+        },
+        "formation": "A conjunction drawing a conclusion, deduction or summary from what precedes: 'therefore', 'so', 'then'. The usual words are οὖν (postpositive), διό, ἄρα and ὥστε with the indicative; the conclusion is the more prominent part."
       },
       "conjunctions/transitional": {
         "display_name": "Transitional",
-        "description": "now, then (involves the change to a new topic of discussion, especially in narrative); οὖν and especially δέ"
+        "description": "now, then (involves the change to a new topic of discussion, especially in narrative); οὖν and especially δέ",
+        "core": true,
+        "source": {
+          "resource": "GGBB",
+          "pages": [
+            674,
+            674
+          ]
+        },
+        "formation": "A conjunction marking a move in the narrative rather than a logical link: a new scene, a new participant, a change of time, or a return to the main line after an aside: 'now', 'then'. δέ is by far the most common; οὖν does this especially in narrative, where it resumes the story."
       },
       "conjunctions/adverbial-functions": {
         "display_name": "Adverbial Functions",
-        "description": "amplify the verbal idea in a specific way (usually subordinate conjunctions)"
-      }
-    },
-    "lexical_options": [
-      "τελώνης",
-      "παιδίον",
-      "πτωχός"
-    ]
-  },
-  "recent_generations": [],
-  "student": {
-    "level": "beyond_beginner",
-    "concepts_learned": "Not Applicable",
-    "vocabulary_learned": "Not Applicable"
-  },
-  "sentence_plan": {
-    "sentence_shape": {
-      "shape": "a main clause with an adverbial dependent clause: concessive, adverbial participle",
-      "formation": "Anarthrous participle matching its subject in case, number and gender.",
-      "function": "Concedes something: the main verb holds true in spite of what the participle describes. Render with 'although'.",
-      "syntactic_category": "Concession - a syntactic usage, under Participle > Verbal Participles > Dependent Verbal Participles > Adverbial (or Circumstantial). Syntactic explanation: although (implies that the state or action of the main verb is true in spite of the state or action of the participle).",
-      "position": "after the main clause by default; before it when you mean to give it emphasis",
-      "paradigm": {
-        "name": "Present Active Participle",
-        "forms": {
-          "λύων (λύω, thematic)": {
-            "present active participle nominative masculine singular": "λύων",
-            "present active participle genitive masculine singular": "λύοντος",
-            "present active participle dative masculine singular": "λύοντι",
-            "present active participle accusative masculine singular": "λύοντα",
-            "present active participle nominative masculine plural": "λύοντες",
-            "present active participle genitive masculine plural": "λυόντων",
-            "present active participle dative masculine plural": "λύουσι(ν)",
-            "present active participle accusative masculine plural": "λύοντας"
-          },
-          "λύουσα (λύω, thematic)": {
-            "present active participle nominative feminine singular": "λύουσα",
-            "present active participle genitive feminine singular": "λυούσης",
-            "present active participle dative feminine singular": "λυούσῃ",
-            "present active participle accusative feminine singular": "λύουσαν",
-            "present active participle nominative feminine plural": "λύουσαι",
-            "present active participle genitive feminine plural": "λυουσῶν",
-            "present active participle dative feminine plural": "λυούσαις",
-            "present active participle accusative feminine plural": "λυούσας"
-          },
-          "λῦον (λύω, thematic)": {
-            "present active participle nominative neuter singular": "λῦον",
-            "present active participle genitive neuter singular": "λύοντος",
-            "present active participle dative neuter singular": "λύοντι",
-            "present active participle accusative neuter singular": "λῦον",
-            "present active participle nominative neuter plural": "λύοντα",
-            "present active participle genitive neuter plural": "λυόντων",
-            "present active participle dative neuter plural": "λύουσι(ν)",
-            "present active participle accusative neuter plural": "λύοντα"
-          },
-          "ἱστάς (ἵστημι, athematic)": {
-            "present active participle nominative masculine singular": "ἱστάς",
-            "present active participle genitive masculine singular": "ἱστάντος"
-          },
-          "ἱστᾶσα (ἵστημι, athematic)": {
-            "present active participle nominative feminine singular": "ἱστᾶσα",
-            "present active participle genitive feminine singular": "ἱστάσης"
-          },
-          "ἱστάν (ἵστημι, athematic)": {
-            "present active participle nominative neuter singular": "ἱστάν",
-            "present active participle genitive neuter singular": "ἱστάντος"
-          },
-          "τιθείς (τίθημι, athematic)": {
-            "present active participle nominative masculine singular": "τιθείς",
-            "present active participle genitive masculine singular": "τιθέντος"
-          },
-          "τιθεῖσα (τίθημι, athematic)": {
-            "present active participle nominative feminine singular": "τιθεῖσα",
-            "present active participle genitive feminine singular": "τιθείσης"
-          },
-          "τιθέν (τίθημι, athematic)": {
-            "present active participle nominative neuter singular": "τιθέν",
-            "present active participle genitive neuter singular": "τιθέντος"
-          },
-          "διδούς (δίδωμι, athematic)": {
-            "present active participle nominative masculine singular": "διδούς",
-            "present active participle genitive masculine singular": "διδόντος"
-          },
-          "διδοῦσα (δίδωμι, athematic)": {
-            "present active participle nominative feminine singular": "διδοῦσα",
-            "present active participle genitive feminine singular": "διδούσης"
-          },
-          "διδόν (δίδωμι, athematic)": {
-            "present active participle nominative neuter singular": "διδόν",
-            "present active participle genitive neuter singular": "διδόντος"
-          },
-          "δεικνύς (δείκνυμι, athematic)": {
-            "present active participle nominative masculine singular": "δεικνύς",
-            "present active participle genitive masculine singular": "δεικνύντος"
-          },
-          "δεικνῦσα (δείκνυμι, athematic)": {
-            "present active participle nominative feminine singular": "δεικνῦσα",
-            "present active participle genitive feminine singular": "δεικνύσης"
-          },
-          "δεικνύν (δείκνυμι, athematic)": {
-            "present active participle nominative neuter singular": "δεικνύν",
-            "present active participle genitive neuter singular": "δεικνύντος"
-          }
+        "description": "amplify the verbal idea in a specific way (usually subordinate conjunctions)",
+        "core": false,
+        "source": {
+          "resource": "GGBB",
+          "pages": [
+            674,
+            677
+          ]
         }
       }
+    }
+  },
+  "recent_generations": [],
+  "student": "(the test student's block: level, grammar learned, syntax learned, 500 words)",
+  "sentence_plan": {
+    "sentence_shape": {
+      "shape": "a main clause with an adverbial dependent clause: conditional, third class",
+      "formation": "Protasis: ἐάν plus the subjunctive. Apodosis: any mood or tense.",
+      "function": "Covers a wide band, from a purely hypothetical case to a probable one, and sometimes states a general present reality. Read the strength of the condition from context rather than from the form.",
+      "syntactic_category": "Third Class Condition - a syntactic usage, under Conditional Sentences > II. Conditional Sentences in Greek (especially the NT). Syntactic explanation: range of nuances: (a) a logical connection (if A, then B) in the present time (present general condition or fifth class condition), (b) hypothetical situation, and (c) more probable future occurrence; ἐάν + subjunctive, any tense; apodosis: any tense, any mood (present indicative for present general condition) (689, 696–99).",
+      "position": "before the main clause by default; after it when you mean to give it emphasis",
+      "grammar_options": [
+        {
+          "option": "Aorist Active Subjunctive",
+          "gnt_examples": [
+            "ποιήσω (ποιέω)",
+            "ποιήσῃ (ποιέω)",
+            "ποιήσωμεν (ποιέω)"
+          ]
+        },
+        {
+          "option": "Aorist Middle Subjunctive",
+          "gnt_examples": [
+            "δέξηται (δέχομαι)",
+            "ἄρξηται (ἄρχω)",
+            "ἅψηται (ἅπτω)"
+          ]
+        },
+        {
+          "option": "Aorist Passive Subjunctive",
+          "gnt_examples": [
+            "πληρωθῇ (πληρόω)",
+            "φανερωθῇ (φανερόω)",
+            "πληρωθῶσιν (πληρόω)"
+          ]
+        },
+        {
+          "option": "Present Subjunctive of εἰμί",
+          "gnt_examples": [
+            "ᾖ (εἰμί)"
+          ]
+        },
+        {
+          "option": "Present Active Subjunctive",
+          "gnt_examples": [
+            "ἔχῃ (ἔχω)",
+            "ἔχητε (ἔχω)",
+            "θέλῃ (θέλω)"
+          ]
+        },
+        {
+          "option": "Present Middle/Passive Subjunctive",
+          "gnt_examples": [
+            "βούληται (βούλομαι)",
+            "ἔρχηται (ἔρχομαι)",
+            "δοξάζηται (δοξάζω)"
+          ]
+        }
+      ]
     },
-    "also_include": [],
+    "also_include_one_of": [
+      "Epexegetical - a syntactic usage, under Infinitive > Substantival. Syntactic explanation: clarifies, explains, or qualifies a noun or adjective (words that indicate ability, authority, desire, freedom, hope, need, obligation, or readiness).",
+      "Genitive of Association - a syntactic usage, under Genitive > Adverbial Genitive. Syntactic explanation: in association with.",
+      "Proleptic (Futuristic) Aorist - a syntactic usage, under Tense > Aorist. Syntactic explanation: describes an event that is not yet past as though it were already completed."
+    ],
     "setting_options": {
-      "s169": "A traveller must wait in a town until the bridge is repaired.",
-      "s093": "Debtors in a crowded cell share a single blanket through a cold night."
+      "s114": "A tanner is shunned by his neighbours for the smell of his trade.",
+      "s213": "Two potters' workshops turn out very different jars."
     }
   }
 }
@@ -3743,7 +3359,26 @@ No API calls. Each item's user message as generation would send it; the system p
     "item": {
       "key": "conditional-sentences/ii-conditional-sentences-greek-especially-nt/first-class-condition",
       "display_name": "First Class Condition",
-      "description": "the assumption of truth for the sake of argument (does not mean since, nor is it a simple, logical condition); protasis: εἰ + indicative (in any tense)/apodosis: any mood, any tense (689, 690–94)"
+      "description": "the assumption of truth for the sake of argument (does not mean since, nor is it a simple, logical condition); protasis: εἰ + indicative (in any tense)/apodosis: any mood, any tense (689, 690–94)",
+      "core": true,
+      "source": null,
+      "formation": "εἰ with the indicative, in any tense, in the 'if' clause (negated by οὐ); the 'then' clause may take any mood and tense, often a command or a question. It assumes the condition true for the argument's sake, not that it is true: 'if you have judged me faithful, stay'.",
+      "gnt_lexemes": [
+        {
+          "conjunction": "εἰ",
+          "verb": "κρίνω",
+          "with": "μένω"
+        },
+        {
+          "conjunction": "εἰ",
+          "adjective": "ἄτοπος",
+          "verb": "κατηγορέω"
+        },
+        {
+          "conjunction": "εἰ",
+          "verb": "διώκω"
+        }
+      ]
     },
     "ancestors": [
       {
@@ -3758,78 +3393,45 @@ No API calls. Each item's user message as generation would send it; the system p
     "sibling_usages": {
       "conditional-sentences/ii-conditional-sentences-greek-especially-nt/second-class-condition": {
         "display_name": "Second Class Condition",
-        "description": "the assumption of an untruth (for the sake of argument); protasis: εἰ + indicative of secondary tense (aorist or imperfect usually)/apodosis: ἄν (usually) + secondary tense in indicative (689, 694–96)"
+        "description": "the assumption of an untruth (for the sake of argument); protasis: εἰ + indicative of secondary tense (aorist or imperfect usually)/apodosis: ἄν (usually) + secondary tense in indicative (689, 694–96)",
+        "core": true,
+        "source": null,
+        "formation": "εἰ with a past-tense indicative in the 'if' clause (negated by μή), and ἄν with a past-tense indicative in the 'then' clause (ἄν is occasionally omitted). It assumes the condition untrue: with imperfects, 'if I were…, I would be…'; with aorists, 'if they had…, they would have…'."
       },
       "conditional-sentences/ii-conditional-sentences-greek-especially-nt/third-class-condition": {
         "display_name": "Third Class Condition",
-        "description": "range of nuances: (a) a logical connection (if A, then B) in the present time (present general condition or fifth class condition), (b) hypothetical situation, and (c) more probable future occurrence; ἐάν + subjunctive, any tense; apodosis: any tense, any mood (present indicative for present general condition) (689, 696–99)"
+        "description": "range of nuances: (a) a logical connection (if A, then B) in the present time (present general condition or fifth class condition), (b) hypothetical situation, and (c) more probable future occurrence; ἐάν + subjunctive, any tense; apodosis: any tense, any mood (present indicative for present general condition) (689, 696–99)",
+        "core": true,
+        "source": null,
+        "formation": "ἐάν with the subjunctive, in any tense, in the 'if' clause (negated by μή); the 'then' clause may take any mood and tense, most often a future or present indicative. It projects the condition without asserting it: a general truth ('if anyone walks in the day, he does not stumble'), a likely future, or a mere hypothesis."
       },
       "conditional-sentences/ii-conditional-sentences-greek-especially-nt/fourth-class-condition-less-probable-future": {
         "display_name": "Fourth Class Condition (Less Probable Future)",
-        "description": "possible condition in the future, usually remote possibility (such as if he could do something, if perhaps this should occur); protasis: εἰ + optative; apodosis: optative + ἄν (689, 699–701)"
+        "description": "possible condition in the future, usually remote possibility (such as if he could do something, if perhaps this should occur); protasis: εἰ + optative; apodosis: optative + ἄν (689, 699–701)",
+        "core": true,
+        "source": null,
+        "formation": "εἰ with the optative in the 'if' clause, and ἄν with the optative in the 'then' clause: 'if he should…, he would…', a remote future possibility. The New Testament has no complete example; it has the 'if' clause alone, or with a verbless or indicative 'then' clause, or a 'then' clause (ἄν with the optative) whose condition is left unstated."
       }
-    },
-    "lexical_options": [
-      "υἱός",
-      "ἔργον",
-      "ἀληθής"
-    ]
+    }
   },
   "recent_generations": [],
-  "student": {
-    "level": "beyond_beginner",
-    "concepts_learned": "Not Applicable",
-    "vocabulary_learned": "Not Applicable"
-  },
+  "student": "(the test student's block: level, grammar learned, syntax learned, 500 words)",
   "sentence_plan": {
     "sentence_shape": {
-      "shape": "a main clause with a relative clause: adjectival",
-      "formation": "Relative pronoun agreeing with its antecedent in number and gender, its case set by its role inside the relative clause. It follows its referent.",
-      "function": "Attributive only - it describes, explains or narrows the substantive it attaches to.",
-      "syntactic_category": "Relative Pronouns - a syntactic usage, under Pronouns > Semantic Categories. Syntactic explanation: ὅς and ὅστις labeled relative pronouns because they relate to more than one clause.",
-      "position": "after the main clause by default; before it when you mean to give it emphasis",
-      "paradigm": {
-        "name": "Relative Pronoun",
-        "forms": {
-          "ὅς": {
-            "nominative masculine singular": "ὅς",
-            "genitive masculine singular": "οὗ",
-            "dative masculine singular": "ᾧ",
-            "accusative masculine singular": "ὅν",
-            "nominative masculine plural": "οἵ",
-            "genitive masculine plural": "ὧν",
-            "dative masculine plural": "οἷς",
-            "accusative masculine plural": "οὕς"
-          },
-          "ἥ": {
-            "nominative feminine singular": "ἥ",
-            "genitive feminine singular": "ἧς",
-            "dative feminine singular": "ῇ",
-            "accusative feminine singular": "ἥν",
-            "nominative feminine plural": "αἵ",
-            "genitive feminine plural": "ὧν",
-            "dative feminine plural": "αἷς",
-            "accusative feminine plural": "ἅς"
-          },
-          "ὅ": {
-            "nominative neuter singular": "ὅ",
-            "genitive neuter singular": "οὗ",
-            "dative neuter singular": "ᾧ",
-            "accusative neuter singular": "ὅ",
-            "nominative neuter plural": "ἅ",
-            "genitive neuter plural": "ὧν",
-            "dative neuter plural": "οἷς",
-            "accusative neuter plural": "ἅ"
-          }
-        }
-      }
+      "shape": "a main clause with an adverbial dependent clause: conditional, first class",
+      "formation": "Protasis: εἰ plus the indicative, in any tense. Apodosis: any mood or tense.",
+      "function": "The speaker takes the condition as true so the argument can proceed from it, and the apodosis then follows naturally. This is not the same as 'since', and it is not a bare logical connection - the protasis may in fact be false and still be granted for the sake of the argument.",
+      "syntactic_category": "First Class Condition - a syntactic usage, under Conditional Sentences > II. Conditional Sentences in Greek (especially the NT). Syntactic explanation: the assumption of truth for the sake of argument (does not mean since, nor is it a simple, logical condition); protasis: εἰ + indicative (in any tense)/apodosis: any mood, any tense (689, 690–94).",
+      "position": "before the main clause by default; after it when you mean to give it emphasis"
     },
-    "also_include": [
-      "Possessive Pronoun - a syntactic usage, under The Article > Regular Uses of the Article > As a Pronoun ([partially] Independent Use). Syntactic explanation: his, her (used in contexts in which possession is implied)."
+    "also_include_one_of": [
+      "Omission of Antecedent - a syntactic usage, under Pronouns > Semantic Categories > Relative Pronouns > ὅς > “Unusual” Uses > Antecedent Complexities. Syntactic explanation: due to embedded demonstrative or poetry.",
+      "Progressive (Descriptive) Imperfect - a syntactic usage, under Tense > Imperfect. Syntactic explanation: was (continually) doing, was (right then) happening (in progress in past time).",
+      "Deliberative Subjunctive (a.k.a. Dubitative) - a syntactic usage, under Moods > Subjunctive > In Independent Clauses. Syntactic explanation: asks either a real or rhetorical question; a hortatory subjunctive turned into a question; asks about possibility, necessity, or moral obligation."
     ],
     "setting_options": {
-      "s092": "A household guard is bribed to leave a gate unbarred.",
-      "s027": "Neighbours put out a kitchen fire before it spreads to the roof."
+      "s209": "A rower stretches out his hand to pull a swimmer aboard.",
+      "s014": "A household prepares a wedding feast and the cook runs short of salt."
     }
   }
 }
@@ -3850,14 +3452,14 @@ No API calls. Each item's user message as generation would send it; the system p
   7. DIFFICULTY MATCHES LEVEL — you are supplied with the current level of the student - beginner: predictable, simple sentence form, first-semester vocabulary; beyond_beginner: vary cases, tenses, moods, participles, prepositional phrases, relative clauses, conjunctions, word order — only within what constraint 4 permits; advanced: You have free reign of creative formulation under the restrictions of the restraints.
   8. RECORD THE DECISIONS — work through the REFLECTION below before composing, then set out the choices behind the finished card in "reasoning": 1-4 short sentences of compressed analysis ending in a decision. This is an editorial note about the card, of the kind a writer leaves for the editor who will check it — what the item's sense rests on, which competing reading the clause shuts out, and why this scene and not another. It is read by the auditor, never shown to the student, and never skipped.
   9. THE GLOSS IS CONTEXTUAL AND SHORT — where a gloss is requested (not always applicable), 1-5 words, rendering the target as used in this sentence, not simply the glossary default.
-  10. NO NEW OR CONTROVERSIAL DOCTRINE — keep sentences theologically unobjectionable and small in scope; nothing sexual, gratuitously violent, politically inflammatory, or otherwise unsuitable for a study card.
+  10. NO NEW OR CONTROVERSIAL DOCTRINE — keep sentences theologically unobjectionable and small in scope; nothing sexual, gratuitously violent, politically inflammatory, or otherwise unsuitable for a study card. A few words have been removed from everything you are given, and a card using one is sent back: God, Jesus and Christ, angels, Satan and demons, and the religious and ethnic groups and offices of the New Testament (Jews, Pharisees, Sadducees, Samaritans, Gentiles, high priests, scribes, prophets, apostles, the church, and the like). They are removed so that none of these is ever rendered offensively or inappropriately. Where the item under review is itself one of these words, it may appear, but only outside the nominative and vocative, never as the one who acts or speaks. That list is not exhaustive, so this is NON-NEGOTIABLE: nothing in your card may render or describe a biblical person, event, or religiously loaded idea in any way that could be taken as controversial, offensive, inappropriate, or contextually odd, whether or not its word was removed.
   11. BUILD ON THE REFERENCE, DO NOT REPEAT IT — in the case you are given one or more hand-vetted reference cards for this item, those set the standard for quality, register, and constraint compliance; match it. Do not reuse its scene, its vocabulary choices, or its sentence shape, and do not paraphrase or template-swap any recent generation. Write something genuinely different within the same constraints, utilizing it only as an example of a premium generation.
   12. FIDELITY ABOVE FLUENCY — where given data conflicts with your own recollection of Greek, follow the data; the rule's stated formation, the paradigm's forms, and the student's vocabulary list are authoritative: they are drawn from cited scholarly reference works and take precedence over recollection.
   13. NO RECOGNISABLE TEXT — do not reproduce or lightly reword a passage of the Greek New Testament or the Septuagint. Its people, places, objects and ideas are all yours to use; its wording is not. This is not a matter of taste. A student who recognises the line recalls the line instead of retrieving the item, and the card goes on looking correct while testing nothing. Write the world of the New Testament, not the verses.
 
-  ECHO CRITERIA — constraint 13 is checked by a separate auditor after you write. Read what is actually being tested before the four axes, because the usual mistake is to check the wrong thing.
+  ECHO CRITERIA — constraint 13 is yours to hold to; nothing after you checks it. Read what is actually being tested before the four axes, because the usual mistake is to check the wrong thing.
 
-  THE SETTING IS GIVEN; THE WORDING IS YOURS. The world these cards live in is the world the New Testament was written in — its trades, households, roads, markets, festivals and law — and you are handed two everyday situations from it in "sentence_plan". Build the scene inside one of them. They are chosen for you because a word's first pull is toward the passage it is famous for — βαπτίζω toward the Jordan, κράζω toward the blind man by the road — and once the scene is that passage, its wording follows. So do not steer a setting back toward a known episode or parable, and use no New Testament figure by name. The item must still be at home in the scene you write: a card for βαπτίζω needs an immersion, a card for ποιμήν a flock. Put the word to its ordinary work inside the setting you chose.
+  THE SETTING IS GIVEN; THE WORDING IS YOURS. The world these cards live in is the world the New Testament was written in — its trades, households, roads, markets, festivals and law — and you are handed two everyday situations from it in "sentence_plan". Build the scene inside one of them. They are chosen for you because a word's first pull is toward the passage it is famous for — βαπτίζω toward the Jordan, κράζω toward the blind man by the road — and once the scene is that passage, its wording follows. So do not steer a setting back toward a known episode or parable, and use no New Testament figure by name unless the item's own "gnt_lexemes" pairing is a pair of names, in which case use them in an ordinary scene, not their episode. The item must still be at home in the scene you write: a card for βαπτίζω needs an immersion, a card for ποιμήν a flock. Put the word to its ordinary work inside the setting you chose.
   Within that, write fresh Koine: your clauses, your arrangement, your choice of what stands beside what. A short run held in common with a verse is unavoidable and fine — one such piece at most. What fails is a sentence assembled out of a particular passage's actual wording, however the scene around it has been redressed. The question is never "is this biblical" but always "are these its words".
   1. WORDING — does any run of words, any clause, any phrase reproduce a passage verbatim or nearly so? Changing a preposition, a case, or the word order does not make a borrowed line your own. This is the criterion. The three below exist only because wording can be lifted in ways a plain string comparison misses.
   2. STRUCTURE — have you rebuilt one verse's clause architecture and swapped its vocabulary out, so the sentence is that verse in other clothes? Writing about something the corpus also describes is fine; reproducing the sequence of constructions a specific passage used is not.
@@ -3911,6 +3513,8 @@ One documented exception: in clauses with an imperative, the predicate is fronte
 A dependent clause goes before or after the main clause; it rarely interrupts it. Which side is
 fixed by the clause's MEANING, not by how it is built - a conditional participle precedes and a
 result participle follows, exactly as the matching conjunction would.
+The one exception is the causal participle, which usually precedes its verb; causal clauses with
+a conjunction still follow.
 
 BEFORE the main clause:
     conditional          εἰ, ἐάν
@@ -4014,10 +3618,10 @@ An adverb phrase rarely comes between a verb and its object; put it on one side 
     "sentence"     — the Koine Greek sentence
     "translation"  — English translation of the full sentence
     "target_form"  — the exact inflected form of the target as it appears in "sentence", copied verbatim
-    "lemmas"       — every word of "sentence" in its lexical form, the target included, each once; this is what constraint 3 and the echo check are run against, so leave none out
+    "words"        — every word of "sentence", in order, each as {"form": the word exactly as written in the sentence, "lemma": its lexical form, "parse": its parse}. Parse in the grammars' terms and order: tense, voice, mood, person, case, gender, number as they apply ("aorist active indicative 3rd person singular", "present middle participle genitive feminine singular", "dative masculine plural"); for a word that does not inflect, its part of speech ("conjunction", "preposition", "adverb", "particle"). Write "aorist", not "first aorist" or "second aorist". Every word is checked against the forms the New Testament attests, and its accents with it, so leave none out. Every verb form, and the target, must be a form the New Testament actually has: do not coin a form it never uses, however regular. One that is not in it is sent back with the forms that are.
     "setting"      — the id of the setting you built the scene in, from "setting_options", or "adapted:<id>" if you had to adapt it
 
-  The per-card instructions below may name further keys or have further clarifications and instructions. Those go in the SAME JSON object, alongside the six above — not nested, not in a second object. Include every key named for that card type and no others. The examples in the card instructions show only the first four keys; include "lemmas" and "setting" all the same.
+  The per-card instructions below may name further keys or have further clarifications and instructions. Those go in the SAME JSON object, alongside the six above — not nested, not in a second object. Include every key named for that card type and no others. The examples in the card instructions show only the first four keys; include "words" and "setting" all the same.
 
   As for specific card generation instructions, here are the parameters to follow:
 CARD TYPE: Text Recall, Vocabulary, Greek-to-English.
@@ -4052,8 +3656,12 @@ advanced:
 }
 ```
 What holds across all three: the target is the hinge, and removing it collapses the scene. What changes is only the surrounding texture. Do not carry these scenes, their vocabulary, or their shapes into your own card — your item, its supplied data, and the student block decide what you write.
-The following single item up for review from the previous card instructions is in an JSON object carrying:
+The single item up for review arrives as JSON in two parts - first the "student" block, then the item with its history and sentence plan - carrying:
   "item"                — the item under review and everything known about it, including its hand-vetted reference card. Extra information included is to benefit to creation of the individual task item, not for creating cards for every piece fed in.
+      "attested_usage"   — for a verb, how the New Testament attests it: one form for each principal part (or "not attested in the GNT"), the case its objects take, and the prepositions it is most used with. Build the word from these stems and use it with these constructions; they are its own, where the paradigm charts show only the paradigm verb.
+      "gnt_forms"        — for a grammar item, up to three forms the New Testament itself uses in this slot of this pattern, each with its lemma. Your target is one of them, in exactly that form: choose the one your sentence can use most naturally. The item's "form" is the grammars' chart form of the pattern; it shows the pattern, not a word to put in the sentence.
+      "formation"        — for a syntax item, how the construction is built and what marks it off from the usages beside it. Build to it.
+      "gnt_lexemes"      — for a syntax item, three sets of words the New Testament itself builds this construction with, each word keyed by the part it plays in it. Build the construction on one set, whichever your sentence carries most naturally, and use every word in that set, inflected as your sentence needs.
   "recent_generations"  — cards already produced for this item; constraint 11 forbids repeating or paraphrasing them (in the case there is no history of review this will be empty)
   "student"             — where this student currently stands:
       "level"              — "beginner", "beyond_beginner", or "advanced"; this is the level constraint 7 refers to
@@ -4070,8 +3678,8 @@ Whatever the level, the target itself stays unambiguous. Raising the level raise
 When "vocabulary_learned" is "Not Applicable" no explicit word list is available. Judge what the student can read from "level" and "concepts_learned", and stay well inside it rather than at its edge.
 
 SENTENCE PLAN — "sentence_plan" was drawn before you were called, from what this student has learned. Follow it. Where it and the level guidance above differ, the plan wins.
-  "sentence_shape"  — the structure of the sentence: a single main clause, a main clause with the dependent or relative clause it names, or two coordinated clauses. "formation" and "function" say how the construction is built and what it does, "syntactic_category" names the usage and gives the grammars' syntactic explanation of it, and "position" says where it normally stands. Where a "paradigm" is given, form the construction from that chart: it holds the forms this student has learned, on the paradigm verb and on the contract, liquid and athematic verbs the grammars print beside it, and constraint 12 makes it authoritative. The shape carries the sentence; the target sits in whichever clause suits it and stays the one thing the card asks about.
-  "also_include"    — further syntactic usages this student has learned, each named with its place in the grammars' taxonomy and its syntactic explanation. Work each in once and naturally. They are texture, never a second retrieval demand: the card does not ask about them, and none may compete with the target for the student's attention.
+  "sentence_shape"  — the structure of the sentence: a single main clause, a main clause with the dependent or relative clause it names, or two coordinated clauses. "formation" and "function" say how the construction is built and what it does, "syntactic_category" names the usage and gives the grammars' syntactic explanation of it, and "position" says where it normally stands. "grammar_options" lists the forms this student has learned that the construction can take, in no order of preference, each with forms the New Testament actually uses: choose one and build the construction on it. Where a "frequency" note is given, the construction is not a common one; follow the note. The shape carries the sentence; the target sits in whichever clause suits it and stays the one thing the card asks about.
+  "also_include_one_of" — when present, three syntactic usages this student has learned, each named with its place in the grammars' taxonomy and its syntactic explanation. Choose the ONE that fits your sentence most naturally and work it in once. It is texture, never a second retrieval demand: the card does not ask about it, and it may not compete with the target for the student's attention.
   "setting_options" — two everyday situations. Choose the one the item lives in most naturally and write the scene inside it. If neither can hold the item without strain, adapt the closer one: keep its kind of people and place, change what happens. Report which in "setting".
 Everything the plan leaves open is yours: the verb, its subject and object, every other word. Choose them because they belong together in the setting and the student can read them — not because a verse puts them together.
 

@@ -20,11 +20,8 @@ from tasks.new_card_creation.utils import (
     unpack_grammatical_item,
     unpack_syntactic_item,
 )
-from tasks.new_card_creation.verify import check_card
-from testing.items import (
-    GRAMMAR_ITEMS, SYNTAX_ITEMS, VOCABULARY_ITEMS, CARD_TYPES,
-    SYNTAX_LEXEMES, TEST_STUDENT,
-)
+from tasks.new_card_creation.prefetch import lexical_profile
+from testing.items import GRAMMAR_ITEMS, SYNTAX_ITEMS, VOCABULARY_ITEMS, CARD_TYPES, TEST_STUDENT
 
 GENERATION_MODEL = "claude-sonnet-5"
 AUDIT_MODEL = "claude-sonnet-5"
@@ -40,6 +37,7 @@ MAX_TOKENS = 16000
 # Dollars per million tokens, by model. Cache writes are 1.25x the input rate, reads 0.1x.
 PRICING = {"input": 2.00, "cache_write": 2.50, "cache_read": 0.20, "output": 10.00}
 OPUS_PRICING = {"input": 5.00, "cache_write": 6.25, "cache_read": 0.50, "output": 25.00}
+OPUS_5_5_PRICING = {"input": 4.00, "cache_write": 5.00, "cache_read": 0.20, "output": 20.00}
 
 TESTING = pathlib.Path(__file__).parent
 OUTPUT = TESTING / "output"
@@ -106,21 +104,15 @@ def item_for(category, key):
     if category == "grammar":
         return unpack_grammatical_item(key)
     if category == "syntax":
-        unpacked = unpack_syntactic_item(key)
-        return {"item": readable(unpacked["item"]),
-                "ancestors": [readable(node) for node in unpacked["ancestors"]],
-                "sibling_usages": {k: readable(v) for k, v in unpacked["sibling_usages"].items()},
-                "lexical_options": SYNTAX_LEXEMES.get(key, [])}
+        return unpack_syntactic_item(key)
     entry = json.loads(SENSES.read_text(encoding="utf-8"))[key]
-    return {**entry["tf_lexical_info"],
+    item = {**entry["tf_lexical_info"],
             "lexical_entry": entry["lexical_entry"],
             "summary": (entry["ln_sense_info"] or {}).get("summary")}
-
-
-def readable(node):
-    """A usage as the card needs it. The GGBB page range and the core flag are for
-    curriculum sequencing, and across fourteen siblings they are most of the block."""
-    return {field: value for field, value in node.items() if field not in ("core", "source")}
+    usage = lexical_profile(key)
+    if usage:
+        item["attested_usage"] = usage
+    return item
 
 
 def item_content(category, key):
@@ -173,9 +165,7 @@ def audit(category, limit=None, model=None, effort=None, out=None):
             continue
         if limit is not None and len(usages) >= limit:
             break
-        target = key if category == "vocabulary" else None
-        content = {"card": card, "item": item_for(category, key), "student": TEST_STUDENT,
-                   "measured_overlap": check_card(card, target=target)["overlap"]}
+        content = {"card": card, "item": item_for(category, key), "student": TEST_STUDENT}
         reply, usage = call(instructions_card_audit, content, model, effort)
         usages.append(usage)
         keep_raw(category, "audited", key, reply, usage, out)
@@ -209,7 +199,8 @@ def write(category, stage, data, out=None):
 def cost_of(usage):
     """What one call cost, from the usage the API reported for it. Opus is 5/25 per
     MTok against Sonnet's 2/10, so the rate follows the model that produced it."""
-    rates = OPUS_PRICING if "opus" in usage.get("model", "") else PRICING
+    model = usage.get("model", "")
+    rates = OPUS_5_5_PRICING if "opus-5-5" in model else OPUS_PRICING if "opus" in model else PRICING
     return sum(usage.get(field, 0) * rate for field, rate in rates.items()) / 1_000_000
 
 

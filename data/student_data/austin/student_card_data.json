@@ -217,7 +217,7 @@
         }
       ]
     },
-    "pres-act-ind::λύω::second_person.singular": {
+    "pres-act-ind::thematic::second_person.singular": {
       "card_history": [
         {
           "date": "2026-09-07",
@@ -231,7 +231,7 @@
         }
       ]
     },
-    "pres-act-ind::λύω::third_person.singular": {
+    "pres-act-ind::thematic::third_person.singular": {
       "card_history": [
         {
           "date": "2026-09-09",

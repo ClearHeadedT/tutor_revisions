@@ -1,0 +1,99 @@
+{
+  "genitive/adjectival/descriptive-genitive": {
+    "reasoning": "This is a generic usage, the default genitive, so I did not force out every neighbour. In τῆς θύρας τῶν προβάτων the head is not a verbal noun, the sheep do not own the gate, the gate is not part of them, and no adjective can replace the genitive. The natural sense is 'the gate having to do with sheep'. I used the θύρα/πρόβατον set in an adapted s021 scene: a mason's fall from a stone gateway gives the physician's aorist imperative (μεῖνον) its reason through the fronted causal participle. It shares only the two-word phrase with John 10, with no shepherd imagery.",
+    "sentence": "ὁ ἰατρὸς εἶπεν τῷ ἀνδρί· Πεσὼν ἀπὸ τῆς θύρας τῶν προβάτων, μεῖνον ἐν τῷ οἴκῳ ἑπτὰ ἡμέρας.",
+    "translation": "The physician said to the man: 'Because you fell from the sheep gate, stay in the house seven days.'",
+    "target_form": "τῶν προβάτων",
+    "words": [
+      {
+        "form": "ὁ",
+        "lemma": "ὁ",
+        "parse": "nominative masculine singular"
+      },
+      {
+        "form": "ἰατρὸς",
+        "lemma": "ἰατρός",
+        "parse": "nominative masculine singular"
+      },
+      {
+        "form": "εἶπεν",
+        "lemma": "λέγω",
+        "parse": "aorist active indicative 3rd person singular"
+      },
+      {
+        "form": "τῷ",
+        "lemma": "ὁ",
+        "parse": "dative masculine singular"
+      },
+      {
+        "form": "ἀνδρί",
+        "lemma": "ἀνήρ",
+        "parse": "dative masculine singular"
+      },
+      {
+        "form": "Πεσὼν",
+        "lemma": "πίπτω",
+        "parse": "aorist active participle nominative masculine singular"
+      },
+      {
+        "form": "ἀπὸ",
+        "lemma": "ἀπό",
+        "parse": "preposition"
+      },
+      {
+        "form": "τῆς",
+        "lemma": "ὁ",
+        "parse": "genitive feminine singular"
+      },
+      {
+        "form": "θύρας",
+        "lemma": "θύρα",
+        "parse": "genitive feminine singular"
+      },
+      {
+        "form": "τῶν",
+        "lemma": "ὁ",
+        "parse": "genitive neuter plural"
+      },
+      {
+        "form": "προβάτων",
+        "lemma": "πρόβατον",
+        "parse": "genitive neuter plural"
+      },
+      {
+        "form": "μεῖνον",
+        "lemma": "μένω",
+        "parse": "aorist active imperative 2nd person singular"
+      },
+      {
+        "form": "ἐν",
+        "lemma": "ἐν",
+        "parse": "preposition"
+      },
+      {
+        "form": "τῷ",
+        "lemma": "ὁ",
+        "parse": "dative masculine singular"
+      },
+      {
+        "form": "οἴκῳ",
+        "lemma": "οἶκος",
+        "parse": "dative masculine singular"
+      },
+      {
+        "form": "ἑπτὰ",
+        "lemma": "ἑπτά",
+        "parse": "adjective (indeclinable numeral)"
+      },
+      {
+        "form": "ἡμέρας",
+        "lemma": "ἡμέρα",
+        "parse": "accusative feminine plural"
+      }
+    ],
+    "setting": "adapted:s021",
+    "helps": {
+      "ἰατρός": "physician"
+    }
+  }
+}

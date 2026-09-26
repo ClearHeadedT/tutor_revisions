@@ -5,8 +5,8 @@ right source for lexical data and the wrong one for paradigms: only 18 verbs att
 present active indicative forms, exactly one attests all six imperfect active indicative, and
 λύω - the paradigm verb every grammar uses precisely because it is regular - barely occurs in
 the corpus at all. A teaching paradigm is not something the New Testament contains. It is
-something a grammar prints, which is where these come from. TF is used afterwards, to check the
-forms that *are* attested and flag the ones that disagree.
+something a grammar prints, which is where these come from. TF is used afterwards, for what a
+chart cannot say: which of its slots the GNT actually uses, and the GNT's own forms of each.
 
 **Where the identity comes from.** The builder's typed paradigms carry forms but not tense,
 voice or mood, and the lead form cannot supply it either - λύσω is attested once in the corpus
@@ -29,13 +29,21 @@ which verb, tense and voice a column holds does not, so APPENDIX_VERBS and APPEN
 declare it grid by grid, in the order the appendix prints them. A handful of cells the export or
 the printing damaged are corrected in CORRECTIONS, each named, rather than passed on to the model
 as authoritative.
+
+**Rule, pattern, slot.** A rule (pres-act-ind, decl3) holds a pattern for each chart heading the
+appendix prints under it (thematic, contract-έω, n-3c(4)), and a pattern holds its slots. The item a
+student reviews is a slot of a pattern: one morphological fact, never a mix of two.
 """
 
 import collections
 import json
+import os
 import re
 import unicodedata
 from pathlib import Path
+
+from greek_text import fold_greek, normalize_greek
+from tasks.new_card_creation.verify import WITHHELD
 
 BUILDER = Path("/home/austin/repos/koine-grammar-builder")
 GRAMMAR_PATH = Path("data/curriculum_data/grammar_scaffolding.json")
@@ -74,12 +82,6 @@ OVERVIEWS = [
      {k: v for k, v in PERSON_NUMBER.items() if k.startswith(("2", "3"))}),
     ("Overview of Infinitive", "infinitive", None),   # no person or number
 ]
-
-
-def _fold(text):
-    stripped = unicodedata.normalize("NFD", text or "")
-    return unicodedata.normalize(
-        "NFC", "".join(c for c in stripped if not unicodedata.combining(c))).lower()
 
 
 def _body_lines():
@@ -268,8 +270,9 @@ def _genders(rules, verb, genders=GENDERS):
 
 
 def _mp(tense, mood):
-    """A chart printing one middle/passive column fills both rules, as the Overviews do."""
-    return [f"{tense}-mid-{mood}", f"{tense}-pas-{mood}"]
+    """A chart's one middle/passive column. The present, imperfect and perfect spell the middle and
+    passive alike, so the two are one rule."""
+    return [f"{tense}-midpas-{mood}"]
 
 
 # One entry per grid, in the order the appendix prints them from "Indicative (MBG §40)" on; None
@@ -365,38 +368,44 @@ APPENDIX_INFINITIVES = {
 }
 
 
-def _nominal(rule, genders=(None,)):
-    return [(rule, gender) for gender in genders]
+def _nominal(rule, pattern, genders=(None,)):
+    return [(rule, gender, pattern) for gender in genders]
+
+
+def _nouns(rule, *codes):
+    return [(rule, None, code) for code in codes]
 
 
 # The declension, adjective and pronoun grids from "First Declension Nouns" on. A column is
-# (rule, gender); nouns carry no gender in their keys, and a masc & fem column carries none either.
+# (rule, gender, pattern); nouns carry no gender in their keys, and a masc & fem column carries none
+# either. The pattern is the MBG code the appendix prints over the column. BBGG prints one code, a-1a,
+# over both 2-1-2 adjectives, whose feminines differ, so they are told apart by the feminine's vowel.
+# A pronoun, the article and the irregular adjectives are each their own pattern, named by the word.
 # The article and relative pronoun printed beside the first declension come from GrammarSummaries.
 APPENDIX_NOMINALS = [
-    _nominal("decl1") * 4 + [None] * 3,
-    _nominal("decl1") * 4 + [None] * 3,
-    _nominal("decl2") * 6,
-    _nominal("decl3") * 6,
-    _nominal("decl3") * 6,
-    _nominal("decl3") * 6,
-    _nominal("decl3") * 6,
-    _nominal("adjective-2-1-2", GENDERS) * 2,
-    _nominal("pronoun-demonstrative", GENDERS) + _nominal("adjective-irregular", GENDERS),
-    _nominal("adjective-irregular", GENDERS) + _nominal("pronoun-indefinite-relative", GENDERS),
-    _nominal("adjective-3-1-3", GENDERS) * 2,
-    _nominal("adjective-2-2", (None, "neuter")) + _nominal("adjective-3-3", (None, "neuter"))
-    + _nominal("pronoun-personal", GENDERS),
-    _nominal("adjective-3-3", (None, "neuter")) * 2,
-    _nominal("pronoun-interrogative", (None, "neuter")) + _nominal("pronoun-indefinite", (None, "neuter"))
-    + _nominal("numeral", GENDERS),
+    _nouns("decl1", "n-1a", "n-1b", "n-1c", "n-1d") + [None] * 3,
+    _nouns("decl1", "n-1e", "n-1f", "n-1g", "n-1h") + [None] * 3,
+    _nouns("decl2", "n-2a", "n-2b", "n-2c", "n-2d(1)", "n-2d(2)", "n-2e"),
+    _nouns("decl3", "n-3b(1)", "n-3b(1)", "n-3b(3)", "n-3c(1)", "n-3c(2)", "n-3c(4)"),
+    _nouns("decl3", "n-3c(5b)", "n-3c(6a)", "n-3c(6b)", "n-3c(6c)", "n-3d(2a)", "n-3d(2b)"),
+    _nouns("decl3", "n-3e(1)", "n-3e(3)", "n-3e(4)", "n-3e(5b)", "n-3f(1a)", "n-3f(1b)"),
+    _nouns("decl3", "n-3f(2a)", "n-3f(2b)", "n-3f(2c)", "n-3f(2c)", "n-3f(2c)", "n-3f(2c)"),
+    _nominal("adjective-2-1-2", "a-1a(α)", GENDERS) + _nominal("adjective-2-1-2", "a-1a(η)", GENDERS),
+    _nominal("pronoun-demonstrative", "οὗτος", GENDERS) + _nominal("adjective-irregular", "μέγας", GENDERS),
+    _nominal("adjective-irregular", "πολύς", GENDERS) + _nominal("pronoun-indefinite-relative", "ὅστις", GENDERS),
+    _nominal("adjective-3-1-3", "a-2a", GENDERS) + _nominal("adjective-3-1-3", "a-2b", GENDERS),
+    _nominal("adjective-2-2", "a-3a", (None, "neuter")) + _nominal("adjective-3-3", "a-4a", (None, "neuter"))
+    + _nominal("pronoun-personal", "αὐτός", GENDERS),
+    _nominal("adjective-3-3", "a-4b(1)", (None, "neuter")) * 2,
+    _nominal("pronoun-interrogative", "τίς", (None, "neuter")) + _nominal("pronoun-indefinite", "τις", (None, "neuter"))
+    + _nominal("numeral", "εἷς", GENDERS),
 ]
 
 # Cells the appendix has wrong, by (rule, lemma, slot). Each is a dropped letter, a doubled
 # ending, or a form printed in the wrong row; the corrected form is the one the parallel columns
 # and the grammars' own rules give.
 CORRECTIONS = {
-    ("pres-mid-ind", "φανερόω", ("third_person", "plural")): "φανεροῦνται",
-    ("pres-pas-ind", "φανερόω", ("third_person", "plural")): "φανεροῦνται",
+    ("pres-midpas-ind", "φανερόω", ("third_person", "plural")): "φανεροῦνται",
     ("fut-act-ind", "τίθημι", ("third_person", "plural")): "θήσουσι(ν)",
     ("aor1-act-ind", "ἵστημι", ("third_person", "plural")): "ἔστησαν",
     ("aor1-pas-ind", "ἵστημι", ("third_person", "singular")): "ἐστάθη",
@@ -493,11 +502,12 @@ def _appendix_nominals(lines):
         for index, column in enumerate(columns):
             if column is None:
                 continue
-            rule, gender = column
+            rule, gender, pattern = column
             slots = {ROW_SLOTS[label]: cells[index] for label, cells in grid.items()
                      if index < len(cells) and cells[index] != EMPTY}
             found.append({"resource": "BBGG", "section": "Appendix", "rule": rule, "gender": gender,
-                          "lexical_form": next(iter(slots.values())), "page": None, "slots": slots})
+                          "pattern": pattern, "lexical_form": next(iter(slots.values())), "page": None,
+                          "slots": slots})
     return found
 
 
@@ -529,37 +539,6 @@ def _case_paradigms():
     return found
 
 
-BREATHING = ("\u0313", "\u0314")
-
-
-def _misplaced_breathing(form):
-    """Whether a form carries a breathing mark somewhere Greek cannot put one.
-
-    A breathing sits on the first vowel of a word and nowhere else, so one appearing later is
-    export damage rather than an unusual spelling. This separates the two kinds of entry in the
-    unverified list: a form the corpus simply never happens to use, and a form that is wrong.
-    Flagged, never corrected - the paradigm is reproduced as the book prints it."""
-    text = unicodedata.normalize("NFD", re.sub(r"\(.*?\)", "", form or ""))
-    seen = False
-    for index, character in enumerate(text):
-        if unicodedata.combining(character) == 0 and character.isalpha():
-            if seen and index > 2 and any(mark in text[index:] for mark in BREATHING):
-                return True
-            seen = True
-    return False
-
-
-def _attested(api):
-    """Every surface form in the corpus, accent-folded, for checking chart forms against."""
-    index = collections.defaultdict(set)
-    for node in api.F.otype.s("word"):
-        text = (api.F.text.v(node) or "").strip()
-        if text:
-            index[_fold(text)].add(
-                (api.F.tense.v(node), api.F.voice.v(node), api.F.mood.v(node)))
-    return index
-
-
 # Chart section names mapped onto rule names. Book knowledge, so it is data - and it is a handful
 # of strings rather than a rule engine. Anything unlisted is slugified from its section.
 CASE_RULES = {
@@ -579,10 +558,6 @@ RULE_NAMES = {
     "adjective-3-1-3": "Adjectives (3-1-3)", "adjective-3-3": "Adjectives (3-3)",
     "adjective-irregular": "Irregular Adjectives (μέγας, πολύς)", "numeral": "Numeral εἷς",
 }
-# Rules an earlier derivation produced that this one replaces: charts filed under a page heading
-# rather than what they are, and participles held under one rule with no tense or voice.
-RETIRED_RULES = {"noun-rules", "participle-forms", "adjective-decl3", "noun-irregular", "decl1-decl2",
-                 "case-endings"}
 # The Overviews print their second-aorist column on a different verb for each voice.
 OVERVIEW_LEMMAS = {("aor2", "act"): "λαμβάνω", ("aor2", "mid"): "γίνομαι", ("aor2", "pas"): "γράφω"}
 VOICE_NAMES = {"act": "Active", "mid": "Middle", "pas": "Passive", "midpas": "Middle/Passive"}
@@ -606,10 +581,8 @@ LEXEME_RULES = {
     "ὅτι": "pronoun-indefinite-relative",
 }
 
-# Charts that print one gender per column give a separate paradigm per gender, so the gender is
-# carried by the lexeme rather than by a column header. Naming it in the key matters: student
-# progress already records the article as "article::ὁ::nominative.masculine.singular", and a key
-# without the gender would never match what a student has actually learned.
+# Charts that print one gender per column give a separate chart per gender, so the gender is
+# carried by the lexeme rather than by a column header.
 GENDER_BY_LEXEME = {
     "ὁ": "masculine", "ἡ": "feminine", "τό": "neuter",
     "ὅς": "masculine", "ἥ": "feminine", "ὅ": "neuter",
@@ -617,14 +590,37 @@ GENDER_BY_LEXEME = {
     "οὗτος": "masculine", "αὕτη": "feminine", "τοῦτο": "neuter",
     "ἐκεῖνος": "masculine", "ἐκείνη": "feminine", "ἐκεῖνο": "neuter",
 }
+# GrammarSummaries' charts that BBGG's appendix does not print, by the pattern each belongs to.
+SUMMARY_PATTERNS = {"ὁ": "ὁ", "ἡ": "ὁ", "τό": "ὁ", "ὅς": "ὅς", "ἥ": "ὅς", "ὅ": "ὅς", "ἐγώ": "ἐγώ", "σύ": "σύ"}
 TENSE_NAMES = {"pres": "Present", "impf": "Imperfect", "fut": "Future", "perf": "Perfect",
                "aor1": "First Aorist", "aor2": "Second Aorist"}
 MOOD_NAMES = {"indicative": "Indicative", "subjunctive": "Subjunctive",
               "imperative": "Imperative", "infinitive": "Infinitive", "participle": "Participle"}
 
+# A verb chart's stem class, as the derivation reads it from the chart's heading, and the pattern it
+# files under. ἵστημι's first aorist is printed as "first aorist athematic".
+PATTERN_OF_STEM = {
+    "thematic": "thematic", "contract -άω": "contract-άω", "contract -έω": "contract-έω",
+    "contract -όω": "contract-όω", "liquid": "liquid", "athematic": "athematic", "first aorist": "athematic",
+    "κ-aorist": "κ-aorist", "second aorist": "second-aorist", "root aorist": "root-aorist",
+    "second perfect": "second-perfect", "irregular": "εἰμί",
+}
+VERB_PATTERN_NAMES = {
+    "thematic": "Thematic", "contract-άω": "Thematic contracted, -άω", "contract-έω": "Thematic contracted, -έω",
+    "contract-όω": "Thematic contracted, -όω", "liquid": "Liquid", "athematic": "Athematic",
+    "κ-aorist": "Athematic κ-aorist", "second-aorist": "Second aorist", "root-aorist": "Athematic second aorist",
+    "second-perfect": "Second perfect", "εἰμί": "εἰμί",
+}
+
 
 def _slug(text):
     return re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")[:40]
+
+
+def _merged(rule):
+    """The present, imperfect and perfect middle and passive are one rule."""
+    tense, voice, mood = rule.split("-")
+    return f"{tense}-midpas-{mood}" if tense in ("pres", "impf", "perf") and voice in ("mid", "pas") else rule
 
 
 def _verb_rules(lines):
@@ -654,179 +650,510 @@ def _verb_rules(lines):
     return rules
 
 
-def _describe(rule, spec):
-    voice = VOICE_NAMES[spec["voice"]]
-    tense = TENSE_NAMES.get(rule.split("-")[0], spec["tense"].title())
-    mood = MOOD_NAMES[spec["mood"]]
+def _describe(rule):
+    tense_key, tense, voice, mood = _rule_identity(rule)
     if rule.startswith("eimi"):
-        return (f"{tense} {mood.lower()} of εἰμί. The verb is athematic and irregular, so its "
+        return (f"{TENSE_NAMES[tense_key]} {mood} of εἰμί. The verb is athematic and irregular, so its "
                 f"forms are learned as a set rather than built from a rule.")
-    return (f"{tense} {voice.lower()} {mood.lower()}, as BBGG's appendix prints it on the "
+    return (f"{TENSE_NAMES[tense_key]} {VOICE_FULL[voice]} {mood}, as BBGG's appendix prints it on the "
             f"paradigm verb and, where it prints them, on contract, liquid and athematic verbs. "
             f"The forms are given whole rather than derived, which is how the charts state them.")
 
 
-# Frequencies come from the vocabulary file rather than a second corpus pass. A verb paradigm's
-# lexical_form is an inflected form (elyon is not a lemma), so most verb paradigms get none.
-LEMMA_FREQUENCY = {}
-
-
-def _load_frequencies():
-    path = Path("data/curriculum_data/vocabulary_scaffolding.json")
-    if not path.exists():
-        return {}
-    items = json.loads(path.read_text(encoding="utf-8")).get("items", {})
-    return {lemma: entry.get("frequency") for lemma, entry in items.items()
-            if entry.get("frequency")}
-
-
-def build(verify=True):
-    global LEMMA_FREQUENCY
-    LEMMA_FREQUENCY = _load_frequencies()
-    lines = _body_lines()
-    corrected = []
-    # The Overviews come first, so where the appendix repeats λύω the Overview's paradigm stands.
-    verb_paradigms = []
+def _verb_charts(lines, corrected):
+    """Every verb chart, the Overviews first, so where the appendix repeats λύω the Overview's stands."""
+    charts = []
     for rule, spec in sorted(_verb_rules(lines).items()):
         tense_key = _rule_identity(rule)[0]
         lemma = "εἰμί" if rule.startswith("eimi") else OVERVIEW_LEMMAS.get((tense_key, spec["voice"]), "λύω")
         stem = "irregular" if lemma == "εἰμί" else "second aorist" if tense_key == "aor2" else "thematic"
-        verb_paradigms.append({**spec, "rule": rule, "lemma": lemma, "stem_class": stem, "gender": None})
-    verb_paradigms += _appendix_verbs(lines, corrected)
-    case_charts = _appendix_nominals(lines) + _case_paradigms()
-
-    attested = {}
-    if verify:
-        import sys
-        sys.path.insert(0, ".")
-        from text_fabric.fabric_utils import load_n1904
-        attested = _attested(load_n1904().api)
-
-    structure, items, unverified = {}, {}, []
-
-    def add(rule, rule_meta, paradigm_key, lexical_form, slots, slot_features, source, extra=None):
-        node = structure.setdefault(rule, {**rule_meta, "paradigms": {}})
-        if paradigm_key in node["paradigms"]:
-            return
-        slot_keys = []
-        for slot, form in slots.items():
-            features = slot_features(slot)
-            fragment = ".".join(str(features[name]) for name in features if name in
-                                ("person", "case", "gender", "number"))
-            key = f"{paradigm_key}::{fragment}" if fragment else paradigm_key
-            parsing = " ".join(
-                [rule_meta.get("_parsing_prefix", "")] +
-                [ORDINAL.get(features.get("person"), ""), features.get("case", ""),
-                 features.get("gender", ""), features.get("number", "")]).split()
-            items[key] = {
-                "key": key, "parent": paradigm_key, "rule": rule, "form": form,
-                "parsing": " ".join(parsing), "features": features,
-                "lexical_form": lexical_form,
-            }
-            slot_keys.append(key)
-            if verify and form:
-                bare = _fold(re.sub(r"\(.*?\)", "", form).split(",")[0].strip())
-                if bare and bare not in attested:
-                    unverified.append(key)
-        paradigm = {"type": rule_meta["pos_lex_category"], "lexical_form": lexical_form,
-                    "source": source, "slots": slot_keys}
-        paradigm.update({k: v for k, v in (rule_meta.get("_paradigm_features") or {}).items()})
-        paradigm.update({k: v for k, v in (extra or {}).items() if v})
-        frequency = LEMMA_FREQUENCY.get(extra.get("lemma") if extra else None) or LEMMA_FREQUENCY.get(lexical_form)
-        if frequency:
-            paradigm["gnt_lemma_frequency"] = frequency
-        node["paradigms"][paradigm_key] = paradigm
-
-    sequence = {rule: order for order, rule in
-                enumerate(sorted({p["rule"] for p in verb_paradigms}), start=100)}
-    for spec in verb_paradigms:
-        rule, eimi = spec["rule"], spec["rule"].startswith("eimi")
-        meta = {
-            "name": " ".join(filter(None, [
-                TENSE_NAMES.get(_rule_identity(rule)[0], spec["tense"].title()),
-                "" if eimi else VOICE_NAMES[spec["voice"]],
-                MOOD_NAMES[spec["mood"]], "of εἰμί" if eimi else ""])),
-            "sequence": sequence[rule], "pos_lex_category": "verb",
-            "morph_rule_description": _describe(rule, spec),
-            "_paradigm_features": {"tense": spec["tense"], "aspect": ASPECTS.get(spec["tense"]),
-                                   "voice": VOICE_FULL[spec["voice"]], "mood": spec["mood"]},
-            "_parsing_prefix": " ".join(filter(None, [
-                spec["tense"], "" if eimi else VOICE_FULL[spec["voice"]], spec["mood"]])),
-        }
-
-        def features_for(slot, spec=spec):
-            identity = {"tense": spec["tense"], "voice": VOICE_FULL[spec["voice"]], "mood": spec["mood"]}
-            if not isinstance(slot, tuple):
-                return identity
-            if spec["mood"] == "participle":
-                gender = {"gender": spec["gender"]} if spec["gender"] else {}
-                return {"case": slot[0], **gender, "number": slot[1], **identity}
-            return {"person": slot[0], "number": slot[1], **identity}
-
-        add(rule, meta, f"{rule}::{spec['lexical_form']}", spec["lexical_form"], spec["slots"],
-            features_for, [{"resource": "BBGG", "chapter": "Appendix", "header": spec["chart"], "page": None}],
-            {"lemma": spec["lemma"], "stem_class": spec["stem_class"], "gender": spec["gender"]})
-
-    for order, chart in enumerate(case_charts, start=1):
-        rule = chart.get("rule") or LEXEME_RULES.get(
-            chart["lexical_form"], CASE_RULES.get(chart["section"], _slug(chart["section"])))
-        meta = {"name": RULE_NAMES.get(rule, chart["section"]), "sequence": order,
-                "pos_lex_category": "noun",
-                "morph_rule_description": f"Case and number forms as {chart['resource']} prints them.",
-                "_parsing_prefix": ""}
-        gender = chart.get("gender") or GENDER_BY_LEXEME.get(chart["lexical_form"])
-        add(rule, meta, f"{rule}::{chart['lexical_form']}", chart["lexical_form"], chart["slots"],
-            lambda slot, gender=gender: (
-                {"case": slot[0], "gender": gender, "number": slot[1]} if gender
-                else {"case": slot[0], "number": slot[1]}),
-            [{"resource": chart["resource"], "chapter": "Appendix", "header": chart["section"],
-              "page": chart["page"]}])
-
-    for node in structure.values():
-        node.pop("_parsing_prefix", None)
-        node.pop("_paradigm_features", None)
-    return structure, items, unverified, corrected
+        charts.append({**spec, "rule": _merged(rule), "lemma": lemma, "stem_class": stem, "gender": None})
+    charts += _appendix_verbs(lines, corrected)
+    for chart in charts:
+        chart["pattern"] = PATTERN_OF_STEM[chart["stem_class"]]
+        chart["source"] = {"resource": "BBGG", "chapter": "Appendix", "header": chart["chart"], "page": None}
+    return charts
 
 
-def write(verify=True):
-    structure, items, unverified, corrected = build(verify=verify)
-    existing = json.loads(GRAMMAR_PATH.read_text(encoding="utf-8"))
-    # Hand-written prose on a rule - teaching_note, morph_recipe, drill_lexemes - is kept.
-    # The derivation owns the forms; it does not own what someone wrote about them.
-    for rule, node in existing.get("structure", {}).items():
-        if rule in RETIRED_RULES:
+def _nominal_charts(lines):
+    """Every declension, adjective, pronoun and article chart: BBGG's appendix, then the charts only
+    GrammarSummaries prints. A chart's group is the set of gender columns printed for one word."""
+    charts = _appendix_nominals(lines)
+    printed = {(chart["rule"], chart["pattern"]) for chart in charts}
+    for chart in _case_paradigms():
+        rule = LEXEME_RULES.get(chart["lexical_form"], CASE_RULES.get(chart["section"], _slug(chart["section"])))
+        pattern = SUMMARY_PATTERNS.get(chart["lexical_form"])
+        if pattern and (rule, pattern) not in printed:
+            charts.append({**chart, "rule": rule, "pattern": pattern,
+                           "gender": GENDER_BY_LEXEME.get(chart["lexical_form"])})
+    group = 0
+    for index, chart in enumerate(charts):
+        if index and (chart["gender"] in (None, "masculine") or chart["pattern"] != charts[index - 1]["pattern"]):
+            group += 1
+        chart["group"] = group
+        chart["source"] = {"resource": chart["resource"], "chapter": "Appendix", "header": chart["section"],
+                           "page": chart["page"]}
+    return charts
+
+
+# ---- the New Testament's forms ----------------------------------------------------------------
+
+# A slot the GNT uses fewer times than MIN_OCCURRENCES across its rule, or than MIN_PATTERN_OCCURRENCES
+# in its pattern, or only on words rarer than KNOWN_FREQUENCY (those a student has likely met by the
+# intermediate level), is not an item: it is better met in reading than drilled. Each item carries
+# up to GNT_FORMS of the GNT's own forms of it, one per word, known words first.
+MIN_OCCURRENCES = 20
+MIN_PATTERN_OCCURRENCES = 5
+GNT_FORMS = 3
+KNOWN_FREQUENCY = 20
+
+PERSONS = {"p1": "first_person", "p2": "second_person", "p3": "third_person"}
+PASSIVE_FORM = re.compile(r"θ(η|ω|ει|ε[ντ])")
+# N1904 tags εὐθύς "immediately" as the adjective, so it would stand for a 3-1-3 form it is not.
+NOT_NOMINAL = {"εὐθύς"}
+TOKEN_TENSES = {"present": "pres", "imperfect": "impf", "future": "fut", "aorist": "aor", "perfect": "perf"}
+TOKEN_VOICES = {"active": "act", "middle": "mid", "passive": "pas"}
+FAMILIES = ("ιστημι", "τιθημι", "διδωμι", "δεικνυμι")
+# Verbs whose other tenses are built on another root. Their forms outside the present system are
+# real, but no pattern predicts them, so they come last.
+SUPPLETIVE = ("λεγω", "ερχομαι", "οραω", "φερω", "εσθιω", "τρεχω", "αιρεω")
+AORIST_ENDINGS = ("αμεθα", "ασθε", "αμην", "αμεν", "αντο", "ατε", "ατο", "αν", "ας", "εν", "α", "ε", "ω")
+FUTURE_ENDINGS = ("ουμεθα", "ομεθα", "ουνται", "ονται", "εισθε", "εσθε", "ουμαι", "ομαι", "ειται", "εται",
+                  "ουσιν", "ουσι", "ουμεν", "ομεν", "ειτε", "ετε", "εις", "ει", "η", "ω")
+
+
+def _gnt_forms(api):
+    """Every inflected word in N1904 that is not a name, counted by written form and analysis.
+
+    N1904 tags a deponent's θη-aorist and θησ-future middle (ἀπεκρίθη); by form it is passive, and
+    filed so. A comparative or superlative is filed under its own masculine nominative (μείζων), since
+    it declines apart from its positive."""
+    F = api.F
+    counts = collections.Counter()
+    for node in F.otype.s("word"):
+        form, lemma = normalize_greek(F.normalized.v(node)), _lexical(F.lemma.v(node))
+        if F.typems.v(node) == "proper" or not (F.case.v(node) or F.mood.v(node)) or "’" in form \
+                or lemma in NOT_NOMINAL:
             continue
-        if rule in structure:
-            keep = {k: v for k, v in node.items()
-                    if k in ("teaching_note", "morph_recipe", "drill_lexemes",
-                             "difficulty_tier", "morph_rule_description")}
-            structure[rule] = {**structure[rule], **keep}
-        else:
+        form = form.lower() if lemma[:1].islower() else form
+        voice, tense = F.voice.v(node), F.tense.v(node)
+        if voice == "middle" and tense in ("aorist", "future") and PASSIVE_FORM.search(fold_greek(form)):
+            voice = "passive"
+        if F.degree.v(node):
+            lemma = (lemma, F.degree.v(node))
+        counts[(form, lemma, F.cls.v(node), tense, voice, F.mood.v(node), PERSONS.get(F.person.v(node)),
+                F.case.v(node), F.gender.v(node), F.number.v(node),
+                (F.morph.v(node) or "")[2:3] == "2")] += 1
+    names = {}
+    for key, count in counts.items():
+        if isinstance(key[1], tuple) and key[7] == "nominative" and key[9] == "singular" and key[8] != "neuter":
+            names.setdefault(key[1], collections.Counter())[key[0]] += count
+    return collections.Counter({(key[0], names[key[1]].most_common(1)[0][0] if isinstance(key[1], tuple) else key[1],
+                                 *key[2:]): count
+                                for key, count in counts.items()
+                                if not isinstance(key[1], tuple) or key[1] in names})
+
+
+def _lexical(text):
+    """A lemma without the grave accent N1904 writes on some (τὶς), so it compares with the charts."""
+    return normalize_greek("".join(c for c in unicodedata.normalize("NFD", text) if c != "\u0300"))
+
+
+def _family(folded):
+    return next((family for family in FAMILIES if folded.endswith(family)), None)
+
+
+def _liquid_verbs(forms):
+    """(lemma, tense) pairs whose aorist or future indicative puts a liquid where other verbs put σ:
+    the liquid verbs, found by what they do rather than listed."""
+    tally = collections.defaultdict(collections.Counter)
+    for (form, lemma, _, tense, voice, mood, *_, two), count in forms.items():
+        endings = {"aorist": AORIST_ENDINGS, "future": FUTURE_ENDINGS}.get(tense)
+        if mood != "indicative" or voice not in ("active", "middle") or two or not endings:
+            continue
+        folded = fold_greek(form)
+        ending = next((ending for ending in endings if folded.endswith(ending)), None)
+        if ending and len(folded) > len(ending):
+            tally[(lemma, "aor1" if tense == "aorist" else "fut")][folded[-len(ending) - 1] in "λμνρ"] += count
+    return {key for key, sides in tally.items() if sides[True] > sides[False]}
+
+
+def _verb_slot(lemma, tense, voice, mood, person, case, gender, number, two):
+    """The rule and slot fragment a GNT verb form fills, or None."""
+    if tense not in TOKEN_TENSES or mood not in MOODS:
+        return None
+    tense = TOKEN_TENSES[tense]
+    if lemma == "εἰμί":
+        rule = f"eimi-{tense}-{MOODS[mood]}"
+    else:
+        tense = ("aor2" if two else "aor1") if tense == "aor" else tense
+        voice = "act" if voice == "active" else "midpas" if tense in ("pres", "impf", "perf") \
+            else TOKEN_VOICES.get(voice)
+        if not voice:
+            return None
+        rule = f"{tense}-{voice}-{MOODS[mood]}"
+    fragment = (case, gender, number) if mood == "participle" else (person, number) if person else ()
+    return rule, ".".join(fragment)
+
+
+def _verb_pattern(lemma, rule, two, liquid):
+    """The pattern a GNT verb form belongs to within its rule, and its athematic family if it has
+    one. None for a verb no chart covers (ἀφίημι, δύναμαι, κεῖμαι)."""
+    folded = fold_greek(lemma)
+    tense, voice = rule.split("-")[:2]
+    family = _family(folded)
+    if lemma == "εἰμί":
+        return "εἰμί", None
+    if family:
+        if two:
+            return ("root-aorist" if tense == "aor2" else "second-perfect"), family
+        kappa = tense == "aor1" and voice == "act" and family in ("τιθημι", "διδωμι")
+        return ("κ-aorist" if kappa else "athematic"), family
+    if not folded.endswith(("ω", "ομαι")) or folded.endswith("μι") or folded.endswith("μαι") and \
+            not folded.endswith("ομαι"):
+        return None, None    # an athematic verb no chart covers, or a lemma that is no verb's (δεῖ, οἶδα, εἶπον)
+    if two:
+        return ("second-perfect" if tense == "perf" else "second-aorist"), None
+    if tense in ("pres", "impf"):
+        vowel = next((vowel for vowel in "αεο" if folded.endswith((vowel + "ω", vowel + "ομαι"))), None)
+        return ({"α": "contract-άω", "ε": "contract-έω", "ο": "contract-όω"}[vowel] if vowel else "thematic"), None
+    if tense in ("fut", "aor1") and voice in ("act", "mid"):
+        return ("liquid" if (lemma, tense) in liquid else "thematic"), None
+    return "thematic", None
+
+
+def _bare(cell):
+    """A chart cell as compared: its first spelling folded, and whether it prints a movable ν."""
+    first = cell.split(",")[0].strip()
+    return fold_greek(first.replace("(ν)", "")), "(ν)" in first
+
+
+FORMANTS = {"σ": "σψξ", "θ": "θ", "κ": "κ"}
+
+
+def _chart_endings(chart, siblings):
+    """Each cell's ending - what follows the letters all the chart's cells share - with the tense
+    formant (σ, θ, κ) it must follow. A chart of one cell (an infinitive) is read against its verb's
+    other charts in the same tense and voice, and failing those is held to its last two letters."""
+    bare = {slot: _bare(cell) for slot, cell in chart["slots"].items()}
+    texts = [text for text, _ in bare.values()]
+    if len(texts) == 1:
+        texts += [_bare(cell)[0] for other in siblings for cell in other["slots"].values()]
+    prefix = os.path.commonprefix(texts) if len(texts) > 1 else ""
+    if any(text == prefix for text in texts):
+        prefix = prefix[:-1]
+    if len(prefix) < 2:
+        return {slot: (text[-2:], movable, None) for slot, (text, movable) in bare.items()}
+    formant = None if chart["pattern"].startswith(("second", "root")) else FORMANTS.get(prefix[-1])
+    return {slot: (text[len(prefix):], movable, formant) for slot, (text, movable) in bare.items()}
+
+
+def _ends_like(form, ending, movable, formant):
+    folded = fold_greek(form)
+    for text in ({folded, folded[:-1]} if movable and folded.endswith("ν") else {folded}):
+        if text.endswith(ending) and (not formant or text[-len(ending) - 1:-len(ending) or None][:1] in formant):
+            return True
+    return False
+
+
+def _is(form, text, movable):
+    """Whether a form is a chart's text, a movable ν either way."""
+    folded = fold_greek(form)
+    return text in ({folded, folded[:-1]} if movable and folded.endswith("ν") else {folded})
+
+
+def _chart_gender(charts, gender):
+    """The gender column a nominal form reads from: none for a noun, whose gender is its own; the
+    common masculine-and-feminine column where the charts print one; False where none prints it."""
+    genders = {chart["gender"] for chart in charts}
+    if charts[0]["rule"].startswith("decl"):
+        return None
+    if gender in genders:
+        return gender
+    return None if None in genders and gender != "neuter" else False
+
+
+def _nominal_fit(charts, lemma, tokens, gender):
+    """How well a word declines as a group of charts does, or None where it does not: nine in ten of
+    its forms in the charts' slots are the charts' ending on one stem, its lemma included, and a noun
+    shares the charts' gender. A fit ranks by the forms it explains, then by how much of the word the
+    endings pin down, then by how many slots the charts print."""
+    bare = {(slot, chart["gender"]): _bare(cell) for chart in charts for slot, cell in chart["slots"].items()}
+    prefix = os.path.commonprefix([text for text, _ in bare.values()])
+    if any(text == prefix for text, _ in bare.values()):
+        prefix = prefix[:-1]    # keep the theme vowel every form shares (σατανᾶ-, κῶ-) in the endings
+    lead = charts[0]
+    nominative = bare.get((("nominative", "singular"), lead["gender"]))
+    folded = fold_greek(lemma)
+    if nominative is None or not folded.endswith(nominative[0][len(prefix):]):
+        return None
+    if lead["rule"].startswith("decl") and lead["lemma_gender"] and gender != lead["lemma_gender"]:
+        return None
+    stem = folded[:len(folded) - len(nominative[0]) + len(prefix)]
+    matched, total, slots = 0, 0, set()
+    for form, slot, form_gender, count in tokens:
+        key = (slot, _chart_gender(charts, form_gender))
+        if key not in bare:
+            continue
+        text, movable = bare[key]
+        total += count
+        if _is(form, stem + text[len(prefix):], movable):
+            matched += count
+            slots.add(key)
+    if total and matched / total >= 0.9 and len(slots) >= 2:
+        return matched, len(nominative[0]) - len(prefix), len(bare)
+    return None
+
+
+def _best_group(lemma, scores, groups):
+    """The group a word is filed under. A chart's own word goes to its chart; otherwise the best fit,
+    and among fits equally good, the chart whose stem ends as the word's does (ε, ι, ρ or not: the
+    grammars' rule for a feminine in α), then the one printed first."""
+    def stem_class(text):
+        return fold_greek(text).rstrip("σνς")[-2:-1] in "ειρ"
+    for group in scores:
+        if groups[group][0]["lexical_form"] == lemma:
+            return group
+    best = max(scores.values())
+    tied = [group for group, score in scores.items() if score == best]
+    return min(tied, key=lambda group: (stem_class(groups[group][0]["lexical_form"]) != stem_class(lemma), group))
+
+
+def _ranked(candidates, lemma_counts, irregular, word):
+    """Up to GNT_FORMS of the GNT's forms for one item. For a pronoun or the article, its commonest
+    spellings; otherwise one form per word a student likely knows, regular forms first, commonest
+    first."""
+    if word:
+        spellings = collections.Counter()
+        for (form, lemma), count in candidates.items():
+            spellings[fold_greek(form)] += count
+        commonest = {}
+        for (form, lemma), count in candidates.most_common():
+            commonest.setdefault(fold_greek(form), (form, lemma))
+        return [{"form": commonest[text][0], "lemma": commonest[text][1], "occurrences": count}
+                for text, count in spellings.most_common(GNT_FORMS)]
+    best = {}
+    for (form, lemma), count in candidates.most_common():
+        if lemma_counts[lemma] >= KNOWN_FREQUENCY:
+            best.setdefault(lemma, (form, count))
+    order = sorted(best.items(), key=lambda entry: (entry[0] in irregular, -entry[1][1]))
+    return [{"form": form, "lemma": lemma, "occurrences": count} for lemma, (form, count) in order[:GNT_FORMS]]
+
+
+# ---- the scaffolding -------------------------------------------------------------------------
+
+def _fragment(slot, gender=None):
+    if not isinstance(slot, tuple):
+        return ""
+    if len(slot) == 2 and slot[0] in CASES:
+        return ".".join(filter(None, (slot[0], gender, slot[1])))
+    return ".".join(slot)
+
+
+CASES = ("nominative", "genitive", "dative", "accusative", "vocative")
+
+
+def _features(rule, fragment, verb):
+    parts = fragment.split(".") if fragment else []
+    features = {}
+    for part in parts:
+        name = "case" if part in CASES else "gender" if part in GENDERS else \
+            "number" if part in ("singular", "plural") else "person"
+        features[name] = part
+    if verb:
+        _, tense, voice, mood = _rule_identity(rule)
+        features.update({"tense": tense, "voice": VOICE_FULL[voice], "mood": mood})
+        if rule.startswith("eimi"):
+            features.pop("voice")
+    return features
+
+
+def _parsing(features):
+    return " ".join(filter(None, [features.get("tense"), features.get("voice"), features.get("mood"),
+                                  ORDINAL.get(features.get("person"), ""), features.get("case"),
+                                  features.get("gender"), features.get("number")]))
+
+
+def build():
+    import sys
+    sys.path.insert(0, ".")
+    from text_fabric.fabric_utils import load_n1904
+
+    lines = _body_lines()
+    corrected = []
+    verb_charts, nominal_charts = _verb_charts(lines, corrected), _nominal_charts(lines)
+    forms = _gnt_forms(load_n1904().api)
+    liquid = _liquid_verbs(forms)
+    lemma_counts, lemma_genders = collections.Counter(), collections.defaultdict(collections.Counter)
+    for (form, lemma, cls, *_rest), count in forms.items():
+        lemma_counts[lemma] += count
+    for (form, lemma, cls, tense, voice, mood, person, case, gender, number, two), count in forms.items():
+        if cls == "noun":
+            lemma_genders[lemma][gender] += count
+    dominant = {lemma: genders.most_common(1)[0][0] for lemma, genders in lemma_genders.items()}
+
+    # rule -> pattern -> fragment -> charts printing it; the first chart's cell is the item's form
+    printed = collections.defaultdict(lambda: collections.defaultdict(lambda: collections.defaultdict(list)))
+    patterns = collections.defaultdict(dict)
+    for chart in verb_charts + nominal_charts:
+        verb = "mood" in chart
+        pattern = patterns[chart["rule"]].setdefault(chart["pattern"], {
+            "name": VERB_PATTERN_NAMES.get(chart["pattern"], chart["pattern"]),
+            "type": "verb" if verb else "noun", "charts": [], "source": [], "slots": []})
+        if chart["lexical_form"] not in pattern["charts"]:
+            pattern["charts"].append(chart["lexical_form"])
+        if chart["source"] not in pattern["source"]:
+            pattern["source"].append(chart["source"])
+        if verb:
+            pattern.update({"tense": chart["tense"], "aspect": ASPECTS.get(chart["tense"]),
+                            "voice": VOICE_FULL[_rule_identity(chart["rule"])[2]], "mood": chart["mood"]})
+        for slot, cell in chart["slots"].items():
+            printed[chart["rule"]][chart["pattern"]][_fragment(slot, chart["gender"])].append((chart, cell))
+
+    endings = {}
+    for chart in verb_charts:
+        identity = _rule_identity(chart["rule"])[1:3]
+        endings[id(chart)] = _chart_endings(chart, [
+            other for other in verb_charts if other is not chart and len(other["slots"]) > 1
+            and (other["lemma"], other["stem_class"], _rule_identity(other["rule"])[1:3]) ==
+            (chart["lemma"], chart["stem_class"], identity)])
+
+    # every GNT form, filed under the rule, pattern and slot it fills
+    found = collections.defaultdict(collections.Counter)      # (rule, pattern, fragment) -> (form, lemma)
+    totals = collections.Counter()                             # (rule, fragment) -> occurrences
+    irregular = collections.defaultdict(set)                   # rule -> suppletive lemmas
+    for (form, lemma, cls, tense, voice, mood, person, case, gender, number, two), count in forms.items():
+        if not mood:
+            continue
+        placed = _verb_slot(lemma, tense, voice, mood, person, case, gender, number, two)
+        if not placed or placed[0] not in printed:
+            continue
+        rule, fragment = placed
+        totals[(rule, fragment)] += count
+        pattern, family = _verb_pattern(lemma, rule, two, liquid)
+        charts = printed[rule].get(pattern, {}).get(fragment)
+        if not charts:
+            continue
+        if family and family not in {_family(fold_greek(chart["lemma"])) for chart, _ in charts}:
+            continue
+        if pattern != "εἰμί" and not any(_ends_like(form, *endings[id(chart)][_slot_of(chart, fragment)])
+                                          for chart, _ in charts):
+            continue
+        if fold_greek(lemma) not in WITHHELD:
+            found[(rule, pattern, fragment)][(form, lemma)] += count
+        if rule.split("-")[0] not in ("pres", "impf") and fold_greek(lemma).endswith(SUPPLETIVE):
+            irregular[rule].add(lemma)
+
+    nominal_tokens = collections.defaultdict(list)
+    for (form, lemma, cls, tense, voice, mood, person, case, gender, number, two), count in forms.items():
+        if case and not mood:
+            nominal_tokens[lemma].append((form, (case, number), gender, count, cls))
+    for chart in nominal_charts:
+        chart["lexical_form"] = _lexical(chart["lexical_form"])
+        chart["lemma_gender"] = dominant.get(chart["lexical_form"])
+    groups = collections.defaultdict(list)
+    for chart in nominal_charts:
+        groups[chart["group"]].append(chart)
+    # A word belongs to the one group it fits best: a chart printing few slots fits more words than
+    # it describes.
+    fits = collections.defaultdict(dict)
+    for group, charts in groups.items():
+        lead = charts[0]
+        if not re.match(r"[na]-", lead["pattern"]):
+            if lead["lexical_form"] in nominal_tokens:
+                fits[lead["lexical_form"]][group] = (1,)
+            continue
+        pool = "noun" if lead["rule"].startswith("decl") else "adj"
+        for lemma, tokens in nominal_tokens.items():
+            if tokens[0][4] == pool:
+                fit = _nominal_fit(charts, lemma, [token[:4] for token in tokens], dominant.get(lemma))
+                if fit:
+                    fits[lemma][group] = fit
+    for lemma, scores in fits.items():
+        for group in [_best_group(lemma, scores, groups)]:
+            charts = groups[group]
+            lead = charts[0]
+            for form, slot, gender, count, _ in nominal_tokens[lemma]:
+                chart_gender = _chart_gender(charts, gender)
+                fragment = _fragment(slot, chart_gender)
+                if chart_gender is False or fragment not in printed[lead["rule"]][lead["pattern"]]:
+                    continue
+                totals[(lead["rule"], fragment)] += count
+                if fold_greek(lemma) not in WITHHELD:
+                    found[(lead["rule"], lead["pattern"], fragment)][(form, lemma)] += count
+
+    structure, items = {}, {}
+    sequence = {rule: order for order, rule in enumerate(sorted({c["rule"] for c in verb_charts}), start=100)}
+    for order, chart in enumerate(nominal_charts, start=1):
+        sequence.setdefault(chart["rule"], order)
+    for rule in sorted(printed, key=sequence.get):
+        verb = rule in {chart["rule"] for chart in verb_charts}
+        node = {"name": " ".join(filter(None, [TENSE_NAMES.get(_rule_identity(rule)[0]),
+                                                "" if rule.startswith("eimi") else VOICE_NAMES[_rule_identity(rule)[2]],
+                                                MOOD_NAMES[_rule_identity(rule)[3]],
+                                                "of εἰμί" if rule.startswith("eimi") else ""]))
+                if verb else RULE_NAMES.get(rule, rule),
+                "sequence": sequence[rule], "pos_lex_category": "verb" if verb else "noun",
+                "morph_rule_description": _describe(rule) if verb else "Case and number forms as the grammars print them.",
+                "patterns": {}}
+        for pattern_name, fragments in printed[rule].items():
+            pattern = {**patterns[rule][pattern_name], "slots": []}
+            word = not verb and not re.match(r"[na]-", pattern_name) or pattern_name == "εἰμί"
+            for fragment, charts in fragments.items():
+                candidates = found[(rule, pattern_name, fragment)]
+                if totals[(rule, fragment)] < MIN_OCCURRENCES or sum(candidates.values()) < MIN_PATTERN_OCCURRENCES \
+                        or all(lemma_counts[lemma] < KNOWN_FREQUENCY for _, lemma in candidates):
+                    continue
+                chart, cell = charts[0]
+                key = "::".join(filter(None, [rule, pattern_name, fragment]))
+                features = _features(rule, fragment, verb)
+                items[key] = {"key": key, "parent": f"{rule}::{pattern_name}", "rule": rule,
+                              "pattern": pattern_name, "form": cell, "lexical_form": chart["lexical_form"],
+                              "parsing": _parsing(features), "features": features,
+                              "gnt_occurrences": totals[(rule, fragment)],
+                              "gnt_forms": _ranked(candidates, lemma_counts, irregular[rule], word)}
+                pattern["slots"].append(key)
+            if pattern["slots"]:
+                node["patterns"][f"{rule}::{pattern_name}"] = pattern
+        if node["patterns"]:
             structure[rule] = node
-    for key, item in existing.get("items", {}).items():
-        if item.get("rule") in RETIRED_RULES:
-            continue
-        if item.get("rule") in structure and key not in items:
-            continue    # a rule this run regenerated: an old key it no longer emits is stale
-        items[key] = {**item, **items.get(key, {})}
+    return structure, items, corrected
 
+
+def _slot_of(chart, fragment):
+    """The chart's own slot for an item fragment."""
+    return next(slot for slot in chart["slots"] if _fragment(slot, chart["gender"]) == fragment)
+
+
+def write():
+    structure, items, corrected = build()
+    existing = json.loads(GRAMMAR_PATH.read_text(encoding="utf-8"))
+    # Hand-written prose on a rule is kept. The derivation owns the forms; it does not own what
+    # someone wrote about them.
+    for rule, node in existing.get("structure", {}).items():
+        if rule in structure:
+            structure[rule].update({k: v for k, v in node.items()
+                                    if k in ("teaching_note", "morph_recipe", "difficulty_tier")})
+            if node.get("morph_rule_description") and node.get("teaching_note"):
+                structure[rule]["morph_rule_description"] = node["morph_rule_description"]
     GRAMMAR_PATH.write_text(json.dumps(
-        {"source": {"paradigms": "BBGG appendix: the Overview charts, the MBG-keyed verb and "
-                                 "participle charts, and the declension, adjective and pronoun "
-                                 "charts; the article, relative and personal pronouns from "
-                                 "GrammarSummaries",
-                    "corrected_forms": corrected,
-                    "verification": "Forms are checked against CenterBLC/N1904; a form the "
-                                    "corpus does not attest is listed in unverified_forms "
-                                    "rather than dropped, since a teaching paradigm is not "
-                                    "expected to occur whole in the New Testament.",
-                    "unverified_forms": sorted(unverified),
-                    "likely_damaged": sorted(
-                        key for key in unverified if _misplaced_breathing(items[key]["form"]))},
+        {"source": {"charts": "BBGG appendix: the Overview charts, the MBG-keyed verb and participle "
+                              "charts, and the declension, adjective and pronoun charts; the article, "
+                              "relative and personal pronouns from GrammarSummaries",
+                    "patterns": "Each chart is filed under the pattern the appendix prints over it: MBG's "
+                                "code for a noun or adjective, the verb chart's heading (thematic, "
+                                "contracted, liquid, athematic, second aorist) for a verb. A pronoun, the "
+                                "article and the irregular adjectives are each their own pattern.",
+                    "items": f"A slot is an item where CenterBLC/N1904 uses it at least {MIN_OCCURRENCES} "
+                             f"times across its rule and {MIN_PATTERN_OCCURRENCES} in its pattern, on a word occurring "
+                             f"{KNOWN_FREQUENCY} times or more. form is the "
+                             f"chart's; gnt_forms are up to {GNT_FORMS} of the GNT's own, one per known word, "
+                             f"regular forms first, none of them a word verify.WITHHELD keeps off the cards.",
+                    "corrected_forms": corrected},
          "structure": structure, "items": items},
         ensure_ascii=False, indent=1), encoding="utf-8")
-    return len(structure), len(items), len(unverified)
+    return len(structure), len(items)
 
 
 if __name__ == "__main__":
-    print("rules %d | items %d | unattested forms %d" % write())
+    print("rules %d | items %d" % write())

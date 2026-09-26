@@ -1,0 +1,154 @@
+{
+  "βαπτίζω": {
+    "findings": [],
+    "notes": [],
+    "words": [
+      {
+        "form": "ἐὰν",
+        "given": "conjunction of ἐάν",
+        "status": "confirmed"
+      },
+      {
+        "form": "ὁ",
+        "given": "nominative masculine singular of ὁ",
+        "status": "confirmed"
+      },
+      {
+        "form": "δοῦλος",
+        "given": "nominative masculine singular of δοῦλος",
+        "status": "confirmed"
+      },
+      {
+        "form": "ἔλθῃ",
+        "given": "aorist active subjunctive 3rd person singular of ἔρχομαι",
+        "status": "confirmed"
+      },
+      {
+        "form": "ἐκ",
+        "given": "preposition of ἐκ",
+        "status": "confirmed"
+      },
+      {
+        "form": "τοῦ",
+        "given": "genitive masculine singular of ὁ",
+        "status": "confirmed"
+      },
+      {
+        "form": "ἀγροῦ",
+        "given": "genitive masculine singular of ἀγρός",
+        "status": "confirmed"
+      },
+      {
+        "form": "βαπτισθήτω",
+        "given": "aorist passive imperative 3rd person singular of βαπτίζω",
+        "status": "confirmed"
+      },
+      {
+        "form": "ὕδατι",
+        "given": "dative neuter singular of ὕδωρ",
+        "status": "confirmed"
+      },
+      {
+        "form": "ἐγγίζει",
+        "given": "present active indicative 3rd person singular of ἐγγίζω",
+        "status": "confirmed"
+      },
+      {
+        "form": "γὰρ",
+        "given": "conjunction of γάρ",
+        "status": "confirmed"
+      },
+      {
+        "form": "τὸ",
+        "given": "nominative neuter singular of ὁ",
+        "status": "confirmed"
+      },
+      {
+        "form": "σάββατον",
+        "given": "nominative neuter singular of σάββατον",
+        "status": "confirmed"
+      }
+    ],
+    "attempts": [
+      {
+        "model": "claude-opus-5-5",
+        "effort": "medium",
+        "seconds": 53.8,
+        "input": 1719,
+        "cache_write": 22799,
+        "cache_read": 0,
+        "output": 4750,
+        "stop_reason": "end_turn",
+        "findings": [],
+        "reply": "```json\n{\n  \"reasoning\": \"The card uses the attested washing sense of βαπτίζω (53.31) rather than the rite. A servant who comes in from the field, with water named as the means and the Sabbath at hand, points the student to cleansing and shuts out 'baptize'. The Sabbath-eve household fits this sense naturally and keeps the card clear of baptismal episodes. Mark 7:4's market-and-eating frame is avoided by giving no meal and ending on a γάρ clause about the approaching Sabbath. Protasis ἐάν + aorist subjunctive, apodosis attested βαπτισθήτω, ἐκ + genitive as the texture.\",\n  \"sentence\": \"ἐὰν ὁ δοῦλος ἔλθῃ ἐκ τοῦ ἀγροῦ, βαπτισθήτω ὕδατι· ἐγγίζει γὰρ τὸ σάββατον.\",\n  \"translation\": \"If the servant comes in from the field, let him wash himself with water, for the Sabbath is drawing near.\",\n  \"target_form\": \"βαπτισθήτω\",\n  \"words\": [\n    {\"form\": \"ἐὰν\", \"lemma\": \"ἐάν\", \"parse\": \"conjunction\"},\n    {\"form\": \"ὁ\", \"lemma\": \"ὁ\", \"parse\": \"nominative masculine singular\"},\n    {\"form\": \"δοῦλος\", \"lemma\": \"δοῦλος\", \"parse\": \"nominative masculine singular\"},\n    {\"form\": \"ἔλθῃ\", \"lemma\": \"ἔρχομαι\", \"parse\": \"aorist active subjunctive 3rd person singular\"},\n    {\"form\": \"ἐκ\", \"lemma\": \"ἐκ\", \"parse\": \"preposition\"},\n    {\"form\": \"τοῦ\", \"lemma\": \"ὁ\", \"parse\": \"genitive masculine singular\"},\n    {\"form\": \"ἀγροῦ\", \"lemma\": \"ἀγρός\", \"parse\": \"genitive masculine singular\"},\n    {\"form\": \"βαπτισθήτω\", \"lemma\": \"βαπτίζω\", \"parse\": \"aorist passive imperative 3rd person singular\"},\n    {\"form\": \"ὕδατι\", \"lemma\": \"ὕδωρ\", \"parse\": \"dative neuter singular\"},\n    {\"form\": \"ἐγγίζει\", \"lemma\": \"ἐγγίζω\", \"parse\": \"present active indicative 3rd person singular\"},\n    {\"form\": \"γὰρ\", \"lemma\": \"γάρ\", \"parse\": \"conjunction\"},\n    {\"form\": \"τὸ\", \"lemma\": \"ὁ\", \"parse\": \"nominative neuter singular\"},\n    {\"form\": \"σάββατον\", \"lemma\": \"σάββατον\", \"parse\": \"nominative neuter singular\"}\n  ],\n  \"setting\": \"adapted:s072\"\n}\n```"
+      }
+    ],
+    "seconds": 53.8,
+    "sentence_plan": {
+      "sentence_shape": {
+        "shape": "a main clause with an adverbial dependent clause: conditional, third class",
+        "formation": "Protasis: ἐάν plus the subjunctive. Apodosis: any mood or tense.",
+        "function": "Covers a wide band, from a purely hypothetical case to a probable one, and sometimes states a general present reality. Read the strength of the condition from context rather than from the form.",
+        "syntactic_category": "Third Class Condition - a syntactic usage, under Conditional Sentences > II. Conditional Sentences in Greek (especially the NT). Syntactic explanation: range of nuances: (a) a logical connection (if A, then B) in the present time (present general condition or fifth class condition), (b) hypothetical situation, and (c) more probable future occurrence; ἐάν + subjunctive, any tense; apodosis: any tense, any mood (present indicative for present general condition) (689, 696–99).",
+        "position": "before the main clause by default; after it when you mean to give it emphasis",
+        "grammar_options": [
+          {
+            "option": "Aorist Active Subjunctive",
+            "gnt_examples": [
+              "ποιήσω (ποιέω)",
+              "ποιήσῃ (ποιέω)",
+              "ποιήσωμεν (ποιέω)"
+            ]
+          },
+          {
+            "option": "Aorist Middle Subjunctive",
+            "gnt_examples": [
+              "δέξηται (δέχομαι)",
+              "ἄρξηται (ἄρχω)",
+              "ἅψηται (ἅπτω)"
+            ]
+          },
+          {
+            "option": "Aorist Passive Subjunctive",
+            "gnt_examples": [
+              "πληρωθῇ (πληρόω)",
+              "φανερωθῇ (φανερόω)",
+              "πληρωθῶσιν (πληρόω)"
+            ]
+          },
+          {
+            "option": "Present Subjunctive of εἰμί",
+            "gnt_examples": [
+              "ᾖ (εἰμί)"
+            ]
+          },
+          {
+            "option": "Present Active Subjunctive",
+            "gnt_examples": [
+              "ἔχῃ (ἔχω)",
+              "ἔχητε (ἔχω)",
+              "θέλῃ (θέλω)"
+            ]
+          },
+          {
+            "option": "Present Middle/Passive Subjunctive",
+            "gnt_examples": [
+              "βούληται (βούλομαι)",
+              "ἔρχηται (ἔρχομαι)",
+              "δοξάζηται (δοξάζω)"
+            ]
+          }
+        ]
+      },
+      "also_include_one_of": [
+        "Abstract (i.e., the Article with Abstract Nouns) - a syntactic usage, under The Article > Regular Uses of the Article > With Substantives (Dependent or Modifying Use) > Individualizing Article. Syntactic explanation: identifies a quality or abstract concept (e.g., love, salvation, peace, faith); article is rarely used in translation.",
+        "Ἐκ (Genitive) - a syntactic usage, under Prepositions. Syntactic explanation: from, out of, away from, of.",
+        "Possessive Genitive - a syntactic usage, under Genitive > Adjectival. Syntactic explanation: belonging to, possessed by."
+      ],
+      "setting_options": {
+        "s084": "A synagogue attendant sweeps the floor early, before the town gathers.",
+        "s072": "A household makes ready for the Sabbath at sunset and the lamp oil runs out."
+      }
+    }
+  }
+}
